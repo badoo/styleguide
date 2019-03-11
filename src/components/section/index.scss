@@ -1,0 +1,16 @@
+.styleguide-section + .styleguide-section {
+    margin-top: 32px;
+}
+
+.styleguide-section__title {
+    margin: 0;
+}
+
+.styleguide-section__component {
+    max-width: 960px;
+    margin: auto;
+}
+
+.styleguide-section__component + .styleguide-section__component {
+    margin-top: 40px;
+}

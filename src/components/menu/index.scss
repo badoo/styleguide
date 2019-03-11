@@ -1,0 +1,15 @@
+.styleguide-menu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.styleguide-menu--sub {
+    padding: 16px;
+
+    .styleguide-menu-item {
+        padding: 8px 16px;
+    }
+}
+

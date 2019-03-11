@@ -1,0 +1,36 @@
+.styleguide-sidebar {
+    overflow-x: hidden;
+    width: 300px;
+    -webkit-font-smoothing: antialiased;
+
+    .styleguide-search-field {
+        margin-bottom: 8px;
+    }
+}
+
+.styleguide-sidebar__content {
+    position: fixed;
+    background: #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    width: inherit;
+    overflow-y: scroll;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.styleguide-sidebar__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    padding-top: 16px;
+}
+
+.styleguide-sidebar__logo {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 4px;
+}

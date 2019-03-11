@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #6a6a6a;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+code {
+    font-family: Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.styleguide-body {
+    overflow: auto !important;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.styleguide-wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.styleguide {
+    background: #fff;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-auto-rows: 100vh;
+    width: 100vw;
+}
