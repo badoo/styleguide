@@ -49,8 +49,8 @@ module.exports = function(source) {
         /* eslint-disable no-useless-escape */
         if (source.indexOf('module.exports') !== -1) {
             results = `${source}
-            module.expprts.__meta = ${JSON.stringify(meta)};
-            module.expprts.__dependencyResolver = require.context('./', true, /\.jsx?/);`;
+            module.exports.__meta = ${JSON.stringify(meta)};
+            module.exports.__dependencyResolver = require.context('./', true, /\.jsx?/);`;
         }
         else {
             results = `${source}
