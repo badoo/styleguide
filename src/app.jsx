@@ -203,7 +203,7 @@ function processConfigSection({ section: { name, webpackContext, components }, t
                 component,
             };
 
-            if (componentName.indexOf(testPattern) !== -1) {
+            if (testPattern.test(componentName)) {
                 componentsSpecs.push(info);
             } else {
                 componentsDefinitions.push(info);

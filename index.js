@@ -17,8 +17,8 @@ if (!argv.config) {
 
 const configPath = path.resolve(process.cwd(), argv.config);
 const config = require(configPath);
-const PORT = 8080;
-const HOST = 'localhost';
+const PORT = argv.port || 8080;
+const HOST = argv.host ||'localhost';
 
 const { webpackConfig: webpackConfigFromProject, modulesDirectory } = config.getWebpackConfig({
     nodeRequire: require,

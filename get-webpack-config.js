@@ -11,6 +11,7 @@ module.exports = function getWebpackConfig({
     modulesDirectory,
     configPath
 }) {
+
     return {
         entry: [
             `webpack-dev-server/client?${devServerUrl}`,
@@ -60,11 +61,14 @@ module.exports = function getWebpackConfig({
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
                     use: [
-                        getBabelLoader({ isReactNative }),
+                        {
+                            loader: 'babel-loader',
+                            options: getBabelOptions({ isReactNative }),
+                        },
                         {
                             loader: 'component',
                             options: {
-                                cwd: modulesDirectory,
+                                cwd: modulesDirectory
                             },
                         },
                     ],
@@ -113,40 +117,34 @@ module.exports = function getWebpackConfig({
     };
 };
 
-function getBabelLoader({ isReactNative }) {
+function getBabelOptions({ isReactNative }) {
     if (isReactNative) {
         return {
-            loader: 'babel-loader',
-            options: {
-                babelrc: false,
-                sourceMaps: 'both',
-                presets: [require.resolve('metro-react-native-babel-preset')],
-                plugins: [require.resolve('react-hot-loader/babel')],
-            },
+            babelrc: false,
+            sourceMaps: 'both',
+            presets: [require.resolve('metro-react-native-babel-preset')],
+            plugins: [require.resolve('react-hot-loader/babel')],
         };
     }
 
     return {
-        loader: 'babel-loader',
-        options: {
-            babelrc: false,
-            presets: [
-                [
-                    require.resolve('@babel/preset-env'),
-                    {
-                        targets: {
-                            ie: 11,
-                        },
+        babelrc: false,
+        presets: [
+            [
+                require.resolve('@babel/preset-env'),
+                {
+                    targets: {
+                        ie: 11,
                     },
-                ],
-                [
-                    require.resolve('@babel/preset-react'),
-                    {
-                        development: true,
-                    },
-                ],
+                },
             ],
-            plugins: [require.resolve('react-hot-loader/babel')],
-        },
+            [
+                require.resolve('@babel/preset-react'),
+                {
+                    development: true,
+                },
+            ],
+        ],
+        plugins: [require.resolve('react-hot-loader/babel')],
     };
 }

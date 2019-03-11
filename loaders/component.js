@@ -16,7 +16,12 @@ module.exports = function(source) {
     let results;
 
     try {
-        const doc = reactDocs.parse(source);
+        const doc = reactDocs.parse(source, null, null, {
+            // Babel parser doesn't like it if you pass config
+            // but don't pass the file to scan other configs from
+            // even though you explicitly don't want to use babrlrc
+            filename: ''
+        });
 
         const meta = {
             name: doc.displayName,
@@ -40,11 +45,20 @@ module.exports = function(source) {
                 : null,
         };
 
+        // Simple check to use if we are using ES6 or CJS
         /* eslint-disable no-useless-escape */
-        results = `${source}
-        export const __meta = ${JSON.stringify(meta)};
-        export const __dependencyResolver = require.context('./', true, /\.jsx?/);`;
+        if (source.indexOf('module.exports') !== -1) {
+            results = `${source}
+            module.expprts.__meta = ${JSON.stringify(meta)};
+            module.expprts.__dependencyResolver = require.context('./', true, /\.jsx?/);`;
+        }
+        else {
+            results = `${source}
+            export const __meta = ${JSON.stringify(meta)};
+            export const __dependencyResolver = require.context('./', true, /\.jsx?/);`;
+        }
         /* eslint-enable no-useless-escape */
+
     } catch (err) {
         if (!/Multiple exported component definitions found/.test(err)) {
             console.warn(this.resourcePath, err);
