@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Sandbox from '../sandbox';
 import classNames from 'classnames';
 
+import config from '__GLOBAL__CONFIG__';
+
 import './index.scss';
 
 class ComponentBlock extends Component {
@@ -26,6 +28,8 @@ class ComponentBlock extends Component {
                 'is-collapsed': this.state.isPropsCollapsed,
             }),
         };
+
+        const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
 
         return (
             <article className="styleguide-component" id={data.name.toLowerCase()}>
@@ -92,7 +96,9 @@ class ComponentBlock extends Component {
                     {data.tests.map(({ name, Component }, key) => (
                         <div className="styleguide-component__sandbox" key={key}>
                             <Sandbox title={name} name={name}>
-                                <Component />
+                                <Wrapper>
+                                    <Component />
+                                </Wrapper>
                             </Sandbox>
                         </div>
                     ))}
