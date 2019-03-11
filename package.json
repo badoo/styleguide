@@ -1,11 +1,27 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
   "bin": "./index.js",
-  "devDependencies": {
+  "scripts": {
+    "deps": "yarn install --pure-lockfile",
+    "build": "yarn deps && node ./node_modules/.bin/webpack",
+    "start": "yarn deps && node ./index.js",
+    "lint": "eslint . --fix --ext .js,.jsx",
+    "prettier": "prettier --write '**/*.?(j|t)s?(x)'"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "normalize.css": "8.0.1",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-hot-loader": "4.8.0",
+    "react-native-svg-web": "^1.0.1",
+    "react-native-web": "^0.10.1",
+    "react-native-web-linear-gradient": "^1.0.5",
+    "yargs": "13.2.1",
     "@babel/core": "^7.3.4",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
@@ -30,23 +46,5 @@
     "webpack-cli": "3.2.3",
     "webpack-dev-server": "3.2.1",
     "webpack-merge": "^4.2.1"
-  },
-  "scripts": {
-    "deps": "yarn install --pure-lockfile",
-    "build": "yarn deps && node ./node_modules/.bin/webpack",
-    "start": "yarn deps && node ./index.js",
-    "lint": "eslint . --fix --ext .js,.jsx",
-    "prettier": "prettier --write '**/*.?(j|t)s?(x)'"
-  },
-  "dependencies": {
-    "classnames": "2.2.6",
-    "normalize.css": "8.0.1",
-    "react": "16.8.4",
-    "react-dom": "16.8.4",
-    "react-hot-loader": "4.8.0",
-    "react-native-svg-web": "^1.0.1",
-    "react-native-web": "^0.10.1",
-    "react-native-web-linear-gradient": "^1.0.5",
-    "yargs": "13.2.1"
   }
 }

@@ -16,9 +16,7 @@ module.exports = function(source) {
     let results;
 
     try {
-        const doc = reactDocs.parse(source, null, null, {
-            filename: this.resourcePath,
-        });
+        const doc = reactDocs.parse(source);
 
         const meta = {
             name: doc.displayName,

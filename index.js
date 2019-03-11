@@ -15,7 +15,8 @@ if (!argv.config) {
     throw new Error('Please provide config path --config=PATH_TO_CONFIG.js');
 }
 
-const config = require(path.resolve(process.cwd(), argv.config));
+const configPath = path.resolve(process.cwd(), argv.config);
+const config = require(configPath);
 const PORT = 8080;
 const HOST = 'localhost';
 
@@ -29,6 +30,7 @@ const ourWebpackConfig = getWebpackConfig({
     buildDir: argv.buildDir,
     isReactNative: config.isReactNative,
     modulesDirectory,
+    configPath
 });
 
 const mergedConfig = webpackMerge.smart(ourWebpackConfig, webpackConfigFromProject);

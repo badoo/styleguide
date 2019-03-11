@@ -9,6 +9,7 @@ module.exports = function getWebpackConfig({
     buildDir,
     isReactNative,
     modulesDirectory,
+    configPath
 }) {
     return {
         entry: [
@@ -57,7 +58,7 @@ module.exports = function getWebpackConfig({
                 {
                     test: /\.(j|t)sx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative ? undefined : /node_modules/,
+                    exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
                     use: [
                         getBabelLoader({ isReactNative }),
                         {
@@ -89,6 +90,9 @@ module.exports = function getWebpackConfig({
         resolve: {
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
             modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
+            alias: {
+                __GLOBAL__CONFIG__: configPath
+            }
         },
         resolveLoader: {
             modules: [

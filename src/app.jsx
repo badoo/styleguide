@@ -14,12 +14,12 @@ class App extends Component {
         super(props);
 
         const configSections = this.props.config.getSections();
-        const testsDirectory = this.props.config.testsDirectory;
+        const testPattern = this.props.config.testPattern;
 
         this.state = {
             hash: window.location.hash.substr(1),
-            sections: processConfigSections({ configSections, testsDirectory }),
-            defaultSections: processConfigSections({ configSections, testsDirectory }),
+            sections: processConfigSections({ configSections, testPattern }),
+            defaultSections: processConfigSections({ configSections, testPattern }),
         };
 
         this.handleHashChange = this.handleHashChange.bind(this);
@@ -145,7 +145,7 @@ function getComponentFilename(str) {
     return file.substr(0, file.lastIndexOf('.'));
 }
 
-function processConfigComponent({ component, sectionName, testsDirectory }) {
+function processConfigComponent({ component, sectionName, testPattern }) {
     const meta = component.__meta;
     const dependencyResolver = component.__dependencyResolver;
 
@@ -155,7 +155,7 @@ function processConfigComponent({ component, sectionName, testsDirectory }) {
 
     const testsPaths = dependencyResolver
         .keys()
-        .filter(key => key.indexOf(`./${testsDirectory}/`) === 0);
+        .filter(key => testPattern.test(key));
 
     const testsModules = testsPaths.map(dependencyResolver);
 
@@ -187,7 +187,7 @@ function getTestConfiguration(testModules) {
         }));
 }
 
-function processConfigSection({ section: { name, webpackContext, components }, testsDirectory }) {
+function processConfigSection({ section: { name, webpackContext, components }, testPattern }) {
     let componentsList;
 
     // Extract components automatically from webpack context
@@ -203,7 +203,7 @@ function processConfigSection({ section: { name, webpackContext, components }, t
                 component,
             };
 
-            if (componentName.indexOf(testsDirectory) !== -1) {
+            if (componentName.indexOf(testPattern) !== -1) {
                 componentsSpecs.push(info);
             } else {
                 componentsDefinitions.push(info);
@@ -234,7 +234,7 @@ function processConfigSection({ section: { name, webpackContext, components }, t
     } else {
         componentsList = components
             .map(component =>
-                processConfigComponent({ component, sectionName: name, testsDirectory })
+                processConfigComponent({ component, sectionName: name, testPattern })
             )
             .filter(Boolean);
     }
@@ -245,6 +245,6 @@ function processConfigSection({ section: { name, webpackContext, components }, t
     };
 }
 
-function processConfigSections({ configSections, testsDirectory }) {
-    return configSections.map(section => processConfigSection({ section, testsDirectory }));
+function processConfigSections({ configSections, testPattern }) {
+    return configSections.map(section => processConfigSection({ section, testPattern }));
 }
