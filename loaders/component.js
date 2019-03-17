@@ -20,7 +20,7 @@ module.exports = function(source) {
             // Babel parser doesn't like it if you pass config
             // but don't pass the file to scan other configs from
             // even though you explicitly don't want to use babrlrc
-            filename: ''
+            filename: '',
         });
 
         const meta = {
@@ -51,16 +51,17 @@ module.exports = function(source) {
             results = `${source}
             module.exports.__meta = ${JSON.stringify(meta)};
             module.exports.__dependencyResolver = require.context('./', true, /\.jsx?/);`;
-        }
-        else {
+        } else {
             results = `${source}
             export const __meta = ${JSON.stringify(meta)};
             export const __dependencyResolver = require.context('./', true, /\.jsx?/);`;
         }
         /* eslint-enable no-useless-escape */
-
     } catch (err) {
-        if (!/Multiple exported component definitions found/.test(err)) {
+        if (
+            !/Multiple exported component definitions found/.test(err) &&
+            !/No suitable component definition found/.test(err)
+        ) {
             console.warn(this.resourcePath, err);
         }
 

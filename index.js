@@ -18,11 +18,12 @@ if (!argv.config) {
 const configPath = path.resolve(process.cwd(), argv.config);
 const config = require(configPath);
 const PORT = argv.port || 8080;
-const HOST = argv.host ||'localhost';
+const HOST = argv.host || 'localhost';
 
 const { webpackConfig: webpackConfigFromProject, modulesDirectory } = config.getWebpackConfig({
     nodeRequire: require,
     path,
+    webpack,
 });
 
 const ourWebpackConfig = getWebpackConfig({
@@ -30,7 +31,7 @@ const ourWebpackConfig = getWebpackConfig({
     buildDir: argv.buildDir,
     isReactNative: config.isReactNative,
     modulesDirectory,
-    configPath
+    configPath,
 });
 
 const mergedConfig = webpackMerge.smart(ourWebpackConfig, webpackConfigFromProject);

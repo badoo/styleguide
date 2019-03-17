@@ -153,16 +153,14 @@ function processConfigComponent({ component, sectionName, testPattern }) {
         return null;
     }
 
-    const testsPaths = dependencyResolver
-        .keys()
-        .filter(key => testPattern.test(key));
+    const testsPaths = dependencyResolver.keys().filter(key => testPattern.test(key));
 
     const testsModules = testsPaths.map(dependencyResolver);
 
     const tests = getTestConfiguration(testsModules);
 
     return {
-        url: `${sectionName}-${meta.name}`,
+        url: encodeURIComponent(`${sectionName}-${meta.name}`),
         name: meta.name,
         description: meta.description,
         propTypes: meta.propTypes,
@@ -196,23 +194,35 @@ function processConfigSection({ section: { name, webpackContext, components }, t
         const componentsSpecs = [];
 
         webpackContext.keys().forEach(componentName => {
-            const component = webpackContext(componentName);
-            const info = {
-                name,
-                fileName: getComponentFilename(name),
-                component,
-            };
+            try {
+                const component = webpackContext(componentName);
+                const info = {
+                    name,
+                    fileName: getComponentFilename(componentName),
+                    component,
+                };
 
-            if (testPattern.test(componentName)) {
-                componentsSpecs.push(info);
-            } else {
-                componentsDefinitions.push(info);
+                if (testPattern.test(componentName)) {
+                    componentsSpecs.push(info);
+                } else {
+                    componentsDefinitions.push(info);
+                }
+            } catch (e) {
+                const errorLabel = `Failed to load component: ${componentName}`;
+
+                console.groupCollapsed(errorLabel);
+                console.error(e);
+                console.groupEnd(errorLabel);
             }
         });
 
-        componentsList = componentsDefinitions.map(
-            ({ component, name: componentName, fileName }) => {
+        componentsList = componentsDefinitions
+            .map(({ component, name: componentName, fileName }) => {
                 const meta = component.__meta;
+
+                if (!meta) {
+                    return false;
+                }
 
                 const componentSpecs = componentsSpecs.reduce((_specs, item) => {
                     if (item.fileName.indexOf(fileName) !== -1) {
@@ -223,19 +233,17 @@ function processConfigSection({ section: { name, webpackContext, components }, t
                 }, []);
 
                 return {
-                    url: `${componentName}-${meta.name}`,
+                    url: encodeURIComponent(`${componentName}-${meta.name}`),
                     name: meta.name,
                     description: meta.description,
                     propTypes: meta.propTypes,
                     tests: getTestConfiguration(componentSpecs),
                 };
-            }
-        );
+            })
+            .filter(Boolean);
     } else {
         componentsList = components
-            .map(component =>
-                processConfigComponent({ component, sectionName: name, testPattern })
-            )
+            .map(component => processConfigComponent({ component, sectionName: name, testPattern }))
             .filter(Boolean);
     }
 

@@ -15,7 +15,14 @@ export default class Sandbox extends Component {
         this.state = {
             isFullScreen: false,
             isVisible: true,
+            hasError: false,
+            error: null,
+            errorInfo: null,
         };
+    }
+
+    componentDidCatch(error, errorInfo) {
+        this.setState({ hasError: true, error, errorInfo });
     }
 
     render() {
@@ -62,18 +69,29 @@ export default class Sandbox extends Component {
                     </div>
                 </header>
 
-                {this.state.isVisible && (
-                    <div className="styleguide-sandbox__content js-styleguide-sandbox__content">
-                        {this.props.children}
-                    </div>
-                )}
+                {this.state.hasError ? (
+                    <pre>
+                        ### ERROR
+                        {JSON.stringify(this.state.error)}
+                        ### INFO
+                        {JSON.stringify(this.state.errorInfo)}
+                    </pre>
+                ) : (
+                    <React.Fragment>
+                        {this.state.isVisible && (
+                            <div className="styleguide-sandbox__content js-styleguide-sandbox__content">
+                                {this.props.children}
+                            </div>
+                        )}
 
-                <Dialog
-                    isOpened={this.state.isFullScreen}
-                    onClose={() => this.setState({ isFullScreen: false })}
-                    title={this.props.title}
-                    content={this.props.children}
-                />
+                        <Dialog
+                            isOpened={this.state.isFullScreen}
+                            onClose={() => this.setState({ isFullScreen: false })}
+                            title={this.props.title}
+                            content={this.props.children}
+                        />
+                    </React.Fragment>
+                )}
             </section>
         );
     }

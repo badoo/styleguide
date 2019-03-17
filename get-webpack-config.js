@@ -9,9 +9,8 @@ module.exports = function getWebpackConfig({
     buildDir,
     isReactNative,
     modulesDirectory,
-    configPath
+    configPath,
 }) {
-
     return {
         entry: [
             `webpack-dev-server/client?${devServerUrl}`,
@@ -68,7 +67,7 @@ module.exports = function getWebpackConfig({
                         {
                             loader: 'component',
                             options: {
-                                cwd: modulesDirectory
+                                cwd: modulesDirectory,
                             },
                         },
                     ],
@@ -78,7 +77,7 @@ module.exports = function getWebpackConfig({
                     use: ['file-loader'],
                 },
                 {
-                    test: /\.woff$/i,
+                    test: /\.(woff|ttf)$/i,
                     use: ['file-loader'],
                 },
                 {
@@ -95,8 +94,8 @@ module.exports = function getWebpackConfig({
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
             modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
             alias: {
-                __GLOBAL__CONFIG__: configPath
-            }
+                __GLOBAL__CONFIG__: configPath,
+            },
         },
         resolveLoader: {
             modules: [
@@ -144,7 +143,27 @@ function getBabelOptions({ isReactNative }) {
                     development: true,
                 },
             ],
+            [
+                '@babel/preset-typescript',
+                {
+                    isTSX: true,
+                    allExtensions: true,
+                },
+            ],
         ],
-        plugins: [require.resolve('react-hot-loader/babel')],
+        plugins: [
+            require.resolve('react-hot-loader/babel'),
+
+            // Needed to have parity with TS class properties
+            '@babel/plugin-proposal-class-properties',
+
+            // Allow experimental rest spread syntax
+            [
+                '@babel/plugin-proposal-object-rest-spread',
+                {
+                    useBuiltIns: true,
+                },
+            ],
+        ],
     };
 }
