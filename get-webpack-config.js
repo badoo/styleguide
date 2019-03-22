@@ -73,6 +73,11 @@ module.exports = function getWebpackConfig({
                     ],
                 },
                 {
+                    test: /\.(j|t)sx?$/,
+                    include: /node_modules/,
+                    use: ['react-hot-loader/webpack'],
+                },
+                {
                     test: /\.(gif|png|jpe?g)$/i,
                     use: ['file-loader'],
                 },

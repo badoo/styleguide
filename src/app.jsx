@@ -13,15 +13,6 @@ class App extends Component {
     constructor(props) {
         super(props);
 
-        const configSections = this.props.config.getSections();
-        const testPattern = this.props.config.testPattern;
-
-        this.state = {
-            hash: window.location.hash.substr(1),
-            sections: processConfigSections({ configSections, testPattern }),
-            defaultSections: processConfigSections({ configSections, testPattern }),
-        };
-
         this.handleHashChange = this.handleHashChange.bind(this);
     }
 
@@ -33,6 +24,15 @@ class App extends Component {
     }
 
     componentDidMount() {
+        const configSections = this.props.config.getSections();
+        const testPattern = this.props.config.testPattern;
+
+        this.setState({
+            hash: window.location.hash.substr(1),
+            sections: processConfigSections({ configSections, testPattern }),
+            defaultSections: processConfigSections({ configSections, testPattern }),
+        });
+
         window.addEventListener('hashchange', this.handleHashChange);
     }
 
@@ -108,6 +108,10 @@ class App extends Component {
     }
 
     render() {
+        if (!this.state) {
+            return null;
+        }
+
         let content = null;
         let currentUrl = null;
         const sections = this.state.sections;

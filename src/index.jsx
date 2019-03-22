@@ -8,25 +8,40 @@ import App from './app';
 
 import config from '__GLOBAL__CONFIG__';
 
-const metaViewport = document.createElement('meta');
-metaViewport.name = 'viewport';
-metaViewport.content =
-    'initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0, width=device-width';
-document.getElementsByTagName('head')[0].appendChild(metaViewport);
+class Index extends React.Component {
+    componentDidMount() {
+        const metaViewport = document.createElement('meta');
+        metaViewport.name = 'viewport';
+        metaViewport.content =
+            'initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0, width=device-width';
+        document.getElementsByTagName('head')[0].appendChild(metaViewport);
 
-const element = document.createElement('div');
-element.setAttribute('class', 'styleguide-wrapper');
-document.body.appendChild(element);
-
-function render() {
-    if (config.browserSetup) {
-        config.browserSetup();
+        if (config.browserSetup) {
+            config.browserSetup();
+        }
     }
 
-    ReactDom.render(<App config={config} />, element);
+    render() {
+        return <App config={config} />;
+    }
 }
 
-render();
+ReactDom.render(<Index />, getWrapperElement());
+
+function getWrapperElement() {
+    const wrapper = document.getElementById('styleguide-wrapper');
+
+    if (wrapper) {
+        return wrapper;
+    }
+
+    const element = document.createElement('div');
+    element.setAttribute('class', 'styleguide-wrapper');
+    element.setAttribute('id', 'styleguide-wrapper');
+    document.body.appendChild(element);
+
+    return element;
+}
 
 if (module.hot) {
     module.hot.accept();
