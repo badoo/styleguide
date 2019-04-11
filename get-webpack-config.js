@@ -8,7 +8,7 @@ module.exports = function getWebpackConfig({
     devServerUrl,
     buildDir,
     isReactNative,
-    modulesDirectory,
+    getComponentRoots,
     configPath,
 }) {
     return {
@@ -61,14 +61,14 @@ module.exports = function getWebpackConfig({
                     exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
                     use: [
                         {
-                            loader: 'babel-loader',
-                            options: getBabelOptions({ isReactNative }),
-                        },
-                        {
                             loader: 'component',
                             options: {
-                                cwd: modulesDirectory,
+                                getComponentRoots,
                             },
+                        },
+                        {
+                            loader: 'babel-loader',
+                            options: getBabelOptions({ isReactNative }),
                         },
                     ],
                 },

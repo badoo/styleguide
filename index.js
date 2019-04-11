@@ -20,7 +20,7 @@ const config = require(configPath);
 const PORT = argv.port || 8080;
 const HOST = argv.host || 'localhost';
 
-const { webpackConfig: webpackConfigFromProject, modulesDirectory } = config.getWebpackConfig({
+const { webpackConfig: webpackConfigFromProject, getComponentRoots } = config.getWebpackConfig({
     nodeRequire: require,
     path,
     webpack,
@@ -30,7 +30,7 @@ const ourWebpackConfig = getWebpackConfig({
     devServerUrl: `http://${HOST}:${PORT}`,
     buildDir: argv.buildDir,
     isReactNative: config.isReactNative,
-    modulesDirectory,
+    getComponentRoots,
     configPath,
 });
 

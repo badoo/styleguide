@@ -8,8 +8,17 @@ module.exports = function(source) {
 
     const options = loaderUtils.getOptions(this);
 
-    // We only want to componentise files in current working directory
-    if (this.resourcePath.indexOf(options.cwd) === -1) {
+    const componentRoots = options.getComponentRoots();
+
+    let isComponent = false;
+    componentRoots.forEach(componentRoot => {
+        // We only want to componentise files in current working directory
+        if (this.resourcePath.indexOf(componentRoot) !== -1) {
+            isComponent = true;
+        }
+    });
+
+    if (!isComponent) {
         return source;
     }
 
