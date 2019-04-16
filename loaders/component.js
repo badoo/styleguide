@@ -68,8 +68,7 @@ module.exports = function(source) {
         /* eslint-enable no-useless-escape */
     } catch (err) {
         if (
-            !/Multiple exported component definitions found/.test(err) &&
-            !/No suitable component definition found/.test(err)
+            !/Multiple exported component definitions found/.test(err)
         ) {
             console.warn(this.resourcePath, err);
         }

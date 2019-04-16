@@ -61,15 +61,15 @@ module.exports = function getWebpackConfig({
                     exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
                     use: [
                         {
+                            loader: 'babel-loader',
+                            options: getBabelOptions({ isReactNative }),
+                        },
+                        {
                             loader: 'component',
                             options: {
                                 getComponentRoots,
                             },
-                        },
-                        {
-                            loader: 'babel-loader',
-                            options: getBabelOptions({ isReactNative }),
-                        },
+                        }
                     ],
                 },
                 {
@@ -133,6 +133,11 @@ function getBabelOptions({ isReactNative }) {
 
     return {
         babelrc: false,
+        generatorOpts: {
+            retainLines: true,
+            compact: false,
+            minified: false,
+        },
         presets: [
             [
                 require.resolve('@babel/preset-env'),

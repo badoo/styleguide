@@ -1,3 +1,4 @@
+import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import * as ReactDom from 'react-dom';
 
@@ -26,7 +27,9 @@ class Index extends React.Component {
     }
 }
 
-ReactDom.render(<Index />, getWrapperElement());
+const HotIndex = hot(Index);
+
+ReactDom.render(<HotIndex />, getWrapperElement());
 
 function getWrapperElement() {
     const wrapper = document.getElementById('styleguide-wrapper');
@@ -41,8 +44,4 @@ function getWrapperElement() {
     document.body.appendChild(element);
 
     return element;
-}
-
-if (module.hot) {
-    module.hot.accept();
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { hot } from 'react-hot-loader/root';
 
 import Sidebar from './components/sidebar';
 import Content from './components/content';
@@ -24,16 +23,19 @@ class App extends Component {
     }
 
     componentDidMount() {
-        const configSections = this.props.config.getSections();
-        const testPattern = this.props.config.testPattern;
+        window.addEventListener('hashchange', this.handleHashChange);
+    }
 
-        this.setState({
+    // Needed for hot loader
+    static getDerivedStateFromProps(props) {
+        const configSections = props.config.getSections();
+        const testPattern = props.config.testPattern;
+
+        return {
             hash: window.location.hash.substr(1),
             sections: processConfigSections({ configSections, testPattern }),
             defaultSections: processConfigSections({ configSections, testPattern }),
-        });
-
-        window.addEventListener('hashchange', this.handleHashChange);
+        };
     }
 
     componentWillUnmount() {
@@ -140,7 +142,7 @@ class App extends Component {
     }
 }
 
-export default hot(App);
+export default App;
 
 function getComponentFilename(str) {
     const paths = str.split('/');
