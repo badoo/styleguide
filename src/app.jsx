@@ -13,6 +13,12 @@ class App extends Component {
         super(props);
 
         this.handleHashChange = this.handleHashChange.bind(this);
+
+        this.state = {
+            hash: window.location.hash.substr(1),
+            sections: [],
+            defaultSections: []
+        }
     }
 
     getDefaultSections() {
