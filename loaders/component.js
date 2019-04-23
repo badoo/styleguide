@@ -1,5 +1,7 @@
+const path = require('path');
 const reactDocs = require('react-docgen');
 const loaderUtils = require('loader-utils');
+const { isDebug } = require('../build-arguments');
 
 module.exports = function(source) {
     if (this.cacheable) {
@@ -8,13 +10,16 @@ module.exports = function(source) {
 
     const options = loaderUtils.getOptions(this);
 
-    const componentRoots = options.getComponentRoots();
+    const componentRoots = options.componentRoots;
 
     let isComponent = false;
+    let foundComponentRoot = null;
+
     componentRoots.forEach(componentRoot => {
         // We only want to componentise files in current working directory
         if (this.resourcePath.indexOf(componentRoot) !== -1) {
             isComponent = true;
+            foundComponentRoot = componentRoot;
         }
     });
 
@@ -28,13 +33,21 @@ module.exports = function(source) {
         const doc = reactDocs.parse(source, null, null, {
             // Babel parser doesn't like it if you pass config
             // but don't pass the file to scan other configs from
-            // even though you explicitly don't want to use babrlrc
+            // even though you explicitly don't want to use babelrc
             filename: '',
         });
+
+        const fileName = path.basename(this.resourcePath);
 
         const meta = {
             name: doc.displayName,
             description: doc.description,
+            filePath: this.resourcePath,
+            fileName,
+            fileNameWithoutPrefix: fileName
+                .split('.')
+                .slice(0, -1)
+                .join('.'),
             propTypes: doc.props
                 ? Object.keys(doc.props).reduce(function(types, key) {
                       const originalProp = doc.props[key];
@@ -68,7 +81,8 @@ module.exports = function(source) {
         /* eslint-enable no-useless-escape */
     } catch (err) {
         if (!/Multiple exported component definitions found/.test(err)) {
-            console.warn(this.resourcePath, err);
+            const componentPath = this.resourcePath.replace(foundComponentRoot, '');
+            console.warn(componentPath, isDebug ? err : err.message);
         }
 
         results = source;

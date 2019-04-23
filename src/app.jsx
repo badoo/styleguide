@@ -15,6 +15,7 @@ class App extends Component {
         this.handleHashChange = this.handleHashChange.bind(this);
 
         this.state = {
+            searchQuery: null,
             hash: window.location.hash.substr(1),
             sections: [],
             defaultSections: [],
@@ -33,13 +34,34 @@ class App extends Component {
     }
 
     // Needed for hot loader
-    static getDerivedStateFromProps(props) {
+    static getDerivedStateFromProps(props, state) {
         const configSections = props.config.getSections();
         const testPattern = props.config.testPattern;
 
+        let sections = processConfigSections({ configSections, testPattern });
+
+        if (state.searchQuery) {
+            sections = sections.filter(section => {
+                const components = section.components.filter(component => {
+                    const searchValue = component.name.toLowerCase();
+
+                    return searchValue.indexOf(state.searchQuery) !== -1;
+                });
+
+                if (components.length > 0) {
+                    section.isOpened = true;
+                    section.components = components;
+
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+        }
+
         return {
             hash: window.location.hash.substr(1),
-            sections: processConfigSections({ configSections, testPattern }),
+            sections,
             defaultSections: processConfigSections({ configSections, testPattern }),
         };
     }
@@ -85,34 +107,7 @@ class App extends Component {
 
     handleSearchChange(event) {
         const searchQuery = event.target.value.toLowerCase();
-        this.setState({ sections: this.getDefaultSections() }, () =>
-            this.filterSections(searchQuery)
-        );
-    }
-
-    filterSections(searchQuery) {
-        if (searchQuery.length === 0) {
-            return;
-        }
-
-        const sections = this.state.sections.filter(section => {
-            const components = section.components.filter(component => {
-                const searchValue = component.name.toLowerCase();
-
-                return searchValue.indexOf(searchQuery) !== -1;
-            });
-
-            if (components.length > 0) {
-                section.isOpened = true;
-                section.components = components;
-
-                return true;
-            } else {
-                return false;
-            }
-        });
-
-        this.setState({ sections });
+        this.setState({ searchQuery });
     }
 
     render() {
@@ -160,7 +155,7 @@ function processConfigComponent({ component, sectionName, isSpecificationPath })
 
     const isSpecPath = isSpecificationPath || defaultIsSpecificationPath;
 
-    const testsPaths = dependencyResolver.keys().filter(key => isSpecPath(meta.name, key));
+    const testsPaths = dependencyResolver.keys().filter(key => isSpecPath(meta, key));
 
     const testsModules = testsPaths.map(dependencyResolver);
 
@@ -205,6 +200,6 @@ function processConfigSections({ configSections, testPattern }) {
     return configSections.map(section => processConfigSection({ section, testPattern }));
 }
 
-function defaultIsSpecificationPath(componentName, path) {
-    return path.indexOf(`${componentName}.spec`) !== -1;
+function defaultIsSpecificationPath(componentMeta, path) {
+    return path.indexOf(`${componentMeta.fileNameWithoutPrefix}.spec`) !== -1;
 }

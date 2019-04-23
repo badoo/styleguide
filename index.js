@@ -20,7 +20,11 @@ const config = require(configPath);
 const PORT = argv.port || 8080;
 const HOST = argv.host || 'localhost';
 
-const { webpackConfig: webpackConfigFromProject, getComponentRoots } = config.getWebpackConfig({
+const {
+    webpackConfig: webpackConfigFromProject,
+    getComponentRoots,
+    babelConfig,
+} = config.getWebpackConfig({
     nodeRequire: require,
     path,
     webpack,
@@ -32,18 +36,13 @@ const ourWebpackConfig = getWebpackConfig({
     isReactNative: config.isReactNative,
     getComponentRoots,
     configPath,
+    babelConfig,
 });
 
 const mergedConfig = webpackMerge.smart(ourWebpackConfig, webpackConfigFromProject);
 
 const compiler = webpack(mergedConfig);
-const devServerOptions = Object.assign({}, ourWebpackConfig.devServer, {
-    hot: true,
-    clientLogLevel: 'warning',
-    stats: {
-        colors: true,
-    },
-});
+const devServerOptions = Object.assign({}, ourWebpackConfig.devServer);
 
 const server = new WebpackDevServer(compiler, devServerOptions);
 
