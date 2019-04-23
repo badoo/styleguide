@@ -17,7 +17,12 @@ function Section(props) {
             <div className="styleguide-section__content">
                 {list.map((item, key) => (
                     <div className="styleguide-section__component" key={key}>
-                        <Component data={item} />
+                        <Component
+                            name={item.name}
+                            description={item.description}
+                            propTypes={item.propTypes}
+                            tests={item.tests}
+                        />
                     </div>
                 ))}
             </div>

@@ -36,8 +36,6 @@ module.exports = function getWebpackConfig({
                                 url: true,
                             },
                         },
-                        'ltr-rtl',
-                        'post-css',
                         'sass-loader',
                     ],
                 },
@@ -51,8 +49,6 @@ module.exports = function getWebpackConfig({
                                 url: true,
                             },
                         },
-                        'ltr-rtl',
-                        'post-css',
                     ],
                 },
                 {
