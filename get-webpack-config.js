@@ -10,6 +10,7 @@ module.exports = function getWebpackConfig({
     isReactNative,
     getComponentRoots,
     configPath,
+    babelConfig,
 }) {
     return {
         entry: [
@@ -62,14 +63,14 @@ module.exports = function getWebpackConfig({
                     use: [
                         {
                             loader: 'babel-loader',
-                            options: getBabelOptions({ isReactNative }),
+                            options: getBabelOptions({ isReactNative, babelConfig }),
                         },
                         {
                             loader: 'component',
                             options: {
                                 getComponentRoots,
                             },
-                        }
+                        },
                     ],
                 },
                 {
@@ -121,7 +122,18 @@ module.exports = function getWebpackConfig({
     };
 };
 
-function getBabelOptions({ isReactNative }) {
+function getBabelOptions({ isReactNative, babelConfig }) {
+    if (babelConfig) {
+        if (!babelConfig.plugins) {
+            babelConfig.plugins = [];
+        }
+
+        babelConfig.plugins.unshift(require.resolve('react-hot-loader/babel'));
+
+        return babelConfig;
+    }
+
+    // @TODO - rethink this, should clients always pass their babel config? Or should we auto-detect it?
     if (isReactNative) {
         return {
             babelrc: false,
@@ -131,6 +143,7 @@ function getBabelOptions({ isReactNative }) {
         };
     }
 
+    // @TODO - rethink this, should clients always pass their babel config? Or should we auto-detect it?
     return {
         babelrc: false,
         generatorOpts: {

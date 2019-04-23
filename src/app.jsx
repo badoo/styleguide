@@ -17,8 +17,8 @@ class App extends Component {
         this.state = {
             hash: window.location.hash.substr(1),
             sections: [],
-            defaultSections: []
-        }
+            defaultSections: [],
+        };
     }
 
     getDefaultSections() {
@@ -150,14 +150,7 @@ class App extends Component {
 
 export default App;
 
-function getComponentFilename(str) {
-    const paths = str.split('/');
-    const file = paths[paths.length - 1];
-
-    return file.substr(0, file.lastIndexOf('.'));
-}
-
-function processConfigComponent({ component, sectionName, testPattern }) {
+function processConfigComponent({ component, sectionName, isSpecificationPath }) {
     const meta = component.__meta;
     const dependencyResolver = component.__dependencyResolver;
 
@@ -165,7 +158,9 @@ function processConfigComponent({ component, sectionName, testPattern }) {
         return null;
     }
 
-    const testsPaths = dependencyResolver.keys().filter(key => testPattern.test(key));
+    const isSpecPath = isSpecificationPath || defaultIsSpecificationPath;
+
+    const testsPaths = dependencyResolver.keys().filter(key => isSpecPath(meta.name, key));
 
     const testsModules = testsPaths.map(dependencyResolver);
 
@@ -197,74 +192,19 @@ function getTestConfiguration(testModules) {
         }));
 }
 
-function processConfigSection({ section: { name, webpackContext, components }, testPattern }) {
-    let componentsList;
-
-    // Extract components automatically from webpack context
-    if (webpackContext) {
-        const componentsDefinitions = [];
-        const componentsSpecs = [];
-
-        webpackContext.keys().forEach(componentName => {
-            try {
-                const component = webpackContext(componentName);
-                const info = {
-                    name,
-                    fileName: getComponentFilename(componentName),
-                    component,
-                };
-
-                if (testPattern.test(componentName)) {
-                    componentsSpecs.push(info);
-                } else {
-                    componentsDefinitions.push(info);
-                }
-            } catch (e) {
-                const errorLabel = `Failed to load component: ${componentName}`;
-
-                console.groupCollapsed(errorLabel);
-                console.error(e);
-                console.groupEnd(errorLabel);
-            }
-        });
-
-        componentsList = componentsDefinitions
-            .map(({ component, name: componentName, fileName }) => {
-                const meta = component.__meta;
-
-                if (!meta) {
-                    return false;
-                }
-
-                const componentSpecs = componentsSpecs.reduce((_specs, item) => {
-                    if (item.fileName.indexOf(fileName) !== -1) {
-                        _specs.push(item.component);
-                    }
-
-                    return _specs;
-                }, []);
-
-                return {
-                    url: encodeURIComponent(`${componentName}-${meta.name}`),
-                    name: meta.name,
-                    description: meta.description,
-                    propTypes: meta.propTypes,
-                    tests: getTestConfiguration(componentSpecs),
-                };
-            })
-            .filter(Boolean);
-    } else {
-        componentsList = components
-            .map(component => processConfigComponent({ component, sectionName: name, testPattern }))
-            .filter(Boolean);
-    }
-
+function processConfigSection({ section: { name, components }, testPattern }) {
     return {
         name,
-        components: componentsList,
+        components: components
+            .map(component => processConfigComponent({ component, sectionName: name, testPattern }))
+            .filter(Boolean),
     };
 }
 
 function processConfigSections({ configSections, testPattern }) {
     return configSections.map(section => processConfigSection({ section, testPattern }));
+}
+
+function defaultIsSpecificationPath(componentName, path) {
+    return path.indexOf(`${componentName}.spec`) !== -1;
 }
