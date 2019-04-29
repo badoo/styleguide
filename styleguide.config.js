@@ -1,8 +1,6 @@
 /* eslint-env node */
 
 module.exports = {
-    testPattern: /spec\./,
-
     getSections() {
         return [
             {

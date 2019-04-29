@@ -24,7 +24,7 @@ module.exports = function getWebpackConfig({
             path.resolve(__dirname, 'src/index.jsx'),
         ],
         output: {
-            path: buildDir || path.resolve(__dirname, 'dist'),
+            path: buildDir ? path.resolve(process.cwd(), buildDir) : path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
         },
         devServer: {
