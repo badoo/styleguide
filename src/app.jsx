@@ -15,10 +15,11 @@ class App extends Component {
         this.handleHashChange = this.handleHashChange.bind(this);
 
         this.state = {
+            searchQuery: null,
             hash: window.location.hash.substr(1),
             sections: [],
-            defaultSections: []
-        }
+            defaultSections: [],
+        };
     }
 
     getDefaultSections() {
@@ -33,13 +34,34 @@ class App extends Component {
     }
 
     // Needed for hot loader
-    static getDerivedStateFromProps(props) {
+    static getDerivedStateFromProps(props, state) {
         const configSections = props.config.getSections();
         const testPattern = props.config.testPattern;
 
+        let sections = processConfigSections({ configSections, testPattern });
+
+        if (state.searchQuery) {
+            sections = sections.filter(section => {
+                const components = section.components.filter(component => {
+                    const searchValue = component.name.toLowerCase();
+
+                    return searchValue.indexOf(state.searchQuery) !== -1;
+                });
+
+                if (components.length > 0) {
+                    section.isOpened = true;
+                    section.components = components;
+
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+        }
+
         return {
             hash: window.location.hash.substr(1),
-            sections: processConfigSections({ configSections, testPattern }),
+            sections,
             defaultSections: processConfigSections({ configSections, testPattern }),
         };
     }
@@ -85,34 +107,7 @@ class App extends Component {
 
     handleSearchChange(event) {
         const searchQuery = event.target.value.toLowerCase();
-        this.setState({ sections: this.getDefaultSections() }, () =>
-            this.filterSections(searchQuery)
-        );
-    }
-
-    filterSections(searchQuery) {
-        if (searchQuery.length === 0) {
-            return;
-        }
-
-        const sections = this.state.sections.filter(section => {
-            const components = section.components.filter(component => {
-                const searchValue = component.name.toLowerCase();
-
-                return searchValue.indexOf(searchQuery) !== -1;
-            });
-
-            if (components.length > 0) {
-                section.isOpened = true;
-                section.components = components;
-
-                return true;
-            } else {
-                return false;
-            }
-        });
-
-        this.setState({ sections });
+        this.setState({ searchQuery });
     }
 
     render() {
@@ -150,14 +145,7 @@ class App extends Component {
 
 export default App;
 
-function getComponentFilename(str) {
-    const paths = str.split('/');
-    const file = paths[paths.length - 1];
-
-    return file.substr(0, file.lastIndexOf('.'));
-}
-
-function processConfigComponent({ component, sectionName, testPattern }) {
+function processConfigComponent({ component, sectionName, isSpecificationPath }) {
     const meta = component.__meta;
     const dependencyResolver = component.__dependencyResolver;
 
@@ -165,7 +153,9 @@ function processConfigComponent({ component, sectionName, testPattern }) {
         return null;
     }
 
-    const testsPaths = dependencyResolver.keys().filter(key => testPattern.test(key));
+    const isSpecPath = isSpecificationPath || defaultIsSpecificationPath;
+
+    const testsPaths = dependencyResolver.keys().filter(key => isSpecPath(meta, key));
 
     const testsModules = testsPaths.map(dependencyResolver);
 
@@ -197,74 +187,19 @@ function getTestConfiguration(testModules) {
         }));
 }
 
-function processConfigSection({ section: { name, webpackContext, components }, testPattern }) {
-    let componentsList;
-
-    // Extract components automatically from webpack context
-    if (webpackContext) {
-        const componentsDefinitions = [];
-        const componentsSpecs = [];
-
-        webpackContext.keys().forEach(componentName => {
-            try {
-                const component = webpackContext(componentName);
-                const info = {
-                    name,
-                    fileName: getComponentFilename(componentName),
-                    component,
-                };
-
-                if (testPattern.test(componentName)) {
-                    componentsSpecs.push(info);
-                } else {
-                    componentsDefinitions.push(info);
-                }
-            } catch (e) {
-                const errorLabel = `Failed to load component: ${componentName}`;
-
-                console.groupCollapsed(errorLabel);
-                console.error(e);
-                console.groupEnd(errorLabel);
-            }
-        });
-
-        componentsList = componentsDefinitions
-            .map(({ component, name: componentName, fileName }) => {
-                const meta = component.__meta;
-
-                if (!meta) {
-                    return false;
-                }
-
-                const componentSpecs = componentsSpecs.reduce((_specs, item) => {
-                    if (item.fileName.indexOf(fileName) !== -1) {
-                        _specs.push(item.component);
-                    }
-
-                    return _specs;
-                }, []);
-
-                return {
-                    url: encodeURIComponent(`${componentName}-${meta.name}`),
-                    name: meta.name,
-                    description: meta.description,
-                    propTypes: meta.propTypes,
-                    tests: getTestConfiguration(componentSpecs),
-                };
-            })
-            .filter(Boolean);
-    } else {
-        componentsList = components
-            .map(component => processConfigComponent({ component, sectionName: name, testPattern }))
-            .filter(Boolean);
-    }
-
+function processConfigSection({ section: { name, components }, testPattern }) {
     return {
         name,
-        components: componentsList,
+        components: components
+            .map(component => processConfigComponent({ component, sectionName: name, testPattern }))
+            .filter(Boolean),
     };
 }
 
 function processConfigSections({ configSections, testPattern }) {
     return configSections.map(section => processConfigSection({ section, testPattern }));
+}
+
+function defaultIsSpecificationPath(componentMeta, path) {
+    return path.indexOf(`${componentMeta.fileNameWithoutPrefix}.spec`) !== -1;
 }
