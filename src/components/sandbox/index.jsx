@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './index.scss';
 
 import Icon from '../icon';
-import IconFullScreenOn from './icon-fullscreen-on.svg';
-import IconFullScreenOff from './icon-fullscreen-off.svg';
-import IconMinimizeOn from './icon-minimize-on.svg';
-import IconMinimizeOff from './icon-minimize-off.svg';
 import Dialog from '../dialog';
 
 export default class Sandbox extends Component {
@@ -47,9 +43,9 @@ export default class Sandbox extends Component {
                             }}
                         >
                             {this.isVisible ? (
-                                <Icon src={<IconMinimizeOff />} />
+                                <Icon name={Icon.Names.MINIMIZE_OFF} />
                             ) : (
-                                <Icon src={<IconMinimizeOn />} />
+                                <Icon name={Icon.Names.MINIMIZE_ON} />
                             )}
                         </span>
 
@@ -61,9 +57,9 @@ export default class Sandbox extends Component {
                             }}
                         >
                             {this.state.isFullScreen ? (
-                                <Icon src={<IconFullScreenOn />} />
+                                <Icon name={Icon.Names.FULLSCREEN_ON} />
                             ) : (
-                                <Icon src={<IconFullScreenOff />} />
+                                <Icon name={Icon.Names.FULLSCREEN_OFF} />
                             )}
                         </span>
                     </div>

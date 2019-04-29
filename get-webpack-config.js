@@ -48,8 +48,6 @@ module.exports = function getWebpackConfig({
                                 url: true,
                             },
                         },
-                        'ltr-rtl',
-                        'post-css',
                         'sass-loader',
                     ],
                 },
@@ -63,8 +61,6 @@ module.exports = function getWebpackConfig({
                                 url: true,
                             },
                         },
-                        'ltr-rtl',
-                        'post-css',
                     ],
                 },
                 {
@@ -85,14 +81,6 @@ module.exports = function getWebpackConfig({
                 {
                     test: /\.(woff|ttf)$/i,
                     use: ['file-loader'],
-                },
-                {
-                    test: /\.svg$/i,
-                    oneOf: [
-                        {
-                            use: ['babel-loader', 'react-svg-loader'],
-                        },
-                    ],
                 },
             ],
         },
