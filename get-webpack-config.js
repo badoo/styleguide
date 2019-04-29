@@ -82,14 +82,6 @@ module.exports = function getWebpackConfig({
                     test: /\.(woff|ttf)$/i,
                     use: ['file-loader'],
                 },
-                {
-                    test: /\.svg$/i,
-                    oneOf: [
-                        {
-                            use: ['babel-loader', 'react-svg-loader'],
-                        },
-                    ],
-                },
             ],
         },
         resolve: {
