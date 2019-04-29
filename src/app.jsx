@@ -36,9 +36,9 @@ class App extends Component {
     // Needed for hot loader
     static getDerivedStateFromProps(props, state) {
         const configSections = props.config.getSections();
-        const testPattern = props.config.testPattern;
+        const isSpecificationPath = props.config.isSpecificationPath;
 
-        let sections = processConfigSections({ configSections, testPattern });
+        let sections = processConfigSections({ configSections, isSpecificationPath });
 
         if (state.searchQuery) {
             sections = sections.filter(section => {
@@ -62,7 +62,7 @@ class App extends Component {
         return {
             hash: window.location.hash.substr(1),
             sections,
-            defaultSections: processConfigSections({ configSections, testPattern }),
+            defaultSections: processConfigSections({ configSections, isSpecificationPath }),
         };
     }
 
@@ -187,17 +187,17 @@ function getTestConfiguration(testModules) {
         }));
 }
 
-function processConfigSection({ section: { name, components }, testPattern }) {
+function processConfigSection({ section: { name, components }, isSpecificationPath }) {
     return {
         name,
         components: components
-            .map(component => processConfigComponent({ component, sectionName: name, testPattern }))
+            .map(component => processConfigComponent({ component, sectionName: name, isSpecificationPath }))
             .filter(Boolean),
     };
 }
 
-function processConfigSections({ configSections, testPattern }) {
-    return configSections.map(section => processConfigSection({ section, testPattern }));
+function processConfigSections({ configSections, isSpecificationPath }) {
+    return configSections.map(section => processConfigSection({ section, isSpecificationPath }));
 }
 
 function defaultIsSpecificationPath(componentMeta, path) {
