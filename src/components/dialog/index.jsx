@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import Icon from '../icon';
+
 import IconClose from './icon-close.svg';
 
 const KEYCODES = {
@@ -86,7 +87,7 @@ class Dialog extends Component {
                 <div className="styleguide-dialog__header">
                     <h1 className="styleguide-dialog__title">{this.props.title}</h1>
                     <div className="styleguide-dialog__close" onClick={e => this.closeDialog(e)}>
-                        <Icon src={<IconClose />} />
+                        <Icon name={Icon.Names.CLOSE} />
                     </div>
                 </div>
                 <div className="styleguide-dialog__content">{children}</div>
