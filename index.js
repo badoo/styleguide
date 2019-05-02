@@ -26,23 +26,30 @@ const config = require(configPath);
 const PORT = argv.port || 8080;
 const HOST = argv.host || 'localhost';
 
-const {
-    webpackConfig: webpackConfigFromProject,
-    getComponentRoots,
-    babelConfig,
-} = config.getWebpackConfig({
+const webpackConfigFromProject = config.getWebpackConfig({
     nodeRequire: require,
     path,
     webpack,
 });
 
+if (
+    webpackConfigFromProject &&
+    webpackConfigFromProject.module &&
+    webpackConfigFromProject.module.rules
+) {
+    throw new Error(
+        `Please don't use module.rules in your webpack config, pass getLoaderForModule() instead. See the documentation for more info.`
+    );
+}
+
 const ourWebpackConfig = getWebpackConfig({
     devServerUrl: `http://${HOST}:${PORT}`,
     buildDir: argv.buildDir,
     isReactNative: config.isReactNative,
-    getComponentRoots,
     configPath,
-    babelConfig,
+    getBabelConfig: config.getBabelConfig,
+    getComponentRoots: config.getComponentRoots,
+    getLoaderForModule: config.getLoaderForModule,
 });
 
 const mergedConfig = webpackMerge.smart(ourWebpackConfig, webpackConfigFromProject);

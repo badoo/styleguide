@@ -66,6 +66,14 @@ module.exports = {
         ];
     },
 
+    // This method tells us the root folder of your component
+    // heirarchy
+    getComponentRoots({ path }) {
+        return [
+            path.resolve(cwd, 'src')
+        ];
+    },
+
     /**
      * Returns the webpack configuration for your module setup
      * @param {string} path - The "path" node module to help you resolve any paths
@@ -74,24 +82,14 @@ module.exports = {
     getWebpackConfig({ path }) {
         const cwd = path.resolve(__dirname, '.');
 
+        // Any custom webpack configuration you need, this will be merged
+        // using webpack-merge
         return {
-            // This method tells us the root folder of your component
-            // heirarchy
-            getComponentRoots() {
-                return [
-                    path.resolve(cwd, 'src')
-                ];
-            },
-
-            // Any custom webpack configuration you need, this will be merged
-            // using webpack-merge
-            webpackConfig: {
-                resolve: {
-                    modules: [
-                        path.resolve(cwd, 'src/'),
-                        path.resolve(cwd, 'node_modules/'),
-                    ],
-                }
+            resolve: {
+                modules: [
+                    path.resolve(cwd, 'src/'),
+                    path.resolve(cwd, 'node_modules/'),
+                ],
             }
         };
     }

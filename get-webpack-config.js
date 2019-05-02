@@ -11,9 +11,10 @@ module.exports = function getWebpackConfig({
     devServerUrl,
     buildDir,
     isReactNative,
-    getComponentRoots,
     configPath,
-    babelConfig,
+    getComponentRoots,
+    getBabelConfig,
+    getLoaderForModule,
 }) {
     return {
         mode: 'development',
@@ -24,7 +25,9 @@ module.exports = function getWebpackConfig({
             path.resolve(__dirname, 'src/index.jsx'),
         ],
         output: {
-            path: buildDir ? path.resolve(process.cwd(), buildDir) : path.resolve(__dirname, 'dist'),
+            path: buildDir
+                ? path.resolve(process.cwd(), buildDir)
+                : path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
         },
         devServer: {
@@ -39,48 +42,52 @@ module.exports = function getWebpackConfig({
         module: {
             rules: [
                 {
-                    test: /\.scss$/,
-                    use: [
-                        'style-loader', // creates style nodes from JS strings
+                    oneOf: [
+                        // This loader lets the consumers override any specific loaders
+                        // they want
                         {
-                            loader: 'css-loader',
-                            options: {
-                                url: true,
+                            test(resource) {
+                                if (getLoaderForModule) {
+                                    return Boolean(getLoaderForModule({ resource, path }));
+                                }
+
+                                return false;
+                            },
+
+                            use({ resource }) {
+                                return getLoaderForModule({ resource, path });
                             },
                         },
-                        'sass-loader',
-                    ],
-                },
-                {
-                    test: /\.css$/,
-                    use: [
-                        'style-loader',
                         {
-                            loader: 'css-loader',
-                            options: {
-                                url: true,
-                            },
+                            test: /\.scss$/,
+                            use: [
+                                'style-loader', // creates style nodes from JS strings
+                                'css-loader',
+                                'sass-loader',
+                            ],
+                        },
+                        {
+                            test: /\.css$/,
+                            use: ['style-loader', 'css-loader'],
+                        },
+                        {
+                            test: /\.(j|t)sx?$/,
+                            // React native modules usually always need to be loaded by metro
+                            exclude: isReactNative
+                                ? undefined
+                                : /node_modules\/(?!badoo-styleguide)/,
+                            use: 'happypack/loader?id=js',
+                        },
+                        {
+                            test: /\.(gif|png|jpe?g|woff|ttf)$/i,
+                            use: ['file-loader'],
                         },
                     ],
-                },
-                {
-                    test: /\.(j|t)sx?$/,
-                    // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
-                    use: 'happypack/loader?id=js',
                 },
                 {
                     test: /\.(j|t)sx?$/,
                     include: /node_modules/,
                     use: ['react-hot-loader/webpack'],
-                },
-                {
-                    test: /\.(gif|png|jpe?g)$/i,
-                    use: ['file-loader'],
-                },
-                {
-                    test: /\.(woff|ttf)$/i,
-                    use: ['file-loader'],
                 },
             ],
         },
@@ -112,12 +119,12 @@ module.exports = function getWebpackConfig({
                 loaders: [
                     {
                         loader: 'babel-loader',
-                        options: getBabelOptions({ isReactNative, babelConfig }),
+                        options: getBabelOptions({ isReactNative, getBabelConfig }),
                     },
                     {
                         loader: 'component',
                         options: {
-                            componentRoots: getComponentRoots(),
+                            componentRoots: getComponentRoots({ path }),
                         },
                     },
                 ],
@@ -126,14 +133,16 @@ module.exports = function getWebpackConfig({
     };
 };
 
-function getBabelOptions({ isReactNative, babelConfig }) {
+function getBabelOptions({ isReactNative, getBabelConfig }) {
     let babelOverrides = {
         compact: false,
         minified: false,
         cacheDirectory: true,
     };
 
-    if (babelConfig) {
+    if (getBabelConfig) {
+        const babelConfig = getBabelConfig({ path });
+
         if (!babelConfig.plugins) {
             babelConfig.plugins = [];
         }
