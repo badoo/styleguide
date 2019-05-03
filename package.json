@@ -1,16 +1,17 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.13",
+  "version": "0.0.16",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
   "bin": "./index.js",
   "scripts": {
     "deps": "yarn install --pure-lockfile",
-    "build": "yarn deps && node ./node_modules/.bin/webpack",
+    "build": "yarn start --config=styleguide.config.js --buildDir=./dist/",
     "start": "yarn deps && node ./index.js",
     "lint": "eslint . --fix --ext .js,.jsx",
-    "prettier": "prettier --write '**/*.?(j|t)s?(x)'"
+    "prettier": "prettier --write '**/*.?(j|t)s?(x)'",
+    "styleguide": "yarn start --config=styleguide.config.js"
   },
   "dependencies": {
     "@babel/core": "^7.4.0",
@@ -54,8 +55,8 @@
     "react-dom": "16.8.4"
   },
   "devDependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "16.8.4",
-    "prop-types": "^15.7.2"
+    "react-dom": "16.8.4"
   }
 }
