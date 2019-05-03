@@ -11,3 +11,7 @@
   * Deprecated babelConfig object in favour of getBabelConfig()
   * Instead of hacky merging let the user return loaders for files using getLoaderForModule
   * Move getComponentRoots out of getWebpackConfig
+
+## v0.0.17
+
+* Remove unused dependency of icon
