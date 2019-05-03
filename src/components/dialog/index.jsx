@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import Icon from '../icon';
 
-import IconClose from './icon-close.svg';
-
 const KEYCODES = {
     ESCAPE: 27,
 };
