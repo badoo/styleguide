@@ -23,6 +23,7 @@ module.exports = {
 
         return [
             path.resolve(cwd, 'src'),
+            path.resolve(cwd, 'examples'),
         ];
     },
 
