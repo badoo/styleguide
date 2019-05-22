@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Sandbox from '../sandbox';
 import classNames from 'classnames';
 
 import config from '__GLOBAL__CONFIG__';
+import Sandbox from 'components/sandbox/sandbox';
 
 import './component.scss';
 
 class Component extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             isPropsCollapsed: false,
         };
+
+        this.handlePropsClick = this.handlePropsClick.bind(this);
     }
 
     handlePropsClick() {
@@ -50,7 +52,7 @@ class Component extends React.Component {
                             <span
                                 role="button"
                                 className={classnames.handler}
-                                onClick={this.handlePropsClick.bind(this)}
+                                onClick={this.handlePropsClick}
                             >
                                 PROPERTIES
                             </span>

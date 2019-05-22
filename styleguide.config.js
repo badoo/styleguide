@@ -6,7 +6,7 @@ module.exports = {
             {
                 name: 'Examples',
                 components: [
-                    // require('examples/my-typescript-component/my-typescript-component'),
+                    require('examples/my-typescript-component/my-typescript-component'),
                     require('examples/my-javascript-component/my-javascript-component'),
                 ]
             },
@@ -14,6 +14,11 @@ module.exports = {
                 name: 'UI',
                 components: [
                     require('components/component/component'),
+                ],
+            },
+            {
+                name: 'Empty seciton',
+                components: [
                 ],
             },
         ];

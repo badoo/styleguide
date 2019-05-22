@@ -15,3 +15,9 @@
 ## v0.0.17
 
 * Remove unused dependency of icon
+
+## v0.0.18
+
+* Added TypeScript support
+* Hot load structure updated
+* Styleguide Components simplified

@@ -1,13 +1,10 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
-import 'normalize.css';
-import './index.scss';
-
-import App from './app';
 
 import config from '__GLOBAL__CONFIG__';
+import AppWrapper from 'app-wrapper';
 
-class Index extends React.Component {
+class HotIndex extends React.Component {
     componentDidMount() {
         const metaViewport = document.createElement('meta');
         metaViewport.name = 'viewport';
@@ -21,8 +18,8 @@ class Index extends React.Component {
     }
 
     render() {
-        return <App config={config} />;
+        return <AppWrapper config={config} />;
     }
 }
 
-export default hot(Index);
+export default hot(HotIndex);
