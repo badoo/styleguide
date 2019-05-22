@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
 import Sidebar from './components/sidebar';
 import Content from './components/content';
 import Section from './components/section';
 import Navigation from './components/navigation';
 import SearchField from './components/search-field';
+import Component from './components/component';
 
 const VRT_URL = 'vrt';
 
-class App extends Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
 
@@ -115,7 +116,12 @@ class App extends Component {
             return null;
         }
 
-        let content = null;
+        let content = (
+            <Component
+                name={'Welcome!'}
+                description={'Style guide is a tool to illustrate, sandbox and test your components.'}
+            />
+        );
         let currentUrl = null;
         const sections = this.state.sections;
 
@@ -124,7 +130,7 @@ class App extends Component {
                 content = sections.map(({ name, components }) => (
                     <Section key={name} title={name} list={components} isVrtEnabled={true} />
                 ));
-            } else {
+            } else if (this.state.hash) {
                 const { section, component } = this.getCurrentComponentAndSection(sections);
                 currentUrl = component.url;
                 content = <Section title={section.name} list={[component]} />;
@@ -174,8 +180,8 @@ function getTestConfiguration(testModules) {
     return testModules
         .reduce((list, module) => {
             const variations = Object.keys(module)
-                // Filter out system stuff (__meta, __dependencyResolver)
-                // @todo make explicit
+            // Filter out system stuff (__meta, __dependencyResolver)
+            // @todo make explicit
                 .filter(exportKey => exportKey.indexOf('__') === -1)
                 .map(exportKey => module[exportKey]);
 
