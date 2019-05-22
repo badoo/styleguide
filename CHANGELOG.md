@@ -19,3 +19,5 @@
 ## v0.0.18
 
 * Added TypeScript support
+* Hot load structure updated
+* Styleguide Components simplified
