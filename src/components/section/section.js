@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import Component from '../component';
 
-import './index.scss';
+import './section.scss';
+import Component from 'components/component/component';
 
 function Section(props) {
     const { list, isVrtEnabled } = props;
@@ -15,8 +15,8 @@ function Section(props) {
     return (
         <section className={classnames}>
             <div className="styleguide-section__content">
-                {list.map((item, key) => (
-                    <div className="styleguide-section__component" key={key}>
+                {list.filter(Boolean).map((item, key) => (
+                    <div className="styleguide-section__component" key={item.url}>
                         <Component
                             name={item.name}
                             description={item.description}
@@ -29,5 +29,9 @@ function Section(props) {
         </section>
     );
 }
+
+Section.defaultProps = {
+    list: [],
+};
 
 export default Section;

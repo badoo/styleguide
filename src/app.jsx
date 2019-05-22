@@ -1,74 +1,41 @@
-import React  from 'react';
-
-import Sidebar from './components/sidebar';
-import Content from './components/content';
-import Section from './components/section';
-import Navigation from './components/navigation';
-import SearchField from './components/search-field';
-import Component from './components/component';
+import React from 'react';
+import AppView from 'app-view';
 
 const VRT_URL = 'vrt';
 
-class App extends React.Component {
+class App extends React.PureComponent {
     constructor(props) {
         super(props);
 
         this.handleHashChange = this.handleHashChange.bind(this);
 
         this.state = {
-            searchQuery: null,
+            searchQuery: '',
             hash: window.location.hash.substr(1),
-            sections: [],
-            defaultSections: [],
+            sections: this.props.sections,
         };
-    }
-
-    getDefaultSections() {
-        return this.state.defaultSections.map(({ name, components }) => ({
-            name,
-            components: components.map(component => component),
-        }));
     }
 
     componentDidMount() {
         window.addEventListener('hashchange', this.handleHashChange);
     }
 
-    // Needed for hot loader
-    static getDerivedStateFromProps(props, state) {
-        const configSections = props.config.getSections();
-        const isSpecificationPath = props.config.isSpecificationPath;
-
-        let sections = processConfigSections({ configSections, isSpecificationPath });
-
-        if (state.searchQuery) {
-            sections = sections.filter(section => {
-                const components = section.components.filter(component => {
-                    const searchValue = component.name.toLowerCase();
-
-                    return searchValue.indexOf(state.searchQuery) !== -1;
-                });
-
-                if (components.length > 0) {
-                    section.isOpened = true;
-                    section.components = components;
-
-                    return true;
-                } else {
-                    return false;
-                }
-            });
-        }
-
-        return {
-            hash: window.location.hash.substr(1),
-            sections,
-            defaultSections: processConfigSections({ configSections, isSpecificationPath }),
-        };
-    }
-
     componentWillUnmount() {
         window.removeEventListener('hashchange', this.handleHashChange);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        // config is updated, need to update current state sections
+        if (prevProps.sections !== this.props.sections) {
+            let sections = this.props.sections;
+
+            // filter them if the search mode is active
+            if (this.state.searchQuery) {
+                sections = processSearchQuery(this.state.searchQuery, this.props.sections);
+            }
+
+            this.setState({ sections });
+        }
     }
 
     handleHashChange() {
@@ -78,134 +45,80 @@ class App extends React.Component {
     }
 
     getCurrentComponentAndSection(sections) {
-        const result = {
-            section: sections[0],
-            component: sections[0].components[0],
-        };
-
         if (!this.state.hash) {
-            return result;
+            return {
+                section: null,
+                component: null,
+            };
         }
 
-        for (let i = 0, isFound = false; i < sections.length; i += 1) {
-            for (let j = 0; j < sections[i].components.length; j += 1) {
-                if (sections[i].components[j].url === this.state.hash) {
-                    result.section = sections[i];
-                    result.section.isOpened = true;
-                    result.component = sections[i].components[j];
-                    isFound = true;
-                    break;
-                }
-            }
+        const currentSection = sections.filter(
+            section => section.components.filter(
+                component => component.url === this.state.hash
+            ).length
+        )[0] || null;
 
-            if (isFound) {
-                break;
-            }
-        }
+        const currentComponent = currentSection.components.filter(
+            component => component.url === this.state.hash
+        )[0] || null;
 
-        return result;
+        return {
+            section: currentSection,
+            component: currentComponent,
+        };
     }
 
     handleSearchChange(event) {
         const searchQuery = event.target.value.toLowerCase();
-        this.setState({ searchQuery });
+
+        if (searchQuery && searchQuery !== this.state.searchQuery) {
+            const sections = processSearchQuery(searchQuery, this.props.sections);
+            this.setState({ searchQuery, sections });
+        } else if (!searchQuery) {
+            this.setState({ searchQuery: '', sections: this.props.sections });
+        }
     }
 
     render() {
-        if (!this.state) {
-            return null;
-        }
-
-        let content = (
-            <Component
-                name={'Welcome!'}
-                description={'Style guide is a tool to illustrate, sandbox and test your components.'}
-            />
-        );
-        let currentUrl = null;
-        const sections = this.state.sections;
-
-        if (sections.length > 0) {
-            if (this.state.hash === VRT_URL) {
-                content = sections.map(({ name, components }) => (
-                    <Section key={name} title={name} list={components} isVrtEnabled={true} />
-                ));
-            } else if (this.state.hash) {
-                const { section, component } = this.getCurrentComponentAndSection(sections);
-                currentUrl = component.url;
-                content = <Section title={section.name} list={[component]} />;
-            }
-        }
+        let sections = [];
 
         return (
-            <div className="styleguide">
-                <Sidebar>
-                    <SearchField onChange={event => this.handleSearchChange(event)} />
-                    <Navigation list={sections} currentUrl={currentUrl} />
-                </Sidebar>
-                <Content>{content}</Content>
-            </div>
+            <AppView
+                currentHash={this.state.hash}
+                sections={this.state.sections}
+                searchQuery={this.state.searchQuery}
+                onSearchFieldChange={event => this.handleSearchChange(event)}
+            />
         );
     }
 }
 
 export default App;
 
-function processConfigComponent({ component, sectionName, isSpecificationPath }) {
-    const meta = component.__meta;
-    const dependencyResolver = component.__dependencyResolver;
+function processSearchQuery(searchQuery, sections) {
+    const searchResultSections = [];
 
-    if (!dependencyResolver) {
-        return null;
+    if (searchQuery) {
+        sections.map(section => {
+            const components = section.components.filter(component => {
+                const searchValue = component.name.toLowerCase();
+                return searchValue.indexOf(searchQuery) !== -1;
+            });
+
+            if (components.length) {
+                const {
+                    components: skipComponents,
+                    ...filteredSectionFields
+                } = section;
+
+                searchResultSections.push({
+                    ...filteredSectionFields,
+                    isOpened: true,
+                    components
+                });
+            }
+        });
     }
 
-    const isSpecPath = isSpecificationPath || defaultIsSpecificationPath;
-
-    const testsPaths = dependencyResolver.keys().filter(key => isSpecPath(meta, key));
-
-    const testsModules = testsPaths.map(dependencyResolver);
-
-    const tests = getTestConfiguration(testsModules);
-
-    return {
-        url: encodeURIComponent(`${sectionName}-${meta.name}`),
-        name: meta.name,
-        description: meta.description,
-        propTypes: meta.propTypes,
-        tests,
-    };
-}
-
-function getTestConfiguration(testModules) {
-    return testModules
-        .reduce((list, module) => {
-            const variations = Object.keys(module)
-            // Filter out system stuff (__meta, __dependencyResolver)
-            // @todo make explicit
-                .filter(exportKey => exportKey.indexOf('__') === -1)
-                .map(exportKey => module[exportKey]);
-
-            return list.concat(variations);
-        }, [])
-        .map(Test => ({
-            name: Test.name,
-            Component: Test,
-        }));
-}
-
-function processConfigSection({ section: { name, components }, isSpecificationPath }) {
-    return {
-        name,
-        components: components
-            .map(component => processConfigComponent({ component, sectionName: name, isSpecificationPath }))
-            .filter(Boolean),
-    };
-}
-
-function processConfigSections({ configSections, isSpecificationPath }) {
-    return configSections.map(section => processConfigSection({ section, isSpecificationPath }));
-}
-
-function defaultIsSpecificationPath(componentMeta, path) {
-    return path.indexOf(`${componentMeta.fileNameWithoutPrefix}.spec`) !== -1;
+    return searchResultSections;
 }

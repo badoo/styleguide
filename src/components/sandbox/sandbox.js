@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import './index.scss';
+import React from 'react';
+import './sandbox.scss';
 
-import Icon from '../icon';
-import Dialog from '../dialog';
+import Icon from 'components/icon/icon';
+import Dialog from 'components/dialog/dialog';
 
-export default class Sandbox extends Component {
+export default class Sandbox extends React.Component {
     constructor(props) {
         super(props);
 

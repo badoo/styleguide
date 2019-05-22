@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import Icon from '../icon';
+
+import Icon from 'components/icon/icon';
+
+import './dialog.scss';
 
 const KEYCODES = {
     ESCAPE: 27,
 };
 
-class Dialog extends Component {
+class Dialog extends React.Component {
     constructor(props) {
         super(props);
 

@@ -1,6 +1,7 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import './index.scss';
+
+import './icon.scss';
 
 const Names = {
     CLOSE: 'CLOSE',
@@ -40,15 +41,11 @@ const mapNameToCode = {
     )
 };
 
-class Icon extends PureComponent {
-    render() {
-        return (
-            <div className="styleguide-icon" role="presentation">
-                {mapNameToCode[this.props.name]}
-            </div>
-        );
-    }
-}
+const Icon = ({ name }) => (
+    <div className="styleguide-icon" role="presentation">
+        {mapNameToCode[name]}
+    </div>
+);
 
 Icon.propTypes = {
     name: PropTypes.oneOf(Object.keys(Names)).isRequired,
