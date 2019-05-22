@@ -15,6 +15,7 @@ module.exports = function getWebpackConfig({
     getComponentRoots,
     getBabelConfig,
     getLoaderForModule,
+    tsConfigPath
 }) {
     return {
         mode: 'development',
@@ -72,17 +73,29 @@ module.exports = function getWebpackConfig({
                         },
                         {
                             test: /\.(j|t)sx?$/,
-                            // React native modules usually always need to be loaded by metro
-                            exclude: isReactNative
-                                ? undefined
-                                : /node_modules\/(?!badoo-styleguide)/,
-                            use: 'happypack/loader?id=js',
+                            use: 'happypack/loader?id=babel',
                         },
                         {
                             test: /\.(gif|png|jpe?g|woff|ttf)$/i,
                             use: ['file-loader'],
                         },
                     ],
+                },
+                {
+                    test: /\.jsx?$/,
+                    // React native modules usually always need to be loaded by metro
+                    exclude: isReactNative
+                        ? undefined
+                        : /node_modules\/(?!badoo-styleguide)/,
+                    use: 'happypack/loader?id=js-component',
+                },
+                {
+                    test: /\.tsx?$/,
+                    // React native modules usually always need to be loaded by metro
+                    exclude: isReactNative
+                        ? undefined
+                        : /node_modules\/(?!badoo-styleguide)/,
+                    use: 'happypack/loader?id=ts-component',
                 },
                 {
                     test: /\.(j|t)sx?$/,
@@ -113,7 +126,7 @@ module.exports = function getWebpackConfig({
                 DEBUG: false,
             }),
             new HappyPack({
-                id: 'js',
+                id: 'babel',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: [
@@ -121,11 +134,42 @@ module.exports = function getWebpackConfig({
                         loader: 'babel-loader',
                         options: getBabelOptions({ isReactNative, getBabelConfig }),
                     },
+                ],
+            }),
+            new HappyPack({
+                id: 'js-component',
+                verbose: isDebug,
+                debug: isDebug,
+                loaders: [
                     {
-                        loader: 'component',
+                        loader: 'js-component',
                         options: {
                             componentRoots: getComponentRoots({ path }),
                         },
+                    },
+                ],
+            }),
+            new HappyPack({
+                id: 'ts-component',
+                verbose: isDebug,
+                debug: isDebug,
+                loaders: [
+                    {
+                        loader: 'ts-component',
+                        options: {
+                            componentRoots: getComponentRoots({ path }),
+                            tsConfigPath: tsConfigPath,
+                        },
+                    },
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            configFile: tsConfigPath,
+                            happyPackMode: true,
+                            compilerOptions: {
+                                noEmit: false
+                            }
+                        }
                     },
                 ],
             }),

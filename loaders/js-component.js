@@ -72,11 +72,11 @@ module.exports = function(source) {
         if (source.indexOf('module.exports') !== -1) {
             results = `${source}
             module.exports.__meta = ${JSON.stringify(meta)};
-            module.exports.__dependencyResolver = require.context('./', true, /\.jsx?/);`;
+            module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
         } else {
             results = `${source}
             export const __meta = ${JSON.stringify(meta)};
-            export const __dependencyResolver = require.context('./', true, /\.jsx?/);`;
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
         }
         /* eslint-enable no-useless-escape */
     } catch (err) {
