@@ -1,14 +1,15 @@
 import React from 'react';
-import Sidebar from 'components/sidebar/sidebar';
-import SearchField from 'components/search-field/search-field';
-import Navigation from 'components/navigation/navigation';
-import Content from 'components/content/content';
-
-import 'index.scss';
-import 'normalize.css';
 import PropTypes from 'prop-types';
-import Section from 'components/section/section';
-import Component from 'components/component/component';
+
+import Sidebar from './components/sidebar/sidebar';
+import SearchField from './components/search-field/search-field';
+import Navigation from './components/navigation/navigation';
+import Content from './components/content/content';
+import Section from './components/section/section';
+import Component from './components/component/component';
+
+import 'normalize.css';
+import './index.scss';
 
 class AppView extends React.Component {
     constructor(props) {

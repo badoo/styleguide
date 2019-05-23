@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import Icon from 'components/icon/icon';
 
 import './navigation.scss';
 

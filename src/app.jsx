@@ -1,5 +1,6 @@
 import React from 'react';
-import AppView from 'app-view';
+
+import AppView from './app-view';
 
 const VRT_URL = 'vrt';
 

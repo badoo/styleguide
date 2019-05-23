@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './navigation.scss';
-import NavigationSection from 'components/navigation/navigation-section';
+import NavigationSection from './navigation-section';
 
 class Navigation extends React.PureComponent {
     render() {

@@ -1,6 +1,7 @@
 import React from 'react';
-import './search-field.scss';
 import PropTypes from 'prop-types';
+
+import './search-field.scss';
 
 function SearchField(props) {
     return (

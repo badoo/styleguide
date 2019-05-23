@@ -1,8 +1,9 @@
 import React from 'react';
-import './sandbox.scss';
 
-import Icon from 'components/icon/icon';
-import Dialog from 'components/dialog/dialog';
+import Icon from '../icon/icon';
+import Dialog from '../dialog/dialog';
+
+import './sandbox.scss';
 
 export default class Sandbox extends React.Component {
     constructor(props) {

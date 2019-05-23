@@ -1,5 +1,5 @@
 import React from 'react';
-import App from 'app';
+import App from './app';
 
 class AppWrapper extends React.PureComponent {
     render() {

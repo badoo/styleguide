@@ -1,8 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import Component from '../component/component';
+
 import './section.scss';
-import Component from 'components/component/component';
 
 function Section(props) {
     const { list, isVrtEnabled } = props;
