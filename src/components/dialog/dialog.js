@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Icon from 'components/icon/icon';
+import Icon from '../icon/icon';
 
 import './dialog.scss';
 

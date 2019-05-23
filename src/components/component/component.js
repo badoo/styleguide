@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import config from '__GLOBAL__CONFIG__';
-import Sandbox from 'components/sandbox/sandbox';
+import Sandbox from '../sandbox/sandbox';
 
 import './component.scss';
 
