@@ -29,23 +29,27 @@ class NavigationSection extends React.PureComponent {
                 >
                     {this.props.name}
                 </div>
-                {(this.state.isOpened) && (
-                    <div className="styleguide-navigation__components">
-                        {this.props.links.map((link, index) => (
-                            <div className="styleguide-navigation__item" key={link.url || index}>
-                                <a
-                                    href={`#${link.url}`}
-                                    className={classNames({
-                                        'styleguide-navigation__link': true,
-                                        'is-active': link.isActive
-                                    })}
-                                >
-                                    {link.name}
-                                </a>
-                            </div>
-                        ))}
-                    </div>
-                )}
+                <div className={classNames({
+                    'styleguide-navigation__components': true,
+                    'is-hidden': !this.state.isOpened,
+                })}>
+                    {this.props.links.map((link, index) => (
+                        <div
+                            className="styleguide-navigation__item"
+                            key={link.url || index}
+                        >
+                            <a
+                                href={`#${link.url}`}
+                                className={classNames({
+                                    'styleguide-navigation__link': true,
+                                    'is-active': link.isActive
+                                })}
+                            >
+                                {link.name}
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
         );
     }

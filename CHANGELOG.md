@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.20
+* Navigation is VRT compatible – you can get the list of components with css selector
+
 ## v0.0.19
 * Fixed errors in 0.0.18
 * Changelog reversed
