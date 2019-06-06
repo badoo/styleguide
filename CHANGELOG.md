@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.21
+* Updated dependencies to fix security vulnerabilities
+
 ## v0.0.20
 * Navigation is VRT compatible – you can get the list of components with css selector
 
