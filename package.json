@@ -55,7 +55,7 @@
   },
   "peerDependencies": {
     "react": "^16.8.0",
-    "react-dom": "16.8.4"
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
     "prop-types": "^15.7.2",
