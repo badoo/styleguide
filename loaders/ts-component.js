@@ -45,22 +45,22 @@ module.exports = function(source) {
                 .join('.'),
             propTypes: doc.props
                 ? Object.keys(doc.props).reduce(function(types, key) {
-                    const originalProp = doc.props[key];
+                      const originalProp = doc.props[key];
 
-                    types[key] = {
-                        type: originalProp.type.name.replace('| undefined', ''),
-                        description: originalProp.description,
-                    };
+                      types[key] = {
+                          type: originalProp.type.name.replace('| undefined', ''),
+                          description: originalProp.description,
+                      };
 
-                    // props with default value are not required
-                    if (originalProp.defaultValue) {
-                        types[key].defaultValue = originalProp.defaultValue.value;
-                    } else {
-                        types[key].required = originalProp.required;
-                    }
+                      // props with default value are not required
+                      if (originalProp.defaultValue) {
+                          types[key].defaultValue = originalProp.defaultValue.value;
+                      } else {
+                          types[key].required = originalProp.required;
+                      }
 
-                    return types;
-                }, {})
+                      return types;
+                  }, {})
                 : null,
         };
 

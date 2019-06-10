@@ -2,8 +2,6 @@ import React from 'react';
 
 import AppView from './app-view';
 
-const VRT_URL = 'vrt';
-
 class App extends React.PureComponent {
     constructor(props) {
         super(props);
@@ -25,7 +23,7 @@ class App extends React.PureComponent {
         window.removeEventListener('hashchange', this.handleHashChange);
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         // config is updated, need to update current state sections
         if (prevProps.sections !== this.props.sections) {
             let sections = this.props.sections;
@@ -53,15 +51,15 @@ class App extends React.PureComponent {
             };
         }
 
-        const currentSection = sections.filter(
-            section => section.components.filter(
-                component => component.url === this.state.hash
-            ).length
-        )[0] || null;
+        const currentSection =
+            sections.filter(
+                section =>
+                    section.components.filter(component => component.url === this.state.hash).length
+            )[0] || null;
 
-        const currentComponent = currentSection.components.filter(
-            component => component.url === this.state.hash
-        )[0] || null;
+        const currentComponent =
+            currentSection.components.filter(component => component.url === this.state.hash)[0] ||
+            null;
 
         return {
             section: currentSection,
@@ -81,8 +79,6 @@ class App extends React.PureComponent {
     }
 
     render() {
-        let sections = [];
-
         return (
             <AppView
                 currentHash={this.state.hash}
@@ -107,15 +103,12 @@ function processSearchQuery(searchQuery, sections) {
             });
 
             if (components.length) {
-                const {
-                    components: skipComponents,
-                    ...filteredSectionFields
-                } = section;
+                const { ...filteredSectionFields } = section;
 
                 searchResultSections.push({
                     ...filteredSectionFields,
                     isOpened: true,
-                    components
+                    components,
                 });
             }
         });

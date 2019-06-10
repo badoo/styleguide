@@ -4,7 +4,8 @@ import App from './app';
 class AppWrapper extends React.PureComponent {
     render() {
         const configSections = this.props.config.getSections();
-        const isSpecificationPath = this.props.config.isSpecificationPath || defaultIsSpecificationPath;
+        const isSpecificationPath =
+            this.props.config.isSpecificationPath || defaultIsSpecificationPath;
         const sections = processConfigSections({ configSections, isSpecificationPath });
 
         return <App sections={sections} />;
@@ -23,7 +24,9 @@ function processConfigSection({ section: { name, components }, isSpecificationPa
     return {
         name,
         components: components
-            .map(component => processConfigComponent({ component, sectionName: name, isSpecificationPath }))
+            .map(component =>
+                processConfigComponent({ component, sectionName: name, isSpecificationPath })
+            )
             .filter(Boolean),
     };
 }
@@ -54,8 +57,8 @@ function getTestConfiguration(testModules) {
     return testModules
         .reduce((list, module) => {
             const variations = Object.keys(module)
-            // Filter out system stuff (__meta, __dependencyResolver)
-            // @todo make explicit
+                // Filter out system stuff (__meta, __dependencyResolver)
+                // @todo make explicit
                 .filter(exportKey => exportKey.indexOf('__') === -1)
                 .map(exportKey => module[exportKey]);
             return list.concat(variations);

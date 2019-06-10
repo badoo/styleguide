@@ -2,11 +2,7 @@ import React from 'react';
 import Component from './component';
 
 export function SpecComponentEmpty() {
-    return (
-        <Component
-            name={'BasicComponent'}
-        />
-    );
+    return <Component name={'BasicComponent'} />;
 }
 
 export function SpecComponentPropTypes() {
@@ -17,8 +13,9 @@ export function SpecComponentPropTypes() {
                 name: {
                     type: 'string',
                     required: true,
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo!'
-                }
+                    description:
+                        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo!',
+                },
             }}
         />
     );
@@ -32,12 +29,11 @@ export function SpecComponentFull() {
                 name: {
                     type: 'string',
                     required: true,
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo!'
-                }
+                    description:
+                        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo!',
+                },
             }}
-            tests={[
-                { name: 'SpecComponentEmpty', Component: SpecComponentEmpty },
-            ]}
+            tests={[{ name: 'SpecComponentEmpty', Component: SpecComponentEmpty }]}
         />
     );
 }
