@@ -1,44 +1,44 @@
 .styleguide-dialog {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    left: 0;
+    z-index: 10;
+    top: 0;
     right: 0;
     bottom: 0;
-    top: 0;
-    background-color: #fff;
-    width: 100vw;
-    height: 100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
 }
 
 .styleguide-dialog__header {
+    position: relative;
     display: flex;
     align-items: center;
     flex: 0 1 auto;
-    font-family: sans-serif;
-    position: relative;
     padding: 16px;
     background-color: #fafafa;
     color: #282828;
+    font-family: sans-serif;
 }
 
 .styleguide-dialog__title {
     margin-bottom: 0;
-    font: 400 16px -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', 'Lucida Grande', sans-serif
+    font: 400 16px -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', 'Lucida Grande', sans-serif;
 }
 
 .styleguide-dialog__close {
     position: absolute;
-    display: flex;
-    right: 16px;
     top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+    right: 16px;
+    display: flex;
     opacity: .5;
+    transform: translateY(-50%);
     transition: opacity .2s ease-out;
+    cursor: pointer;
 
     &:hover {
         opacity: 1;
@@ -46,9 +46,9 @@
 }
 
 .styleguide-dialog__content {
-    padding: 10px;
-    flex: 1 1 auto;
     overflow-x: hidden;
     overflow-y: auto;
+    flex: 1 1 auto;
+    padding: 10px;
     transform: translate3d(0, 0, 0);
 }

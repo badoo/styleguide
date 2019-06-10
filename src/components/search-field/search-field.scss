@@ -2,34 +2,34 @@ $ui-border-color: #ccc;
 
 .styleguide-search-field {
     position: relative;
-    color: $ui-border-color;
-    padding: 0 12px;
     margin-bottom: 16px;
+    padding: 0 12px;
+    color: $ui-border-color;
     font-family: sans-serif;
 }
 
 .styleguide-search-field__input {
-    background-color: #fff;
-    width: 100%;
     display: block;
-    font-size: 16px;
-    color: #303030;
+    width: 100%;
     height: 40px;
-    line-height: 32px;
     padding: 6px 6px 6px 36px;
     border: 1px solid #ccc;
+    background-color: #fff;
+    color: #303030;
+    font-size: 16px;
+    line-height: 32px;
 
     &::-webkit-input-placeholder {
         color: $ui-border-color;
         opacity: 1;
     }
 
-    &:-moz-placeholder {
+    &::-moz-placeholder {
         color: $ui-border-color;
         opacity: 1;
     }
 
-    &::-moz-placeholder {
+    &:-moz-placeholder {
         color: $ui-border-color;
         opacity: 1;
     }
@@ -42,10 +42,10 @@ $ui-border-color: #ccc;
 
 .styleguide-search-field__icon {
     position: absolute;
-    left: 20px;
     top: 50%;
-    transform: translateY(-50%);
-    color: $ui-border-color;
+    left: 20px;
     width: 24px;
     height: 24px;
+    color: $ui-border-color;
+    transform: translateY(-50%);
 }
