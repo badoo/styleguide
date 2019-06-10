@@ -1,15 +1,14 @@
 .error-boundary {
-    padding: 0 16px;
+    padding: 16px;
     background: rgba(222, 23, 56, .2);
     color: rgba(222, 23, 56, 1);
 }
 
 .error-boundary__title {
-    padding-top: 16px;
+    margin: 0;
 }
 
 .error-boundary__text {
-    padding-bottom: 16px;
+    margin: 0;
     white-space: pre-line;
 }
-

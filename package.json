@@ -1,6 +1,6 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.20",
+  "version": "0.0.22",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "html-webpack-plugin": "3.2.0",
     "loader-utils": "^1.2.3",
     "metro-react-native-babel-preset": "^0.53.0",
-    "node-sass": "4.11.0",
+    "node-sass": "4.12.0",
     "normalize.css": "8.0.1",
     "raw-loader": "1.0.0",
     "react-art": "^16.8.6",
@@ -55,11 +55,15 @@
   },
   "peerDependencies": {
     "react": "^16.8.0",
-    "react-dom": "16.8.4"
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "16.8.4"
+  },
+  "resolutions": {
+    "js-yaml": "3.13.1",
+    "node-sass/**/tar": "2.2.2"
   }
 }
