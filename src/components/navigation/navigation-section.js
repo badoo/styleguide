@@ -12,10 +12,10 @@ class NavigationSection extends React.PureComponent {
         };
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         if (this.props.isOpened !== prevProps.isOpened || this.props.isOpened) {
             this.setState({
-                isOpened: this.props.isOpened
+                isOpened: this.props.isOpened,
             });
         }
     }
@@ -29,20 +29,19 @@ class NavigationSection extends React.PureComponent {
                 >
                     {this.props.name}
                 </div>
-                <div className={classNames({
-                    'styleguide-navigation__components': true,
-                    'is-hidden': !this.state.isOpened,
-                })}>
+                <div
+                    className={classNames({
+                        'styleguide-navigation__components': true,
+                        'is-hidden': !this.state.isOpened,
+                    })}
+                >
                     {this.props.links.map((link, index) => (
-                        <div
-                            className="styleguide-navigation__item"
-                            key={link.url || index}
-                        >
+                        <div className="styleguide-navigation__item" key={link.url || index}>
                             <a
                                 href={`#${link.url}`}
                                 className={classNames({
                                     'styleguide-navigation__link': true,
-                                    'is-active': link.isActive
+                                    'is-active': link.isActive,
                                 })}
                             >
                                 {link.name}

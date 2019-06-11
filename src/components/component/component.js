@@ -23,12 +23,7 @@ class Component extends React.Component {
     }
 
     render() {
-        const {
-            name,
-            description,
-            propTypes,
-            tests
-        } = this.props;
+        const { name, description, propTypes, tests } = this.props;
 
         const classnames = {
             handler: classNames({
@@ -62,37 +57,37 @@ class Component extends React.Component {
                             <div className="styleguide-component__props-data">
                                 <table>
                                     <thead>
-                                    <tr>
-                                        <th>PropType</th>
-                                        <th>Type</th>
-                                        <th>Default</th>
-                                        <th>Description</th>
-                                    </tr>
+                                        <tr>
+                                            <th>PropType</th>
+                                            <th>Type</th>
+                                            <th>Default</th>
+                                            <th>Description</th>
+                                        </tr>
                                     </thead>
 
                                     <tbody>
-                                    {Object.keys(propTypes).map(key => {
-                                        const prop = propTypes[key];
+                                        {Object.keys(propTypes).map(key => {
+                                            const prop = propTypes[key];
 
-                                        return (
-                                            <tr key={key}>
-                                                <td>
-                                                    <code>{key}</code>
-                                                </td>
-                                                <td>
-                                                    <code>{prop.type}</code>
-                                                </td>
-                                                <td>
-                                                    <code>
-                                                        {prop.required
-                                                            ? 'Required'
-                                                            : prop.defaultValue}
-                                                    </code>
-                                                </td>
-                                                <td>{prop.description}</td>
-                                            </tr>
-                                        );
-                                    })}
+                                            return (
+                                                <tr key={key}>
+                                                    <td>
+                                                        <code>{key}</code>
+                                                    </td>
+                                                    <td>
+                                                        <code>{prop.type}</code>
+                                                    </td>
+                                                    <td>
+                                                        <code>
+                                                            {prop.required
+                                                                ? 'Required'
+                                                                : prop.defaultValue}
+                                                        </code>
+                                                    </td>
+                                                    <td>{prop.description}</td>
+                                                </tr>
+                                            );
+                                        })}
                                     </tbody>
                                 </table>
                             </div>
@@ -121,19 +116,20 @@ class Component extends React.Component {
 Component.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string,
-    propTypes: PropTypes.objectOf(PropTypes.shape({
-        type: PropTypes.string,
-        required: PropTypes.bool,
-        defaultValue: PropTypes.any,
-        description: PropTypes.string,
-    })),
-    tests: PropTypes.arrayOf(PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        Component: PropTypes.oneOfType([
-            PropTypes.element,
-            PropTypes.func,
-        ])
-    })),
+    propTypes: PropTypes.objectOf(
+        PropTypes.shape({
+            type: PropTypes.string,
+            required: PropTypes.bool,
+            defaultValue: PropTypes.any,
+            description: PropTypes.string,
+        })
+    ),
+    tests: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            Component: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+        })
+    ),
 };
 
 export default Component;

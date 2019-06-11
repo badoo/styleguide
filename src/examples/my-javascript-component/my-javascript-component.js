@@ -13,17 +13,10 @@ const mapColorToHex = {
     [Color.NEGATIVE]: '#900',
 };
 
-const MyJavascriptComponent = (props) => {
-    const {
-        name,
-        color,
-    } = props;
+const MyJavascriptComponent = props => {
+    const { name, color } = props;
 
-    return (
-        <div style={{ color: mapColorToHex[color] }}>
-            The name is {name}!
-        </div>
-    );
+    return <div style={{ color: mapColorToHex[color] }}>The name is {name}!</div>;
 };
 
 MyJavascriptComponent.propTypes = {
@@ -32,7 +25,7 @@ MyJavascriptComponent.propTypes = {
 };
 
 MyJavascriptComponent.defaultProps = {
-    color: Color.NEUTRAL
+    color: Color.NEUTRAL,
 };
 
 export default MyJavascriptComponent;

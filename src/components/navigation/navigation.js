@@ -5,11 +5,7 @@ import NavigationSection from './navigation-section';
 
 class Navigation extends React.PureComponent {
     render() {
-        const {
-            sections,
-            expandAll,
-            currentHash,
-        } = this.props;
+        const { sections, expandAll, currentHash } = this.props;
 
         return (
             <nav className="styleguide-navigation">
@@ -21,7 +17,7 @@ class Navigation extends React.PureComponent {
                         links={section.components.map(item => ({
                             name: item.name,
                             url: item.url,
-                            isActive: item.url === currentHash
+                            isActive: item.url === currentHash,
                         }))}
                     />
                 ))}

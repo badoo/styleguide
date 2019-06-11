@@ -29,7 +29,7 @@ class AppView extends React.Component {
         this.checkDisplayedComponent();
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         if (prevProps.currentHash !== this.props.currentHash) {
             this.checkDisplayedComponent();
             this.checkCurrentSection();
@@ -37,7 +37,7 @@ class AppView extends React.Component {
 
         if (this.props.sections !== prevProps.sections) {
             this.setState({
-                sections: mapPropsToSections(this.props.sections, this.props.currentHash)
+                sections: mapPropsToSections(this.props.sections, this.props.currentHash),
             });
         }
     }
@@ -49,10 +49,7 @@ class AppView extends React.Component {
     }
 
     checkDisplayedComponent() {
-        const {
-            currentHash,
-            sections,
-        } = this.props;
+        const { currentHash, sections } = this.props;
 
         let component;
 
@@ -60,7 +57,7 @@ class AppView extends React.Component {
         component = !!section && findMatchingComponent(section.components, currentHash);
 
         this.setState({
-            component
+            component,
         });
     }
 
@@ -84,7 +81,9 @@ class AppView extends React.Component {
                     ) : (
                         <Component
                             name={'Welcome!'}
-                            description={'Style guide is a tool to illustrate, sandbox and test your components.'}
+                            description={
+                                'Style guide is a tool to illustrate, sandbox and test your components.'
+                            }
                         />
                     )}
                 </Content>
@@ -92,7 +91,6 @@ class AppView extends React.Component {
         );
     }
 }
-
 
 function mapPropsToSections(sections, hash) {
     return sections.map(section =>
