@@ -4,12 +4,12 @@
 
 .styleguide-sandbox__header {
     display: flex;
-    padding: 0 16px;
-    border-radius: 4px 4px 0 0;
-    background: #f0f0f0;
-    color: #000;
-    cursor: pointer;
     user-select: none;
+    cursor: pointer;
+    background: #f0f0f0;
+    border-radius: 4px 4px 0 0;
+    color: var(--black);
+    padding: 0 16px;
 
     .styleguide-sandbox &:only-child {
         border-radius: 4px;
@@ -18,25 +18,25 @@
 
 .styleguide-sandbox__title {
     margin: 0;
-    padding: 16px 0;
-    font-weight: 300;
     font-size: 16px;
+    font-weight: 300;
     font-family: sans-serif;
+    padding: 16px 0;
 }
 
 .styleguide-sandbox__controls {
-    display: flex;
     margin-left: auto;
+    display: flex;
 }
 
 .styleguide-sandbox__control {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 8px;
+    justify-content: center;
     color: #202020;
     opacity: .5;
     transition: opacity .1s ease;
+    padding: 0 8px;
 
     &:hover {
         opacity: 1;

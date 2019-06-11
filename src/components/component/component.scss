@@ -5,8 +5,8 @@
 .styleguide-component__title {
     margin-top: 0;
     margin-bottom: 8px;
-    color: #000;
     font-size: 32px;
+    color: var(--black);
     font-family: sans-serif;
 }
 
@@ -15,15 +15,11 @@
 }
 
 .styleguide-component__description {
-    max-width: 50%;
-    margin-bottom: 16px;
-    color: #a0a0a0;
-    font-size: 16px;
     font-family: sans-serif;
-}
-
-.styleguide-component__props-data {
-    margin-bottom: 32px;
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-bottom: 16px;
+    max-width: 50%;
 }
 
 .styleguide-component__props-controls + .styleguide-component__props-data {
@@ -31,22 +27,22 @@
 }
 
 .styleguide-component__props-handler {
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
-    font-family: sans-serif;
-    cursor: pointer;
     user-select: none;
+    font-family: sans-serif;
 
     &::before {
-        display: block;
-        width: 14px;
-        height: 14px;
-        margin-right: 4px;
         content: '+';
+        margin-right: 4px;
+        display: block;
         background: #7000e3;
         color: #fff;
-        text-align: center;
+        width: 14px;
+        height: 14px;
         line-height: 12px;
+        text-align: center;
     }
 
     &.is-collapsed {
@@ -54,6 +50,10 @@
             content: '–';
         }
     }
+}
+
+.styleguide-component__props-data {
+    margin-bottom: 32px;
 }
 
 .styleguide-component__props {
@@ -71,21 +71,20 @@
         tr {
             border-bottom: 1px solid #7000e3;
         }
-
         th {
             padding: 0 16px 8px 4px;
         }
     }
 
-    td {
-        padding: 8px 16px 8px 4px;
-    }
-
     tbody {
+        tr:nth-child(2n) {
+            background: #f0f0f0;
+        }
+
         tr {
             td:nth-child(2) {
-                color: #303030;
                 font-style: italic;
+                color: #303030;
             }
 
             td:nth-child(1) {
@@ -96,10 +95,10 @@
                 width: 45%;
             }
         }
+    }
 
-        tr:nth-child(2n) {
-            background: #f0f0f0;
-        }
+    td {
+        padding: 8px 16px 8px 4px;
     }
 }
 

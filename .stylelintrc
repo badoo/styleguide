@@ -1,8 +1,0 @@
-{
-    "extends": "stylelint-config-recommended",
-    "plugins": [
-        "stylelint-order",
-        "stylelint-scss"
-    ],
-    "defaultSeverity": "error",
-}
