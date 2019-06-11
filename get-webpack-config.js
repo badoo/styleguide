@@ -15,7 +15,7 @@ module.exports = function getWebpackConfig({
     getComponentRoots,
     getBabelConfig,
     getLoaderForModule,
-    tsConfigPath
+    tsConfigPath,
 }) {
     return {
         mode: 'development',
@@ -84,17 +84,13 @@ module.exports = function getWebpackConfig({
                 {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative
-                        ? undefined
-                        : /node_modules\/(?!badoo-styleguide)/,
+                    exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
                     use: 'happypack/loader?id=js-component',
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative
-                        ? undefined
-                        : /node_modules\/(?!badoo-styleguide)/,
+                    exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
                     use: 'happypack/loader?id=ts-component',
                 },
                 {
@@ -167,9 +163,9 @@ module.exports = function getWebpackConfig({
                             configFile: tsConfigPath,
                             happyPackMode: true,
                             compilerOptions: {
-                                noEmit: false
-                            }
-                        }
+                                noEmit: false,
+                            },
+                        },
                     },
                 ],
             }),

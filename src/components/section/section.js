@@ -16,7 +16,7 @@ function Section(props) {
     return (
         <section className={classnames}>
             <div className="styleguide-section__content">
-                {list.filter(Boolean).map((item, key) => (
+                {list.filter(Boolean).map(item => (
                     <div className="styleguide-section__component" key={item.url}>
                         <Component
                             name={item.name}
