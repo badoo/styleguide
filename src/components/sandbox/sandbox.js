@@ -1,5 +1,6 @@
 import React from 'react';
 
+import config from '__GLOBAL__CONFIG__';
 import Icon from '../icon/icon';
 import Dialog from '../dialog/dialog';
 import ErrorBoundary from '../error-boundary/error-boundary';
@@ -62,7 +63,10 @@ export default class Sandbox extends React.Component {
 
                 <ErrorBoundary>
                     {this.state.isVisible && (
-                        <div className="styleguide-sandbox__content js-styleguide-sandbox__content">
+                        <div
+                            className="styleguide-sandbox__content js-styleguide-sandbox__content"
+                            style={{ resize: config.hasResizableSandbox ? 'both' : 'none'}}
+                        >
                             {this.props.children}
                         </div>
                     )}

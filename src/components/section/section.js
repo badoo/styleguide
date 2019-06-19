@@ -5,6 +5,11 @@ import Component from '../component/component';
 
 import './section.scss';
 
+import config from '__GLOBAL__CONFIG__';
+const styles = {};
+styles.minWidth = typeof config.sandboxMinWidth !== 'undefined' && config.sandboxMinWidth;
+styles.maxWidth = typeof config.sandboxMaxWidth !== 'undefined' && config.sandboxMaxWidth;
+
 function Section(props) {
     const { list, isVrtEnabled } = props;
 
@@ -17,7 +22,7 @@ function Section(props) {
         <section className={classnames}>
             <div className="styleguide-section__content">
                 {list.filter(Boolean).map(item => (
-                    <div className="styleguide-section__component" key={item.url}>
+                    <div className="styleguide-section__component" style={styles} key={item.url}>
                         <Component
                             name={item.name}
                             description={item.description}
