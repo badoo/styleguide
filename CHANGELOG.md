@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.23
+* Ability to resize sandboxes (configurable)
+* Ability to set min and max width for sandboxes (configurable)
+
 ## v0.0.22
 * Error output is more user friendly now
 
