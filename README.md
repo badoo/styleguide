@@ -43,6 +43,26 @@ module.exports = {
     isReactNative: false,
 
     /**
+     * Set it to true if you want to resize sandboxes with the resize handle
+     * @optional
+     */
+    hasResizableSandboxes: false,
+
+    /**
+     * Min-width for the sandbox wrapper (number | string)
+     * default – 320
+     * @optional
+     */
+    sandboxMinWidth: 320,
+
+    /**
+     * Max-width for the sandbox wrapper (number | string)
+     * default – 960
+     * @optional
+     */
+    sandboxMaxWidth: '100%',
+
+    /**
      * This function will tell the styleguide if the component being included
      * is a specification/example component
      * @optional
