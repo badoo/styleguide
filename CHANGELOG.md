@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.24
+* Bugfix for VRT results in v0.0.23 – extra pixel on top removed, VRT results are equal to v0.0.22
+
 ## v0.0.23
 * Ability to resize sandboxes (configurable)
 * Ability to set min and max width for sandboxes (configurable)
