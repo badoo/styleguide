@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.25
+* Examples moved to a separate folder
+* Resizable sandboxes don't affect overflow
+
 ## v0.0.24
 * Bugfix for VRT results in v0.0.23 – extra pixel on top removed, VRT results are equal to v0.0.22
 

@@ -45,12 +45,16 @@
 }
 
 .styleguide-sandbox__content {
-    overflow: auto;
     padding: 20px;
     border: 1px solid #f0f0f0;
     border-top: 0;
     box-shadow: 0 -1px 0 0 #f0f0f0;
     transform: translate3d(0, 0, 0);
+
+    &.is-resizable {
+        overflow: auto;
+        resize: both;
+    }
 
     // we need to disable any animation in vrt
     .styleguide-section.vrt & {

@@ -1,0 +1,15 @@
+{
+  "name": "badoo-styleguide-example-basic",
+  "version": "0.0.1",
+  "description": "Basic example for the styleguide",
+  "author": "badoo",
+  "license": "MIT",
+  "scripts": {
+    "styleguide": "badoo-styleguide --config=styleguide.config.js"
+  },
+  "dependencies": {
+    "badoo-styleguide": "^0.0.24",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  }
+}

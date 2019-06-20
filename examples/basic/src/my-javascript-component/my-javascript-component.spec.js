@@ -1,5 +1,5 @@
 import React from 'react';
-import MyJavascriptComponent, { Color } from './my-javascript-component';
+import MyJavascriptComponent, { Color } from 'my-javascript-component/my-javascript-component';
 
 export const SpecMyJavascriptComponentDefault = () => <MyJavascriptComponent name={'Lorem'} />;
 
