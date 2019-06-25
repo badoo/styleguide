@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.26
+* Fixed issue with babel processing files which don't need to be processed
+
 ## v0.0.25
 * Examples moved to a separate folder
 * Resizable sandboxes don't affect overflow
