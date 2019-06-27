@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.27
+* Fixed issue with detection of re-exported ES6 components
+
 ## v0.0.26
 * Fixed issue with babel processing files which don't need to be processed
 
