@@ -36,7 +36,7 @@ function processConfigComponent({ component, sectionName, isSpecificationPath })
 
     const dependencyResolver = component.__dependencyResolver;
 
-    if (!dependencyResolver) {
+    if (!dependencyResolver || !meta) {
         return null;
     }
 

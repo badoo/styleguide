@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.28
+* Fixed issue with HOC
+
 ## v0.0.27
 * Fixed issue with detection of re-exported ES6 components
 
