@@ -97,11 +97,11 @@ class Component extends React.Component {
 
                 {tests ? (
                     <div className="styleguide-component__tests">
-                        {tests.map(({ name: sandboxName, Component }, key) => (
+                        {tests.map(({ name: sandboxName, Component: SandboxComponent }, key) => (
                             <div className="styleguide-component__sandbox" key={key}>
                                 <Sandbox title={sandboxName} name={sandboxName}>
                                     <Wrapper>
-                                        <Component />
+                                        <SandboxComponent />
                                     </Wrapper>
                                 </Sandbox>
                             </div>

@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.0.28
+* Fixed issue with HOC
+
+## v0.0.27
+* Fixed issue with detection of re-exported ES6 components
+
+## v0.0.26
+* Fixed issue with babel processing files which don't need to be processed
+
+## v0.0.25
+* Examples moved to a separate folder
+* Resizable sandboxes don't affect overflow
+
+## v0.0.24
+* Bugfix for VRT results in v0.0.23 – extra pixel on top removed, VRT results are equal to v0.0.22
+
 ## v0.0.23
 * Ability to resize sandboxes (configurable)
 * Ability to set min and max width for sandboxes (configurable)

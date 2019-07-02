@@ -4,8 +4,8 @@ module.exports = {
     getSections() {
         return [
             {
-                name: 'UI',
-                components: [require('components/component/component')],
+                name: 'Examples',
+                components: [require('my-typescript-component/my-typescript-component')],
             },
         ];
     },
@@ -21,7 +21,7 @@ module.exports = {
 
         return {
             resolve: {
-                modules: [path.resolve(cwd, 'src/'), path.resolve(cwd, 'node_modules/')],
+                modules: [path.resolve(cwd, 'src'), path.resolve(cwd, 'node_modules/')],
             },
         };
     },

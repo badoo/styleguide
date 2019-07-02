@@ -27,7 +27,10 @@ module.exports = {
     },
     overrides: [
         {
-            files: ['src/**/*.*'],
+            files: [
+                'src/**/*.*',
+                'examples/**/*.*'
+            ],
             env: {
                 browser: true,
                 node: false,

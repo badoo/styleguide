@@ -73,6 +73,10 @@ module.exports = function(source) {
             results = `${source}
             module.exports.__meta = ${JSON.stringify(meta)};
             module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        } else if (/export\s+default/.test(source)) {
+            results = `${source}
+            ${doc.displayName}.__meta = ${JSON.stringify(meta)};
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
         } else {
             results = `${source}
             export const __meta = ${JSON.stringify(meta)};
@@ -85,7 +89,10 @@ module.exports = function(source) {
             console.warn(componentPath, isDebug ? err : err.message);
         }
 
-        results = source;
+        /* eslint-disable no-useless-escape */
+        results = `${source}
+        export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        /* eslint-enable no-useless-escape */
     }
 
     return results;
