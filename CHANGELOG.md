@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.29
+* Fixed issue with meta information for components without proper reactDocs: both export and module.exports supported
+
 ## v0.0.28
 * Fixed issue with HOC
 

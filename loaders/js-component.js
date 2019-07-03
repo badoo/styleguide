@@ -90,8 +90,16 @@ module.exports = function(source) {
         }
 
         /* eslint-disable no-useless-escape */
-        results = `${source}
-        export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        if (source.indexOf('module.exports') !== -1) {
+            results = `${source}
+            module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        } else if (/export\s+default/.test(source)) {
+            results = `${source}
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        } else {
+            results = `${source}
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        }
         /* eslint-enable no-useless-escape */
     }
 
