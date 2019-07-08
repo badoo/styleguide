@@ -1,6 +1,6 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
@@ -56,8 +56,8 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.13.0",
+    "eslint": "6.0.1",
+    "eslint-plugin-react": "7.14.2",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
