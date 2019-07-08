@@ -1,0 +1,24 @@
+.styleguide-navigation-section__name {
+    position: relative;
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.styleguide-navigation-section__item {
+    padding: 8px 16px;
+}
+
+.styleguide-navigation-section__link {
+    color: #666;
+    text-decoration: none;
+
+    &.is-active {
+        color: #7000e3;
+        font-weight: 600;
+    }
+}

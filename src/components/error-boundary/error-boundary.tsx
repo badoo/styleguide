@@ -2,8 +2,22 @@ import React from 'react';
 
 import './error-boundary.scss';
 
-export default class ErrorBoundary extends React.Component {
-    constructor(props) {
+interface ErrorBoundaryProps {
+
+};
+
+interface ErrorBoundaryErrorInfo {
+    componentStack: Object | string | null;
+}
+
+interface ErrorBoundaryState {
+    hasError: boolean;
+    error: Object | null;
+    errorInfo: ErrorBoundaryErrorInfo | null;
+};
+
+export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+    constructor(props: ErrorBoundaryProps) {
         super(props);
 
         this.state = {
@@ -13,7 +27,7 @@ export default class ErrorBoundary extends React.Component {
         };
     }
 
-    componentDidCatch(error, errorInfo) {
+    componentDidCatch(error: Object | null, errorInfo: ErrorBoundaryErrorInfo) {
         this.setState({ hasError: true, error, errorInfo });
     }
 

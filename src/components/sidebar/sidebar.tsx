@@ -2,12 +2,17 @@ import React from 'react';
 
 import './sidebar.scss';
 
-class Sidebar extends React.Component {
-    constructor() {
-        super();
+interface SidebarProps {
+    children: React.ReactNode[];
+}
+
+class Sidebar extends React.Component<SidebarProps> {
+    constructor(props: SidebarProps) {
+        super(props);
     }
 
     render() {
+        const { children } = this.props;
         return (
             <aside className="styleguide-sidebar">
                 <div className="styleguide-sidebar__content">
@@ -23,7 +28,7 @@ class Sidebar extends React.Component {
                         </div>
                     </div>
 
-                    {this.props.children}
+                    {children}
                 </div>
             </aside>
         );

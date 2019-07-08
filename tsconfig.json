@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "alwaysStrict": false,
+        "baseUrl": "./",
+        "esModuleInterop": true,
+        "jsx": "react",
+        "isolatedModules": false,
+        "module": "es6",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "target": "ES2015",
+        "paths": {
+            "__GLOBAL__CONFIG__": [
+                "styleguide.config.js"
+            ],
+            "*": [
+                "*",
+                "src/components/*",
+                "./node_modules/*",
+            ]
+        }
+    },
+    "include": ["./**/*"],
+    "exclude": [
+        "node_modules",
+        "examples/typescript/src/*",
+        "examples/basic/src/*",
+    ]
+}
