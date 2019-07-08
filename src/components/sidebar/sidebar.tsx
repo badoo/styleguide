@@ -12,7 +12,6 @@ class Sidebar extends React.Component<SidebarProps> {
     }
 
     render() {
-        const { children } = this.props;
         return (
             <aside className="styleguide-sidebar">
                 <div className="styleguide-sidebar__content">
@@ -28,7 +27,7 @@ class Sidebar extends React.Component<SidebarProps> {
                         </div>
                     </div>
 
-                    {children}
+                    {this.props.children}
                 </div>
             </aside>
         );

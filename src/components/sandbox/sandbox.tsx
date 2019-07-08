@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Icon, { IconNames } from '../icon/icon';
+import Icon, { IconName } from '../icon/icon';
 import Dialog from '../dialog/dialog';
 import ErrorBoundary from '../error-boundary/error-boundary';
 
@@ -11,8 +11,8 @@ import config from '__GLOBAL__CONFIG__';
 import './sandbox.scss';
 
 interface SandboxProps {
-    name?: React.ReactNode;
-    title?: React.ReactNode;
+    name: string;
+    title?: string;
     children?: React.ReactNode;
 }
 
@@ -31,6 +31,20 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
         };
     }
 
+    onHeaderClickHandler = () => {
+        this.setState({ isVisible: !this.state.isVisible });
+    };
+
+    onToggleVisibilityClickHandler = (event: React.MouseEvent) => {
+        event.stopPropagation();
+        this.setState({ isVisible: !this.state.isVisible });
+    }
+
+    onToggleFullScreenClickHandler = (event: React.MouseEvent) => {
+        event.stopPropagation();
+        this.setState({ isFullScreen: !this.state.isFullScreen });
+    }
+
     render() {
         const {
             name,
@@ -38,30 +52,16 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
             children
         } = this.props;
 
-        const onHeaderClickHandler = () => {
-            this.setState({ isVisible: !this.state.isVisible });
-        };
-
-        const onToggleVisibilityClickHandler = (event: React.MouseEvent) => {
-            event.stopPropagation();
-            this.setState({ isVisible: !this.state.isVisible });
-        }
-
-        const onToggleFullScreenClickHandler = (event: React.MouseEvent) => {
-            event.stopPropagation();
-            this.setState({ isFullScreen: !this.state.isFullScreen });
-        }
-
         const controlVisibilityIcon = (this.state.isVisible) ? (
-            <Icon name={IconNames.MINIMIZE_OFF} />
+            <Icon name={IconName.MINIMIZE_OFF} />
         ) : (
-            <Icon name={IconNames.MINIMIZE_ON} />
+            <Icon name={IconName.MINIMIZE_ON} />
         );
 
         const controlFullScreenIcon = (this.state.isFullScreen) ? (
-            <Icon name={IconNames.FULLSCREEN_ON} />
+            <Icon name={IconName.FULLSCREEN_ON} />
         ) : (
-            <Icon name={IconNames.FULLSCREEN_OFF} />
+            <Icon name={IconName.FULLSCREEN_OFF} />
         );
 
         return (
@@ -71,20 +71,20 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
             >
                 <header
                     className="styleguide-sandbox__header"
-                    onClick={onHeaderClickHandler}
+                    onClick={this.onHeaderClickHandler}
                 >
                     <h1 className="styleguide-sandbox__title">{title}</h1>
                     <div className="styleguide-sandbox__controls">
                         <span
                             className="styleguide-sandbox__control"
-                            onClick={onToggleVisibilityClickHandler}
+                            onClick={this.onToggleVisibilityClickHandler}
                         >
                             {controlVisibilityIcon}
                         </span>
 
                         <span
                             className="styleguide-sandbox__control"
-                            onClick={onToggleFullScreenClickHandler}
+                            onClick={this.onToggleFullScreenClickHandler}
                         >
                             {controlFullScreenIcon}
                         </span>

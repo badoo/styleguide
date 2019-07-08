@@ -6,20 +6,19 @@ import Sandbox from '../sandbox/sandbox';
 import './component.scss';
 
 interface TestProps {
-    name?: string,
-    Component?: any
+    name?: string;
+    Component?: any;
 }
 
 interface NameProps {
-    defaultValue?: React.ReactNode;
-    type?: string;
+    defaultValue?: any;
+    type: string;
     required?: boolean;
     description?: string;
 };
 
 interface IncompingComponentProps {
-    [key: string]: any;
-    name: NameProps;
+    [key: string]: NameProps;
 };
 
 export interface ComponentProps {
@@ -33,7 +32,6 @@ export interface ComponentProps {
 interface ComponentState {
     isPropsCollapsed: boolean
 };
-
 class Component extends React.Component<ComponentProps, ComponentState> {
     constructor(props: ComponentProps) {
         super(props);
@@ -41,12 +39,10 @@ class Component extends React.Component<ComponentProps, ComponentState> {
         this.state = {
             isPropsCollapsed: false,
         };
-
-        this.handlePropsClick = this.handlePropsClick.bind(this);
     }
 
-    handlePropsClick() {
-        this.setState({ isPropsCollapsed: !this.state.isPropsCollapsed });
+    toggleProps(isPropsCollapsed: boolean) {
+        this.setState({ isPropsCollapsed: !isPropsCollapsed });
     }
 
     render() {
@@ -60,6 +56,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
         };
 
         const id = (name)? name.toLowerCase() : undefined;
+        const onClick = () => this.toggleProps(this.state.isPropsCollapsed);
 
         return (
             <article className="styleguide-component" id={id}>
@@ -74,7 +71,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
                             <span
                                 role="button"
                                 className={classnames.handler}
-                                onClick={this.handlePropsClick}
+                                onClick={onClick}
                             >
                                 PROPERTIES
                             </span>
@@ -125,22 +122,22 @@ class Component extends React.Component<ComponentProps, ComponentState> {
 
                 {tests ? (
                     <div className="styleguide-component__tests">
-                        {tests.map(
-                            (
-                                {
-                                    name: sandboxName,
-                                    Component: SandboxComponent
-                                },
-                                key
-                            ): React.ReactNode => {
-                                return (
-                                    <div className="styleguide-component__sandbox" key={key}>
-                                        <Sandbox title={sandboxName} name={sandboxName}>
-                                            <SandboxComponent/>
-                                        </Sandbox>
-                                    </div>
-                                )
-                            })}
+                        {tests.map((test, key ): React.ReactNode => {
+                            const {
+                                name: sandboxName,
+                                Component: SandboxComponent
+                            } = test;
+
+                            const name = (sandboxName) ? sandboxName: 'empty sandboxName';
+
+                            return (
+                                <div className="styleguide-component__sandbox" key={key}>
+                                    <Sandbox title={sandboxName} name={name}>
+                                        <SandboxComponent/>
+                                    </Sandbox>
+                                </div>
+                            );
+                        })}
                     </div>
                 ) : null}
             </article>

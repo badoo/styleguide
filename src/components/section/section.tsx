@@ -33,8 +33,7 @@ const Section: React.FunctionComponent<SectionProps> = (props) => {
     return (
         <section className={classnames.block}>
             <div className="styleguide-section__content">
-                {list.filter(Boolean).map(item => {
-                    return (
+                {list.filter(Boolean).map(item => (
                     <div className="styleguide-section__component" style={styles} key={item.url}>
                         {typeof item !== undefined && typeof item !== null ? (
                             <Component
@@ -45,7 +44,7 @@ const Section: React.FunctionComponent<SectionProps> = (props) => {
                             />
                         ) : null}
                     </div>
-                )})}
+                ))}
             </div>
         </section>
     );

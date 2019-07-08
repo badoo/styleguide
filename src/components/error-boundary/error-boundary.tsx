@@ -3,16 +3,16 @@ import React from 'react';
 import './error-boundary.scss';
 
 interface ErrorBoundaryProps {
-
+    children: React.ReactNode[];
 };
 
 interface ErrorBoundaryErrorInfo {
-    componentStack: Object | string | null;
+    componentStack?: string | object;
 }
 
 interface ErrorBoundaryState {
     hasError: boolean;
-    error: Object | null;
+    error: object | null;
     errorInfo: ErrorBoundaryErrorInfo | null;
 };
 
@@ -27,7 +27,7 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
         };
     }
 
-    componentDidCatch(error: Object | null, errorInfo: ErrorBoundaryErrorInfo) {
+    componentDidCatch(error: object | null, errorInfo: ErrorBoundaryErrorInfo) {
         this.setState({ hasError: true, error, errorInfo });
     }
 

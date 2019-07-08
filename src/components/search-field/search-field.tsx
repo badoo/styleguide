@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Icon, { IconNames } from '../icon/icon';
+import Icon, { IconName, IconSize } from '../icon/icon';
 
 import './search-field.scss';
 
@@ -26,7 +26,7 @@ const SearchField: React.FunctionComponent<SearchFieldProps> = (props) => {
             />
 
             <div className="styleguide-search-field__icon">
-                <Icon name={IconNames.SEARCH} />
+                <Icon name={IconName.SEARCH} size={IconSize.LARGE} />
             </div>
         </div>
     );

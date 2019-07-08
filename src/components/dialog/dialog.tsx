@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Icon, { IconNames } from '../icon/icon';
+import Icon, { IconName } from '../icon/icon';
 
 import './dialog.scss';
 
@@ -11,14 +11,14 @@ const KEYCODES = {
 
 interface DialogProps {
     isOpened?: boolean;
-    onClose?: Function;
+    onClose?: () => void;
     content?: React.ReactNode;
     title?: React.ReactNode;
 }
 
 interface DialogState {
     active: boolean;
-    portal?: React.ReactNode | null;
+    portal?: React.ReactNode;
 };
 
 class Dialog extends React.Component<DialogProps, DialogState> {
@@ -90,7 +90,7 @@ class Dialog extends React.Component<DialogProps, DialogState> {
                 <div className="styleguide-dialog__header">
                     <h1 className="styleguide-dialog__title">{title}</h1>
                     <div className="styleguide-dialog__close" onClick={onClick}>
-                        <Icon name={IconNames.CLOSE} />
+                        <Icon name={IconName.CLOSE} />
                     </div>
                 </div>
                 <div className="styleguide-dialog__content">{content}</div>
