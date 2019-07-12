@@ -33,7 +33,6 @@
     "include": ["./**/*"],
     "exclude": [
         "node_modules",
-        "examples/typescript/src/*",
-        "examples/basic/src/*",
+        "examples",
     ]
 }

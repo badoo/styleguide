@@ -3,7 +3,7 @@ import React from 'react';
 import './sidebar.scss';
 
 interface SidebarProps {
-    children: React.ReactNode[];
+    children: React.ReactNode;
 }
 
 class Sidebar extends React.Component<SidebarProps> {
