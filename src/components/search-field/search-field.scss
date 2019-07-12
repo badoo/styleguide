@@ -42,10 +42,8 @@ $ui-border-color: #ccc;
 
 .styleguide-search-field__icon {
     position: absolute;
-    left: 20px;
     top: 50%;
+    left: 20px;
+    display: flex;
     transform: translateY(-50%);
-    color: $ui-border-color;
-    width: 24px;
-    height: 24px;
 }
