@@ -3,7 +3,7 @@ import Component from './component';
 
 export const SpecComponentEmpty: React.FunctionComponent = () => {
     return <Component name={'BasicComponent'} />;
-}
+};
 
 export const SpecComponentPropTypes: React.FunctionComponent = () => {
     return (
@@ -19,7 +19,7 @@ export const SpecComponentPropTypes: React.FunctionComponent = () => {
             }}
         />
     );
-}
+};
 
 export const SpecComponentFull: React.FunctionComponent = () => {
     return (
@@ -33,14 +33,12 @@ export const SpecComponentFull: React.FunctionComponent = () => {
                         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo!',
                 },
             }}
-            tests={
-                [
-                    {
-                        name: 'SpecComponentEmpty',
-                        Component: SpecComponentEmpty
-                    }
-                ]
-            }
+            tests={[
+                {
+                    name: 'SpecComponentEmpty',
+                    Component: SpecComponentEmpty,
+                },
+            ]}
         />
     );
-}
+};

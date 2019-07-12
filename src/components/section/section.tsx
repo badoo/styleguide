@@ -8,26 +8,23 @@ import Component, { ComponentProps } from '../component/component';
 import config from '__GLOBAL__CONFIG__';
 
 let styles = {
-    minWidth: (typeof config.sandboxMinWidth != 'undefined') ? config.sandboxMinWidth : undefined,
-    maxWidth: (typeof config.sandboxMaxWidth != 'undefined') ? config.sandboxMaxWidth : undefined,
+    minWidth: typeof config.sandboxMinWidth != 'undefined' ? config.sandboxMinWidth : undefined,
+    maxWidth: typeof config.sandboxMaxWidth != 'undefined' ? config.sandboxMaxWidth : undefined,
 };
 
 interface SectionProps {
     list: ComponentProps[];
-    isVrtEnabled: boolean
-};
+    isVrtEnabled: boolean;
+}
 
-const Section: React.FunctionComponent<SectionProps> = (props) => {
-    const {
-        list,
-        isVrtEnabled
-    } = props;
+const Section: React.FunctionComponent<SectionProps> = props => {
+    const { list, isVrtEnabled } = props;
 
     const classnames = {
         block: cx({
             'styleguide-section': true,
             vrt: isVrtEnabled,
-        })
+        }),
     };
 
     return (
@@ -48,6 +45,6 @@ const Section: React.FunctionComponent<SectionProps> = (props) => {
             </div>
         </section>
     );
-}
+};
 
 export default Section;

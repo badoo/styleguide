@@ -2,13 +2,15 @@ import React from 'react';
 
 import './navigation.scss';
 
-import NavigationSection, { NavigationSectionProps } from '../navigation-section/navigation-section';
+import NavigationSection, {
+    NavigationSectionProps,
+} from '../navigation-section/navigation-section';
 
 interface NavigationProps {
     sections: NavigationSectionProps[];
     expandAll: boolean;
     currentHash: string;
-};
+}
 
 class Navigation extends React.PureComponent<NavigationProps> {
     render() {
@@ -17,11 +19,7 @@ class Navigation extends React.PureComponent<NavigationProps> {
         return (
             <nav className="styleguide-navigation">
                 {sections.map((section, key) => {
-                    const {
-                        name,
-                        isOpened,
-                        components
-                    } = section;
+                    const { name, isOpened, components } = section;
 
                     return (
                         <div className="styleguide-navigation__section" key={key}>
@@ -36,7 +34,7 @@ class Navigation extends React.PureComponent<NavigationProps> {
                                 }))}
                             />
                         </div>
-                    )
+                    );
                 })}
             </nav>
         );

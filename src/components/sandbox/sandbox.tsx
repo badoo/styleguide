@@ -7,7 +7,6 @@ import ErrorBoundary from '../error-boundary/error-boundary';
 
 import config from '__GLOBAL__CONFIG__';
 
-
 import './sandbox.scss';
 
 interface SandboxProps {
@@ -38,41 +37,31 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
     onToggleVisibilityClickHandler = (event: React.MouseEvent) => {
         event.stopPropagation();
         this.setState({ isVisible: !this.state.isVisible });
-    }
+    };
 
     onToggleFullScreenClickHandler = (event: React.MouseEvent) => {
         event.stopPropagation();
         this.setState({ isFullScreen: !this.state.isFullScreen });
-    }
+    };
 
     render() {
-        const {
-            name,
-            title,
-            children
-        } = this.props;
+        const { name, title, children } = this.props;
 
-        const controlVisibilityIcon = (this.state.isVisible) ? (
+        const controlVisibilityIcon = this.state.isVisible ? (
             <Icon name={IconName.MINIMIZE_OFF} />
         ) : (
             <Icon name={IconName.MINIMIZE_ON} />
         );
 
-        const controlFullScreenIcon = (this.state.isFullScreen) ? (
+        const controlFullScreenIcon = this.state.isFullScreen ? (
             <Icon name={IconName.FULLSCREEN_ON} />
         ) : (
             <Icon name={IconName.FULLSCREEN_OFF} />
         );
 
         return (
-            <section
-                className="styleguide-sandbox js-styleguide-sandbox"
-                data-name={name}
-            >
-                <header
-                    className="styleguide-sandbox__header"
-                    onClick={this.onHeaderClickHandler}
-                >
+            <section className="styleguide-sandbox js-styleguide-sandbox" data-name={name}>
+                <header className="styleguide-sandbox__header" onClick={this.onHeaderClickHandler}>
                     <h1 className="styleguide-sandbox__title">{title}</h1>
                     <div className="styleguide-sandbox__controls">
                         <span
@@ -97,7 +86,9 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
                             className={cx({
                                 'styleguide-sandbox__content': true,
                                 'js-styleguide-sandbox__content': true,
-                                'is-resizable': (config.hasResizableSandbox) ? config.hasResizableSandbox: false,
+                                'is-resizable': config.hasResizableSandbox
+                                    ? config.hasResizableSandbox
+                                    : false,
                             })}
                         >
                             {children}

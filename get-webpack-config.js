@@ -74,7 +74,9 @@ module.exports = function getWebpackConfig({
                         {
                             test: /\.(j|t)sx?$/,
                             // React native modules usually always need to be loaded by metro
-                            exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
+                            exclude: isReactNative
+                                ? undefined
+                                : /node_modules\/(?!badoo-styleguide)/,
                             use: 'happypack/loader?id=babel',
                         },
                         {

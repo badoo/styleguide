@@ -19,7 +19,7 @@ interface DialogProps {
 interface DialogState {
     active: boolean;
     portal?: React.ReactNode;
-};
+}
 
 class Dialog extends React.Component<DialogProps, DialogState> {
     private portal: React.RefObject<HTMLInputElement>;
@@ -55,12 +55,10 @@ class Dialog extends React.Component<DialogProps, DialogState> {
         if (event.keyCode === KEYCODES.ESCAPE && this.state.active) {
             this.closeDialog();
         }
-    }
+    };
 
     openDialog() {
-        return (this.state.active) ?
-            null :
-            this.setState({ active: true });
+        return this.state.active ? null : this.setState({ active: true });
     }
 
     closeDialog() {
@@ -68,16 +66,13 @@ class Dialog extends React.Component<DialogProps, DialogState> {
             return;
         }
 
-        const onCloseHandler = (this.props.onClose) ? this.props.onClose() : null;
+        const onCloseHandler = this.props.onClose ? this.props.onClose() : null;
 
         this.setState({ active: false }, () => onCloseHandler);
     }
 
     render() {
-        const {
-            title,
-            content
-        } = this.props;
+        const { title, content } = this.props;
 
         if (!this.state.active) {
             return null;

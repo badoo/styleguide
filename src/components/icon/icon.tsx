@@ -8,7 +8,7 @@ export enum IconSize {
 }
 
 const mapSizeToClassname: { [key in IconSize]: string } = {
-    [IconSize.LARGE]: 'styleguide-icon--lg'
+    [IconSize.LARGE]: 'styleguide-icon--lg',
 };
 
 export enum IconName {
@@ -57,22 +57,19 @@ const mapNameToCode: { [key in IconName]: React.ReactNode } = {
 };
 
 interface IconProps {
-    name: IconName
-    size?: IconSize
-};
+    name: IconName;
+    size?: IconSize;
+}
 
-const Icon: React.FunctionComponent<IconProps> = (props) => {
-    const {
-        name,
-        size
-    } = props;
+const Icon: React.FunctionComponent<IconProps> = props => {
+    const { name, size } = props;
 
     const classnames = {
         block: cx(
             {
                 'styleguide-icon': true,
             },
-            typeof size !== 'undefined' && mapSizeToClassname[size],
+            typeof size !== 'undefined' && mapSizeToClassname[size]
         ),
     };
 
@@ -83,6 +80,6 @@ const Icon: React.FunctionComponent<IconProps> = (props) => {
             {IconName}
         </div>
     );
-}
+};
 
 export default Icon;

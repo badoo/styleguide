@@ -15,11 +15,11 @@ interface NameProps {
     type: string;
     required?: boolean;
     description?: string;
-};
+}
 
 interface IncompingComponentProps {
     [key: string]: NameProps;
-};
+}
 
 export interface ComponentProps {
     name: string;
@@ -27,11 +27,11 @@ export interface ComponentProps {
     propTypes?: IncompingComponentProps;
     tests?: TestProps[];
     url?: string;
-};
+}
 
 interface ComponentState {
-    isPropsCollapsed: boolean
-};
+    isPropsCollapsed: boolean;
+}
 class Component extends React.Component<ComponentProps, ComponentState> {
     constructor(props: ComponentProps) {
         super(props);
@@ -55,7 +55,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
             }),
         };
 
-        const id = (name)? name.toLowerCase() : undefined;
+        const id = name ? name.toLowerCase() : undefined;
         const onClick = () => this.toggleProps(this.state.isPropsCollapsed);
 
         return (
@@ -68,11 +68,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
                 {propTypes ? (
                     <div className="styleguide-component__props">
                         <div className="styleguide-component__props-controls">
-                            <span
-                                role="button"
-                                className={classnames.handler}
-                                onClick={onClick}
-                            >
+                            <span role="button" className={classnames.handler} onClick={onClick}>
                                 PROPERTIES
                             </span>
                         </div>
@@ -90,29 +86,28 @@ class Component extends React.Component<ComponentProps, ComponentState> {
                                     </thead>
 
                                     <tbody>
-                                        {Object.keys(propTypes)
-                                            .map(key => {
-                                                const prop = propTypes[key];
+                                        {Object.keys(propTypes).map(key => {
+                                            const prop = propTypes[key];
 
-                                                return (
-                                                    <tr key={key}>
-                                                        <td>
-                                                            <code>{key}</code>
-                                                        </td>
-                                                        <td>
-                                                            <code>{prop.type}</code>
-                                                        </td>
-                                                        <td>
-                                                            <code>
-                                                                {prop.required
-                                                                    ? 'Required'
-                                                                    : prop.defaultValue}
-                                                            </code>
-                                                        </td>
-                                                        <td>{prop.description}</td>
-                                                    </tr>
-                                                );
-                                            })}
+                                            return (
+                                                <tr key={key}>
+                                                    <td>
+                                                        <code>{key}</code>
+                                                    </td>
+                                                    <td>
+                                                        <code>{prop.type}</code>
+                                                    </td>
+                                                    <td>
+                                                        <code>
+                                                            {prop.required
+                                                                ? 'Required'
+                                                                : prop.defaultValue}
+                                                        </code>
+                                                    </td>
+                                                    <td>{prop.description}</td>
+                                                </tr>
+                                            );
+                                        })}
                                     </tbody>
                                 </table>
                             </div>
@@ -122,22 +117,21 @@ class Component extends React.Component<ComponentProps, ComponentState> {
 
                 {tests ? (
                     <div className="styleguide-component__tests">
-                        {tests.map((test, key ): React.ReactNode => {
-                            const {
-                                name: sandboxName,
-                                Component: SandboxComponent
-                            } = test;
+                        {tests.map(
+                            (test, key): React.ReactNode => {
+                                const { name: sandboxName, Component: SandboxComponent } = test;
 
-                            const name = (sandboxName) ? sandboxName: 'empty sandboxName';
+                                const name = sandboxName ? sandboxName : 'empty sandboxName';
 
-                            return (
-                                <div className="styleguide-component__sandbox" key={key}>
-                                    <Sandbox title={sandboxName} name={name}>
-                                        <SandboxComponent/>
-                                    </Sandbox>
-                                </div>
-                            );
-                        })}
+                                return (
+                                    <div className="styleguide-component__sandbox" key={key}>
+                                        <Sandbox title={sandboxName} name={name}>
+                                            <SandboxComponent />
+                                        </Sandbox>
+                                    </div>
+                                );
+                            }
+                        )}
                     </div>
                 ) : null}
             </article>

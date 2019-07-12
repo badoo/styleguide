@@ -7,13 +7,10 @@ import './search-field.scss';
 interface SearchFieldProps {
     value: string;
     onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-};
+}
 
-const SearchField: React.FunctionComponent<SearchFieldProps> = (props) => {
-    const {
-        value = '',
-        onChange,
-    } = props
+const SearchField: React.FunctionComponent<SearchFieldProps> = props => {
+    const { value = '', onChange } = props;
     return (
         <div className={'styleguide-search-field'}>
             <input
@@ -30,6 +27,6 @@ const SearchField: React.FunctionComponent<SearchFieldProps> = (props) => {
             </div>
         </div>
     );
-}
+};
 
 export default SearchField;

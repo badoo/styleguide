@@ -32,7 +32,8 @@ function processConfigSection({ section: { name, components }, isSpecificationPa
 }
 
 function processConfigComponent({ component, sectionName, isSpecificationPath }) {
-    const meta = component.default && component.default.__meta ? component.default.__meta : component.__meta;
+    const meta =
+        component.default && component.default.__meta ? component.default.__meta : component.__meta;
 
     const dependencyResolver = component.__dependencyResolver;
 

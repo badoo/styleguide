@@ -6,7 +6,7 @@ type ErrorBoundaryError = object | null;
 
 interface ErrorBoundaryProps {
     children: React.ReactNode;
-};
+}
 
 interface ErrorBoundaryErrorInfo {
     componentStack?: string | object;
@@ -16,7 +16,7 @@ interface ErrorBoundaryState {
     hasError: boolean;
     error: ErrorBoundaryError;
     errorInfo: ErrorBoundaryErrorInfo | null;
-};
+}
 
 export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
     constructor(props: ErrorBoundaryProps) {
