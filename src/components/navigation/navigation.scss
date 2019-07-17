@@ -3,46 +3,9 @@
     font-family: sans-serif;
 }
 
-.styleguide-navigation__error {
-    padding: 16px;
-}
-
 .styleguide-navigation__section {
     position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.styleguide-navigation__name {
-    position: relative;
-    display: block;
-    padding: 16px;
-    border-bottom: 1px solid #f0f0f0;
-    background: #fff;
-    color: #000;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.styleguide-navigation__components {
-    padding: 16px;
-
-    &.is-hidden {
-        display: none;
-    }
-}
-
-.styleguide-navigation__item {
-    padding: 8px 16px;
-}
-
-.styleguide-navigation__link {
-    color: #666;
-    text-decoration: none;
-
-    &.is-active {
-        color: #7000e3;
-        font-weight: 600;
-    }
 }

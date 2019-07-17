@@ -25,4 +25,10 @@ module.exports = {
             },
         };
     },
+
+    hasResizableSandbox: false,
+
+    sandboxMinWidth: undefined,
+
+    sandboxMaxWidth: undefined,
 };

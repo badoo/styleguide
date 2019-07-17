@@ -1,41 +1,65 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import cx from 'classnames';
 
-import config from '__GLOBAL__CONFIG__';
 import Sandbox from '../sandbox/sandbox';
 
 import './component.scss';
 
-class Component extends React.Component {
-    constructor(props) {
+interface TestProps {
+    name?: string;
+    Component?: any;
+}
+
+interface NameProps {
+    defaultValue?: any;
+    type: string;
+    required?: boolean;
+    description?: string;
+}
+
+interface IncompingComponentProps {
+    [key: string]: NameProps;
+}
+
+export interface ComponentProps {
+    name: string;
+    description?: string;
+    propTypes?: IncompingComponentProps;
+    tests?: TestProps[];
+    url?: string;
+}
+
+interface ComponentState {
+    isPropsCollapsed: boolean;
+}
+class Component extends React.Component<ComponentProps, ComponentState> {
+    constructor(props: ComponentProps) {
         super(props);
 
         this.state = {
             isPropsCollapsed: false,
         };
-
-        this.handlePropsClick = this.handlePropsClick.bind(this);
     }
 
-    handlePropsClick() {
-        this.setState({ isPropsCollapsed: !this.state.isPropsCollapsed });
+    toggleProps(isPropsCollapsed: boolean) {
+        this.setState({ isPropsCollapsed: !isPropsCollapsed });
     }
 
     render() {
         const { name, description, propTypes, tests } = this.props;
 
         const classnames = {
-            handler: classNames({
+            handler: cx({
                 'styleguide-component__props-handler': true,
                 'is-collapsed': this.state.isPropsCollapsed,
             }),
         };
 
-        const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
+        const id = name ? name.toLowerCase() : undefined;
+        const onClick = () => this.toggleProps(this.state.isPropsCollapsed);
 
         return (
-            <article className="styleguide-component" id={name.toLowerCase()}>
+            <article className="styleguide-component" id={id}>
                 <header className="styleguide-component__header">
                     <h1 className="styleguide-component__title">{name}</h1>
                     <div className="styleguide-component__description">{description}</div>
@@ -44,11 +68,7 @@ class Component extends React.Component {
                 {propTypes ? (
                     <div className="styleguide-component__props">
                         <div className="styleguide-component__props-controls">
-                            <span
-                                role="button"
-                                className={classnames.handler}
-                                onClick={this.handlePropsClick}
-                            >
+                            <span role="button" className={classnames.handler} onClick={onClick}>
                                 PROPERTIES
                             </span>
                         </div>
@@ -97,39 +117,26 @@ class Component extends React.Component {
 
                 {tests ? (
                     <div className="styleguide-component__tests">
-                        {tests.map(({ name: sandboxName, Component: SandboxComponent }, key) => (
-                            <div className="styleguide-component__sandbox" key={key}>
-                                <Sandbox title={sandboxName} name={sandboxName}>
-                                    <Wrapper>
-                                        <SandboxComponent />
-                                    </Wrapper>
-                                </Sandbox>
-                            </div>
-                        ))}
+                        {tests.map(
+                            (test, key): React.ReactNode => {
+                                const { name: sandboxName, Component: SandboxComponent } = test;
+
+                                const name = sandboxName ? sandboxName : 'empty sandboxName';
+
+                                return (
+                                    <div className="styleguide-component__sandbox" key={key}>
+                                        <Sandbox title={sandboxName} name={name}>
+                                            <SandboxComponent />
+                                        </Sandbox>
+                                    </div>
+                                );
+                            }
+                        )}
                     </div>
                 ) : null}
             </article>
         );
     }
 }
-
-Component.propTypes = {
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string,
-    propTypes: PropTypes.objectOf(
-        PropTypes.shape({
-            type: PropTypes.string,
-            required: PropTypes.bool,
-            defaultValue: PropTypes.any,
-            description: PropTypes.string,
-        })
-    ),
-    tests: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            Component: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
-        })
-    ),
-};
 
 export default Component;

@@ -10,7 +10,8 @@
     "build": "yarn start --config=styleguide.config.js --buildDir=./dist/",
     "start": "yarn deps && node ./index.js",
     "lint": "eslint . --ext .js,.jsx",
-    "prettier": "prettier --write '**/*.?(j|t)s?(x)'",
+    "tsc": "tsc -p tsconfig.json",
+    "prettier": "prettier --write '**/*.{jsx,js}' && prettier --parser typescript --write '**/*.{tsx,ts}' && prettier --parser json --write '**/*.json'",
     "styleguide": "yarn start --config=styleguide.config.js"
   },
   "dependencies": {
@@ -56,6 +57,10 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
+    "tsc": "1.20150623.0",
+    "@types/classnames": "2.2.7",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
     "eslint": "6.0.1",
     "eslint-plugin-react": "7.14.2",
     "prettier": "^1.18.2",

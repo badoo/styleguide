@@ -1,21 +1,21 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "alwaysStrict": true,
-    "baseUrl": "./src",
-    "esModuleInterop": true,
-    "isolatedModules": false,
-    "jsx": "react",
-    "module": "es6",
-    "noEmit": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "ES2015",
-    "moduleResolution": "node",
-    "paths": {
-      "*": ["*", "./node_modules/*"]
-    }
-  },
-  "include": ["./**/*"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "allowJs": true,
+        "alwaysStrict": true,
+        "baseUrl": "./src",
+        "esModuleInterop": true,
+        "isolatedModules": false,
+        "jsx": "react",
+        "module": "es6",
+        "noEmit": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ES2015",
+        "moduleResolution": "node",
+        "paths": {
+            "*": ["*", "./node_modules/*"]
+        }
+    },
+    "include": ["./**/*"],
+    "exclude": ["node_modules"]
 }
