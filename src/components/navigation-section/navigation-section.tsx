@@ -66,7 +66,6 @@ class NavigationSection extends React.PureComponent<
                               const classNames = {
                                   link: cx({
                                       'styleguide-navigation-section__link': true,
-                                      'js-vrt-locator': true,
                                       'is-active': isActive,
                                   }),
                               };
@@ -74,7 +73,11 @@ class NavigationSection extends React.PureComponent<
 
                               return (
                                   <div className="styleguide-navigation-section__item" key={key}>
-                                      <a className={classNames.link} href={`#${url}`}>
+                                      <a
+                                          className={classNames.link}
+                                          data-vrt-locator={true}
+                                          href={`#${url}`}
+                                      >
                                           {name}
                                       </a>
                                   </div>
