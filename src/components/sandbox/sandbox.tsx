@@ -60,7 +60,7 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
         );
 
         return (
-            <section className="styleguide-sandbox js-styleguide-sandbox" data-name={name}>
+            <section className="styleguide-sandbox" data-vrt-locator={'sandbox'} data-name={name}>
                 <header className="styleguide-sandbox__header" onClick={this.onHeaderClickHandler}>
                     <h1 className="styleguide-sandbox__title">{title}</h1>
                     <div className="styleguide-sandbox__controls">
@@ -85,11 +85,11 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
                         <div
                             className={cx({
                                 'styleguide-sandbox__content': true,
-                                'js-styleguide-sandbox__content': true,
                                 'is-resizable': config.hasResizableSandbox
                                     ? config.hasResizableSandbox
                                     : false,
                             })}
+                            data-vrt-locator={'sandbox-content'}
                         >
                             {children}
                         </div>

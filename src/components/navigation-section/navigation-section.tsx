@@ -75,7 +75,7 @@ class NavigationSection extends React.PureComponent<
                                   <div className="styleguide-navigation-section__item" key={key}>
                                       <a
                                           className={classNames.link}
-                                          data-vrt-locator={true}
+                                          data-vrt-locator={'link'}
                                           href={`#${url}`}
                                       >
                                           {name}

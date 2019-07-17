@@ -38,9 +38,11 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
         const errorInfoMessage = this.state.errorInfo ? this.state.errorInfo.componentStack : null;
 
         return this.state.hasError ? (
-            <section className="error-boundary js-styleguide-sandbox__content">
-                <h3 className="error-boundary__title">{errorMessage}</h3>
-                <p className="error-boundary__text">{errorInfoMessage}</p>
+            <section className="error-boundary" data-vrt-locator={'sandbox'}>
+                <div data-vrt-locator={'sandbox-error'}>
+                    <h3 className="error-boundary__title">{errorMessage}</h3>
+                    <p className="error-boundary__text">{errorInfoMessage}</p>
+                </div>
             </section>
         ) : (
             this.props.children
