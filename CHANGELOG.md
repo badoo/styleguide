@@ -1,8 +1,7 @@
 # Changelog
 
 ## Pre-release versions
-* **v0.0.30-alpha.1**
-    * Styleguide UI moved to Typescript
+* **v0.0.30-alpha.2**
     * VRT locators added to navigation links and sandboxes
 
 ## v0.0.29
