@@ -1,5 +1,9 @@
 # Changelog
 
+## Pre-release versions
+* **v0.0.31-alpha**
+    * fix error with empty lists
+
 ## v0.0.30
 * VRT locators added to navigation links and sandboxes
 
