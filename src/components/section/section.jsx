@@ -11,7 +11,7 @@ let styles = {
 };
 
 const Section = props => {
-    const { list } = props;
+    const { list = [] } = props;
 
     return (
         <section className="styleguide-section">
