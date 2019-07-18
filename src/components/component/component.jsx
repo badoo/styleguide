@@ -89,21 +89,17 @@ class Component extends React.Component {
 
                 {tests ? (
                     <div className="styleguide-component__tests">
-                        {tests.map(
-                            (test, key) => {
-                                const { name: sandboxName, Component: SandboxComponent } = test;
+                        {tests.map((test, key) => {
+                            const { name: sandboxName, Component: SandboxComponent } = test;
 
-                                const name = sandboxName ? sandboxName : 'empty sandboxName';
-
-                                return (
-                                    <div className="styleguide-component__sandbox" key={key}>
-                                        <Sandbox title={sandboxName} name={name}>
-                                            <SandboxComponent />
-                                        </Sandbox>
-                                    </div>
-                                );
-                            }
-                        )}
+                            return (
+                                <div className="styleguide-component__sandbox" key={key}>
+                                    <Sandbox title={sandboxName}>
+                                        <SandboxComponent />
+                                    </Sandbox>
+                                </div>
+                            );
+                        })}
                     </div>
                 ) : null}
             </article>

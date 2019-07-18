@@ -41,7 +41,7 @@ class Dialog extends React.Component {
         if (event.keyCode === KEYCODES.ESCAPE && this.state.active) {
             this.closeDialog();
         }
-    };
+    }
 
     openDialog() {
         return this.state.active ? null : this.setState({ active: true });

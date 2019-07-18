@@ -25,20 +25,20 @@ class Sandbox extends React.Component {
 
     onHeaderClickHandler() {
         this.setState({ isVisible: !this.state.isVisible });
-    };
+    }
 
     onToggleVisibilityClickHandler(event) {
         event.stopPropagation();
         this.setState({ isVisible: !this.state.isVisible });
-    };
+    }
 
     onToggleFullScreenClickHandler(event) {
         event.stopPropagation();
         this.setState({ isFullScreen: !this.state.isFullScreen });
-    };
+    }
 
     render() {
-        const { name, title, children } = this.props;
+        const { title, children } = this.props;
 
         const controlVisibilityIcon = this.state.isVisible ? (
             <Icon name={IconName.MINIMIZE_OFF} />
@@ -53,7 +53,11 @@ class Sandbox extends React.Component {
         );
 
         return (
-            <section className="styleguide-sandbox" data-vrt-locator={'sandbox'} data-name={name}>
+            <section
+                className="styleguide-sandbox"
+                data-vrt-locator={'sandbox'}
+                data-name={title || 'empty'}
+            >
                 <header className="styleguide-sandbox__header" onClick={this.onHeaderClickHandler}>
                     <h1 className="styleguide-sandbox__title">{title}</h1>
                     <div className="styleguide-sandbox__controls">
