@@ -1,8 +1,9 @@
 # Changelog
 
 ## Pre-release versions
-* **v0.0.31-alpha**
-    * fix error with empty lists
+* **v0.0.31-alpha.1**
+    * fix error with empty or undefined arrays
+    * fix error for collapsed sections
 
 ## v0.0.30
 * VRT locators added to navigation links and sandboxes
