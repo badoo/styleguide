@@ -25,12 +25,10 @@ class NavigationSection extends React.PureComponent {
     render() {
         const { name, components } = this.props;
 
-        const classNames = {
-            components: cx({
-                'styleguide-navigation-section__components': true,
-                'is-hidden': !this.state.isOpened,
-            }),
-        };
+        const classNames = cx({
+            'styleguide-navigation-section__components': true,
+            'is-hidden': !this.state.isOpened,
+        });
 
         const onClickHandler = () =>
             this.setState(prevState => ({ isOpened: !prevState.isOpened }));
@@ -40,29 +38,28 @@ class NavigationSection extends React.PureComponent {
                 <div className="styleguide-navigation-section__name" onClick={onClickHandler}>
                     {name}
                 </div>
-                <div className={classNames.components}>
-                    {components
-                        ? components.map((link, index) => {
-                              const { name, url, isActive } = link;
-                              const classNames = cx({
-                                  'styleguide-navigation-section__link': true,
-                                  'is-active': isActive,
-                              });
-                              const key = url || index;
+                <div className={classNames}>
+                    {components &&
+                        components.map((link, index) => {
+                            const { name, url, isActive } = link;
+                            const classNames = cx({
+                                'styleguide-navigation-section__link': true,
+                                'is-active': isActive,
+                            });
+                            const key = url || index;
 
-                              return (
-                                  <div className="styleguide-navigation-section__item" key={key}>
-                                      <a
-                                          className={classNames}
-                                          data-vrt-locator={'link'}
-                                          href={`#${url}`}
-                                      >
-                                          {name}
-                                      </a>
-                                  </div>
-                              );
-                          })
-                        : null}
+                            return (
+                                <div className="styleguide-navigation-section__item" key={key}>
+                                    <a
+                                        className={classNames}
+                                        data-vrt-locator={'link'}
+                                        href={`#${url}`}
+                                    >
+                                        {name}
+                                    </a>
+                                </div>
+                            );
+                        })}
                 </div>
             </div>
         );
