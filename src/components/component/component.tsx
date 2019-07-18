@@ -1,9 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Sandbox from '../sandbox/sandbox';
-
 import './component.scss';
+import Sandbox from 'components/sandbox/sandbox';
 
 interface TestProps {
     name?: string;
