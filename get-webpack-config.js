@@ -106,7 +106,11 @@ module.exports = function getWebpackConfig({
         },
         resolve: {
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
+            modules: [
+                path.resolve(__dirname, 'node_modules'),
+                'node_modules',
+                path.resolve(__dirname, 'src'),
+            ],
             alias: {
                 __GLOBAL__CONFIG__: configPath,
             },

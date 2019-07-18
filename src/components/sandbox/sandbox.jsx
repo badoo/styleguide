@@ -5,47 +5,40 @@ import config from '__GLOBAL__CONFIG__';
 
 import './sandbox.scss';
 
-import Dialog from 'components/dialog/dialog';
-import ErrorBoundary from 'components/error-boundary/error-boundary';
-import Icon, { IconName } from 'components/icon/icon';
+import Dialog from '../dialog/dialog';
+import ErrorBoundary from '../error-boundary/error-boundary';
+import Icon, { IconName } from '../icon/icon';
 
-interface SandboxProps {
-    name: string;
-    title?: string;
-    children?: React.ReactNode;
-}
-
-interface SandboxState {
-    isFullScreen?: boolean;
-    isVisible?: boolean;
-}
-
-export default class Sandbox extends React.Component<SandboxProps, SandboxState> {
-    constructor(props: SandboxProps) {
+class Sandbox extends React.Component {
+    constructor(props) {
         super(props);
 
         this.state = {
             isFullScreen: false,
             isVisible: true,
         };
+
+        this.onHeaderClickHandler = this.onHeaderClickHandler.bind(this);
+        this.onToggleVisibilityClickHandler = this.onToggleVisibilityClickHandler.bind(this);
+        this.onToggleFullScreenClickHandler = this.onToggleFullScreenClickHandler.bind(this);
     }
 
-    onHeaderClickHandler = () => {
+    onHeaderClickHandler() {
         this.setState({ isVisible: !this.state.isVisible });
-    };
+    }
 
-    onToggleVisibilityClickHandler = (event: React.MouseEvent) => {
+    onToggleVisibilityClickHandler(event) {
         event.stopPropagation();
         this.setState({ isVisible: !this.state.isVisible });
-    };
+    }
 
-    onToggleFullScreenClickHandler = (event: React.MouseEvent) => {
+    onToggleFullScreenClickHandler(event) {
         event.stopPropagation();
         this.setState({ isFullScreen: !this.state.isFullScreen });
-    };
+    }
 
     render() {
-        const { name, title, children } = this.props;
+        const { title, children } = this.props;
 
         const controlVisibilityIcon = this.state.isVisible ? (
             <Icon name={IconName.MINIMIZE_OFF} />
@@ -60,7 +53,11 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
         );
 
         return (
-            <section className="styleguide-sandbox" data-vrt-locator={'sandbox'} data-name={name}>
+            <section
+                className="styleguide-sandbox"
+                data-vrt-locator={'sandbox'}
+                data-name={title || 'empty'}
+            >
                 <header className="styleguide-sandbox__header" onClick={this.onHeaderClickHandler}>
                     <h1 className="styleguide-sandbox__title">{title}</h1>
                     <div className="styleguide-sandbox__controls">
@@ -107,3 +104,5 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
         );
     }
 }
+
+export default Sandbox;

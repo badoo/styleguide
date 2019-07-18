@@ -2,17 +2,9 @@ import React from 'react';
 
 import './navigation.scss';
 
-import NavigationSection, {
-    NavigationSectionProps,
-} from '../navigation-section/navigation-section';
+import NavigationSection from '../navigation-section/navigation-section';
 
-interface NavigationProps {
-    sections: NavigationSectionProps[];
-    expandAll: boolean;
-    currentHash: string;
-}
-
-class Navigation extends React.PureComponent<NavigationProps> {
+class Navigation extends React.PureComponent {
     render() {
         const { sections, expandAll, currentHash } = this.props;
 

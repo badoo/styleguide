@@ -2,37 +2,10 @@ import React from 'react';
 import cx from 'classnames';
 
 import './component.scss';
-import Sandbox from 'components/sandbox/sandbox';
+import Sandbox from '../sandbox/sandbox';
 
-interface TestProps {
-    name?: string;
-    Component?: any;
-}
-
-interface NameProps {
-    defaultValue?: any;
-    type: string;
-    required?: boolean;
-    description?: string;
-}
-
-interface IncompingComponentProps {
-    [key: string]: NameProps;
-}
-
-export interface ComponentProps {
-    name: string;
-    description?: string;
-    propTypes?: IncompingComponentProps;
-    tests?: TestProps[];
-    url?: string;
-}
-
-interface ComponentState {
-    isPropsCollapsed: boolean;
-}
-class Component extends React.Component<ComponentProps, ComponentState> {
-    constructor(props: ComponentProps) {
+class Component extends React.Component {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -40,7 +13,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
         };
     }
 
-    toggleProps(isPropsCollapsed: boolean) {
+    toggleProps(isPropsCollapsed) {
         this.setState({ isPropsCollapsed: !isPropsCollapsed });
     }
 
@@ -116,21 +89,17 @@ class Component extends React.Component<ComponentProps, ComponentState> {
 
                 {tests ? (
                     <div className="styleguide-component__tests">
-                        {tests.map(
-                            (test, key): React.ReactNode => {
-                                const { name: sandboxName, Component: SandboxComponent } = test;
+                        {tests.map((test, key) => {
+                            const { name: sandboxName, Component: SandboxComponent } = test;
 
-                                const name = sandboxName ? sandboxName : 'empty sandboxName';
-
-                                return (
-                                    <div className="styleguide-component__sandbox" key={key}>
-                                        <Sandbox title={sandboxName} name={name}>
-                                            <SandboxComponent />
-                                        </Sandbox>
-                                    </div>
-                                );
-                            }
-                        )}
+                            return (
+                                <div className="styleguide-component__sandbox" key={key}>
+                                    <Sandbox title={sandboxName}>
+                                        <SandboxComponent />
+                                    </Sandbox>
+                                </div>
+                            );
+                        })}
                     </div>
                 ) : null}
             </article>

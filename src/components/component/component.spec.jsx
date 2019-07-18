@@ -1,11 +1,11 @@
 import React from 'react';
-import Component from 'components/component/component';
+import Component from './component';
 
-export const SpecComponentEmpty: React.FunctionComponent = () => {
+export const SpecComponentEmpty = () => {
     return <Component name={'BasicComponent'} />;
 };
 
-export const SpecComponentPropTypes: React.FunctionComponent = () => {
+export const SpecComponentPropTypes = () => {
     return (
         <Component
             name={'BasicComponent'}
@@ -21,7 +21,7 @@ export const SpecComponentPropTypes: React.FunctionComponent = () => {
     );
 };
 
-export const SpecComponentFull: React.FunctionComponent = () => {
+export const SpecComponentFull = () => {
     return (
         <Component
             name={'BasicComponent'}
