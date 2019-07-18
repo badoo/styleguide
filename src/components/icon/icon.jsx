@@ -3,24 +3,24 @@ import cx from 'classnames';
 
 import './icon.scss';
 
-export enum IconSize {
-    LARGE,
-}
+export const IconSize = {
+    LARGE: 0,
+};
 
-const mapSizeToClassname: { [key in IconSize]: string } = {
+const mapSizeToClassname = {
     [IconSize.LARGE]: 'styleguide-icon--lg',
 };
 
-export enum IconName {
-    CLOSE = 'CLOSE',
-    FULLSCREEN_OFF = 'FULLSCREEN_OFF',
-    FULLSCREEN_ON = 'FULLSCREEN_ON',
-    MINIMIZE_OFF = 'MINIMIZE_OFF',
-    MINIMIZE_ON = 'MINIMIZE_ON',
-    SEARCH = 'SEARCH',
-}
+export const IconName = {
+    CLOSE: 'CLOSE',
+    FULLSCREEN_OFF: 'FULLSCREEN_OFF',
+    FULLSCREEN_ON: 'FULLSCREEN_ON',
+    MINIMIZE_OFF: 'MINIMIZE_OFF',
+    MINIMIZE_ON: 'MINIMIZE_ON',
+    SEARCH: 'SEARCH',
+};
 
-const mapNameToCode: { [key in IconName]: React.ReactNode } = {
+const mapNameToCode = {
     [IconName.CLOSE]: (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
             <path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" />
@@ -56,28 +56,17 @@ const mapNameToCode: { [key in IconName]: React.ReactNode } = {
     ),
 };
 
-interface IconProps {
-    name: IconName;
-    size?: IconSize;
-}
-
-const Icon: React.FunctionComponent<IconProps> = props => {
+const Icon = props => {
     const { name, size } = props;
 
-    const classnames = {
-        block: cx(
-            {
-                'styleguide-icon': true,
-            },
-            typeof size !== 'undefined' && mapSizeToClassname[size]
-        ),
-    };
-
-    const IconName = mapNameToCode[name];
+    const classnames = cx(
+        { 'styleguide-icon': true },
+        typeof size !== 'undefined' && mapSizeToClassname[size]
+    );
 
     return (
-        <div className={classnames.block} role="presentation">
-            {IconName}
+        <div className={classnames} role="presentation">
+            {mapNameToCode[name]}
         </div>
     );
 };

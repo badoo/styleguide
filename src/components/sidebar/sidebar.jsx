@@ -2,15 +2,7 @@ import React from 'react';
 
 import './sidebar.scss';
 
-interface SidebarProps {
-    children: React.ReactNode;
-}
-
-class Sidebar extends React.Component<SidebarProps> {
-    constructor(props: SidebarProps) {
-        super(props);
-    }
-
+class Sidebar extends React.Component {
     render() {
         return (
             <aside className="styleguide-sidebar">

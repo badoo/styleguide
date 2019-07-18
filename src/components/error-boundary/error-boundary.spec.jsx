@@ -1,13 +1,13 @@
 import React from 'react';
-import ErrorBoundary from 'components/error-boundary/error-boundary';
+import ErrorBoundary from './error-boundary';
 
-export const SpecErrorBoundaryValid: React.FunctionComponent = () => (
+export const SpecErrorBoundaryValid = () => (
     <ErrorBoundary>
         <div>I am valid</div>
     </ErrorBoundary>
 );
 
-class BrokenComponent extends React.PureComponent<{}, { broken: any }> {
+class BrokenComponent extends React.PureComponent {
     render() {
         return <div>{this.state.broken.length}</div>;
     }

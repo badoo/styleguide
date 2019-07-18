@@ -2,27 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './dialog.scss';
-import Icon, { IconName } from 'components/icon/icon';
+import Icon, { IconName } from '../icon/icon';
 
 const KEYCODES = {
     ESCAPE: 27,
 };
 
-interface DialogProps {
-    isOpened?: boolean;
-    onClose?: () => void;
-    content?: React.ReactNode;
-    title?: React.ReactNode;
-}
-
-interface DialogState {
-    active: boolean;
-    portal?: React.ReactNode;
-}
-
-class Dialog extends React.Component<DialogProps, DialogState> {
-    private portal: React.RefObject<HTMLInputElement>;
-    constructor(props: DialogProps) {
+class Dialog extends React.Component {
+    constructor(props) {
         super(props);
 
         this.portal = React.createRef();
@@ -32,7 +19,7 @@ class Dialog extends React.Component<DialogProps, DialogState> {
         };
     }
 
-    componentDidUpdate(prevProps: DialogProps) {
+    componentDidUpdate(prevProps) {
         if (this.props.isOpened !== prevProps.isOpened) {
             if (this.props.isOpened) {
                 this.openDialog();
@@ -50,7 +37,7 @@ class Dialog extends React.Component<DialogProps, DialogState> {
         document.removeEventListener('keydown', this.handleKeydown);
     }
 
-    handleKeydown = (event: KeyboardEvent) => {
+    handleKeydown(event) {
         if (event.keyCode === KEYCODES.ESCAPE && this.state.active) {
             this.closeDialog();
         }

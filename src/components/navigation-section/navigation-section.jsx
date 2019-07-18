@@ -3,27 +3,8 @@ import cx from 'classnames';
 
 import './navigation-section.scss';
 
-interface NavigationSectionLinkProps {
-    name: string;
-    url?: string;
-    isActive?: boolean;
-}
-
-export interface NavigationSectionProps {
-    isOpened: boolean;
-    name: string;
-    components: NavigationSectionLinkProps[];
-}
-
-interface NavigationSectionState {
-    isOpened: boolean;
-}
-
-class NavigationSection extends React.PureComponent<
-    NavigationSectionProps,
-    NavigationSectionState
-> {
-    constructor(props: NavigationSectionProps) {
+class NavigationSection extends React.PureComponent {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -31,7 +12,7 @@ class NavigationSection extends React.PureComponent<
         };
     }
 
-    componentDidUpdate(prevProps: NavigationSectionProps) {
+    componentDidUpdate(prevProps) {
         const { isOpened } = this.props;
 
         if (isOpened !== prevProps.isOpened || isOpened) {
@@ -63,18 +44,16 @@ class NavigationSection extends React.PureComponent<
                     {components
                         ? components.map((link, index) => {
                               const { name, url, isActive } = link;
-                              const classNames = {
-                                  link: cx({
-                                      'styleguide-navigation-section__link': true,
-                                      'is-active': isActive,
-                                  }),
-                              };
+                              const classNames = cx({
+                                  'styleguide-navigation-section__link': true,
+                                  'is-active': isActive,
+                              });
                               const key = url || index;
 
                               return (
                                   <div className="styleguide-navigation-section__item" key={key}>
                                       <a
-                                          className={classNames.link}
+                                          className={classNames}
                                           data-vrt-locator={'link'}
                                           href={`#${url}`}
                                       >

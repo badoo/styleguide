@@ -2,17 +2,8 @@ import React from 'react';
 
 import './error-boundary.scss';
 
-interface ErrorBoundaryProps {
-    children: React.ReactNode;
-}
-
-interface ErrorBoundaryState {
-    error: Error | null;
-    showStack: boolean;
-}
-
-class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
-    constructor(props: ErrorBoundaryProps) {
+class ErrorBoundary extends React.Component {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -21,7 +12,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
         };
     }
 
-    static getDerivedStateFromError(error: Error) {
+    static getDerivedStateFromError(error) {
         return { error };
     }
 
