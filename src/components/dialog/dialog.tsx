@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Icon, { IconName } from '../icon/icon';
-
 import './dialog.scss';
+import Icon, { IconName } from 'components/icon/icon';
 
 const KEYCODES = {
     ESCAPE: 27,

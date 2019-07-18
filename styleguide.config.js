@@ -5,7 +5,10 @@ module.exports = {
         return [
             {
                 name: 'UI',
-                components: [require('components/component/component')],
+                components: [
+                    require('components/component/component'),
+                    require('components/error-boundary/error-boundary'),
+                ],
             },
         ];
     },

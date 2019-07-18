@@ -1,5 +1,5 @@
 import React from 'react';
-import Component from './component';
+import Component from 'components/component/component';
 
 export const SpecComponentEmpty: React.FunctionComponent = () => {
     return <Component name={'BasicComponent'} />;

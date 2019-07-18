@@ -9,9 +9,9 @@
     "deps": "yarn install --pure-lockfile",
     "build": "yarn start --config=styleguide.config.js --buildDir=./dist/",
     "start": "yarn deps && node ./index.js",
-    "lint": "eslint . --ext .js,.jsx",
+    "lint": "yarn tsc && eslint . --ext .js,.jsx",
     "tsc": "tsc -p tsconfig.json",
-    "prettier": "prettier --write '**/*.{jsx,js}' && prettier --parser typescript --write '**/*.{tsx,ts}' && prettier --parser json --write '**/*.json'",
+    "prettier": "prettier --write '**/*.{jsx,js,ts,tsx,json}'",
     "styleguide": "yarn start --config=styleguide.config.js"
   },
   "dependencies": {

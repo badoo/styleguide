@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Icon, { IconName, IconSize } from '../icon/icon';
+import Icon, { IconName, IconSize } from 'components/icon/icon';
 
 import './search-field.scss';
 

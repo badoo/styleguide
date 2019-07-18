@@ -1,13 +1,13 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Icon, { IconName } from '../icon/icon';
-import Dialog from '../dialog/dialog';
-import ErrorBoundary from '../error-boundary/error-boundary';
-
 import config from '__GLOBAL__CONFIG__';
 
 import './sandbox.scss';
+
+import Dialog from 'components/dialog/dialog';
+import ErrorBoundary from 'components/error-boundary/error-boundary';
+import Icon, { IconName } from 'components/icon/icon';
 
 interface SandboxProps {
     name: string;
@@ -80,28 +80,29 @@ export default class Sandbox extends React.Component<SandboxProps, SandboxState>
                     </div>
                 </header>
 
-                <ErrorBoundary>
-                    {this.state.isVisible && (
-                        <div
-                            className={cx({
-                                'styleguide-sandbox__content': true,
-                                'is-resizable': config.hasResizableSandbox
-                                    ? config.hasResizableSandbox
-                                    : false,
-                            })}
-                            data-vrt-locator={'sandbox-content'}
-                        >
-                            {children}
-                        </div>
-                    )}
+                <div data-vrt-locator={'sandbox-content'}>
+                    <ErrorBoundary>
+                        {this.state.isVisible && (
+                            <div
+                                className={cx({
+                                    'styleguide-sandbox__content': true,
+                                    'is-resizable': config.hasResizableSandbox
+                                        ? config.hasResizableSandbox
+                                        : false,
+                                })}
+                            >
+                                {children}
+                            </div>
+                        )}
 
-                    <Dialog
-                        isOpened={this.state.isFullScreen}
-                        onClose={() => this.setState({ isFullScreen: false })}
-                        title={title}
-                        content={children}
-                    />
-                </ErrorBoundary>
+                        <Dialog
+                            isOpened={this.state.isFullScreen}
+                            onClose={() => this.setState({ isFullScreen: false })}
+                            title={title}
+                            content={children}
+                        />
+                    </ErrorBoundary>
+                </div>
             </section>
         );
     }

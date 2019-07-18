@@ -21,7 +21,7 @@
         "target": "ES2015",
         "paths": {
             "__GLOBAL__CONFIG__": ["styleguide.config.js"],
-            "*": ["*", "src/components/*", "./node_modules/*"]
+            "*": ["*", "src/*", "./node_modules/*"]
         }
     },
     "include": ["./**/*"],
