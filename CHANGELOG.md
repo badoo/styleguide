@@ -1,8 +1,7 @@
 # Changelog
 
-## Pre-release versions
-* **v0.0.30-alpha.2**
-    * VRT locators added to navigation links and sandboxes
+## v0.0.30
+* VRT locators added to navigation links and sandboxes
 
 ## v0.0.29
 * Fixed issue with meta information for components without proper reactDocs: both export and module.exports supported
