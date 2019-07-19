@@ -1,5 +1,11 @@
 # Changelog
 
+## Pre-release versions
+* **v0.0.31-alpha.2**
+    * fix error with empty or undefined arrays
+    * fix error for collapsed sections
+    * fix error for missing component wrapper 
+
 ## v0.0.30
 * VRT locators added to navigation links and sandboxes
 

@@ -43,7 +43,7 @@ class App extends React.PureComponent {
         });
     }
 
-    getCurrentComponentAndSection(sections) {
+    getCurrentComponentAndSection(sections = []) {
         if (!this.state.hash) {
             return {
                 section: null,
@@ -92,7 +92,7 @@ class App extends React.PureComponent {
 
 export default App;
 
-function processSearchQuery(searchQuery, sections) {
+function processSearchQuery(searchQuery, sections = []) {
     const searchResultSections = [];
 
     if (searchQuery) {

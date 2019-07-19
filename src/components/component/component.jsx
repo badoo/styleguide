@@ -3,6 +3,7 @@ import cx from 'classnames';
 
 import './component.scss';
 import Sandbox from '../sandbox/sandbox';
+import config from '__GLOBAL__CONFIG__';
 
 class Component extends React.Component {
     constructor(props) {
@@ -29,6 +30,8 @@ class Component extends React.Component {
 
         const id = name ? name.toLowerCase() : undefined;
         const onClick = () => this.toggleProps(this.state.isPropsCollapsed);
+
+        const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
 
         return (
             <article className="styleguide-component" id={id}>
@@ -95,7 +98,9 @@ class Component extends React.Component {
                             return (
                                 <div className="styleguide-component__sandbox" key={key}>
                                     <Sandbox title={sandboxName}>
-                                        <SandboxComponent />
+                                        <Wrapper>
+                                            <SandboxComponent />
+                                        </Wrapper>
                                     </Sandbox>
                                 </div>
                             );

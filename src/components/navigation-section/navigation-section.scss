@@ -11,6 +11,10 @@
 
 .styleguide-navigation-section__components {
     padding: 16px;
+
+    &.is-hidden {
+        display: none;
+    }
 }
 
 .styleguide-navigation-section__item {

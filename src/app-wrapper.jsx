@@ -20,7 +20,7 @@ function processConfigSections({ configSections, isSpecificationPath }) {
     return configSections.map(section => processConfigSection({ section, isSpecificationPath }));
 }
 
-function processConfigSection({ section: { name, components }, isSpecificationPath }) {
+function processConfigSection({ section: { name, components = [] }, isSpecificationPath }) {
     return {
         name,
         components: components

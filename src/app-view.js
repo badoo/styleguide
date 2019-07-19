@@ -94,7 +94,9 @@ class AppView extends React.Component {
 
 function mapPropsToSections(sections, hash) {
     return sections.map(section =>
-        Object.assign({}, section, { isOpened: findMatchingComponent(section.components, hash) })
+        Object.assign({}, section, {
+            isOpened: Boolean(findMatchingComponent(section.components, hash)),
+        })
     );
 }
 
