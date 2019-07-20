@@ -1,7 +1,7 @@
 # Changelog
 
 ## Pre-release versions
-* **v0.0.31-alpha.2**
+* **v0.0.31-alpha.3**
     * fix error with empty or undefined arrays
     * fix error for collapsed sections
     * fix error for missing component wrapper 
