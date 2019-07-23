@@ -94,7 +94,9 @@ module.exports = function getWebpackConfig({
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
+                    exclude: isReactNative
+                        ? undefined
+                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/],
                     use: 'happypack/loader?id=ts-component',
                 },
                 {
