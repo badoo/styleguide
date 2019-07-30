@@ -72,6 +72,16 @@ module.exports = {
     },
 
     /**
+     * This function will wrap the content of sandboxes, 
+     * for example to use special context providers within provided
+     * Class or Component
+     * @returns Object
+     */
+    getComponentWrapper() {
+        require('MyComponent');
+    },
+
+    /**
      * Returns an array of all the sections in the styleguide
      * @returns Array<Object>
      */
