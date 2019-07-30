@@ -1,13 +1,17 @@
 # Changelog
 
-## Pre-release versions
-* **v0.0.31-alpha.3**
-    * fix error with empty or undefined arrays
-    * fix error for collapsed sections
-    * fix error for missing component wrapper 
+## v0.0.32
+* Fix the definition files support for TypeScript with Javascript file imports: don't pass them to special loader.
+
+## v0.0.31
+* Add `getComponentWrapper` function to config to wrap the content of sandboxes, for example to use special context providers
+* Fix bugs
 
 ## v0.0.30
-* VRT locators added to navigation links and sandboxes
+* Add VRT locators to navigation links and sandboxes
+    * `data-vrt-locator="link"` for navigation items
+    * `data-vrt-locator="sandbox"` for sandbox containers with `data-name` attribute with function name
+    * `data-vrt-locator="sandbox-content` for inner sandbox content
 
 ## v0.0.29
 * Fixed issue with meta information for components without proper reactDocs: both export and module.exports supported

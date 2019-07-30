@@ -4,11 +4,12 @@ module.exports = {
     getSections() {
         return [
             {
-                name: 'UI',
-                components: [
-                    require('components/component/component'),
-                    require('components/error-boundary/error-boundary'),
-                ],
+                name: 'Structure',
+                components: [require('components/component/component')],
+            },
+            {
+                name: 'Components',
+                components: [require('components/error-boundary/error-boundary')],
             },
         ];
     },
