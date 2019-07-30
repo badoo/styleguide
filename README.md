@@ -25,11 +25,13 @@
 
 ### Add styleguide dependency
 
-```yarn add badoo-styleguide --dev```
+```bash
+yarn add badoo-styleguide --dev
+```
 
 ### Create a styleguide config
 
-Create a file called ```styleguide.config.js``` in your project (The name doesn't really matter).
+Create a file called `styleguide.config.js` in your project (The name doesn't really matter).
 
 Add the following content to the file
 
@@ -144,7 +146,7 @@ Or add it to your package.json "scripts" section
 {
     "scripts": {
         "styleguide": "badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js",
-        "styleguide:compile": "badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/",
+        "styleguide:compile": "badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/"
     }
 }
 ```
@@ -153,12 +155,13 @@ Or add it to your package.json "scripts" section
 
 ## Examples
 
-> TODO
+* [Basic example](./examples/basic)
+* [Typescript project example](./examples/typescript)
 
 ## Debugging
 
 Pass --debug flag to the command line to get additional debug information.
 
-```js
+```bash
 yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --debug
 ```
