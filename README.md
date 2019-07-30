@@ -10,7 +10,6 @@
 * [ ] Simplify configuration needed
 * [ ] Add example projects
 * [ ] Explain the philosophy/goals/anti-goals/tradeoffs/pros/cons/roadmap behind inventing another styleguide
-* [ ] Convert the codebase to Typescript
 * [ ] Add Travis builds
 * [ ] Add contribution guide
 * [ ] Consider splitting out into styleguide/react and styleguide/react-native to reduce npm dependencies needed upon installation
