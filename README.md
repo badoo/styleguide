@@ -72,6 +72,17 @@ module.exports = {
     },
 
     /**
+     * This function returns element, which will be used for wrapping
+     * of the sandboxes content. This element can be used for introducing
+     * different extra features: context providers, props, controls
+     * @optional
+     * @returns {Component}
+     */
+    getComponentWrapper() {
+        return require('MyComponent');
+    },
+
+    /**
      * Returns an array of all the sections in the styleguide
      * @returns Array<Object>
      */
