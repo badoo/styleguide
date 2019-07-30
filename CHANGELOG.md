@@ -4,7 +4,6 @@
 * Fix the definition files support for TypeScript with Javascript file imports: don't pass them to special loader.
 
 ## v0.0.31
-* Add `getComponentWrapper` function to config to wrap the content of sandboxes, for example to use special context providers
 * Fix bugs
 
 ## v0.0.30

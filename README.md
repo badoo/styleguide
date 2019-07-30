@@ -72,13 +72,14 @@ module.exports = {
     },
 
     /**
-     * This function will wrap the content of sandboxes, 
-     * for example to use special context providers within provided
-     * Class or Component
-     * @returns Object
+     * This function returns element, which will be used for wrapping 
+     * the content of sandboxes. It can be used for introducing 
+     * special context providers within provided Component
+     * @optional
+     * @returns {Component}
      */
     getComponentWrapper() {
-        require('MyComponent');
+        return require('MyComponent');
     },
 
     /**
