@@ -72,9 +72,9 @@ module.exports = {
     },
 
     /**
-     * This function returns element, which will be used for wrapping 
-     * the content of sandboxes. It can be used for introducing 
-     * special context providers within provided Component
+     * This function returns element, which will be used for wrapping
+     * of the sandboxes content. This element can be used for introducing
+     * different extra features: context providers, props, controls
      * @optional
      * @returns {Component}
      */
