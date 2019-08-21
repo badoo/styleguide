@@ -10,7 +10,6 @@
 * [ ] Simplify configuration needed
 * [ ] Add example projects
 * [ ] Explain the philosophy/goals/anti-goals/tradeoffs/pros/cons/roadmap behind inventing another styleguide
-* [ ] Convert the codebase to Typescript
 * [ ] Add Travis builds
 * [ ] Add contribution guide
 * [ ] Consider splitting out into styleguide/react and styleguide/react-native to reduce npm dependencies needed upon installation
@@ -26,11 +25,13 @@
 
 ### Add styleguide dependency
 
-```yarn add badoo-styleguide --dev```
+```bash
+yarn add badoo-styleguide --dev
+```
 
 ### Create a styleguide config
 
-Create a file called ```styleguide.config.js``` in your project (The name doesn't really matter).
+Create a file called `styleguide.config.js` in your project (The name doesn't really matter).
 
 Add the following content to the file
 
@@ -69,6 +70,17 @@ module.exports = {
      */
     isSpecificationPath(componentMeta, path) {
         return path.indexOf(`${componentMeta.fileNameWithoutPrefix}.spec`) !== -1;
+    },
+
+    /**
+     * This function returns element, which will be used for wrapping
+     * of the sandboxes content. This element can be used for introducing
+     * different extra features: context providers, props, controls
+     * @optional
+     * @returns {Component}
+     */
+    getComponentWrapper() {
+        return require('MyComponent');
     },
 
     /**
@@ -134,7 +146,7 @@ Or add it to your package.json "scripts" section
 {
     "scripts": {
         "styleguide": "badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js",
-        "styleguide:compile": "badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/",
+        "styleguide:compile": "badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/"
     }
 }
 ```
@@ -143,12 +155,13 @@ Or add it to your package.json "scripts" section
 
 ## Examples
 
-> TODO
+* [Basic example](./examples/basic)
+* [Typescript project example](./examples/typescript)
 
 ## Debugging
 
 Pass --debug flag to the command line to get additional debug information.
 
-```js
+```bash
 yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --debug
 ```
