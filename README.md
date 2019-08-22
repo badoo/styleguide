@@ -73,6 +73,15 @@ module.exports = {
     },
 
     /**
+     * This function allows to set up global objects 
+     * in browser environment
+     * @optional
+     */
+    browserSetup() {
+        window.parameters = true;
+    }
+
+    /**
      * This function returns element, which will be used for wrapping
      * of the sandboxes content. This element can be used for introducing
      * different extra features: context providers, props, controls
