@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.33-alpha
+* Fix race condition for `browserSetup` called after rendering components in styleguide.
+
 ## v0.0.32
 * Fix the definition files support for TypeScript with Javascript file imports: don't pass them to special loader.
 

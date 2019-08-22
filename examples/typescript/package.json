@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@types/react": "^16.8.21",
-    "badoo-styleguide": "0.0.32",
+    "badoo-styleguide": "0.0.33-alpha",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   }
