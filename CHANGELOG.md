@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.0.33-alpha
+## v0.0.33
 * Fix race condition for `browserSetup` called after rendering components in styleguide.
 
 ## v0.0.32
