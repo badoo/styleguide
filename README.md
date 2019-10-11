@@ -47,7 +47,7 @@ module.exports = {
      * Set it to true if you want to resize sandboxes with the resize handle
      * @optional
      */
-    hasResizableSandboxes: false,
+    hasResizableSandbox: false,
 
     /**
      * Min-width for the sandbox wrapper (number | string)
