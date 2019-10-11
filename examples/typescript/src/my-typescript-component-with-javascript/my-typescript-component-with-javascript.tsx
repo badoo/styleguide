@@ -19,13 +19,17 @@ const mapColorToHex: { [key in Color]: string } = {
     [Color.NEGATIVE]: '#900',
 };
 
-const MyTypescriptComponentWithJavascript: React.FunctionComponent<MyTypescriptComponentProps> = props => {
+const MyTypescriptComponentWithJavascript: React.FunctionComponent<
+    MyTypescriptComponentProps
+> = props => {
     const { name, color = Color.NEUTRAL } = props;
 
-    return <div style={{ color: mapColorToHex[color] }}>
-        The name is {name}!
-        <MyJavascriptComponent name="Lorem From Javascript Component" />
-    </div>;
+    return (
+        <div style={{ color: mapColorToHex[color] }}>
+            The name is {name}!
+            <MyJavascriptComponent name="Lorem From Javascript Component" />
+        </div>
+    );
 };
 
 export default MyTypescriptComponentWithJavascript;

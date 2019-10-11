@@ -1,6 +1,7 @@
 import React from 'react';
-import MyTypescriptComponentWithJavascript, { Color }
-    from 'my-typescript-component-with-javascript/my-typescript-component-with-javascript';
+import MyTypescriptComponentWithJavascript, {
+    Color,
+} from 'my-typescript-component-with-javascript/my-typescript-component-with-javascript';
 
 export const SpecMyTypescriptComponentDefault: React.FunctionComponent = () => (
     <MyTypescriptComponentWithJavascript name={'Lorem'} />
