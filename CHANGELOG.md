@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.34-alpha.0
+* Remove unused dependencies
+    * `react-svg-loader`
+    * `raw-loader`
+    * `resolve-url-loader`
+    * `react-arc`
+    * `react-native-svg-web`
+    * `react-native-web`
+    * `react-native-web-linear-gradient`
+
 ## v0.0.33
 * Fix race condition for `browserSetup` called after rendering components in styleguide.
 
