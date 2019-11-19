@@ -163,16 +163,6 @@ module.exports = function getWebpackConfig({
                             tsConfigPath: tsConfigPath,
                         },
                     },
-                    {
-                        loader: 'ts-loader',
-                        options: {
-                            configFile: tsConfigPath,
-                            happyPackMode: true,
-                            compilerOptions: {
-                                noEmit: false,
-                            },
-                        },
-                    },
                 ],
             }),
         ],
