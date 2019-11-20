@@ -174,3 +174,11 @@ Pass --debug flag to the command line to get additional debug information.
 ```bash
 yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --debug
 ```
+
+## Continuous integration
+
+Pass --ci flag to the command line to switch off caching.
+
+```bash
+yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --ci
+```

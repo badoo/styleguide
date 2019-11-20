@@ -1,9 +1,14 @@
 # Changelog
 
-## v0.0.34-alpha.0
+## v0.0.34-alpha.1
+* Remove unused loader
+    * `ts-loader`
+* Add `cache-loader` for speeding up the following builds
+* Add `--ci` option for switching off cache during the build
 * Remove unused dependencies
     * `react-svg-loader`
     * `raw-loader`
+    * `ts-loader`
     * `resolve-url-loader`
     * `react-arc`
     * `react-native-svg-web`
