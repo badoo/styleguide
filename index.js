@@ -4,7 +4,8 @@
 /* eslint-disable no-console */
 
 const path = require('path');
-const argv = require('yargs').argv;
+const argv = require('./build-arguments');
+
 
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
@@ -17,7 +18,7 @@ if (!argv.config) {
 
 let isCompiling = false;
 
-if (argv.buildDir) {
+if (argv.buildDir || argv.isCi) {
     isCompiling = true;
 }
 
