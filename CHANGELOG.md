@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.34-alpha.2
+* Move `cache-loader` to dependencies for reducing dependencies in consumers
+* Proccessing of arguments now in one module
+* Caching now works by default, we switch it off only if `--buildDir` parameter defined
+
 ## v0.0.34-alpha.1
 * Remove unused loader
     * `ts-loader`

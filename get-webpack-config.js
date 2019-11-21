@@ -2,12 +2,18 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const { isDebug, isCi } = require('./build-arguments');
+const { isDebug, buildDir } = require('./build-arguments');
 
 const HappyPack = require('happypack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const setLoadersForCi = (isCi, loaders) => (isCi ? loaders : ['cache-loader', ...loaders]);
+const isCompiling = buildDir => {
+    const  hasPath = buildDir === '' || Boolean(buildDir);
+
+    return !hasPath;
+};
+const useCache = isCompiling(buildDir);
+const setLoaders = (useCache, loaders) => (useCache ? loaders : ['cache-loader', ...loaders]);
 
 module.exports = function getWebpackConfig({
     devServerUrl,
@@ -133,7 +139,7 @@ module.exports = function getWebpackConfig({
                 id: 'babel',
                 verbose: isDebug,
                 debug: isDebug,
-                loaders: setLoadersForCi(isCi, [
+                loaders: setLoaders(useCache, [
                     {
                         loader: 'babel-loader',
                         options: getBabelOptions({ isReactNative, getBabelConfig }),
@@ -144,7 +150,7 @@ module.exports = function getWebpackConfig({
                 id: 'js-component',
                 verbose: isDebug,
                 debug: isDebug,
-                loaders: setLoadersForCi(isCi, [
+                loaders: setLoaders(useCache, [
                     {
                         loader: 'js-component',
                         options: {
@@ -157,7 +163,7 @@ module.exports = function getWebpackConfig({
                 id: 'ts-component',
                 verbose: isDebug,
                 debug: isDebug,
-                loaders: setLoadersForCi(isCi, [
+                loaders: setLoaders(useCache, [
                     {
                         loader: 'ts-component',
                         options: {
