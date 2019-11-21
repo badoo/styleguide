@@ -108,7 +108,7 @@ module.exports = {
     },
 
     // This method tells us the root folder of your component
-    // heirarchy
+    // hierarchy
     getComponentRoots({ path }) {
         return [
             path.resolve(cwd, 'src')
@@ -162,7 +162,7 @@ Or add it to your package.json "scripts" section
 }
 ```
 
-The buildDir parameter switches off webpack-server and building of cache.
+The buildDir parameter switches off webpack-server and caching.
 
 **Note:** The buildDir is resolved relative to where you ran "yarn" from
 

@@ -1,15 +1,9 @@
 # Changelog
 
 ## v0.0.34-alpha.2
-* Move `cache-loader` to dependencies for reducing dependencies in consumers
-* Proccessing of arguments now in one module
-* Caching now works by default, we switch it off only if `--buildDir` parameter defined
-
-## v0.0.34-alpha.1
 * Remove unused loader
     * `ts-loader`
-* Add `cache-loader` for speeding up the following builds
-* Add `--ci` option for switching off cache during the build
+* Add `cache-loader` for speeding up the following builds, not in use with `--buildDir` param
 * Remove unused dependencies
     * `react-svg-loader`
     * `raw-loader`
