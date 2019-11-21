@@ -18,7 +18,7 @@ if (!argv.config) {
 
 let isCompiling = false;
 
-if (argv.buildDir || argv.isCi) {
+if (argv.buildDir) {
     isCompiling = true;
 }
 

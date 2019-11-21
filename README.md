@@ -145,6 +145,8 @@ The styleguide can be run as a local dev server or be compiled if you want to se
 
 ```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js```
 
+**Note:** Styleguide benefits from caching results of initial build. It makes all subsequents recompilations much faster.
+
 #### Compiling
 
 ```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/```
@@ -160,6 +162,8 @@ Or add it to your package.json "scripts" section
 }
 ```
 
+The buildDir parameter switches off webpack-server and building of cache.
+
 **Note:** The buildDir is resolved relative to where you ran "yarn" from
 
 ## Examples
@@ -173,12 +177,4 @@ Pass --debug flag to the command line to get additional debug information.
 
 ```bash
 yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --debug
-```
-
-## Continuous integration
-
-Pass --ci flag to the command line to switch off caching.
-
-```bash
-yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --ci
 ```
