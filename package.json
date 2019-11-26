@@ -1,6 +1,6 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.34-alpha.2",
+  "version": "0.0.34-alpha.3",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
@@ -37,6 +37,7 @@
     "react-hot-loader": "4.8.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
+    "ts-loader": "6.2.1",
     "typescript": "3.4.5",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3",
