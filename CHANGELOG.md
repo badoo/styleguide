@@ -1,13 +1,10 @@
 # Changelog
 
-## v0.0.34-alpha.2
-* Remove unused loader
-    * `ts-loader`
+## v0.0.34-alpha.3
 * Add `cache-loader` for speeding up the following builds, not in use with `--buildDir` param
 * Remove unused dependencies
     * `react-svg-loader`
     * `raw-loader`
-    * `ts-loader`
     * `resolve-url-loader`
     * `react-arc`
     * `react-native-svg-web`
