@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.34-alpha.4
+* update `typescript` to 3.7.5 for general compatibility
+
 ## v0.0.34-alpha.3
 * Add `cache-loader` for speeding up the following builds, not in use with `--buildDir` param
 * Remove unused dependencies
