@@ -8,7 +8,7 @@ const HappyPack = require('happypack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isCompiling = buildDir => {
-    const  hasPath = buildDir === '' || Boolean(buildDir);
+    const hasPath = buildDir === '' || Boolean(buildDir);
 
     return !hasPath;
 };
@@ -96,16 +96,18 @@ module.exports = function getWebpackConfig({
                 {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative ? undefined : /node_modules\/(?!badoo-styleguide)/,
-                    use: 'happypack/loader?id=js-component',
+                    exclude: isReactNative
+                        ? undefined
+                        : [/node_modules\/(?!badoo-styleguide)/, /\.spec\.jsx/],
+                    use: 'happypack/loader?id=js-component-loader',
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative
                         ? undefined
-                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/],
-                    use: 'happypack/loader?id=ts-component',
+                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, /\.spec\.tsx/],
+                    use: 'happypack/loader?id=ts-component-loader',
                 },
                 {
                     test: /\.(j|t)sx?$/,
@@ -147,7 +149,7 @@ module.exports = function getWebpackConfig({
                 ]),
             }),
             new HappyPack({
-                id: 'js-component',
+                id: 'js-component-loader',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
@@ -160,7 +162,7 @@ module.exports = function getWebpackConfig({
                 ]),
             }),
             new HappyPack({
-                id: 'ts-component',
+                id: 'ts-component-loader',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: setLoaders(useCache, [

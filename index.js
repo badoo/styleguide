@@ -6,7 +6,6 @@
 const path = require('path');
 const argv = require('./build-arguments');
 
-
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const WebpackDevServer = require('webpack-dev-server');
