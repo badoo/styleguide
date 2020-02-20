@@ -4,7 +4,7 @@ const loaderUtils = require('loader-utils');
 const { isDebug } = require('../build-arguments');
 
 function setPropsFromDoc(doc) {
-    function setProps (types, key) {
+    function setProps(types, key) {
         const originalProp = doc.props[key];
 
         types[key] = {
@@ -22,7 +22,7 @@ function setPropsFromDoc(doc) {
         return types;
     }
 
-    return Object.keys(doc.props).reduce(setProps, {})
+    return Object.keys(doc.props).reduce(setProps, {});
 }
 
 function setResults(tsConfigPath, resourcePath, source) {
@@ -35,7 +35,10 @@ function setResults(tsConfigPath, resourcePath, source) {
 
         const doc = docs[0];
         const fileName = path.basename(resourcePath);
-        const fileNameWithoutPrefix = fileName.split('.').slice(0, -1).join('.');
+        const fileNameWithoutPrefix = fileName
+            .split('.')
+            .slice(0, -1)
+            .join('.');
         const propTypes = doc.props ? setPropsFromDoc(doc) : null;
 
         const meta = {
