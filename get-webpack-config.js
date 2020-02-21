@@ -81,7 +81,8 @@ module.exports = function getWebpackConfig({
                             use: ['style-loader', 'css-loader'],
                         },
                         {
-                            test: /\.spec\.(j|t)sx?$/,
+                            test: /\.(j|t)sx?$/,
+                            // React native modules usually always need to be loaded by metro
                             exclude: isReactNative
                                 ? undefined
                                 : /node_modules\/(?!badoo-styleguide)/,
@@ -99,7 +100,7 @@ module.exports = function getWebpackConfig({
                     exclude: isReactNative
                         ? undefined
                         : [/node_modules\/(?!badoo-styleguide)/, /\.spec\.jsx$/],
-                    use: ['happypack/loader?id=js-component-loader', 'happypack/loader?id=babel'],
+                    use: 'happypack/loader?id=js-component-loader',
                 },
                 {
                     test: /\.tsx?$/,
