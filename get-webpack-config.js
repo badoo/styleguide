@@ -98,15 +98,15 @@ module.exports = function getWebpackConfig({
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative
                         ? undefined
-                        : [/node_modules\/(?!badoo-styleguide)/, /\.spec\.jsx/],
-                    use: 'happypack/loader?id=js-component-loader',
+                        : [/node_modules\/(?!badoo-styleguide)/, /\.spec\.jsx$/],
+                    use: ['happypack/loader?id=js-component-loader', 'happypack/loader?id=babel'],
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative
                         ? undefined
-                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, /\.spec\.tsx/],
+                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, /\.spec\.tsx$/],
                     use: 'happypack/loader?id=ts-component-loader',
                 },
                 {
@@ -158,10 +158,6 @@ module.exports = function getWebpackConfig({
                         options: {
                             componentRoots: getComponentRoots({ path }),
                         },
-                    },
-                    {
-                        loader: 'babel-loader',
-                        options: getBabelOptions({ isReactNative, getBabelConfig }),
                     },
                 ]),
             }),
