@@ -25,6 +25,7 @@ module.exports = function getWebpackConfig({
     getLoaderForModule,
     tsConfigPath,
 }) {
+    console.log('123');
     return {
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
@@ -171,16 +172,6 @@ module.exports = function getWebpackConfig({
                         options: {
                             componentRoots: getComponentRoots({ path }),
                             tsConfigPath: tsConfigPath,
-                        },
-                    },
-                    {
-                        loader: 'ts-loader',
-                        options: {
-                            configFile: tsConfigPath,
-                            happyPackMode: true,
-                            compilerOptions: {
-                                noEmit: false,
-                            },
                         },
                     },
                 ]),
