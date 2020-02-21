@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.34-alpha.6
+* move get-babel-options to separate module
+
 ## v0.0.34-alpha.5
 * add skip of spec-files during generating of documentation stage
 * divide loader `ts-component` into several function for readability
