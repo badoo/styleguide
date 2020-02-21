@@ -15,6 +15,31 @@ const isCompiling = buildDir => {
 };
 const useCache = isCompiling(buildDir);
 const setLoaders = (useCache, loaders) => (useCache ? loaders : ['cache-loader', ...loaders]);
+const buildWithoutPropsTable = (useFastBuild, jsLoader, tsLoader) =>
+    useFastBuild ? jsLoader : tsLoader;
+
+function setLoadersForTs(getComponentRoots, tsConfigPath) {
+    const jsLoader = setLoaders(useCache, [
+        {
+            loader: 'js-component',
+            options: {
+                componentRoots: getComponentRoots({ path }),
+            },
+        },
+    ]);
+
+    const tsLoader = setLoaders(useCache, [
+        {
+            loader: 'ts-component',
+            options: {
+                componentRoots: getComponentRoots({ path }),
+                tsConfigPath: tsConfigPath,
+            },
+        },
+    ]);
+
+    return buildWithoutPropsTable(useCache, jsLoader, tsLoader);
+}
 
 module.exports = function getWebpackConfig({
     devServerUrl,
@@ -166,15 +191,7 @@ module.exports = function getWebpackConfig({
                 id: 'ts-component-loader',
                 verbose: isDebug,
                 debug: isDebug,
-                loaders: setLoaders(useCache, [
-                    {
-                        loader: 'ts-component',
-                        options: {
-                            componentRoots: getComponentRoots({ path }),
-                            tsConfigPath: tsConfigPath,
-                        },
-                    },
-                ]),
+                loaders: setLoadersForTs(getComponentRoots, tsConfigPath),
             }),
         ],
     };
