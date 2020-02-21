@@ -24,7 +24,7 @@ module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
 
         babelConfig.plugins.unshift(require.resolve('react-hot-loader/babel'));
 
-        // we will need to divide config later
+        // @TODO - rethink this, how to divide config
         if (!babelConfig.presets) {
             babelConfig.presets = [];
         }
