@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
     let babelOverrides = {
         compact: false,
