@@ -178,8 +178,14 @@ module.exports = function getWebpackConfig({
                         },
                     },
                     {
-                        loader: 'babel-loader',
-                        options: getBabelOptions({ isReactNative, getBabelConfig }),
+                        loader: 'ts-loader',
+                        options: {
+                            configFile: tsConfigPath,
+                            happyPackMode: true,
+                            compilerOptions: {
+                                noEmit: false,
+                            },
+                        },
                     },
                 ]),
             }),
