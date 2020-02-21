@@ -15,31 +15,6 @@ const isCompiling = buildDir => {
 };
 const useCache = isCompiling(buildDir);
 const setLoaders = (useCache, loaders) => (useCache ? loaders : ['cache-loader', ...loaders]);
-const buildWithoutPropsTable = (useFastBuild, jsLoader, tsLoader) =>
-    useFastBuild ? jsLoader : tsLoader;
-
-function setLoadersForTs(getComponentRoots, tsConfigPath) {
-    const jsLoader = setLoaders(useCache, [
-        {
-            loader: 'js-component',
-            options: {
-                componentRoots: getComponentRoots({ path }),
-            },
-        },
-    ]);
-
-    const tsLoader = setLoaders(useCache, [
-        {
-            loader: 'ts-component',
-            options: {
-                componentRoots: getComponentRoots({ path }),
-                tsConfigPath: tsConfigPath,
-            },
-        },
-    ]);
-
-    return buildWithoutPropsTable(useCache, jsLoader, tsLoader);
-}
 
 module.exports = function getWebpackConfig({
     devServerUrl,
@@ -106,8 +81,7 @@ module.exports = function getWebpackConfig({
                             use: ['style-loader', 'css-loader'],
                         },
                         {
-                            test: /\.(j|t)sx?$/,
-                            // React native modules usually always need to be loaded by metro
+                            test: /\.spec\.(j|t)sx?$/,
                             exclude: isReactNative
                                 ? undefined
                                 : /node_modules\/(?!badoo-styleguide)/,
@@ -185,13 +159,29 @@ module.exports = function getWebpackConfig({
                             componentRoots: getComponentRoots({ path }),
                         },
                     },
+                    {
+                        loader: 'babel-loader',
+                        options: getBabelOptions({ isReactNative, getBabelConfig }),
+                    },
                 ]),
             }),
             new HappyPack({
                 id: 'ts-component-loader',
                 verbose: isDebug,
                 debug: isDebug,
-                loaders: setLoadersForTs(getComponentRoots, tsConfigPath),
+                loaders: setLoaders(useCache, [
+                    {
+                        loader: 'ts-component',
+                        options: {
+                            componentRoots: getComponentRoots({ path }),
+                            tsConfigPath: tsConfigPath,
+                        },
+                    },
+                    {
+                        loader: 'babel-loader',
+                        options: getBabelOptions({ isReactNative, getBabelConfig }),
+                    },
+                ]),
             }),
         ],
     };
