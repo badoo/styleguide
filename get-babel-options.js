@@ -1,13 +1,5 @@
 const path = require('path');
 
-const babelPresetTypescript = [
-    '@babel/preset-typescript',
-    {
-        isTSX: true,
-        allExtensions: true,
-    },
-];
-
 module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
     let babelOverrides = {
         compact: false,
@@ -23,13 +15,6 @@ module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
         }
 
         babelConfig.plugins.unshift(require.resolve('react-hot-loader/babel'));
-
-        // @TODO - rethink this, how to divide config
-        if (!babelConfig.presets) {
-            babelConfig.presets = [];
-        }
-
-        babelConfig.presets.push(babelPresetTypescript);
 
         return Object.assign({}, babelConfig, babelOverrides);
     }
@@ -65,7 +50,13 @@ module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
                         development: true,
                     },
                 ],
-                babelPresetTypescript,
+                [
+                    '@babel/preset-typescript',
+                    {
+                        isTSX: true,
+                        allExtensions: true,
+                    },
+                ],
             ],
             plugins: [
                 require.resolve('react-hot-loader/babel'),
