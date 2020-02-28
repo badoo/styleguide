@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.0.34-alpha.7
+## v0.0.34-beta.1
 
 * Add `--no-props-for-tsx-components` for fast builds of typescript react-components
 * Add `getExceptionForLoaders` function for adding custom exceptions for loaders

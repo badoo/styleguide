@@ -155,6 +155,10 @@ The styleguide can be run as a local dev server or be compiled if you want to se
 
 **Note:** Styleguide benefits from caching results of initial build. It makes all subsequents recompilations much faster.
 
+**Note:** Styleguide can compile ts components much faster. Use `--no-props-for-tsx-components` for building components without prop-tables.
+
+```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --no-props-for-tsx-components true```
+
 #### Compiling
 
 ```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/```
