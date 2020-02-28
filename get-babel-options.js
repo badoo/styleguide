@@ -1,9 +1,6 @@
 const path = require('path');
 
-module.exports = function getBabelOptions({
-    isReactNative,
-    getBabelConfig,
-}) {
+module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
     let babelOverrides = {
         compact: false,
         minified: false,
@@ -39,9 +36,7 @@ module.exports = function getBabelOptions({
         {
             babelrc: false,
             presets: [
-                [
-                    require.resolve('@babel/preset-env'),
-                ],
+                [require.resolve('@babel/preset-env')],
                 [
                     require.resolve('@babel/preset-react'),
                     {

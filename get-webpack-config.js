@@ -29,16 +29,19 @@ module.exports = function getWebpackConfig({
 }) {
     const exceptionsList = getExceptionForLoaders && getExceptionForLoaders({ path });
 
-    const jsLoaderExceptionList = exceptionsList && exceptionsList.jsLoader ? [
-        /node_modules\/(?!badoo-styleguide)/,
-        path.resolve(__dirname, 'src/index.jsx'),
-        ...exceptionsList.jsLoader
-    ] : [/node_modules\/(?!badoo-styleguide)/,
-            path.resolve(__dirname, 'src/index.jsx'),];
+    const jsLoaderExceptionList =
+        exceptionsList && exceptionsList.jsLoader
+            ? [
+                  /node_modules\/(?!badoo-styleguide)/,
+                  path.resolve(__dirname, 'src/index.jsx'),
+                  ...exceptionsList.jsLoader,
+              ]
+            : [/node_modules\/(?!badoo-styleguide)/, path.resolve(__dirname, 'src/index.jsx')];
 
-    const tsLoaderExceptionList = exceptionsList && exceptionsList.tsLoader ? [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/,
-        ...exceptionsList.tsLoader
-    ] : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/,];
+    const tsLoaderExceptionList =
+        exceptionsList && exceptionsList.tsLoader
+            ? [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, ...exceptionsList.tsLoader]
+            : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/];
 
     return {
         mode: 'development',
@@ -119,17 +122,13 @@ module.exports = function getWebpackConfig({
                 {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative
-                        ? undefined
-                        : jsLoaderExceptionList,
+                    exclude: isReactNative ? undefined : jsLoaderExceptionList,
                     use: 'happypack/loader?id=js-component-loader',
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative
-                        ? undefined
-                        : tsLoaderExceptionList,
+                    exclude: isReactNative ? undefined : tsLoaderExceptionList,
                     use: 'happypack/loader?id=ts-component-loader',
                 },
                 {
