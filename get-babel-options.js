@@ -42,11 +42,6 @@ module.exports = function getBabelOptions({
             presets: [
                 [
                     require.resolve('@babel/preset-env'),
-                    {
-                        targets: {
-                            ie: 11,
-                        },
-                    },
                 ],
                 [
                     require.resolve('@babel/preset-react'),
