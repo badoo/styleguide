@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = function getBabelOptions({
     isReactNative,
     getBabelConfig,
-    hasTypescriptBabelPreset,
 }) {
     let babelOverrides = {
         compact: false,
@@ -36,7 +35,7 @@ module.exports = function getBabelOptions({
     }
 
     // @TODO - rethink this, should clients always pass their babel config? Or should we auto-detect it?
-    let updatedBabelConfig = Object.assign(
+    return Object.assign(
         {
             babelrc: false,
             presets: [
@@ -67,16 +66,4 @@ module.exports = function getBabelOptions({
         },
         babelOverrides
     );
-
-    if (hasTypescriptBabelPreset) {
-        updatedBabelConfig.presets.push([
-            '@babel/preset-typescript',
-            {
-                isTSX: true,
-                allExtensions: true,
-            },
-        ]);
-    }
-
-    return updatedBabelConfig;
 };

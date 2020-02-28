@@ -115,6 +115,14 @@ module.exports = {
         ];
     },
 
+    // This method provide list of exceptions for loaders
+    getExceptionForLoaders({ path }) {
+        return {
+            jsLoader: path.resolve(cwd, 'src'),
+            tsLoader: /src/,
+        };
+    },
+
     /**
      * Returns the webpack configuration for your module setup
      * @param {string} path - The "path" node module to help you resolve any paths

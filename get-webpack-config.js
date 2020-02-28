@@ -2,7 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const { isDebug, buildDir } = require('./build-arguments');
+const { isDebug, buildDir, noPropsInTsxComponents } = require('./build-arguments');
 const getBabelOptions = require('./get-babel-options');
 
 const HappyPack = require('happypack');
@@ -15,7 +15,6 @@ const isCompiling = buildDir => {
 };
 const useCache = isCompiling(buildDir);
 const setLoaders = (useCache, loaders) => (useCache ? loaders : ['cache-loader', ...loaders]);
-const hasTypescriptBabelPreset = true;
 
 module.exports = function getWebpackConfig({
     devServerUrl,
@@ -23,10 +22,24 @@ module.exports = function getWebpackConfig({
     isReactNative,
     configPath,
     getComponentRoots,
+    getExceptionForLoaders,
     getBabelConfig,
     getLoaderForModule,
     tsConfigPath,
 }) {
+    const exceptionsList = getExceptionForLoaders && getExceptionForLoaders({ path });
+
+    const jsLoaderExceptionList = exceptionsList && exceptionsList.jsLoader ? [
+        /node_modules\/(?!badoo-styleguide)/,
+        path.resolve(__dirname, 'src/index.jsx'),
+        ...exceptionsList.jsLoader
+    ] : [/node_modules\/(?!badoo-styleguide)/,
+            path.resolve(__dirname, 'src/index.jsx'),];
+
+    const tsLoaderExceptionList = exceptionsList && exceptionsList.tsLoader ? [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/,
+        ...exceptionsList.tsLoader
+    ] : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/,];
+
     return {
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
@@ -108,19 +121,7 @@ module.exports = function getWebpackConfig({
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative
                         ? undefined
-                        : [
-                              /node_modules\/(?!badoo-styleguide)/,
-                              path.resolve(__dirname, 'src/index.jsx'),
-                                /\.spec\.jsx$/,
-                                /ui\/enum/,
-                                /packages\/utils/,
-                                /packages\/localization/,
-                                /styleguide\/mocks/,
-                                /src\/jscore/,
-                                /src\/utils/,
-                                /\.config\.ts$/,
-                                /lexemes\.js\?bma_client/,
-                          ],
+                        : jsLoaderExceptionList,
                     use: 'happypack/loader?id=js-component-loader',
                 },
                 {
@@ -128,15 +129,7 @@ module.exports = function getWebpackConfig({
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative
                         ? undefined
-                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, /\.spec\.tsx$/,
-                            /ui\/enum/,
-                            /packages\/utils/,
-                            /packages\/localization/,
-                            /styleguide\/mocks/,
-                            /src\/jscore/,
-                                /src\/utils/,
-                            /\.config\.ts$/,
-                        ],
+                        : tsLoaderExceptionList,
                     use: 'happypack/loader?id=ts-component-loader',
                 },
                 {
@@ -184,12 +177,14 @@ module.exports = function getWebpackConfig({
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
                     {
-                        loader: 'babel-loader',
-                        options: getBabelOptions({
-                            isReactNative,
-                            getBabelConfig,
-                            hasTypescriptBabelPreset,
-                        }),
+                        loader: 'ts-loader',
+                        options: {
+                            configFile: tsConfigPath,
+                            happyPackMode: true,
+                            compilerOptions: {
+                                noEmit: false,
+                            },
+                        },
                     },
                 ]),
             }),
@@ -212,7 +207,7 @@ module.exports = function getWebpackConfig({
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
                     {
-                        loader: 'ts-component',
+                        loader: noPropsInTsxComponents ? 'js-component' : 'ts-component',
                         options: {
                             componentRoots: getComponentRoots({ path }),
                             tsConfigPath: tsConfigPath,

@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.34-alpha.7
+
+* Add `--no-props-for-tsx-components` for fast builds of typescript react-components
+* Add `getExceptionForLoaders` function for adding custom exceptions for loaders
+
 ## v0.0.34-alpha.6
 * move get-babel-options to separate module
 
