@@ -115,6 +115,14 @@ module.exports = {
         ];
     },
 
+    // This method provide list of exceptions for loaders
+    getExceptionForLoaders({ path }) {
+        return {
+            jsLoader: path.resolve(cwd, 'src'),
+            tsLoader: /src/,
+        };
+    },
+
     /**
      * Returns the webpack configuration for your module setup
      * @param {string} path - The "path" node module to help you resolve any paths
@@ -146,6 +154,10 @@ The styleguide can be run as a local dev server or be compiled if you want to se
 ```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js```
 
 **Note:** Styleguide benefits from caching results of initial build. It makes all subsequents recompilations much faster.
+
+**Note:** Styleguide can compile ts components much faster. Use `--no-props-for-tsx-components` for building components without prop-tables.
+
+```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --no-props-for-tsx-components true```
 
 #### Compiling
 

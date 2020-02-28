@@ -2,7 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const { isDebug, buildDir } = require('./build-arguments');
+const { isDebug, buildDir, noPropsInTsxComponents } = require('./build-arguments');
 const getBabelOptions = require('./get-babel-options');
 
 const HappyPack = require('happypack');
@@ -22,10 +22,27 @@ module.exports = function getWebpackConfig({
     isReactNative,
     configPath,
     getComponentRoots,
+    getExceptionForLoaders,
     getBabelConfig,
     getLoaderForModule,
     tsConfigPath,
 }) {
+    const exceptionsList = getExceptionForLoaders && getExceptionForLoaders({ path });
+
+    const jsLoaderExceptionList =
+        exceptionsList && exceptionsList.jsLoader
+            ? [
+                  /node_modules\/(?!badoo-styleguide)/,
+                  path.resolve(__dirname, 'src/index.jsx'),
+                  ...exceptionsList.jsLoader,
+              ]
+            : [/node_modules\/(?!badoo-styleguide)/, path.resolve(__dirname, 'src/index.jsx')];
+
+    const tsLoaderExceptionList =
+        exceptionsList && exceptionsList.tsLoader
+            ? [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, ...exceptionsList.tsLoader]
+            : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/];
+
     return {
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
@@ -81,12 +98,20 @@ module.exports = function getWebpackConfig({
                             use: ['style-loader', 'css-loader'],
                         },
                         {
-                            test: /\.(j|t)sx?$/,
+                            test: /\.jsx?$/,
                             // React native modules usually always need to be loaded by metro
                             exclude: isReactNative
                                 ? undefined
                                 : /node_modules\/(?!badoo-styleguide)/,
-                            use: 'happypack/loader?id=babel',
+                            use: 'happypack/loader?id=babel-js',
+                        },
+                        {
+                            test: /\.tsx?$/,
+                            // React native modules usually always need to be loaded by metro
+                            exclude: isReactNative
+                                ? undefined
+                                : /node_modules\/(?!badoo-styleguide)/,
+                            use: 'happypack/loader?id=babel-ts',
                         },
                         {
                             test: /\.(gif|png|jpe?g|woff|ttf)$/i,
@@ -97,17 +122,13 @@ module.exports = function getWebpackConfig({
                 {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative
-                        ? undefined
-                        : [/node_modules\/(?!badoo-styleguide)/, /\.spec\.jsx$/],
+                    exclude: isReactNative ? undefined : jsLoaderExceptionList,
                     use: 'happypack/loader?id=js-component-loader',
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative
-                        ? undefined
-                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, /\.spec\.tsx$/],
+                    exclude: isReactNative ? undefined : tsLoaderExceptionList,
                     use: 'happypack/loader?id=ts-component-loader',
                 },
                 {
@@ -139,13 +160,30 @@ module.exports = function getWebpackConfig({
                 DEBUG: false,
             }),
             new HappyPack({
-                id: 'babel',
+                id: 'babel-js',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
                     {
                         loader: 'babel-loader',
                         options: getBabelOptions({ isReactNative, getBabelConfig }),
+                    },
+                ]),
+            }),
+            new HappyPack({
+                id: 'babel-ts',
+                verbose: isDebug,
+                debug: isDebug,
+                loaders: setLoaders(useCache, [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            configFile: tsConfigPath,
+                            happyPackMode: true,
+                            compilerOptions: {
+                                noEmit: false,
+                            },
+                        },
                     },
                 ]),
             }),
@@ -168,7 +206,7 @@ module.exports = function getWebpackConfig({
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
                     {
-                        loader: 'ts-component',
+                        loader: noPropsInTsxComponents ? 'js-component' : 'ts-component',
                         options: {
                             componentRoots: getComponentRoots({ path }),
                             tsConfigPath: tsConfigPath,

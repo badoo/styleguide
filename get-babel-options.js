@@ -36,25 +36,11 @@ module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
         {
             babelrc: false,
             presets: [
-                [
-                    require.resolve('@babel/preset-env'),
-                    {
-                        targets: {
-                            ie: 11,
-                        },
-                    },
-                ],
+                [require.resolve('@babel/preset-env')],
                 [
                     require.resolve('@babel/preset-react'),
                     {
                         development: true,
-                    },
-                ],
-                [
-                    '@babel/preset-typescript',
-                    {
-                        isTSX: true,
-                        allExtensions: true,
                     },
                 ],
             ],

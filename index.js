@@ -49,6 +49,7 @@ const ourWebpackConfig = getWebpackConfig({
     configPath,
     getBabelConfig: config.getBabelConfig,
     getComponentRoots: config.getComponentRoots,
+    getExceptionForLoaders: config.getExceptionForLoaders,
     getLoaderForModule: config.getLoaderForModule,
     tsConfigPath: path.resolve(process.cwd(), './tsconfig.json'),
 });
