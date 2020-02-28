@@ -111,7 +111,14 @@ module.exports = function getWebpackConfig({
                         : [
                               /node_modules\/(?!badoo-styleguide)/,
                               path.resolve(__dirname, 'src/index.jsx'),
-                              /\.spec\.jsx$/,
+                                /\.spec\.jsx$/,
+                                /ui\/enum/,
+                                /packages\/utils/,
+                                /packages\/localization/,
+                                /styleguide\/mocks/,
+                                /src\/jscore/,
+                                    /src\/utils/,
+                                /\.config\.ts$/,
                           ],
                     use: 'happypack/loader?id=js-component-loader',
                 },
@@ -120,7 +127,15 @@ module.exports = function getWebpackConfig({
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative
                         ? undefined
-                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, /\.spec\.tsx$/],
+                        : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, /\.spec\.tsx$/,
+                            /ui\/enum/,
+                            /packages\/utils/,
+                            /packages\/localization/,
+                            /styleguide\/mocks/,
+                            /src\/jscore/,
+                                /src\/utils/,
+                            /\.config\.ts$/,
+                        ],
                     use: 'happypack/loader?id=ts-component-loader',
                 },
                 {
