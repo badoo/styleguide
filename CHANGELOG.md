@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.34-beta.2
+
+* Fix `js-component` loader showed error on loading ts-component after transpliled with babel
+
 ## v0.0.34-beta.1
 
 * Add `--no-props-for-tsx-components` for fast builds of typescript react-components

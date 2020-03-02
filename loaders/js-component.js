@@ -51,15 +51,20 @@ module.exports = function(source) {
             propTypes: doc.props
                 ? Object.keys(doc.props).reduce(function(types, key) {
                       const originalProp = doc.props[key];
+                      const type = originalProp.type ? originalProp.type.name : key;
 
                       types[key] = {
-                          type: originalProp.type.name,
+                          type,
                           required: originalProp.required,
                           description: originalProp.description,
                       };
 
                       if (originalProp.defaultValue) {
                           types[key].defaultValue = originalProp.defaultValue.value;
+                          types[key].type = originalProp.defaultValue.value
+                              .split('.')
+                              .slice(0, -1)
+                              .join('.');
                       }
 
                       return types;
