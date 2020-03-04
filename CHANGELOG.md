@@ -14,7 +14,7 @@
 
 ## v0.0.34-alpha.5
 * add skip of spec-files during generating of documentation stage
-* divide loader `ts-component` into several function for readability
+* divide loader `ts-component` into several functions for readability
 
 ## v0.0.34-alpha.4
 * update `typescript` to 3.7.5 for general compatibility
