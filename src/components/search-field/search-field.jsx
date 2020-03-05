@@ -1,15 +1,63 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import Icon, { IconName, IconSize } from '../icon/icon';
 
-import './search-field.scss';
+const SEARCH_FIELD_COLOR = '#ccc';
+
+const SearchFieldBlock = styled.div`
+    position: relative;
+    color: ${SEARCH_FIELD_COLOR};
+    padding: 0 12px;
+    margin-bottom: 16px;
+    font-family: sans-serif;
+`;
+
+const SearchFieldInput = styled.input`
+    background-color: #fff;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    color: #303030;
+    height: 40px;
+    line-height: 32px;
+    padding: 6px 6px 6px 36px;
+    border: 1px solid #ccc;
+
+    &::-webkit-input-placeholder {
+        color: ${SEARCH_FIELD_COLOR};
+        opacity: 1;
+    }
+
+    &:-moz-placeholder {
+        color: ${SEARCH_FIELD_COLOR};
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        color: ${SEARCH_FIELD_COLOR};
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        color: ${SEARCH_FIELD_COLOR};
+        opacity: 1;
+    }
+`;
+
+const SearchFieldIcon = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    display: flex;
+    transform: translateY(-50%);
+`;
 
 const SearchField = props => {
     const { value = '', onChange } = props;
+
     return (
-        <div className={'styleguide-search-field'}>
-            <input
-                className="styleguide-search-field__input"
+        <SearchFieldBlock>
+            <SearchFieldInput
                 value={value}
                 type="text"
                 onChange={onChange}
@@ -17,10 +65,10 @@ const SearchField = props => {
                 placeholder="Search component name"
             />
 
-            <div className="styleguide-search-field__icon">
+            <SearchFieldIcon>
                 <Icon name={IconName.SEARCH} size={IconSize.LARGE} />
-            </div>
-        </div>
+            </SearchFieldIcon>
+        </SearchFieldBlock>
     );
 };
 

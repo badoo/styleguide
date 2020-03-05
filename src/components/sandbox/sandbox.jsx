@@ -1,13 +1,65 @@
 import React from 'react';
-import cx from 'classnames';
-
+import styled from 'styled-components';
 import config from '__GLOBAL__CONFIG__';
-
-import './sandbox.scss';
-
 import Dialog from '../dialog/dialog';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Icon, { IconName } from '../icon/icon';
+
+const SandboxBlock = styled.section`
+    display: block;
+`;
+
+const SandboxHeader = styled.header`
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    background: #f0f0f0;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+    padding: 0 16px;
+
+    .styleguide-sandbox &:only-child {
+        border-radius: 4px;
+    }
+`;
+
+const SandboxTitle = styled.h1`
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding: 16px 0;
+    word-break: break-word;
+`;
+
+const SandboxControls = styled.div`
+    margin-left: auto;
+    display: flex;
+`;
+
+const SandboxControl = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #202020;
+    opacity: 0.5;
+    transition: opacity 0.1s ease;
+    padding: 0 8px;
+
+    &:hover {
+        opacity: 1;
+    }
+`;
+
+const SandboxContent = styled.div`
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+    box-shadow: 0 -1px 0 0 #f0f0f0;
+    transform: translate3d(0, 0, 0);
+    overflow: ${config.hasResizableSandbox ? 'auto' : undefined};
+    resize: ${config.hasResizableSandbox ? 'both' : undefined};
+`;
 
 class Sandbox extends React.Component {
     constructor(props) {
@@ -53,44 +105,23 @@ class Sandbox extends React.Component {
         );
 
         return (
-            <section
-                className="styleguide-sandbox"
-                data-vrt-locator={'sandbox'}
-                data-name={title || 'empty'}
-            >
-                <header className="styleguide-sandbox__header" onClick={this.onHeaderClickHandler}>
-                    <h1 className="styleguide-sandbox__title">{title}</h1>
-                    <div className="styleguide-sandbox__controls">
-                        <span
-                            className="styleguide-sandbox__control"
-                            onClick={this.onToggleVisibilityClickHandler}
-                        >
+            <SandboxBlock data-vrt-locator={'sandbox'} data-name={title || 'empty'}>
+                <SandboxHeader onClick={this.onHeaderClickHandler}>
+                    <SandboxTitle>{title}</SandboxTitle>
+                    <SandboxControls>
+                        <SandboxControl onClick={this.onToggleVisibilityClickHandler}>
                             {controlVisibilityIcon}
-                        </span>
+                        </SandboxControl>
 
-                        <span
-                            className="styleguide-sandbox__control"
-                            onClick={this.onToggleFullScreenClickHandler}
-                        >
+                        <SandboxControl onClick={this.onToggleFullScreenClickHandler}>
                             {controlFullScreenIcon}
-                        </span>
-                    </div>
-                </header>
+                        </SandboxControl>
+                    </SandboxControls>
+                </SandboxHeader>
 
                 <div data-vrt-locator={'sandbox-content'}>
                     <ErrorBoundary>
-                        {this.state.isVisible && (
-                            <div
-                                className={cx({
-                                    'styleguide-sandbox__content': true,
-                                    'is-resizable': config.hasResizableSandbox
-                                        ? config.hasResizableSandbox
-                                        : false,
-                                })}
-                            >
-                                {children}
-                            </div>
-                        )}
+                        {this.state.isVisible && <SandboxContent>{children}</SandboxContent>}
 
                         <Dialog
                             isOpened={this.state.isFullScreen}
@@ -100,7 +131,7 @@ class Sandbox extends React.Component {
                         />
                     </ErrorBoundary>
                 </div>
-            </section>
+            </SandboxBlock>
         );
     }
 }

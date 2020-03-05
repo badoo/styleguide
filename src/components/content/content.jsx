@@ -1,11 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import './content.scss';
+const ContentBlock = styled.main`
+    padding: 32px;
+    position: relative;
+    width: 100%;
+    background: #fff; // hides sidebar
+`;
 
 const Content = props => {
     const { children } = props;
 
-    return <main className="styleguide-content">{children}</main>;
+    return <ContentBlock>{children}</ContentBlock>;
 };
 
 export default Content;
