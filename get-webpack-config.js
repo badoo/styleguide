@@ -47,6 +47,7 @@ module.exports = function getWebpackConfig({
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
         entry: [
+            'react-hot-loader/patch',
             `webpack-dev-server/client?${devServerUrl}`,
             'webpack/hot/dev-server',
             path.resolve(__dirname, 'src/index.jsx'),
@@ -62,9 +63,9 @@ module.exports = function getWebpackConfig({
             contentBase: path.resolve(__dirname, 'dist'),
             hot: true,
             open: true,
-            stats: {
-                colors: true,
-            },
+            // stats: {
+            //     colors: true,
+            // },
         },
         module: {
             rules: [
@@ -120,6 +121,11 @@ module.exports = function getWebpackConfig({
                     ],
                 },
                 {
+                    test: /\.(j|t)sx?$/,
+                    exclude: /node_modules/,
+                    use: ['react-hot-loader/webpack'],
+                },
+                {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : jsLoaderExceptionList,
@@ -131,11 +137,6 @@ module.exports = function getWebpackConfig({
                     exclude: isReactNative ? undefined : tsLoaderExceptionList,
                     use: 'happypack/loader?id=ts-component-loader',
                 },
-                {
-                    test: /\.(j|t)sx?$/,
-                    include: /node_modules/,
-                    use: ['react-hot-loader/webpack'],
-                },
             ],
         },
         resolve: {
@@ -143,6 +144,7 @@ module.exports = function getWebpackConfig({
             modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
             alias: {
                 __GLOBAL__CONFIG__: configPath,
+                'react-dom': '@hot-loader/react-dom'
             },
         },
         resolveLoader: {
