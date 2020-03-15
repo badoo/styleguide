@@ -1,20 +1,31 @@
 import React from 'react';
-
-import './navigation.scss';
+import styled from 'styled-components';
 
 import NavigationSection from '../navigation-section/navigation-section';
+
+const NavigationBlock = styled.nav`
+    position: relative;
+    font-family: sans-serif;
+`;
+
+const NavigationSectionBlock = styled.div`
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+`;
 
 class Navigation extends React.PureComponent {
     render() {
         const { sections, expandAll, currentHash } = this.props;
 
         return (
-            <nav className="styleguide-navigation">
+            <NavigationBlock>
                 {sections.map((section, key) => {
                     const { name, isOpened, components } = section;
 
                     return (
-                        <div className="styleguide-navigation__section" key={key}>
+                        <NavigationSectionBlock key={key}>
                             <NavigationSection
                                 key={name}
                                 name={name}
@@ -25,10 +36,10 @@ class Navigation extends React.PureComponent {
                                     isActive: item.url === currentHash,
                                 }))}
                             />
-                        </div>
+                        </NavigationSectionBlock>
                     );
                 })}
-            </nav>
+            </NavigationBlock>
         );
     }
 }

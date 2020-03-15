@@ -7,9 +7,7 @@ import Navigation from './components/navigation/navigation';
 import Content from './components/content/content';
 import Section from './components/section/section';
 import Component from './components/component/component';
-
-import 'normalize.css';
-import './index.scss';
+import AppViewGlobalStyles from './app-global-styles';
 
 class AppView extends React.Component {
     constructor(props) {
@@ -64,6 +62,7 @@ class AppView extends React.Component {
     render() {
         return (
             <div className="styleguide">
+                <AppViewGlobalStyles />
                 <Sidebar>
                     <SearchField
                         value={this.props.searchQuery}

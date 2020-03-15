@@ -1,15 +1,30 @@
 import React from 'react';
-import cx from 'classnames';
-
-import './icon.scss';
+import styled from 'styled-components';
 
 export const IconSize = {
     LARGE: 0,
 };
 
-const mapSizeToClassname = {
-    [IconSize.LARGE]: 'styleguide-icon--lg',
-};
+const IconBlock = styled.div`
+    display: inline-flex;
+    width: ${props =>
+        typeof props.size !== 'undefined' && props.size === IconSize.LARGE ? '24px' : '16px'};
+    height: ${props =>
+        typeof props.size !== 'undefined' && props.size === IconSize.LARGE ? '24px' : '16px'};
+    fill: currentColor;
+    transition: all 0.2s ease-in-out;
+    color: inherit;
+
+    > svg {
+        display: flex;
+        max-width: inherit;
+        width: inherit;
+        max-height: inherit;
+        height: inherit;
+        background: inherit;
+        fill: inherit;
+    }
+`;
 
 export const IconName = {
     CLOSE: 'CLOSE',
@@ -59,15 +74,10 @@ const mapNameToCode = {
 const Icon = props => {
     const { name, size } = props;
 
-    const classnames = cx(
-        { 'styleguide-icon': true },
-        typeof size !== 'undefined' && mapSizeToClassname[size]
-    );
-
     return (
-        <div className={classnames} role="presentation">
+        <IconBlock size={size} role="presentation">
             {mapNameToCode[name]}
-        </div>
+        </IconBlock>
     );
 };
 

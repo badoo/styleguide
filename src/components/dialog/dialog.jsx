@@ -1,12 +1,67 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import './dialog.scss';
+import styled from 'styled-components';
 import Icon, { IconName } from '../icon/icon';
 
 const KEYCODES = {
     ESCAPE: 27,
 };
+
+const DialogBlock = styled.div`
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+`;
+
+const DialogHeader = styled.div`
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    font-family: sans-serif;
+    position: relative;
+    padding: 16px;
+    background-color: #fafafa;
+    color: #282828;
+`;
+
+const DialogTitle = styled.h1`
+    margin-bottom: 0;
+    font: 400 16px -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu,
+        'Helvetica Neue', 'Lucida Grande', sans-serif;
+`;
+
+const DialogClose = styled.div`
+    position: absolute;
+    display: flex;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-out;
+
+    &:hover {
+        opacity: 1;
+    }
+`;
+
+const DialogContent = styled.div`
+    padding: 10px;
+    flex: 1 1 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translate3d(0, 0, 0);
+`;
 
 class Dialog extends React.Component {
     constructor(props) {
@@ -67,15 +122,15 @@ class Dialog extends React.Component {
         const onClick = () => this.closeDialog();
 
         const dialog = (
-            <div className="styleguide-dialog" ref={this.portal}>
-                <div className="styleguide-dialog__header">
-                    <h1 className="styleguide-dialog__title">{title}</h1>
-                    <div className="styleguide-dialog__close" onClick={onClick}>
+            <DialogBlock ref={this.portal}>
+                <DialogHeader>
+                    <DialogTitle>{title}</DialogTitle>
+                    <DialogClose onClick={onClick}>
                         <Icon name={IconName.CLOSE} />
-                    </div>
-                </div>
-                <div className="styleguide-dialog__content">{content}</div>
-            </div>
+                    </DialogClose>
+                </DialogHeader>
+                <DialogContent>{content}</DialogContent>
+            </DialogBlock>
         );
 
         return ReactDOM.createPortal(dialog, document.body);
