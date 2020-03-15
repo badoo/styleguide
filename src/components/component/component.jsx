@@ -1,5 +1,4 @@
 import React from 'react';
-import cx from 'classnames';
 import styled from 'styled-components';
 
 import Sandbox from '../sandbox/sandbox';
@@ -90,7 +89,6 @@ const ComponentPropsHandler = styled.span`
     font-family: sans-serif;
 
     &::before {
-        content: ${props => (props.isCollapsed ? '-' : '+')};
         margin-right: 4px;
         display: block;
         background: #7000e3;
@@ -100,6 +98,17 @@ const ComponentPropsHandler = styled.span`
         line-height: 12px;
         text-align: center;
     }
+
+    ${props => (props.isCollapsed ? `
+        &::before {
+            content: '–';
+        }
+    ` : `
+        &::before {
+            content: '+';
+        }
+    `)}
+
 `;
 
 const ComponentPropsData = styled.div`
