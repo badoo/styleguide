@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.34-beta.3
+
+* Add new function `getSectionComponents` to make loading of components faster.
+
 ## v0.0.34-beta.2
 
 * Fix `js-component` loader showed error on loading ts-component after transpliled with babel

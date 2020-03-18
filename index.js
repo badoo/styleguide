@@ -4,27 +4,27 @@
 /* eslint-disable no-console */
 
 const path = require('path');
-const argv = require('./build-arguments');
+const args = require('./build-arguments');
 
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const WebpackDevServer = require('webpack-dev-server');
 const getWebpackConfig = require('./get-webpack-config');
 
-if (!argv.config) {
+if (!args.config) {
     throw new Error('Please provide config path --config=PATH_TO_CONFIG.js');
 }
 
 let isCompiling = false;
 
-if (argv.buildDir) {
+if (args.buildDir) {
     isCompiling = true;
 }
 
-const configPath = path.resolve(process.cwd(), argv.config);
+const configPath = path.resolve(process.cwd(), args.config);
 const config = require(configPath);
-const PORT = argv.port || 8080;
-const HOST = argv.host || 'localhost';
+const PORT = args.port || 8080;
+const HOST = args.host || 'localhost';
 
 const webpackConfigFromProject = config.getWebpackConfig({
     nodeRequire: require,
@@ -44,11 +44,12 @@ if (
 
 const ourWebpackConfig = getWebpackConfig({
     devServerUrl: `http://${HOST}:${PORT}`,
-    buildDir: argv.buildDir,
+    buildDir: args.buildDir,
     isReactNative: config.isReactNative,
     configPath,
     getBabelConfig: config.getBabelConfig,
     getComponentRoots: config.getComponentRoots,
+    getSectionComponents: config.getSectionComponents,
     getExceptionForLoaders: config.getExceptionForLoaders,
     getLoaderForModule: config.getLoaderForModule,
     tsConfigPath: path.resolve(process.cwd(), './tsconfig.json'),

@@ -15,6 +15,11 @@ const isCompiling = buildDir => {
 };
 const useCache = isCompiling(buildDir);
 const setLoaders = (useCache, loaders) => (useCache ? loaders : ['cache-loader', ...loaders]);
+const setComponents = getSectionComponents => {
+    const sectionList = getSectionComponents({ path });
+
+    return sectionList ? sectionList.map(section => section.components).reduce((acc, val) => acc.concat(val), []) : undefined;
+}
 
 module.exports = function getWebpackConfig({
     devServerUrl,
@@ -22,12 +27,14 @@ module.exports = function getWebpackConfig({
     isReactNative,
     configPath,
     getComponentRoots,
+    getSectionComponents,
     getExceptionForLoaders,
     getBabelConfig,
     getLoaderForModule,
     tsConfigPath,
 }) {
     const exceptionsList = getExceptionForLoaders && getExceptionForLoaders({ path });
+    const components = getSectionComponents ? setComponents(getSectionComponents) : undefined;
 
     const jsLoaderExceptionList =
         exceptionsList && exceptionsList.jsLoader
@@ -47,7 +54,6 @@ module.exports = function getWebpackConfig({
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
         entry: [
-            'react-hot-loader/patch',
             `webpack-dev-server/client?${devServerUrl}`,
             'webpack/hot/dev-server',
             path.resolve(__dirname, 'src/index.jsx'),
@@ -114,15 +120,26 @@ module.exports = function getWebpackConfig({
                     use: ['react-hot-loader/webpack'],
                 },
                 {
+                    test: /\.tsx?$/,
+                    // React native modules usually always need to be loaded by metro
+                    exclude: isReactNative
+                        ? undefined
+                        : /node_modules\/(?!badoo-styleguide)/,
+                    include: components ? components : undefined,
+                    use: 'happypack/loader?id=babel-ts',
+                },
+                {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : jsLoaderExceptionList,
+                    include: components ? components : undefined,
                     use: 'happypack/loader?id=js-component-loader',
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : tsLoaderExceptionList,
+                    include: components ? components : undefined,
                     use: 'happypack/loader?id=ts-component-loader',
                 },
             ],
@@ -132,7 +149,6 @@ module.exports = function getWebpackConfig({
             modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
             alias: {
                 __GLOBAL__CONFIG__: configPath,
-                'react-dom': '@hot-loader/react-dom'
             },
         },
         resolveLoader: {
@@ -200,16 +216,6 @@ module.exports = function getWebpackConfig({
                         options: {
                             componentRoots: getComponentRoots({ path }),
                             tsConfigPath: tsConfigPath,
-                        },
-                    },
-                    {
-                        loader: 'ts-loader',
-                        options: {
-                            configFile: tsConfigPath,
-                            happyPackMode: true,
-                            compilerOptions: {
-                                noEmit: false,
-                            },
                         },
                     },
                 ]),

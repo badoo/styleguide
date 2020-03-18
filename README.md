@@ -93,6 +93,22 @@ module.exports = {
     },
 
     /**
+     * This function returns array of all the elements in the styleguide
+     * @optional
+     * @returns Array<Object>
+     */
+    getSectionComponents({ path }) {
+        return [
+            {
+                components: [path.resolve('src/components/component/component')],
+            },
+            {
+                components: [path.resolve('src/components/error-boundary/error-boundary')],
+            },
+        ];
+    },
+
+    /**
      * Returns an array of all the sections in the styleguide
      * @returns Array<Object>
      */
