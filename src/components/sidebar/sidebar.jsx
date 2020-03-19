@@ -5,10 +5,6 @@ const SidebarBlock = styled.aside`
     overflow-x: hidden;
     width: 300px;
     -webkit-font-smoothing: antialiased;
-
-    .styleguide-search-field {
-        margin-bottom: 8px;
-    }
 `;
 
 const SidebarContent = styled.div`

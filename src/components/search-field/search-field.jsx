@@ -8,7 +8,7 @@ const SearchFieldBlock = styled.div`
     position: relative;
     color: ${SEARCH_FIELD_COLOR};
     padding: 0 12px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     font-family: sans-serif;
 `;
 
