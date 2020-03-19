@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.34-beta.4
+
+* Update `react-docgen` to 5.3.0
+* change `node-scss` to `styled-components` for internal components
+
 ## v0.0.34-beta.3
 
 * Add new function `getSectionComponents` to make loading of components faster.

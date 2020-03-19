@@ -8,7 +8,7 @@
     "styleguide": "badoo-styleguide --config=styleguide.config.js"
   },
   "dependencies": {
-    "badoo-styleguide": "0.0.33",
+    "badoo-styleguide": "0.0.34-beta.4",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   }
