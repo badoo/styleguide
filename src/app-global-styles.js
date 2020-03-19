@@ -2,8 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
-    ${normalize}
-
     *,
     *::before,
     *::after {
@@ -22,12 +20,13 @@ const GlobalStyle = createGlobalStyle`
         font-family: Consolas, "Liberation Mono", Menlo, monospace;
     }
 
-
     .styleguide {
         background: #fff;
         display: grid;
         grid-template-columns: 300px auto;
     }
+
+    ${normalize}
 `;
 
 export default GlobalStyle;
