@@ -99,16 +99,18 @@ const ComponentPropsHandler = styled.span`
         text-align: center;
     }
 
-    ${props => (props.isCollapsed ? `
+    ${props =>
+        props.isCollapsed
+            ? `
         &::before {
             content: '–';
         }
-    ` : `
+    `
+            : `
         &::before {
             content: '+';
         }
-    `)}
-
+    `}
 `;
 
 const ComponentPropsData = styled.div`

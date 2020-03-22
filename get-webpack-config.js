@@ -18,8 +18,10 @@ const setLoaders = (useCache, loaders) => (useCache ? loaders : ['cache-loader',
 const setComponents = getSectionComponents => {
     const sectionList = getSectionComponents({ path });
 
-    return sectionList ? sectionList.map(section => section.components).reduce((acc, val) => acc.concat(val), []) : undefined;
-}
+    return sectionList
+        ? sectionList.map(section => section.components).reduce((acc, val) => acc.concat(val), [])
+        : undefined;
+};
 
 module.exports = function getWebpackConfig({
     devServerUrl,
@@ -114,20 +116,21 @@ module.exports = function getWebpackConfig({
                         },
                     ],
                 },
+                // set it in loaders - 'react-hot-loader/webpack'
                 {
                     test: /\.(j|t)sx?$/,
                     exclude: /node_modules/,
                     use: ['react-hot-loader/webpack'],
                 },
-                {
-                    test: /\.tsx?$/,
-                    // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative
-                        ? undefined
-                        : /node_modules\/(?!badoo-styleguide)/,
-                    include: components ? components : undefined,
-                    use: 'happypack/loader?id=babel-ts',
-                },
+                // {
+                //     test: /\.tsx?$/,
+                //     // React native modules usually always need to be loaded by metro
+                //     exclude: isReactNative
+                //         ? undefined
+                //         : /node_modules\/(?!badoo-styleguide)/,
+                //     include: components ? components : undefined,
+                //     use: 'happypack/loader?id=babel-ts',
+                // },
                 {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
