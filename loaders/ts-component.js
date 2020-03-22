@@ -1,66 +1,8 @@
 const path = require('path');
-const reactDocsTS = require('react-docgen-typescript');
+const reactDocs = require('react-docgen');
 const loaderUtils = require('loader-utils');
 const { isDebug } = require('../build-arguments');
-
-function setPropsFromDoc(doc) {
-    function setProps(types, key) {
-        const originalProp = doc.props[key];
-
-        types[key] = {
-            type: originalProp.type.name.replace('| undefined', ''),
-            description: originalProp.description,
-        };
-
-        // props with default value are not required
-        if (originalProp.defaultValue) {
-            types[key].defaultValue = originalProp.defaultValue.value;
-        } else {
-            types[key].required = originalProp.required;
-        }
-
-        return types;
-    }
-
-    return Object.keys(doc.props).reduce(setProps, {});
-}
-
-function setResults(tsConfigPath, resourcePath, source) {
-    try {
-        const docs = reactDocsTS.withCustomConfig(tsConfigPath).parse(resourcePath);
-
-        if (!docs[0]) {
-            return source;
-        }
-
-        const doc = docs[0];
-        const fileName = path.basename(resourcePath);
-        const fileNameWithoutPrefix = fileName
-            .split('.')
-            .slice(0, -1)
-            .join('.');
-        const propTypes = doc.props ? setPropsFromDoc(doc) : null;
-
-        const meta = {
-            name: doc.displayName,
-            description: doc.description,
-            filePath: resourcePath,
-            fileName,
-            fileNameWithoutPrefix,
-            propTypes,
-        };
-
-        /* eslint-disable no-useless-escape */
-        return `${source}
-            export const __meta = ${JSON.stringify(meta)};
-            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
-        /* eslint-enable no-useless-escape */
-    } catch (err) {
-        console.warn(path.basename(resourcePath), isDebug ? err : err.message);
-
-        return source;
-    }
-}
+const setParamsTypeDefinitionFromFunctionType = require('../handlers/function-component-params-auto-definition');
 
 module.exports = function(source) {
     if (this.cacheable) {
@@ -68,17 +10,109 @@ module.exports = function(source) {
     }
 
     const options = loaderUtils.getOptions(this);
-    const componentRoots = options.componentRoots;
-    const tsConfigPath = options.tsConfigPath;
 
-    const isComponent = componentRoots.some(componentRoot => {
+    const componentRoots = options.componentRoots;
+
+    let isComponent = false;
+    let foundComponentRoot = null;
+
+    componentRoots.forEach(componentRoot => {
         // We only want to componentise files in current working directory
-        return this.resourcePath.indexOf(componentRoot) !== -1;
+        if (this.resourcePath.indexOf(componentRoot) !== -1) {
+            isComponent = true;
+            foundComponentRoot = componentRoot;
+        }
     });
 
     if (!isComponent) {
         return source;
     }
 
-    return setResults(tsConfigPath, this.resourcePath, source);
+    let results;
+
+    try {
+        const doc = reactDocs.parse(
+            source,
+            null,
+            [setParamsTypeDefinitionFromFunctionType, ...reactDocs.defaultHandlers],
+            {
+                parserOptions: {
+                    filename: '',
+                    plugins: ['typescript', 'jsx'],
+                },
+            }
+        );
+
+        const fileName = path.basename(this.resourcePath);
+
+        const meta = {
+            name: doc.displayName,
+            description: doc.description,
+            filePath: this.resourcePath,
+            fileName,
+            fileNameWithoutPrefix: fileName
+                .split('.')
+                .slice(0, -1)
+                .join('.'),
+            propTypes: doc.props
+                ? Object.keys(doc.props).reduce(function(types, key) {
+                      const originalProp = doc.props[key];
+                      const type = originalProp.type ? originalProp.type.name : key;
+
+                      types[key] = {
+                          type,
+                          required: originalProp.required,
+                          description: originalProp.description,
+                      };
+
+                      if (originalProp.defaultValue) {
+                          types[key].defaultValue = originalProp.defaultValue.value;
+                          types[key].type = originalProp.defaultValue.value
+                              .split('.')
+                              .slice(0, -1)
+                              .join('.');
+                      }
+
+                      return types;
+                  }, {})
+                : null,
+        };
+
+        // Simple check to use if we are using ES6 or CJS
+        /* eslint-disable no-useless-escape */
+        if (source.indexOf('module.exports') !== -1) {
+            results = `${source}
+            module.exports.__meta = ${JSON.stringify(meta)};
+            module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        } else if (/export\s+default/.test(source)) {
+            results = `${source}
+            ${doc.displayName}.__meta = ${JSON.stringify(meta)};
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        } else {
+            results = `${source}
+            export const __meta = ${JSON.stringify(meta)};
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        }
+        /* eslint-enable no-useless-escape */
+    } catch (err) {
+        if (!/Multiple exported component definitions found/.test(err)) {
+            const componentPath = this.resourcePath.replace(foundComponentRoot, '');
+            console.warn(componentPath, isDebug ? err : err.message);
+        }
+
+        /* eslint-disable no-useless-escape */
+        if (source.indexOf('module.exports') !== -1) {
+            results = `${source}
+            module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        } else if (/export\s+default/.test(source)) {
+            results = `${source}
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        } else {
+            results = `${source}
+            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+        }
+        /* eslint-enable no-useless-escape */
+    }
+
+    return results;
 };

@@ -2,7 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const { isDebug, buildDir, noPropsInTsxComponents } = require('./build-arguments');
+const { isDebug, buildDir } = require('./build-arguments');
 const getBabelOptions = require('./get-babel-options');
 
 const HappyPack = require('happypack');
@@ -215,10 +215,9 @@ module.exports = function getWebpackConfig({
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
                     {
-                        loader: noPropsInTsxComponents ? 'js-component' : 'ts-component',
+                        loader: 'ts-component',
                         options: {
                             componentRoots: getComponentRoots({ path }),
-                            tsConfigPath: tsConfigPath,
                         },
                     },
                 ]),
