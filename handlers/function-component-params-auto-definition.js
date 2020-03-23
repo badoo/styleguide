@@ -28,6 +28,10 @@ function checkForProptypes(path, paramTypeName) {
 }
 
 function setParamsTypeDefinitionFromFunctionType(documentation, path) {
+    if (path.parentPath.node.init && path.parentPath.node.init.params.length === 0) {
+        return;
+    }
+
     if (
         path.node.type === 'ArrowFunctionExpression' &&
         !path.parentPath.node.init.params[0].typeAnnotation

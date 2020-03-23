@@ -2,7 +2,8 @@
 
 ## v0.0.34-beta.5
 
-* add custom handler for support types for props of react.functionComponents, defined in type of component
+* add support for UI components without props in `function-component-params-auto-definition`
+* add custom handler `function-component-params-auto-definition` for support types for props of react.functionComponents, defined in type of component
 * deprecate `--no-props-for-tsx-components` due to faster builds for ts-files with `react-dcogen` custom hanlder
 * removal of `react-docgen-typescript` from project
 
