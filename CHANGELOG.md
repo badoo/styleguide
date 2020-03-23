@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.34-beta.6
+
+* move custom handler `function-component-params-auto-definition` out of projects scope to separate module
+
 ## v0.0.34-beta.5
 
 * add minimal support for tsType from `react-dcogen`

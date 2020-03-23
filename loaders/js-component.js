@@ -1,8 +1,8 @@
 const path = require('path');
 const reactDocs = require('react-docgen');
+const setParamsTypeDefinitionFromFunctionType = require('typescript-react-function-component-props-handler');
 const loaderUtils = require('loader-utils');
 const { isDebug } = require('../build-arguments');
-const setParamsTypeDefinitionFromFunctionType = require('../handlers/function-component-params-auto-definition');
 
 module.exports = function(source) {
     if (this.cacheable) {
