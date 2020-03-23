@@ -3,3 +3,4 @@
 /temp
 .eslintcache
 yarn.lock
+.DS_Store
