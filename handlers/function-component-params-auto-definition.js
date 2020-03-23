@@ -1,6 +1,7 @@
 function setParamTypeName(path) {
     if (
         path.parentPath.node.id.typeAnnotation &&
+        path.parentPath.node.id.typeAnnotation.typeAnnotation.typeParameters &&
         path.parentPath.node.id.typeAnnotation.typeAnnotation.typeParameters.params[0].typeName.name
     ) {
         return path.parentPath.node.id.typeAnnotation.typeAnnotation.typeParameters.params[0]
