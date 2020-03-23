@@ -1,13 +1,45 @@
+function setParamTypeName(path) {
+    if (
+        path.parentPath.node.id.typeAnnotation &&
+        path.parentPath.node.id.typeAnnotation.typeAnnotation.typeParameters.params[0].typeName.name
+    ) {
+        return path.parentPath.node.id.typeAnnotation.typeAnnotation.typeParameters.params[0]
+            .typeName.name;
+    }
+
+    return path.parentPath.node.id.name;
+}
+
+function checkForProptypes(path, paramTypeName) {
+    const propsDefinition = path.parentPath.parentPath.parentPath.parentPath.value.find(
+        propertyPath => {
+            return (
+                propertyPath.type &&
+                propertyPath.type === 'ExpressionStatement' &&
+                propertyPath.expression &&
+                propertyPath.expression.left.object.name === paramTypeName &&
+                propertyPath.expression.right.type === 'ObjectExpression' &&
+                Boolean(propertyPath.expression.right.properties)
+            );
+        }
+    );
+
+    return Boolean(propsDefinition);
+}
+
 function setParamsTypeDefinitionFromFunctionType(documentation, path) {
-    // Cannot read property 'params' of null
-    // Cannot read property 'typeAnnotation' of undefined
     if (
         path.node.type === 'ArrowFunctionExpression' &&
         !path.parentPath.node.init.params[0].typeAnnotation
     ) {
-        const paramTypeName =
-            path.parentPath.node.id.typeAnnotation.typeAnnotation.typeParameters.params[0].typeName
-                .name;
+        const paramTypeName = setParamTypeName(path);
+
+        // check if there is a prop-types definition
+        const hasPropTypes = checkForProptypes(path, paramTypeName);
+
+        if (hasPropTypes) {
+            return;
+        }
 
         let typePath = path.parentPath.parentPath.parentPath.parentPath.value.find(propertyPath => {
             if (
@@ -19,13 +51,24 @@ function setParamsTypeDefinitionFromFunctionType(documentation, path) {
                 return true;
             }
 
+            if (
+                propertyPath.type === 'TSInterfaceDeclaration' &&
+                propertyPath.id &&
+                propertyPath.id.name === paramTypeName
+            ) {
+                return true;
+            }
+
             return (
                 propertyPath.type === 'TSTypeAliasDeclaration' &&
                 propertyPath.id.name === paramTypeName
             );
         });
 
-        typePath = typePath.type === 'ExportNamedDeclaration' ? typePath.declaration : typePath;
+        typePath =
+            typePath && typePath.type && typePath.type === 'ExportNamedDeclaration'
+                ? typePath.declaration
+                : typePath;
 
         if (typePath) {
             const typedParam = Object.assign({}, path.parentPath.node.init.params[0], {
