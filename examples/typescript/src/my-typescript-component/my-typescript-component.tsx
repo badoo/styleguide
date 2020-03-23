@@ -1,5 +1,4 @@
 import React from 'react';
-import MyJavascriptComponent from 'my-javascript-component/my-javascript-component';
 
 export enum Color {
     NEUTRAL,
