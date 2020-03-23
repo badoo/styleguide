@@ -60,7 +60,7 @@ module.exports = function(source) {
                       const type = originalProp.type ? originalProp.type.name : key;
 
                       types[key] = {
-                          type,
+                          type: originalProp.tsType ? originalProp.tsType.name : type,
                           required: originalProp.required,
                           description: originalProp.description,
                       };
