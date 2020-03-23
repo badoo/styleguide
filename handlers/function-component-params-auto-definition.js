@@ -11,19 +11,35 @@ function setParamTypeName(path) {
     return path.parentPath.node.id.name;
 }
 
+function getTypePath(path) {
+    if (
+        path.parentPath.parentPath.parentPath.parentPath.value &&
+        path.parentPath.parentPath.parentPath.parentPath.value.find
+    ) {
+        return path.parentPath.parentPath.parentPath.parentPath.value;
+    }
+
+    if (
+        path.parentPath.parentPath.parentPath.parentPath.parentPath &&
+        path.parentPath.parentPath.parentPath.parentPath.parentPath.value
+    ) {
+        return path.parentPath.parentPath.parentPath.parentPath.parentPath.value;
+    }
+
+    return [];
+}
+
 function checkForProptypes(path, paramTypeName) {
-    const propsDefinition = path.parentPath.parentPath.parentPath.parentPath.value.find(
-        propertyPath => {
-            return (
-                propertyPath.type &&
-                propertyPath.type === 'ExpressionStatement' &&
-                propertyPath.expression &&
-                propertyPath.expression.left.object.name === paramTypeName &&
-                propertyPath.expression.right.type === 'ObjectExpression' &&
-                Boolean(propertyPath.expression.right.properties)
-            );
-        }
-    );
+    const propsDefinition = getTypePath(path).find(propertyPath => {
+        return (
+            propertyPath.type &&
+            propertyPath.type === 'ExpressionStatement' &&
+            propertyPath.expression &&
+            propertyPath.expression.left.object.name === paramTypeName &&
+            propertyPath.expression.right.type === 'ObjectExpression' &&
+            Boolean(propertyPath.expression.right.properties)
+        );
+    });
 
     return Boolean(propsDefinition);
 }
@@ -46,7 +62,7 @@ function setParamsTypeDefinitionFromFunctionType(documentation, path) {
             return;
         }
 
-        let typePath = path.parentPath.parentPath.parentPath.parentPath.value.find(propertyPath => {
+        let typePath = getTypePath(path).find(propertyPath => {
             if (
                 propertyPath.type === 'ExportNamedDeclaration' &&
                 propertyPath.declaration &&
