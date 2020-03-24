@@ -1,7 +1,35 @@
 import React from 'react';
-import cx from 'classnames';
+import styled from 'styled-components';
 
-import './navigation-section.scss';
+const NavigationSectionBlock = styled.div`
+    display: block;
+`;
+
+const NavigationSectionName = styled.div`
+    position: relative;
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+`;
+
+const NavigationSectionComponents = styled.div`
+    padding: 16px;
+    display: ${props => (props.isOpened ? undefined : 'none')};
+`;
+
+const NavigationSectionComponentsItem = styled.div`
+    padding: 8px 16px;
+`;
+
+const NavigationSectionComponentsItemLink = styled.a`
+    text-decoration: none;
+    color: ${props => (props.isActive ? '#7000e3' : '#666')};
+    font-weight: ${props => (props.isActive ? 600 : undefined)};
+`;
 
 class NavigationSection extends React.PureComponent {
     constructor(props) {
@@ -25,43 +53,32 @@ class NavigationSection extends React.PureComponent {
     render() {
         const { name, components } = this.props;
 
-        const classNames = cx({
-            'styleguide-navigation-section__components': true,
-            'is-hidden': !this.state.isOpened,
-        });
-
         const onClickHandler = () =>
             this.setState(prevState => ({ isOpened: !prevState.isOpened }));
 
         return (
-            <div className="styleguide-navigation-section">
-                <div className="styleguide-navigation-section__name" onClick={onClickHandler}>
-                    {name}
-                </div>
-                <div className={classNames}>
+            <NavigationSectionBlock>
+                <NavigationSectionName onClick={onClickHandler}>{name}</NavigationSectionName>
+                <NavigationSectionComponents isOpened={this.state.isOpened}>
                     {components &&
                         components.map((link, index) => {
                             const { name, url, isActive } = link;
-                            const classNames = cx({
-                                'styleguide-navigation-section__link': true,
-                                'is-active': isActive,
-                            });
                             const key = url || index;
 
                             return (
-                                <div className="styleguide-navigation-section__item" key={key}>
-                                    <a
-                                        className={classNames}
+                                <NavigationSectionComponentsItem key={key}>
+                                    <NavigationSectionComponentsItemLink
+                                        isActive={isActive}
                                         data-vrt-locator={'link'}
                                         href={`#${url}`}
                                     >
                                         {name}
-                                    </a>
-                                </div>
+                                    </NavigationSectionComponentsItemLink>
+                                </NavigationSectionComponentsItem>
                             );
                         })}
-                </div>
-            </div>
+                </NavigationSectionComponents>
+            </NavigationSectionBlock>
         );
     }
 }

@@ -1,33 +1,50 @@
 import React from 'react';
-
-import './section.scss';
-
+import styled from 'styled-components';
 import config from '__GLOBAL__CONFIG__';
 import Component from '../component/component';
 
-let styles = {
-    minWidth: typeof config.sandboxMinWidth != 'undefined' ? config.sandboxMinWidth : undefined,
-    maxWidth: typeof config.sandboxMaxWidth != 'undefined' ? config.sandboxMaxWidth : undefined,
-};
+const setWidth = value => (typeof value === 'number' ? `${value}px` : value);
+
+const SectionBlock = styled.section`
+    & + & {
+        margin-top: 32px;
+    }
+`;
+
+const SectionContent = styled.div`
+    max-width: ${typeof config.sandboxMaxWidth !== 'undefined'
+        ? setWidth(config.sandboxMaxWidth)
+        : '960px'};
+    min-width: ${typeof config.sandboxMinWidth !== 'undefined'
+        ? setWidth(config.sandboxMinWidth)
+        : '320px'};
+    margin: auto;
+`;
+
+const SectionComponent = styled.div`
+    & + & {
+        margin-top: 40px;
+    }
+`;
 
 const Section = props => {
     const { list = [] } = props;
 
     return (
-        <section className="styleguide-section">
-            <div className="styleguide-section__content">
+        <SectionBlock>
+            <SectionContent>
                 {list.filter(Boolean).map(item => (
-                    <div className="styleguide-section__component" style={styles} key={item.url}>
+                    <SectionComponent key={item.url}>
                         <Component
                             name={item.name}
                             description={item.description}
                             propTypes={item.propTypes}
                             tests={item.tests}
                         />
-                    </div>
+                    </SectionComponent>
                 ))}
-            </div>
-        </section>
+            </SectionContent>
+        </SectionBlock>
     );
 };
 

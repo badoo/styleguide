@@ -1,0 +1,54 @@
+Starting server on http://localhost:8080
+[33m⚠[39m [90m｢wdm｣[39m: Hash: [1m38ea284832ffdca5b21e[39m[22m
+Version: webpack [1m4.29.6[39m[22m
+Time: [1m4359[39m[22mms
+Built at: 2020-03-23 [1m19:06:20[39m[22m
+     [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+ [1m[32mbundle.js[39m[22m   4.27 MiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m  main
+[1m[32mindex.html[39m[22m  190 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+Entrypoint [1mmain[39m[22m = [1m[32mbundle.js[39m[22m
+[0] [1mmulti webpack-dev-server/client?http://localhost:8080 webpack/hot/dev-server /Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/index.jsx[39m[22m 52 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/loglevel/lib/loglevel.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/loglevel/lib/loglevel.js[39m[22m 7.68 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/querystring-es3/index.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/querystring-es3/index.js[39m[22m 127 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/react-dom/index.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/react-dom/index.js[39m[22m 1.33 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/react-hot-loader/index.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/react-hot-loader/index.js[39m[22m 859 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/react/index.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/react/index.js[39m[22m 190 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/strip-ansi/index.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/strip-ansi/index.js[39m[22m 161 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/url/url.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/url/url.js[39m[22m 22.8 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/webpack-dev-server/client/index.js?http://localhost:8080] [1m(webpack)-dev-server/client?http://localhost:8080[39m[22m 8.1 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/webpack-dev-server/client/overlay.js] [1m(webpack)-dev-server/client/overlay.js[39m[22m 3.59 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/webpack-dev-server/client/socket.js] [1m(webpack)-dev-server/client/socket.js[39m[22m 1.05 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/webpack/buildin/harmony-module.js] [1m(webpack)/buildin/harmony-module.js[39m[22m 573 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/webpack/hot sync ^\.\/log$] [1m(webpack)/hot sync nonrecursive ^\.\/log$[39m[22m 170 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../node_modules/webpack/hot/dev-server.js] [1m(webpack)/hot/dev-server.js[39m[22m 1.61 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[../../src/index.jsx] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/index.jsx[39m[22m 2.46 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+    + 169 hidden modules
+
+[1m[33mWARNING in ./src/my-javascript-component/my-javascript-component.d.ts
+Module build failed (from /Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/happypack/loader.js):
+Error: Debug Failure. Output generation failed
+    at Object.transpileModule (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/typescript/lib/typescript.js:116895:29)
+    at getTranspilationEmit (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/ts-loader/dist/index.js:318:74)
+    at successLoader (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/ts-loader/dist/index.js:66:15)
+    at Object.loader (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/ts-loader/dist/index.js:22:12)
+    at applySyncOrAsync (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/happypack/lib/applyLoaders.js:350:21)
+    at apply (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/happypack/lib/applyLoaders.js:277:5)
+    at /Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/happypack/lib/applyLoaders.js:135:7
+    at applyPitchLoader (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/happypack/lib/applyLoaders.js:188:14)
+    at applyPitchLoader (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/happypack/lib/applyLoaders.js:196:14)
+    at applyPitchLoaders (/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/happypack/lib/applyLoaders.js:226:4)
+ @ ./src/my-javascript-component sync .(j|t)sx? ./my-javascript-component.d.ts
+ @ ./src/my-javascript-component/my-javascript-component.js
+ @ ./styleguide.config.js
+ @ /Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/hot-index.jsx
+ @ /Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/index.jsx
+ @ multi webpack-dev-server/client?http://localhost:8080 webpack/hot/dev-server /Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/index.jsx[39m[22m
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+         [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m[1m[39m[22m[1mChunk Names[39m[22m
+    [1m[32mindex.html[39m[22m  1.38 MiB       [1m0[39m[22m  [1m[32m[39m[22m
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [../../node_modules/html-webpack-plugin/lib/loader.js!../../node_modules/html-webpack-plugin/default_index.ejs] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/html-webpack-plugin/lib/loader.js!/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/html-webpack-plugin/default_index.ejs[39m[22m 376 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [../../node_modules/lodash/lodash.js] [1m/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules/lodash/lodash.js[39m[22m 528 KiB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [../../node_modules/webpack/buildin/global.js] [1m(webpack)/buildin/global.js[39m[22m 472 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+    [../../node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 497 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+[34mℹ[39m [90m｢wdm｣[39m: Compiled with warnings.

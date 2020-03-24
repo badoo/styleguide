@@ -1,5 +1,6 @@
 const path = require('path');
 const reactDocs = require('react-docgen');
+const setParamsTypeDefinitionFromFunctionType = require('typescript-react-function-component-props-handler');
 const loaderUtils = require('loader-utils');
 const { isDebug } = require('../build-arguments');
 
@@ -30,12 +31,17 @@ module.exports = function(source) {
     let results;
 
     try {
-        const doc = reactDocs.parse(source, null, null, {
-            // Babel parser doesn't like it if you pass config
-            // but don't pass the file to scan other configs from
-            // even though you explicitly don't want to use babelrc
-            filename: '',
-        });
+        const doc = reactDocs.parse(
+            source,
+            null,
+            [setParamsTypeDefinitionFromFunctionType, ...reactDocs.defaultHandlers],
+            {
+                parserOptions: {
+                    filename: '',
+                    plugins: ['jsx'],
+                },
+            }
+        );
 
         const fileName = path.basename(this.resourcePath);
 

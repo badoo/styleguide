@@ -6,8 +6,8 @@ module.exports = {
             {
                 name: 'Examples',
                 components: [
-                    require('my-typescript-component/my-typescript-component'),
                     require('my-javascript-component/my-javascript-component'),
+                    require('my-typescript-component/my-typescript-component'),
                     require('my-typescript-component-with-javascript/my-typescript-component-with-javascript'),
                 ],
             },

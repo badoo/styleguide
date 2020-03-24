@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.0.35
+
+* clenup `get-webpack-config`
+
+## v0.0.34-beta.6
+
+* move custom handler `function-component-params-auto-definition` out of projects scope to separate module
+
+## v0.0.34-beta.5
+
+* add minimal support for tsType from `react-dcogen`
+* add support for UI components without props or props definition in `function-component-params-auto-definition`
+* add custom handler `function-component-params-auto-definition` for support types for props of react.functionComponents, defined in type of component
+* deprecate `--no-props-for-tsx-components` due to faster builds for ts-files with `react-dcogen` custom hanlder
+* removal of `react-docgen-typescript` from project
+
+## v0.0.34-beta.4
+
+* Update `react-docgen` to 5.3.0
+* change `node-scss` to `styled-components` for internal components
+
+## v0.0.34-beta.3
+
+* Add new function `getSectionComponents` to make loading of components faster.
+
 ## v0.0.34-beta.2
 
 * Fix `js-component` loader showed error on loading ts-component after transpliled with babel

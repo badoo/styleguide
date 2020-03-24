@@ -5,7 +5,10 @@ module.exports = {
         return [
             {
                 name: 'Examples',
-                components: [require('my-javascript-component/my-javascript-component')],
+                components: [
+                    require('my-javascript-component/my-javascript-component'),
+                    require('my-javascript-component-no-props/my-javascript-component-no-props'),
+                ],
             },
         ];
     },

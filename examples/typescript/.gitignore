@@ -3,5 +3,3 @@
 /temp
 .eslintcache
 yarn.lock
-.DS_Store
-yarn-error.log

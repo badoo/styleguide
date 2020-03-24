@@ -2,7 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const { isDebug, buildDir, noPropsInTsxComponents } = require('./build-arguments');
+const { isDebug, buildDir } = require('./build-arguments');
 const getBabelOptions = require('./get-babel-options');
 
 const HappyPack = require('happypack');
@@ -15,6 +15,13 @@ const isCompiling = buildDir => {
 };
 const useCache = isCompiling(buildDir);
 const setLoaders = (useCache, loaders) => (useCache ? loaders : ['cache-loader', ...loaders]);
+const setComponents = getSectionComponents => {
+    const sectionList = getSectionComponents({ path });
+
+    return sectionList
+        ? sectionList.map(section => section.components).reduce((acc, val) => acc.concat(val), [])
+        : undefined;
+};
 
 module.exports = function getWebpackConfig({
     devServerUrl,
@@ -22,12 +29,14 @@ module.exports = function getWebpackConfig({
     isReactNative,
     configPath,
     getComponentRoots,
+    getSectionComponents,
     getExceptionForLoaders,
     getBabelConfig,
     getLoaderForModule,
     tsConfigPath,
 }) {
     const exceptionsList = getExceptionForLoaders && getExceptionForLoaders({ path });
+    const components = getSectionComponents ? setComponents(getSectionComponents) : undefined;
 
     const jsLoaderExceptionList =
         exceptionsList && exceptionsList.jsLoader
@@ -62,9 +71,6 @@ module.exports = function getWebpackConfig({
             contentBase: path.resolve(__dirname, 'dist'),
             hot: true,
             open: true,
-            stats: {
-                colors: true,
-            },
         },
         module: {
             rules: [
@@ -86,24 +92,12 @@ module.exports = function getWebpackConfig({
                             },
                         },
                         {
-                            test: /\.scss$/,
-                            use: [
-                                'style-loader', // creates style nodes from JS strings
-                                'css-loader',
-                                'sass-loader',
-                            ],
-                        },
-                        {
-                            test: /\.css$/,
-                            use: ['style-loader', 'css-loader'],
-                        },
-                        {
                             test: /\.jsx?$/,
                             // React native modules usually always need to be loaded by metro
                             exclude: isReactNative
                                 ? undefined
                                 : /node_modules\/(?!badoo-styleguide)/,
-                            use: 'happypack/loader?id=babel-js',
+                            use: 'happypack/loader?id=happy-pack-thread-babel-loader',
                         },
                         {
                             test: /\.tsx?$/,
@@ -111,7 +105,7 @@ module.exports = function getWebpackConfig({
                             exclude: isReactNative
                                 ? undefined
                                 : /node_modules\/(?!badoo-styleguide)/,
-                            use: 'happypack/loader?id=babel-ts',
+                            use: 'happypack/loader?id=happy-pack-thread-ts-loader',
                         },
                         {
                             test: /\.(gif|png|jpe?g|woff|ttf)$/i,
@@ -120,21 +114,23 @@ module.exports = function getWebpackConfig({
                     ],
                 },
                 {
+                    test: /\.(j|t)sx?$/,
+                    exclude: /node_modules/,
+                    use: ['react-hot-loader/webpack'],
+                },
+                {
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : jsLoaderExceptionList,
-                    use: 'happypack/loader?id=js-component-loader',
+                    include: components ? components : undefined,
+                    use: 'happypack/loader?id=happy-pack-thread-js-component-loader',
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : tsLoaderExceptionList,
-                    use: 'happypack/loader?id=ts-component-loader',
-                },
-                {
-                    test: /\.(j|t)sx?$/,
-                    include: /node_modules/,
-                    use: ['react-hot-loader/webpack'],
+                    include: components ? components : undefined,
+                    use: 'happypack/loader?id=happy-pack-thread-ts-component-loader',
                 },
             ],
         },
@@ -160,7 +156,7 @@ module.exports = function getWebpackConfig({
                 DEBUG: false,
             }),
             new HappyPack({
-                id: 'babel-js',
+                id: 'happy-pack-thread-babel-loader',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
@@ -170,8 +166,9 @@ module.exports = function getWebpackConfig({
                     },
                 ]),
             }),
+            // todo: deprecate usage of ts-loader
             new HappyPack({
-                id: 'babel-ts',
+                id: 'happy-pack-thread-ts-loader',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
@@ -188,7 +185,7 @@ module.exports = function getWebpackConfig({
                 ]),
             }),
             new HappyPack({
-                id: 'js-component-loader',
+                id: 'happy-pack-thread-js-component-loader',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
@@ -201,25 +198,14 @@ module.exports = function getWebpackConfig({
                 ]),
             }),
             new HappyPack({
-                id: 'ts-component-loader',
+                id: 'happy-pack-thread-ts-component-loader',
                 verbose: isDebug,
                 debug: isDebug,
                 loaders: setLoaders(useCache, [
                     {
-                        loader: noPropsInTsxComponents ? 'js-component' : 'ts-component',
+                        loader: 'ts-component',
                         options: {
                             componentRoots: getComponentRoots({ path }),
-                            tsConfigPath: tsConfigPath,
-                        },
-                    },
-                    {
-                        loader: 'ts-loader',
-                        options: {
-                            configFile: tsConfigPath,
-                            happyPackMode: true,
-                            compilerOptions: {
-                                noEmit: false,
-                            },
                         },
                     },
                 ]),
