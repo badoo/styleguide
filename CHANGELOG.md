@@ -2,7 +2,7 @@
 
 ## v0.0.35
 
-* clenup `get-webpack-config`
+* cleanup of `get-webpack-config`
 
 ## v0.0.34-beta.6
 
