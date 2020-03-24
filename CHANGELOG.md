@@ -2,24 +2,24 @@
 
 ## v0.0.35
 
-* cleanup of `get-webpack-config`
+* Cleanup of `get-webpack-config`
 
 ## v0.0.34-beta.6
 
-* move custom handler `function-component-params-auto-definition` out of projects scope to separate module
+* Move custom handler `function-component-params-auto-definition` out of projects scope to separate module
 
 ## v0.0.34-beta.5
 
-* add minimal support for tsType from `react-dcogen`
-* add support for UI components without props or props definition in `function-component-params-auto-definition`
-* add custom handler `function-component-params-auto-definition` for support types for props of react.functionComponents, defined in type of component
-* deprecate `--no-props-for-tsx-components` due to faster builds for ts-files with `react-dcogen` custom hanlder
-* removal of `react-docgen-typescript` from project
+* Add minimal support for tsType from `react-docgen`
+* Add support for UI components without props or props definition in `function-component-params-auto-definition`
+* Add custom handler `function-component-params-auto-definition` for support types for props of react.functionComponents, defined in type of component
+* Deprecate `--no-props-for-tsx-components` due to faster builds for ts-files with `react-docgen` custom hanlder
+* Remove of `react-docgen-typescript` from project
 
 ## v0.0.34-beta.4
 
 * Update `react-docgen` to 5.3.0
-* change `node-scss` to `styled-components` for internal components
+* Change `node-scss` to `styled-components` for internal components
 
 ## v0.0.34-beta.3
 
@@ -35,14 +35,14 @@
 * Add `getExceptionForLoaders` function for adding custom exceptions for loaders
 
 ## v0.0.34-alpha.6
-* move get-babel-options to separate module
+* Move get-babel-options to separate module
 
 ## v0.0.34-alpha.5
-* add skip of spec-files during generating of documentation stage
-* divide loader `ts-component` into several functions for readability
+* Add skip of spec-files during generating of documentation stage
+* Divide loader `ts-component` into several functions for readability
 
 ## v0.0.34-alpha.4
-* update `typescript` to 3.7.5 for general compatibility
+* Update `typescript` to 3.7.5 for general compatibility
 
 ## v0.0.34-alpha.3
 * Add `cache-loader` for speeding up the following builds, not in use with `--buildDir` param
