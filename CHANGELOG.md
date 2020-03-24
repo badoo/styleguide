@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.36
+
+* Add opportunity to set @babel/parser options to `react-docgen` for props-generation via `getBabelParserOptions`
+
 ## v0.0.35
 
 * Cleanup of `get-webpack-config`

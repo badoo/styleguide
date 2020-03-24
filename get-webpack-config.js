@@ -32,6 +32,7 @@ module.exports = function getWebpackConfig({
     getSectionComponents,
     getExceptionForLoaders,
     getBabelConfig,
+    getBabelParserOptions,
     getLoaderForModule,
     tsConfigPath,
 }) {
@@ -193,6 +194,7 @@ module.exports = function getWebpackConfig({
                         loader: 'js-component',
                         options: {
                             componentRoots: getComponentRoots({ path }),
+                            babelParserOptions: getBabelParserOptions(),
                         },
                     },
                 ]),
@@ -206,6 +208,7 @@ module.exports = function getWebpackConfig({
                         loader: 'ts-component',
                         options: {
                             componentRoots: getComponentRoots({ path }),
+                            babelParserOptions: getBabelParserOptions(),
                         },
                     },
                 ]),

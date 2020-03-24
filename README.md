@@ -63,6 +63,27 @@ module.exports = {
      */
     sandboxMaxWidth: '100%',
 
+
+    /**
+     * This function will supply babel config object directly to babel-loader
+     * for list of options, please refer to https://babeljs.io/docs/en/config-files
+     * @optional
+     * @returns Object
+     */
+    getBabelConfig() {
+        return {...};
+    }
+
+    /**
+     * This function will supply options directly to babel/parser
+     * for list of options, please refer to https://babeljs.io/docs/en/babel-parser
+     * @optional
+     * @returns Array<String>
+     */
+    getBabelParserOptions() {
+        return ['classProperties'];
+    },
+
     /**
      * This function will tell the styleguide if the component being included
      * is a specification/example component

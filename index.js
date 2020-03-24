@@ -48,6 +48,7 @@ const ourWebpackConfig = getWebpackConfig({
     isReactNative: config.isReactNative,
     configPath,
     getBabelConfig: config.getBabelConfig,
+    getBabelParserOptions: config.getBabelParserOptions,
     getComponentRoots: config.getComponentRoots,
     getSectionComponents: config.getSectionComponents,
     getExceptionForLoaders: config.getExceptionForLoaders,
