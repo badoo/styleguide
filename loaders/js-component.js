@@ -38,7 +38,9 @@ module.exports = function(source) {
             {
                 parserOptions: {
                     filename: '',
-                    plugins: ['jsx'],
+                    plugins: options.babelParserOptions
+                        ? ['jsx', ...options.babelParserOptions]
+                        : ['jsx'],
                 },
             }
         );

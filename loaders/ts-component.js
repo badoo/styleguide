@@ -38,7 +38,9 @@ module.exports = function(source) {
             {
                 parserOptions: {
                     filename: '',
-                    plugins: ['typescript', 'jsx'],
+                    plugins: options.babelParserOptions
+                        ? ['typescript', 'jsx', options.babelParserOptions]
+                        : ['typescript', 'jsx'],
                 },
             }
         );
