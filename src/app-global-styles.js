@@ -26,10 +26,6 @@ const useDefaultGlobalStyles = !config.noDefaultGlobalStyles;
 const useDefaultStyleguideStyles = !config.noDefaultStyleguideStyles;
 const useDefaultNormalize = !config.noDefaultNormalize;
 
-console.log(useDefaultGlobalStyles);
-console.log(useDefaultStyleguideStyles);
-console.log(useDefaultNormalize);
-
 const GlobalStyle = useDefaultGlobalStyles
     ? createGlobalStyle`
     ${useDefaultStyleguideStyles ? StyleGuideDefaultStyles : null}
