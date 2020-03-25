@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.40
+
+* Add node-sass tar resolution
+
 ## v0.0.39
 
 * Add css/scss support from the box
