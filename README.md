@@ -117,7 +117,7 @@ module.exports = {
     },
 
     /**
-     * This function allows to set up global objects 
+     * This function allows to set up global objects
      * in browser environment
      * @optional
      */
@@ -181,6 +181,16 @@ module.exports = {
             jsLoader: path.resolve(cwd, 'src'),
             tsLoader: /src/,
         };
+    },
+
+    /**
+     * Returns the webpack loaders list for usage before component props eevaluation
+     * @param {string} path - The "path" node module to help you resolve any paths
+     * @returns Array<Object, string>
+     */
+
+    getLoadersForComponents({ path }) {
+        return ['babel-loader'];
     },
 
     /**

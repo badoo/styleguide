@@ -52,6 +52,7 @@ const ourWebpackConfig = getWebpackConfig({
     getComponentRoots: config.getComponentRoots,
     getSectionComponents: config.getSectionComponents,
     getExceptionForLoaders: config.getExceptionForLoaders,
+    getLoadersForComponents: config.getLoadersForComponents,
     getLoaderForModule: config.getLoaderForModule,
     tsConfigPath: path.resolve(process.cwd(), './tsconfig.json'),
 });

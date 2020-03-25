@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.38
+
+* Add `getLoadersForComponents` to help set loaders in config of webpack before props extraction from react-components
+* Removed `happy-hack` due to low impact on speed
+
 ## v0.0.37
 
 * Add reset for internal css styles of styleguide via `noDefaultGlobalStyles`, `noDefaultStyleguideStyles` ,`noDefaultNormalize`
