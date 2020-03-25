@@ -20,12 +20,6 @@ const GlobalStyle = createGlobalStyle`
         font-family: Consolas, "Liberation Mono", Menlo, monospace;
     }
 
-    .styleguide {
-        background: #fff;
-        display: grid;
-        grid-template-columns: 300px auto;
-    }
-
     ${normalize}
 `;
 
