@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.39
+
+* Add css/scss support from the box
+
 ## v0.0.38
 
 * Add `getLoadersForComponents` to help set loaders in config of webpack before props extraction from react-components

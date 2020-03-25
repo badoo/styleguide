@@ -130,6 +130,14 @@ module.exports = function getWebpackConfig({
                             },
                         },
                         {
+                            test: /\.scss$/,
+                            use: ['style-loader', 'css-loader', 'sass-loader'],
+                        },
+                        {
+                            test: /\.css$/,
+                            use: ['style-loader', 'css-loader'],
+                        },
+                        {
                             test: /\.jsx?$/,
                             // React native modules usually always need to be loaded by metro
                             exclude: isReactNative
