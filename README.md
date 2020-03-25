@@ -50,6 +50,29 @@ module.exports = {
     hasResizableSandbox: false,
 
     /**
+     * Set it to true if you want to handle reset css & and default minimal css
+     * for styleguide outside of project
+     * equals to both noDefaultStyleguideStyles & noDefaultStyleguideStyles
+     * set to true
+     * @optional
+     */
+    noDefaultGlobalStyles: false,
+
+    /**
+     * Set it to true if you want to switch off default Styleguide
+     * minimal style reset.
+     * @optional
+     */
+    noDefaultStyleguideStyles: false,
+
+    /**
+     * Set it to true if you want to switch off normalize used for reset
+     * of styles
+     * @optional
+     */
+    noDefaultNormalize: false,
+
+    /**
      * Min-width for the sandbox wrapper (number | string)
      * default – 320
      * @optional

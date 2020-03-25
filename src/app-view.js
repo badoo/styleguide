@@ -7,6 +7,7 @@ import Navigation from './components/navigation/navigation';
 import Content from './components/content/content';
 import Section from './components/section/section';
 import Component from './components/component/component';
+import AppViewComponent from '././components/app-view/app-view';
 import AppViewGlobalStyles from './app-global-styles';
 
 class AppView extends React.Component {
@@ -61,7 +62,7 @@ class AppView extends React.Component {
 
     render() {
         return (
-            <div className="styleguide">
+            <AppViewComponent>
                 <AppViewGlobalStyles />
                 <Sidebar>
                     <SearchField
@@ -86,7 +87,7 @@ class AppView extends React.Component {
                         />
                     )}
                 </Content>
-            </div>
+            </AppViewComponent>
         );
     }
 }
