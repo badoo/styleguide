@@ -57,6 +57,7 @@
     "react-dom": "16.8.4"
   },
   "resolutions": {
-    "js-yaml": "3.13.1"
+    "js-yaml": "3.13.1",
+    "node-sass/**/tar": "2.2.2"
   }
 }
