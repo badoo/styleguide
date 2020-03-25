@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.37
+
+* Add reset for internal css styles of styleguide via `noDefaultGlobalStyles`, `noDefaultStyleguideStyles` ,`noDefaultNormalize`
+* Move component scss to css-in-js
+
 ## v0.0.36
 
 * Add opportunity to set @babel/parser options to `react-docgen` for props-generation via `getBabelParserOptions`

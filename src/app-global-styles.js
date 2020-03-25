@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import config from '__GLOBAL__CONFIG__';
 
-const GlobalStyle = createGlobalStyle`
+const StyleGuideDefaultStyles = `
     *,
     *::before,
     *::after {
@@ -19,8 +20,22 @@ const GlobalStyle = createGlobalStyle`
     code {
         font-family: Consolas, "Liberation Mono", Menlo, monospace;
     }
-
-    ${normalize}
 `;
+
+const useDefaultGlobalStyles = !config.noDefaultGlobalStyles;
+const useDefaultStyleguideStyles = !config.noDefaultStyleguideStyles;
+const useDefaultNormalize = !config.noDefaultNormalize;
+
+console.log(useDefaultGlobalStyles);
+console.log(useDefaultStyleguideStyles);
+console.log(useDefaultNormalize);
+
+const GlobalStyle = useDefaultGlobalStyles
+    ? createGlobalStyle`
+    ${useDefaultStyleguideStyles ? StyleGuideDefaultStyles : null}
+
+    ${useDefaultNormalize ? normalize : null}
+`
+    : createGlobalStyle``;
 
 export default GlobalStyle;
