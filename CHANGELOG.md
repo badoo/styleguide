@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.41
+
+* Add `react-docgen-typescript` as solution for multiple import / export case in one module
+
 ## v0.0.40
 
 * Add node-sass tar resolution
