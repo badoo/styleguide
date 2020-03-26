@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.42
+
+* Add `actionOnRender` - this function will apply provided actions during render of component
+* `react-docgen-typescript` removed - it still doesn't work on large projects due to complexity of tsconfig configurations
+
 ## v0.0.41
 
 * Add `react-docgen-typescript` as solution for multiple import / export case in one module

@@ -143,6 +143,10 @@ class Component extends React.Component {
         const onClick = () => this.toggleProps(this.state.isPropsCollapsed);
 
         const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
+        
+        if (config.actionOnRender) {
+            config.actionOnRender();
+        }
 
         return (
             <ComponentBlock id={id}>
