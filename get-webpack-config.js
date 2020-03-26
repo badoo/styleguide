@@ -57,7 +57,6 @@ module.exports = function getWebpackConfig({
         options: {
             componentRoots: getComponentRoots({ path }),
             babelParserOptions: getBabelParserOptions ? getBabelParserOptions() : undefined,
-            tsConfigPath,
         },
     };
 

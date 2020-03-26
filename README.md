@@ -50,6 +50,18 @@ module.exports = {
     hasResizableSandbox: false,
 
     /**
+     * This function will apply provided actions during render of component
+     * @optional
+     */
+    actionOnRender() {
+        // eslint-disable-next-line no-undef
+        if (document & !document.querySelector('body').classList) {
+            // eslint-disable-next-line no-undef
+            document.querySelector('body').classList.add('test')
+        }
+    },
+
+    /**
      * Set it to true if you want to handle reset css & and default minimal css
      * for styleguide outside of project
      * equals to both noDefaultStyleguideStyles & noDefaultStyleguideStyles
@@ -85,7 +97,6 @@ module.exports = {
      * @optional
      */
     sandboxMaxWidth: '100%',
-
 
     /**
      * This function will supply babel config object directly to babel-loader

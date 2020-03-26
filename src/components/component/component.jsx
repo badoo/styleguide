@@ -144,6 +144,10 @@ class Component extends React.Component {
 
         const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
 
+        if (config.actionOnRender) {
+            config.actionOnRender();
+        }
+
         return (
             <ComponentBlock id={id}>
                 <header className="styleguide-component__header">
