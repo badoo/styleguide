@@ -58,6 +58,7 @@ function setMeta(doc, fileName, resourcePath, source) {
 
     return results;
 }
+
 function useGenericParser(source, options) {
     return reactDocs.parse(
         source,
