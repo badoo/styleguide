@@ -1,5 +1,6 @@
 const path = require('path');
 const reactDocs = require('react-docgen');
+const reactDocsTS = require('react-docgen-typescript');
 const setParamsTypeDefinitionFromFunctionType = require('typescript-react-function-component-props-handler');
 const loaderUtils = require('loader-utils');
 const { isDebug } = require('../build-arguments');
@@ -97,6 +98,11 @@ module.exports = function(source) {
         }
         /* eslint-enable no-useless-escape */
     } catch (err) {
+        const tsConfigPath = options.tsConfigPath;
+        const docs = reactDocsTS.withCustomConfig(tsConfigPath).parse(source);
+
+        console.log(`docs`, docs)
+
         if (!/Multiple exported component definitions found/.test(err)) {
             const componentPath = this.resourcePath.replace(foundComponentRoot, '');
             console.warn(componentPath, isDebug ? err : err.message);
