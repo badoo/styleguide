@@ -9,14 +9,6 @@ const StyleGuideDefaultStyles = `
         box-sizing: border-box;
     }
 
-    body {
-        color: #6a6a6a;
-    }
-
-    h1 {
-        font-weight: 400;
-    }
-
     code {
         font-family: Consolas, "Liberation Mono", Menlo, monospace;
     }
