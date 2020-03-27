@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.44
+
+* Fix speed of build by setting up explicitly `transpileOnly` for `ts-loader`. It previously was set indirectly by [happypackmode](https://github.com/TypeStrong/ts-loader#happypackmode)
+* Add `onlyCompileBundledFiles` to increase speed of `ts-loader`
+* Add `react-docgen-typescript` for fallback as solution for multiple import / export case in one module.
+
 ## v0.0.43
 
 * Remove interfering css-styles from global scope
