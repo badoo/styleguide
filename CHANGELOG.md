@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.43
+
+* Remove interfering css-styles from global scope
+* Return opportunity to set @babel/parser options to `react-docgen` for props-generation via `getBabelParserOptions`
+
 ## v0.0.42
 
 * Add `actionOnRender` - this function will apply provided actions during render of component

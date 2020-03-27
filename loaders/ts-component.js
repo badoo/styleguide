@@ -39,8 +39,8 @@ module.exports = function(source) {
                 parserOptions: {
                     filename: '',
                     plugins: options.babelParserOptions
-                        ? ['jsx', ...options.babelParserOptions]
-                        : ['jsx'],
+                        ? ['typescript', 'jsx', ...options.babelParserOptions]
+                        : ['typescript', 'jsx'],
                 },
             }
         );
@@ -62,7 +62,7 @@ module.exports = function(source) {
                       const type = originalProp.type ? originalProp.type.name : key;
 
                       types[key] = {
-                          type,
+                          type: originalProp.tsType ? originalProp.tsType.name : type,
                           required: originalProp.required,
                           description: originalProp.description,
                       };
