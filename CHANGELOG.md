@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.46
+
+* Move `actionOnRender` calls in `componentDidMount`, `componentDidUpdate`
+
 ## v0.0.45
 
 * Add [visual-helpers](https://github.com/badoo/styleguide/tree/master/visual-helpers/) components for prototyping

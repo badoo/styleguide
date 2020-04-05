@@ -141,12 +141,7 @@ class Component extends React.Component {
 
         const id = name ? name.toLowerCase() : undefined;
         const onClick = () => this.toggleProps(this.state.isPropsCollapsed);
-
         const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
-
-        if (config.actionOnRender) {
-            config.actionOnRender();
-        }
 
         return (
             <ComponentBlock id={id}>
@@ -228,6 +223,18 @@ class Component extends React.Component {
                 ) : null}
             </ComponentBlock>
         );
+    }
+
+    componentDidMount() {
+        if (config.actionOnRender) {
+            config.actionOnRender();
+        }
+    }
+
+    componentDidUpdate() {
+        if (config.actionOnRender) {
+            config.actionOnRender();
+        }
     }
 }
 
