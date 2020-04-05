@@ -2,24 +2,15 @@
 
 [![npm version](https://badge.fury.io/js/badoo-styleguide.svg)](https://badge.fury.io/js/badoo-styleguide)
 
-**Work in progress**: This is a styleguide used by the frontend team in Badoo, at the moment we are in the process of open sourcing it. Just working out some issues, cleaning up the API and adding documentation.
+**[Work in progress](#to-do)**: This is a styleguide used by the frontend team in [Magiclab](https://magiclab.co/), at the moment we are in the process of open sourcing it. Just working out some issues, cleaning up the API and adding documentation.
 
-## To Do
+## Table of contents
 
-* [ ] Branding/Logo
-* [ ] Simplify configuration needed
-* [ ] Add example projects
-* [ ] Explain the philosophy/goals/anti-goals/tradeoffs/pros/cons/roadmap behind inventing another styleguide
-* [ ] Add Travis builds
-* [ ] Add contribution guide
-* [ ] Consider splitting out into styleguide/react and styleguide/react-native to reduce npm dependencies needed upon installation
-* [ ] Move dependencies which are used strictly for development into devDependencies
-
-## Usage
-
-* [Getting started](#getting-started)
-* [Examples](#examples)
-* [Debugging](#debugging)
+- [Getting started](#getting-started)
+- [Examples](#examples)
+- [Visual helpers](#visual-helpers)
+- [Debugging](#debugging)
+- [ToDo](#to-do)
 
 ## Getting started
 
@@ -257,8 +248,18 @@ The buildDir parameter switches off webpack-server and caching.
 
 ## Examples
 
-* [Basic example](./examples/basic)
-* [Typescript project example](./examples/typescript)
+* [Basic example](https://github.com/badoo/styleguide/tree/master/examples/basic)
+* [Typescript project example](https://github.com/badoo/styleguide/tree/master/examples/typescript)
+
+## Visual helpers
+
+For easier work with different devices / media-queries we introduced several components:
+
+* `StyleguidePlaceholder` returns mockup of component with provided parameters
+* `StyleguideStatic` returns image src from [placehold.it](http://placehold.it) with provided parameters
+* `StyleguideCell` returns component and its `legend`
+* `StyleguideDeviceFrame` returns one of predefined frames, based on mobile device aspect-ratio
+* `StyleguideDeviceGroup` returns set of predefined frames, based on mobile device aspect-ratio
 
 ## Debugging
 
@@ -267,3 +268,14 @@ Pass --debug flag to the command line to get additional debug information.
 ```bash
 yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --debug
 ```
+
+## To Do
+
+* [ ] Branding/Logo
+* [ ] Simplify configuration needed
+* [ ] Add example projects
+* [ ] Explain the philosophy/goals/anti-goals/tradeoffs/pros/cons/roadmap behind inventing another styleguide
+* [ ] Add Travis builds
+* [ ] Add contribution guide
+* [ ] Consider splitting out into styleguide/react and styleguide/react-native to reduce npm dependencies needed upon installation
+* [ ] Move dependencies which are used strictly for development into devDependencies
