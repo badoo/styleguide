@@ -1,4 +1,4 @@
-const PROVIDER = 'http://placehold.it';
+const PROVIDER = 'https://placehold.it';
 
 export function getImageUrl(options) {
     const { width = 200, height, color, text } = options;
