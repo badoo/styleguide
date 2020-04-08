@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StyleguideGroup from '../styleguide-group';
-import StyleguideCell from './styleguide-cell';
+import StyleguideGroup from '../styleguide-group/styleguide-group';
+import StyleguideCell from '../styleguide-cell/styleguide-cell';
 
 const propTypes = {
     children: PropTypes.node,
