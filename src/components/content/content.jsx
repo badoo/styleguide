@@ -5,7 +5,7 @@ const ContentBlock = styled.main`
     padding: 32px;
     position: relative;
     width: 100%;
-    background: #fff; // hides sidebar
+    background: #fff;
 `;
 
 const Content = props => {

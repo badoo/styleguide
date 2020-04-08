@@ -10,6 +10,7 @@
     "build": "yarn start --config=styleguide.config.js --buildDir=./dist/",
     "start": "yarn deps && node ./index.js",
     "lint": "eslint . --ext .js,.jsx",
+    "test": "jest",
     "prettier": "prettier --write '**/*.{jsx,js,ts,tsx,json}'",
     "styleguide": "yarn start --config=styleguide.config.js"
   },
@@ -50,13 +51,17 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.11",
     "eslint": "6.0.1",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-react": "7.14.2",
     "husky": "^4.2.3",
+    "jest": "^25.2.7",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "16.8.4"
+    "react-dom": "16.8.4",
+    "react-test-renderer": "^16.13.1"
   },
   "husky": {
     "hooks": {
