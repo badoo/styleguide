@@ -4,11 +4,11 @@
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
-  "bin": "./index.js",
+  "bin": "./webpack-server.js",
   "scripts": {
     "deps": "yarn install --pure-lockfile",
     "build": "yarn start --config=styleguide.config.js --buildDir=./dist/",
-    "start": "yarn deps && node ./index.js",
+    "start": "yarn deps && node ./webpack-server.js",
     "lint": "eslint . --ext .js,.jsx",
     "prettier": "prettier --write '**/*.{jsx,js,ts,tsx,json}'",
     "styleguide": "yarn start --config=styleguide.config.js"

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import View from './styleguide-view';
+import View from '../styleguide-view';
 
 const propTypes = {
     children: PropTypes.node,
