@@ -5,7 +5,7 @@ import StyleguideGroup from './styleguide-group/styleguide-group';
 import StyleguidePlaceholder from './styleguide-placeholder/styleguide-placeholder';
 import getImageUrl from './styleguide-static/styleguide-static';
 
-declare const visualHelpers: {
+export type VisualHelpers = {
     StyleguideCell: typeof StyleguideCell;
     StyleguideDeviceFrame: typeof StyleguideDeviceFrame;
     StyleguideDeviceRange: typeof StyleguideDeviceRange;
@@ -13,5 +13,7 @@ declare const visualHelpers: {
     StyleguidePlaceholder: typeof StyleguidePlaceholder;
     getImageUrl: typeof getImageUrl;
 };
+
+declare const visualHelpers: VisualHelpers;
 
 export default visualHelpers;

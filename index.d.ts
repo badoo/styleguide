@@ -1,19 +1,19 @@
-declare module 'badoo-styleguide' {
-    import {
-        StyleguideCell,
-        StyleguideDeviceFrame,
-        StyleguideDeviceRange,
-        StyleguideGroup,
-        StyleguidePlaceholder,
-        getImageUrl,
-    } from './src/visual-helpers';
+import { VisualHelpers } from './src/visual-helpers';
 
-    export {
-        StyleguideCell,
-        StyleguideDeviceFrame,
-        StyleguideDeviceRange,
-        StyleguideGroup,
-        StyleguidePlaceholder,
-        getImageUrl,
-    };
-}
+declare const visualHelpers: VisualHelpers;
+
+const StyleguideCell = visualHelpers.StyleguideCell;
+const StyleguideDeviceFrame = visualHelpers.StyleguideDeviceFrame;
+const StyleguideDeviceRange = visualHelpers.StyleguideDeviceRange;
+const StyleguideGroup = visualHelpers.StyleguideGroup;
+const StyleguidePlaceholder = visualHelpers.StyleguidePlaceholderr;
+const getImageUrl = visualHelpers.getImageUrl;
+
+export {
+    StyleguideCell,
+    StyleguideDeviceFrame,
+    StyleguideDeviceRange,
+    StyleguideGroup,
+    StyleguidePlaceholder,
+    getImageUrl,
+};
