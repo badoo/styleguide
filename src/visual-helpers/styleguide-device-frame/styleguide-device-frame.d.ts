@@ -1,10 +1,16 @@
 import React from 'react';
 
+enum SIZES {
+    SMALL = 'SMALL',
+    MEDIUM = 'MEDIUM',
+    LARGE = 'LARGE',
+}
+
 export type StyleguideDeviceFrameProps = {
     /**
      * The predefined size of frame
      */
-    size?: 'SMALL' | 'MEDIUM' | 'LARGE';
+    size?: SIZES;
     /**
      * The caption, shown upon the rendered component
      */
@@ -15,6 +21,8 @@ export type StyleguideDeviceFrameProps = {
     children?: React.ReactNode;
 };
 
-declare const StyleguideDeviceFrame: React.FunctionComponent<StyleguideDeviceFrameProps>;
+declare const StyleguideDeviceFrame: React.FunctionComponent<StyleguideDeviceFrameProps> & {
+    SIZE: typeof SIZES;
+};
 
 export default StyleguideDeviceFrame;
