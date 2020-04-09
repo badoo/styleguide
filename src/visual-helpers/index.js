@@ -3,9 +3,9 @@ const StyleguideDeviceFrame = require('./styleguide-device-frame/styleguide-devi
 const StyleguideDeviceRange = require('./styleguide-device-range/styleguide-device-range').default;
 const StyleguideGroup = require('./styleguide-group/styleguide-group').default;
 const StyleguidePlaceholder = require('./styleguide-placeholder/styleguide-placeholder').default;
-const getImageUrl = require('./styleguide-static');
+const getImageUrl = require('./styleguide-static/styleguide-static');
 
-module.exports = {
+const visualHelpers = {
     StyleguideCell,
     StyleguideDeviceFrame,
     StyleguideDeviceRange,
@@ -13,3 +13,5 @@ module.exports = {
     StyleguidePlaceholder,
     getImageUrl,
 };
+
+module.exports = visualHelpers;

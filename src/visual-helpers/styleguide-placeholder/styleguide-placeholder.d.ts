@@ -4,7 +4,7 @@ export type StyleguidePlaceholderProps = {
     /**
      * The text inside the placeholder-component
      */
-    placeholder: PropTypes.string;
+    placeholder?: string;
     /**
      * The text color for the placeholder-component
      */

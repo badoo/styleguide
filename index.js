@@ -1,3 +1,3 @@
-const visualHelpers = require('./src/visual-helpers').default;
+const visualHelpers = require('./src/visual-helpers');
 
 module.exports = visualHelpers;

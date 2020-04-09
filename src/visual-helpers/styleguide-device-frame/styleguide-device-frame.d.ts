@@ -4,7 +4,7 @@ export type StyleguideDeviceFrameProps = {
     /**
      * The predefined size of frame
      */
-    size: 'SMALL' | 'MEDIUM' | 'LARGE';
+    size?: 'SMALL' | 'MEDIUM' | 'LARGE';
     /**
      * The caption, shown upon the rendered component
      */
