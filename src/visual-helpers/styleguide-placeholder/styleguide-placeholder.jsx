@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import View from './styleguide-view';
-import Text from './styleguide-text';
+import View from '../styleguide-view';
+import Text from '../styleguide-text';
 
 const propTypes = {
     width: PropTypes.string,

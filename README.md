@@ -261,6 +261,12 @@ For easier work with different devices / media-queries we introduced several com
 * `StyleguideDeviceFrame` returns one of predefined frames, based on mobile device aspect-ratio
 * `StyleguideDeviceGroup` returns set of predefined frames, based on mobile device aspect-ratio
 
+```js
+
+import { getImageUrl } from 'badoo-styleguide';
+
+```
+
 ## Debugging
 
 Pass --debug flag to the command line to get additional debug information.
