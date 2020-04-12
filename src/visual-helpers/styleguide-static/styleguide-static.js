@@ -1,6 +1,6 @@
 const PROVIDER = 'https://placehold.it';
 
-export function getImageUrl(options) {
+module.exports = function getImageUrl(options) {
     const { width = 200, height, color, text } = options;
 
     let widthPart = '';
@@ -27,4 +27,4 @@ export function getImageUrl(options) {
     }
 
     return `${PROVIDER}/${widthPart}${heightPart}${colorPart}${textPart}`;
-}
+};

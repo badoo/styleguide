@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.0.48
+
+* Add improved size props for `styleguide-device-frame`
+
+## v0.0.47
+
+* Make import for visual helpers easier
+
 ## v0.0.46
 
 * Move `actionOnRender` calls in `componentDidMount`, `componentDidUpdate`
