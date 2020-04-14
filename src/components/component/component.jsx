@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import Sandbox from '../sandbox/sandbox';
 import config from '__GLOBAL__CONFIG__';
 
+export const actionBeforeRenderHandler = () =>
+    config && config.actionOnRender ? config.actionOnRender() : null;
+
 const ComponentBlock = styled.article`
     padding-top: 32px;
 `;
@@ -100,7 +103,7 @@ const ComponentPropsHandler = styled.span`
     }
 
     ${props =>
-        props.isCollapsed
+        props.isPropTableOpened
             ? `
         &::before {
             content: '–';
@@ -128,19 +131,19 @@ class Component extends React.Component {
         super(props);
 
         this.state = {
-            isPropsCollapsed: false,
+            isPropTableOpened: props.isPropTableOpened || false,
         };
+
+        this.toggleProps = this.toggleProps.bind(this);
     }
 
-    toggleProps(isPropsCollapsed) {
-        this.setState({ isPropsCollapsed: !isPropsCollapsed });
+    toggleProps() {
+        this.setState({ isPropTableOpened: !this.state.isPropTableOpened });
     }
 
     render() {
         const { name, description, propTypes, tests } = this.props;
-
         const id = name ? name.toLowerCase() : undefined;
-        const onClick = () => this.toggleProps(this.state.isPropsCollapsed);
         const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
 
         return (
@@ -154,15 +157,15 @@ class Component extends React.Component {
                     <ComponentProps>
                         <ComponentPropsControls>
                             <ComponentPropsHandler
-                                isCollapsed={this.state.isPropsCollapsed}
-                                onClick={onClick}
+                                isPropTableOpened={this.state.isPropTableOpened}
+                                onClick={this.toggleProps}
                                 role="button"
                             >
                                 PROPERTIES
                             </ComponentPropsHandler>
                         </ComponentPropsControls>
 
-                        {this.state.isPropsCollapsed ? (
+                        {this.state.isPropTableOpened ? (
                             <ComponentPropsData className="styleguide-component__props-data">
                                 <table>
                                     <thead>
@@ -207,13 +210,18 @@ class Component extends React.Component {
                 {tests ? (
                     <ComponentTests>
                         {tests.map((test, key) => {
-                            const { name: sandboxName, Component: SandboxComponent } = test;
+                            const { name: sandboxName, Component: Test } = test;
+                            let TestElement;
+
+                            if (!Test) {
+                                TestElement = () => `Test ${sandboxName} is not defined`;
+                            }
 
                             return (
                                 <ComponentSandbox key={key}>
                                     <Sandbox title={sandboxName}>
                                         <Wrapper>
-                                            <SandboxComponent />
+                                            {TestElement ? <TestElement /> : <Test />}
                                         </Wrapper>
                                     </Sandbox>
                                 </ComponentSandbox>
@@ -226,14 +234,14 @@ class Component extends React.Component {
     }
 
     componentDidMount() {
-        if (config.actionOnRender) {
-            config.actionOnRender();
+        if (actionBeforeRenderHandler) {
+            actionBeforeRenderHandler();
         }
     }
 
     componentDidUpdate() {
-        if (config.actionOnRender) {
-            config.actionOnRender();
+        if (actionBeforeRenderHandler) {
+            actionBeforeRenderHandler();
         }
     }
 }

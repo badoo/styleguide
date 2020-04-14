@@ -77,7 +77,7 @@ class AppView extends React.Component {
                 </Sidebar>
                 <Content>
                     {this.state.component ? (
-                        <Section list={[this.state.component]} />
+                        <Section content={this.state.component} />
                     ) : (
                         <Component
                             name={'Welcome!'}
