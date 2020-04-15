@@ -68,6 +68,7 @@ class Dialog extends React.Component {
         super(props);
 
         this.portal = React.createRef();
+        this.closeDialog = this.closeDialog.bind(this);
         this.handleKeydown = this.handleKeydown.bind(this);
         this.state = {
             active: false,
@@ -78,14 +79,34 @@ class Dialog extends React.Component {
         if (this.props.isOpened !== prevProps.isOpened) {
             if (this.props.isOpened) {
                 this.openDialog();
+                document.addEventListener('keydown', this.handleKeydown);
             } else {
                 this.closeDialog();
+                document.removeEventListener('keydown', this.handleKeydown);
             }
         }
     }
 
-    componentDidMount() {
-        document.addEventListener('keydown', this.handleKeydown);
+    render() {
+        const { title, content } = this.props;
+
+        if (!this.state.active) {
+            return null;
+        }
+
+        const dialog = (
+            <DialogBlock ref={this.portal}>
+                <DialogHeader>
+                    <DialogTitle>{title}</DialogTitle>
+                    <DialogClose onClick={this.closeDialog}>
+                        <Icon name={IconName.CLOSE} />
+                    </DialogClose>
+                </DialogHeader>
+                <DialogContent>{content}</DialogContent>
+            </DialogBlock>
+        );
+
+        return ReactDOM.createPortal(dialog, document.body);
     }
 
     componentWillUnmount() {
@@ -103,37 +124,15 @@ class Dialog extends React.Component {
     }
 
     closeDialog() {
-        if (!this.state.active) {
-            return;
+        if (this.state.active) {
+            this.setState({ active: false }, this.onCloseHandler);
         }
-
-        const onCloseHandler = this.props.onClose ? this.props.onClose() : null;
-
-        this.setState({ active: false }, () => onCloseHandler);
     }
 
-    render() {
-        const { title, content } = this.props;
-
-        if (!this.state.active) {
-            return null;
+    onCloseHandler() {
+        if (this.props.onClose && typeof this.props.onClose === 'function') {
+            this.props.onClose();
         }
-
-        const onClick = () => this.closeDialog();
-
-        const dialog = (
-            <DialogBlock ref={this.portal}>
-                <DialogHeader>
-                    <DialogTitle>{title}</DialogTitle>
-                    <DialogClose onClick={onClick}>
-                        <Icon name={IconName.CLOSE} />
-                    </DialogClose>
-                </DialogHeader>
-                <DialogContent>{content}</DialogContent>
-            </DialogBlock>
-        );
-
-        return ReactDOM.createPortal(dialog, document.body);
     }
 }
 

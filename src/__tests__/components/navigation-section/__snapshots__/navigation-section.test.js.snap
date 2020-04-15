@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation-Section Tests: When we open app 1`] = `
+<div
+  className="sc-AxjAm bkRBQT"
+>
+  <div
+    className="sc-AxirZ kngXYT"
+    onClick={[Function]}
+  >
+    Structure
+  </div>
+  <div
+    className="sc-AxiKw fXmGGd"
+  >
+    <div
+      className="sc-AxhCb eWEqxl"
+    >
+      <a
+        className="sc-AxhUy fGlHFc"
+        data-vrt-locator="link"
+        href="#Structure-Component"
+      >
+        Component
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Navigation-Section Tests: When we toggle isOpened for section 1`] = `
+<div
+  className="sc-AxjAm bkRBQT"
+>
+  <div
+    className="sc-AxirZ kngXYT"
+    onClick={[Function]}
+  >
+    Components
+  </div>
+  <div
+    className="sc-AxiKw fXmGGd"
+  >
+    <div
+      className="sc-AxhCb eWEqxl"
+    >
+      <a
+        className="sc-AxhUy fGlHFc"
+        data-vrt-locator="link"
+        href="#Components-ErrorBoundary"
+      >
+        ErrorBoundary
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Navigation-Section Tests: When we toggle isOpened for section 2`] = `
+<div
+  className="sc-AxjAm bkRBQT"
+>
+  <div
+    className="sc-AxirZ kngXYT"
+    onClick={[Function]}
+  >
+    Components
+  </div>
+  <div
+    className="sc-AxiKw fVTAYb"
+  >
+    <div
+      className="sc-AxhCb eWEqxl"
+    >
+      <a
+        className="sc-AxhUy fGlHFc"
+        data-vrt-locator="link"
+        href="#Components-ErrorBoundary"
+      >
+        ErrorBoundary
+      </a>
+    </div>
+  </div>
+</div>
+`;

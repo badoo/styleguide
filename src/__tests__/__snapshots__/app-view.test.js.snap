@@ -323,10 +323,10 @@ exports[`App-view generic tests When component is open 1`] = `
                 >
                   <header
                     className="sc-fzoiQi hehhuL"
-                    onClick={[Function]}
                   >
                     <h1
-                      className="sc-fzqARJ jZIQDQ"
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
                     >
                       SpecComponentEmpty
                     </h1>
@@ -407,10 +407,10 @@ exports[`App-view generic tests When component is open 1`] = `
                 >
                   <header
                     className="sc-fzoiQi hehhuL"
-                    onClick={[Function]}
                   >
                     <h1
-                      className="sc-fzqARJ jZIQDQ"
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
                     >
                       SpecComponentPropTypes
                     </h1>
@@ -491,10 +491,10 @@ exports[`App-view generic tests When component is open 1`] = `
                 >
                   <header
                     className="sc-fzoiQi hehhuL"
-                    onClick={[Function]}
                   >
                     <h1
-                      className="sc-fzqARJ jZIQDQ"
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
                     >
                       SpecComponentFull
                     </h1>
@@ -809,10 +809,10 @@ exports[`App-view generic tests When filter show components 1`] = `
                 >
                   <header
                     className="sc-fzoiQi hehhuL"
-                    onClick={[Function]}
                   >
                     <h1
-                      className="sc-fzqARJ jZIQDQ"
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
                     >
                       SpecComponentEmpty
                     </h1>
@@ -893,10 +893,10 @@ exports[`App-view generic tests When filter show components 1`] = `
                 >
                   <header
                     className="sc-fzoiQi hehhuL"
-                    onClick={[Function]}
                   >
                     <h1
-                      className="sc-fzqARJ jZIQDQ"
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
                     >
                       SpecComponentPropTypes
                     </h1>
@@ -977,10 +977,10 @@ exports[`App-view generic tests When filter show components 1`] = `
                 >
                   <header
                     className="sc-fzoiQi hehhuL"
-                    onClick={[Function]}
                   >
                     <h1
-                      className="sc-fzqARJ jZIQDQ"
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
                     >
                       SpecComponentFull
                     </h1>

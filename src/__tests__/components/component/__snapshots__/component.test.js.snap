@@ -47,10 +47,10 @@ exports[`Component generic tests: When component has one test with no element to
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             testEmpty
           </h1>
@@ -159,10 +159,10 @@ exports[`Component generic tests: When component has one test with no valid reac
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             TestWithWrongComponent
           </h1>
@@ -374,10 +374,10 @@ exports[`Component generic tests: When component has only tests 1`] = `
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             SpecComponentEmpty
           </h1>
@@ -458,10 +458,10 @@ exports[`Component generic tests: When component has only tests 1`] = `
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             SpecComponentPropTypes
           </h1>
@@ -542,10 +542,10 @@ exports[`Component generic tests: When component has only tests 1`] = `
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             SpecComponentFull
           </h1>
@@ -667,10 +667,10 @@ exports[`Component generic tests: When component has props & tests 1`] = `
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             SpecComponentEmpty
           </h1>
@@ -751,10 +751,10 @@ exports[`Component generic tests: When component has props & tests 1`] = `
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             SpecComponentPropTypes
           </h1>
@@ -835,10 +835,10 @@ exports[`Component generic tests: When component has props & tests 1`] = `
       >
         <header
           className="sc-fzpans FKZHZ"
-          onClick={[Function]}
         >
           <h1
-            className="sc-fzplWN dVdTWZ"
+            className="sc-fzplWN dyRpBf"
+            onClick={[Function]}
           >
             SpecComponentFull
           </h1>

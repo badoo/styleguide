@@ -1,0 +1,16 @@
+{
+    "sections": [
+        {
+            "name": "Structure",
+            "isOpened": false,
+            "components": [{ "name": "Component", "url": "Structure-Component", "isActive": false }]
+        },
+        {
+            "name": "Components",
+            "isOpened": false,
+            "components": [
+                { "name": "ErrorBoundary", "url": "Components-ErrorBoundary", "isActive": false }
+            ]
+        }
+    ]
+}

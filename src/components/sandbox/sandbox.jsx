@@ -25,6 +25,7 @@ const SandboxHeader = styled.header`
 
 const SandboxTitle = styled.h1`
     margin: 0;
+    flex: 1 0 auto;
     font-size: 16px;
     font-weight: 300;
     font-family: sans-serif;
@@ -61,71 +62,63 @@ const SandboxContent = styled.div`
     resize: ${config.hasResizableSandbox ? 'both' : undefined};
 `;
 
+const VisibilityIcon = {
+    hidden: false,
+    visible: true,
+};
+const mapVisibilityIconToState = {
+    [VisibilityIcon.hidden]: <Icon name={IconName.MINIMIZE_ON} />,
+    [VisibilityIcon.visible]: <Icon name={IconName.MINIMIZE_OFF} />,
+};
+
+const FullscreenIcon = {
+    off: false,
+    on: true,
+};
+
+const mapFullscreenIconToState = {
+    [FullscreenIcon.off]: <Icon name={IconName.FULLSCREEN_OFF} />,
+    [FullscreenIcon.on]: <Icon name={IconName.FULLSCREEN_ON} />,
+};
+
 class Sandbox extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             isFullScreen: false,
-            isVisible: true,
+            isContentVisible: true,
         };
 
-        this.onHeaderClickHandler = this.onHeaderClickHandler.bind(this);
-        this.onToggleVisibilityClickHandler = this.onToggleVisibilityClickHandler.bind(this);
-        this.onToggleFullScreenClickHandler = this.onToggleFullScreenClickHandler.bind(this);
-    }
-
-    onHeaderClickHandler() {
-        this.setState({ isVisible: !this.state.isVisible });
-    }
-
-    onToggleVisibilityClickHandler(event) {
-        event.stopPropagation();
-        this.setState({ isVisible: !this.state.isVisible });
-    }
-
-    onToggleFullScreenClickHandler(event) {
-        event.stopPropagation();
-        this.setState({ isFullScreen: !this.state.isFullScreen });
+        this.toggleContentVisibility = this.toggleContentVisibility.bind(this);
+        this.toggleFullscreenMode = this.toggleFullscreenMode.bind(this);
     }
 
     render() {
-        const { title, children } = this.props;
-
-        const controlVisibilityIcon = this.state.isVisible ? (
-            <Icon name={IconName.MINIMIZE_OFF} />
-        ) : (
-            <Icon name={IconName.MINIMIZE_ON} />
-        );
-
-        const controlFullScreenIcon = this.state.isFullScreen ? (
-            <Icon name={IconName.FULLSCREEN_ON} />
-        ) : (
-            <Icon name={IconName.FULLSCREEN_OFF} />
-        );
+        const { title = 'empty', children } = this.props;
 
         return (
-            <SandboxBlock data-vrt-locator={'sandbox'} data-name={title || 'empty'}>
-                <SandboxHeader onClick={this.onHeaderClickHandler}>
-                    <SandboxTitle>{title}</SandboxTitle>
+            <SandboxBlock data-vrt-locator={'sandbox'} data-name={title}>
+                <SandboxHeader>
+                    <SandboxTitle onClick={this.toggleContentVisibility}>{title}</SandboxTitle>
                     <SandboxControls>
-                        <SandboxControl onClick={this.onToggleVisibilityClickHandler}>
-                            {controlVisibilityIcon}
+                        <SandboxControl onClick={this.toggleContentVisibility}>
+                            {mapVisibilityIconToState[this.state.isContentVisible]}
                         </SandboxControl>
 
-                        <SandboxControl onClick={this.onToggleFullScreenClickHandler}>
-                            {controlFullScreenIcon}
+                        <SandboxControl onClick={this.toggleFullscreenMode}>
+                            {mapFullscreenIconToState[this.state.isFullScreen]}
                         </SandboxControl>
                     </SandboxControls>
                 </SandboxHeader>
 
                 <div data-vrt-locator={'sandbox-content'}>
                     <ErrorBoundary>
-                        {this.state.isVisible && <SandboxContent>{children}</SandboxContent>}
+                        {this.state.isContentVisible && <SandboxContent>{children}</SandboxContent>}
 
                         <Dialog
                             isOpened={this.state.isFullScreen}
-                            onClose={() => this.setState({ isFullScreen: false })}
+                            onClose={this.toggleFullscreenMode}
                             title={title}
                             content={children}
                         />
@@ -133,6 +126,14 @@ class Sandbox extends React.Component {
                 </div>
             </SandboxBlock>
         );
+    }
+
+    toggleFullscreenMode() {
+        this.setState({ isFullScreen: !this.state.isFullScreen });
+    }
+
+    toggleContentVisibility() {
+        this.setState({ isContentVisible: !this.state.isContentVisible });
     }
 }
 
