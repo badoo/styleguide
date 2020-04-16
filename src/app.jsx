@@ -15,12 +15,21 @@ class App extends React.PureComponent {
         };
     }
 
-    componentDidMount() {
-        window.addEventListener('hashchange', this.handleHashChange);
+    render() {
+        const onSearchFieldChange = this.handleSearchChange.bind(this);
+
+        return (
+            <AppView
+                currentHash={this.state.hash}
+                sections={this.state.sections}
+                searchQuery={this.state.searchQuery}
+                onSearchFieldChange={onSearchFieldChange}
+            />
+        );
     }
 
-    componentWillUnmount() {
-        window.removeEventListener('hashchange', this.handleHashChange);
+    componentDidMount() {
+        window.addEventListener('hashchange', this.handleHashChange);
     }
 
     componentDidUpdate(prevProps) {
@@ -37,34 +46,14 @@ class App extends React.PureComponent {
         }
     }
 
+    componentWillUnmount() {
+        window.removeEventListener('hashchange', this.handleHashChange);
+    }
+
     handleHashChange() {
         this.setState({
             hash: window.location.hash.substr(1),
         });
-    }
-
-    getCurrentComponentAndSection(sections = []) {
-        if (!this.state.hash) {
-            return {
-                section: null,
-                component: null,
-            };
-        }
-
-        const currentSection =
-            sections.filter(
-                section =>
-                    section.components.filter(component => component.url === this.state.hash).length
-            )[0] || null;
-
-        const currentComponent =
-            currentSection.components.filter(component => component.url === this.state.hash)[0] ||
-            null;
-
-        return {
-            section: currentSection,
-            component: currentComponent,
-        };
     }
 
     handleSearchChange(event) {
@@ -72,21 +61,11 @@ class App extends React.PureComponent {
 
         if (searchQuery && searchQuery !== this.state.searchQuery) {
             const sections = processSearchQuery(searchQuery, this.props.sections);
+
             this.setState({ searchQuery, sections });
         } else if (!searchQuery) {
             this.setState({ searchQuery: '', sections: this.props.sections });
         }
-    }
-
-    render() {
-        return (
-            <AppView
-                currentHash={this.state.hash}
-                sections={this.state.sections}
-                searchQuery={this.state.searchQuery}
-                onSearchFieldChange={event => this.handleSearchChange(event)}
-            />
-        );
     }
 }
 
