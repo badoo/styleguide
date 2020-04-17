@@ -32,9 +32,7 @@ function processConfigSection({ section: { name, components = [] }, isSpecificat
 }
 
 function processConfigComponent({ component, sectionName, isSpecificationPath }) {
-    const meta =
-        component.default && component.default.__meta ? component.default.__meta : component.__meta;
-
+    const meta = setComponentMeta(component);
     const dependencyResolver = component.__dependencyResolver;
 
     if (!dependencyResolver || !meta) {
@@ -53,6 +51,31 @@ function processConfigComponent({ component, sectionName, isSpecificationPath })
         propTypes: meta.propTypes,
         tests,
     };
+}
+
+function setComponentMeta(component) {
+    let meta =
+        component.default && component.default.__meta ? component.default.__meta : component.__meta;
+
+    if (isComponentHOC(component)) {
+        meta = component.__highOrderComponentInnerComponent.__meta;
+    }
+
+    return meta;
+}
+
+/**
+ * curently we support:
+ * classes,
+ * React.Components,
+ * React.PureComponents
+ */
+function isComponentHOC(component) {
+    return (
+        component.__highOrderComponentInnerComponent &&
+        component.__highOrderComponentInnerComponent.name !== component.default.name &&
+        component.default.name === '_class'
+    );
 }
 
 function getTestConfiguration(testModules) {
