@@ -49,6 +49,7 @@ function setMeta(doc, fileName, resourcePath, source) {
     } else if (/export\s+default/.test(source)) {
         results = `${source}
         ${doc.displayName}.__meta = ${JSON.stringify(meta)};
+        export const __highOrderComponentInnerComponent = ${doc.displayName}
         export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
     } else {
         results = `${source}
@@ -63,7 +64,7 @@ function setMeta(doc, fileName, resourcePath, source) {
 function useGenericParser(source, options) {
     return reactDocs.parse(
         source,
-        null,
+        reactDocs.resolver.findAllComponentDefinitions,
         [setParamsTypeDefinitionFromFunctionType, ...reactDocs.defaultHandlers],
         {
             filename: '',
@@ -108,7 +109,13 @@ module.exports = function(source) {
     let results;
 
     try {
-        const doc = useGenericParser(source, options);
+        let doc = useGenericParser(source, options);
+        /* currently we support the approach for the UI-architeture
+        as 1 module - 1 component */
+        if (doc.length && doc.length > 0) {
+            doc = doc[0];
+        }
+
         const fileName = path.basename(this.resourcePath);
 
         results = setMeta(doc, fileName, this.resourcePath, source);

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.0.50
+
+* Add support for `HOC` components (classes, React.components, React.pureComponents)
+
+## v0.0.49
+
+* Add test-coverage via `jest`, `react-test-render`, `enzyme` to 100%
+
 ## v0.0.48
 
 * Add improved size props for `styleguide-device-frame`
