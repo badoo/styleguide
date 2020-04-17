@@ -1,0 +1,1214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App-view generic tests When app is open 1`] = `
+<div
+  className="sc-fznzOf paqyy"
+>
+  <aside
+    className="sc-AxjAm cRLJtR"
+  >
+    <div
+      className="sc-AxirZ iluSoF"
+    >
+      <div
+        className="sc-AxiKw bcuorQ"
+      >
+        <div
+          className="sc-AxhCb jVvKPm"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-AxgMl otYGI"
+      >
+        <input
+          autoComplete="off"
+          className="sc-AxheI fleRyR"
+          placeholder="Search component name"
+          type="text"
+          value=""
+        />
+        <div
+          className="sc-Axmtr crOZCD"
+        >
+          <div
+            className="sc-AxhUy hmNFUn"
+            role="presentation"
+            size={0}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        className="sc-fznyAO bkLnjh"
+      >
+        <div
+          className="sc-fznKkj jkDQak"
+        >
+          <div
+            className="sc-AxmLO kzOOLP"
+          >
+            <div
+              className="sc-fzozJi ejeJSx"
+              onClick={[Function]}
+            >
+              Structure
+            </div>
+            <div
+              className="sc-fzoLsD iUeVUF"
+            >
+              <div
+                className="sc-fzpans cIwqpl"
+              >
+                <a
+                  className="sc-fzplWN hXlTqQ"
+                  data-vrt-locator="link"
+                  href="#Structure-Component"
+                >
+                  Component
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-fznKkj jkDQak"
+        >
+          <div
+            className="sc-AxmLO kzOOLP"
+          >
+            <div
+              className="sc-fzozJi ejeJSx"
+              onClick={[Function]}
+            >
+              Components
+            </div>
+            <div
+              className="sc-fzoLsD iUeVUF"
+            >
+              <div
+                className="sc-fzpans cIwqpl"
+              >
+                <a
+                  className="sc-fzplWN hXlTqQ"
+                  data-vrt-locator="link"
+                  href="#Components-ErrorBoundary"
+                >
+                  ErrorBoundary
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </aside>
+  <main
+    className="sc-fznZeY iASHnM"
+  >
+    <article
+      className="sc-fzoXWK khMgHS"
+      id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
+      >
+        <h1
+          className="sc-fzpmMD cahimd"
+        >
+          Welcome!
+        </h1>
+        <div
+          className="sc-fznxKY hrnXgF"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
+  </main>
+</div>
+`;
+
+exports[`App-view generic tests When component is open 1`] = `
+<div
+  className="sc-fznzOf paqyy"
+>
+  <aside
+    className="sc-AxjAm cRLJtR"
+  >
+    <div
+      className="sc-AxirZ iluSoF"
+    >
+      <div
+        className="sc-AxiKw bcuorQ"
+      >
+        <div
+          className="sc-AxhCb jVvKPm"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-AxgMl otYGI"
+      >
+        <input
+          autoComplete="off"
+          className="sc-AxheI fleRyR"
+          placeholder="Search component name"
+          type="text"
+          value=""
+        />
+        <div
+          className="sc-Axmtr crOZCD"
+        >
+          <div
+            className="sc-AxhUy hmNFUn"
+            role="presentation"
+            size={0}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        className="sc-fznyAO bkLnjh"
+      >
+        <div
+          className="sc-fznKkj jkDQak"
+        >
+          <div
+            className="sc-AxmLO kzOOLP"
+          >
+            <div
+              className="sc-fzozJi ejeJSx"
+              onClick={[Function]}
+            >
+              Structure
+            </div>
+            <div
+              className="sc-fzoLsD lfdttH"
+            >
+              <div
+                className="sc-fzpans cIwqpl"
+              >
+                <a
+                  className="sc-fzplWN BCLSR"
+                  data-vrt-locator="link"
+                  href="#Structure-Component"
+                >
+                  Component
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-fznKkj jkDQak"
+        >
+          <div
+            className="sc-AxmLO kzOOLP"
+          >
+            <div
+              className="sc-fzozJi ejeJSx"
+              onClick={[Function]}
+            >
+              Components
+            </div>
+            <div
+              className="sc-fzoLsD iUeVUF"
+            >
+              <div
+                className="sc-fzpans cIwqpl"
+              >
+                <a
+                  className="sc-fzplWN hXlTqQ"
+                  data-vrt-locator="link"
+                  href="#Components-ErrorBoundary"
+                >
+                  ErrorBoundary
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </aside>
+  <main
+    className="sc-fznZeY iASHnM"
+  >
+    <section
+      className="sc-fzoKki ihsEYN"
+    >
+      <div
+        className="sc-fzoYkl eUYazT"
+      >
+        <div
+          className="sc-fzpkJw cCApPg"
+        >
+          <article
+            className="sc-fzoXWK khMgHS"
+            id="component"
+          >
+            <header
+              className="styleguide-component__header"
+            >
+              <h1
+                className="sc-fzpmMD cahimd"
+              >
+                Component
+              </h1>
+              <div
+                className="sc-fznxKY hrnXgF"
+              >
+                
+              </div>
+            </header>
+            <div
+              className="sc-fznMAR kqIsLo"
+            >
+              <div
+                className="sc-fzoxKX gTbAWT"
+              >
+                <section
+                  className="sc-fznWqX hYmvBk"
+                  data-name="SpecComponentEmpty"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="sc-fzoiQi hehhuL"
+                  >
+                    <h1
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
+                    >
+                      SpecComponentEmpty
+                    </h1>
+                    <div
+                      className="sc-fzqNqU iGlUNd"
+                    >
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="sc-fzoNJl kVPGHS"
+                    >
+                      <article
+                        className="sc-fzoXWK khMgHS"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="sc-fzpmMD cahimd"
+                          />
+                          <div
+                            className="sc-fznxKY hrnXgF"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                className="sc-fzoxKX gTbAWT"
+              >
+                <section
+                  className="sc-fznWqX hYmvBk"
+                  data-name="SpecComponentPropTypes"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="sc-fzoiQi hehhuL"
+                  >
+                    <h1
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
+                    >
+                      SpecComponentPropTypes
+                    </h1>
+                    <div
+                      className="sc-fzqNqU iGlUNd"
+                    >
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="sc-fzoNJl kVPGHS"
+                    >
+                      <article
+                        className="sc-fzoXWK khMgHS"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="sc-fzpmMD cahimd"
+                          />
+                          <div
+                            className="sc-fznxKY hrnXgF"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                className="sc-fzoxKX gTbAWT"
+              >
+                <section
+                  className="sc-fznWqX hYmvBk"
+                  data-name="SpecComponentFull"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="sc-fzoiQi hehhuL"
+                  >
+                    <h1
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
+                    >
+                      SpecComponentFull
+                    </h1>
+                    <div
+                      className="sc-fzqNqU iGlUNd"
+                    >
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="sc-fzoNJl kVPGHS"
+                    >
+                      <article
+                        className="sc-fzoXWK khMgHS"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="sc-fzpmMD cahimd"
+                          />
+                          <div
+                            className="sc-fznxKY hrnXgF"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
+
+exports[`App-view generic tests When filter doesn\`t show components 1`] = `
+<div
+  className="sc-fznzOf paqyy"
+>
+  <aside
+    className="sc-AxjAm cRLJtR"
+  >
+    <div
+      className="sc-AxirZ iluSoF"
+    >
+      <div
+        className="sc-AxiKw bcuorQ"
+      >
+        <div
+          className="sc-AxhCb jVvKPm"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-AxgMl otYGI"
+      >
+        <input
+          autoComplete="off"
+          className="sc-AxheI fleRyR"
+          placeholder="Search component name"
+          type="text"
+          value="g"
+        />
+        <div
+          className="sc-Axmtr crOZCD"
+        >
+          <div
+            className="sc-AxhUy hmNFUn"
+            role="presentation"
+            size={0}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        className="sc-fznyAO bkLnjh"
+      />
+    </div>
+  </aside>
+  <main
+    className="sc-fznZeY iASHnM"
+  >
+    <article
+      className="sc-fzoXWK khMgHS"
+      id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
+      >
+        <h1
+          className="sc-fzpmMD cahimd"
+        >
+          Welcome!
+        </h1>
+        <div
+          className="sc-fznxKY hrnXgF"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
+  </main>
+</div>
+`;
+
+exports[`App-view generic tests When filter show components 1`] = `
+<div
+  className="sc-fznzOf paqyy"
+>
+  <aside
+    className="sc-AxjAm cRLJtR"
+  >
+    <div
+      className="sc-AxirZ iluSoF"
+    >
+      <div
+        className="sc-AxiKw bcuorQ"
+      >
+        <div
+          className="sc-AxhCb jVvKPm"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-AxgMl otYGI"
+      >
+        <input
+          autoComplete="off"
+          className="sc-AxheI fleRyR"
+          placeholder="Search component name"
+          type="text"
+          value="c"
+        />
+        <div
+          className="sc-Axmtr crOZCD"
+        >
+          <div
+            className="sc-AxhUy hmNFUn"
+            role="presentation"
+            size={0}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        className="sc-fznyAO bkLnjh"
+      >
+        <div
+          className="sc-fznKkj jkDQak"
+        >
+          <div
+            className="sc-AxmLO kzOOLP"
+          >
+            <div
+              className="sc-fzozJi ejeJSx"
+              onClick={[Function]}
+            >
+              Structure
+            </div>
+            <div
+              className="sc-fzoLsD lfdttH"
+            >
+              <div
+                className="sc-fzpans cIwqpl"
+              >
+                <a
+                  className="sc-fzplWN BCLSR"
+                  data-vrt-locator="link"
+                  href="#Structure-Component"
+                >
+                  Component
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </aside>
+  <main
+    className="sc-fznZeY iASHnM"
+  >
+    <section
+      className="sc-fzoKki ihsEYN"
+    >
+      <div
+        className="sc-fzoYkl eUYazT"
+      >
+        <div
+          className="sc-fzpkJw cCApPg"
+        >
+          <article
+            className="sc-fzoXWK khMgHS"
+            id="component"
+          >
+            <header
+              className="styleguide-component__header"
+            >
+              <h1
+                className="sc-fzpmMD cahimd"
+              >
+                Component
+              </h1>
+              <div
+                className="sc-fznxKY hrnXgF"
+              >
+                
+              </div>
+            </header>
+            <div
+              className="sc-fznMAR kqIsLo"
+            >
+              <div
+                className="sc-fzoxKX gTbAWT"
+              >
+                <section
+                  className="sc-fznWqX hYmvBk"
+                  data-name="SpecComponentEmpty"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="sc-fzoiQi hehhuL"
+                  >
+                    <h1
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
+                    >
+                      SpecComponentEmpty
+                    </h1>
+                    <div
+                      className="sc-fzqNqU iGlUNd"
+                    >
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="sc-fzoNJl kVPGHS"
+                    >
+                      <article
+                        className="sc-fzoXWK khMgHS"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="sc-fzpmMD cahimd"
+                          />
+                          <div
+                            className="sc-fznxKY hrnXgF"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                className="sc-fzoxKX gTbAWT"
+              >
+                <section
+                  className="sc-fznWqX hYmvBk"
+                  data-name="SpecComponentPropTypes"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="sc-fzoiQi hehhuL"
+                  >
+                    <h1
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
+                    >
+                      SpecComponentPropTypes
+                    </h1>
+                    <div
+                      className="sc-fzqNqU iGlUNd"
+                    >
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="sc-fzoNJl kVPGHS"
+                    >
+                      <article
+                        className="sc-fzoXWK khMgHS"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="sc-fzpmMD cahimd"
+                          />
+                          <div
+                            className="sc-fznxKY hrnXgF"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                className="sc-fzoxKX gTbAWT"
+              >
+                <section
+                  className="sc-fznWqX hYmvBk"
+                  data-name="SpecComponentFull"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="sc-fzoiQi hehhuL"
+                  >
+                    <h1
+                      className="sc-fzqARJ ktxxxa"
+                      onClick={[Function]}
+                    >
+                      SpecComponentFull
+                    </h1>
+                    <div
+                      className="sc-fzqNqU iGlUNd"
+                    >
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="sc-fzoyTs dxpxbZ"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-AxhUy iTSmnX"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="sc-fzoNJl kVPGHS"
+                    >
+                      <article
+                        className="sc-fzoXWK khMgHS"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="sc-fzpmMD cahimd"
+                          />
+                          <div
+                            className="sc-fznxKY hrnXgF"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
+
+exports[`App-view generic tests When we open component from app 1`] = `
+<div
+  className="sc-fznzOf paqyy"
+>
+  <aside
+    className="sc-AxjAm cRLJtR"
+  >
+    <div
+      className="sc-AxirZ iluSoF"
+    >
+      <div
+        className="sc-AxiKw bcuorQ"
+      >
+        <div
+          className="sc-AxhCb jVvKPm"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-AxgMl otYGI"
+      >
+        <input
+          autoComplete="off"
+          className="sc-AxheI fleRyR"
+          placeholder="Search component name"
+          type="text"
+          value=""
+        />
+        <div
+          className="sc-Axmtr crOZCD"
+        >
+          <div
+            className="sc-AxhUy hmNFUn"
+            role="presentation"
+            size={0}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        className="sc-fznyAO bkLnjh"
+      >
+        <div
+          className="sc-fznKkj jkDQak"
+        >
+          <div
+            className="sc-AxmLO kzOOLP"
+          >
+            <div
+              className="sc-fzozJi ejeJSx"
+              onClick={[Function]}
+            >
+              Structure
+            </div>
+            <div
+              className="sc-fzoLsD iUeVUF"
+            >
+              <div
+                className="sc-fzpans cIwqpl"
+              >
+                <a
+                  className="sc-fzplWN hXlTqQ"
+                  data-vrt-locator="link"
+                  href="#Structure-Component"
+                >
+                  Component
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-fznKkj jkDQak"
+        >
+          <div
+            className="sc-AxmLO kzOOLP"
+          >
+            <div
+              className="sc-fzozJi ejeJSx"
+              onClick={[Function]}
+            >
+              Components
+            </div>
+            <div
+              className="sc-fzoLsD iUeVUF"
+            >
+              <div
+                className="sc-fzpans cIwqpl"
+              >
+                <a
+                  className="sc-fzplWN hXlTqQ"
+                  data-vrt-locator="link"
+                  href="#Components-ErrorBoundary"
+                >
+                  ErrorBoundary
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </aside>
+  <main
+    className="sc-fznZeY iASHnM"
+  >
+    <article
+      className="sc-fzoXWK khMgHS"
+      id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
+      >
+        <h1
+          className="sc-fzpmMD cahimd"
+        >
+          Welcome!
+        </h1>
+        <div
+          className="sc-fznxKY hrnXgF"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
+  </main>
+</div>
+`;

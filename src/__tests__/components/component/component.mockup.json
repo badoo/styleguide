@@ -1,0 +1,16 @@
+{
+    "name": "Component",
+    "description": "description of component",
+    "propTypes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo!"
+        }
+    },
+    "tests": [
+        { "name": "SpecComponentEmpty" },
+        { "name": "SpecComponentPropTypes" },
+        { "name": "SpecComponentFull" }
+    ]
+}

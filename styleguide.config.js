@@ -22,11 +22,17 @@ module.exports = {
         return [
             {
                 name: 'Structure',
-                components: [require('components/component/component')],
+                components: [
+                    require('components/component/component'),
+                    require('components/error-boundary/error-boundary'),
+                ],
             },
             {
                 name: 'Components',
-                components: [require('components/error-boundary/error-boundary')],
+                components: [
+                    require('components/error-boundary/error-boundary'),
+                    require('components/component/component'),
+                ],
             },
         ];
     },

@@ -38,6 +38,8 @@ class NavigationSection extends React.PureComponent {
         this.state = {
             isOpened: props.isOpened,
         };
+
+        this.toggleSection = this.toggleSection.bind(this);
     }
 
     componentDidUpdate(prevProps) {
@@ -53,12 +55,9 @@ class NavigationSection extends React.PureComponent {
     render() {
         const { name, components } = this.props;
 
-        const onClickHandler = () =>
-            this.setState(prevState => ({ isOpened: !prevState.isOpened }));
-
         return (
             <NavigationSectionBlock>
-                <NavigationSectionName onClick={onClickHandler}>{name}</NavigationSectionName>
+                <NavigationSectionName onClick={this.toggleSection}>{name}</NavigationSectionName>
                 <NavigationSectionComponents isOpened={this.state.isOpened}>
                     {components &&
                         components.map((link, index) => {
@@ -80,6 +79,12 @@ class NavigationSection extends React.PureComponent {
                 </NavigationSectionComponents>
             </NavigationSectionBlock>
         );
+    }
+
+    toggleSection() {
+        this.setState({
+            isOpened: !this.state.isOpened,
+        });
     }
 }
 

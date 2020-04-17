@@ -1,0 +1,3 @@
+{
+    "openApp": "[{\"name\":\"Structure\",\"components\":[{\"url\":\"Structure-Component\",\"name\":\"Component\",\"description\":\"\",\"propTypes\":null,\"tests\":[{\"name\":\"SpecComponentEmpty\"},{\"name\":\"SpecComponentPropTypes\"},{\"name\":\"SpecComponentFull\"}]}]},{\"name\":\"Components\",\"components\":[{\"url\":\"Components-ErrorBoundary\",\"name\":\"ErrorBoundary\",\"description\":\"\",\"propTypes\":null,\"tests\":[{\"name\":\"SpecErrorBoundaryValid\"},{\"name\":\"SpecErrorBoundaryInvalid\"}]}]}]"
+}

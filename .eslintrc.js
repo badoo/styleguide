@@ -6,6 +6,7 @@ module.exports = {
         commonjs: true,
         node: true,
     },
+    plugins: ['jest'],
     settings: {
         react: {
             pragma: 'React',
@@ -21,7 +22,7 @@ module.exports = {
             jsx: true,
         },
     },
-    extends: ['eslint:recommended', 'plugin:react/recommended'],
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:jest/recommended'],
     rules: {
         'no-console': 0,
     },

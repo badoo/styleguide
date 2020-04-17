@@ -41,25 +41,6 @@ class AppView extends React.Component {
         }
     }
 
-    checkCurrentSection() {
-        this.setState({
-            sections: mapPropsToSections(this.props.sections, this.props.currentHash),
-        });
-    }
-
-    checkDisplayedComponent() {
-        const { currentHash, sections } = this.props;
-
-        let component;
-
-        const section = findMatchingSection(sections, currentHash);
-        component = !!section && findMatchingComponent(section.components, currentHash);
-
-        this.setState({
-            component,
-        });
-    }
-
     render() {
         return (
             <AppViewComponent>
@@ -77,7 +58,7 @@ class AppView extends React.Component {
                 </Sidebar>
                 <Content>
                     {this.state.component ? (
-                        <Section list={[this.state.component]} />
+                        <Section content={this.state.component} />
                     ) : (
                         <Component
                             name={'Welcome!'}
@@ -89,6 +70,25 @@ class AppView extends React.Component {
                 </Content>
             </AppViewComponent>
         );
+    }
+
+    checkCurrentSection() {
+        this.setState({
+            sections: mapPropsToSections(this.props.sections, this.props.currentHash),
+        });
+    }
+
+    checkDisplayedComponent() {
+        const { currentHash, sections } = this.props;
+
+        let component;
+
+        const section = findMatchingSection(sections, currentHash);
+        component = !!section && findMatchingComponent(section.components, currentHash);
+
+        this.setState({
+            component,
+        });
     }
 }
 

@@ -28,6 +28,8 @@ class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props);
 
+        this.toggleErrorStack = this.toggleErrorStack.bind(this);
+
         this.state = {
             error: null,
             showStack: false,
@@ -38,6 +40,10 @@ class ErrorBoundary extends React.Component {
         return { error };
     }
 
+    toggleErrorStack() {
+        this.setState({ showStack: !this.state.showStack });
+    }
+
     render() {
         if (this.state.error) {
             return (
@@ -46,15 +52,13 @@ class ErrorBoundary extends React.Component {
 
                     {this.state.showStack ? (
                         <React.Fragment>
-                            <ErrorBoundaryShowMore
-                                onClick={() => this.setState({ showStack: false })}
-                            >
+                            <ErrorBoundaryShowMore onClick={this.toggleErrorStack}>
                                 Hide error stack
                             </ErrorBoundaryShowMore>
                             <ErrorBoundaryText>{this.state.error.stack}</ErrorBoundaryText>
                         </React.Fragment>
                     ) : (
-                        <ErrorBoundaryShowMore onClick={() => this.setState({ showStack: true })}>
+                        <ErrorBoundaryShowMore onClick={this.toggleErrorStack}>
                             Show error stack
                         </ErrorBoundaryShowMore>
                     )}

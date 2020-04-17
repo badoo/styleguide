@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Config checks Config Structure 1`] = `
+Object {
+  "getComponentRoots": [Function],
+  "getExceptionForLoaders": [Function],
+  "getSectionComponents": [Function],
+  "getSections": [Function],
+  "getWebpackConfig": [Function],
+  "hasResizableSandbox": false,
+  "sandboxMaxWidth": undefined,
+  "sandboxMinWidth": undefined,
+}
+`;
+
+exports[`Config checks Config getComponentRoots 1`] = `
+Array [
+  "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src",
+]
+`;
+
+exports[`Config checks Config getExceptionForLoaders 1`] = `
+Object {
+  "jsLoader": Array [
+    /spec\\\\\\.jsx\\$/,
+  ],
+}
+`;
+
+exports[`Config checks Config getSectionComponents 1`] = `
+Array [
+  Object {
+    "components": Array [
+      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/components/component/component",
+    ],
+  },
+  Object {
+    "components": Array [
+      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/components/error-boundary/error-boundary",
+    ],
+  },
+]
+`;
+
+exports[`Config checks Config getWebpackConfig 1`] = `
+Object {
+  "resolve": Object {
+    "modules": Array [
+      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src",
+      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules",
+    ],
+  },
+}
+`;

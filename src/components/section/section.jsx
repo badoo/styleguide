@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import config from '__GLOBAL__CONFIG__';
 import Component from '../component/component';
 
-const setWidth = value => (typeof value === 'number' ? `${value}px` : value);
+export const setWidth = value => (typeof value === 'number' ? `${value}px` : value);
 
 const SectionBlock = styled.section`
     & + & {
@@ -28,24 +29,42 @@ const SectionComponent = styled.div`
 `;
 
 const Section = props => {
-    const { list = [] } = props;
+    const { content } = props;
 
     return (
         <SectionBlock>
             <SectionContent>
-                {list.filter(Boolean).map(item => (
-                    <SectionComponent key={item.url}>
-                        <Component
-                            name={item.name}
-                            description={item.description}
-                            propTypes={item.propTypes}
-                            tests={item.tests}
-                        />
-                    </SectionComponent>
-                ))}
+                <SectionComponent key={content.url}>
+                    <Component
+                        name={content.name}
+                        description={content.description}
+                        propTypes={content.propTypes}
+                        tests={content.tests}
+                    />
+                </SectionComponent>
             </SectionContent>
         </SectionBlock>
     );
+};
+
+Section.propTypes = {
+    content: PropTypes.shape({
+        name: PropTypes.string,
+        description: PropTypes.string,
+        propTypes: PropTypes.arrayOf({
+            name: PropTypes.shape({
+                type: PropTypes.string,
+                required: PropTypes.bool,
+                description: PropTypes.string,
+            }),
+        }),
+        tests: PropTypes.arrayOf(
+            PropTypes.shape({
+                name: PropTypes.string,
+                Component: PropTypes.func,
+            })
+        ),
+    }),
 };
 
 export default Section;
