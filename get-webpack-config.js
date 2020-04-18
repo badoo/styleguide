@@ -18,12 +18,19 @@ const setCachingForLoaders = (useCache, loaders) =>
 const setLoaders = (internalLoaders, externalLoader) =>
     externalLoader ? [internalLoaders, ...externalLoader] : [internalLoaders];
 
-const setComponents = getSectionComponents => {
-    const sectionList = getSectionComponents({ path });
+const getComponentsFromSections = sections => {
+    const sectionList = sections.toString();
+    const componentPaths = sectionList
+        .match(/require\((.+)\)/gm)
+        .map(path => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
 
-    return sectionList
-        ? sectionList.map(section => section.components).reduce((acc, val) => acc.concat(val), [])
-        : undefined;
+    return Array.from(new Set(componentPaths));
+};
+
+const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) => {
+    return getComponentRoots({ path }).map(root =>
+        components.map(component => path.resolve(root, component))
+    );
 };
 
 module.exports = function getWebpackConfig({
@@ -31,8 +38,8 @@ module.exports = function getWebpackConfig({
     buildDir,
     isReactNative,
     configPath,
+    getSections,
     getComponentRoots,
-    getSectionComponents,
     getExceptionForLoaders,
     getBabelConfig,
     getBabelParserOptions,
@@ -40,27 +47,26 @@ module.exports = function getWebpackConfig({
     getLoaderForModule,
     tsConfigPath,
 }) {
+    const components = getSections ? getComponentsFromSections(getSections) : undefined;
+    const includePaths =
+        components && getComponentRoots
+            ? resolveComponentPathsFromComponentRoots(components, getComponentRoots)
+            : undefined;
     const exceptionsList = getExceptionForLoaders && getExceptionForLoaders({ path });
-    const components = getSectionComponents ? setComponents(getSectionComponents) : undefined;
     const loadersFromConsumers = getLoadersForComponents ? getLoadersForComponents({ path }) : null;
-
     const jsComponentLoaders = {
         loader: 'js-component',
         options: {
-            componentRoots: getComponentRoots({ path }),
             babelParserOptions: getBabelParserOptions ? getBabelParserOptions() : undefined,
         },
     };
-
     const tsComponentLoaders = {
         loader: 'ts-component',
         options: {
-            componentRoots: getComponentRoots({ path }),
             babelParserOptions: getBabelParserOptions ? getBabelParserOptions() : undefined,
             tsConfigPath,
         },
     };
-
     const genericJsLoader = {
         loader: 'babel-loader',
         options: getBabelOptions({ isReactNative, getBabelConfig }),
@@ -176,7 +182,7 @@ module.exports = function getWebpackConfig({
                     test: /\.jsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : jsLoaderExceptionList,
-                    include: components ? components : undefined,
+                    include: includePaths,
                     use: setCachingForLoaders(
                         useCache,
                         setLoaders(jsComponentLoaders, loadersFromConsumers)
@@ -186,7 +192,7 @@ module.exports = function getWebpackConfig({
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : tsLoaderExceptionList,
-                    include: components ? components : undefined,
+                    include: includePaths,
                     use: setCachingForLoaders(
                         useCache,
                         setLoaders(tsComponentLoaders, loadersFromConsumers)

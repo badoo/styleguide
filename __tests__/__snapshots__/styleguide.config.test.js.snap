@@ -4,7 +4,6 @@ exports[`Config checks Config Structure 1`] = `
 Object {
   "getComponentRoots": [Function],
   "getExceptionForLoaders": [Function],
-  "getSectionComponents": [Function],
   "getSections": [Function],
   "getWebpackConfig": [Function],
   "hasResizableSandbox": false,
@@ -25,21 +24,6 @@ Object {
     /spec\\\\\\.jsx\\$/,
   ],
 }
-`;
-
-exports[`Config checks Config getSectionComponents 1`] = `
-Array [
-  Object {
-    "components": Array [
-      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/components/component/component",
-    ],
-  },
-  Object {
-    "components": Array [
-      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src/components/error-boundary/error-boundary",
-    ],
-  },
-]
 `;
 
 exports[`Config checks Config getWebpackConfig 1`] = `

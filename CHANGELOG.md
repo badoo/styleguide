@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.51
+
+* `getSectionComponents` deprecated, now we use `getSections` and `getComponentRoots` to limit scope of webpack build only to components enlisted in `getSections`
+
 ## v0.0.50
 
 * Add support for `HOC` components (classes, React.components, React.pureComponents)
