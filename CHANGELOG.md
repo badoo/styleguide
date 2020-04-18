@@ -2,7 +2,7 @@
 
 ## v0.0.51
 
-* `getSectionComponents` deprecated, now we use `getSections` and `getComponentRoots` to limit scope of webpack build only to components enlisted in `getSections`
+* `getSectionComponents` deprecated, now we use `getSections` and `getComponentRoots` to limit scope of webpack build only to components enlisted in `getSections`. No longer we need for having 2 paths declarations in config.
 
 ## v0.0.50
 
