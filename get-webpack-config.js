@@ -28,9 +28,11 @@ const getComponentsFromSections = sections => {
 };
 
 const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) => {
-    return getComponentRoots({ path }).map(root =>
+    const listOfResolvedComponents = getComponentRoots({ path }).map(root =>
         components.map(component => path.resolve(root, component))
     );
+
+    return listOfResolvedComponents.reduce((flatComponentsList, section) => flatComponentsList.concat(section), []);
 };
 
 module.exports = function getWebpackConfig({
