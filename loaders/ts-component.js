@@ -89,23 +89,6 @@ module.exports = function(source) {
     }
 
     const options = loaderUtils.getOptions(this);
-    const componentRoots = options.componentRoots;
-
-    let isComponent = false;
-    let foundComponentRoot = null;
-
-    componentRoots.forEach(componentRoot => {
-        // We only want to componentise files in current working directory
-        if (this.resourcePath.indexOf(componentRoot) !== -1) {
-            isComponent = true;
-            foundComponentRoot = componentRoot;
-        }
-    });
-
-    if (!isComponent) {
-        return source;
-    }
-
     let results;
 
     try {
@@ -143,8 +126,7 @@ module.exports = function(source) {
         }
 
         if (!/Multiple exported component definitions found/.test(err)) {
-            const componentPath = this.resourcePath.replace(foundComponentRoot, '');
-            console.warn(componentPath, isDebug ? err : err.message);
+            console.warn(this.resourcePath, isDebug ? err : err.message);
         }
 
         /* eslint-disable no-useless-escape */

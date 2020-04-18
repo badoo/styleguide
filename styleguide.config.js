@@ -1,17 +1,6 @@
 /* eslint-env node */
 
 module.exports = {
-    getSectionComponents({ path }) {
-        return [
-            {
-                components: [path.resolve('src/components/component/component')],
-            },
-            {
-                components: [path.resolve('src/components/error-boundary/error-boundary')],
-            },
-        ];
-    },
-
     getExceptionForLoaders() {
         return {
             jsLoader: [/spec\.jsx$/],

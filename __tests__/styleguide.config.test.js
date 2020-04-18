@@ -6,10 +6,6 @@ describe('Config checks', () => {
         expect(StyleguideConfig).toMatchSnapshot();
     });
 
-    it('Config getSectionComponents', () => {
-        expect(StyleguideConfig.getSectionComponents({ path })).toMatchSnapshot();
-    });
-
     it('Config getExceptionForLoaders', () => {
         expect(StyleguideConfig.getExceptionForLoaders()).toMatchSnapshot();
     });
