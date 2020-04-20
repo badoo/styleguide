@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.52
+
+* Loaders now always assigns proper doc to component in case of several functional components definitions in one file.
+* Remove unused `filePath`, `fileName` from components definitions
+
 ## v0.0.51
 
 * `getSectionComponents` deprecated, now we use `getSections` and `getComponentRoots` to limit scope of webpack build only to components enlisted in `getSections`. No longer we need for having 2 paths declarations in config.

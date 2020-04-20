@@ -29,20 +29,14 @@ module.exports = function(source) {
         /* currently we support the approach for the UI-architeture
         as 1 module - 1 component */
         if (doc.length && doc.length > 0) {
-            doc = doc[0];
+            const filterName = path.parse(this.resourcePath).name.replace(/-/g, '');
+            doc = doc.find(item => item.displayName.toLowerCase() === filterName);
         }
-
-        const fileName = path.basename(this.resourcePath);
 
         const meta = {
             name: doc.displayName,
             description: doc.description,
-            filePath: this.resourcePath,
-            fileName,
-            fileNameWithoutPrefix: fileName
-                .split('.')
-                .slice(0, -1)
-                .join('.'),
+            fileNameWithoutPrefix: path.parse(this.resourcePath).name,
             propTypes: doc.props
                 ? Object.keys(doc.props).reduce(function(types, key) {
                       const originalProp = doc.props[key];

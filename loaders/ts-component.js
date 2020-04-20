@@ -5,16 +5,11 @@ const setParamsTypeDefinitionFromFunctionType = require('typescript-react-functi
 const loaderUtils = require('loader-utils');
 const { isDebug } = require('../build-arguments');
 
-function setMeta(doc, fileName, resourcePath, source) {
+function setMeta(doc, resourcePath, source) {
     const meta = {
         name: doc.displayName,
         description: doc.description,
-        filePath: resourcePath,
-        fileName,
-        fileNameWithoutPrefix: fileName
-            .split('.')
-            .slice(0, -1)
-            .join('.'),
+        fileNameWithoutPrefix: path.parse(resourcePath).name,
         propTypes: doc.props
             ? Object.keys(doc.props).reduce(function(types, key) {
                   const originalProp = doc.props[key];
@@ -96,20 +91,17 @@ module.exports = function(source) {
         /* currently we support the approach for the UI-architeture
         as 1 module - 1 component */
         if (doc.length && doc.length > 0) {
-            doc = doc[0];
+            const filterName = path.parse(this.resourcePath).name.replace(/-/g, '');
+            doc = doc.find(item => item.displayName.toLowerCase() === filterName);
         }
 
-        const fileName = path.basename(this.resourcePath);
-
-        results = setMeta(doc, fileName, this.resourcePath, source);
+        results = setMeta(doc, this.resourcePath, source);
     } catch (err) {
         if (err.message === `No suitable component definition found.`) {
             const tsConfigPath = options.tsConfigPath;
             const docs = useTSParser(this.resourcePath, tsConfigPath);
 
             if (docs && source && this.resourcePath) {
-                const fileName = path.basename(this.resourcePath);
-
                 if (!docs[0]) {
                     return source;
                 }
@@ -119,7 +111,7 @@ module.exports = function(source) {
                 doc.displayName =
                     doc.displayName.charAt(0).toUpperCase() + doc.displayName.slice(1);
 
-                results = setMeta(doc, fileName, this.resourcePath, source);
+                results = setMeta(doc, this.resourcePath, source);
 
                 return results;
             }
