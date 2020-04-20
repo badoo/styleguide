@@ -14,7 +14,7 @@ Object {
 
 exports[`Config checks Config getComponentRoots 1`] = `
 Array [
-  "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src",
+  "src",
 ]
 `;
 
@@ -26,13 +26,16 @@ Object {
 }
 `;
 
+exports[`Config checks Config getSections 1`] = `
+Array [
+  "error-boundary",
+  "component",
+]
+`;
+
 exports[`Config checks Config getWebpackConfig 1`] = `
-Object {
-  "resolve": Object {
-    "modules": Array [
-      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/src",
-      "/Users/igrekov/Downloads/_exp/task08-styleguide/styleguide/node_modules",
-    ],
-  },
-}
+Array [
+  "src",
+  "node_modules",
+]
 `;

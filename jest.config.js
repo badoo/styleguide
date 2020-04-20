@@ -24,7 +24,11 @@ module.exports = {
     coverageDirectory: 'coverage',
 
     // An array of regexp pattern strings used to skip coverage collection
-    coveragePathIgnorePatterns: ['/node_modules/', '/styleguide.config/'],
+    coveragePathIgnorePatterns: [
+        '/node_modules/',
+        '<rootDir>/styleguide.config.js',
+        '/error-boundary/',
+    ],
 
     // A list of reporter names that Jest uses when writing coverage reports
     // coverageReporters: [

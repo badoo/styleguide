@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.53
+
+* Limit test-coverage scope and remove extra dependedencies.
+
 ## v0.0.52
 
 * Loaders now always assigns proper doc to component in case of several functional components definitions in one file.

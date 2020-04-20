@@ -1,5 +1,4 @@
 /* eslint-env node */
-
 const path = require('path');
 const webpack = require('webpack');
 const { isDebug, buildDir } = require('./build-arguments');
