@@ -51,13 +51,10 @@ Section.propTypes = {
     content: PropTypes.shape({
         name: PropTypes.string,
         description: PropTypes.string,
-        propTypes: PropTypes.arrayOf({
-            name: PropTypes.shape({
-                type: PropTypes.string,
-                required: PropTypes.bool,
-                description: PropTypes.string,
-            }),
-        }),
+        /**
+         * these proptypes comes from component
+         */
+        propTypes: PropTypes.any,
         tests: PropTypes.arrayOf(
             PropTypes.shape({
                 name: PropTypes.string,

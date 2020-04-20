@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.54
+
+* Provide details about props in `propTypes` of `Section` component
+
 ## v0.0.53
 
 * Limit test-coverage scope and remove extra dependedencies.
