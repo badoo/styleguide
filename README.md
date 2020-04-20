@@ -7,6 +7,7 @@
 ## Table of contents
 
 - [Getting started](#getting-started)
+- [How to define and document components](#how-to-define-and-document-components)
 - [Examples](#examples)
 - [Visual helpers](#visual-helpers)
 - [Debugging](#debugging)
@@ -230,6 +231,44 @@ The buildDir parameter switches off webpack-server and caching.
 
 **Note:** The buildDir is resolved relative to where you ran "yarn" from
 
+## How to define and document components
+
+Loaders `js-component` and `ts-component` use `react-docgen` for documentation generation. We check for all exported definitions in files from `getSections` components section. Firstly, we look for the the filename (any filename case or convention), comparing it to the found definitions. If we don't have any definition, we use fallback for the first found definition (previous behaviour). Please use `--debug` for showing these fallbacks in console.
+
+this is example of how to set component in section in config:
+
+```js
+module.exports = {
+    // part of config
+    getSections() {
+        return [
+            {
+                name: 'MyComponentSection',
+                components: [
+                    require('MyComponent'),
+                ],
+            },
+        ];
+    },
+};
+```
+
+this is a code of component:
+
+```js
+interface MyComponentProps {
+    name: string;
+}
+
+const MyComponent: React.FunctionComponent<MyComponentProps> = props => {
+    const { name } = props;
+
+    return <div>The name is {name}!</div>;
+};
+
+export default MyComponent;
+```
+
 ## Examples
 
 * [Basic example](https://github.com/badoo/styleguide/tree/master/examples/basic)
@@ -253,7 +292,7 @@ import { getImageUrl } from 'badoo-styleguide';
 
 ## Debugging
 
-Pass --debug flag to the command line to get additional debug information.
+Pass `--debug` flag to the command line to get additional debug information.
 
 ```bash
 yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --debug

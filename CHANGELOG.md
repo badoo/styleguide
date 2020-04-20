@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.55
+
+* Provide examples of how components are defined & documented
+
 ## v0.0.54
 
 * Provide details about props in `propTypes` of `Section` component

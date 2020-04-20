@@ -92,7 +92,19 @@ module.exports = function(source) {
         as 1 module - 1 component */
         if (doc.length && doc.length > 0) {
             const filterName = path.parse(this.resourcePath).name.replace(/-/g, '');
-            doc = doc.find(item => item.displayName.toLowerCase() === filterName);
+            const foundDoc = doc.find(item => item.displayName.toLowerCase() === filterName);
+
+            if (foundDoc) {
+                doc = foundDoc;
+            } else {
+                doc = doc[0];
+
+                if (isDebug) {
+                    const result = ` file ${this.resourcePath} has no definition for ${filterName}. We automatically use definitions from ${doc.displayName}. If it is not right definition, please rename your component to ${filterName} in proper notation, ${filterName} was written in lowercase for test only.`;
+
+                    console.log(result);
+                }
+            }
         }
 
         results = setMeta(doc, this.resourcePath, source);
