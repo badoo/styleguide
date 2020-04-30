@@ -91,10 +91,10 @@ module.exports = function getWebpackConfig({
     const jsLoaderExceptionList =
         exceptionsList && exceptionsList.jsLoader
             ? [
-                  /node_modules\/(?!badoo-styleguide)/,
-                  path.resolve(__dirname, 'src/index.jsx'),
-                  ...exceptionsList.jsLoader,
-              ]
+                /node_modules\/(?!badoo-styleguide)/,
+                path.resolve(__dirname, 'src/index.jsx'),
+                ...exceptionsList.jsLoader,
+            ]
             : [/node_modules\/(?!badoo-styleguide)/, path.resolve(__dirname, 'src/index.jsx')];
 
     const tsLoaderExceptionList =
@@ -206,7 +206,7 @@ module.exports = function getWebpackConfig({
         },
         resolve: {
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
+            modules: [path.resolve(__dirname, 'node_modules')],
             alias: {
                 __GLOBAL__CONFIG__: configPath,
             },
@@ -215,7 +215,6 @@ module.exports = function getWebpackConfig({
             modules: [
                 path.resolve(__dirname, 'node_modules'),
                 path.resolve(__dirname, 'loaders'),
-                'node_modules',
             ],
         },
         plugins: [
