@@ -50,6 +50,7 @@ module.exports = function getWebpackConfig({
     getLoadersForComponents,
     getLoaderForModule,
     tsConfigPath,
+    applyBabelToTypescriptCode = false,
 }) {
     const components = getSections ? getComponentsFromSections(getSections) : undefined;
     const includePaths =
@@ -87,6 +88,14 @@ module.exports = function getWebpackConfig({
             },
         },
     };
+
+    /**
+     * sometimes we need to parse transpiled typescript code with babel
+     * after initial transform
+     */
+    const genericLoaders = applyBabelToTypescriptCode
+        ? [genericJsLoader, ...setLoaders(genericTsLoader, loadersFromConsumers)]
+        : setLoaders(genericTsLoader, loadersFromConsumers);
 
     const jsLoaderExceptionList =
         exceptionsList && exceptionsList.jsLoader
@@ -166,10 +175,7 @@ module.exports = function getWebpackConfig({
                             exclude: isReactNative
                                 ? undefined
                                 : /node_modules\/(?!badoo-styleguide)/,
-                            use: setCachingForLoaders(
-                                useCache,
-                                setLoaders(genericTsLoader, loadersFromConsumers)
-                            ),
+                            use: genericLoaders,
                         },
                         {
                             test: /\.(gif|png|jpe?g|woff|ttf)$/i,

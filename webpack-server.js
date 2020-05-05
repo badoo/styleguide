@@ -42,6 +42,10 @@ if (
     );
 }
 
+const tsConfigPath = config.tsConfigPath
+    ? config.tsConfigPath
+    : path.resolve(process.cwd(), './tsconfig.json');
+
 const ourWebpackConfig = getWebpackConfig({
     devServerUrl: `http://${HOST}:${PORT}`,
     buildDir: args.buildDir,
@@ -54,7 +58,8 @@ const ourWebpackConfig = getWebpackConfig({
     getBabelParserOptions: config.getBabelParserOptions,
     getLoadersForComponents: config.getLoadersForComponents,
     getLoaderForModule: config.getLoaderForModule,
-    tsConfigPath: path.resolve(process.cwd(), './tsconfig.json'),
+    applyBabelToTypescriptCode: config.applyBabelToTypescriptCode,
+    tsConfigPath,
 });
 
 const mergedConfig = webpackMerge.smart(ourWebpackConfig, webpackConfigFromProject);

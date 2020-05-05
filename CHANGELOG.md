@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.0.58
+
+* Add `tsConfigPath` control to config. By default we resolve default path for tsconfig:
+
+```js
+
+path.resolve(process.cwd(), './tsconfig.json');
+
+```
+
+## v0.0.57
+
+* Add `applyBabelToTypescriptCode` control in config
+
 ## v0.0.56
 
 * Divide resolving modules in webpack between consumers and styleguide in order to avoid duplication of modules in bundles. More info is [here](https://reactjs.org/warnings/invalid-hook-call-warning.html#duplicate-react)
