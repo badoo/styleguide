@@ -117,6 +117,14 @@ module.exports = {
     applyBabelToTypescriptCode: true,
 
     /**
+     * Set not standart path fot tsconfig for the project
+     * default – undefined, resolves to path.resolve(process.cwd(), './tsconfig.json');
+     * @optional
+     */
+
+    tsConfigPath: path.resolve(process.cwd(), './tsconfig-new.json');
+
+    /**
      * This function will tell the styleguide if the component being included
      * is a specification/example component
      * @optional

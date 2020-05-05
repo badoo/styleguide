@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.58
+
+* Add `tsConfigPath` control to config. By default we resolve default path for tsconfig:
+
+```js
+
+path.resolve(process.cwd(), './tsconfig.json');
+
+```
+
 ## v0.0.57
 
 * Add `applyBabelToTypescriptCode` control in config
