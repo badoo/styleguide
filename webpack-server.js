@@ -55,6 +55,7 @@ const ourWebpackConfig = getWebpackConfig({
     getLoadersForComponents: config.getLoadersForComponents,
     getLoaderForModule: config.getLoaderForModule,
     tsConfigPath: path.resolve(process.cwd(), './tsconfig.json'),
+    applyBabelToTypescriptCode: config.applyBabelToTypescriptCode,
 });
 
 const mergedConfig = webpackMerge.smart(ourWebpackConfig, webpackConfigFromProject);

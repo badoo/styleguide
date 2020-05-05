@@ -111,6 +111,12 @@ module.exports = {
     },
 
     /**
+     * Set it to true if you need to apply babel-loader with config to typecsript code
+     * @optional
+     */
+    applyBabelToTypescriptCode: true,
+
+    /**
      * This function will tell the styleguide if the component being included
      * is a specification/example component
      * @optional
