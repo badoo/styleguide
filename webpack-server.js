@@ -58,6 +58,7 @@ const ourWebpackConfig = getWebpackConfig({
     getBabelParserOptions: config.getBabelParserOptions,
     getLoadersForComponents: config.getLoadersForComponents,
     getLoaderForModule: config.getLoaderForModule,
+    getTypescriptCompilerOptions: config.getTypescriptCompilerOptions,
     applyBabelToTypescriptCode: config.applyBabelToTypescriptCode,
     tsConfigPath,
 });

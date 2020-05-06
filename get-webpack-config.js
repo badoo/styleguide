@@ -49,8 +49,9 @@ module.exports = function getWebpackConfig({
     getBabelParserOptions,
     getLoadersForComponents,
     getLoaderForModule,
-    tsConfigPath,
+    getTypescriptCompilerOptions,
     applyBabelToTypescriptCode = false,
+    tsConfigPath,
 }) {
     const components = getSections ? getComponentsFromSections(getSections) : undefined;
     const includePaths =
@@ -76,16 +77,18 @@ module.exports = function getWebpackConfig({
         loader: 'babel-loader',
         options: getBabelOptions({ isReactNative, getBabelConfig }),
     };
-
+    const compilerOptions = getTypescriptCompilerOptions
+        ? getTypescriptCompilerOptions()
+        : {
+              noEmit: false,
+          };
     const genericTsLoader = {
         loader: 'ts-loader',
         options: {
             configFile: tsConfigPath,
             transpileOnly: true,
             onlyCompileBundledFiles: true,
-            compilerOptions: {
-                noEmit: false,
-            },
+            compilerOptions,
         },
     };
 
