@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.60
+
+* Update peer-dependencies
+
 ## v0.0.59
 
 * Add `getTypescriptCompilerOptions` to config for redefining tsconfig compiler options
