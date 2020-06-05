@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.61
+
+* Change image provider used for mocks via `getImageUrl` to up-to-date provider.
+* Add inlined images generation for `getImageUrl` as default behaviour. It will fix most of flaky tests, based on faulty internet requests API stays the same, but if you want still to use external provider please set options.inlined = false for `getImageUrl`.
+
 ## v0.0.60
 
 * Update peer-dependencies
