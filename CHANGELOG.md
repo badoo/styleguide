@@ -2,7 +2,7 @@
 
 ## v0.0.62
 
-* add `useStylesForVRT` to config - now we cover some flaky tests in VRT by css
+* Add `useStylesForVRT` to config - now we cover some flaky tests in VRT by css
 
 ## v0.0.61
 
