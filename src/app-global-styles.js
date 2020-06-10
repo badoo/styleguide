@@ -34,6 +34,10 @@ const GlobalStyle = useDefaultGlobalStyles
 
     ${useStylesForVRT ? visualRegressionImprovedStyles : null}
 `
-    : createGlobalStyle``;
+    : createGlobalStyle`
+
+    ${useStylesForVRT ? visualRegressionImprovedStyles : null}
+
+    `;
 
 export default GlobalStyle;

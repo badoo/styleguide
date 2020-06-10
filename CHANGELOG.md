@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.63
+
+* Make `useStylesForVRT` work with switched off default global styles
+
 ## v0.0.62
 
 * Add `useStylesForVRT` to config - now we cover some flaky tests in VRT by css

@@ -2,6 +2,7 @@
 
 module.exports = {
     applyBabelToTypescriptCode: true,
+
     getExceptionForLoaders() {
         return {
             jsLoader: [/spec\.jsx$/],
