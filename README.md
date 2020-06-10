@@ -77,6 +77,12 @@ module.exports = {
     noDefaultNormalize: false,
 
     /**
+     * Set it to true if you want to get rid of some common flacky tests in VRT
+     * @optional
+     */
+    useStylesForVRT: false,
+
+    /**
      * Min-width for the sandbox wrapper (number | string)
      * default – 320
      * @optional

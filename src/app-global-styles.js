@@ -14,15 +14,25 @@ const StyleGuideDefaultStyles = `
     }
 `;
 
+const visualRegressionImprovedStyles = `
+    input,
+    textarea {
+        caret-color: transparent !important;
+    }
+`;
+
 const useDefaultGlobalStyles = !config.noDefaultGlobalStyles;
 const useDefaultStyleguideStyles = !config.noDefaultStyleguideStyles;
 const useDefaultNormalize = !config.noDefaultNormalize;
+const useStylesForVRT = config.useStylesForVRT;
 
 const GlobalStyle = useDefaultGlobalStyles
     ? createGlobalStyle`
     ${useDefaultStyleguideStyles ? StyleGuideDefaultStyles : null}
 
     ${useDefaultNormalize ? normalize : null}
+
+    ${useStylesForVRT ? visualRegressionImprovedStyles : null}
 `
     : createGlobalStyle``;
 

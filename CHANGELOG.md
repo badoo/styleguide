@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.62
+
+* add `useStylesForVRT` to config - now we cover some flaky tests in VRT by css
+
 ## v0.0.61
 
 * Change image provider used for mocks via `getImageUrl` to up-to-date provider.
