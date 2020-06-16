@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StyleguideCell from '../styleguide-cell/styleguide-cell';
+import StyleguideFrame from '../styleguide-iframe/styleguide-iframe';
+
+import config from '__GLOBAL__CONFIG__';
 
 const SIZES = {
     SMALL: 'SMALL',
@@ -18,14 +21,16 @@ const propTypes = {
     children: PropTypes.node,
     size: PropTypes.oneOf(Object.keys(SIZES)),
     legend: PropTypes.string,
+    isIframe: PropTypes.bool,
 };
 
 function StyleguideDeviceFrame(props) {
-    const { children, size, legend } = props;
+    const { children, size, legend, isIframe } = props;
+    const Wrapper = isIframe || config.setDeviceFramesAsIframes ? StyleguideFrame : React.Fragment;
 
     return (
         <StyleguideCell {...MapSizeToDimensions[size]} border={true} legend={legend}>
-            {children}
+            <Wrapper>{children}</Wrapper>
         </StyleguideCell>
     );
 }

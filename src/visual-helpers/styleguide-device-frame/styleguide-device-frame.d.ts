@@ -19,6 +19,10 @@ export type StyleguideDeviceFrameProps = {
      * The elements to be inserted in the content block
      */
     children?: React.ReactNode;
+    /**
+     * To use a real iframe or not
+     */
+    isIframe?: boolean;
 };
 
 declare const StyleguideDeviceFrame: React.FunctionComponent<StyleguideDeviceFrameProps> & {
