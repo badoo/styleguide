@@ -6,6 +6,7 @@ import { createPortal } from 'react-dom';
 const IframeWrapper = styled.div`
     position: relative;
     display: block;
+    height: 100%;
 `;
 const IframeBlock = styled.iframe`
     position: absolute;
@@ -33,8 +34,12 @@ const StyleguideIFrame = React.memo(
         const mountNode = contentRef && contentRef.contentWindow.document.body;
 
         useEffect(() => {
-            if (contentRef) {
-                styleList.map(style => contentRef.contentWindow.document.head.appendChild(style));
+            if (contentRef && styleList) {
+                styleList.map(style => {
+                    const iframeNewStyleElement = style.cloneNode(true);
+
+                    contentRef.contentWindow.document.head.appendChild(iframeNewStyleElement);
+                });
             }
         });
 
