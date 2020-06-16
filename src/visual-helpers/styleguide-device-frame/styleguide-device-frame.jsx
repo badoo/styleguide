@@ -21,12 +21,12 @@ const propTypes = {
     children: PropTypes.node,
     size: PropTypes.oneOf(Object.keys(SIZES)),
     legend: PropTypes.string,
-    isIFrame: PropTypes.bool,
+    isIframe: PropTypes.bool,
 };
 
 function StyleguideDeviceFrame(props) {
-    const { children, size, legend, isIFrame } = props;
-    const Wrapper = isIFrame || config.setDeviceFramesAsIframes ? StyleguideFrame : React.Fragment;
+    const { children, size, legend, isIframe } = props;
+    const Wrapper = isIframe || config.setDeviceFramesAsIframes ? StyleguideFrame : React.Fragment;
 
     return (
         <StyleguideCell {...MapSizeToDimensions[size]} border={true} legend={legend}>
