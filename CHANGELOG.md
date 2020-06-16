@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.64
+
+* Add visual helper `styleguide-iframe` for using iframes inside styleguide.
+* Add `isIFrame` to `StyleguideDeviceFrame`. Now you can set content of this helper inside of iframe individially.
+* Add opportunity to set all `StyleguideDeviceFrames` content inside iframes in config by `setDeviceFramesAsIframes` to true.
+
 ## v0.0.63
 
 * Make `useStylesForVRT` work with switched off default global styles

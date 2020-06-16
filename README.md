@@ -30,6 +30,11 @@ Add the following content to the file
 ```js
 module.exports = {
     /**
+     * Set it to true if you want to set all StyleguideDeviceFrame components as iframes
+     * @optional
+     */
+    setDeviceFramesAsIframes: false,
+    /**
      * Set it to true if your project is a React native project
      * @optional
      */
