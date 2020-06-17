@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.66
+
+* Fixed duplication of tests. Add warning for double tests in console.
+* Add safe generation of vrt-locators, based on section, components IDS for VRT.
+
 ## v0.0.65
 
 * Add support for tsconfig option for test scenarios:

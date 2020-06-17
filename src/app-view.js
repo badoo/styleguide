@@ -17,6 +17,7 @@ class AppView extends React.Component {
         this.state = {
             component: null,
             sections: [],
+            index: '0-0',
         };
 
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
@@ -58,7 +59,7 @@ class AppView extends React.Component {
                 </Sidebar>
                 <Content>
                     {this.state.component ? (
-                        <Section content={this.state.component} />
+                        <Section content={this.state.component} index={this.state.index} />
                     ) : (
                         <Component
                             name={'Welcome!'}
@@ -84,10 +85,13 @@ class AppView extends React.Component {
         let component;
 
         const section = findMatchingSection(sections, currentHash);
+        const sectionIndex = sections.indexOf(section);
         component = !!section && findMatchingComponent(section.components, currentHash);
+        const componentIndex = section.components.indexOf(component);
 
         this.setState({
             component,
+            index: `${sectionIndex}-${componentIndex}`,
         });
     }
 }

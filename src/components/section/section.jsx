@@ -29,7 +29,7 @@ const SectionComponent = styled.div`
 `;
 
 const Section = props => {
-    const { content } = props;
+    const { content, index } = props;
 
     return (
         <SectionBlock>
@@ -40,6 +40,7 @@ const Section = props => {
                         description={content.description}
                         propTypes={content.propTypes}
                         tests={content.tests}
+                        index={index}
                     />
                 </SectionComponent>
             </SectionContent>

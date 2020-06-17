@@ -95,10 +95,10 @@ class Sandbox extends React.Component {
     }
 
     render() {
-        const { title = 'empty', children } = this.props;
+        const { title = 'empty', index = 0, children } = this.props;
 
         return (
-            <SandboxBlock data-vrt-locator={'sandbox'} data-name={title}>
+            <SandboxBlock data-vrt-locator={'sandbox'} data-name={`${index}-${title}`}>
                 <SandboxHeader>
                     <SandboxTitle onClick={this.toggleContentVisibility}>{title}</SandboxTitle>
                     <SandboxControls>

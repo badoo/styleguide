@@ -126,6 +126,23 @@ const ComponentSandbox = styled.div`
     }
 `;
 
+function getUniqueTests(tests) {
+    return tests.filter((item, index, list) => {
+        if (index === 0) {
+            return true;
+        }
+
+        const testsAreEqual =
+            item.name === list[index - 1].name && item.Component === list[index - 1].Component;
+
+        if (testsAreEqual) {
+            console.log(`WARNING: ${item.name} has clone tests, please, check your codebase`);
+        }
+
+        return !testsAreEqual;
+    });
+}
+
 class Component extends React.Component {
     constructor(props) {
         super(props);
@@ -142,9 +159,11 @@ class Component extends React.Component {
     }
 
     render() {
-        const { name, description, propTypes, tests } = this.props;
+        const { name, description, propTypes, tests, index } = this.props;
         const id = name ? name.toLowerCase() : undefined;
         const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
+
+        const testList = tests && tests.length ? getUniqueTests(tests) : tests;
 
         return (
             <ComponentBlock id={id}>
@@ -207,9 +226,9 @@ class Component extends React.Component {
                     </ComponentProps>
                 ) : null}
 
-                {tests ? (
+                {testList ? (
                     <ComponentTests>
-                        {tests.map((test, key) => {
+                        {testList.map((test, key) => {
                             const { name: sandboxName, Component: Test } = test;
                             let TestElement;
 
@@ -219,7 +238,7 @@ class Component extends React.Component {
 
                             return (
                                 <ComponentSandbox key={key}>
-                                    <Sandbox title={sandboxName}>
+                                    <Sandbox title={sandboxName} index={`${name}-${index}`}>
                                         <Wrapper>
                                             {TestElement ? <TestElement /> : <Test />}
                                         </Wrapper>
