@@ -88,8 +88,8 @@ function getTestConfiguration(testModules) {
                 .map(exportKey => {
                     let Test = {
                         name: module[exportKey].name,
-                        testCase: module[exportKey]
-                    }
+                        testCase: module[exportKey],
+                    };
 
                     if (!Test.name) {
                         Test.name = exportKey;
