@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.65
+
+* Add support for tsconfig option for test scenarios:
+
+```json
+    compilerOptions": {
+        "target": "ESNext",
+    }
+```
+
 ## v0.0.64
 
 * Add visual helper `styleguide-iframe` for using iframes inside styleguide.
