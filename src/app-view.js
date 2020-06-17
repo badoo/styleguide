@@ -87,7 +87,7 @@ class AppView extends React.Component {
         const section = findMatchingSection(sections, currentHash);
         const sectionIndex = sections.indexOf(section);
         component = !!section && findMatchingComponent(section.components, currentHash);
-        const componentIndex = section.components ? section.components.indexOf(component) : 0;
+        const componentIndex = section && section.components ? section.components.indexOf(component) : 0;
 
         this.setState({
             component,

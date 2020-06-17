@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.68
+
+* Fix for empty sections list
+
 ## v0.0.67
 
 * Fix for empty page
