@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.67
+
+* Fix for empty page
+
 ## v0.0.66
 
 * Fixed duplication of tests. Add warning for double tests in console.
