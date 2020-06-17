@@ -85,12 +85,23 @@ function getTestConfiguration(testModules) {
                 // Filter out system stuff (__meta, __dependencyResolver)
                 // @todo make explicit
                 .filter(exportKey => exportKey.indexOf('__') === -1)
-                .map(exportKey => module[exportKey]);
+                .map(exportKey => {
+                    let Test = {
+                        name: module[exportKey].name,
+                        testCase: module[exportKey]
+                    }
+
+                    if (!Test.name) {
+                        Test.name = exportKey;
+                    }
+
+                    return Test;
+                });
             return list.concat(variations);
         }, [])
         .map(Test => ({
             name: Test.name,
-            Component: Test,
+            Component: Test.testCase,
         }));
 }
 
