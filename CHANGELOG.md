@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.69
+
+* Change to the order of elements in VRT index
+
 ## v0.0.68
 
 * Fix for empty sections list

@@ -238,7 +238,7 @@ class Component extends React.Component {
 
                             return (
                                 <ComponentSandbox key={key}>
-                                    <Sandbox title={sandboxName} index={`${name}-${index}`}>
+                                    <Sandbox title={sandboxName} index={`${index}-${name}`}>
                                         <Wrapper>
                                             {TestElement ? <TestElement /> : <Test />}
                                         </Wrapper>
