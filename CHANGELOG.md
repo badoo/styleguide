@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.70
+
+* revert fix for safe generation of vrt-locators of test from v.0.0.66
+
 ## v0.0.69
 
 * Change to the order of elements in VRT index
