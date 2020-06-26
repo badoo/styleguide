@@ -77,16 +77,16 @@ module.exports = function(source) {
         if (source.indexOf('module.exports') !== -1) {
             results = `${source}
             module.exports.__meta = ${JSON.stringify(meta)};
-            module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+            module.exports.__dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         } else if (/export\s+default/.test(source)) {
             results = `${source}
             ${doc.displayName}.__meta = ${JSON.stringify(meta)};
             export const __highOrderComponentInnerComponent = ${doc.displayName}
-            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+            export const __dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         } else {
             results = `${source}
             export const __meta = ${JSON.stringify(meta)};
-            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+            export const __dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         }
         /* eslint-enable no-useless-escape */
     } catch (err) {
@@ -97,13 +97,13 @@ module.exports = function(source) {
         /* eslint-disable no-useless-escape */
         if (source.indexOf('module.exports') !== -1) {
             results = `${source}
-            module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+            module.exports.__dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         } else if (/export\s+default/.test(source)) {
             results = `${source}
-            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+            export const __dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         } else {
             results = `${source}
-            export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?/);`;
+            export const __dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         }
         /* eslint-enable no-useless-escape */
     }
