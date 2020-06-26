@@ -10,6 +10,10 @@ const SearchFieldBlock = styled.div`
     padding: 0 12px;
     margin-bottom: 8px;
     font-family: sans-serif;
+
+    &:focus-within {
+        color: #000;
+    }
 `;
 
 const SearchFieldInput = styled.input`
@@ -22,6 +26,10 @@ const SearchFieldInput = styled.input`
     line-height: 32px;
     padding: 6px 6px 6px 36px;
     border: 1px solid #ccc;
+
+    &:focus {
+        border-color: #000;
+    }
 
     &::-webkit-input-placeholder {
         color: ${SEARCH_FIELD_COLOR};
@@ -50,6 +58,7 @@ const SearchFieldIcon = styled.div`
     left: 20px;
     display: flex;
     transform: translateY(-50%);
+    color: inherit;
 `;
 
 const SearchField = props => {

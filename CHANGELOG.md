@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.72
+
+* add focus styles for for search-input.
+
 ## v0.0.71
 
 * Fix bug for components with names ends with 'js', 'jsx', 'ts', 'tsx', when it has more than 1 test case.
