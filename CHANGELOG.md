@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.71
+
+* Fix bug for components with names ends with 'js', 'jsx', 'ts', 'tsx', when it has more than 1 test case.
+
 ## v0.0.70
 
 * revert fix for safe generation of vrt-locators of test from v.0.0.66

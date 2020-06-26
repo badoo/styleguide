@@ -2,6 +2,7 @@
 
 exports[`Config checks Config Structure 1`] = `
 Object {
+  "applyBabelToTypescriptCode": true,
   "getComponentRoots": [Function],
   "getExceptionForLoaders": [Function],
   "getSections": [Function],
