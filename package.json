@@ -1,6 +1,6 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.72",
+  "version": "0.0.73",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
@@ -16,14 +16,13 @@
     "styleguide": "yarn start --config=styleguide.config.js"
   },
   "dependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.10.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@babel/register": "^7.4.0",
-    "@hot-loader/react-dom": "^16.8.4",
     "babel-loader": "8.0.5",
     "cache-loader": "^4.1.0",
     "css-loader": "2.1.0",
@@ -33,7 +32,7 @@
     "metro-react-native-babel-preset": "^0.53.0",
     "react-docgen": "5.3.0",
     "react-docgen-typescript": "^1.16.3",
-    "react-hot-loader": "4.8.0",
+    "react-hot-loader": "4.12.9",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "styled-components": "5.0.1",
@@ -47,8 +46,17 @@
     "yargs": "13.2.1"
   },
   "peerDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.10.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/register": "^7.4.0",
+    "babel-loader": "8.0.5",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-hot-loader": "4.12.9",
     "typescript": "^3.8.x"
   },
   "devDependencies": {
