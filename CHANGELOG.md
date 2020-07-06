@@ -1,8 +1,13 @@
 # Changelog
 
+## v0.0.73
+
+* move duplicated peer-depencies to avoid conflicts
+* Remove 'ts-loader' for speed up build reasons. Now we use babel config for building
+
 ## v0.0.72
 
-* add focus styles for for search-input.
+* Add focus styles for for search-input.
 
 ## v0.0.71
 
@@ -10,7 +15,7 @@
 
 ## v0.0.70
 
-* revert fix for safe generation of vrt-locators of test from v.0.0.66
+* Revert fix for safe generation of vrt-locators of test from v.0.0.66
 
 ## v0.0.69
 
