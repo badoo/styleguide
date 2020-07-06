@@ -37,6 +37,7 @@
     "style-loader": "0.23.1",
     "styled-components": "5.0.1",
     "styled-normalize": "8.0.7",
+    "swc-loader": "^0.1.12",
     "typescript": "^3.8.3",
     "typescript-react-function-component-props-handler": "^1.0.1",
     "webpack": "4.29.6",

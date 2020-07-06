@@ -2,10 +2,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const { isDebug, buildDir } = require('./build-arguments');
-const getBabelOptions = require('./get-babel-options');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ESBuildPlugin } = require('esbuild-loader');
 
 const isCompiling = buildDir => {
     const hasPath = buildDir === '' || Boolean(buildDir);
@@ -72,20 +70,27 @@ module.exports = function getWebpackConfig({
             tsConfigPath,
         },
     };
-    // const genericJsLoader = {
-    //     loader: 'babel-loader',
-    //     options: getBabelOptions({ isReactNative, getBabelConfig }),
-    // };
 
     const genericJsLoader = {
-        loader: 'esbuild-loader',
+        loader: "swc-loader",
         options: {
-            // All options are optional
-            target: 'es2015', // default, or 'es20XX', 'esnext'
-            jsxFactory: 'React.createElement',
-            jsxFragment: 'React.Fragment',
-            sourceMap: false // Enable sourcemap
-        },
+            jsc: {
+              parser: {
+                syntax: "typescript",
+                "tsx": true,
+              },
+              transform: {
+                react: {
+                  pragma: 'React.createElement',
+                  pragmaFrag: 'React.Fragment',
+                  throwIfNamespace: true,
+                  development: false,
+                  useBuiltins: false
+                }
+                },
+                target: "es2016"
+            }
+        }
     };
 
     const jsLoaderExceptionList =
@@ -219,7 +224,6 @@ module.exports = function getWebpackConfig({
             new webpack.DefinePlugin({
                 DEBUG: false,
             }),
-            new ESBuildPlugin(),
         ],
     };
 };
