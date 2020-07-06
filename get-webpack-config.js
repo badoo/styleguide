@@ -72,25 +72,25 @@ module.exports = function getWebpackConfig({
     };
 
     const genericJsLoader = {
-        loader: "swc-loader",
+        loader: 'swc-loader',
         options: {
             jsc: {
-              parser: {
-                syntax: "typescript",
-                "tsx": true,
-              },
-              transform: {
-                react: {
-                  pragma: 'React.createElement',
-                  pragmaFrag: 'React.Fragment',
-                  throwIfNamespace: true,
-                  development: false,
-                  useBuiltins: false
-                }
+                parser: {
+                    syntax: 'typescript',
+                    tsx: true,
                 },
-                target: "es2016"
-            }
-        }
+                transform: {
+                    react: {
+                        pragma: 'React.createElement',
+                        pragmaFrag: 'React.Fragment',
+                        throwIfNamespace: true,
+                        development: false,
+                        useBuiltins: false,
+                    },
+                },
+                target: 'es2016',
+            },
+        },
     };
 
     const jsLoaderExceptionList =
