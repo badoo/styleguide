@@ -5,6 +5,7 @@ const { isDebug, buildDir } = require('./build-arguments');
 const getBabelOptions = require('./get-babel-options');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { ESBuildPlugin } = require('esbuild-loader');
 
 const isCompiling = buildDir => {
     const hasPath = buildDir === '' || Boolean(buildDir);
@@ -45,7 +46,7 @@ module.exports = function getWebpackConfig({
     getSections,
     getComponentRoots,
     getExceptionForLoaders,
-    getBabelConfig,
+    // getBabelConfig,
     getBabelParserOptions,
     getLoadersForComponents,
     getLoaderForModule,
@@ -71,9 +72,20 @@ module.exports = function getWebpackConfig({
             tsConfigPath,
         },
     };
+    // const genericJsLoader = {
+    //     loader: 'babel-loader',
+    //     options: getBabelOptions({ isReactNative, getBabelConfig }),
+    // };
+
     const genericJsLoader = {
-        loader: 'babel-loader',
-        options: getBabelOptions({ isReactNative, getBabelConfig }),
+        loader: 'esbuild-loader',
+        options: {
+            // All options are optional
+            target: 'es2015', // default, or 'es20XX', 'esnext'
+            jsxFactory: 'React.createElement',
+            jsxFragment: 'React.Fragment',
+            sourceMap: false // Enable sourcemap
+        },
     };
 
     const jsLoaderExceptionList =
@@ -207,6 +219,7 @@ module.exports = function getWebpackConfig({
             new webpack.DefinePlugin({
                 DEBUG: false,
             }),
+            new ESBuildPlugin(),
         ],
     };
 };
