@@ -122,12 +122,6 @@ module.exports = {
     },
 
     /**
-     * Set it to true if you need to apply babel-loader with config to typecsript code
-     * @optional
-     */
-    applyBabelToTypescriptCode: true,
-
-    /**
      * Set not standart path fot tsconfig for the project
      * default – undefined, resolves to path.resolve(process.cwd(), './tsconfig.json');
      * @optional

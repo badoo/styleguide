@@ -49,8 +49,6 @@ module.exports = function getWebpackConfig({
     getBabelParserOptions,
     getLoadersForComponents,
     getLoaderForModule,
-    getTypescriptCompilerOptions,
-    applyBabelToTypescriptCode = false,
     tsConfigPath,
 }) {
     const components = getSections ? getComponentsFromSections(getSections) : undefined;
@@ -77,28 +75,6 @@ module.exports = function getWebpackConfig({
         loader: 'babel-loader',
         options: getBabelOptions({ isReactNative, getBabelConfig }),
     };
-    const compilerOptions = getTypescriptCompilerOptions
-        ? getTypescriptCompilerOptions()
-        : {
-              noEmit: false,
-          };
-    const genericTsLoader = {
-        loader: 'ts-loader',
-        options: {
-            configFile: tsConfigPath,
-            transpileOnly: true,
-            onlyCompileBundledFiles: true,
-            compilerOptions,
-        },
-    };
-
-    /**
-     * sometimes we need to parse transpiled typescript code with babel
-     * after initial transform
-     */
-    const genericLoaders = applyBabelToTypescriptCode
-        ? [genericJsLoader, ...setLoaders(genericTsLoader, loadersFromConsumers)]
-        : setLoaders(genericTsLoader, loadersFromConsumers);
 
     const jsLoaderExceptionList =
         exceptionsList && exceptionsList.jsLoader
@@ -178,7 +154,8 @@ module.exports = function getWebpackConfig({
                             exclude: isReactNative
                                 ? undefined
                                 : /node_modules\/(?!badoo-styleguide)/,
-                            use: genericLoaders,
+                            // js loader but with babel to ts
+                            use: setLoaders(genericJsLoader, loadersFromConsumers),
                         },
                         {
                             test: /\.(gif|png|jpe?g|woff|ttf)$/i,
