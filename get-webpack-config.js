@@ -138,7 +138,7 @@ module.exports = function getWebpackConfig({
                             use: ['style-loader', 'css-loader'],
                         },
                         {
-                            test: /\.jsx?$/,
+                            test: /\.(j|t)sx?$/,
                             // React native modules usually always need to be loaded by metro
                             exclude: isReactNative
                                 ? undefined
@@ -147,15 +147,6 @@ module.exports = function getWebpackConfig({
                                 useCache,
                                 setLoaders(genericJsLoader, loadersFromConsumers)
                             ),
-                        },
-                        {
-                            test: /\.tsx?$/,
-                            // React native modules usually always need to be loaded by metro
-                            exclude: isReactNative
-                                ? undefined
-                                : /node_modules\/(?!badoo-styleguide)/,
-                            // js loader but with babel to ts
-                            use: setLoaders(genericJsLoader, loadersFromConsumers),
                         },
                         {
                             test: /\.(gif|png|jpe?g|woff|ttf)$/i,
@@ -173,20 +164,14 @@ module.exports = function getWebpackConfig({
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : jsLoaderExceptionList,
                     include: includePaths,
-                    use: setCachingForLoaders(
-                        useCache,
-                        setLoaders(jsComponentLoaders, loadersFromConsumers)
-                    ),
+                    use: setLoaders(jsComponentLoaders, loadersFromConsumers),
                 },
                 {
                     test: /\.tsx?$/,
                     // React native modules usually always need to be loaded by metro
                     exclude: isReactNative ? undefined : tsLoaderExceptionList,
                     include: includePaths,
-                    use: setCachingForLoaders(
-                        useCache,
-                        setLoaders(tsComponentLoaders, loadersFromConsumers)
-                    ),
+                    use: setLoaders(tsComponentLoaders, loadersFromConsumers),
                 },
             ],
         },

@@ -4,7 +4,7 @@ module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
     let babelOverrides = {
         compact: false,
         minified: false,
-        cacheDirectory: true,
+        cacheDirectory: false,
     };
 
     if (getBabelConfig) {
