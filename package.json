@@ -5,6 +5,10 @@
   "author": "badoo",
   "license": "MIT",
   "bin": "./webpack-server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badoo/styleguide.git"
+  },
   "scripts": {
     "deps": "yarn install --pure-lockfile",
     "build": "yarn start --config=styleguide.config.js --buildDir=./dist/",
@@ -72,6 +76,7 @@
       "pre-commit": "yarn prettier-format && yarn test"
     }
   },
+  "homepage": "https://github.com/badoo/styleguide#readme",
   "resolutions": {
     "js-yaml": "3.13.1",
     "node-sass/**/tar": "2.2.2"
