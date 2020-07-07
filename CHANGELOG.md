@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.79
+
+* update peerDependencies.
+
 ## v0.0.78
 
 * add support for digits in regexp for `getSections` function.
