@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer, { create, act } from 'react-test-renderer';
+import 'jest-styled-components';
 import NavigationSection from '../../../components/navigation-section/navigation-section';
 import navigationSectionProps from './navigation-section.mockup.json';
 

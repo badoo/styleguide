@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 import Sandbox from '../../../components/sandbox/sandbox';
 import Component from '../../../components/component/component';
 import componentProps from '../component/component.mockup.json';

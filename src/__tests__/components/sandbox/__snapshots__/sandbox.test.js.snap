@@ -1,29 +1,239 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sandbox tests: Sandbox render component 1`] = `
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c5 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+  color: #000;
+  padding: 0 16px;
+}
+
+.styleguide-sandbox .c1:only-child {
+  border-radius: 4px;
+}
+
+.c2 {
+  margin: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding: 16px 0;
+  word-break: break-word;
+}
+
+.c3 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #202020;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  padding: 0 8px;
+}
+
+.c4:hover {
+  opacity: 1;
+}
+
+.c6 {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-top: 0;
+  box-shadow: 0 -1px 0 0 #f0f0f0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c7 {
+  padding-top: 32px;
+}
+
+.c8 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c9 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c13 {
+  margin-top: 16px;
+}
+
+.c10 {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.c10 table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.c10 thead tr {
+  border-bottom: 1px solid #7000e3;
+}
+
+.c10 thead th {
+  padding: 0 16px 8px 4px;
+}
+
+.c10 tbody tr:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+.c10 tbody tr td:nth-child(2) {
+  font-style: italic;
+  color: #303030;
+}
+
+.c10 tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c10 tbody tr td:nth-child(4) {
+  width: 45%;
+}
+
+.c10 td {
+  padding: 8px 16px 8px 4px;
+}
+
+.c11 + .styleguide-component__props-data {
+  margin-top: 16px;
+}
+
+.c12 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+.c12::before {
+  margin-right: 4px;
+  display: block;
+  background: #7000e3;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.c12::before {
+  content: '+';
+}
+
+.c15 + .c14 {
+  margin-top: 32px;
+}
+
 <section
-  className="sc-fzoLsD cRxFYA"
+  className="c0"
   data-name="SpecComponentEmpty"
   data-vrt-locator="sandbox"
 >
   <header
-    className="sc-fzpans FKZHZ"
+    className="c1"
   >
     <h1
-      className="sc-fzplWN dyRpBf"
+      className="c2"
       onClick={[Function]}
     >
       SpecComponentEmpty
     </h1>
     <div
-      className="sc-fznyAO irwOuD"
+      className="c3"
     >
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -38,11 +248,11 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
         </div>
       </span>
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -62,34 +272,34 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
     data-vrt-locator="sandbox-content"
   >
     <div
-      className="sc-fznZeY bAsMRt"
+      className="c6"
     >
       <article
-        className="sc-fzokOt haPiWu"
+        className="c7"
         id="component"
       >
         <header
           className="styleguide-component__header"
         >
           <h1
-            className="sc-fzqBZW eRUrgr"
+            className="c8"
           >
             Component
           </h1>
           <div
-            className="sc-fzqNJr kNxUom"
+            className="c9"
           >
             description of component
           </div>
         </header>
         <div
-          className="sc-fzoLag hoNyfC"
+          className="c10"
         >
           <div
-            className="sc-fzoXzr cipaZi"
+            className="c11"
           >
             <span
-              className="sc-fzpjYC iCddEn"
+              className="c12"
               onClick={[Function]}
               role="button"
             >
@@ -98,34 +308,34 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoyAV ckMHyZ"
+          className="c13"
         >
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentEmpty"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentEmpty
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -140,11 +350,11 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -164,19 +374,19 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -185,31 +395,31 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentPropTypes"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentPropTypes
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -224,11 +434,11 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -248,19 +458,19 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -269,31 +479,31 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentFull"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentFull
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -308,11 +518,11 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -332,19 +542,19 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -360,29 +570,239 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
 `;
 
 exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`] = `
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c5 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+  color: #000;
+  padding: 0 16px;
+}
+
+.styleguide-sandbox .c1:only-child {
+  border-radius: 4px;
+}
+
+.c2 {
+  margin: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding: 16px 0;
+  word-break: break-word;
+}
+
+.c3 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #202020;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  padding: 0 8px;
+}
+
+.c4:hover {
+  opacity: 1;
+}
+
+.c6 {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-top: 0;
+  box-shadow: 0 -1px 0 0 #f0f0f0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c7 {
+  padding-top: 32px;
+}
+
+.c8 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c9 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c13 {
+  margin-top: 16px;
+}
+
+.c10 {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.c10 table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.c10 thead tr {
+  border-bottom: 1px solid #7000e3;
+}
+
+.c10 thead th {
+  padding: 0 16px 8px 4px;
+}
+
+.c10 tbody tr:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+.c10 tbody tr td:nth-child(2) {
+  font-style: italic;
+  color: #303030;
+}
+
+.c10 tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c10 tbody tr td:nth-child(4) {
+  width: 45%;
+}
+
+.c10 td {
+  padding: 8px 16px 8px 4px;
+}
+
+.c11 + .styleguide-component__props-data {
+  margin-top: 16px;
+}
+
+.c12 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+.c12::before {
+  margin-right: 4px;
+  display: block;
+  background: #7000e3;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.c12::before {
+  content: '+';
+}
+
+.c15 + .c14 {
+  margin-top: 32px;
+}
+
 <section
-  className="sc-fzoLsD cRxFYA"
+  className="c0"
   data-name="SpecComponentEmpty"
   data-vrt-locator="sandbox"
 >
   <header
-    className="sc-fzpans FKZHZ"
+    className="c1"
   >
     <h1
-      className="sc-fzplWN dyRpBf"
+      className="c2"
       onClick={[Function]}
     >
       SpecComponentEmpty
     </h1>
     <div
-      className="sc-fznyAO irwOuD"
+      className="c3"
     >
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -397,11 +817,11 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
         </div>
       </span>
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -421,34 +841,34 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
     data-vrt-locator="sandbox-content"
   >
     <div
-      className="sc-fznZeY bAsMRt"
+      className="c6"
     >
       <article
-        className="sc-fzokOt haPiWu"
+        className="c7"
         id="component"
       >
         <header
           className="styleguide-component__header"
         >
           <h1
-            className="sc-fzqBZW eRUrgr"
+            className="c8"
           >
             Component
           </h1>
           <div
-            className="sc-fzqNJr kNxUom"
+            className="c9"
           >
             description of component
           </div>
         </header>
         <div
-          className="sc-fzoLag hoNyfC"
+          className="c10"
         >
           <div
-            className="sc-fzoXzr cipaZi"
+            className="c11"
           >
             <span
-              className="sc-fzpjYC iCddEn"
+              className="c12"
               onClick={[Function]}
               role="button"
             >
@@ -457,34 +877,34 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
           </div>
         </div>
         <div
-          className="sc-fzoyAV ckMHyZ"
+          className="c13"
         >
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentEmpty"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentEmpty
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -499,11 +919,11 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -523,19 +943,19 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -544,31 +964,31 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentPropTypes"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentPropTypes
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -583,11 +1003,11 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -607,19 +1027,19 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -628,31 +1048,31 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentFull"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentFull
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -667,11 +1087,11 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -691,19 +1111,19 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -719,29 +1139,239 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
 `;
 
 exports[`Sandbox tests: Sandbox render component in with and without content 1`] = `
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c5 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+  color: #000;
+  padding: 0 16px;
+}
+
+.styleguide-sandbox .c1:only-child {
+  border-radius: 4px;
+}
+
+.c2 {
+  margin: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding: 16px 0;
+  word-break: break-word;
+}
+
+.c3 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #202020;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  padding: 0 8px;
+}
+
+.c4:hover {
+  opacity: 1;
+}
+
+.c6 {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-top: 0;
+  box-shadow: 0 -1px 0 0 #f0f0f0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c7 {
+  padding-top: 32px;
+}
+
+.c8 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c9 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c13 {
+  margin-top: 16px;
+}
+
+.c10 {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.c10 table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.c10 thead tr {
+  border-bottom: 1px solid #7000e3;
+}
+
+.c10 thead th {
+  padding: 0 16px 8px 4px;
+}
+
+.c10 tbody tr:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+.c10 tbody tr td:nth-child(2) {
+  font-style: italic;
+  color: #303030;
+}
+
+.c10 tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c10 tbody tr td:nth-child(4) {
+  width: 45%;
+}
+
+.c10 td {
+  padding: 8px 16px 8px 4px;
+}
+
+.c11 + .styleguide-component__props-data {
+  margin-top: 16px;
+}
+
+.c12 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+.c12::before {
+  margin-right: 4px;
+  display: block;
+  background: #7000e3;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.c12::before {
+  content: '+';
+}
+
+.c15 + .c14 {
+  margin-top: 32px;
+}
+
 <section
-  className="sc-fzoLsD cRxFYA"
+  className="c0"
   data-name="SpecComponentEmpty"
   data-vrt-locator="sandbox"
 >
   <header
-    className="sc-fzpans FKZHZ"
+    className="c1"
   >
     <h1
-      className="sc-fzplWN dyRpBf"
+      className="c2"
       onClick={[Function]}
     >
       SpecComponentEmpty
     </h1>
     <div
-      className="sc-fznyAO irwOuD"
+      className="c3"
     >
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -756,11 +1386,11 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
         </div>
       </span>
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -780,34 +1410,34 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
     data-vrt-locator="sandbox-content"
   >
     <div
-      className="sc-fznZeY bAsMRt"
+      className="c6"
     >
       <article
-        className="sc-fzokOt haPiWu"
+        className="c7"
         id="component"
       >
         <header
           className="styleguide-component__header"
         >
           <h1
-            className="sc-fzqBZW eRUrgr"
+            className="c8"
           >
             Component
           </h1>
           <div
-            className="sc-fzqNJr kNxUom"
+            className="c9"
           >
             description of component
           </div>
         </header>
         <div
-          className="sc-fzoLag hoNyfC"
+          className="c10"
         >
           <div
-            className="sc-fzoXzr cipaZi"
+            className="c11"
           >
             <span
-              className="sc-fzpjYC iCddEn"
+              className="c12"
               onClick={[Function]}
               role="button"
             >
@@ -816,34 +1446,34 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
           </div>
         </div>
         <div
-          className="sc-fzoyAV ckMHyZ"
+          className="c13"
         >
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentEmpty"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentEmpty
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -858,11 +1488,11 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -882,19 +1512,19 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -903,31 +1533,31 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentPropTypes"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentPropTypes
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -942,11 +1572,11 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -966,19 +1596,19 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -987,31 +1617,31 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentFull"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentFull
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1026,11 +1656,11 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1050,19 +1680,19 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -1078,29 +1708,239 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
 `;
 
 exports[`Sandbox tests: Sandbox render component without title 1`] = `
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c5 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+  color: #000;
+  padding: 0 16px;
+}
+
+.styleguide-sandbox .c1:only-child {
+  border-radius: 4px;
+}
+
+.c2 {
+  margin: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding: 16px 0;
+  word-break: break-word;
+}
+
+.c3 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #202020;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  padding: 0 8px;
+}
+
+.c4:hover {
+  opacity: 1;
+}
+
+.c6 {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-top: 0;
+  box-shadow: 0 -1px 0 0 #f0f0f0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c7 {
+  padding-top: 32px;
+}
+
+.c8 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c9 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c13 {
+  margin-top: 16px;
+}
+
+.c10 {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.c10 table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.c10 thead tr {
+  border-bottom: 1px solid #7000e3;
+}
+
+.c10 thead th {
+  padding: 0 16px 8px 4px;
+}
+
+.c10 tbody tr:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+.c10 tbody tr td:nth-child(2) {
+  font-style: italic;
+  color: #303030;
+}
+
+.c10 tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c10 tbody tr td:nth-child(4) {
+  width: 45%;
+}
+
+.c10 td {
+  padding: 8px 16px 8px 4px;
+}
+
+.c11 + .styleguide-component__props-data {
+  margin-top: 16px;
+}
+
+.c12 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+.c12::before {
+  margin-right: 4px;
+  display: block;
+  background: #7000e3;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.c12::before {
+  content: '+';
+}
+
+.c15 + .c14 {
+  margin-top: 32px;
+}
+
 <section
-  className="sc-fzoLsD cRxFYA"
+  className="c0"
   data-name="empty"
   data-vrt-locator="sandbox"
 >
   <header
-    className="sc-fzpans FKZHZ"
+    className="c1"
   >
     <h1
-      className="sc-fzplWN dyRpBf"
+      className="c2"
       onClick={[Function]}
     >
       empty
     </h1>
     <div
-      className="sc-fznyAO irwOuD"
+      className="c3"
     >
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -1115,11 +1955,11 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
         </div>
       </span>
       <span
-        className="sc-fznKkj dNgTiY"
+        className="c4"
         onClick={[Function]}
       >
         <div
-          className="sc-AxjAm kEXqeh"
+          className="c5"
           role="presentation"
         >
           <svg
@@ -1139,34 +1979,34 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
     data-vrt-locator="sandbox-content"
   >
     <div
-      className="sc-fznZeY bAsMRt"
+      className="c6"
     >
       <article
-        className="sc-fzokOt haPiWu"
+        className="c7"
         id="component"
       >
         <header
           className="styleguide-component__header"
         >
           <h1
-            className="sc-fzqBZW eRUrgr"
+            className="c8"
           >
             Component
           </h1>
           <div
-            className="sc-fzqNJr kNxUom"
+            className="c9"
           >
             description of component
           </div>
         </header>
         <div
-          className="sc-fzoLag hoNyfC"
+          className="c10"
         >
           <div
-            className="sc-fzoXzr cipaZi"
+            className="c11"
           >
             <span
-              className="sc-fzpjYC iCddEn"
+              className="c12"
               onClick={[Function]}
               role="button"
             >
@@ -1175,34 +2015,34 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoyAV ckMHyZ"
+          className="c13"
         >
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentEmpty"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentEmpty
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1217,11 +2057,11 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1241,19 +2081,19 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -1262,31 +2102,31 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentPropTypes"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentPropTypes
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1301,11 +2141,11 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1325,19 +2165,19 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>
@@ -1346,31 +2186,31 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
             </section>
           </div>
           <div
-            className="sc-fznJRM jETYWs"
+            className="c14 c15"
           >
             <section
-              className="sc-fzoLsD cRxFYA"
+              className="c0"
               data-name="SpecComponentFull"
               data-vrt-locator="sandbox"
             >
               <header
-                className="sc-fzpans FKZHZ"
+                className="c1"
               >
                 <h1
-                  className="sc-fzplWN dyRpBf"
+                  className="c2"
                   onClick={[Function]}
                 >
                   SpecComponentFull
                 </h1>
                 <div
-                  className="sc-fznyAO irwOuD"
+                  className="c3"
                 >
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1385,11 +2225,11 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                     </div>
                   </span>
                   <span
-                    className="sc-fznKkj dNgTiY"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <div
-                      className="sc-AxjAm kEXqeh"
+                      className="c5"
                       role="presentation"
                     >
                       <svg
@@ -1409,19 +2249,19 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                 data-vrt-locator="sandbox-content"
               >
                 <div
-                  className="sc-fznZeY bAsMRt"
+                  className="c6"
                 >
                   <article
-                    className="sc-fzokOt haPiWu"
+                    className="c7"
                   >
                     <header
                       className="styleguide-component__header"
                     >
                       <h1
-                        className="sc-fzqBZW eRUrgr"
+                        className="c8"
                       />
                       <div
-                        className="sc-fzqNJr kNxUom"
+                        className="c9"
                       />
                     </header>
                   </article>

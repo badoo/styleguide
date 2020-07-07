@@ -1,23 +1,311 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c4 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  font-family: sans-serif;
+  position: relative;
+  padding: 16px;
+  background-color: #fafafa;
+  color: #282828;
+}
+
+.c2 {
+  margin-bottom: 0;
+  font: 400 16px -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Ubuntu, 'Helvetica Neue','Lucida Grande',sans-serif;
+}
+
+.c3 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.c3:hover {
+  opacity: 1;
+}
+
+.c5 {
+  padding: 10px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c15 {
+  display: block;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+  color: #000;
+  padding: 0 16px;
+}
+
+.styleguide-sandbox .c16:only-child {
+  border-radius: 4px;
+}
+
+.c17 {
+  margin: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding: 16px 0;
+  word-break: break-word;
+}
+
+.c18 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #202020;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  padding: 0 8px;
+}
+
+.c19:hover {
+  opacity: 1;
+}
+
+.c20 {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-top: 0;
+  box-shadow: 0 -1px 0 0 #f0f0f0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c6 {
+  padding-top: 32px;
+}
+
+.c7 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c8 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c12 {
+  margin-top: 16px;
+}
+
+.c9 {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.c9 table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.c9 thead tr {
+  border-bottom: 1px solid #7000e3;
+}
+
+.c9 thead th {
+  padding: 0 16px 8px 4px;
+}
+
+.c9 tbody tr:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+.c9 tbody tr td:nth-child(2) {
+  font-style: italic;
+  color: #303030;
+}
+
+.c9 tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+
+.c9 tbody tr td:nth-child(4) {
+  width: 45%;
+}
+
+.c9 td {
+  padding: 8px 16px 8px 4px;
+}
+
+.c10 + .styleguide-component__props-data {
+  margin-top: 16px;
+}
+
+.c11 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+.c11::before {
+  margin-right: 4px;
+  display: block;
+  background: #7000e3;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.c11::before {
+  content: '+';
+}
+
+.c14 + .c13 {
+  margin-top: 32px;
+}
+
 <div
-  className="sc-AxirZ cwNZeu"
+  className="c0"
 >
   <div
-    className="sc-AxiKw gKNPoJ"
+    className="c1"
   >
     <h1
-      className="sc-AxhCb bbPscf"
+      className="c2"
     >
       SpecComponentEmpty
     </h1>
     <div
-      className="sc-AxhUy dVTMOj"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="sc-AxjAm kEXqeh"
+        className="c4"
         role="presentation"
       >
         <svg
@@ -33,34 +321,34 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxgMl jOjGwM"
+    className="c5"
   >
     <article
-      className="sc-fzokOt haPiWu"
+      className="c6"
       id="component"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqBZW eRUrgr"
+          className="c7"
         >
           Component
         </h1>
         <div
-          className="sc-fzqNJr kNxUom"
+          className="c8"
         >
           description of component
         </div>
       </header>
       <div
-        className="sc-fzoLag hoNyfC"
+        className="c9"
       >
         <div
-          className="sc-fzoXzr cipaZi"
+          className="c10"
         >
           <span
-            className="sc-fzpjYC iCddEn"
+            className="c11"
             onClick={[Function]}
             role="button"
           >
@@ -69,34 +357,34 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
         </div>
       </div>
       <div
-        className="sc-fzoyAV ckMHyZ"
+        className="c12"
       >
         <div
-          className="sc-fznJRM jETYWs"
+          className="c13 c14"
         >
           <section
-            className="sc-fzoLsD cRxFYA"
+            className="c15"
             data-name="SpecComponentEmpty"
             data-vrt-locator="sandbox"
           >
             <header
-              className="sc-fzpans FKZHZ"
+              className="c16"
             >
               <h1
-                className="sc-fzplWN dyRpBf"
+                className="c17"
                 onClick={[Function]}
               >
                 SpecComponentEmpty
               </h1>
               <div
-                className="sc-fznyAO irwOuD"
+                className="c18"
               >
                 <span
-                  className="sc-fznKkj dNgTiY"
+                  className="c19"
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-AxjAm kEXqeh"
+                    className="c4"
                     role="presentation"
                   >
                     <svg
@@ -111,11 +399,11 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
                   </div>
                 </span>
                 <span
-                  className="sc-fznKkj dNgTiY"
+                  className="c19"
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-AxjAm kEXqeh"
+                    className="c4"
                     role="presentation"
                   >
                     <svg
@@ -135,19 +423,19 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               data-vrt-locator="sandbox-content"
             >
               <div
-                className="sc-fznZeY bAsMRt"
+                className="c20"
               >
                 <article
-                  className="sc-fzokOt haPiWu"
+                  className="c6"
                 >
                   <header
                     className="styleguide-component__header"
                   >
                     <h1
-                      className="sc-fzqBZW eRUrgr"
+                      className="c7"
                     />
                     <div
-                      className="sc-fzqNJr kNxUom"
+                      className="c8"
                     />
                   </header>
                 </article>
@@ -156,31 +444,31 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
           </section>
         </div>
         <div
-          className="sc-fznJRM jETYWs"
+          className="c13 c14"
         >
           <section
-            className="sc-fzoLsD cRxFYA"
+            className="c15"
             data-name="SpecComponentPropTypes"
             data-vrt-locator="sandbox"
           >
             <header
-              className="sc-fzpans FKZHZ"
+              className="c16"
             >
               <h1
-                className="sc-fzplWN dyRpBf"
+                className="c17"
                 onClick={[Function]}
               >
                 SpecComponentPropTypes
               </h1>
               <div
-                className="sc-fznyAO irwOuD"
+                className="c18"
               >
                 <span
-                  className="sc-fznKkj dNgTiY"
+                  className="c19"
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-AxjAm kEXqeh"
+                    className="c4"
                     role="presentation"
                   >
                     <svg
@@ -195,11 +483,11 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
                   </div>
                 </span>
                 <span
-                  className="sc-fznKkj dNgTiY"
+                  className="c19"
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-AxjAm kEXqeh"
+                    className="c4"
                     role="presentation"
                   >
                     <svg
@@ -219,19 +507,19 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               data-vrt-locator="sandbox-content"
             >
               <div
-                className="sc-fznZeY bAsMRt"
+                className="c20"
               >
                 <article
-                  className="sc-fzokOt haPiWu"
+                  className="c6"
                 >
                   <header
                     className="styleguide-component__header"
                   >
                     <h1
-                      className="sc-fzqBZW eRUrgr"
+                      className="c7"
                     />
                     <div
-                      className="sc-fzqNJr kNxUom"
+                      className="c8"
                     />
                   </header>
                 </article>
@@ -240,31 +528,31 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
           </section>
         </div>
         <div
-          className="sc-fznJRM jETYWs"
+          className="c13 c14"
         >
           <section
-            className="sc-fzoLsD cRxFYA"
+            className="c15"
             data-name="SpecComponentFull"
             data-vrt-locator="sandbox"
           >
             <header
-              className="sc-fzpans FKZHZ"
+              className="c16"
             >
               <h1
-                className="sc-fzplWN dyRpBf"
+                className="c17"
                 onClick={[Function]}
               >
                 SpecComponentFull
               </h1>
               <div
-                className="sc-fznyAO irwOuD"
+                className="c18"
               >
                 <span
-                  className="sc-fznKkj dNgTiY"
+                  className="c19"
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-AxjAm kEXqeh"
+                    className="c4"
                     role="presentation"
                   >
                     <svg
@@ -279,11 +567,11 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
                   </div>
                 </span>
                 <span
-                  className="sc-fznKkj dNgTiY"
+                  className="c19"
                   onClick={[Function]}
                 >
                   <div
-                    className="sc-AxjAm kEXqeh"
+                    className="c4"
                     role="presentation"
                   >
                     <svg
@@ -303,19 +591,19 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               data-vrt-locator="sandbox-content"
             >
               <div
-                className="sc-fznZeY bAsMRt"
+                className="c20"
               >
                 <article
-                  className="sc-fzokOt haPiWu"
+                  className="c6"
                 >
                   <header
                     className="styleguide-component__header"
                   >
                     <h1
-                      className="sc-fzqBZW eRUrgr"
+                      className="c7"
                     />
                     <div
-                      className="sc-fzqNJr kNxUom"
+                      className="c8"
                     />
                   </header>
                 </article>
