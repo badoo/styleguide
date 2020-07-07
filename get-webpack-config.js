@@ -20,7 +20,7 @@ const setLoaders = (internalLoaders, externalLoader) =>
 const getComponentsFromSections = sections => {
     const sectionList = sections.toString();
     const componentPaths = sectionList
-        .match(/(((?<!\/[/*]\s))require\(['_\-A-Za-z/]+\))/gm)
+        .match(/(((?<!\/[/*]\s))require\([/'_\-A-Za-z0-9]+\))/gm)
         .map(path => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
 
     return Array.from(new Set(componentPaths));

@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.78
+
+* add support for digits in regexp for `getSections` function.
+
+
 ## v0.0.77
 
 * update dependencies.
