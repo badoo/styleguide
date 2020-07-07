@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.74
+
+* Add fix for covering several requires in one line in components definition for `getSections` function.
+
 ## v0.0.73
 
 * Add fix for firefox iframe bug.
