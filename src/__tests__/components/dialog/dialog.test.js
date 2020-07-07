@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { create, act } from 'react-test-renderer';
+import 'jest-styled-components';
 import Dialog from '../../../components/dialog/dialog';
 import Component from '../../../components/component/component';
 import componentProps from '../component/component.mockup.json';

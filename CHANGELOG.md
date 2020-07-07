@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.75
+
+* Add `jest-styled-components` for test-coverage
+
 ## v0.0.74
 
 * Add fix for covering several requires in one line in components definition for `getSections` function.

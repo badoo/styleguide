@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer, { create, act } from 'react-test-renderer';
+import 'jest-styled-components';
 import AppView from '../app-view';
 import AppProps from './app-view.mockup.json';
 import Component from '../components/component/component';

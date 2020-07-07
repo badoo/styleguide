@@ -1,23 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation-Section Tests: When we open app 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.c2 {
+  padding: 16px;
+  display: none;
+}
+
+.c3 {
+  padding: 8px 16px;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #666;
+}
+
 <div
-  className="sc-AxjAm bkRBQT"
+  className="c0"
 >
   <div
-    className="sc-AxirZ kngXYT"
+    className="c1"
     onClick={[Function]}
   >
     Structure
   </div>
   <div
-    className="sc-AxiKw fXmGGd"
+    className="c2"
   >
     <div
-      className="sc-AxhCb eWEqxl"
+      className="c3"
     >
       <a
-        className="sc-AxhUy fGlHFc"
+        className="c4"
         data-vrt-locator="link"
         href="#Structure-Component"
       >
@@ -29,23 +59,53 @@ exports[`Navigation-Section Tests: When we open app 1`] = `
 `;
 
 exports[`Navigation-Section Tests: When we toggle isOpened for section 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.c2 {
+  padding: 16px;
+  display: none;
+}
+
+.c3 {
+  padding: 8px 16px;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #666;
+}
+
 <div
-  className="sc-AxjAm bkRBQT"
+  className="c0"
 >
   <div
-    className="sc-AxirZ kngXYT"
+    className="c1"
     onClick={[Function]}
   >
     Components
   </div>
   <div
-    className="sc-AxiKw fXmGGd"
+    className="c2"
   >
     <div
-      className="sc-AxhCb eWEqxl"
+      className="c3"
     >
       <a
-        className="sc-AxhUy fGlHFc"
+        className="c4"
         data-vrt-locator="link"
         href="#Components-ErrorBoundary"
       >
@@ -57,23 +117,52 @@ exports[`Navigation-Section Tests: When we toggle isOpened for section 1`] = `
 `;
 
 exports[`Navigation-Section Tests: When we toggle isOpened for section 2`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.c2 {
+  padding: 16px;
+}
+
+.c3 {
+  padding: 8px 16px;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #666;
+}
+
 <div
-  className="sc-AxjAm bkRBQT"
+  className="c0"
 >
   <div
-    className="sc-AxirZ kngXYT"
+    className="c1"
     onClick={[Function]}
   >
     Components
   </div>
   <div
-    className="sc-AxiKw fVTAYb"
+    className="c2"
   >
     <div
-      className="sc-AxhCb eWEqxl"
+      className="c3"
     >
       <a
-        className="sc-AxhUy fGlHFc"
+        className="c4"
         data-vrt-locator="link"
         href="#Components-ErrorBoundary"
       >

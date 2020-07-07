@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-
+import 'jest-styled-components';
 import SearchField from '../../../components/search-field/search-field';
 
 describe('SearchField generic tests', () => {

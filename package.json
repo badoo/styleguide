@@ -1,6 +1,6 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.74",
+  "version": "0.0.75",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "lint": "eslint . --ext .js,.jsx",
     "test": "jest",
     "test-update": "jest -u",
-    "prettier": "prettier --write '**/*.{jsx,js,ts,tsx,json}'",
+    "prettier-format": "prettier --write '**/*.{jsx,js,ts,tsx,json}'",
     "styleguide": "yarn start --config=styleguide.config.js"
   },
   "dependencies": {
@@ -60,6 +60,7 @@
     "eslint-plugin-react": "7.14.2",
     "husky": "^4.2.3",
     "jest": "^25.2.7",
+    "jest-styled-components": "^7.0.2",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
@@ -68,7 +69,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn prettier"
+      "pre-commit": "yarn prettier-format && yarn test"
     }
   },
   "resolutions": {
