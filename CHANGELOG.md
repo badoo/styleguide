@@ -1,8 +1,12 @@
 # Changelog
 
+## v0.0.76
+
+* fix bug with doubled dependencies via peerDependencies.
+
 ## v0.0.75
 
-* Add `jest-styled-components` for test-coverage
+* Add `jest-styled-components` for test-coverage.
 
 ## v0.0.74
 
