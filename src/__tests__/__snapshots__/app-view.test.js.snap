@@ -1559,6 +1559,7 @@ exports[`App-view generic tests When filter show components 1`] = `
           value="c"
         />
         <div
+
           className="c7"
         >
           <div
