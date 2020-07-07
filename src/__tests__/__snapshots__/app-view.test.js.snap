@@ -34,17 +34,17 @@ exports[`App-view generic tests When app is open 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -187,17 +187,17 @@ exports[`App-view generic tests When component is open 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -608,17 +608,17 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           placeholder="Search component name"
           type="text"
           value="g"
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -702,17 +702,17 @@ exports[`App-view generic tests When filter show components 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           placeholder="Search component name"
           type="text"
           value="c"
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -1094,17 +1094,17 @@ exports[`App-view generic tests When we open component from app 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"

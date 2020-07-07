@@ -34,18 +34,18 @@ exports[`App generic tests When app is is unmounted 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           onChange={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -188,18 +188,18 @@ exports[`App generic tests When app is open 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           onChange={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -342,18 +342,18 @@ exports[`App generic tests When app receive no sections 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           onChange={[Function]}
           placeholder="Search component name"
           type="text"
           value="s"
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -437,18 +437,18 @@ exports[`App search tests When we clear search request 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           onChange={[Function]}
           placeholder="Search component name"
           type="text"
           value="comp"
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -562,18 +562,18 @@ exports[`App search tests When we clear search request 2`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           onChange={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -716,18 +716,18 @@ exports[`App search tests When we search, we have results filtered 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           onChange={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
@@ -870,18 +870,18 @@ exports[`App search tests When we search, we have results filtered 2`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl otYGI"
+        className="sc-AxgMl jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI fleRyR"
+          className="sc-AxheI cBGrTV"
           onChange={[Function]}
           placeholder="Search component name"
           type="text"
           value="comp"
         />
         <div
-          className="sc-Axmtr crOZCD"
+          className="sc-Axmtr gmeduo"
         >
           <div
             className="sc-AxhUy hmNFUn"
