@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.77
+
+* update dependencies.
+* update regexp for `getSections` function.
+
 ## v0.0.76
 
 * fix bug with doubled dependencies via peerDependencies.
