@@ -23,6 +23,12 @@ const propTypes = {
     title: PropTypes.string,
 };
 
+function useForceUpdate() {
+    const [value, setValue] = useState(0);
+
+    return () => setValue(value => ++value);
+}
+
 const StyleguideIFrame = React.memo(
     ({
         children,
@@ -31,7 +37,19 @@ const StyleguideIFrame = React.memo(
         ...props
     }) => {
         const [contentRef, setContentRef] = useState(null);
-        const mountNode = contentRef && contentRef.contentWindow.document.body;
+        const forceUpdate = useForceUpdate();
+        let mountNode = contentRef && contentRef.contentWindow.document.body;
+
+        // hide element during rerender
+        if (contentRef) {
+            contentRef.style.opacity = 0;
+        }
+
+        const handleLoad = () => {
+            mountNode = contentRef && contentRef.contentWindow.document.body;
+
+            forceUpdate();
+        };
 
         useEffect(() => {
             if (contentRef && styleList) {
@@ -39,13 +57,26 @@ const StyleguideIFrame = React.memo(
                     const iframeNewStyleElement = style.cloneNode(true);
 
                     contentRef.contentWindow.document.head.appendChild(iframeNewStyleElement);
+                    contentRef.addEventListener('load', handleLoad);
                 });
             }
+
+            return function willUnmount() {
+                if (contentRef) {
+                    contentRef.removeEventListener('load', handleLoad);
+                    contentRef.style.opacity = 1;
+                }
+            };
         });
 
         return (
             <IframeWrapper>
-                <IframeBlock {...props} title={title} ref={setContentRef}>
+                <IframeBlock
+                    {...props}
+                    srcDoc={`<!DOCTYPE html>`}
+                    title={title}
+                    ref={setContentRef}
+                >
                     {mountNode && createPortal(React.Children.only(children), mountNode)}
                 </IframeBlock>
             </IframeWrapper>
