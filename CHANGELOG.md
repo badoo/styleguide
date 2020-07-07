@@ -1,8 +1,12 @@
 # Changelog
 
+## v0.0.73
+
+* Add fix for firefox iframe bug.
+
 ## v0.0.72
 
-* add focus styles for for search-input.
+* Add focus styles for for search-input.
 
 ## v0.0.71
 
