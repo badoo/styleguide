@@ -30,7 +30,7 @@ jobs:
           
       # install deps
       - run: yarn install
-      - run: yarn styleguide --buildDir ./dist
+      - run: yarn styleguide --buildDir ./docs
         
       # depl
       - name: GitHub Pages Deploy
