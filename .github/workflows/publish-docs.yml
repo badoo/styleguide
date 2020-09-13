@@ -12,17 +12,30 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
- 
+  # This workflow contains a single job called "build"
   build:
-   # The type of runner that the job will run on
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-     # This workflow contains a single job called "build"
-    - name: GitHub Pages Deploy
-      uses: Winner95/styleguide-action@v0.0.1
-      with:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.18.3
+          
+      # install deps
+      - run: yarn install
+      - run: yarn styleguide --buildDir ./docs
+        
+      # depl
+      - name: GitHub Pages Deploy
+        uses: appleboy/gh-pages-action@v0.0.2
+        with:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          remoteUrl: https://github.com/winner95/styleguide.git
+          remote_url: https://github.com/winner95/styleguide.git
