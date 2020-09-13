@@ -35,7 +35,6 @@ describe('App-view generic tests', () => {
         const updatedProps = setComponentsForTestsInProps(JSON.parse(AppProps.openComponent));
         let root;
 
-        // component = renderer.create(<AppView {...props} />);
         act(() => {
             root = create(<AppView {...props} />);
         });
