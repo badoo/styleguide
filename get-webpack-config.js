@@ -115,7 +115,7 @@ module.exports = function getWebpackConfig({
             : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/];
 
     const tsLoaderExtraExceptionList =
-        exceptionsList && exceptionsList.tsLoader ? [...exceptionsList.tsExtraLoader] : [];
+        exceptionsList && exceptionsList.tsExtraLoader ? [...exceptionsList.tsExtraLoader] : [];
 
     return {
         mode: 'development',
