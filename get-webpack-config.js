@@ -115,10 +115,8 @@ module.exports = function getWebpackConfig({
             : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/];
 
     const tsLoaderExtraExceptionList =
-        exceptionsList && exceptionsList.tsLoader
-            ? [...exceptionsList.tsExtraLoader]
-            : [];
-    
+        exceptionsList && exceptionsList.tsLoader ? [...exceptionsList.tsExtraLoader] : [];
+
     return {
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
@@ -182,7 +180,9 @@ module.exports = function getWebpackConfig({
                             // React native modules usually always need to be loaded by metro
                             exclude: isReactNative
                                 ? undefined
-                                : tsLoaderExtraExceptionList.concat(/node_modules\/(?!badoo-styleguide)/),
+                                : tsLoaderExtraExceptionList.concat(
+                                      /node_modules\/(?!badoo-styleguide)/
+                                  ),
                             use: genericLoaders,
                         },
                         {
