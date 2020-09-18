@@ -192,6 +192,7 @@ module.exports = {
         return {
             jsLoader: path.resolve(cwd, 'src'),
             tsLoader: /src/,
+            tsExtraLoader: /__tests__/,
         };
     },
 

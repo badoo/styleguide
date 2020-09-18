@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.80
+
+* add support for exceptions for typescript modules, which should not be a part of bundle via `getSections` function.
+
 ## v0.0.79
 
 * update peerDependencies.
