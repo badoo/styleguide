@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import StyleguideCell from '../styleguide-cell/styleguide-cell';
 import StyleguideFrame from '../styleguide-iframe/styleguide-iframe';

@@ -1,9 +1,9 @@
-const ReactDOMServer = require('react-dom/server');
-const InlinedImage = require('./inlined-image/inlined-image').default;
+import ReactDOMServer from 'react-dom/server';
+import InlinedImage from './inlined-image/inlined-image';
 
 const PROVIDER = 'https://via.placeholder.com';
 
-module.exports = function getImageUrl(options) {
+export default function getImageUrl(options) {
     const { width = 200, height, color, text, inlined = true } = options;
 
     if (inlined) {
@@ -34,4 +34,4 @@ module.exports = function getImageUrl(options) {
     }
 
     return `${PROVIDER}/${widthPart}${heightPart}${colorPart}${textPart}`;
-};
+}

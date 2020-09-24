@@ -1,6 +1,6 @@
+import HotIndex from './hot-index';
 import React from 'react';
 import * as ReactDom from 'react-dom';
-import HotIndex from './hot-index';
 
 ReactDom.render(<HotIndex />, getWrapperElement());
 
