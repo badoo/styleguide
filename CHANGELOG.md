@@ -2,7 +2,7 @@
 
 ## v0.0.81
 
-* Add support for reat-dom hot-reload.
+* Add support for react-dom hot-reload.
 * Update dependencies.
 
 ## v0.0.80
