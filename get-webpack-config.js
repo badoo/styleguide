@@ -223,7 +223,7 @@ module.exports = function getWebpackConfig({
             modules: [path.resolve(__dirname, 'node_modules')],
             alias: {
                 __GLOBAL__CONFIG__: configPath,
-                'react-dom': '@hot-loader/react-dom'
+                'react-dom': '@hot-loader/react-dom',
             },
         },
         resolveLoader: {
