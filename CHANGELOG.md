@@ -1,26 +1,31 @@
 # Changelog
 
+## v0.0.81
+
+* Add support for reat-dom hot-reload.
+* Update dependencies.
+
 ## v0.0.80
 
-* add support for exceptions for typescript modules, which should not be a part of bundle via `getSections` function.
+* Add support for exceptions for typescript modules, which should not be a part of bundle via `getSections` function.
 
 ## v0.0.79
 
-* update peerDependencies.
+* Update peerDependencies.
 
 ## v0.0.78
 
-* add support for digits in regexp for `getSections` function.
+* Add support for digits in regexp for `getSections` function.
 
 
 ## v0.0.77
 
-* update dependencies.
-* update regexp for `getSections` function.
+* Update dependencies.
+* Update regexp for `getSections` function.
 
 ## v0.0.76
 
-* fix bug with doubled dependencies via peerDependencies.
+* Fix bug with doubled dependencies via peerDependencies.
 
 ## v0.0.75
 

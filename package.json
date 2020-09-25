@@ -1,6 +1,6 @@
 {
   "name": "badoo-styleguide",
-  "version": "0.0.80",
+  "version": "0.0.81",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
@@ -86,7 +86,7 @@
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "16.8.4",
+    "react-dom": "^16.8.4",
     "react-test-renderer": "^16.13.1"
   },
   "husky": {

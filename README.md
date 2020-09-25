@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/badoo-styleguide.svg)](https://badge.fury.io/js/badoo-styleguide)
 
-**[Work in progress](#to-do)**: This is a styleguide used by the frontend team in [Magiclab](https://magiclab.co/), at the moment we are in the process of open sourcing it. Just working out some issues, cleaning up the API and adding documentation.
+**[Work in progress](#to-do)**: This is a styleguide used by the frontend team in [Bumble](https://team.bumble.com/), at the moment we are in the process of open sourcing it. Just working out some issues, cleaning up the API and adding documentation.
 
 ## Table of contents
 
