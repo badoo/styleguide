@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.0.82
+
+* Add compilations only to es6 modules for bundle.
+* Reduce bundle size.
+
 ## v0.0.81
 
 * Add support for react-dom hot-reload.
