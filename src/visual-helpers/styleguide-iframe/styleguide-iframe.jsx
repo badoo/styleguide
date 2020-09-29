@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { createPortal } from 'react-dom';
@@ -24,9 +24,9 @@ const propTypes = {
 };
 
 function useForceUpdate() {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = React.useState(0);
 
-    return () => setValue(value => ++value);
+    return () => setValue(value + 1);
 }
 
 const StyleguideIFrame = React.memo(
@@ -36,7 +36,7 @@ const StyleguideIFrame = React.memo(
         styleList = [...document.querySelectorAll('style')],
         ...props
     }) => {
-        const [contentRef, setContentRef] = useState(null);
+        const [contentRef, setContentRef] = React.useState(null);
         const forceUpdate = useForceUpdate();
         let mountNode = contentRef && contentRef.contentWindow.document.body;
 
@@ -51,7 +51,7 @@ const StyleguideIFrame = React.memo(
             forceUpdate();
         };
 
-        useEffect(() => {
+        React.useEffect(() => {
             if (contentRef && styleList) {
                 styleList.map(style => {
                     const iframeNewStyleElement = style.cloneNode(true);

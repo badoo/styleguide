@@ -1,12 +1,12 @@
-const StyleguideCell = require('./styleguide-cell/styleguide-cell').default;
-const StyleguideFrame = require('./styleguide-iframe/styleguide-iframe').default;
-const StyleguideDeviceFrame = require('./styleguide-device-frame/styleguide-device-frame').default;
-const StyleguideDeviceRange = require('./styleguide-device-range/styleguide-device-range').default;
-const StyleguideGroup = require('./styleguide-group/styleguide-group').default;
-const StyleguidePlaceholder = require('./styleguide-placeholder/styleguide-placeholder').default;
-const getImageUrl = require('./styleguide-static/styleguide-static');
+import StyleguideCell from './styleguide-cell/styleguide-cell';
+import StyleguideFrame from './styleguide-iframe/styleguide-iframe';
+import StyleguideDeviceFrame from './styleguide-device-frame/styleguide-device-frame';
+import StyleguideDeviceRange from './styleguide-device-range/styleguide-device-range';
+import StyleguideGroup from './styleguide-group/styleguide-group';
+import StyleguidePlaceholder from './styleguide-placeholder/styleguide-placeholder';
+import getImageUrl from './styleguide-static/styleguide-static';
 
-const visualHelpers = {
+export {
     StyleguideCell,
     StyleguideFrame,
     StyleguideDeviceFrame,
@@ -15,5 +15,3 @@ const visualHelpers = {
     StyleguidePlaceholder,
     getImageUrl,
 };
-
-module.exports = visualHelpers;
