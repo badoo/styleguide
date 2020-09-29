@@ -159,7 +159,7 @@ class Component extends React.Component {
     }
 
     render() {
-        const { name, description, propTypes, tests, index } = this.props;
+        const { name, description, propTypes, tests } = this.props;
         const id = name ? name.toLowerCase() : undefined;
         const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
 
