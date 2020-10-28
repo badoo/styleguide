@@ -17,15 +17,24 @@ class AppView extends React.Component {
         this.state = {
             component: null,
             sections: [],
+            isSidebarHidden: true,
         };
 
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
         this.checkCurrentSection = this.checkCurrentSection.bind(this);
+        this.handleSidebarToggleClick = this.handleSidebarToggleClick.bind(this);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
     }
 
     componentDidMount() {
         this.checkCurrentSection();
         this.checkDisplayedComponent();
+
+        window.addEventListener('keyup', this.handleKeyDown);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('keyup', this.handleKeyDown);
     }
 
     componentDidUpdate(prevProps) {
@@ -45,7 +54,10 @@ class AppView extends React.Component {
         return (
             <AppViewComponent>
                 <AppViewGlobalStyles />
-                <Sidebar>
+                <Sidebar
+                    isVisible={this.state.isSidebarHidden}
+                    onClickToggle={this.handleSidebarToggleClick}
+                >
                     <SearchField
                         value={this.props.searchQuery}
                         onChange={this.props.onSearchFieldChange}
@@ -56,7 +68,14 @@ class AppView extends React.Component {
                         sections={this.state.sections}
                     />
                 </Sidebar>
-                <Content>
+                <Content
+                    style={{
+                        transform: `${
+                            this.state.isSidebarHidden ? 'translateX(0)' : 'translateX(-200px)'
+                        }`,
+                        transition: 'transform 0.2s .05s cubic-bezier(0.87, 0, 0.13, 1)',
+                    }}
+                >
                     {this.state.component ? (
                         <Section content={this.state.component} />
                     ) : (
@@ -70,6 +89,12 @@ class AppView extends React.Component {
                 </Content>
             </AppViewComponent>
         );
+    }
+
+    handleKeyDown(event) {
+        if (event.keyCode === 83) {
+            this.setState(state => ({ isSidebarHidden: !state.isSidebarHidden }));
+        }
     }
 
     checkCurrentSection() {
@@ -89,6 +114,10 @@ class AppView extends React.Component {
         this.setState({
             component,
         });
+    }
+
+    handleSidebarToggleClick() {
+        this.setState(state => ({ isSidebarHidden: !state.isSidebarHidden }));
     }
 }
 

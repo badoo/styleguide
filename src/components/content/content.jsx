@@ -11,7 +11,7 @@ const ContentBlock = styled.main`
 const Content = props => {
     const { children } = props;
 
-    return <ContentBlock>{children}</ContentBlock>;
+    return <ContentBlock {...props}>{children}</ContentBlock>;
 };
 
 export default Content;

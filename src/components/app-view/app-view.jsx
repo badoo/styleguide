@@ -10,7 +10,7 @@ const AppViewBlock = styled.div`
 const AppView = props => {
     const { children } = props;
 
-    return <AppViewBlock>{children}</AppViewBlock>;
+    return <AppViewBlock {...props}>{children}</AppViewBlock>;
 };
 
 export default AppView;
