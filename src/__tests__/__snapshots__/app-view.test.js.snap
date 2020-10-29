@@ -101,7 +101,7 @@ exports[`App-view generic tests When app is open 1`] = `
             className="kfUgGk"
           >
             <div
-              className="gAoKva"
+              className="ipnAQQ"
               onClick={[Function]}
             >
               Structure
@@ -130,7 +130,7 @@ exports[`App-view generic tests When app is open 1`] = `
             className="kfUgGk"
           >
             <div
-              className="gAoKva"
+              className="ipnAQQ"
               onClick={[Function]}
             >
               Components
@@ -156,13 +156,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="dhejPX"
-    style={
-      Object {
-        "transform": "translateX(0)",
-        "transition": "transform 0.2s .05s cubic-bezier(0.87, 0, 0.13, 1)",
-      }
-    }
+    className="eDMLrC"
   >
     <article
       className="dEUWaB"
@@ -411,6 +405,10 @@ exports[`App-view generic tests When component is open 1`] = `
   color: #000;
   font-size: 16px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c15 {
@@ -456,6 +454,15 @@ exports[`App-view generic tests When component is open 1`] = `
   position: relative;
   width: 100%;
   background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+}
+
+.c20.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
 }
 
 .c32 {
@@ -741,12 +748,6 @@ exports[`App-view generic tests When component is open 1`] = `
   </aside>
   <main
     className="c20"
-    style={
-      Object {
-        "transform": "translateX(0)",
-        "transition": "transform 0.2s .05s cubic-bezier(0.87, 0, 0.13, 1)",
-      }
-    }
   >
     <section
       className="c21 c22"
@@ -1234,6 +1235,15 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   position: relative;
   width: 100%;
   background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+}
+
+.c12.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
 }
 
 .c13 {
@@ -1360,12 +1370,6 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   </aside>
   <main
     className="c12"
-    style={
-      Object {
-        "transform": "translateX(0)",
-        "transition": "transform 0.2s .05s cubic-bezier(0.87, 0, 0.13, 1)",
-      }
-    }
   >
     <article
       className="c13"
@@ -1614,6 +1618,10 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: #000;
   font-size: 16px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c15 {
@@ -1648,6 +1656,15 @@ exports[`App-view generic tests When filter show components 1`] = `
   position: relative;
   width: 100%;
   background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+}
+
+.c18.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
 }
 
 .c30 {
@@ -1904,12 +1921,6 @@ exports[`App-view generic tests When filter show components 1`] = `
   </aside>
   <main
     className="c18"
-    style={
-      Object {
-        "transform": "translateX(0)",
-        "transition": "transform 0.2s .05s cubic-bezier(0.87, 0, 0.13, 1)",
-      }
-    }
   >
     <section
       className="c19 c20"
@@ -2400,6 +2411,10 @@ exports[`App-view generic tests When we open component from app 1`] = `
   color: #000;
   font-size: 16px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c15 {
@@ -2434,6 +2449,15 @@ exports[`App-view generic tests When we open component from app 1`] = `
   position: relative;
   width: 100%;
   background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+}
+
+.c18.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
 }
 
 .c19 {
@@ -2619,12 +2643,6 @@ exports[`App-view generic tests When we open component from app 1`] = `
   </aside>
   <main
     className="c18"
-    style={
-      Object {
-        "transform": "translateX(0)",
-        "transition": "transform 0.2s .05s cubic-bezier(0.87, 0, 0.13, 1)",
-      }
-    }
   >
     <article
       className="c19"

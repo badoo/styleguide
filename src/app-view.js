@@ -17,7 +17,7 @@ class AppView extends React.Component {
         this.state = {
             component: null,
             sections: [],
-            isSidebarHidden: true,
+            isSidebarVisible: true,
         };
 
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
@@ -55,7 +55,7 @@ class AppView extends React.Component {
             <AppViewComponent>
                 <AppViewGlobalStyles />
                 <Sidebar
-                    isVisible={this.state.isSidebarHidden}
+                    isVisible={this.state.isSidebarVisible}
                     onClickToggle={this.handleSidebarToggleClick}
                 >
                     <SearchField
@@ -68,14 +68,7 @@ class AppView extends React.Component {
                         sections={this.state.sections}
                     />
                 </Sidebar>
-                <Content
-                    style={{
-                        transform: `${
-                            this.state.isSidebarHidden ? 'translateX(0)' : 'translateX(-200px)'
-                        }`,
-                        transition: 'transform 0.2s .05s cubic-bezier(0.87, 0, 0.13, 1)',
-                    }}
-                >
+                <Content isExpanded={!this.state.isSidebarVisible}>
                     {this.state.component ? (
                         <Section content={this.state.component} />
                     ) : (
@@ -91,9 +84,13 @@ class AppView extends React.Component {
         );
     }
 
+    setSidebarVisibility() {
+        this.setState(state => ({ isSidebarVisible: !state.isSidebarVisible }));
+    }
+
     handleKeyDown(event) {
         if (event.keyCode === 83) {
-            this.setState(state => ({ isSidebarHidden: !state.isSidebarHidden }));
+            this.setSidebarVisibility();
         }
     }
 
@@ -117,7 +114,7 @@ class AppView extends React.Component {
     }
 
     handleSidebarToggleClick() {
-        this.setState(state => ({ isSidebarHidden: !state.isSidebarHidden }));
+        this.setSidebarVisibility();
     }
 }
 
