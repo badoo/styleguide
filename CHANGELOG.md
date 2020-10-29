@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.83
+
+* Added active state for navigation section.
+
 ## v0.0.82
 
 * Add compilations only to es6 modules for bundle.
