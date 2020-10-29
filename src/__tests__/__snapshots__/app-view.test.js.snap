@@ -2,19 +2,19 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="sc-fznzOf paqyy"
+  className="paqyy"
 >
   <aside
-    className="sc-AxjAm cRLJtR"
+    className="cRLJtR"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="iluSoF"
     >
       <div
-        className="sc-AxiKw bcuorQ"
+        className="bcuorQ"
       >
         <div
-          className="sc-AxhCb jVvKPm"
+          className="jVvKPm"
         >
           <svg
             viewBox="0 0 44 44"
@@ -34,20 +34,20 @@ exports[`App-view generic tests When app is open 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl jGqmoB"
+        className="jGqmoB"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI cBGrTV"
+          className="cBGrTV"
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr gmeduo"
+          className="gmeduo"
         >
           <div
-            className="sc-AxhUy hmNFUn"
+            className="hmNFUn"
             role="presentation"
             size={0}
           >
@@ -64,28 +64,28 @@ exports[`App-view generic tests When app is open 1`] = `
         </div>
       </div>
       <nav
-        className="sc-fznyAO bkLnjh"
+        className="bkLnjh"
       >
         <div
-          className="sc-fznKkj jkDQak"
+          className="jkDQak"
         >
           <div
-            className="sc-AxmLO kzOOLP"
+            className="kzOOLP"
           >
             <div
-              className="sc-fzozJi ejeJSx"
+              className="yCqjT"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-fzoLsD iUeVUF"
+              className="iUeVUF"
             >
               <div
-                className="sc-fzpans cIwqpl"
+                className="cIwqpl"
               >
                 <a
-                  className="sc-fzplWN hXlTqQ"
+                  className="hXlTqQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -96,25 +96,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="sc-fznKkj jkDQak"
+          className="jkDQak"
         >
           <div
-            className="sc-AxmLO kzOOLP"
+            className="kzOOLP"
           >
             <div
-              className="sc-fzozJi ejeJSx"
+              className="yCqjT"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-fzoLsD iUeVUF"
+              className="iUeVUF"
             >
               <div
-                className="sc-fzpans cIwqpl"
+                className="cIwqpl"
               >
                 <a
-                  className="sc-fzplWN hXlTqQ"
+                  className="hXlTqQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -128,22 +128,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fznZeY iASHnM"
+    className="iASHnM"
   >
     <article
-      className="sc-fzoXWK khMgHS"
+      className="khMgHS"
       id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzpmMD cahimd"
+          className="cahimd"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fznxKY hrnXgF"
+          className="hrnXgF"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -324,6 +324,10 @@ exports[`App-view generic tests When component is open 1`] = `
   color: #000;
   font-size: 16px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c13 {
@@ -1353,6 +1357,10 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: #000;
   font-size: 16px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c13 {
@@ -2052,6 +2060,10 @@ exports[`App-view generic tests When we open component from app 1`] = `
   color: #000;
   font-size: 16px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c13 {
