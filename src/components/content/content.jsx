@@ -10,6 +10,14 @@ const ContentBlock = styled.main`
 
     &.is-expanded {
         transform: translateX(-200px);
+
+        @media screen and (max-width: 375px) {
+            transform: translateX(0);
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        padding: 16px;
     }
 `;
 

@@ -11,6 +11,16 @@ const SidebarBlock = styled.aside`
     transform: ${props =>
         props.isVisible ? 'translate3d(0px, 0px, 0px)' : 'translate3d(-100%, 0px, 0px)'};
     will-change: transform;
+
+    @media screen and (max-width: 375px) {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+    }
 `;
 
 const SidebarContent = styled.div`
@@ -49,6 +59,10 @@ const SidebarVisibilityToggler = styled.div`
     svg {
         fill: currentColor;
     }
+
+    @media screen and (max-width: 375px) {
+        z-index: 3;
+    }
 `;
 
 const SidebarOpenIcon = styled(SidebarVisibilityToggler)`
@@ -67,6 +81,11 @@ const SidebarCloseIcon = styled(SidebarVisibilityToggler)`
     transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
     transition-delay: ${props => (props.isVisible ? '.4s' : '0')};
     opacity: ${props => (props.isVisible ? 1 : 0)};
+
+    @media screen and (max-width: 375px) {
+        left: initial;
+        right: 16px;
+    }
 `;
 
 const Sidebar = ({ onClickToggle, isVisible, children }) => {

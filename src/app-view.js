@@ -20,6 +20,7 @@ class AppView extends React.Component {
             isSidebarVisible: true,
         };
 
+        this.searchFieldRef = React.createRef();
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
         this.checkCurrentSection = this.checkCurrentSection.bind(this);
         this.handleSidebarToggleClick = this.handleSidebarToggleClick.bind(this);
@@ -29,6 +30,10 @@ class AppView extends React.Component {
     componentDidMount() {
         this.checkCurrentSection();
         this.checkDisplayedComponent();
+
+        if (this.checkMobileDevice()) {
+            this.setSidebarVisibility();
+        }
 
         window.addEventListener('keyup', this.handleKeyDown);
     }
@@ -41,6 +46,10 @@ class AppView extends React.Component {
         if (prevProps.currentHash !== this.props.currentHash) {
             this.checkDisplayedComponent();
             this.checkCurrentSection();
+
+            if (this.checkMobileDevice()) {
+                this.setSidebarVisibility();
+            }
         }
 
         if (this.props.sections !== prevProps.sections) {
@@ -61,6 +70,7 @@ class AppView extends React.Component {
                     <SearchField
                         value={this.props.searchQuery}
                         onChange={this.props.onSearchFieldChange}
+                        inputRef={this.searchFieldRef}
                     />
                     <Navigation
                         expandAll={!!this.props.searchQuery}
@@ -89,15 +99,29 @@ class AppView extends React.Component {
     }
 
     handleKeyDown(event) {
-        if (event.keyCode === 83) {
+        if (event.keyCode === 83 && !this.checkSearchFieldFocus()) {
             this.setSidebarVisibility();
         }
+    }
+
+    checkSearchFieldFocus() {
+        const input = this.searchFieldRef.current;
+
+        return document.activeElement === input;
     }
 
     checkCurrentSection() {
         this.setState({
             sections: mapPropsToSections(this.props.sections, this.props.currentHash),
         });
+    }
+
+    checkMobileDevice() {
+        const userAgent = typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
+
+        return Boolean(
+            userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i)
+        );
     }
 
     checkDisplayedComponent() {

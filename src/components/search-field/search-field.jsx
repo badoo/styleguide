@@ -62,7 +62,7 @@ const SearchFieldIcon = styled.div`
 `;
 
 const SearchField = props => {
-    const { value = '', onChange } = props;
+    const { value = '', onChange, inputRef } = props;
 
     return (
         <SearchFieldBlock>
@@ -72,6 +72,7 @@ const SearchField = props => {
                 onChange={onChange}
                 autoComplete="off"
                 placeholder="Search component name"
+                ref={inputRef}
             />
 
             <SearchFieldIcon>

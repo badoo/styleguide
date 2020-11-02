@@ -31,6 +31,13 @@ const SandboxTitle = styled.h1`
     font-family: sans-serif;
     padding: 16px 0;
     word-break: break-word;
+
+    @media screen and (max-width: 375px) {
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: initial;
+    }
 `;
 
 const SandboxControls = styled.div`

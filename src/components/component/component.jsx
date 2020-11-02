@@ -9,6 +9,10 @@ export const actionBeforeRenderHandler = () =>
 
 const ComponentBlock = styled.article`
     padding-top: 32px;
+
+    @media screen and (max-width: 375px) {
+        padding-top: 16px;
+    }
 `;
 
 const ComponentTitle = styled.h1`
@@ -118,6 +122,10 @@ const ComponentPropsHandler = styled.span`
 
 const ComponentPropsData = styled.div`
     margin-bottom: 32px;
+
+    @media screen and (max-width: 375px) {
+        overflow-x: scroll;
+    }
 `;
 
 const ComponentSandbox = styled.div`

@@ -211,6 +211,23 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
   margin-top: 32px;
 }
 
+@media screen and (max-width:375px) {
+  .c2 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .c7 {
+    padding-top: 16px;
+  }
+}
+
 <section
   className="c0"
   data-name="SpecComponentEmpty"
@@ -778,6 +795,23 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
 
 .c15 + .c14 {
   margin-top: 32px;
+}
+
+@media screen and (max-width:375px) {
+  .c2 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .c7 {
+    padding-top: 16px;
+  }
 }
 
 <section
@@ -1349,6 +1383,23 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
   margin-top: 32px;
 }
 
+@media screen and (max-width:375px) {
+  .c2 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .c7 {
+    padding-top: 16px;
+  }
+}
+
 <section
   className="c0"
   data-name="SpecComponentEmpty"
@@ -1916,6 +1967,23 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
 
 .c15 + .c14 {
   margin-top: 32px;
+}
+
+@media screen and (max-width:375px) {
+  .c2 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .c7 {
+    padding-top: 16px;
+  }
 }
 
 <section

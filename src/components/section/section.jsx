@@ -20,6 +20,10 @@ const SectionContent = styled.div`
         ? setWidth(config.sandboxMinWidth)
         : '320px'};
     margin: auto;
+
+    @media screen and (max-width: 375px) {
+        min-width: auto;
+    }
 `;
 
 const SectionComponent = styled.div`
