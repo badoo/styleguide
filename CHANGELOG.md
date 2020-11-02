@@ -2,6 +2,7 @@
 
 ## v0.0.83
 
+* Added toggle function for sidebar.
 * Added active state for navigation section.
 
 ## v0.0.82
