@@ -2,19 +2,47 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="sc-fznzOf paqyy"
+  className="iZQvSV"
 >
+  <div
+    className="hzvsCQ"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <div
+    className="JmYKp"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
   <aside
-    className="sc-AxjAm cRLJtR"
+    className="kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="fWWTBP"
     >
       <div
-        className="sc-AxiKw bcuorQ"
+        className="bcuorQ"
       >
         <div
-          className="sc-AxhCb jVvKPm"
+          className="jVvKPm"
         >
           <svg
             viewBox="0 0 44 44"
@@ -34,20 +62,20 @@ exports[`App-view generic tests When app is open 1`] = `
         </div>
       </div>
       <div
-        className="sc-AxgMl jGqmoB"
+        className="lgcvAJ"
       >
         <input
           autoComplete="off"
-          className="sc-AxheI cBGrTV"
+          className="ljwxKu"
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="sc-Axmtr gmeduo"
+          className="fUbWzG"
         >
           <div
-            className="sc-AxhUy hmNFUn"
+            className="dZVOcY"
             role="presentation"
             size={0}
           >
@@ -64,28 +92,28 @@ exports[`App-view generic tests When app is open 1`] = `
         </div>
       </div>
       <nav
-        className="sc-fznyAO bkLnjh"
+        className="qsynj"
       >
         <div
-          className="sc-fznKkj jkDQak"
+          className="bxcqNe"
         >
           <div
-            className="sc-AxmLO kzOOLP"
+            className="kfUgGk"
           >
             <div
-              className="sc-fzozJi yCqjT"
+              className="ipnAQQ"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-fzoLsD iUeVUF"
+              className="zWviA"
             >
               <div
-                className="sc-fzpans cIwqpl"
+                className="kyEYOF"
               >
                 <a
-                  className="sc-fzplWN hXlTqQ"
+                  className="bLaJUp"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -96,25 +124,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="sc-fznKkj jkDQak"
+          className="bxcqNe"
         >
           <div
-            className="sc-AxmLO kzOOLP"
+            className="kfUgGk"
           >
             <div
-              className="sc-fzozJi yCqjT"
+              className="ipnAQQ"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-fzoLsD iUeVUF"
+              className="zWviA"
             >
               <div
-                className="sc-fzpans cIwqpl"
+                className="kyEYOF"
               >
                 <a
-                  className="sc-fzplWN hXlTqQ"
+                  className="bLaJUp"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -128,22 +156,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fznZeY iASHnM"
+    className="eDMLrC"
   >
     <article
-      className="sc-fzoXWK khMgHS"
+      className="dEUWaB"
       id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzpmMD cahimd"
+          className="jZEJzC"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fznxKY hrnXgF"
+          className="hNyKnl"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -154,24 +182,34 @@ exports[`App-view generic tests When app is open 1`] = `
 `;
 
 exports[`App-view generic tests When component is open 1`] = `
-.c1 {
+.c3 {
   overflow-x: hidden;
   width: 300px;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+  -webkit-transform: translate3d(0px,0px,0px);
+  -ms-transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px,0px,0px);
+  will-change: transform;
 }
 
-.c2 {
+.c4 {
   position: fixed;
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
   left: 0;
   bottom: 0;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -191,13 +229,57 @@ exports[`App-view generic tests When component is open 1`] = `
   padding-top: 16px;
 }
 
-.c4 {
+.c6 {
   width: 32px;
   height: 32px;
   margin-bottom: 4px;
 }
 
-.c8 {
+.c2 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+
+.c2 svg {
+  fill: currentColor;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 316px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  opacity: 1;
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -210,7 +292,1222 @@ exports[`App-view generic tests When component is open 1`] = `
   color: inherit;
 }
 
-.c8 > svg {
+.c10 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c37 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c37 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c7 {
+  position: relative;
+  color: #ccc;
+  padding: 0 12px;
+  margin-bottom: 8px;
+  font-family: sans-serif;
+}
+
+.c7:focus-within {
+  color: #000;
+}
+
+.c8 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding: 6px 6px 6px 36px;
+  border: 1px solid #ccc;
+}
+
+.c8:focus {
+  border-color: #000;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c8:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c9 {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c13 {
+  display: block;
+}
+
+.c14 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c15 {
+  padding: 16px;
+}
+
+.c18 {
+  padding: 16px;
+  display: none;
+}
+
+.c16 {
+  padding: 8px 16px;
+}
+
+.c17 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #7000e3;
+  font-weight: 600;
+}
+
+.c19 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #666;
+}
+
+.c11 {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.c12 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c20 {
+  padding: 32px;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+}
+
+.c20.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
+}
+
+.c32 {
+  display: block;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+  color: #000;
+  padding: 0 16px;
+}
+
+.styleguide-sandbox .c33:only-child {
+  border-radius: 4px;
+}
+
+.c34 {
+  margin: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding: 16px 0;
+  word-break: break-word;
+}
+
+.c35 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #202020;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  padding: 0 8px;
+}
+
+.c36:hover {
+  opacity: 1;
+}
+
+.c38 {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-top: 0;
+  box-shadow: 0 -1px 0 0 #f0f0f0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c26 {
+  padding-top: 32px;
+}
+
+.c27 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c28 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c29 {
+  margin-top: 16px;
+}
+
+.c31 + .c30 {
+  margin-top: 32px;
+}
+
+.c22 + .c21 {
+  margin-top: 32px;
+}
+
+.c23 {
+  max-width: 960px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.c25 + .c24 {
+  margin-top: 40px;
+}
+
+.c0 {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
+  <aside
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="c7"
+      >
+        <input
+          autoComplete="off"
+          className="c8"
+          placeholder="Search component name"
+          type="text"
+          value=""
+        />
+        <div
+          className="c9"
+        >
+          <div
+            className="c10"
+            role="presentation"
+            size={0}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        className="c11"
+      >
+        <div
+          className="c12"
+        >
+          <div
+            className="c13"
+          >
+            <div
+              className="c14"
+              onClick={[Function]}
+            >
+              Structure
+            </div>
+            <div
+              className="c15"
+            >
+              <div
+                className="c16"
+              >
+                <a
+                  className="c17"
+                  data-vrt-locator="link"
+                  href="#Structure-Component"
+                >
+                  Component
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c12"
+        >
+          <div
+            className="c13"
+          >
+            <div
+              className="c14"
+              onClick={[Function]}
+            >
+              Components
+            </div>
+            <div
+              className="c18"
+            >
+              <div
+                className="c16"
+              >
+                <a
+                  className="c19"
+                  data-vrt-locator="link"
+                  href="#Components-ErrorBoundary"
+                >
+                  ErrorBoundary
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </aside>
+  <main
+    className="c20"
+  >
+    <section
+      className="c21 c22"
+    >
+      <div
+        className="c23"
+      >
+        <div
+          className="c24 c25"
+        >
+          <article
+            className="c26"
+            id="component"
+          >
+            <header
+              className="styleguide-component__header"
+            >
+              <h1
+                className="c27"
+              >
+                Component
+              </h1>
+              <div
+                className="c28"
+              >
+                
+              </div>
+            </header>
+            <div
+              className="c29"
+            >
+              <div
+                className="c30 c31"
+              >
+                <section
+                  className="c32"
+                  data-name="SpecComponentEmpty"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="c33"
+                  >
+                    <h1
+                      className="c34"
+                      onClick={[Function]}
+                    >
+                      SpecComponentEmpty
+                    </h1>
+                    <div
+                      className="c35"
+                    >
+                      <span
+                        className="c36"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c37"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="c36"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c37"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="c38"
+                    >
+                      <article
+                        className="c26"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="c27"
+                          />
+                          <div
+                            className="c28"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                className="c30 c31"
+              >
+                <section
+                  className="c32"
+                  data-name="SpecComponentPropTypes"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="c33"
+                  >
+                    <h1
+                      className="c34"
+                      onClick={[Function]}
+                    >
+                      SpecComponentPropTypes
+                    </h1>
+                    <div
+                      className="c35"
+                    >
+                      <span
+                        className="c36"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c37"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="c36"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c37"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="c38"
+                    >
+                      <article
+                        className="c26"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="c27"
+                          />
+                          <div
+                            className="c28"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                className="c30 c31"
+              >
+                <section
+                  className="c32"
+                  data-name="SpecComponentFull"
+                  data-vrt-locator="sandbox"
+                >
+                  <header
+                    className="c33"
+                  >
+                    <h1
+                      className="c34"
+                      onClick={[Function]}
+                    >
+                      SpecComponentFull
+                    </h1>
+                    <div
+                      className="c35"
+                    >
+                      <span
+                        className="c36"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c37"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                      <span
+                        className="c36"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c37"
+                          role="presentation"
+                        >
+                          <svg
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
+                            />
+                          </svg>
+                        </div>
+                      </span>
+                    </div>
+                  </header>
+                  <div
+                    data-vrt-locator="sandbox-content"
+                  >
+                    <div
+                      className="c38"
+                    >
+                      <article
+                        className="c26"
+                      >
+                        <header
+                          className="styleguide-component__header"
+                        >
+                          <h1
+                            className="c27"
+                          />
+                          <div
+                            className="c28"
+                          />
+                        </header>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
+
+exports[`App-view generic tests When filter doesn\`t show components 1`] = `
+.c3 {
+  overflow-x: hidden;
+  width: 300px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+  -webkit-transform: translate3d(0px,0px,0px);
+  -ms-transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px,0px,0px);
+  will-change: transform;
+}
+
+.c4 {
+  position: fixed;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  padding-top: 16px;
+}
+
+.c6 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+
+.c2 svg {
+  fill: currentColor;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 316px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  opacity: 1;
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c10 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c7 {
+  position: relative;
+  color: #ccc;
+  padding: 0 12px;
+  margin-bottom: 8px;
+  font-family: sans-serif;
+}
+
+.c7:focus-within {
+  color: #000;
+}
+
+.c8 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding: 6px 6px 6px 36px;
+  border: 1px solid #ccc;
+}
+
+.c8:focus {
+  border-color: #000;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c8:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c9 {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c11 {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.c12 {
+  padding: 32px;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+}
+
+.c12.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
+}
+
+.c13 {
+  padding-top: 32px;
+}
+
+.c14 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c15 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c0 {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
+  <aside
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="c7"
+      >
+        <input
+          autoComplete="off"
+          className="c8"
+          placeholder="Search component name"
+          type="text"
+          value="g"
+        />
+        <div
+          className="c9"
+        >
+          <div
+            className="c10"
+            role="presentation"
+            size={0}
+          >
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        className="c11"
+      />
+    </div>
+  </aside>
+  <main
+    className="c12"
+  >
+    <article
+      className="c13"
+      id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
+      >
+        <h1
+          className="c14"
+        >
+          Welcome!
+        </h1>
+        <div
+          className="c15"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
+  </main>
+</div>
+`;
+
+exports[`App-view generic tests When filter show components 1`] = `
+.c3 {
+  overflow-x: hidden;
+  width: 300px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+  -webkit-transform: translate3d(0px,0px,0px);
+  -ms-transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px,0px,0px);
+  will-change: transform;
+}
+
+.c4 {
+  position: fixed;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  padding-top: 16px;
+}
+
+.c6 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+
+.c2 svg {
+  fill: currentColor;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 316px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  opacity: 1;
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c10 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -249,7 +1546,7 @@ exports[`App-view generic tests When component is open 1`] = `
   fill: inherit;
 }
 
-.c5 {
+.c7 {
   position: relative;
   color: #ccc;
   padding: 0 12px;
@@ -257,11 +1554,11 @@ exports[`App-view generic tests When component is open 1`] = `
   font-family: sans-serif;
 }
 
-.c5:focus-within {
+.c7:focus-within {
   color: #000;
 }
 
-.c6 {
+.c8 {
   background-color: #fff;
   width: 100%;
   display: block;
@@ -273,31 +1570,31 @@ exports[`App-view generic tests When component is open 1`] = `
   border: 1px solid #ccc;
 }
 
-.c6:focus {
+.c8:focus {
   border-color: #000;
 }
 
-.c6::-webkit-input-placeholder {
+.c8::-webkit-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c6:-moz-placeholder {
+.c8:-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c6::-moz-placeholder {
+.c8::-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c6:-ms-input-placeholder {
+.c8:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c7 {
+.c9 {
   position: absolute;
   top: 50%;
   left: 20px;
@@ -311,11 +1608,11 @@ exports[`App-view generic tests When component is open 1`] = `
   color: inherit;
 }
 
-.c11 {
+.c13 {
   display: block;
 }
 
-.c12 {
+.c14 {
   position: relative;
   display: block;
   padding: 16px;
@@ -330,38 +1627,27 @@ exports[`App-view generic tests When component is open 1`] = `
   user-select: none;
 }
 
-.c13 {
+.c15 {
   padding: 16px;
 }
 
 .c16 {
-  padding: 16px;
-  display: none;
-}
-
-.c14 {
   padding: 8px 16px;
 }
 
-.c15 {
+.c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #7000e3;
   font-weight: 600;
 }
 
-.c17 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #666;
-}
-
-.c9 {
+.c11 {
   position: relative;
   font-family: sans-serif;
 }
 
-.c10 {
+.c12 {
   position: relative;
   margin: 0;
   padding: 0;
@@ -373,6 +1659,15 @@ exports[`App-view generic tests When component is open 1`] = `
   position: relative;
   width: 100%;
   background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+}
+
+.c18.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
 }
 
 .c30 {
@@ -505,17 +1800,45 @@ exports[`App-view generic tests When component is open 1`] = `
 <div
   className="c0"
 >
-  <aside
+  <div
     className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
+  <aside
+    className="c3"
   >
     <div
-      className="c2"
+      className="c4"
     >
       <div
-        className="c3"
+        className="c5"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <svg
             viewBox="0 0 44 44"
@@ -535,20 +1858,20 @@ exports[`App-view generic tests When component is open 1`] = `
         </div>
       </div>
       <div
-        className="c5"
+        className="c7"
       >
         <input
           autoComplete="off"
-          className="c6"
+          className="c8"
           placeholder="Search component name"
           type="text"
-          value=""
+          value="c"
         />
         <div
-          className="c7"
+          className="c9"
         >
           <div
-            className="c8"
+            className="c10"
             role="presentation"
             size={0}
           >
@@ -565,61 +1888,32 @@ exports[`App-view generic tests When component is open 1`] = `
         </div>
       </div>
       <nav
-        className="c9"
+        className="c11"
       >
         <div
-          className="c10"
+          className="c12"
         >
           <div
-            className="c11"
+            className="c13"
           >
             <div
-              className="c12"
+              className="c14"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="c13"
+              className="c15"
             >
               <div
-                className="c14"
-              >
-                <a
-                  className="c15"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c10"
-        >
-          <div
-            className="c11"
-          >
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
-              Components
-            </div>
-            <div
-              className="c16"
-            >
-              <div
-                className="c14"
+                className="c16"
               >
                 <a
                   className="c17"
                   data-vrt-locator="link"
-                  href="#Components-ErrorBoundary"
+                  href="#Structure-Component"
                 >
-                  ErrorBoundary
+                  Component
                 </a>
               </div>
             </div>
@@ -922,25 +2216,35 @@ exports[`App-view generic tests When component is open 1`] = `
 </div>
 `;
 
-exports[`App-view generic tests When filter doesn\`t show components 1`] = `
-.c1 {
+exports[`App-view generic tests When we open component from app 1`] = `
+.c3 {
   overflow-x: hidden;
   width: 300px;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+  -webkit-transform: translate3d(0px,0px,0px);
+  -ms-transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px,0px,0px);
+  will-change: transform;
 }
 
-.c2 {
+.c4 {
   position: fixed;
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
   left: 0;
   bottom: 0;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -960,277 +2264,57 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   padding-top: 16px;
 }
 
-.c4 {
+.c6 {
   width: 32px;
   height: 32px;
   margin-bottom: 4px;
 }
 
-.c8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.c2 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
   width: 24px;
   height: 24px;
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  transition: transform 0.2s cubic-bezier(0.25,1,0.5,1);
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+
+.c2 svg {
   fill: currentColor;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: inherit;
 }
 
-.c8 > svg {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: inherit;
-  width: inherit;
-  max-height: inherit;
-  height: inherit;
-  background: inherit;
-  fill: inherit;
-}
-
-.c5 {
-  position: relative;
-  color: #ccc;
-  padding: 0 12px;
-  margin-bottom: 8px;
-  font-family: sans-serif;
-}
-
-.c5:focus-within {
-  color: #000;
-}
-
-.c6 {
-  background-color: #fff;
-  width: 100%;
-  display: block;
-  font-size: 16px;
-  color: #303030;
-  height: 40px;
-  line-height: 32px;
-  padding: 6px 6px 6px 36px;
-  border: 1px solid #ccc;
-}
-
-.c6:focus {
-  border-color: #000;
-}
-
-.c6::-webkit-input-placeholder {
-  color: #ccc;
+.c1 {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 316px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
   opacity: 1;
 }
 
-.c6:-moz-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-.c6::-moz-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-.c6:-ms-input-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-.c7 {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: inherit;
-}
-
-.c9 {
-  position: relative;
-  font-family: sans-serif;
+.c1 svg {
+  fill: currentColor;
 }
 
 .c10 {
-  padding: 32px;
-  position: relative;
-  width: 100%;
-  background: #fff;
-}
-
-.c11 {
-  padding-top: 32px;
-}
-
-.c12 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 32px;
-  color: #000;
-  font-family: sans-serif;
-  word-break: break-word;
-}
-
-.c13 {
-  font-family: sans-serif;
-  font-size: 16px;
-  color: #a0a0a0;
-  margin-bottom: 16px;
-  max-width: 50%;
-}
-
-.c0 {
-  background: #fff;
-  display: grid;
-  grid-template-columns: 300px auto;
-}
-
-<div
-  className="c0"
->
-  <aside
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="c5"
-      >
-        <input
-          autoComplete="off"
-          className="c6"
-          placeholder="Search component name"
-          type="text"
-          value="g"
-        />
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-            role="presentation"
-            size={0}
-          >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <nav
-        className="c9"
-      />
-    </div>
-  </aside>
-  <main
-    className="c10"
-  >
-    <article
-      className="c11"
-      id="welcome!"
-    >
-      <header
-        className="styleguide-component__header"
-      >
-        <h1
-          className="c12"
-        >
-          Welcome!
-        </h1>
-        <div
-          className="c13"
-        >
-          Style guide is a tool to illustrate, sandbox and test your components.
-        </div>
-      </header>
-    </article>
-  </main>
-</div>
-`;
-
-exports[`App-view generic tests When filter show components 1`] = `
-.c1 {
-  overflow-x: hidden;
-  width: 300px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.c2 {
-  position: fixed;
-  background: #f0f0f0;
-  border-right: 1px solid #f0f0f0;
-  width: inherit;
-  overflow-y: scroll;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 4px;
-  padding-top: 16px;
-}
-
-.c4 {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 4px;
-}
-
-.c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1243,7 +2327,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: inherit;
 }
 
-.c8 > svg {
+.c10 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1256,33 +2340,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   fill: inherit;
 }
 
-.c33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: inherit;
-}
-
-.c33 > svg {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: inherit;
-  width: inherit;
-  max-height: inherit;
-  height: inherit;
-  background: inherit;
-  fill: inherit;
-}
-
-.c5 {
+.c7 {
   position: relative;
   color: #ccc;
   padding: 0 12px;
@@ -1290,11 +2348,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   font-family: sans-serif;
 }
 
-.c5:focus-within {
+.c7:focus-within {
   color: #000;
 }
 
-.c6 {
+.c8 {
   background-color: #fff;
   width: 100%;
   display: block;
@@ -1306,31 +2364,31 @@ exports[`App-view generic tests When filter show components 1`] = `
   border: 1px solid #ccc;
 }
 
-.c6:focus {
+.c8:focus {
   border-color: #000;
 }
 
-.c6::-webkit-input-placeholder {
+.c8::-webkit-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c6:-moz-placeholder {
+.c8:-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c6::-moz-placeholder {
+.c8::-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c6:-ms-input-placeholder {
+.c8:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c7 {
+.c9 {
   position: absolute;
   top: 50%;
   left: 20px;
@@ -1344,714 +2402,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: inherit;
 }
 
-.c11 {
-  display: block;
-}
-
-.c12 {
-  position: relative;
-  display: block;
-  padding: 16px;
-  border-bottom: 1px solid #f0f0f0;
-  background: #fff;
-  color: #000;
-  font-size: 16px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .c13 {
-  padding: 16px;
+  display: block;
 }
 
 .c14 {
-  padding: 8px 16px;
-}
-
-.c15 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #7000e3;
-  font-weight: 600;
-}
-
-.c9 {
-  position: relative;
-  font-family: sans-serif;
-}
-
-.c10 {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.c16 {
-  padding: 32px;
-  position: relative;
-  width: 100%;
-  background: #fff;
-}
-
-.c28 {
-  display: block;
-}
-
-.c29 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  background: #f0f0f0;
-  border-radius: 4px 4px 0 0;
-  color: #000;
-  padding: 0 16px;
-}
-
-.styleguide-sandbox .c29:only-child {
-  border-radius: 4px;
-}
-
-.c30 {
-  margin: 0;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: sans-serif;
-  padding: 16px 0;
-  word-break: break-word;
-}
-
-.c31 {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c32 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #202020;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.1s ease;
-  transition: opacity 0.1s ease;
-  padding: 0 8px;
-}
-
-.c32:hover {
-  opacity: 1;
-}
-
-.c34 {
-  padding: 20px;
-  border: 1px solid #f0f0f0;
-  border-top: 0;
-  box-shadow: 0 -1px 0 0 #f0f0f0;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.c22 {
-  padding-top: 32px;
-}
-
-.c23 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 32px;
-  color: #000;
-  font-family: sans-serif;
-  word-break: break-word;
-}
-
-.c24 {
-  font-family: sans-serif;
-  font-size: 16px;
-  color: #a0a0a0;
-  margin-bottom: 16px;
-  max-width: 50%;
-}
-
-.c25 {
-  margin-top: 16px;
-}
-
-.c27 + .c26 {
-  margin-top: 32px;
-}
-
-.c18 + .c17 {
-  margin-top: 32px;
-}
-
-.c19 {
-  max-width: 960px;
-  min-width: 320px;
-  margin: auto;
-}
-
-.c21 + .c20 {
-  margin-top: 40px;
-}
-
-.c0 {
-  background: #fff;
-  display: grid;
-  grid-template-columns: 300px auto;
-}
-
-<div
-  className="c0"
->
-  <aside
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="c5"
-      >
-        <input
-          autoComplete="off"
-          className="c6"
-          placeholder="Search component name"
-          type="text"
-          value="c"
-        />
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-            role="presentation"
-            size={0}
-          >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <nav
-        className="c9"
-      >
-        <div
-          className="c10"
-        >
-          <div
-            className="c11"
-          >
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
-              Structure
-            </div>
-            <div
-              className="c13"
-            >
-              <div
-                className="c14"
-              >
-                <a
-                  className="c15"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </aside>
-  <main
-    className="c16"
-  >
-    <section
-      className="c17 c18"
-    >
-      <div
-        className="c19"
-      >
-        <div
-          className="c20 c21"
-        >
-          <article
-            className="c22"
-            id="component"
-          >
-            <header
-              className="styleguide-component__header"
-            >
-              <h1
-                className="c23"
-              >
-                Component
-              </h1>
-              <div
-                className="c24"
-              >
-                
-              </div>
-            </header>
-            <div
-              className="c25"
-            >
-              <div
-                className="c26 c27"
-              >
-                <section
-                  className="c28"
-                  data-name="SpecComponentEmpty"
-                  data-vrt-locator="sandbox"
-                >
-                  <header
-                    className="c29"
-                  >
-                    <h1
-                      className="c30"
-                      onClick={[Function]}
-                    >
-                      SpecComponentEmpty
-                    </h1>
-                    <div
-                      className="c31"
-                    >
-                      <span
-                        className="c32"
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c33"
-                          role="presentation"
-                        >
-                          <svg
-                            height="16"
-                            width="16"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                      <span
-                        className="c32"
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c33"
-                          role="presentation"
-                        >
-                          <svg
-                            height="16"
-                            width="16"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                    </div>
-                  </header>
-                  <div
-                    data-vrt-locator="sandbox-content"
-                  >
-                    <div
-                      className="c34"
-                    >
-                      <article
-                        className="c22"
-                      >
-                        <header
-                          className="styleguide-component__header"
-                        >
-                          <h1
-                            className="c23"
-                          />
-                          <div
-                            className="c24"
-                          />
-                        </header>
-                      </article>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div
-                className="c26 c27"
-              >
-                <section
-                  className="c28"
-                  data-name="SpecComponentPropTypes"
-                  data-vrt-locator="sandbox"
-                >
-                  <header
-                    className="c29"
-                  >
-                    <h1
-                      className="c30"
-                      onClick={[Function]}
-                    >
-                      SpecComponentPropTypes
-                    </h1>
-                    <div
-                      className="c31"
-                    >
-                      <span
-                        className="c32"
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c33"
-                          role="presentation"
-                        >
-                          <svg
-                            height="16"
-                            width="16"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                      <span
-                        className="c32"
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c33"
-                          role="presentation"
-                        >
-                          <svg
-                            height="16"
-                            width="16"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                    </div>
-                  </header>
-                  <div
-                    data-vrt-locator="sandbox-content"
-                  >
-                    <div
-                      className="c34"
-                    >
-                      <article
-                        className="c22"
-                      >
-                        <header
-                          className="styleguide-component__header"
-                        >
-                          <h1
-                            className="c23"
-                          />
-                          <div
-                            className="c24"
-                          />
-                        </header>
-                      </article>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div
-                className="c26 c27"
-              >
-                <section
-                  className="c28"
-                  data-name="SpecComponentFull"
-                  data-vrt-locator="sandbox"
-                >
-                  <header
-                    className="c29"
-                  >
-                    <h1
-                      className="c30"
-                      onClick={[Function]}
-                    >
-                      SpecComponentFull
-                    </h1>
-                    <div
-                      className="c31"
-                    >
-                      <span
-                        className="c32"
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c33"
-                          role="presentation"
-                        >
-                          <svg
-                            height="16"
-                            width="16"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M13.444 2H2.556C1.696 2 1 2.696 1 3.556v9.333c0 .859.696 1.555 1.556 1.555h3.11V12.89h-3.11V5.11h10.888v7.778h-3.11v1.555h3.11c.856 0 1.556-.7 1.556-1.555V3.556C15 2.696 14.304 2 13.444 2zM8 6.667l-3.111 3.11h2.333v4.667h1.556V9.778h2.333L8 6.667z"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                      <span
-                        className="c32"
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c33"
-                          role="presentation"
-                        >
-                          <svg
-                            height="16"
-                            width="16"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1 12h3v3h2v-5H1v2zm3-8H1v2h5V1H4v3zm6 11h2v-3h3v-2h-5v5zm2-11V1h-2v5h5V4h-3z"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                    </div>
-                  </header>
-                  <div
-                    data-vrt-locator="sandbox-content"
-                  >
-                    <div
-                      className="c34"
-                    >
-                      <article
-                        className="c22"
-                      >
-                        <header
-                          className="styleguide-component__header"
-                        >
-                          <h1
-                            className="c23"
-                          />
-                          <div
-                            className="c24"
-                          />
-                        </header>
-                      </article>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-</div>
-`;
-
-exports[`App-view generic tests When we open component from app 1`] = `
-.c1 {
-  overflow-x: hidden;
-  width: 300px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.c2 {
-  position: fixed;
-  background: #f0f0f0;
-  border-right: 1px solid #f0f0f0;
-  width: inherit;
-  overflow-y: scroll;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 4px;
-  padding-top: 16px;
-}
-
-.c4 {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 4px;
-}
-
-.c8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: inherit;
-}
-
-.c8 > svg {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: inherit;
-  width: inherit;
-  max-height: inherit;
-  height: inherit;
-  background: inherit;
-  fill: inherit;
-}
-
-.c5 {
-  position: relative;
-  color: #ccc;
-  padding: 0 12px;
-  margin-bottom: 8px;
-  font-family: sans-serif;
-}
-
-.c5:focus-within {
-  color: #000;
-}
-
-.c6 {
-  background-color: #fff;
-  width: 100%;
-  display: block;
-  font-size: 16px;
-  color: #303030;
-  height: 40px;
-  line-height: 32px;
-  padding: 6px 6px 6px 36px;
-  border: 1px solid #ccc;
-}
-
-.c6:focus {
-  border-color: #000;
-}
-
-.c6::-webkit-input-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-.c6:-moz-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-.c6::-moz-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-.c6:-ms-input-placeholder {
-  color: #ccc;
-  opacity: 1;
-}
-
-.c7 {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: inherit;
-}
-
-.c11 {
-  display: block;
-}
-
-.c12 {
   position: relative;
   display: block;
   padding: 16px;
@@ -2066,45 +2421,54 @@ exports[`App-view generic tests When we open component from app 1`] = `
   user-select: none;
 }
 
-.c13 {
+.c15 {
   padding: 16px;
   display: none;
 }
 
-.c14 {
+.c16 {
   padding: 8px 16px;
 }
 
-.c15 {
+.c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #666;
 }
 
-.c9 {
+.c11 {
   position: relative;
   font-family: sans-serif;
 }
 
-.c10 {
+.c12 {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c16 {
+.c18 {
   padding: 32px;
   position: relative;
   width: 100%;
   background: #fff;
+  -webkit-transition: -webkit-transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  -webkit-transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
+  transition: transform 0.2s 0.05s cubic-bezier(0.87,0,0.13,1);
 }
 
-.c17 {
+.c18.is-expanded {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
+}
+
+.c19 {
   padding-top: 32px;
 }
 
-.c18 {
+.c20 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 32px;
@@ -2113,7 +2477,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   word-break: break-word;
 }
 
-.c19 {
+.c21 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -2130,17 +2494,45 @@ exports[`App-view generic tests When we open component from app 1`] = `
 <div
   className="c0"
 >
-  <aside
+  <div
     className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
+  <aside
+    className="c3"
   >
     <div
-      className="c2"
+      className="c4"
     >
       <div
-        className="c3"
+        className="c5"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <svg
             viewBox="0 0 44 44"
@@ -2160,20 +2552,20 @@ exports[`App-view generic tests When we open component from app 1`] = `
         </div>
       </div>
       <div
-        className="c5"
+        className="c7"
       >
         <input
           autoComplete="off"
-          className="c6"
+          className="c8"
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="c7"
+          className="c9"
         >
           <div
-            className="c8"
+            className="c10"
             role="presentation"
             size={0}
           >
@@ -2190,28 +2582,28 @@ exports[`App-view generic tests When we open component from app 1`] = `
         </div>
       </div>
       <nav
-        className="c9"
+        className="c11"
       >
         <div
-          className="c10"
+          className="c12"
         >
           <div
-            className="c11"
+            className="c13"
           >
             <div
-              className="c12"
+              className="c14"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="c13"
+              className="c15"
             >
               <div
-                className="c14"
+                className="c16"
               >
                 <a
-                  className="c15"
+                  className="c17"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -2222,25 +2614,25 @@ exports[`App-view generic tests When we open component from app 1`] = `
           </div>
         </div>
         <div
-          className="c10"
+          className="c12"
         >
           <div
-            className="c11"
+            className="c13"
           >
             <div
-              className="c12"
+              className="c14"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="c13"
+              className="c15"
             >
               <div
-                className="c14"
+                className="c16"
               >
                 <a
-                  className="c15"
+                  className="c17"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -2254,22 +2646,22 @@ exports[`App-view generic tests When we open component from app 1`] = `
     </div>
   </aside>
   <main
-    className="c16"
+    className="c18"
   >
     <article
-      className="c17"
+      className="c19"
       id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="c18"
+          className="c20"
         >
           Welcome!
         </h1>
         <div
-          className="c19"
+          className="c21"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

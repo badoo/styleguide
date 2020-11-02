@@ -17,15 +17,24 @@ class AppView extends React.Component {
         this.state = {
             component: null,
             sections: [],
+            isSidebarVisible: true,
         };
 
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
         this.checkCurrentSection = this.checkCurrentSection.bind(this);
+        this.handleSidebarToggleClick = this.handleSidebarToggleClick.bind(this);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
     }
 
     componentDidMount() {
         this.checkCurrentSection();
         this.checkDisplayedComponent();
+
+        window.addEventListener('keyup', this.handleKeyDown);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('keyup', this.handleKeyDown);
     }
 
     componentDidUpdate(prevProps) {
@@ -45,7 +54,10 @@ class AppView extends React.Component {
         return (
             <AppViewComponent>
                 <AppViewGlobalStyles />
-                <Sidebar>
+                <Sidebar
+                    isVisible={this.state.isSidebarVisible}
+                    onClickToggle={this.handleSidebarToggleClick}
+                >
                     <SearchField
                         value={this.props.searchQuery}
                         onChange={this.props.onSearchFieldChange}
@@ -56,7 +68,7 @@ class AppView extends React.Component {
                         sections={this.state.sections}
                     />
                 </Sidebar>
-                <Content>
+                <Content isExpanded={!this.state.isSidebarVisible}>
                     {this.state.component ? (
                         <Section content={this.state.component} />
                     ) : (
@@ -70,6 +82,16 @@ class AppView extends React.Component {
                 </Content>
             </AppViewComponent>
         );
+    }
+
+    setSidebarVisibility() {
+        this.setState(state => ({ isSidebarVisible: !state.isSidebarVisible }));
+    }
+
+    handleKeyDown(event) {
+        if (event.keyCode === 83) {
+            this.setSidebarVisibility();
+        }
     }
 
     checkCurrentSection() {
@@ -89,6 +111,10 @@ class AppView extends React.Component {
         this.setState({
             component,
         });
+    }
+
+    handleSidebarToggleClick() {
+        this.setSidebarVisibility();
     }
 }
 
