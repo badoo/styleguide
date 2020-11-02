@@ -24,6 +24,10 @@ const SectionContent = styled.div`
     @media screen and (max-width: 375px) {
         min-width: auto;
     }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
+    }
 `;
 
 const SectionComponent = styled.div`
