@@ -33,10 +33,10 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-AxjAm hUkwvx"
+    className="sc-AxjAm kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="sc-AxirZ fWWTBP"
     >
       <div
         className="sc-AxiKw bcuorQ"
@@ -215,10 +215,10 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-AxjAm hUkwvx"
+    className="sc-AxjAm kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="sc-AxirZ fWWTBP"
     >
       <div
         className="sc-AxiKw bcuorQ"
@@ -397,10 +397,10 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-AxjAm hUkwvx"
+    className="sc-AxjAm kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="sc-AxirZ fWWTBP"
     >
       <div
         className="sc-AxiKw bcuorQ"
@@ -520,10 +520,10 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-AxjAm hUkwvx"
+    className="sc-AxjAm kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="sc-AxirZ fWWTBP"
     >
       <div
         className="sc-AxiKw bcuorQ"
@@ -673,10 +673,10 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-AxjAm hUkwvx"
+    className="sc-AxjAm kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="sc-AxirZ fWWTBP"
     >
       <div
         className="sc-AxiKw bcuorQ"
@@ -855,10 +855,10 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-AxjAm hUkwvx"
+    className="sc-AxjAm kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="sc-AxirZ fWWTBP"
     >
       <div
         className="sc-AxiKw bcuorQ"
@@ -1037,10 +1037,10 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-AxjAm hUkwvx"
+    className="sc-AxjAm kJUjIp"
   >
     <div
-      className="sc-AxirZ iluSoF"
+      className="sc-AxirZ fWWTBP"
     >
       <div
         className="sc-AxiKw bcuorQ"

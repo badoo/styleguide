@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const SidebarBlock = styled.aside`
     overflow-x: hidden;
     width: 300px;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
     transition-delay: ${props => (props.isVisible ? '.2s' : '0s')};
@@ -17,7 +18,7 @@ const SidebarContent = styled.div`
     background: #f0f0f0;
     border-right: 1px solid #f0f0f0;
     width: inherit;
-    overflow-y: scroll;
+    overflow-y: auto;
     top: 0;
     left: 0;
     bottom: 0;

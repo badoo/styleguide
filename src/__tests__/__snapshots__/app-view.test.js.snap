@@ -33,10 +33,10 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="hUkwvx"
+    className="kJUjIp"
   >
     <div
-      className="iluSoF"
+      className="fWWTBP"
     >
       <div
         className="bcuorQ"
@@ -185,6 +185,7 @@ exports[`App-view generic tests When component is open 1`] = `
 .c3 {
   overflow-x: hidden;
   width: 300px;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
@@ -202,7 +203,7 @@ exports[`App-view generic tests When component is open 1`] = `
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1044,6 +1045,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
 .c3 {
   overflow-x: hidden;
   width: 300px;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
@@ -1061,7 +1063,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1398,6 +1400,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 .c3 {
   overflow-x: hidden;
   width: 300px;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
@@ -1415,7 +1418,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
   left: 0;
   bottom: 0;
@@ -2217,6 +2220,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
 .c3 {
   overflow-x: hidden;
   width: 300px;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87,0,0.13,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.87,0,0.13,1);
@@ -2234,7 +2238,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
   left: 0;
   bottom: 0;
