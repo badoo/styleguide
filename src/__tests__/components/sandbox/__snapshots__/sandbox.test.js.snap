@@ -211,7 +211,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c2 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -222,7 +222,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c7 {
     padding-top: 16px;
   }
@@ -797,7 +797,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c2 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -808,7 +808,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c7 {
     padding-top: 16px;
   }
@@ -1383,7 +1383,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c2 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -1394,7 +1394,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c7 {
     padding-top: 16px;
   }
@@ -1969,7 +1969,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c2 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -1980,7 +1980,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c7 {
     padding-top: 16px;
   }

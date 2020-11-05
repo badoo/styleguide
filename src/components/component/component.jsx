@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Sandbox from '../sandbox/sandbox';
 import config from '__GLOBAL__CONFIG__';
+import { deviceSizes } from '../../utilities';
 
 export const actionBeforeRenderHandler = () =>
     config && config.actionOnRender ? config.actionOnRender() : null;
@@ -10,7 +11,7 @@ export const actionBeforeRenderHandler = () =>
 const ComponentBlock = styled.article`
     padding-top: 32px;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: ${deviceSizes.phone}px) {
         padding-top: 16px;
     }
 `;
@@ -123,7 +124,7 @@ const ComponentPropsHandler = styled.span`
 const ComponentPropsData = styled.div`
     margin-bottom: 32px;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: ${deviceSizes.phone}px) {
         overflow-x: scroll;
     }
 `;

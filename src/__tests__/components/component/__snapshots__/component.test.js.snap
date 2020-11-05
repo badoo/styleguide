@@ -211,7 +211,7 @@ exports[`Component generic tests: When component has one test with no element to
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c11 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -222,7 +222,7 @@ exports[`Component generic tests: When component has one test with no element to
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
   }
@@ -550,7 +550,7 @@ exports[`Component generic tests: When component has one test with no valid reac
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c11 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -561,7 +561,7 @@ exports[`Component generic tests: When component has one test with no valid reac
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
   }
@@ -781,13 +781,13 @@ exports[`Component generic tests: When component has only props - show props tab
   margin-bottom: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c6 {
     overflow-x: scroll;
   }
@@ -972,7 +972,7 @@ exports[`Component generic tests: When component has only props 1`] = `
   content: '+';
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
   }
@@ -1148,7 +1148,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c8 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -1159,7 +1159,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
   }
@@ -1653,7 +1653,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   margin-top: 32px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c11 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -1664,7 +1664,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
   }

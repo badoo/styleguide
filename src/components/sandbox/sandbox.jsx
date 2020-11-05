@@ -4,6 +4,7 @@ import config from '__GLOBAL__CONFIG__';
 import Dialog from '../dialog/dialog';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Icon, { IconName } from '../icon/icon';
+import { deviceSizes } from '../../utilities';
 
 const SandboxBlock = styled.section`
     display: block;
@@ -32,7 +33,7 @@ const SandboxTitle = styled.h1`
     padding: 16px 0;
     word-break: break-word;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: ${deviceSizes.phone}px) {
         flex: 1 1 auto;
         overflow: hidden;
         text-overflow: ellipsis;
