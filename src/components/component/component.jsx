@@ -136,6 +136,7 @@ function getUniqueTests(tests) {
             item.name === list[index - 1].name && item.Component === list[index - 1].Component;
 
         if (testsAreEqual) {
+            // eslint-disable-next-line no-console
             console.log(`WARNING: ${item.name} has clone tests, please, check your codebase`);
         }
 
