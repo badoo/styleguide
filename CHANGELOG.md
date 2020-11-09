@@ -27,7 +27,6 @@
 
 * Add support for digits in regexp for `getSections` function.
 
-
 ## v0.0.77
 
 * Update dependencies.
