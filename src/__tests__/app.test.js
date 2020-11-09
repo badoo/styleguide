@@ -1,5 +1,7 @@
 import React from 'react';
 import { create, act } from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import { axe } from 'jest-axe';
 import App from '../app';
 import AppProps from './app-view.mockup.json';
 
@@ -168,5 +170,13 @@ describe('App search tests', () => {
         });
 
         expect(root.toJSON()).toMatchSnapshot();
+    });
+});
+
+describe('App accessability tests', () => {
+    it('should not fail any accessibility tests', async () => {
+        const { container } = render(<App sections={JSON.parse(AppProps.openApp).sections} />);
+
+        expect(await axe(container)).toHaveNoViolations();
     });
 });
