@@ -2,7 +2,8 @@
 
 ## v0.0.83
 
-* **Attention**: possible breaking change - `id` in `Section` now is `data-id`.
+* Updated `react-docgen`
+* **Attention**: Added possible breaking change - `id` in `Section` now is `data-id`.
 * Added toggle function for sidebar.
 * Added active state for navigation section.
 
