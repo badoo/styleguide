@@ -161,7 +161,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -343,7 +343,7 @@ exports[`App generic tests When app is open 1`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -466,7 +466,7 @@ exports[`App generic tests When app receive no sections 1`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -619,7 +619,7 @@ exports[`App search tests When we clear search request 1`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -801,7 +801,7 @@ exports[`App search tests When we clear search request 2`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -983,7 +983,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -1136,7 +1136,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"

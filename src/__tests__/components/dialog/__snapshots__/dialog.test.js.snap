@@ -325,7 +325,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
   >
     <article
       className="c6"
-      id="component"
+      data-id="component"
     >
       <header
         className="styleguide-component__header"

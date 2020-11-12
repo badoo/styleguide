@@ -213,7 +213,7 @@ exports[`Component generic tests: When component has one test with no element to
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -535,7 +535,7 @@ exports[`Component generic tests: When component has one test with no valid reac
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -749,7 +749,7 @@ exports[`Component generic tests: When component has only props - show props tab
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -928,7 +928,7 @@ exports[`Component generic tests: When component has only props 1`] = `
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -1098,7 +1098,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -1586,7 +1586,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"

@@ -276,7 +276,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
     >
       <article
         className="c7"
-        id="component"
+        data-id="component"
       >
         <header
           className="styleguide-component__header"
@@ -845,7 +845,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
     >
       <article
         className="c7"
-        id="component"
+        data-id="component"
       >
         <header
           className="styleguide-component__header"
@@ -1414,7 +1414,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
     >
       <article
         className="c7"
-        id="component"
+        data-id="component"
       >
         <header
           className="styleguide-component__header"
@@ -1983,7 +1983,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
     >
       <article
         className="c7"
-        id="component"
+        data-id="component"
       >
         <header
           className="styleguide-component__header"

@@ -160,7 +160,7 @@ exports[`App-view generic tests When app is open 1`] = `
   >
     <article
       className="sc-fznMAR dEUWaB"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -761,7 +761,7 @@ exports[`App-view generic tests When component is open 1`] = `
         >
           <article
             className="c26"
-            id="component"
+            data-id="component"
           >
             <header
               className="styleguide-component__header"
@@ -1375,7 +1375,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   >
     <article
       className="c13"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
@@ -1936,7 +1936,7 @@ exports[`App-view generic tests When filter show components 1`] = `
         >
           <article
             className="c24"
-            id="component"
+            data-id="component"
           >
             <header
               className="styleguide-component__header"
@@ -2650,7 +2650,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   >
     <article
       className="c19"
-      id="welcome!"
+      data-id="welcome!"
     >
       <header
         className="styleguide-component__header"

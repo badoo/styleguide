@@ -167,7 +167,7 @@ class Component extends React.Component {
         const testList = tests && tests.length ? getUniqueTests(tests) : tests;
 
         return (
-            <ComponentBlock id={id}>
+            <ComponentBlock data-id={id}>
                 <header className="styleguide-component__header">
                     <ComponentTitle>{name}</ComponentTitle>
                     <ComponentDescription>{description}</ComponentDescription>
