@@ -239,6 +239,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
     <h1
       className="c2"
       onClick={[Function]}
+      title="SpecComponentEmpty"
     >
       SpecComponentEmpty
     </h1>
@@ -341,6 +342,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentEmpty"
                 >
                   SpecComponentEmpty
                 </h1>
@@ -425,6 +427,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentPropTypes"
                 >
                   SpecComponentPropTypes
                 </h1>
@@ -509,6 +512,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentFull"
                 >
                   SpecComponentFull
                 </h1>
@@ -825,6 +829,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
     <h1
       className="c2"
       onClick={[Function]}
+      title="SpecComponentEmpty"
     >
       SpecComponentEmpty
     </h1>
@@ -927,6 +932,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentEmpty"
                 >
                   SpecComponentEmpty
                 </h1>
@@ -1011,6 +1017,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentPropTypes"
                 >
                   SpecComponentPropTypes
                 </h1>
@@ -1095,6 +1102,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentFull"
                 >
                   SpecComponentFull
                 </h1>
@@ -1411,6 +1419,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
     <h1
       className="c2"
       onClick={[Function]}
+      title="SpecComponentEmpty"
     >
       SpecComponentEmpty
     </h1>
@@ -1513,6 +1522,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentEmpty"
                 >
                   SpecComponentEmpty
                 </h1>
@@ -1597,6 +1607,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentPropTypes"
                 >
                   SpecComponentPropTypes
                 </h1>
@@ -1681,6 +1692,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentFull"
                 >
                   SpecComponentFull
                 </h1>
@@ -1997,6 +2009,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
     <h1
       className="c2"
       onClick={[Function]}
+      title="empty"
     >
       empty
     </h1>
@@ -2099,6 +2112,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentEmpty"
                 >
                   SpecComponentEmpty
                 </h1>
@@ -2183,6 +2197,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentPropTypes"
                 >
                   SpecComponentPropTypes
                 </h1>
@@ -2267,6 +2282,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
                 <h1
                   className="c2"
                   onClick={[Function]}
+                  title="SpecComponentFull"
                 >
                   SpecComponentFull
                 </h1>

@@ -278,6 +278,7 @@ exports[`Component generic tests: When component has one test with no element to
           <h1
             className="c11"
             onClick={[Function]}
+            title="testEmpty"
           >
             testEmpty
           </h1>
@@ -617,6 +618,7 @@ exports[`Component generic tests: When component has one test with no valid reac
           <h1
             className="c11"
             onClick={[Function]}
+            title="TestWithWrongComponent"
           >
             TestWithWrongComponent
           </h1>
@@ -1200,6 +1202,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentEmpty"
           >
             SpecComponentEmpty
           </h1>
@@ -1284,6 +1287,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentPropTypes"
           >
             SpecComponentPropTypes
           </h1>
@@ -1368,6 +1372,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentFull"
           >
             SpecComponentFull
           </h1>
@@ -1720,6 +1725,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentEmpty"
           >
             SpecComponentEmpty
           </h1>
@@ -1804,6 +1810,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentPropTypes"
           >
             SpecComponentPropTypes
           </h1>
@@ -1888,6 +1895,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentFull"
           >
             SpecComponentFull
           </h1>

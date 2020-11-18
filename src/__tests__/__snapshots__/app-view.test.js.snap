@@ -803,6 +803,7 @@ exports[`App-view generic tests When component is open 1`] = `
                       <span
                         className="c36"
                         onClick={[Function]}
+                        title="SpecComponentEmpty"
                       >
                         <div
                           className="c37"
@@ -887,6 +888,7 @@ exports[`App-view generic tests When component is open 1`] = `
                       <span
                         className="c36"
                         onClick={[Function]}
+                        title="SpecComponentPropTypes"
                       >
                         <div
                           className="c37"
@@ -971,6 +973,7 @@ exports[`App-view generic tests When component is open 1`] = `
                       <span
                         className="c36"
                         onClick={[Function]}
+                        title="SpecComponentFull"
                       >
                         <div
                           className="c37"
@@ -1978,6 +1981,7 @@ exports[`App-view generic tests When filter show components 1`] = `
                       <span
                         className="c34"
                         onClick={[Function]}
+                        title="SpecComponentEmpty"
                       >
                         <div
                           className="c35"
@@ -2062,6 +2066,7 @@ exports[`App-view generic tests When filter show components 1`] = `
                       <span
                         className="c34"
                         onClick={[Function]}
+                        title="SpecComponentPropTypes"
                       >
                         <div
                           className="c35"
@@ -2146,6 +2151,7 @@ exports[`App-view generic tests When filter show components 1`] = `
                       <span
                         className="c34"
                         onClick={[Function]}
+                        title="SpecComponentFull"
                       >
                         <div
                           className="c35"

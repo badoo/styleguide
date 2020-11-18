@@ -1,8 +1,8 @@
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import GlobalStyles from './app-global-styles';
 import Sidebar from '../sidebar/sidebar';
-import SidebarVisibilityToggler from '../sidebar/toggler';
+import SidebarVisibilityToggler from '../sidebar/sidebar-toggler';
 import { checkMobileScreen, deviceSizes } from '../../utilities';
 
 const SIDEBAR_WIDTH = 300;
@@ -51,29 +51,29 @@ const AppViewBlock = styled.div`
     }
 `;
 
+export const handleKeyDown = ({ event, isDeviceViewport, setSidebarVisible }) => {
+    if (isDeviceViewport) return;
+
+    if (event.keyCode === 83) {
+        setSidebarVisible(state => !state);
+    }
+};
+
+export const handleScreenResize = ({ setDeviceViewport }) => {
+    const isDeviceScreen = checkMobileScreen();
+
+    setDeviceViewport(isDeviceScreen);
+};
+
+export const handleHashChange = ({ isDeviceViewport, setSidebarVisible }) => {
+    if (!isDeviceViewport) return;
+
+    setSidebarVisible(state => !state);
+};
+
 const AppView = props => {
     const [isSidebarVisible, setSidebarVisible] = React.useState(true);
     const [isDeviceViewport, setDeviceViewport] = React.useState(() => checkMobileScreen());
-
-    const handleKeyDown = event => {
-        if (isDeviceViewport) return;
-
-        if (event.keyCode === 83) {
-            setSidebarVisible(state => !state);
-        }
-    };
-
-    const handleScreenResize = () => {
-        const isDeviceScreen = checkMobileScreen();
-
-        setDeviceViewport(isDeviceScreen);
-    };
-
-    const handleHashChange = () => {
-        if (!isDeviceViewport) return;
-
-        setSidebarVisible(state => !state);
-    };
 
     React.useEffect(() => {
         document.addEventListener('keyup', handleKeyDown);
@@ -85,8 +85,8 @@ const AppView = props => {
         }
 
         return () => {
-            window.removeEventListener('resize', handleScreenResize);
             document.removeEventListener('keyup', handleKeyDown);
+            window.removeEventListener('resize', handleScreenResize);
             window.removeEventListener('hashchange', handleHashChange);
         };
     }, []);

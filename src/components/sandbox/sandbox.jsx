@@ -108,7 +108,9 @@ class Sandbox extends React.Component {
         return (
             <SandboxBlock data-vrt-locator={'sandbox'} data-name={title}>
                 <SandboxHeader>
-                    <SandboxTitle onClick={this.toggleContentVisibility}>{title}</SandboxTitle>
+                    <SandboxTitle title={title} onClick={this.toggleContentVisibility}>
+                        {title}
+                    </SandboxTitle>
                     <SandboxControls>
                         <SandboxControl onClick={this.toggleContentVisibility}>
                             {mapVisibilityIconToState[this.state.isContentVisible]}

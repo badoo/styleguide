@@ -390,6 +390,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               <h1
                 className="c17"
                 onClick={[Function]}
+                title="SpecComponentEmpty"
               >
                 SpecComponentEmpty
               </h1>
@@ -474,6 +475,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               <h1
                 className="c17"
                 onClick={[Function]}
+                title="SpecComponentPropTypes"
               >
                 SpecComponentPropTypes
               </h1>
@@ -558,6 +560,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               <h1
                 className="c17"
                 onClick={[Function]}
+                title="SpecComponentFull"
               >
                 SpecComponentFull
               </h1>
