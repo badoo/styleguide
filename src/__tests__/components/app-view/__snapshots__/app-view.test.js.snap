@@ -1,0 +1,643 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppView tests: AppView mobile viewport 1`] = `
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+.c6 {
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+  overflow-y: auto;
+  min-height: 100%;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  padding-top: 16px;
+}
+
+.c8 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 316px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  min-height: 100vh;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  will-change: transform;
+}
+
+.c10 {
+  min-width: 0;
+  padding: 32px;
+  position: relative;
+  background: #fff;
+  width: calc(100% - 300px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: transform;
+}
+
+.c0 {
+  background: #fff;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c0 .c9 {
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c9 {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <aside
+    className="c3 c4 c5"
+  >
+    <div
+      className="c6"
+    >
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main
+    className="c9 c10"
+  />
+</div>
+`;
+
+exports[`AppView tests: AppView render 1`] = `
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+.c6 {
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+  overflow-y: auto;
+  min-height: 100%;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  padding-top: 16px;
+}
+
+.c8 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 316px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  min-height: 100vh;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  will-change: transform;
+}
+
+.c10 {
+  min-width: 0;
+  padding: 32px;
+  position: relative;
+  background: #fff;
+  width: calc(100% - 300px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: transform;
+}
+
+.c0 {
+  background: #fff;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c0 .c9 {
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c9 {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <aside
+    className="c3 c4 c5"
+  >
+    <div
+      className="c6"
+    >
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main
+    className="c9 c10"
+  />
+</div>
+`;
+
+exports[`AppView tests: AppView sidebar closed 1`] = `
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+.c6 {
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+  overflow-y: auto;
+  min-height: 100%;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  padding-top: 16px;
+}
+
+.c8 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 316px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  min-height: 100vh;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  will-change: transform;
+}
+
+.c10 {
+  min-width: 0;
+  padding: 32px;
+  position: relative;
+  background: #fff;
+  width: calc(100% - 300px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: transform;
+}
+
+.c0 {
+  background: #fff;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c0 .c9 {
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c9 {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      id="open"
+      viewBox="0 0 20 15"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+      />
+    </svg>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      id="close"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
+      />
+    </svg>
+  </div>
+  <aside
+    className="c3 c4 c5"
+  >
+    <div
+      className="c6"
+    >
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          <svg
+            viewBox="0 0 44 44"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="#7000E3"
+              height="44"
+              rx="3.9"
+              width="44"
+            />
+            <path
+              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+              fill="#FF671B"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main
+    className="c9 c10"
+  />
+</div>
+`;
