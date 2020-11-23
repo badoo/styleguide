@@ -1,7 +1,6 @@
-export const checkMobileScreen = () => {
-    const userAgent = typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
-    const isTabletViewport = window.innerWidth < deviceSizes.tablet;
-
+export const checkMobileScreen = target => {
+    const userAgent = typeof target.navigator === 'undefined' ? '' : navigator.userAgent;
+    const isTabletViewport = target.innerWidth < deviceSizes.tablet;
     const isMobileDevice = Boolean(
         userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i)
     );

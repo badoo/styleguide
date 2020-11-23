@@ -6,6 +6,9 @@ import SidebarVisibilityToggler from '../sidebar/sidebar-toggler';
 import { checkMobileScreen, deviceSizes } from '../../utilities';
 
 const SIDEBAR_WIDTH = 300;
+const KEYCODES = {
+    S: 83,
+};
 
 const AppSidebar = styled(Sidebar)`
     min-height: 100vh;
@@ -51,66 +54,96 @@ const AppViewBlock = styled.div`
     }
 `;
 
-export const handleKeyDown = ({ event, isDeviceViewport, setSidebarVisible }) => {
-    if (isDeviceViewport) return;
+class AppView extends React.Component {
+    constructor(props) {
+        super(props);
 
-    if (event.keyCode === 83) {
-        setSidebarVisible(state => !state);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
+        this.handleScreenResize = this.handleScreenResize.bind(this);
+        this.handleHashChange = this.handleHashChange.bind(this);
+        this.setSidebarVisible = this.setSidebarVisible.bind(this);
+        this.state = {
+            sidebarOpened: true,
+            deviceViewport: false,
+        };
     }
-};
 
-export const handleScreenResize = ({ setDeviceViewport }) => {
-    const isDeviceScreen = checkMobileScreen();
+    componentDidUpdate(prevProps, prevState) {
+        if (prevState.deviceViewport !== this.state.deviceViewport) {
+            this.setSidebarVisible(!this.state.deviceViewport);
+        }
+    }
 
-    setDeviceViewport(isDeviceScreen);
-};
+    componentDidMount() {
+        document.addEventListener('keyup', this.handleKeyDown);
+        window.addEventListener('resize', this.handleScreenResize);
+        window.addEventListener('hashchange', this.handleHashChange);
+    }
 
-export const handleHashChange = ({ isDeviceViewport, setSidebarVisible }) => {
-    if (!isDeviceViewport) return;
+    componentWillUnmount() {
+        document.removeEventListener('keyup', this.handleKeyDown);
+        window.removeEventListener('resize', this.handleScreenResize);
+        window.removeEventListener('hashchange', this.handleHashChange);
+    }
 
-    setSidebarVisible(state => !state);
-};
+    setDeviceViewport(value) {
+        this.setState({ deviceViewport: value });
+    }
 
-const AppView = props => {
-    const [isSidebarVisible, setSidebarVisible] = React.useState(true);
-    const [isDeviceViewport, setDeviceViewport] = React.useState(() => checkMobileScreen());
-
-    React.useEffect(() => {
-        document.addEventListener('keyup', handleKeyDown);
-        window.addEventListener('resize', handleScreenResize);
-        window.addEventListener('hashchange', handleHashChange);
-
-        if (isDeviceViewport) {
-            setSidebarVisible(false);
+    setSidebarVisible(value) {
+        if (typeof value === 'undefined') {
+            this.setState({ sidebarOpened: !this.state.sidebarOpened });
+            return;
         }
 
-        return () => {
-            document.removeEventListener('keyup', handleKeyDown);
-            window.removeEventListener('resize', handleScreenResize);
-            window.removeEventListener('hashchange', handleHashChange);
-        };
-    }, []);
+        this.setState({ sidebarOpened: value });
+    }
 
-    return (
-        <AppViewBlock isDeviceViewport={isDeviceViewport} isSidebarVisible={isSidebarVisible}>
-            <GlobalStyles />
+    handleKeyDown(event) {
+        if (this.state.deviceViewport) return;
 
-            <SidebarVisibilityToggler
-                isVisible={isSidebarVisible}
-                isMobile={isDeviceViewport}
-                onClick={() => {
-                    setSidebarVisible(!isSidebarVisible);
-                }}
-            />
-            <AppSidebar>
-                {props.searchField}
+        if (event.keyCode === KEYCODES['S']) {
+            this.setSidebarVisible();
+        }
+    }
 
-                {props.navigation}
-            </AppSidebar>
+    handleScreenResize(event) {
+        const isDeviceScreen = checkMobileScreen(event.target);
 
-            <Content>{props.content}</Content>
-        </AppViewBlock>
-    );
-};
+        this.setDeviceViewport(isDeviceScreen);
+    }
+
+    handleHashChange() {
+        if (!this.state.isDeviceViewport) return;
+
+        this.setSidebarVisible();
+    }
+
+    render() {
+        return (
+            <AppViewBlock
+                isDeviceViewport={this.state.deviceViewport}
+                isSidebarVisible={this.state.sidebarOpened}
+            >
+                <GlobalStyles />
+
+                <SidebarVisibilityToggler
+                    isVisible={this.state.sidebarOpened}
+                    isMobile={this.state.deviceViewport}
+                    onClick={() => {
+                        this.setSidebarVisible(!this.state.sidebarOpened);
+                    }}
+                />
+                <AppSidebar>
+                    {this.props.searchField}
+
+                    {this.props.navigation}
+                </AppSidebar>
+
+                <Content>{this.props.content}</Content>
+            </AppViewBlock>
+        );
+    }
+}
 
 export default AppView;
