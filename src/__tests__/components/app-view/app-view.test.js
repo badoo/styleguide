@@ -26,7 +26,7 @@ describe('AppView tests:', () => {
         expect(instance.state.sidebarOpened).toBe(false);
     });
 
-    it('AppView sidebar handleKeyDown', () => {
+    it('AppView handleKeyDown test', () => {
         let root;
 
         act(() => {
@@ -50,8 +50,9 @@ describe('AppView tests:', () => {
         expect(root.toJSON()).toMatchSnapshot();
     });
 
-    it('AppView sidebar handleScreenResize', () => {
+    it('AppView handleScreenResize test', () => {
         let root;
+
         act(() => {
             root = create(<AppView />);
         });
@@ -70,6 +71,6 @@ describe('AppView tests:', () => {
             instance.handleScreenResize(event);
         });
 
-        expect(root.toJSON()).toMatchSnapshot();
+        expect(root.getInstance().state.deviceViewport).toBe(true);
     });
 });

@@ -113,10 +113,10 @@ class AppView extends React.Component {
         this.setDeviceViewport(isDeviceScreen);
     }
 
-    handleHashChange() {
-        if (!this.state.isDeviceViewport) return;
+    handleHashChange(event) {
+        if (!this.state.deviceViewport) return;
 
-        this.setSidebarVisible();
+        this.setSidebarVisible(false);
     }
 
     render() {
