@@ -50,7 +50,7 @@ describe('AppView tests:', () => {
         expect(root.toJSON()).toMatchSnapshot();
     });
 
-    it('AppView handleScreenResize test', () => {
+    it('AppView handleScreenResize test. Sidebar should be closed when mobile detect', () => {
         let root;
 
         act(() => {
@@ -72,5 +72,49 @@ describe('AppView tests:', () => {
         });
 
         expect(root.getInstance().state.deviceViewport).toBe(true);
+        expect(root.getInstance().state.sidebarOpened).toBe(false);
+    });
+
+    it('AppView sidebar should be closed when hash changed while mobile detected', () => {
+        let root;
+
+        act(() => {
+            root = create(<AppView />);
+        });
+
+        act(() => {
+            root.update(<AppView />);
+            const event = {
+                target: {
+                    navigator: {
+                        userAgent:
+                            'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+                    },
+                },
+            };
+            let instance = root.getInstance();
+            instance.handleScreenResize(event);
+        });
+
+        act(() => {
+            root.update(<AppView />);
+            let instance = root.getInstance();
+            instance.setSidebarVisible(true);
+        });
+
+        act(() => {
+            root.update(<AppView />);
+            const event = {
+                target: {
+                    location: {
+                        hash: '#Structure-Component',
+                    },
+                },
+            };
+            let instance = root.getInstance();
+            instance.handleHashChange(event);
+        });
+
+        expect(root.getInstance().state.sidebarOpened).toBe(false);
     });
 });
