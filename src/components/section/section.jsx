@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import config from '__GLOBAL__CONFIG__';
 import Component from '../component/component';
+import { deviceSizes } from '../../utilities';
 
 export const setWidth = value => (typeof value === 'number' ? `${value}px` : value);
 
@@ -20,6 +21,14 @@ const SectionContent = styled.div`
         ? setWidth(config.sandboxMinWidth)
         : '320px'};
     margin: auto;
+
+    @media screen and (max-width: ${deviceSizes.phone}px) {
+        min-width: auto;
+    }
+
+    @media screen and (min-width: ${deviceSizes.desktopHd}px) {
+        max-width: 1440px;
+    }
 `;
 
 const SectionComponent = styled.div`

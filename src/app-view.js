@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Sidebar from './components/sidebar/sidebar';
 import SearchField from './components/search-field/search-field';
 import Navigation from './components/navigation/navigation';
 import Content from './components/content/content';
 import Section from './components/section/section';
 import Component from './components/component/component';
 import AppViewComponent from '././components/app-view/app-view';
-import AppViewGlobalStyles from './app-global-styles';
 
 class AppView extends React.Component {
     constructor(props) {
@@ -17,24 +15,16 @@ class AppView extends React.Component {
         this.state = {
             component: null,
             sections: [],
-            isSidebarVisible: true,
         };
 
+        this.searchFieldRef = React.createRef();
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
         this.checkCurrentSection = this.checkCurrentSection.bind(this);
-        this.handleSidebarToggleClick = this.handleSidebarToggleClick.bind(this);
-        this.handleKeyDown = this.handleKeyDown.bind(this);
     }
 
     componentDidMount() {
         this.checkCurrentSection();
         this.checkDisplayedComponent();
-
-        window.addEventListener('keyup', this.handleKeyDown);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('keyup', this.handleKeyDown);
     }
 
     componentDidUpdate(prevProps) {
@@ -52,46 +42,34 @@ class AppView extends React.Component {
 
     render() {
         return (
-            <AppViewComponent>
-                <AppViewGlobalStyles />
-                <Sidebar
-                    isVisible={this.state.isSidebarVisible}
-                    onClickToggle={this.handleSidebarToggleClick}
-                >
+            <AppViewComponent
+                searchField={
                     <SearchField
                         value={this.props.searchQuery}
                         onChange={this.props.onSearchFieldChange}
                     />
+                }
+                navigation={
                     <Navigation
                         expandAll={!!this.props.searchQuery}
                         currentHash={this.props.currentHash}
                         sections={this.state.sections}
                     />
-                </Sidebar>
-                <Content isExpanded={!this.state.isSidebarVisible}>
-                    {this.state.component ? (
-                        <Section content={this.state.component} />
-                    ) : (
-                        <Component
-                            name={'Welcome!'}
-                            description={
-                                'Style guide is a tool to illustrate, sandbox and test your components.'
-                            }
-                        />
-                    )}
-                </Content>
-            </AppViewComponent>
+                }
+                content={
+                    <Content>
+                        {this.state.component ? (
+                            <Section content={this.state.component} />
+                        ) : (
+                            <Component
+                                name="Welcome!"
+                                description="Style guide is a tool to illustrate, sandbox and test your components."
+                            />
+                        )}
+                    </Content>
+                }
+            />
         );
-    }
-
-    setSidebarVisibility() {
-        this.setState(state => ({ isSidebarVisible: !state.isSidebarVisible }));
-    }
-
-    handleKeyDown(event) {
-        if (event.keyCode === 83) {
-            this.setSidebarVisibility();
-        }
     }
 
     checkCurrentSection() {

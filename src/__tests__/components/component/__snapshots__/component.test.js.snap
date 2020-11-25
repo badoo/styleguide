@@ -211,6 +211,23 @@ exports[`Component generic tests: When component has one test with no element to
   margin-top: 32px;
 }
 
+@media screen and (max-width:376px) {
+  .c11 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
 <article
   className="c0"
   data-id="component"
@@ -261,6 +278,7 @@ exports[`Component generic tests: When component has one test with no element to
           <h1
             className="c11"
             onClick={[Function]}
+            title="testEmpty"
           >
             testEmpty
           </h1>
@@ -533,6 +551,23 @@ exports[`Component generic tests: When component has one test with no valid reac
   margin-top: 32px;
 }
 
+@media screen and (max-width:376px) {
+  .c11 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
 <article
   className="c0"
   data-id="component"
@@ -583,6 +618,7 @@ exports[`Component generic tests: When component has one test with no valid reac
           <h1
             className="c11"
             onClick={[Function]}
+            title="TestWithWrongComponent"
           >
             TestWithWrongComponent
           </h1>
@@ -745,6 +781,18 @@ exports[`Component generic tests: When component has only props - show props tab
 
 .c6 {
   margin-bottom: 32px;
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c6 {
+    overflow-x: scroll;
+  }
 }
 
 <article
@@ -926,6 +974,12 @@ exports[`Component generic tests: When component has only props 1`] = `
   content: '+';
 }
 
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
 <article
   className="c0"
   data-id="component"
@@ -1096,6 +1150,23 @@ exports[`Component generic tests: When component has only tests 1`] = `
   margin-top: 32px;
 }
 
+@media screen and (max-width:376px) {
+  .c8 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
 <article
   className="c0"
   data-id="component"
@@ -1131,6 +1202,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentEmpty"
           >
             SpecComponentEmpty
           </h1>
@@ -1215,6 +1287,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentPropTypes"
           >
             SpecComponentPropTypes
           </h1>
@@ -1299,6 +1372,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentFull"
           >
             SpecComponentFull
           </h1>
@@ -1584,6 +1658,23 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   margin-top: 32px;
 }
 
+@media screen and (max-width:376px) {
+  .c11 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
 <article
   className="c0"
   data-id="component"
@@ -1634,6 +1725,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentEmpty"
           >
             SpecComponentEmpty
           </h1>
@@ -1718,6 +1810,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentPropTypes"
           >
             SpecComponentPropTypes
           </h1>
@@ -1802,6 +1895,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentFull"
           >
             SpecComponentFull
           </h1>
