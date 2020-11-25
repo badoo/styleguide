@@ -1,11 +1,12 @@
 # Changelog
 
-## v0.0.83
+## v1.0.0
 
 * Updated `react-docgen`
 * **Attention**: Added possible breaking change - `id` in `Section` now is `data-id`.
 * Added toggle function for sidebar.
 * Added active state for navigation section.
+* Added responsive design for the StyleGuide App.
 
 ## v0.0.82
 
