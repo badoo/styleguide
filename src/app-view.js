@@ -62,10 +62,8 @@ class AppView extends React.Component {
                             <Section content={this.state.component} />
                         ) : (
                             <Component
-                                name={'Welcome!'}
-                                description={
-                                    'Style guide is a tool to illustrate, sandbox and test your components.'
-                                }
+                                name="Welcome!"
+                                description="Style guide is a tool to illustrate, sandbox and test your components."
                             />
                         )}
                     </Content>

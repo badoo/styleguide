@@ -159,27 +159,25 @@ exports[`App generic tests When app is is unmounted 1`] = `
   <main
     className="sc-fzomME fZNkyY"
   >
-    <div>
-      <article
-        className="sc-fzoiQi eOfXW"
-        data-id="welcome!"
+    <article
+      className="sc-fzoiQi eOfXW"
+      data-id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
       >
-        <header
-          className="styleguide-component__header"
+        <h1
+          className="sc-fzqARJ loeLYx"
         >
-          <h1
-            className="sc-fzqARJ loeLYx"
-          >
-            Welcome!
-          </h1>
-          <div
-            className="sc-fzqNqU gkFYkq"
-          >
-            Style guide is a tool to illustrate, sandbox and test your components.
-          </div>
-        </header>
-      </article>
-    </div>
+          Welcome!
+        </h1>
+        <div
+          className="sc-fzqNqU gkFYkq"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
   </main>
 </div>
 `;
@@ -343,27 +341,25 @@ exports[`App generic tests When app is open 1`] = `
   <main
     className="sc-fzomME fZNkyY"
   >
-    <div>
-      <article
-        className="sc-fzoiQi eOfXW"
-        data-id="welcome!"
+    <article
+      className="sc-fzoiQi eOfXW"
+      data-id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
       >
-        <header
-          className="styleguide-component__header"
+        <h1
+          className="sc-fzqARJ loeLYx"
         >
-          <h1
-            className="sc-fzqARJ loeLYx"
-          >
-            Welcome!
-          </h1>
-          <div
-            className="sc-fzqNqU gkFYkq"
-          >
-            Style guide is a tool to illustrate, sandbox and test your components.
-          </div>
-        </header>
-      </article>
-    </div>
+          Welcome!
+        </h1>
+        <div
+          className="sc-fzqNqU gkFYkq"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
   </main>
 </div>
 `;
@@ -468,27 +464,25 @@ exports[`App generic tests When app receive no sections 1`] = `
   <main
     className="sc-fzomME fZNkyY"
   >
-    <div>
-      <article
-        className="sc-fzoiQi eOfXW"
-        data-id="welcome!"
+    <article
+      className="sc-fzoiQi eOfXW"
+      data-id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
       >
-        <header
-          className="styleguide-component__header"
+        <h1
+          className="sc-fzqARJ loeLYx"
         >
-          <h1
-            className="sc-fzqARJ loeLYx"
-          >
-            Welcome!
-          </h1>
-          <div
-            className="sc-fzqNqU gkFYkq"
-          >
-            Style guide is a tool to illustrate, sandbox and test your components.
-          </div>
-        </header>
-      </article>
-    </div>
+          Welcome!
+        </h1>
+        <div
+          className="sc-fzqNqU gkFYkq"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
   </main>
 </div>
 `;
@@ -623,27 +617,25 @@ exports[`App search tests When we clear search request 1`] = `
   <main
     className="sc-fzomME fZNkyY"
   >
-    <div>
-      <article
-        className="sc-fzoiQi eOfXW"
-        data-id="welcome!"
+    <article
+      className="sc-fzoiQi eOfXW"
+      data-id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
       >
-        <header
-          className="styleguide-component__header"
+        <h1
+          className="sc-fzqARJ loeLYx"
         >
-          <h1
-            className="sc-fzqARJ loeLYx"
-          >
-            Welcome!
-          </h1>
-          <div
-            className="sc-fzqNqU gkFYkq"
-          >
-            Style guide is a tool to illustrate, sandbox and test your components.
-          </div>
-        </header>
-      </article>
-    </div>
+          Welcome!
+        </h1>
+        <div
+          className="sc-fzqNqU gkFYkq"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
   </main>
 </div>
 `;
@@ -807,27 +799,25 @@ exports[`App search tests When we clear search request 2`] = `
   <main
     className="sc-fzomME fZNkyY"
   >
-    <div>
-      <article
-        className="sc-fzoiQi eOfXW"
-        data-id="welcome!"
+    <article
+      className="sc-fzoiQi eOfXW"
+      data-id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
       >
-        <header
-          className="styleguide-component__header"
+        <h1
+          className="sc-fzqARJ loeLYx"
         >
-          <h1
-            className="sc-fzqARJ loeLYx"
-          >
-            Welcome!
-          </h1>
-          <div
-            className="sc-fzqNqU gkFYkq"
-          >
-            Style guide is a tool to illustrate, sandbox and test your components.
-          </div>
-        </header>
-      </article>
-    </div>
+          Welcome!
+        </h1>
+        <div
+          className="sc-fzqNqU gkFYkq"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
   </main>
 </div>
 `;
@@ -991,27 +981,25 @@ exports[`App search tests When we search, we have results filtered 1`] = `
   <main
     className="sc-fzomME fZNkyY"
   >
-    <div>
-      <article
-        className="sc-fzoiQi eOfXW"
-        data-id="welcome!"
+    <article
+      className="sc-fzoiQi eOfXW"
+      data-id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
       >
-        <header
-          className="styleguide-component__header"
+        <h1
+          className="sc-fzqARJ loeLYx"
         >
-          <h1
-            className="sc-fzqARJ loeLYx"
-          >
-            Welcome!
-          </h1>
-          <div
-            className="sc-fzqNqU gkFYkq"
-          >
-            Style guide is a tool to illustrate, sandbox and test your components.
-          </div>
-        </header>
-      </article>
-    </div>
+          Welcome!
+        </h1>
+        <div
+          className="sc-fzqNqU gkFYkq"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
   </main>
 </div>
 `;
@@ -1146,27 +1134,25 @@ exports[`App search tests When we search, we have results filtered 2`] = `
   <main
     className="sc-fzomME fZNkyY"
   >
-    <div>
-      <article
-        className="sc-fzoiQi eOfXW"
-        data-id="welcome!"
+    <article
+      className="sc-fzoiQi eOfXW"
+      data-id="welcome!"
+    >
+      <header
+        className="styleguide-component__header"
       >
-        <header
-          className="styleguide-component__header"
+        <h1
+          className="sc-fzqARJ loeLYx"
         >
-          <h1
-            className="sc-fzqARJ loeLYx"
-          >
-            Welcome!
-          </h1>
-          <div
-            className="sc-fzqNqU gkFYkq"
-          >
-            Style guide is a tool to illustrate, sandbox and test your components.
-          </div>
-        </header>
-      </article>
-    </div>
+          Welcome!
+        </h1>
+        <div
+          className="sc-fzqNqU gkFYkq"
+        >
+          Style guide is a tool to illustrate, sandbox and test your components.
+        </div>
+      </header>
+    </article>
   </main>
 </div>
 `;

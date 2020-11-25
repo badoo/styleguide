@@ -3,7 +3,7 @@ import React from 'react';
 const Content = props => {
     const { children } = props;
 
-    return <div>{children}</div>;
+    return <React.Fragment>{children}</React.Fragment>;
 };
 
 export default Content;
