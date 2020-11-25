@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="bKJutY"
+  className="sc-fzqAbL bKJutY"
 >
   <div
-    className="Glssj"
+    className="sc-fzpkJw sc-fznzOf Glssj"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="iTjnsi"
+    className="sc-fzpkJw sc-fznMnq iTjnsi"
     onClick={[Function]}
   >
     <svg
@@ -33,16 +33,16 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="jpNcGn iFSbsc"
+    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
   >
     <div
-      className="jrbfEQ"
+      className="sc-fzoxKX jrbfEQ"
     >
       <div
-        className="esGDIW"
+        className="sc-fzoKki esGDIW"
       >
         <div
-          className="eEqbgv"
+          className="sc-fzoYkl eEqbgv"
         >
           <svg
             viewBox="0 0 44 44"
@@ -62,20 +62,20 @@ exports[`App-view generic tests When app is open 1`] = `
         </div>
       </div>
       <div
-        className="dPYZmu"
+        className="sc-AxirZ dPYZmu"
       >
         <input
           autoComplete="off"
-          className="ioVakQ"
+          className="sc-AxiKw ioVakQ"
           placeholder="Search component name"
           type="text"
           value=""
         />
         <div
-          className="jysanO"
+          className="sc-AxhCb jysanO"
         >
           <div
-            className="fLUlAF"
+            className="sc-AxjAm fLUlAF"
             role="presentation"
             size={0}
           >
@@ -92,28 +92,28 @@ exports[`App-view generic tests When app is open 1`] = `
         </div>
       </div>
       <nav
-        className="edkQqe"
+        className="sc-fzozJi edkQqe"
       >
         <div
-          className="kcSfKA"
+          className="sc-fzoLsD kcSfKA"
         >
           <div
-            className="bysjeh"
+            className="sc-AxhUy bysjeh"
           >
             <div
-              className="icSILq"
+              className="sc-AxgMl icSILq"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="ekTzlM"
+              className="sc-AxheI ekTzlM"
             >
               <div
-                className="epqITX"
+                className="sc-Axmtr epqITX"
               >
                 <a
-                  className="iCkVVy"
+                  className="sc-AxmLO iCkVVy"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -124,25 +124,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="kcSfKA"
+          className="sc-fzoLsD kcSfKA"
         >
           <div
-            className="bysjeh"
+            className="sc-AxhUy bysjeh"
           >
             <div
-              className="icSILq"
+              className="sc-AxgMl icSILq"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="ekTzlM"
+              className="sc-AxheI ekTzlM"
             >
               <div
-                className="epqITX"
+                className="sc-Axmtr epqITX"
               >
                 <a
-                  className="iCkVVy"
+                  className="sc-AxmLO iCkVVy"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -156,22 +156,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="fZNkyY"
+    className="sc-fzomME fZNkyY"
   >
     <article
-      className="eOfXW"
+      className="sc-fzoiQi eOfXW"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="loeLYx"
+          className="sc-fzqARJ loeLYx"
         >
           Welcome!
         </h1>
         <div
-          className="gkFYkq"
+          className="sc-fzqNqU gkFYkq"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -652,7 +652,7 @@ exports[`App-view generic tests When component is open 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="sc-fzpkJw c1"
     onClick={[Function]}
   >
     <svg
@@ -666,7 +666,7 @@ exports[`App-view generic tests When component is open 1`] = `
     </svg>
   </div>
   <div
-    className="c2"
+    className="sc-fzpkJw c2"
     onClick={[Function]}
   >
     <svg
@@ -1369,7 +1369,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="sc-fzpkJw c1"
     onClick={[Function]}
   >
     <svg
@@ -1383,7 +1383,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
     </svg>
   </div>
   <div
-    className="c2"
+    className="sc-fzpkJw c2"
     onClick={[Function]}
   >
     <svg
@@ -1946,7 +1946,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="sc-fzpkJw c1"
     onClick={[Function]}
   >
     <svg
@@ -1960,7 +1960,7 @@ exports[`App-view generic tests When filter show components 1`] = `
     </svg>
   </div>
   <div
-    className="c2"
+    className="sc-fzpkJw c2"
     onClick={[Function]}
   >
     <svg
@@ -2675,7 +2675,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="sc-fzpkJw c1"
     onClick={[Function]}
   >
     <svg
@@ -2689,7 +2689,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
     </svg>
   </div>
   <div
-    className="c2"
+    className="sc-fzpkJw c2"
     onClick={[Function]}
   >
     <svg
