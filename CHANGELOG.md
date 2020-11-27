@@ -3,6 +3,7 @@
 ## v1.1.0
 
 * Add fix for `styleguide-iframe` for components, which depend on parents dimensions.
+* Update react-docgen props resolver to support.
 
 ## v1.0.0
 
