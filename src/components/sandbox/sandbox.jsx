@@ -4,6 +4,7 @@ import config from '__GLOBAL__CONFIG__';
 import Dialog from '../dialog/dialog';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Icon, { IconName } from '../icon/icon';
+import { deviceSizes } from '../../utilities';
 
 const SandboxBlock = styled.section`
     display: block;
@@ -31,6 +32,13 @@ const SandboxTitle = styled.h1`
     font-family: sans-serif;
     padding: 16px 0;
     word-break: break-word;
+
+    @media screen and (max-width: ${deviceSizes.phone}px) {
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: initial;
+    }
 `;
 
 const SandboxControls = styled.div`
@@ -100,7 +108,9 @@ class Sandbox extends React.Component {
         return (
             <SandboxBlock data-vrt-locator={'sandbox'} data-name={title}>
                 <SandboxHeader>
-                    <SandboxTitle onClick={this.toggleContentVisibility}>{title}</SandboxTitle>
+                    <SandboxTitle title={title} onClick={this.toggleContentVisibility}>
+                        {title}
+                    </SandboxTitle>
                     <SandboxControls>
                         <SandboxControl onClick={this.toggleContentVisibility}>
                             {mapVisibilityIconToState[this.state.isContentVisible]}

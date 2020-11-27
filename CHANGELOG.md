@@ -1,8 +1,17 @@
 # Changelog
 
-## v0.0.83
+## v1.1.0
 
+* Add fix for `styleguide-iframe` for components, which depend on parents dimensions.
+* Update react-docgen props resolver to support.
+
+## v1.0.0
+
+* Updated `react-docgen`
+* **Attention**: Added possible breaking change - `id` in `Section` now is `data-id`.
+* Added toggle function for sidebar.
 * Added active state for navigation section.
+* Added responsive design for the StyleGuide App.
 
 ## v0.0.82
 
@@ -25,7 +34,6 @@
 ## v0.0.78
 
 * Add support for digits in regexp for `getSections` function.
-
 
 ## v0.0.77
 

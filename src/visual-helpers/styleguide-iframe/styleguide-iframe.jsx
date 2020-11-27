@@ -40,8 +40,13 @@ const StyleguideIFrame = React.memo(
         const forceUpdate = useForceUpdate();
         let mountNode = contentRef && contentRef.contentWindow.document.body;
 
-        // hide element during rerender
         if (contentRef) {
+            // visual helper to fix some corner cases, when rendered component depend on size of its parent
+            contentRef.contentWindow.document.documentElement.style.height = '100vh';
+            contentRef.contentWindow.document.documentElement.style.width = '100vw';
+            contentRef.contentWindow.document.body.style.height = 'inherit';
+            contentRef.contentWindow.document.body.style.width = 'inherit';
+            // hide element during rerender
             contentRef.style.opacity = 0;
         }
 

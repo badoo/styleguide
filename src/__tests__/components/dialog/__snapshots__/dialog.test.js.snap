@@ -289,6 +289,23 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
   margin-top: 32px;
 }
 
+@media screen and (max-width:376px) {
+  .c17 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c6 {
+    padding-top: 16px;
+  }
+}
+
 <div
   className="c0"
 >
@@ -325,7 +342,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
   >
     <article
       className="c6"
-      id="component"
+      data-id="component"
     >
       <header
         className="styleguide-component__header"
@@ -373,6 +390,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               <h1
                 className="c17"
                 onClick={[Function]}
+                title="SpecComponentEmpty"
               >
                 SpecComponentEmpty
               </h1>
@@ -457,6 +475,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               <h1
                 className="c17"
                 onClick={[Function]}
+                title="SpecComponentPropTypes"
               >
                 SpecComponentPropTypes
               </h1>
@@ -541,6 +560,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
               <h1
                 className="c17"
                 onClick={[Function]}
+                title="SpecComponentFull"
               >
                 SpecComponentFull
               </h1>
