@@ -106,6 +106,7 @@ module.exports = function(source) {
             export const __dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         }
         /* eslint-enable no-useless-escape */
+        console.log(`error during parsing js-component:`, err);
     }
 
     return results;

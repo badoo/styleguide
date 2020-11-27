@@ -4,6 +4,7 @@
 
 * Add fix for `styleguide-iframe` for components, which depend on parents dimensions.
 * Update react-docgen props resolver to support.
+* Add logs for erros during `js-component`, `ts-component` stage.
 
 ## v1.0.0
 
