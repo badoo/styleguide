@@ -7,6 +7,9 @@ class App extends React.PureComponent {
         super(props);
 
         this.handleHashChange = this.handleHashChange.bind(this);
+        this.onSearchFieldChange = this.handleSearchChange.bind(this);
+        this.onSearchFieldFocus = this.onSearchFieldFocus.bind(this);
+        this.onSearchFieldBlur = this.onSearchFieldBlur.bind(this);
 
         this.state = {
             searchQuery: '',
@@ -16,14 +19,14 @@ class App extends React.PureComponent {
     }
 
     render() {
-        const onSearchFieldChange = this.handleSearchChange.bind(this);
-
         return (
             <AppView
                 currentHash={this.state.hash}
                 sections={this.state.sections}
                 searchQuery={this.state.searchQuery}
-                onSearchFieldChange={onSearchFieldChange}
+                onSearchFieldChange={this.onSearchFieldChange}
+                onSearchFieldFocus={this.onSearchFieldFocus}
+                onSearchFieldBlur={this.onSearchFieldBlur}
             />
         );
     }
@@ -58,6 +61,7 @@ class App extends React.PureComponent {
 
     handleSearchChange(event) {
         const searchQuery = event.target.value.toLowerCase();
+        console.log('handleSearchChange');
 
         if (searchQuery && searchQuery !== this.state.searchQuery) {
             const sections = processSearchQuery(searchQuery, this.props.sections);
@@ -66,6 +70,16 @@ class App extends React.PureComponent {
         } else if (!searchQuery) {
             this.setState({ searchQuery: '', sections: this.props.sections });
         }
+    }
+
+    onSearchFieldFocus() {
+        console.log('onSearchFieldFocus');
+        window.searchFieldHasFocus = true;
+    }
+
+    onSearchFieldBlur() {
+        console.log('onSearchFieldBlur');
+        window.searchFieldHasFocus = false;
     }
 }
 

@@ -5,6 +5,7 @@
 * Add fix for `styleguide-iframe` for components, which depend on parents dimensions.
 * Update react-docgen props resolver to support.
 * Add logs for erros during `js-component`, `ts-component` stage.
+* Fix search and sidebar toggle function collision, introduced in 1.0.0
 
 ## v1.0.0
 

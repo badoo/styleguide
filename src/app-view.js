@@ -47,6 +47,8 @@ class AppView extends React.Component {
                     <SearchField
                         value={this.props.searchQuery}
                         onChange={this.props.onSearchFieldChange}
+                        onFocus={this.props.onSearchFieldFocus}
+                        onBlur={this.props.onSearchFieldBlur}
                     />
                 }
                 navigation={
@@ -117,6 +119,8 @@ AppView.propTypes = {
     sections: PropTypes.array,
     searchQuery: PropTypes.string,
     onSearchFieldChange: PropTypes.func,
+    onSearchFieldFocus: PropTypes.func,
+    onSearchFieldBlur: PropTypes.func,
 };
 
 export default AppView;

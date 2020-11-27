@@ -62,14 +62,16 @@ const SearchFieldIcon = styled.div`
 `;
 
 const SearchField = props => {
-    const { value = '', onChange, inputRef } = props;
+    const { value = '', onChange, onFocus, onBlur, inputRef } = props;
 
     return (
         <SearchFieldBlock>
             <SearchFieldInput
                 value={value}
                 type="text"
+                onFocus={onFocus}
                 onChange={onChange}
+                onBlur={onBlur}
                 autoComplete="off"
                 placeholder="Search component name"
                 ref={inputRef}
