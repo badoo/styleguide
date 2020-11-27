@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.0
+
+* Add fix for `styleguide-iframe` for components, which depend on parents dimensions.
+
 ## v1.0.0
 
 * Updated `react-docgen`
