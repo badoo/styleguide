@@ -145,6 +145,7 @@ module.exports = function(source) {
             export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?$/);`;
         }
         /* eslint-enable no-useless-escape */
+        console.log(`error during parsing ts-component:`, err);
     }
 
     return results;

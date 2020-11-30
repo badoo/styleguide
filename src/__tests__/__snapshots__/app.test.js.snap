@@ -67,7 +67,9 @@ exports[`App generic tests When app is is unmounted 1`] = `
         <input
           autoComplete="off"
           className="sc-AxiKw ioVakQ"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
@@ -249,7 +251,9 @@ exports[`App generic tests When app is open 1`] = `
         <input
           autoComplete="off"
           className="sc-AxiKw ioVakQ"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
@@ -431,7 +435,9 @@ exports[`App generic tests When app receive no sections 1`] = `
         <input
           autoComplete="off"
           className="sc-AxiKw ioVakQ"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           placeholder="Search component name"
           type="text"
           value="s"
@@ -554,7 +560,9 @@ exports[`App search tests When we clear search request 1`] = `
         <input
           autoComplete="off"
           className="sc-AxiKw ioVakQ"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           placeholder="Search component name"
           type="text"
           value="comp"
@@ -707,7 +715,9 @@ exports[`App search tests When we clear search request 2`] = `
         <input
           autoComplete="off"
           className="sc-AxiKw ioVakQ"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
@@ -889,7 +899,9 @@ exports[`App search tests When we search, we have results filtered 1`] = `
         <input
           autoComplete="off"
           className="sc-AxiKw ioVakQ"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           placeholder="Search component name"
           type="text"
           value=""
@@ -1071,7 +1083,9 @@ exports[`App search tests When we search, we have results filtered 2`] = `
         <input
           autoComplete="off"
           className="sc-AxiKw ioVakQ"
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
           placeholder="Search component name"
           type="text"
           value="comp"

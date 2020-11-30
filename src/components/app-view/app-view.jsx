@@ -102,7 +102,7 @@ class AppView extends React.Component {
     handleKeyDown(event) {
         if (this.state.deviceViewport) return;
 
-        if (event.keyCode === KEYCODES['S']) {
+        if (event.keyCode === KEYCODES['S'] && !window.searchFieldHasFocus) {
             this.setSidebarVisible();
         }
     }
@@ -113,7 +113,7 @@ class AppView extends React.Component {
         this.setDeviceViewport(isDeviceScreen);
     }
 
-    handleHashChange(event) {
+    handleHashChange() {
         if (!this.state.deviceViewport) return;
 
         this.setSidebarVisible(false);
