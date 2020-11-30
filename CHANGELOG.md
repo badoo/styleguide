@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.1
+
+* Fix `navigation` styles for case, when menu content doesn't fit in screen.
+
 ## v1.1.0
 
 * Add fix for `styleguide-iframe` for components, which depend on parents dimensions.

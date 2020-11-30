@@ -95,7 +95,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
         </div>
       </div>
       <nav
-        className="sc-fzozJi edkQqe"
+        className="sc-fzozJi cOizXc"
       >
         <div
           className="sc-fzoLsD kcSfKA"
@@ -279,7 +279,7 @@ exports[`App generic tests When app is open 1`] = `
         </div>
       </div>
       <nav
-        className="sc-fzozJi edkQqe"
+        className="sc-fzozJi cOizXc"
       >
         <div
           className="sc-fzoLsD kcSfKA"
@@ -463,7 +463,7 @@ exports[`App generic tests When app receive no sections 1`] = `
         </div>
       </div>
       <nav
-        className="sc-fzozJi edkQqe"
+        className="sc-fzozJi cOizXc"
       />
     </div>
   </aside>
@@ -588,7 +588,7 @@ exports[`App search tests When we clear search request 1`] = `
         </div>
       </div>
       <nav
-        className="sc-fzozJi edkQqe"
+        className="sc-fzozJi cOizXc"
       >
         <div
           className="sc-fzoLsD kcSfKA"
@@ -743,7 +743,7 @@ exports[`App search tests When we clear search request 2`] = `
         </div>
       </div>
       <nav
-        className="sc-fzozJi edkQqe"
+        className="sc-fzozJi cOizXc"
       >
         <div
           className="sc-fzoLsD kcSfKA"
@@ -927,7 +927,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
         </div>
       </div>
       <nav
-        className="sc-fzozJi edkQqe"
+        className="sc-fzozJi cOizXc"
       >
         <div
           className="sc-fzoLsD kcSfKA"
@@ -1111,7 +1111,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
         </div>
       </div>
       <nav
-        className="sc-fzozJi edkQqe"
+        className="sc-fzozJi cOizXc"
       >
         <div
           className="sc-fzoLsD kcSfKA"
