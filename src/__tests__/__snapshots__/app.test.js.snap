@@ -2,10 +2,10 @@
 
 exports[`App generic tests When app is is unmounted 1`] = `
 <div
-  className="sc-fzqAbL bKJutY"
+  className="sc-fzqMAW hkVWyW"
 >
   <div
-    className="sc-fzpkJw sc-fznzOf Glssj"
+    className="sc-fznzOf sc-fznMnq ka-daZu"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fzpkJw sc-fznMnq iTjnsi"
+    className="sc-fznzOf sc-fzoant jQNUju"
     onClick={[Function]}
   >
     <svg
@@ -33,67 +33,71 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
+    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
   >
     <div
-      className="sc-fzoxKX jrbfEQ"
+      className="sc-fzoxKX bAYEhF"
     >
       <div
-        className="sc-fzoKki esGDIW"
+        className="sc-fzpkJw fRIGFA"
       >
-        <div
-          className="sc-fzoYkl eEqbgv"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
       <div
-        className="sc-AxirZ dPYZmu"
+        className="sc-fzoYkl dmNaat"
       >
-        <input
-          autoComplete="off"
-          className="sc-AxiKw ioVakQ"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search component name"
-          type="text"
-          value=""
-        />
         <div
-          className="sc-AxhCb jysanO"
+          className="sc-AxirZ dGMxCY"
         >
+          <input
+            autoComplete="off"
+            className="sc-AxiKw bbmgcd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search component name"
+            type="text"
+            value=""
+          />
           <div
-            className="sc-AxjAm fLUlAF"
-            role="presentation"
-            size={0}
+            className="sc-AxhCb bYoXQE"
           >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="sc-AxjAm fLUlAF"
+              role="presentation"
+              size={0}
             >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="sc-fzoKki bGjjUF"
+    >
       <nav
         className="sc-fzozJi cOizXc"
       >
@@ -159,7 +163,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzomME fZNkyY"
+    className="sc-fzqAbL eylZKg"
   >
     <article
       className="sc-fzoiQi eOfXW"
@@ -186,10 +190,10 @@ exports[`App generic tests When app is is unmounted 1`] = `
 
 exports[`App generic tests When app is open 1`] = `
 <div
-  className="sc-fzqAbL bKJutY"
+  className="sc-fzqMAW hkVWyW"
 >
   <div
-    className="sc-fzpkJw sc-fznzOf Glssj"
+    className="sc-fznzOf sc-fznMnq ka-daZu"
     onClick={[Function]}
   >
     <svg
@@ -203,7 +207,7 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fzpkJw sc-fznMnq iTjnsi"
+    className="sc-fznzOf sc-fzoant jQNUju"
     onClick={[Function]}
   >
     <svg
@@ -217,67 +221,71 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
+    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
   >
     <div
-      className="sc-fzoxKX jrbfEQ"
+      className="sc-fzoxKX bAYEhF"
     >
       <div
-        className="sc-fzoKki esGDIW"
+        className="sc-fzpkJw fRIGFA"
       >
-        <div
-          className="sc-fzoYkl eEqbgv"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
       <div
-        className="sc-AxirZ dPYZmu"
+        className="sc-fzoYkl dmNaat"
       >
-        <input
-          autoComplete="off"
-          className="sc-AxiKw ioVakQ"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search component name"
-          type="text"
-          value=""
-        />
         <div
-          className="sc-AxhCb jysanO"
+          className="sc-AxirZ dGMxCY"
         >
+          <input
+            autoComplete="off"
+            className="sc-AxiKw bbmgcd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search component name"
+            type="text"
+            value=""
+          />
           <div
-            className="sc-AxjAm fLUlAF"
-            role="presentation"
-            size={0}
+            className="sc-AxhCb bYoXQE"
           >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="sc-AxjAm fLUlAF"
+              role="presentation"
+              size={0}
             >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="sc-fzoKki bGjjUF"
+    >
       <nav
         className="sc-fzozJi cOizXc"
       >
@@ -343,7 +351,7 @@ exports[`App generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzomME fZNkyY"
+    className="sc-fzqAbL eylZKg"
   >
     <article
       className="sc-fzoiQi eOfXW"
@@ -370,10 +378,10 @@ exports[`App generic tests When app is open 1`] = `
 
 exports[`App generic tests When app receive no sections 1`] = `
 <div
-  className="sc-fzqAbL bKJutY"
+  className="sc-fzqMAW hkVWyW"
 >
   <div
-    className="sc-fzpkJw sc-fznzOf Glssj"
+    className="sc-fznzOf sc-fznMnq ka-daZu"
     onClick={[Function]}
   >
     <svg
@@ -387,7 +395,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fzpkJw sc-fznMnq iTjnsi"
+    className="sc-fznzOf sc-fzoant jQNUju"
     onClick={[Function]}
   >
     <svg
@@ -401,74 +409,78 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
+    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
   >
     <div
-      className="sc-fzoxKX jrbfEQ"
+      className="sc-fzoxKX bAYEhF"
     >
       <div
-        className="sc-fzoKki esGDIW"
+        className="sc-fzpkJw fRIGFA"
       >
-        <div
-          className="sc-fzoYkl eEqbgv"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
       <div
-        className="sc-AxirZ dPYZmu"
+        className="sc-fzoYkl dmNaat"
       >
-        <input
-          autoComplete="off"
-          className="sc-AxiKw ioVakQ"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search component name"
-          type="text"
-          value="s"
-        />
         <div
-          className="sc-AxhCb jysanO"
+          className="sc-AxirZ dGMxCY"
         >
+          <input
+            autoComplete="off"
+            className="sc-AxiKw bbmgcd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search component name"
+            type="text"
+            value="s"
+          />
           <div
-            className="sc-AxjAm fLUlAF"
-            role="presentation"
-            size={0}
+            className="sc-AxhCb bYoXQE"
           >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="sc-AxjAm fLUlAF"
+              role="presentation"
+              size={0}
             >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="sc-fzoKki bGjjUF"
+    >
       <nav
         className="sc-fzozJi cOizXc"
       />
     </div>
   </aside>
   <main
-    className="sc-fzomME fZNkyY"
+    className="sc-fzqAbL eylZKg"
   >
     <article
       className="sc-fzoiQi eOfXW"
@@ -495,10 +507,10 @@ exports[`App generic tests When app receive no sections 1`] = `
 
 exports[`App search tests When we clear search request 1`] = `
 <div
-  className="sc-fzqAbL bKJutY"
+  className="sc-fzqMAW hkVWyW"
 >
   <div
-    className="sc-fzpkJw sc-fznzOf Glssj"
+    className="sc-fznzOf sc-fznMnq ka-daZu"
     onClick={[Function]}
   >
     <svg
@@ -512,7 +524,7 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fzpkJw sc-fznMnq iTjnsi"
+    className="sc-fznzOf sc-fzoant jQNUju"
     onClick={[Function]}
   >
     <svg
@@ -526,67 +538,71 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
+    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
   >
     <div
-      className="sc-fzoxKX jrbfEQ"
+      className="sc-fzoxKX bAYEhF"
     >
       <div
-        className="sc-fzoKki esGDIW"
+        className="sc-fzpkJw fRIGFA"
       >
-        <div
-          className="sc-fzoYkl eEqbgv"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
       <div
-        className="sc-AxirZ dPYZmu"
+        className="sc-fzoYkl dmNaat"
       >
-        <input
-          autoComplete="off"
-          className="sc-AxiKw ioVakQ"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search component name"
-          type="text"
-          value="comp"
-        />
         <div
-          className="sc-AxhCb jysanO"
+          className="sc-AxirZ dGMxCY"
         >
+          <input
+            autoComplete="off"
+            className="sc-AxiKw bbmgcd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search component name"
+            type="text"
+            value="comp"
+          />
           <div
-            className="sc-AxjAm fLUlAF"
-            role="presentation"
-            size={0}
+            className="sc-AxhCb bYoXQE"
           >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="sc-AxjAm fLUlAF"
+              role="presentation"
+              size={0}
             >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="sc-fzoKki bGjjUF"
+    >
       <nav
         className="sc-fzozJi cOizXc"
       >
@@ -623,7 +639,7 @@ exports[`App search tests When we clear search request 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzomME fZNkyY"
+    className="sc-fzqAbL eylZKg"
   >
     <article
       className="sc-fzoiQi eOfXW"
@@ -650,10 +666,10 @@ exports[`App search tests When we clear search request 1`] = `
 
 exports[`App search tests When we clear search request 2`] = `
 <div
-  className="sc-fzqAbL bKJutY"
+  className="sc-fzqMAW hkVWyW"
 >
   <div
-    className="sc-fzpkJw sc-fznzOf Glssj"
+    className="sc-fznzOf sc-fznMnq ka-daZu"
     onClick={[Function]}
   >
     <svg
@@ -667,7 +683,7 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <div
-    className="sc-fzpkJw sc-fznMnq iTjnsi"
+    className="sc-fznzOf sc-fzoant jQNUju"
     onClick={[Function]}
   >
     <svg
@@ -681,67 +697,71 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
+    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
   >
     <div
-      className="sc-fzoxKX jrbfEQ"
+      className="sc-fzoxKX bAYEhF"
     >
       <div
-        className="sc-fzoKki esGDIW"
+        className="sc-fzpkJw fRIGFA"
       >
-        <div
-          className="sc-fzoYkl eEqbgv"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
       <div
-        className="sc-AxirZ dPYZmu"
+        className="sc-fzoYkl dmNaat"
       >
-        <input
-          autoComplete="off"
-          className="sc-AxiKw ioVakQ"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search component name"
-          type="text"
-          value=""
-        />
         <div
-          className="sc-AxhCb jysanO"
+          className="sc-AxirZ dGMxCY"
         >
+          <input
+            autoComplete="off"
+            className="sc-AxiKw bbmgcd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search component name"
+            type="text"
+            value=""
+          />
           <div
-            className="sc-AxjAm fLUlAF"
-            role="presentation"
-            size={0}
+            className="sc-AxhCb bYoXQE"
           >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="sc-AxjAm fLUlAF"
+              role="presentation"
+              size={0}
             >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="sc-fzoKki bGjjUF"
+    >
       <nav
         className="sc-fzozJi cOizXc"
       >
@@ -807,7 +827,7 @@ exports[`App search tests When we clear search request 2`] = `
     </div>
   </aside>
   <main
-    className="sc-fzomME fZNkyY"
+    className="sc-fzqAbL eylZKg"
   >
     <article
       className="sc-fzoiQi eOfXW"
@@ -834,10 +854,10 @@ exports[`App search tests When we clear search request 2`] = `
 
 exports[`App search tests When we search, we have results filtered 1`] = `
 <div
-  className="sc-fzqAbL bKJutY"
+  className="sc-fzqMAW hkVWyW"
 >
   <div
-    className="sc-fzpkJw sc-fznzOf Glssj"
+    className="sc-fznzOf sc-fznMnq ka-daZu"
     onClick={[Function]}
   >
     <svg
@@ -851,7 +871,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fzpkJw sc-fznMnq iTjnsi"
+    className="sc-fznzOf sc-fzoant jQNUju"
     onClick={[Function]}
   >
     <svg
@@ -865,67 +885,71 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
+    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
   >
     <div
-      className="sc-fzoxKX jrbfEQ"
+      className="sc-fzoxKX bAYEhF"
     >
       <div
-        className="sc-fzoKki esGDIW"
+        className="sc-fzpkJw fRIGFA"
       >
-        <div
-          className="sc-fzoYkl eEqbgv"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
       <div
-        className="sc-AxirZ dPYZmu"
+        className="sc-fzoYkl dmNaat"
       >
-        <input
-          autoComplete="off"
-          className="sc-AxiKw ioVakQ"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search component name"
-          type="text"
-          value=""
-        />
         <div
-          className="sc-AxhCb jysanO"
+          className="sc-AxirZ dGMxCY"
         >
+          <input
+            autoComplete="off"
+            className="sc-AxiKw bbmgcd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search component name"
+            type="text"
+            value=""
+          />
           <div
-            className="sc-AxjAm fLUlAF"
-            role="presentation"
-            size={0}
+            className="sc-AxhCb bYoXQE"
           >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="sc-AxjAm fLUlAF"
+              role="presentation"
+              size={0}
             >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="sc-fzoKki bGjjUF"
+    >
       <nav
         className="sc-fzozJi cOizXc"
       >
@@ -991,7 +1015,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzomME fZNkyY"
+    className="sc-fzqAbL eylZKg"
   >
     <article
       className="sc-fzoiQi eOfXW"
@@ -1018,10 +1042,10 @@ exports[`App search tests When we search, we have results filtered 1`] = `
 
 exports[`App search tests When we search, we have results filtered 2`] = `
 <div
-  className="sc-fzqAbL bKJutY"
+  className="sc-fzqMAW hkVWyW"
 >
   <div
-    className="sc-fzpkJw sc-fznzOf Glssj"
+    className="sc-fznzOf sc-fznMnq ka-daZu"
     onClick={[Function]}
   >
     <svg
@@ -1035,7 +1059,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <div
-    className="sc-fzpkJw sc-fznMnq iTjnsi"
+    className="sc-fznzOf sc-fzoant jQNUju"
     onClick={[Function]}
   >
     <svg
@@ -1049,67 +1073,71 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ jpNcGn sc-fzoant iFSbsc"
+    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
   >
     <div
-      className="sc-fzoxKX jrbfEQ"
+      className="sc-fzoxKX bAYEhF"
     >
       <div
-        className="sc-fzoKki esGDIW"
+        className="sc-fzpkJw fRIGFA"
       >
-        <div
-          className="sc-fzoYkl eEqbgv"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
       <div
-        className="sc-AxirZ dPYZmu"
+        className="sc-fzoYkl dmNaat"
       >
-        <input
-          autoComplete="off"
-          className="sc-AxiKw ioVakQ"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Search component name"
-          type="text"
-          value="comp"
-        />
         <div
-          className="sc-AxhCb jysanO"
+          className="sc-AxirZ dGMxCY"
         >
+          <input
+            autoComplete="off"
+            className="sc-AxiKw bbmgcd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Search component name"
+            type="text"
+            value="comp"
+          />
           <div
-            className="sc-AxjAm fLUlAF"
-            role="presentation"
-            size={0}
+            className="sc-AxhCb bYoXQE"
           >
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              className="sc-AxjAm fLUlAF"
+              role="presentation"
+              size={0}
             >
-              <path
-                d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      className="sc-fzoKki bGjjUF"
+    >
       <nav
         className="sc-fzozJi cOizXc"
       >
@@ -1146,7 +1174,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </div>
   </aside>
   <main
-    className="sc-fzomME fZNkyY"
+    className="sc-fzqAbL eylZKg"
   >
     <article
       className="sc-fzoiQi eOfXW"

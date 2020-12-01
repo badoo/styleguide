@@ -9,6 +9,14 @@ const StyleGuideDefaultStyles = `
         box-sizing: border-box;
     }
 
+    html {
+        height: 100%;
+    }
+
+    html, body {
+        min-height: 100%;
+    }
+
     code {
         font-family: Consolas, "Liberation Mono", Menlo, monospace;
     }

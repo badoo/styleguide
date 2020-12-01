@@ -7,8 +7,6 @@ const SEARCH_FIELD_COLOR = '#ccc';
 const SearchFieldBlock = styled.div`
     position: relative;
     color: ${SEARCH_FIELD_COLOR};
-    padding: 0 12px;
-    margin-bottom: 8px;
     font-family: sans-serif;
 
     &:focus-within {
@@ -24,8 +22,10 @@ const SearchFieldInput = styled.input`
     color: #303030;
     height: 40px;
     line-height: 32px;
-    padding: 6px 6px 6px 36px;
+    padding-left: calc(24px + 12px);
     border: 1px solid #ccc;
+    appearance: none;
+    outline: none;
 
     &:focus {
         border-color: #000;
@@ -55,7 +55,7 @@ const SearchFieldInput = styled.input`
 const SearchFieldIcon = styled.div`
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: 8px;
     display: flex;
     transform: translateY(-50%);
     color: inherit;

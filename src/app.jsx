@@ -61,7 +61,6 @@ class App extends React.PureComponent {
 
     handleSearchChange(event) {
         const searchQuery = event.target.value.toLowerCase();
-        console.log('handleSearchChange');
 
         if (searchQuery && searchQuery !== this.state.searchQuery) {
             const sections = processSearchQuery(searchQuery, this.props.sections);
@@ -73,12 +72,10 @@ class App extends React.PureComponent {
     }
 
     onSearchFieldFocus() {
-        console.log('onSearchFieldFocus');
         window.searchFieldHasFocus = true;
     }
 
     onSearchFieldBlur() {
-        console.log('onSearchFieldBlur');
         window.searchFieldHasFocus = false;
     }
 }
