@@ -1,12 +1,16 @@
 # Changelog
 
+## v1.1.4
+
+* Update dependencies.
+
+## v1.1.3
+
+* Add `navigation` extra UX improvements.
+
 ## v1.1.2
 
-* add `navigation` extra UX improvements.
-
-## v1.1.2
-
-* add `navigation` UX improvements.
+* Add `navigation` UX improvements.
 
 ## v1.1.1
 
