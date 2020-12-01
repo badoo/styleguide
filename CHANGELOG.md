@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.2
+
+* add `navigation` extra UX improvements.
+
+## v1.1.2
+
+* add `navigation` UX improvements.
+
 ## v1.1.1
 
 * Fix `navigation` styles for case, when menu content doesn't fit in screen.

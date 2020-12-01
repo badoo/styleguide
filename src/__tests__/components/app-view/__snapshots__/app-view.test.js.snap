@@ -198,7 +198,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="sc-AxgMl c1"
     onClick={[Function]}
   >
     <svg
@@ -212,7 +212,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
     </svg>
   </div>
   <div
-    className="c2"
+    className="sc-AxgMl c2"
     onClick={[Function]}
   >
     <svg
@@ -430,7 +430,7 @@ exports[`AppView tests: AppView render 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="sc-AxgMl c1"
     onClick={[Function]}
   >
     <svg
@@ -444,7 +444,7 @@ exports[`AppView tests: AppView render 1`] = `
     </svg>
   </div>
   <div
-    className="c2"
+    className="sc-AxgMl c2"
     onClick={[Function]}
   >
     <svg
@@ -662,7 +662,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="sc-AxgMl c1"
     onClick={[Function]}
   >
     <svg
@@ -676,7 +676,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
     </svg>
   </div>
   <div
-    className="c2"
+    className="sc-AxgMl c2"
     onClick={[Function]}
   >
     <svg
