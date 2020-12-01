@@ -4,17 +4,20 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 .c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
-}
-
-.c6 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: auto;
-  min-height: 100%;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,14 +33,28 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 4px;
-  padding-top: 16px;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c9 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
 }
 
 .c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
   width: 32px;
   height: 32px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .c1 {
@@ -82,7 +99,6 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 }
 
 .c5 {
-  min-height: 100vh;
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -91,11 +107,11 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   top: 0;
   bottom: 0;
   width: 300px;
-  z-index: 2;
+  z-index: 1;
   will-change: transform;
 }
 
-.c10 {
+.c11 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -117,19 +133,19 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c9 {
+.c0 .c10 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
-.c11 .c4 {
+.c12 .c4 {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
-.c11 .c9 {
+.c12 .c10 {
   -webkit-transform: translateX(100px);
   -ms-transform: translateX(100px);
   transform: translateX(100px);
@@ -154,7 +170,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c9 {
+  .c0 .c10 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -163,14 +179,14 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c11 .c4 {
+  .c12 .c4 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c11 .c9 {
+  .c12 .c10 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -182,7 +198,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   className="c0"
 >
   <div
-    className="sc-AxhUy c1"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -196,7 +212,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxhUy c2"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -218,30 +234,32 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
       <div
         className="c7"
       >
-        <div
-          className="c8"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
+      <div
+        className="c8"
+      />
     </div>
+    <div
+      className="c9"
+    />
   </aside>
   <main
-    className="c9 c10"
+    className="c10 c11"
   />
 </div>
 `;
@@ -250,17 +268,20 @@ exports[`AppView tests: AppView render 1`] = `
 .c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
-}
-
-.c6 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: auto;
-  min-height: 100%;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -276,14 +297,28 @@ exports[`AppView tests: AppView render 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 4px;
-  padding-top: 16px;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c9 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
 }
 
 .c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
   width: 32px;
   height: 32px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .c1 {
@@ -328,7 +363,6 @@ exports[`AppView tests: AppView render 1`] = `
 }
 
 .c5 {
-  min-height: 100vh;
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -337,11 +371,11 @@ exports[`AppView tests: AppView render 1`] = `
   top: 0;
   bottom: 0;
   width: 300px;
-  z-index: 2;
+  z-index: 1;
   will-change: transform;
 }
 
-.c10 {
+.c11 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -363,7 +397,7 @@ exports[`AppView tests: AppView render 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c9 {
+.c0 .c10 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
@@ -384,7 +418,7 @@ exports[`AppView tests: AppView render 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c9 {
+  .c0 .c10 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -396,7 +430,7 @@ exports[`AppView tests: AppView render 1`] = `
   className="c0"
 >
   <div
-    className="sc-AxhUy c1"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -410,7 +444,7 @@ exports[`AppView tests: AppView render 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxhUy c2"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -432,30 +466,32 @@ exports[`AppView tests: AppView render 1`] = `
       <div
         className="c7"
       >
-        <div
-          className="c8"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
+      <div
+        className="c8"
+      />
     </div>
+    <div
+      className="c9"
+    />
   </aside>
   <main
-    className="c9 c10"
+    className="c10 c11"
   />
 </div>
 `;
@@ -464,17 +500,20 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
 .c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
-}
-
-.c6 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background: #f0f0f0;
   border-right: 1px solid #f0f0f0;
   width: inherit;
-  overflow-y: auto;
-  min-height: 100%;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -490,14 +529,28 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 4px;
-  padding-top: 16px;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c9 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
 }
 
 .c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
   width: 32px;
   height: 32px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .c1 {
@@ -542,7 +595,6 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
 }
 
 .c5 {
-  min-height: 100vh;
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -551,11 +603,11 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   top: 0;
   bottom: 0;
   width: 300px;
-  z-index: 2;
+  z-index: 1;
   will-change: transform;
 }
 
-.c10 {
+.c11 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -577,7 +629,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c9 {
+.c0 .c10 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
@@ -598,7 +650,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c9 {
+  .c0 .c10 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -610,7 +662,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   className="c0"
 >
   <div
-    className="sc-AxhUy c1"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -624,7 +676,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxhUy c2"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -646,30 +698,32 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
       <div
         className="c7"
       >
-        <div
-          className="c8"
+        <svg
+          viewBox="0 0 44 44"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            viewBox="0 0 44 44"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="#7000E3"
-              height="44"
-              rx="3.9"
-              width="44"
-            />
-            <path
-              d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-              fill="#FF671B"
-            />
-          </svg>
-        </div>
+          <rect
+            fill="#7000E3"
+            height="44"
+            rx="3.9"
+            width="44"
+          />
+          <path
+            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
+            fill="#FF671B"
+          />
+        </svg>
       </div>
+      <div
+        className="c8"
+      />
     </div>
+    <div
+      className="c9"
+    />
   </aside>
   <main
-    className="c9 c10"
+    className="c10 c11"
   />
 </div>
 `;

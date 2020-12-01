@@ -11,14 +11,13 @@ const KEYCODES = {
 };
 
 const AppSidebar = styled(Sidebar)`
-    min-height: 100vh;
     transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     width: ${SIDEBAR_WIDTH}px;
-    z-index: 2;
+    z-index: 1;
     will-change: transform;
 `;
 
@@ -134,11 +133,10 @@ class AppView extends React.Component {
                         this.setSidebarVisible(!this.state.sidebarOpened);
                     }}
                 />
-                <AppSidebar>
-                    {this.props.searchField}
-
-                    {this.props.navigation}
-                </AppSidebar>
+                <AppSidebar
+                    searchField={this.props.searchField}
+                    navigation={this.props.navigation}
+                ></AppSidebar>
 
                 <Content>{this.props.content}</Content>
             </AppViewBlock>
