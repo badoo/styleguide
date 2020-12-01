@@ -96,7 +96,7 @@ exports[`App-view generic tests When app is open 1`] = `
       className="bGjjUF"
     >
       <nav
-        className="edkQqe"
+        className="cOizXc"
       >
         <div
           className="kcSfKA"
@@ -349,6 +349,7 @@ exports[`App-view generic tests When component is open 1`] = `
 
 .c14 {
   position: relative;
+  max-height: 100vh;
   font-family: sans-serif;
 }
 
@@ -1218,6 +1219,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
 
 .c14 {
   position: relative;
+  max-height: 100vh;
   font-family: sans-serif;
 }
 
@@ -1687,6 +1689,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 
 .c14 {
   position: relative;
+  max-height: 100vh;
   font-family: sans-serif;
 }
 
@@ -2561,6 +2564,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
 
 .c14 {
   position: relative;
+  max-height: 100vh;
   font-family: sans-serif;
 }
 
