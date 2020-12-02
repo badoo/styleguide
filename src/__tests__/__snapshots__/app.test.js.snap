@@ -2,10 +2,10 @@
 
 exports[`App generic tests When app is is unmounted 1`] = `
 <div
-  className="sc-fzqMAW hkVWyW"
+  className="sc-jNMdTA FEXVg"
 >
   <div
-    className="sc-fznzOf sc-fznMnq ka-daZu"
+    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fznzOf sc-fzoant jQNUju"
+    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
   >
     <div
-      className="sc-fzoxKX bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="sc-fzpkJw fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,14 +58,14 @@ exports[`App generic tests When app is is unmounted 1`] = `
         </svg>
       </div>
       <div
-        className="sc-fzoYkl dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="sc-AxirZ dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="sc-AxiKw bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -74,10 +74,10 @@ exports[`App generic tests When app is is unmounted 1`] = `
             value=""
           />
           <div
-            className="sc-AxhCb bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="sc-AxjAm fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -96,31 +96,31 @@ exports[`App generic tests When app is is unmounted 1`] = `
       </div>
     </div>
     <div
-      className="sc-fzoKki bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="sc-fzozJi cOizXc"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -131,25 +131,25 @@ exports[`App generic tests When app is is unmounted 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -163,22 +163,22 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzqAbL eylZKg"
+    className="sc-cTkwdZ hVYUVB"
   >
     <article
-      className="sc-fzoiQi eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqARJ loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fzqNqU gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -190,10 +190,10 @@ exports[`App generic tests When app is is unmounted 1`] = `
 
 exports[`App generic tests When app is open 1`] = `
 <div
-  className="sc-fzqMAW hkVWyW"
+  className="sc-jNMdTA FEXVg"
 >
   <div
-    className="sc-fznzOf sc-fznMnq ka-daZu"
+    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
     onClick={[Function]}
   >
     <svg
@@ -207,7 +207,7 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fznzOf sc-fzoant jQNUju"
+    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
     onClick={[Function]}
   >
     <svg
@@ -221,13 +221,13 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
   >
     <div
-      className="sc-fzoxKX bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="sc-fzpkJw fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -246,14 +246,14 @@ exports[`App generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="sc-fzoYkl dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="sc-AxirZ dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="sc-AxiKw bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -262,10 +262,10 @@ exports[`App generic tests When app is open 1`] = `
             value=""
           />
           <div
-            className="sc-AxhCb bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="sc-AxjAm fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -284,31 +284,31 @@ exports[`App generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="sc-fzoKki bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="sc-fzozJi cOizXc"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -319,25 +319,25 @@ exports[`App generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -351,22 +351,22 @@ exports[`App generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzqAbL eylZKg"
+    className="sc-cTkwdZ hVYUVB"
   >
     <article
-      className="sc-fzoiQi eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqARJ loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fzqNqU gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -378,10 +378,10 @@ exports[`App generic tests When app is open 1`] = `
 
 exports[`App generic tests When app receive no sections 1`] = `
 <div
-  className="sc-fzqMAW hkVWyW"
+  className="sc-jNMdTA FEXVg"
 >
   <div
-    className="sc-fznzOf sc-fznMnq ka-daZu"
+    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
     onClick={[Function]}
   >
     <svg
@@ -395,7 +395,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fznzOf sc-fzoant jQNUju"
+    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
     onClick={[Function]}
   >
     <svg
@@ -409,13 +409,13 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
   >
     <div
-      className="sc-fzoxKX bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="sc-fzpkJw fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -434,14 +434,14 @@ exports[`App generic tests When app receive no sections 1`] = `
         </svg>
       </div>
       <div
-        className="sc-fzoYkl dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="sc-AxirZ dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="sc-AxiKw bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -450,10 +450,10 @@ exports[`App generic tests When app receive no sections 1`] = `
             value="s"
           />
           <div
-            className="sc-AxhCb bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="sc-AxjAm fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -472,30 +472,30 @@ exports[`App generic tests When app receive no sections 1`] = `
       </div>
     </div>
     <div
-      className="sc-fzoKki bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="sc-fzozJi cOizXc"
+        className="sc-pFZIQ jpJWqU"
       />
     </div>
   </aside>
   <main
-    className="sc-fzqAbL eylZKg"
+    className="sc-cTkwdZ hVYUVB"
   >
     <article
-      className="sc-fzoiQi eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqARJ loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fzqNqU gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -507,10 +507,10 @@ exports[`App generic tests When app receive no sections 1`] = `
 
 exports[`App search tests When we clear search request 1`] = `
 <div
-  className="sc-fzqMAW hkVWyW"
+  className="sc-jNMdTA FEXVg"
 >
   <div
-    className="sc-fznzOf sc-fznMnq ka-daZu"
+    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
     onClick={[Function]}
   >
     <svg
@@ -524,7 +524,7 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fznzOf sc-fzoant jQNUju"
+    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
     onClick={[Function]}
   >
     <svg
@@ -538,13 +538,13 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
   >
     <div
-      className="sc-fzoxKX bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="sc-fzpkJw fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -563,14 +563,14 @@ exports[`App search tests When we clear search request 1`] = `
         </svg>
       </div>
       <div
-        className="sc-fzoYkl dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="sc-AxirZ dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="sc-AxiKw bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -579,10 +579,10 @@ exports[`App search tests When we clear search request 1`] = `
             value="comp"
           />
           <div
-            className="sc-AxhCb bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="sc-AxjAm fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -601,31 +601,31 @@ exports[`App search tests When we clear search request 1`] = `
       </div>
     </div>
     <div
-      className="sc-fzoKki bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="sc-fzozJi cOizXc"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -639,22 +639,22 @@ exports[`App search tests When we clear search request 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzqAbL eylZKg"
+    className="sc-cTkwdZ hVYUVB"
   >
     <article
-      className="sc-fzoiQi eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqARJ loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fzqNqU gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -666,10 +666,10 @@ exports[`App search tests When we clear search request 1`] = `
 
 exports[`App search tests When we clear search request 2`] = `
 <div
-  className="sc-fzqMAW hkVWyW"
+  className="sc-jNMdTA FEXVg"
 >
   <div
-    className="sc-fznzOf sc-fznMnq ka-daZu"
+    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
     onClick={[Function]}
   >
     <svg
@@ -683,7 +683,7 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <div
-    className="sc-fznzOf sc-fzoant jQNUju"
+    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
     onClick={[Function]}
   >
     <svg
@@ -697,13 +697,13 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
   >
     <div
-      className="sc-fzoxKX bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="sc-fzpkJw fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -722,14 +722,14 @@ exports[`App search tests When we clear search request 2`] = `
         </svg>
       </div>
       <div
-        className="sc-fzoYkl dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="sc-AxirZ dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="sc-AxiKw bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -738,10 +738,10 @@ exports[`App search tests When we clear search request 2`] = `
             value=""
           />
           <div
-            className="sc-AxhCb bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="sc-AxjAm fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -760,31 +760,31 @@ exports[`App search tests When we clear search request 2`] = `
       </div>
     </div>
     <div
-      className="sc-fzoKki bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="sc-fzozJi cOizXc"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -795,25 +795,25 @@ exports[`App search tests When we clear search request 2`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -827,22 +827,22 @@ exports[`App search tests When we clear search request 2`] = `
     </div>
   </aside>
   <main
-    className="sc-fzqAbL eylZKg"
+    className="sc-cTkwdZ hVYUVB"
   >
     <article
-      className="sc-fzoiQi eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqARJ loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fzqNqU gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -854,10 +854,10 @@ exports[`App search tests When we clear search request 2`] = `
 
 exports[`App search tests When we search, we have results filtered 1`] = `
 <div
-  className="sc-fzqMAW hkVWyW"
+  className="sc-jNMdTA FEXVg"
 >
   <div
-    className="sc-fznzOf sc-fznMnq ka-daZu"
+    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
     onClick={[Function]}
   >
     <svg
@@ -871,7 +871,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <div
-    className="sc-fznzOf sc-fzoant jQNUju"
+    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
     onClick={[Function]}
   >
     <svg
@@ -885,13 +885,13 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
   >
     <div
-      className="sc-fzoxKX bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="sc-fzpkJw fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -910,14 +910,14 @@ exports[`App search tests When we search, we have results filtered 1`] = `
         </svg>
       </div>
       <div
-        className="sc-fzoYkl dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="sc-AxirZ dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="sc-AxiKw bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -926,10 +926,10 @@ exports[`App search tests When we search, we have results filtered 1`] = `
             value=""
           />
           <div
-            className="sc-AxhCb bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="sc-AxjAm fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -948,31 +948,31 @@ exports[`App search tests When we search, we have results filtered 1`] = `
       </div>
     </div>
     <div
-      className="sc-fzoKki bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="sc-fzozJi cOizXc"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -983,25 +983,25 @@ exports[`App search tests When we search, we have results filtered 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -1015,22 +1015,22 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </div>
   </aside>
   <main
-    className="sc-fzqAbL eylZKg"
+    className="sc-cTkwdZ hVYUVB"
   >
     <article
-      className="sc-fzoiQi eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqARJ loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fzqNqU gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -1042,10 +1042,10 @@ exports[`App search tests When we search, we have results filtered 1`] = `
 
 exports[`App search tests When we search, we have results filtered 2`] = `
 <div
-  className="sc-fzqMAW hkVWyW"
+  className="sc-jNMdTA FEXVg"
 >
   <div
-    className="sc-fznzOf sc-fznMnq ka-daZu"
+    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
     onClick={[Function]}
   >
     <svg
@@ -1059,7 +1059,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <div
-    className="sc-fznzOf sc-fzoant jQNUju"
+    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
     onClick={[Function]}
   >
     <svg
@@ -1073,13 +1073,13 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-fzqPZZ ghZCyk sc-fzomME gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
   >
     <div
-      className="sc-fzoxKX bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="sc-fzpkJw fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -1098,14 +1098,14 @@ exports[`App search tests When we search, we have results filtered 2`] = `
         </svg>
       </div>
       <div
-        className="sc-fzoYkl dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="sc-AxirZ dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="sc-AxiKw bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -1114,10 +1114,10 @@ exports[`App search tests When we search, we have results filtered 2`] = `
             value="comp"
           />
           <div
-            className="sc-AxhCb bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="sc-AxjAm fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -1136,31 +1136,31 @@ exports[`App search tests When we search, we have results filtered 2`] = `
       </div>
     </div>
     <div
-      className="sc-fzoKki bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="sc-fzozJi cOizXc"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="sc-fzoLsD kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="sc-AxhUy bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="sc-AxgMl icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-AxheI ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="sc-Axmtr epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="sc-AxmLO iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -1174,22 +1174,22 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </div>
   </aside>
   <main
-    className="sc-fzqAbL eylZKg"
+    className="sc-cTkwdZ hVYUVB"
   >
     <article
-      className="sc-fzoiQi eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-fzqARJ loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="sc-fzqNqU gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AppView tests: AppView handleKeyDown test 1`] = `
-.c3 {
+.c4 {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
@@ -17,7 +17,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   width: inherit;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,19 +39,19 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   flex: 0 0 auto;
 }
 
-.c9 {
+.c10 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   padding: 0 16px;
 }
 
-.c7 {
+.c8 {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
@@ -65,11 +65,6 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 16px;
-  -webkit-transform: translate3d(-50px,0px,0px);
-  -ms-transform: translate3d(-50px,0px,0px);
-  transform: translate3d(-50px,0px,0px);
 }
 
 .c1 svg {
@@ -78,13 +73,14 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 }
 
 .c2 {
-  position: fixed;
-  z-index: 3;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c3 {
   top: 16px;
   left: 316px;
   -webkit-transform: scale(1);
@@ -93,12 +89,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   opacity: 1;
 }
 
-.c2 svg {
-  pointer-events: none;
-  fill: currentColor;
-}
-
-.c5 {
+.c6 {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -111,7 +102,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   will-change: transform;
 }
 
-.c11 {
+.c12 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -127,32 +118,32 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   background: #fff;
 }
 
-.c0 .c4 {
+.c0 .c5 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.c0 .c10 {
+.c0 .c11 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
-.c12 .c4 {
+.c13 .c5 {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
-.c12 .c10 {
+.c13 .c11 {
   -webkit-transform: translateX(100px);
   -ms-transform: translateX(100px);
   transform: translateX(100px);
 }
 
 @media screen and (max-width:376px) {
-  .c2 {
+  .c3 {
     right: 16px;
     left: initial;
   }
@@ -163,14 +154,14 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c4 {
+  .c0 .c5 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c10 {
+  .c0 .c11 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -179,14 +170,14 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c12 .c4 {
+  .c13 .c5 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c12 .c10 {
+  .c13 .c11 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -198,7 +189,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   className="c0"
 >
   <div
-    className="sc-AxgMl c1"
+    className="c1 c2"
     onClick={[Function]}
   >
     <svg
@@ -212,7 +203,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxgMl c2"
+    className="c1 c3"
     onClick={[Function]}
   >
     <svg
@@ -226,13 +217,13 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
     </svg>
   </div>
   <aside
-    className="c3 c4 c5"
+    className="c4 c5 c6"
   >
     <div
-      className="c6"
+      className="c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <svg
           viewBox="0 0 44 44"
@@ -251,21 +242,21 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
         </svg>
       </div>
       <div
-        className="c8"
+        className="c9"
       />
     </div>
     <div
-      className="c9"
+      className="c10"
     />
   </aside>
   <main
-    className="c10 c11"
+    className="c11 c12"
   />
 </div>
 `;
 
 exports[`AppView tests: AppView render 1`] = `
-.c3 {
+.c4 {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
@@ -281,7 +272,7 @@ exports[`AppView tests: AppView render 1`] = `
   width: inherit;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -303,19 +294,19 @@ exports[`AppView tests: AppView render 1`] = `
   flex: 0 0 auto;
 }
 
-.c9 {
+.c10 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   padding: 0 16px;
 }
 
-.c7 {
+.c8 {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
@@ -329,11 +320,6 @@ exports[`AppView tests: AppView render 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 16px;
-  -webkit-transform: translate3d(-50px,0px,0px);
-  -ms-transform: translate3d(-50px,0px,0px);
-  transform: translate3d(-50px,0px,0px);
 }
 
 .c1 svg {
@@ -342,13 +328,14 @@ exports[`AppView tests: AppView render 1`] = `
 }
 
 .c2 {
-  position: fixed;
-  z-index: 3;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c3 {
   top: 16px;
   left: 316px;
   -webkit-transform: scale(1);
@@ -357,12 +344,7 @@ exports[`AppView tests: AppView render 1`] = `
   opacity: 1;
 }
 
-.c2 svg {
-  pointer-events: none;
-  fill: currentColor;
-}
-
-.c5 {
+.c6 {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -375,7 +357,7 @@ exports[`AppView tests: AppView render 1`] = `
   will-change: transform;
 }
 
-.c11 {
+.c12 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -391,34 +373,34 @@ exports[`AppView tests: AppView render 1`] = `
   background: #fff;
 }
 
-.c0 .c4 {
+.c0 .c5 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.c0 .c10 {
+.c0 .c11 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
-  .c2 {
+  .c3 {
     right: 16px;
     left: initial;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c4 {
+  .c0 .c5 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c10 {
+  .c0 .c11 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -430,7 +412,7 @@ exports[`AppView tests: AppView render 1`] = `
   className="c0"
 >
   <div
-    className="sc-AxgMl c1"
+    className="c1 c2"
     onClick={[Function]}
   >
     <svg
@@ -444,7 +426,7 @@ exports[`AppView tests: AppView render 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxgMl c2"
+    className="c1 c3"
     onClick={[Function]}
   >
     <svg
@@ -458,13 +440,13 @@ exports[`AppView tests: AppView render 1`] = `
     </svg>
   </div>
   <aside
-    className="c3 c4 c5"
+    className="c4 c5 c6"
   >
     <div
-      className="c6"
+      className="c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <svg
           viewBox="0 0 44 44"
@@ -483,21 +465,21 @@ exports[`AppView tests: AppView render 1`] = `
         </svg>
       </div>
       <div
-        className="c8"
+        className="c9"
       />
     </div>
     <div
-      className="c9"
+      className="c10"
     />
   </aside>
   <main
-    className="c10 c11"
+    className="c11 c12"
   />
 </div>
 `;
 
 exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
-.c3 {
+.c4 {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
@@ -513,7 +495,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   width: inherit;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -535,19 +517,19 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   flex: 0 0 auto;
 }
 
-.c9 {
+.c10 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
 }
 
-.c8 {
+.c9 {
   width: 100%;
   padding: 0 16px;
 }
 
-.c7 {
+.c8 {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
@@ -561,11 +543,6 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 16px;
-  -webkit-transform: translate3d(-50px,0px,0px);
-  -ms-transform: translate3d(-50px,0px,0px);
-  transform: translate3d(-50px,0px,0px);
 }
 
 .c1 svg {
@@ -574,13 +551,14 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
 }
 
 .c2 {
-  position: fixed;
-  z-index: 3;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c3 {
   top: 16px;
   left: 316px;
   -webkit-transform: scale(1);
@@ -589,12 +567,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   opacity: 1;
 }
 
-.c2 svg {
-  pointer-events: none;
-  fill: currentColor;
-}
-
-.c5 {
+.c6 {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -607,7 +580,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   will-change: transform;
 }
 
-.c11 {
+.c12 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -623,34 +596,34 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   background: #fff;
 }
 
-.c0 .c4 {
+.c0 .c5 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.c0 .c10 {
+.c0 .c11 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
-  .c2 {
+  .c3 {
     right: 16px;
     left: initial;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c4 {
+  .c0 .c5 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c10 {
+  .c0 .c11 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -662,7 +635,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   className="c0"
 >
   <div
-    className="sc-AxgMl c1"
+    className="c1 c2"
     onClick={[Function]}
   >
     <svg
@@ -676,7 +649,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxgMl c2"
+    className="c1 c3"
     onClick={[Function]}
   >
     <svg
@@ -690,13 +663,13 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
     </svg>
   </div>
   <aside
-    className="c3 c4 c5"
+    className="c4 c5 c6"
   >
     <div
-      className="c6"
+      className="c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <svg
           viewBox="0 0 44 44"
@@ -715,15 +688,15 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
         </svg>
       </div>
       <div
-        className="c8"
+        className="c9"
       />
     </div>
     <div
-      className="c9"
+      className="c10"
     />
   </aside>
   <main
-    className="c10 c11"
+    className="c11 c12"
   />
 </div>
 `;

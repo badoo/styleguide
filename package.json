@@ -1,6 +1,6 @@
 {
   "name": "badoo-styleguide",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Badoo styleguide used to develop UI components for the Web and React Native",
   "author": "badoo",
   "license": "MIT",
@@ -40,7 +40,7 @@
     "react-hot-loader": "4.8.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
-    "styled-components": "5.0.1",
+    "styled-components": "5.2.1",
     "styled-normalize": "8.0.7",
     "ts-loader": "6.2.1",
     "typescript": "^3.8.3",

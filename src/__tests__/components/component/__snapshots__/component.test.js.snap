@@ -27,7 +27,7 @@ exports[`Component generic tests: When component has one test with no element to
   fill: inherit;
 }
 
-.c9 {
+.c8 {
   display: block;
 }
 
@@ -47,7 +47,7 @@ exports[`Component generic tests: When component has one test with no element to
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c10:only-child {
+.styleguide-sandbox .c9:only-child {
   border-radius: 4px;
 }
 
@@ -207,7 +207,7 @@ exports[`Component generic tests: When component has one test with no element to
   content: '+';
 }
 
-.c8 + .c7 {
+.c7 + .c7 {
   margin-top: 32px;
 }
 
@@ -265,15 +265,15 @@ exports[`Component generic tests: When component has one test with no element to
     className="c6"
   >
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="testEmpty"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
@@ -367,7 +367,7 @@ exports[`Component generic tests: When component has one test with no valid reac
   fill: inherit;
 }
 
-.c9 {
+.c8 {
   display: block;
 }
 
@@ -387,7 +387,7 @@ exports[`Component generic tests: When component has one test with no valid reac
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c10:only-child {
+.styleguide-sandbox .c9:only-child {
   border-radius: 4px;
 }
 
@@ -547,7 +547,7 @@ exports[`Component generic tests: When component has one test with no valid reac
   content: '+';
 }
 
-.c8 + .c7 {
+.c7 + .c7 {
   margin-top: 32px;
 }
 
@@ -605,15 +605,15 @@ exports[`Component generic tests: When component has one test with no valid reac
     className="c6"
   >
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="TestWithWrongComponent"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
@@ -1043,7 +1043,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
   fill: inherit;
 }
 
-.c6 {
+.c5 {
   display: block;
 }
 
@@ -1063,7 +1063,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c7:only-child {
+.styleguide-sandbox .c6:only-child {
   border-radius: 4px;
 }
 
@@ -1146,7 +1146,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
   margin-top: 16px;
 }
 
-.c5 + .c4 {
+.c4 + .c4 {
   margin-top: 32px;
 }
 
@@ -1189,15 +1189,15 @@ exports[`Component generic tests: When component has only tests 1`] = `
     className="c3"
   >
     <div
-      className="c4 c5"
+      className="c4 "
     >
       <section
-        className="c6"
+        className="c5"
         data-name="SpecComponentEmpty"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c7"
+          className="c6 c7"
         >
           <h1
             className="c8"
@@ -1274,15 +1274,15 @@ exports[`Component generic tests: When component has only tests 1`] = `
       </section>
     </div>
     <div
-      className="c4 c5"
+      className="c4 "
     >
       <section
-        className="c6"
+        className="c5"
         data-name="SpecComponentPropTypes"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c7"
+          className="c6 c7"
         >
           <h1
             className="c8"
@@ -1359,15 +1359,15 @@ exports[`Component generic tests: When component has only tests 1`] = `
       </section>
     </div>
     <div
-      className="c4 c5"
+      className="c4 "
     >
       <section
-        className="c6"
+        className="c5"
         data-name="SpecComponentFull"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c7"
+          className="c6 c7"
         >
           <h1
             className="c8"
@@ -1474,7 +1474,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   fill: inherit;
 }
 
-.c9 {
+.c8 {
   display: block;
 }
 
@@ -1494,7 +1494,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c10:only-child {
+.styleguide-sandbox .c9:only-child {
   border-radius: 4px;
 }
 
@@ -1654,7 +1654,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   content: '+';
 }
 
-.c8 + .c7 {
+.c7 + .c7 {
   margin-top: 32px;
 }
 
@@ -1712,15 +1712,15 @@ exports[`Component generic tests: When component has props & tests 1`] = `
     className="c6"
   >
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="SpecComponentEmpty"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
@@ -1797,15 +1797,15 @@ exports[`Component generic tests: When component has props & tests 1`] = `
       </section>
     </div>
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="SpecComponentPropTypes"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
@@ -1882,15 +1882,15 @@ exports[`Component generic tests: When component has props & tests 1`] = `
       </section>
     </div>
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="SpecComponentFull"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
