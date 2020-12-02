@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.7
+
+* Add design fix for menu.
+
 ## v1.1.6
 
 * fix markup bug with `styled-components` and `babel-core@7.4.0`.

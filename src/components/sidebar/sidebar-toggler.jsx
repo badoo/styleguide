@@ -34,8 +34,8 @@ const SidebarCloseIcon = styled.div`
         fill: currentColor;
     }
 
-    top: 16px;
-    left: 316px;
+    top: 18px;
+    left: 260px;
     transform: scale(${props => (props.isVisible ? 1 : 0.5)});
     opacity: ${props => (props.isVisible ? 1 : 0)};
     pointer-events: ${props => !props.isVisible && 'none'};

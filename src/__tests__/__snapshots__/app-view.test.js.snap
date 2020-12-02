@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -565,8 +565,8 @@ exports[`App-view generic tests When component is open 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -1328,8 +1328,8 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -1905,8 +1905,8 @@ exports[`App-view generic tests When filter show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -2680,8 +2680,8 @@ exports[`App-view generic tests When we open component from app 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);

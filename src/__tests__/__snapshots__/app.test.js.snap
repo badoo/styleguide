@@ -19,7 +19,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -207,7 +207,7 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -395,7 +395,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -524,7 +524,7 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -683,7 +683,7 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -871,7 +871,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -1059,7 +1059,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg hRJNWC"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
