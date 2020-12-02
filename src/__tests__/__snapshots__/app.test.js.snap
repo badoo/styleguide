@@ -2,10 +2,10 @@
 
 exports[`App generic tests When app is is unmounted 1`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -33,7 +33,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -163,7 +163,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"
@@ -190,10 +190,10 @@ exports[`App generic tests When app is is unmounted 1`] = `
 
 exports[`App generic tests When app is open 1`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -207,7 +207,7 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -221,7 +221,7 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -351,7 +351,7 @@ exports[`App generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"
@@ -378,10 +378,10 @@ exports[`App generic tests When app is open 1`] = `
 
 exports[`App generic tests When app receive no sections 1`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -395,7 +395,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -409,7 +409,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -480,7 +480,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"
@@ -507,10 +507,10 @@ exports[`App generic tests When app receive no sections 1`] = `
 
 exports[`App search tests When we clear search request 1`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -524,7 +524,7 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -538,7 +538,7 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -639,7 +639,7 @@ exports[`App search tests When we clear search request 1`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"
@@ -666,10 +666,10 @@ exports[`App search tests When we clear search request 1`] = `
 
 exports[`App search tests When we clear search request 2`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -683,7 +683,7 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -697,7 +697,7 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -827,7 +827,7 @@ exports[`App search tests When we clear search request 2`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"
@@ -854,10 +854,10 @@ exports[`App search tests When we clear search request 2`] = `
 
 exports[`App search tests When we search, we have results filtered 1`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -871,7 +871,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -885,7 +885,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -1015,7 +1015,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"
@@ -1042,10 +1042,10 @@ exports[`App search tests When we search, we have results filtered 1`] = `
 
 exports[`App search tests When we search, we have results filtered 2`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -1059,7 +1059,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -1073,7 +1073,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -1174,7 +1174,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"

@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="sc-jNMdTA FEXVg"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="sc-bZSQDF sc-iUuytg bkUOWJ jpycat"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-bZSQDF sc-iBaPrD bkUOWJ gSrYKw"
+    className="sc-iUuytg hRJNWC"
     onClick={[Function]}
   >
     <svg
@@ -33,7 +33,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-eggNIi jcvMQO"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
       className="sc-gWHgXt erOPBk"
@@ -160,7 +160,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-cTkwdZ hVYUVB"
+    className="sc-eggNIi cnMrlT"
   >
     <article
       className="sc-fKFyDc cNrfnb"
@@ -186,7 +186,7 @@ exports[`App-view generic tests When app is open 1`] = `
 `;
 
 exports[`App-view generic tests When component is open 1`] = `
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -199,7 +199,7 @@ exports[`App-view generic tests When component is open 1`] = `
   color: inherit;
 }
 
-.c13 > svg {
+.c12 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -212,7 +212,7 @@ exports[`App-view generic tests When component is open 1`] = `
   fill: inherit;
 }
 
-.c40 {
+.c39 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -225,7 +225,7 @@ exports[`App-view generic tests When component is open 1`] = `
   color: inherit;
 }
 
-.c40 > svg {
+.c39 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -238,17 +238,17 @@ exports[`App-view generic tests When component is open 1`] = `
   fill: inherit;
 }
 
-.c10 {
+.c9 {
   position: relative;
   color: #ccc;
   font-family: sans-serif;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   color: #000;
 }
 
-.c11 {
+.c10 {
   background-color: #fff;
   width: 100%;
   display: block;
@@ -264,31 +264,31 @@ exports[`App-view generic tests When component is open 1`] = `
   outline: none;
 }
 
-.c11:focus {
+.c10:focus {
   border-color: #000;
 }
 
-.c11::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-moz-placeholder {
+.c10:-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c12 {
+.c11 {
   position: absolute;
   top: 50%;
   left: 8px;
@@ -302,11 +302,11 @@ exports[`App-view generic tests When component is open 1`] = `
   color: inherit;
 }
 
-.c17 {
+.c16 {
   display: block;
 }
 
-.c18 {
+.c17 {
   position: relative;
   display: block;
   padding: 16px;
@@ -321,50 +321,50 @@ exports[`App-view generic tests When component is open 1`] = `
   user-select: none;
 }
 
-.c19 {
+.c18 {
   padding: 16px;
 }
 
-.c22 {
+.c21 {
   padding: 16px;
   display: none;
 }
 
-.c20 {
+.c19 {
   padding: 8px 16px;
 }
 
-.c21 {
+.c20 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #7000e3;
   font-weight: 600;
 }
 
-.c23 {
+.c22 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #666;
 }
 
-.c15 {
+.c14 {
   position: relative;
   max-height: 100vh;
   font-family: sans-serif;
 }
 
-.c16 {
+.c15 {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c34 {
+.c33 {
   display: block;
 }
 
-.c36 {
+.c35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -380,11 +380,11 @@ exports[`App-view generic tests When component is open 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c35:only-child {
+.styleguide-sandbox .c34:only-child {
   border-radius: 4px;
 }
 
-.c37 {
+.c36 {
   margin: 0;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -396,7 +396,7 @@ exports[`App-view generic tests When component is open 1`] = `
   word-break: break-word;
 }
 
-.c38 {
+.c37 {
   margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -404,7 +404,7 @@ exports[`App-view generic tests When component is open 1`] = `
   display: flex;
 }
 
-.c39 {
+.c38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -424,11 +424,11 @@ exports[`App-view generic tests When component is open 1`] = `
   padding: 0 8px;
 }
 
-.c39:hover {
+.c38:hover {
   opacity: 1;
 }
 
-.c41 {
+.c40 {
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -438,11 +438,11 @@ exports[`App-view generic tests When component is open 1`] = `
   transform: translate3d(0,0,0);
 }
 
-.c29 {
+.c28 {
   padding-top: 32px;
 }
 
-.c30 {
+.c29 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 32px;
@@ -451,7 +451,7 @@ exports[`App-view generic tests When component is open 1`] = `
   word-break: break-word;
 }
 
-.c31 {
+.c30 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -459,29 +459,29 @@ exports[`App-view generic tests When component is open 1`] = `
   max-width: 50%;
 }
 
-.c32 {
+.c31 {
   margin-top: 16px;
 }
 
-.c33 + .c33 {
+.c32 + .c32 {
   margin-top: 32px;
 }
 
-.c26 + .c26 {
+.c25 + .c25 {
   margin-top: 32px;
 }
 
-.c27 {
+.c26 {
   max-width: 960px;
   min-width: 320px;
   margin: auto;
 }
 
-.c28 + .c28 {
+.c27 + .c27 {
   margin-top: 40px;
 }
 
-.c4 {
+.c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
@@ -497,7 +497,7 @@ exports[`App-view generic tests When component is open 1`] = `
   width: inherit;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -519,19 +519,19 @@ exports[`App-view generic tests When component is open 1`] = `
   flex: 0 0 auto;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
 }
 
-.c9 {
+.c8 {
   width: 100%;
   padding: 0 16px;
 }
 
-.c8 {
+.c7 {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
@@ -545,6 +545,11 @@ exports[`App-view generic tests When component is open 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
 }
 
 .c1 svg {
@@ -553,14 +558,13 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 .c2 {
-  top: 16px;
-  left: 16px;
-  -webkit-transform: translate3d(-50px,0px,0px);
-  -ms-transform: translate3d(-50px,0px,0px);
-  transform: translate3d(-50px,0px,0px);
-}
-
-.c3 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   top: 16px;
   left: 316px;
   -webkit-transform: scale(1);
@@ -569,7 +573,12 @@ exports[`App-view generic tests When component is open 1`] = `
   opacity: 1;
 }
 
-.c6 {
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -582,7 +591,7 @@ exports[`App-view generic tests When component is open 1`] = `
   will-change: transform;
 }
 
-.c25 {
+.c24 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -598,20 +607,20 @@ exports[`App-view generic tests When component is open 1`] = `
   background: #fff;
 }
 
-.c0 .c5 {
+.c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.c0 .c24 {
+.c0 .c23 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
-  .c37 {
+  .c36 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -622,39 +631,39 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c29 {
+  .c28 {
     padding-top: 16px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c27 {
+  .c26 {
     min-width: auto;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .c27 {
+  .c26 {
     max-width: 1440px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c3 {
+  .c2 {
     right: 16px;
     left: initial;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c5 {
+  .c0 .c4 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c24 {
+  .c0 .c23 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -666,7 +675,7 @@ exports[`App-view generic tests When component is open 1`] = `
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -680,7 +689,7 @@ exports[`App-view generic tests When component is open 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c3"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -694,13 +703,13 @@ exports[`App-view generic tests When component is open 1`] = `
     </svg>
   </div>
   <aside
-    className="c4 c5 c6"
+    className="c3 c4 c5"
   >
     <div
-      className="c7"
+      className="c6"
     >
       <div
-        className="c8"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -719,23 +728,23 @@ exports[`App-view generic tests When component is open 1`] = `
         </svg>
       </div>
       <div
-        className="c9"
+        className="c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="c11"
+            className="c10"
             placeholder="Search component name"
             type="text"
             value=""
           />
           <div
-            className="c12"
+            className="c11"
           >
             <div
-              className="c13"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -754,31 +763,31 @@ exports[`App-view generic tests When component is open 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <nav
-        className="c15"
+        className="c14"
       >
         <div
-          className="c16"
+          className="c15"
         >
           <div
-            className="c17"
+            className="c16"
           >
             <div
-              className="c18"
+              className="c17"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="c19"
+              className="c18"
             >
               <div
-                className="c20"
+                className="c19"
               >
                 <a
-                  className="c21"
+                  className="c20"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -789,25 +798,25 @@ exports[`App-view generic tests When component is open 1`] = `
           </div>
         </div>
         <div
-          className="c16"
+          className="c15"
         >
           <div
-            className="c17"
+            className="c16"
           >
             <div
-              className="c18"
+              className="c17"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="c22"
+              className="c21"
             >
               <div
-                className="c20"
+                className="c19"
               >
                 <a
-                  className="c23"
+                  className="c22"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -821,65 +830,65 @@ exports[`App-view generic tests When component is open 1`] = `
     </div>
   </aside>
   <main
-    className="c24 c25"
+    className="c23 c24"
   >
     <section
-      className="c26 "
+      className="c25 "
     >
       <div
-        className="c27"
+        className="c26"
       >
         <div
-          className="c28 "
+          className="c27 "
         >
           <article
-            className="c29"
+            className="c28"
             data-id="component"
           >
             <header
               className="styleguide-component__header"
             >
               <h1
-                className="c30"
+                className="c29"
               >
                 Component
               </h1>
               <div
-                className="c31"
+                className="c30"
               >
                 
               </div>
             </header>
             <div
-              className="c32"
+              className="c31"
             >
               <div
-                className="c33 "
+                className="c32 "
               >
                 <section
-                  className="c34"
+                  className="c33"
                   data-name="SpecComponentEmpty"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c35 c36"
+                    className="c34 c35"
                   >
                     <h1
-                      className="c37"
+                      className="c36"
                       onClick={[Function]}
                       title="SpecComponentEmpty"
                     >
                       SpecComponentEmpty
                     </h1>
                     <div
-                      className="c38"
+                      className="c37"
                     >
                       <span
-                        className="c39"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c40"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -894,11 +903,11 @@ exports[`App-view generic tests When component is open 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c39"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c40"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -918,19 +927,19 @@ exports[`App-view generic tests When component is open 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c41"
+                      className="c40"
                     >
                       <article
-                        className="c29"
+                        className="c28"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c30"
+                            className="c29"
                           />
                           <div
-                            className="c31"
+                            className="c30"
                           />
                         </header>
                       </article>
@@ -939,32 +948,32 @@ exports[`App-view generic tests When component is open 1`] = `
                 </section>
               </div>
               <div
-                className="c33 "
+                className="c32 "
               >
                 <section
-                  className="c34"
+                  className="c33"
                   data-name="SpecComponentPropTypes"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c35 c36"
+                    className="c34 c35"
                   >
                     <h1
-                      className="c37"
+                      className="c36"
                       onClick={[Function]}
                       title="SpecComponentPropTypes"
                     >
                       SpecComponentPropTypes
                     </h1>
                     <div
-                      className="c38"
+                      className="c37"
                     >
                       <span
-                        className="c39"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c40"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -979,11 +988,11 @@ exports[`App-view generic tests When component is open 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c39"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c40"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -1003,19 +1012,19 @@ exports[`App-view generic tests When component is open 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c41"
+                      className="c40"
                     >
                       <article
-                        className="c29"
+                        className="c28"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c30"
+                            className="c29"
                           />
                           <div
-                            className="c31"
+                            className="c30"
                           />
                         </header>
                       </article>
@@ -1024,32 +1033,32 @@ exports[`App-view generic tests When component is open 1`] = `
                 </section>
               </div>
               <div
-                className="c33 "
+                className="c32 "
               >
                 <section
-                  className="c34"
+                  className="c33"
                   data-name="SpecComponentFull"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c35 c36"
+                    className="c34 c35"
                   >
                     <h1
-                      className="c37"
+                      className="c36"
                       onClick={[Function]}
                       title="SpecComponentFull"
                     >
                       SpecComponentFull
                     </h1>
                     <div
-                      className="c38"
+                      className="c37"
                     >
                       <span
-                        className="c39"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c40"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -1064,11 +1073,11 @@ exports[`App-view generic tests When component is open 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c39"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c40"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -1088,19 +1097,19 @@ exports[`App-view generic tests When component is open 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c41"
+                      className="c40"
                     >
                       <article
-                        className="c29"
+                        className="c28"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c30"
+                            className="c29"
                           />
                           <div
-                            className="c31"
+                            className="c30"
                           />
                         </header>
                       </article>
@@ -1118,7 +1127,7 @@ exports[`App-view generic tests When component is open 1`] = `
 `;
 
 exports[`App-view generic tests When filter doesn\`t show components 1`] = `
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1131,7 +1140,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   color: inherit;
 }
 
-.c13 > svg {
+.c12 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1144,17 +1153,17 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   fill: inherit;
 }
 
-.c10 {
+.c9 {
   position: relative;
   color: #ccc;
   font-family: sans-serif;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   color: #000;
 }
 
-.c11 {
+.c10 {
   background-color: #fff;
   width: 100%;
   display: block;
@@ -1170,31 +1179,31 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   outline: none;
 }
 
-.c11:focus {
+.c10:focus {
   border-color: #000;
 }
 
-.c11::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-moz-placeholder {
+.c10:-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c12 {
+.c11 {
   position: absolute;
   top: 50%;
   left: 8px;
@@ -1208,17 +1217,17 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   color: inherit;
 }
 
-.c15 {
+.c14 {
   position: relative;
   max-height: 100vh;
   font-family: sans-serif;
 }
 
-.c18 {
+.c17 {
   padding-top: 32px;
 }
 
-.c19 {
+.c18 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 32px;
@@ -1227,7 +1236,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   word-break: break-word;
 }
 
-.c20 {
+.c19 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -1235,7 +1244,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   max-width: 50%;
 }
 
-.c4 {
+.c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
@@ -1251,7 +1260,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   width: inherit;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1273,19 +1282,19 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   flex: 0 0 auto;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
 }
 
-.c9 {
+.c8 {
   width: 100%;
   padding: 0 16px;
 }
 
-.c8 {
+.c7 {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
@@ -1299,6 +1308,11 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
 }
 
 .c1 svg {
@@ -1307,14 +1321,13 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
 }
 
 .c2 {
-  top: 16px;
-  left: 16px;
-  -webkit-transform: translate3d(-50px,0px,0px);
-  -ms-transform: translate3d(-50px,0px,0px);
-  transform: translate3d(-50px,0px,0px);
-}
-
-.c3 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   top: 16px;
   left: 316px;
   -webkit-transform: scale(1);
@@ -1323,7 +1336,12 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   opacity: 1;
 }
 
-.c6 {
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -1336,7 +1354,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   will-change: transform;
 }
 
-.c17 {
+.c16 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -1352,40 +1370,40 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   background: #fff;
 }
 
-.c0 .c5 {
+.c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.c0 .c16 {
+.c0 .c15 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
-  .c18 {
+  .c17 {
     padding-top: 16px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c3 {
+  .c2 {
     right: 16px;
     left: initial;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c5 {
+  .c0 .c4 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c16 {
+  .c0 .c15 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -1397,7 +1415,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -1411,7 +1429,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c3"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -1425,13 +1443,13 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
     </svg>
   </div>
   <aside
-    className="c4 c5 c6"
+    className="c3 c4 c5"
   >
     <div
-      className="c7"
+      className="c6"
     >
       <div
-        className="c8"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -1450,23 +1468,23 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
         </svg>
       </div>
       <div
-        className="c9"
+        className="c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="c11"
+            className="c10"
             placeholder="Search component name"
             type="text"
             value="g"
           />
           <div
-            className="c12"
+            className="c11"
           >
             <div
-              className="c13"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -1485,30 +1503,30 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <nav
-        className="c15"
+        className="c14"
       />
     </div>
   </aside>
   <main
-    className="c16 c17"
+    className="c15 c16"
   >
     <article
-      className="c18"
+      className="c17"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="c19"
+          className="c18"
         >
           Welcome!
         </h1>
         <div
-          className="c20"
+          className="c19"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -1519,7 +1537,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
 `;
 
 exports[`App-view generic tests When filter show components 1`] = `
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1532,7 +1550,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: inherit;
 }
 
-.c13 > svg {
+.c12 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1545,7 +1563,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   fill: inherit;
 }
 
-.c38 {
+.c37 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1558,7 +1576,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: inherit;
 }
 
-.c38 > svg {
+.c37 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1571,17 +1589,17 @@ exports[`App-view generic tests When filter show components 1`] = `
   fill: inherit;
 }
 
-.c10 {
+.c9 {
   position: relative;
   color: #ccc;
   font-family: sans-serif;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   color: #000;
 }
 
-.c11 {
+.c10 {
   background-color: #fff;
   width: 100%;
   display: block;
@@ -1597,31 +1615,31 @@ exports[`App-view generic tests When filter show components 1`] = `
   outline: none;
 }
 
-.c11:focus {
+.c10:focus {
   border-color: #000;
 }
 
-.c11::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-moz-placeholder {
+.c10:-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c12 {
+.c11 {
   position: absolute;
   top: 50%;
   left: 8px;
@@ -1635,11 +1653,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: inherit;
 }
 
-.c17 {
+.c16 {
   display: block;
 }
 
-.c18 {
+.c17 {
   position: relative;
   display: block;
   padding: 16px;
@@ -1654,39 +1672,39 @@ exports[`App-view generic tests When filter show components 1`] = `
   user-select: none;
 }
 
-.c19 {
+.c18 {
   padding: 16px;
 }
 
-.c20 {
+.c19 {
   padding: 8px 16px;
 }
 
-.c21 {
+.c20 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #7000e3;
   font-weight: 600;
 }
 
-.c15 {
+.c14 {
   position: relative;
   max-height: 100vh;
   font-family: sans-serif;
 }
 
-.c16 {
+.c15 {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c32 {
+.c31 {
   display: block;
 }
 
-.c34 {
+.c33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1702,11 +1720,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c33:only-child {
+.styleguide-sandbox .c32:only-child {
   border-radius: 4px;
 }
 
-.c35 {
+.c34 {
   margin: 0;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1718,7 +1736,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   word-break: break-word;
 }
 
-.c36 {
+.c35 {
   margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1726,7 +1744,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   display: flex;
 }
 
-.c37 {
+.c36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1746,11 +1764,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   padding: 0 8px;
 }
 
-.c37:hover {
+.c36:hover {
   opacity: 1;
 }
 
-.c39 {
+.c38 {
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1760,11 +1778,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   transform: translate3d(0,0,0);
 }
 
-.c27 {
+.c26 {
   padding-top: 32px;
 }
 
-.c28 {
+.c27 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 32px;
@@ -1773,7 +1791,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   word-break: break-word;
 }
 
-.c29 {
+.c28 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -1781,29 +1799,29 @@ exports[`App-view generic tests When filter show components 1`] = `
   max-width: 50%;
 }
 
-.c30 {
+.c29 {
   margin-top: 16px;
 }
 
-.c31 + .c31 {
+.c30 + .c30 {
   margin-top: 32px;
 }
 
-.c24 + .c24 {
+.c23 + .c23 {
   margin-top: 32px;
 }
 
-.c25 {
+.c24 {
   max-width: 960px;
   min-width: 320px;
   margin: auto;
 }
 
-.c26 + .c26 {
+.c25 + .c25 {
   margin-top: 40px;
 }
 
-.c4 {
+.c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
@@ -1819,7 +1837,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   width: inherit;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1841,19 +1859,19 @@ exports[`App-view generic tests When filter show components 1`] = `
   flex: 0 0 auto;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
 }
 
-.c9 {
+.c8 {
   width: 100%;
   padding: 0 16px;
 }
 
-.c8 {
+.c7 {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
@@ -1867,6 +1885,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
 }
 
 .c1 svg {
@@ -1875,14 +1898,13 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 .c2 {
-  top: 16px;
-  left: 16px;
-  -webkit-transform: translate3d(-50px,0px,0px);
-  -ms-transform: translate3d(-50px,0px,0px);
-  transform: translate3d(-50px,0px,0px);
-}
-
-.c3 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   top: 16px;
   left: 316px;
   -webkit-transform: scale(1);
@@ -1891,7 +1913,12 @@ exports[`App-view generic tests When filter show components 1`] = `
   opacity: 1;
 }
 
-.c6 {
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -1904,7 +1931,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   will-change: transform;
 }
 
-.c23 {
+.c22 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -1920,20 +1947,20 @@ exports[`App-view generic tests When filter show components 1`] = `
   background: #fff;
 }
 
-.c0 .c5 {
+.c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.c0 .c22 {
+.c0 .c21 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
-  .c35 {
+  .c34 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -1944,39 +1971,39 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c27 {
+  .c26 {
     padding-top: 16px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c25 {
+  .c24 {
     min-width: auto;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .c25 {
+  .c24 {
     max-width: 1440px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c3 {
+  .c2 {
     right: 16px;
     left: initial;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c5 {
+  .c0 .c4 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c22 {
+  .c0 .c21 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -1988,7 +2015,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -2002,7 +2029,7 @@ exports[`App-view generic tests When filter show components 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c3"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -2016,13 +2043,13 @@ exports[`App-view generic tests When filter show components 1`] = `
     </svg>
   </div>
   <aside
-    className="c4 c5 c6"
+    className="c3 c4 c5"
   >
     <div
-      className="c7"
+      className="c6"
     >
       <div
-        className="c8"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -2041,23 +2068,23 @@ exports[`App-view generic tests When filter show components 1`] = `
         </svg>
       </div>
       <div
-        className="c9"
+        className="c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="c11"
+            className="c10"
             placeholder="Search component name"
             type="text"
             value="c"
           />
           <div
-            className="c12"
+            className="c11"
           >
             <div
-              className="c13"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -2076,31 +2103,31 @@ exports[`App-view generic tests When filter show components 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <nav
-        className="c15"
+        className="c14"
       >
         <div
-          className="c16"
+          className="c15"
         >
           <div
-            className="c17"
+            className="c16"
           >
             <div
-              className="c18"
+              className="c17"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="c19"
+              className="c18"
             >
               <div
-                className="c20"
+                className="c19"
               >
                 <a
-                  className="c21"
+                  className="c20"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -2114,65 +2141,65 @@ exports[`App-view generic tests When filter show components 1`] = `
     </div>
   </aside>
   <main
-    className="c22 c23"
+    className="c21 c22"
   >
     <section
-      className="c24 "
+      className="c23 "
     >
       <div
-        className="c25"
+        className="c24"
       >
         <div
-          className="c26 "
+          className="c25 "
         >
           <article
-            className="c27"
+            className="c26"
             data-id="component"
           >
             <header
               className="styleguide-component__header"
             >
               <h1
-                className="c28"
+                className="c27"
               >
                 Component
               </h1>
               <div
-                className="c29"
+                className="c28"
               >
                 
               </div>
             </header>
             <div
-              className="c30"
+              className="c29"
             >
               <div
-                className="c31 "
+                className="c30 "
               >
                 <section
-                  className="c32"
+                  className="c31"
                   data-name="SpecComponentEmpty"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c33 c34"
+                    className="c32 c33"
                   >
                     <h1
-                      className="c35"
+                      className="c34"
                       onClick={[Function]}
                       title="SpecComponentEmpty"
                     >
                       SpecComponentEmpty
                     </h1>
                     <div
-                      className="c36"
+                      className="c35"
                     >
                       <span
-                        className="c37"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c38"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2187,11 +2214,11 @@ exports[`App-view generic tests When filter show components 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c37"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c38"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2211,19 +2238,19 @@ exports[`App-view generic tests When filter show components 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c39"
+                      className="c38"
                     >
                       <article
-                        className="c27"
+                        className="c26"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c28"
+                            className="c27"
                           />
                           <div
-                            className="c29"
+                            className="c28"
                           />
                         </header>
                       </article>
@@ -2232,32 +2259,32 @@ exports[`App-view generic tests When filter show components 1`] = `
                 </section>
               </div>
               <div
-                className="c31 "
+                className="c30 "
               >
                 <section
-                  className="c32"
+                  className="c31"
                   data-name="SpecComponentPropTypes"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c33 c34"
+                    className="c32 c33"
                   >
                     <h1
-                      className="c35"
+                      className="c34"
                       onClick={[Function]}
                       title="SpecComponentPropTypes"
                     >
                       SpecComponentPropTypes
                     </h1>
                     <div
-                      className="c36"
+                      className="c35"
                     >
                       <span
-                        className="c37"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c38"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2272,11 +2299,11 @@ exports[`App-view generic tests When filter show components 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c37"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c38"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2296,19 +2323,19 @@ exports[`App-view generic tests When filter show components 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c39"
+                      className="c38"
                     >
                       <article
-                        className="c27"
+                        className="c26"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c28"
+                            className="c27"
                           />
                           <div
-                            className="c29"
+                            className="c28"
                           />
                         </header>
                       </article>
@@ -2317,32 +2344,32 @@ exports[`App-view generic tests When filter show components 1`] = `
                 </section>
               </div>
               <div
-                className="c31 "
+                className="c30 "
               >
                 <section
-                  className="c32"
+                  className="c31"
                   data-name="SpecComponentFull"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c33 c34"
+                    className="c32 c33"
                   >
                     <h1
-                      className="c35"
+                      className="c34"
                       onClick={[Function]}
                       title="SpecComponentFull"
                     >
                       SpecComponentFull
                     </h1>
                     <div
-                      className="c36"
+                      className="c35"
                     >
                       <span
-                        className="c37"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c38"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2357,11 +2384,11 @@ exports[`App-view generic tests When filter show components 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c37"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c38"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2381,19 +2408,19 @@ exports[`App-view generic tests When filter show components 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c39"
+                      className="c38"
                     >
                       <article
-                        className="c27"
+                        className="c26"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c28"
+                            className="c27"
                           />
                           <div
-                            className="c29"
+                            className="c28"
                           />
                         </header>
                       </article>
@@ -2411,7 +2438,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 `;
 
 exports[`App-view generic tests When we open component from app 1`] = `
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2424,7 +2451,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   color: inherit;
 }
 
-.c13 > svg {
+.c12 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2437,17 +2464,17 @@ exports[`App-view generic tests When we open component from app 1`] = `
   fill: inherit;
 }
 
-.c10 {
+.c9 {
   position: relative;
   color: #ccc;
   font-family: sans-serif;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   color: #000;
 }
 
-.c11 {
+.c10 {
   background-color: #fff;
   width: 100%;
   display: block;
@@ -2463,31 +2490,31 @@ exports[`App-view generic tests When we open component from app 1`] = `
   outline: none;
 }
 
-.c11:focus {
+.c10:focus {
   border-color: #000;
 }
 
-.c11::-webkit-input-placeholder {
+.c10::-webkit-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-moz-placeholder {
+.c10:-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11::-moz-placeholder {
+.c10::-moz-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c11:-ms-input-placeholder {
+.c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
 }
 
-.c12 {
+.c11 {
   position: absolute;
   top: 50%;
   left: 8px;
@@ -2501,11 +2528,11 @@ exports[`App-view generic tests When we open component from app 1`] = `
   color: inherit;
 }
 
-.c17 {
+.c16 {
   display: block;
 }
 
-.c18 {
+.c17 {
   position: relative;
   display: block;
   padding: 16px;
@@ -2520,39 +2547,39 @@ exports[`App-view generic tests When we open component from app 1`] = `
   user-select: none;
 }
 
-.c19 {
+.c18 {
   padding: 16px;
   display: none;
 }
 
-.c20 {
+.c19 {
   padding: 8px 16px;
 }
 
-.c21 {
+.c20 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #666;
 }
 
-.c15 {
+.c14 {
   position: relative;
   max-height: 100vh;
   font-family: sans-serif;
 }
 
-.c16 {
+.c15 {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c24 {
+.c23 {
   padding-top: 32px;
 }
 
-.c25 {
+.c24 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 32px;
@@ -2561,7 +2588,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   word-break: break-word;
 }
 
-.c26 {
+.c25 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -2569,7 +2596,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   max-width: 50%;
 }
 
-.c4 {
+.c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
@@ -2585,7 +2612,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   width: inherit;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2607,19 +2634,19 @@ exports[`App-view generic tests When we open component from app 1`] = `
   flex: 0 0 auto;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
 }
 
-.c9 {
+.c8 {
   width: 100%;
   padding: 0 16px;
 }
 
-.c8 {
+.c7 {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
@@ -2633,6 +2660,11 @@ exports[`App-view generic tests When we open component from app 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
 }
 
 .c1 svg {
@@ -2641,14 +2673,13 @@ exports[`App-view generic tests When we open component from app 1`] = `
 }
 
 .c2 {
-  top: 16px;
-  left: 16px;
-  -webkit-transform: translate3d(-50px,0px,0px);
-  -ms-transform: translate3d(-50px,0px,0px);
-  transform: translate3d(-50px,0px,0px);
-}
-
-.c3 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   top: 16px;
   left: 316px;
   -webkit-transform: scale(1);
@@ -2657,7 +2688,12 @@ exports[`App-view generic tests When we open component from app 1`] = `
   opacity: 1;
 }
 
-.c6 {
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
@@ -2670,7 +2706,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   will-change: transform;
 }
 
-.c23 {
+.c22 {
   min-width: 0;
   padding: 32px;
   position: relative;
@@ -2686,40 +2722,40 @@ exports[`App-view generic tests When we open component from app 1`] = `
   background: #fff;
 }
 
-.c0 .c5 {
+.c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.c0 .c22 {
+.c0 .c21 {
   -webkit-transform: translateX(300px);
   -ms-transform: translateX(300px);
   transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
-  .c24 {
+  .c23 {
     padding-top: 16px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c3 {
+  .c2 {
     right: 16px;
     left: initial;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c5 {
+  .c0 .c4 {
     right: 0;
     width: auto;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c22 {
+  .c0 .c21 {
     width: 100%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -2731,7 +2767,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -2745,7 +2781,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
     </svg>
   </div>
   <div
-    className="c1 c3"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -2759,13 +2795,13 @@ exports[`App-view generic tests When we open component from app 1`] = `
     </svg>
   </div>
   <aside
-    className="c4 c5 c6"
+    className="c3 c4 c5"
   >
     <div
-      className="c7"
+      className="c6"
     >
       <div
-        className="c8"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -2784,23 +2820,23 @@ exports[`App-view generic tests When we open component from app 1`] = `
         </svg>
       </div>
       <div
-        className="c9"
+        className="c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="c11"
+            className="c10"
             placeholder="Search component name"
             type="text"
             value=""
           />
           <div
-            className="c12"
+            className="c11"
           >
             <div
-              className="c13"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -2819,31 +2855,31 @@ exports[`App-view generic tests When we open component from app 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <nav
-        className="c15"
+        className="c14"
       >
         <div
-          className="c16"
+          className="c15"
         >
           <div
-            className="c17"
+            className="c16"
           >
             <div
-              className="c18"
+              className="c17"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="c19"
+              className="c18"
             >
               <div
-                className="c20"
+                className="c19"
               >
                 <a
-                  className="c21"
+                  className="c20"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -2854,25 +2890,25 @@ exports[`App-view generic tests When we open component from app 1`] = `
           </div>
         </div>
         <div
-          className="c16"
+          className="c15"
         >
           <div
-            className="c17"
+            className="c16"
           >
             <div
-              className="c18"
+              className="c17"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="c19"
+              className="c18"
             >
               <div
-                className="c20"
+                className="c19"
               >
                 <a
-                  className="c21"
+                  className="c20"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -2886,22 +2922,22 @@ exports[`App-view generic tests When we open component from app 1`] = `
     </div>
   </aside>
   <main
-    className="c22 c23"
+    className="c21 c22"
   >
     <article
-      className="c24"
+      className="c23"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="c25"
+          className="c24"
         >
           Welcome!
         </h1>
         <div
-          className="c26"
+          className="c25"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
