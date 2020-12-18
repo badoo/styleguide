@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.8
+
+* add support for material-ui `withStyles` HOC.
+
 ## v1.1.7
 
 * Add design fix for menu.

@@ -57,6 +57,13 @@ function setComponentMeta(component) {
     let meta =
         component.default && component.default.__meta ? component.default.__meta : component.__meta;
 
+    /**
+     * add support for material-ui
+     */
+    if (component.default && component.default.Naked && component.default.Naked.__meta) {
+        meta = component.default.Naked.__meta;
+    }
+
     if (isComponentHOC(component)) {
         meta = component.__highOrderComponentInnerComponent.__meta;
     }
