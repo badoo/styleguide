@@ -1,5 +1,33 @@
 # Changelog
 
+## 1.1.8
+
+* add support for material-ui `withStyles` HOC.
+
+## v1.1.7
+
+* Add design fix for menu.
+
+## v1.1.6
+
+* fix markup bug with `styled-components` and `babel-core@7.4.0`.
+
+## v1.1.5
+
+* Update dependencies.
+
+## v1.1.4
+
+* Update dependencies.
+
+## v1.1.3
+
+* Add `navigation` extra UX improvements.
+
+## v1.1.2
+
+* Add `navigation` UX improvements.
+
 ## v1.1.1
 
 * Fix `navigation` styles for case, when menu content doesn't fit in screen.

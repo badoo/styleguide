@@ -105,7 +105,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
   transform: translate3d(0,0,0);
 }
 
-.c15 {
+.c14 {
   display: block;
 }
 
@@ -125,7 +125,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c16:only-child {
+.styleguide-sandbox .c15:only-child {
   border-radius: 4px;
 }
 
@@ -285,7 +285,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
   content: '+';
 }
 
-.c14 + .c13 {
+.c13 + .c13 {
   margin-top: 32px;
 }
 
@@ -377,15 +377,15 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
         className="c12"
       >
         <div
-          className="c13 c14"
+          className="c13 "
         >
           <section
-            className="c15"
+            className="c14"
             data-name="SpecComponentEmpty"
             data-vrt-locator="sandbox"
           >
             <header
-              className="c16"
+              className="c15 c16"
             >
               <h1
                 className="c17"
@@ -462,15 +462,15 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
           </section>
         </div>
         <div
-          className="c13 c14"
+          className="c13 "
         >
           <section
-            className="c15"
+            className="c14"
             data-name="SpecComponentPropTypes"
             data-vrt-locator="sandbox"
           >
             <header
-              className="c16"
+              className="c15 c16"
             >
               <h1
                 className="c17"
@@ -547,15 +547,15 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
           </section>
         </div>
         <div
-          className="c13 c14"
+          className="c13 "
         >
           <section
-            className="c15"
+            className="c14"
             data-name="SpecComponentFull"
             data-vrt-locator="sandbox"
           >
             <header
-              className="c16"
+              className="c15 c16"
             >
               <h1
                 className="c17"

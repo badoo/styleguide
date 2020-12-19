@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { deviceSizes } from '../../utilities';
 
-const SidebarStyledToggler = styled.div`
+const SidebarOpenIcon = styled.div`
     position: fixed;
     z-index: 3;
     cursor: pointer;
@@ -14,18 +14,28 @@ const SidebarStyledToggler = styled.div`
         pointer-events: none;
         fill: currentColor;
     }
-`;
 
-const SidebarOpenIcon = styled(SidebarStyledToggler)`
     top: 16px;
     left: 16px;
     transform: ${props =>
         !props.isVisible ? 'translate3d(-50px, 0px, 0px)' : 'translate3d(0px, 0px, 0px)'};
 `;
 
-const SidebarCloseIcon = styled(SidebarStyledToggler)`
-    top: 16px;
-    left: 316px;
+const SidebarCloseIcon = styled.div`
+    position: fixed;
+    z-index: 3;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    svg {
+        pointer-events: none;
+        fill: currentColor;
+    }
+
+    top: 18px;
+    left: 260px;
     transform: scale(${props => (props.isVisible ? 1 : 0.5)});
     opacity: ${props => (props.isVisible ? 1 : 0)};
     pointer-events: ${props => !props.isVisible && 'none'};

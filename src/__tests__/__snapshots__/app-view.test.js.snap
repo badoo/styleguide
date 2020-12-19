@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="hkVWyW"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="ka-daZu"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="jQNUju"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="ghZCyk gpUqoJ"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
-      className="bAYEhF"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="fRIGFA"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,23 +58,23 @@ exports[`App-view generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="dmNaat"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="dGMxCY"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="bbmgcd"
+            className="sc-dlfnbm fIzlLk"
             placeholder="Search component name"
             type="text"
             value=""
           />
           <div
-            className="bYoXQE"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="fLUlAF"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -93,31 +93,31 @@ exports[`App-view generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="bGjjUF"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="cOizXc"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -128,25 +128,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="kcSfKA"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="bysjeh"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="icSILq"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="ekTzlM"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="epqITX"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="iCkVVy"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -160,22 +160,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="eylZKg"
+    className="sc-eggNIi cnMrlT"
   >
     <article
-      className="eOfXW"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="loeLYx"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="gkFYkq"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -212,7 +212,7 @@ exports[`App-view generic tests When component is open 1`] = `
   fill: inherit;
 }
 
-.c41 {
+.c39 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -225,7 +225,7 @@ exports[`App-view generic tests When component is open 1`] = `
   color: inherit;
 }
 
-.c41 > svg {
+.c39 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -360,11 +360,11 @@ exports[`App-view generic tests When component is open 1`] = `
   list-style: none;
 }
 
-.c36 {
+.c33 {
   display: block;
 }
 
-.c37 {
+.c35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -380,11 +380,11 @@ exports[`App-view generic tests When component is open 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c37:only-child {
+.styleguide-sandbox .c34:only-child {
   border-radius: 4px;
 }
 
-.c38 {
+.c36 {
   margin: 0;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -396,7 +396,7 @@ exports[`App-view generic tests When component is open 1`] = `
   word-break: break-word;
 }
 
-.c39 {
+.c37 {
   margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -404,7 +404,7 @@ exports[`App-view generic tests When component is open 1`] = `
   display: flex;
 }
 
-.c40 {
+.c38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -424,11 +424,11 @@ exports[`App-view generic tests When component is open 1`] = `
   padding: 0 8px;
 }
 
-.c40:hover {
+.c38:hover {
   opacity: 1;
 }
 
-.c42 {
+.c40 {
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -438,11 +438,11 @@ exports[`App-view generic tests When component is open 1`] = `
   transform: translate3d(0,0,0);
 }
 
-.c30 {
+.c28 {
   padding-top: 32px;
 }
 
-.c31 {
+.c29 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 32px;
@@ -451,7 +451,7 @@ exports[`App-view generic tests When component is open 1`] = `
   word-break: break-word;
 }
 
-.c32 {
+.c30 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -459,25 +459,25 @@ exports[`App-view generic tests When component is open 1`] = `
   max-width: 50%;
 }
 
-.c33 {
+.c31 {
   margin-top: 16px;
 }
 
-.c35 + .c34 {
+.c32 + .c32 {
   margin-top: 32px;
 }
 
-.c26 + .c25 {
+.c25 + .c25 {
   margin-top: 32px;
 }
 
-.c27 {
+.c26 {
   max-width: 960px;
   min-width: 320px;
   margin: auto;
 }
 
-.c29 + .c28 {
+.c27 + .c27 {
   margin-top: 40px;
 }
 
@@ -565,8 +565,8 @@ exports[`App-view generic tests When component is open 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -620,7 +620,7 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c38 {
+  .c36 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -631,19 +631,19 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c30 {
+  .c28 {
     padding-top: 16px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c27 {
+  .c26 {
     min-width: auto;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .c27 {
+  .c26 {
     max-width: 1440px;
   }
 }
@@ -833,62 +833,62 @@ exports[`App-view generic tests When component is open 1`] = `
     className="c23 c24"
   >
     <section
-      className="c25 c26"
+      className="c25 "
     >
       <div
-        className="c27"
+        className="c26"
       >
         <div
-          className="c28 c29"
+          className="c27 "
         >
           <article
-            className="c30"
+            className="c28"
             data-id="component"
           >
             <header
               className="styleguide-component__header"
             >
               <h1
-                className="c31"
+                className="c29"
               >
                 Component
               </h1>
               <div
-                className="c32"
+                className="c30"
               >
                 
               </div>
             </header>
             <div
-              className="c33"
+              className="c31"
             >
               <div
-                className="c34 c35"
+                className="c32 "
               >
                 <section
-                  className="c36"
+                  className="c33"
                   data-name="SpecComponentEmpty"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c37"
+                    className="c34 c35"
                   >
                     <h1
-                      className="c38"
+                      className="c36"
                       onClick={[Function]}
                       title="SpecComponentEmpty"
                     >
                       SpecComponentEmpty
                     </h1>
                     <div
-                      className="c39"
+                      className="c37"
                     >
                       <span
-                        className="c40"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c41"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -903,11 +903,11 @@ exports[`App-view generic tests When component is open 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c40"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c41"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -927,19 +927,19 @@ exports[`App-view generic tests When component is open 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c42"
+                      className="c40"
                     >
                       <article
-                        className="c30"
+                        className="c28"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c31"
+                            className="c29"
                           />
                           <div
-                            className="c32"
+                            className="c30"
                           />
                         </header>
                       </article>
@@ -948,32 +948,32 @@ exports[`App-view generic tests When component is open 1`] = `
                 </section>
               </div>
               <div
-                className="c34 c35"
+                className="c32 "
               >
                 <section
-                  className="c36"
+                  className="c33"
                   data-name="SpecComponentPropTypes"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c37"
+                    className="c34 c35"
                   >
                     <h1
-                      className="c38"
+                      className="c36"
                       onClick={[Function]}
                       title="SpecComponentPropTypes"
                     >
                       SpecComponentPropTypes
                     </h1>
                     <div
-                      className="c39"
+                      className="c37"
                     >
                       <span
-                        className="c40"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c41"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -988,11 +988,11 @@ exports[`App-view generic tests When component is open 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c40"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c41"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -1012,19 +1012,19 @@ exports[`App-view generic tests When component is open 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c42"
+                      className="c40"
                     >
                       <article
-                        className="c30"
+                        className="c28"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c31"
+                            className="c29"
                           />
                           <div
-                            className="c32"
+                            className="c30"
                           />
                         </header>
                       </article>
@@ -1033,32 +1033,32 @@ exports[`App-view generic tests When component is open 1`] = `
                 </section>
               </div>
               <div
-                className="c34 c35"
+                className="c32 "
               >
                 <section
-                  className="c36"
+                  className="c33"
                   data-name="SpecComponentFull"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c37"
+                    className="c34 c35"
                   >
                     <h1
-                      className="c38"
+                      className="c36"
                       onClick={[Function]}
                       title="SpecComponentFull"
                     >
                       SpecComponentFull
                     </h1>
                     <div
-                      className="c39"
+                      className="c37"
                     >
                       <span
-                        className="c40"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c41"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -1073,11 +1073,11 @@ exports[`App-view generic tests When component is open 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c40"
+                        className="c38"
                         onClick={[Function]}
                       >
                         <div
-                          className="c41"
+                          className="c39"
                           role="presentation"
                         >
                           <svg
@@ -1097,19 +1097,19 @@ exports[`App-view generic tests When component is open 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c42"
+                      className="c40"
                     >
                       <article
-                        className="c30"
+                        className="c28"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c31"
+                            className="c29"
                           />
                           <div
-                            className="c32"
+                            className="c30"
                           />
                         </header>
                       </article>
@@ -1328,8 +1328,8 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -1563,7 +1563,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   fill: inherit;
 }
 
-.c39 {
+.c37 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1576,7 +1576,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   color: inherit;
 }
 
-.c39 > svg {
+.c37 > svg {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1700,11 +1700,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   list-style: none;
 }
 
-.c34 {
+.c31 {
   display: block;
 }
 
-.c35 {
+.c33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1720,11 +1720,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c35:only-child {
+.styleguide-sandbox .c32:only-child {
   border-radius: 4px;
 }
 
-.c36 {
+.c34 {
   margin: 0;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1736,7 +1736,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   word-break: break-word;
 }
 
-.c37 {
+.c35 {
   margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1744,7 +1744,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   display: flex;
 }
 
-.c38 {
+.c36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1764,11 +1764,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   padding: 0 8px;
 }
 
-.c38:hover {
+.c36:hover {
   opacity: 1;
 }
 
-.c40 {
+.c38 {
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1778,11 +1778,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   transform: translate3d(0,0,0);
 }
 
-.c28 {
+.c26 {
   padding-top: 32px;
 }
 
-.c29 {
+.c27 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 32px;
@@ -1791,7 +1791,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   word-break: break-word;
 }
 
-.c30 {
+.c28 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -1799,25 +1799,25 @@ exports[`App-view generic tests When filter show components 1`] = `
   max-width: 50%;
 }
 
-.c31 {
+.c29 {
   margin-top: 16px;
 }
 
-.c33 + .c32 {
+.c30 + .c30 {
   margin-top: 32px;
 }
 
-.c24 + .c23 {
+.c23 + .c23 {
   margin-top: 32px;
 }
 
-.c25 {
+.c24 {
   max-width: 960px;
   min-width: 320px;
   margin: auto;
 }
 
-.c27 + .c26 {
+.c25 + .c25 {
   margin-top: 40px;
 }
 
@@ -1905,8 +1905,8 @@ exports[`App-view generic tests When filter show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -1960,7 +1960,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c36 {
+  .c34 {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -1971,19 +1971,19 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c28 {
+  .c26 {
     padding-top: 16px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c25 {
+  .c24 {
     min-width: auto;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .c25 {
+  .c24 {
     max-width: 1440px;
   }
 }
@@ -2144,62 +2144,62 @@ exports[`App-view generic tests When filter show components 1`] = `
     className="c21 c22"
   >
     <section
-      className="c23 c24"
+      className="c23 "
     >
       <div
-        className="c25"
+        className="c24"
       >
         <div
-          className="c26 c27"
+          className="c25 "
         >
           <article
-            className="c28"
+            className="c26"
             data-id="component"
           >
             <header
               className="styleguide-component__header"
             >
               <h1
-                className="c29"
+                className="c27"
               >
                 Component
               </h1>
               <div
-                className="c30"
+                className="c28"
               >
                 
               </div>
             </header>
             <div
-              className="c31"
+              className="c29"
             >
               <div
-                className="c32 c33"
+                className="c30 "
               >
                 <section
-                  className="c34"
+                  className="c31"
                   data-name="SpecComponentEmpty"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c35"
+                    className="c32 c33"
                   >
                     <h1
-                      className="c36"
+                      className="c34"
                       onClick={[Function]}
                       title="SpecComponentEmpty"
                     >
                       SpecComponentEmpty
                     </h1>
                     <div
-                      className="c37"
+                      className="c35"
                     >
                       <span
-                        className="c38"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c39"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2214,11 +2214,11 @@ exports[`App-view generic tests When filter show components 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c38"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c39"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2238,19 +2238,19 @@ exports[`App-view generic tests When filter show components 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c40"
+                      className="c38"
                     >
                       <article
-                        className="c28"
+                        className="c26"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c29"
+                            className="c27"
                           />
                           <div
-                            className="c30"
+                            className="c28"
                           />
                         </header>
                       </article>
@@ -2259,32 +2259,32 @@ exports[`App-view generic tests When filter show components 1`] = `
                 </section>
               </div>
               <div
-                className="c32 c33"
+                className="c30 "
               >
                 <section
-                  className="c34"
+                  className="c31"
                   data-name="SpecComponentPropTypes"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c35"
+                    className="c32 c33"
                   >
                     <h1
-                      className="c36"
+                      className="c34"
                       onClick={[Function]}
                       title="SpecComponentPropTypes"
                     >
                       SpecComponentPropTypes
                     </h1>
                     <div
-                      className="c37"
+                      className="c35"
                     >
                       <span
-                        className="c38"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c39"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2299,11 +2299,11 @@ exports[`App-view generic tests When filter show components 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c38"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c39"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2323,19 +2323,19 @@ exports[`App-view generic tests When filter show components 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c40"
+                      className="c38"
                     >
                       <article
-                        className="c28"
+                        className="c26"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c29"
+                            className="c27"
                           />
                           <div
-                            className="c30"
+                            className="c28"
                           />
                         </header>
                       </article>
@@ -2344,32 +2344,32 @@ exports[`App-view generic tests When filter show components 1`] = `
                 </section>
               </div>
               <div
-                className="c32 c33"
+                className="c30 "
               >
                 <section
-                  className="c34"
+                  className="c31"
                   data-name="SpecComponentFull"
                   data-vrt-locator="sandbox"
                 >
                   <header
-                    className="c35"
+                    className="c32 c33"
                   >
                     <h1
-                      className="c36"
+                      className="c34"
                       onClick={[Function]}
                       title="SpecComponentFull"
                     >
                       SpecComponentFull
                     </h1>
                     <div
-                      className="c37"
+                      className="c35"
                     >
                       <span
-                        className="c38"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c39"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2384,11 +2384,11 @@ exports[`App-view generic tests When filter show components 1`] = `
                         </div>
                       </span>
                       <span
-                        className="c38"
+                        className="c36"
                         onClick={[Function]}
                       >
                         <div
-                          className="c39"
+                          className="c37"
                           role="presentation"
                         >
                           <svg
@@ -2408,19 +2408,19 @@ exports[`App-view generic tests When filter show components 1`] = `
                     data-vrt-locator="sandbox-content"
                   >
                     <div
-                      className="c40"
+                      className="c38"
                     >
                       <article
-                        className="c28"
+                        className="c26"
                       >
                         <header
                           className="styleguide-component__header"
                         >
                           <h1
-                            className="c29"
+                            className="c27"
                           />
                           <div
-                            className="c30"
+                            className="c28"
                           />
                         </header>
                       </article>
@@ -2680,8 +2680,8 @@ exports[`App-view generic tests When we open component from app 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 16px;
-  left: 316px;
+  top: 18px;
+  left: 260px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
