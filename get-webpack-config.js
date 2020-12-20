@@ -1,7 +1,7 @@
 /* eslint-env node */
 const path = require('path');
 const webpack = require('webpack');
-const { isDebug, buildDir } = require('./build-arguments');
+const { isDebug, buildDir, isVrt } = require('./build-arguments');
 const getBabelOptions = require('./get-babel-options');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -186,7 +186,11 @@ module.exports = function getWebpackConfig({
                             use: genericLoaders,
                         },
                         {
-                            test: /\.(gif|png|jpe?g|woff|ttf)$/i,
+                            test: /\.(woff|woff2|ttf)$/i,
+                            use: isVrt ? 'url-loader' : 'file-loader',
+                        },
+                        {
+                            test: /\.(gif|png|jpe?g)$/i,
                             use: ['file-loader'],
                         },
                     ],
