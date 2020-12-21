@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.9
+
+* Add font inlining for static build of styleguide.
+
 ## 1.1.8
 
 * add support for material-ui `withStyles` HOC.
