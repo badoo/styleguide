@@ -11,6 +11,7 @@ const isCompiling = buildDir => {
 
     return !hasPath;
 };
+const isInlined = isCompiling(buildDir);
 const useCache = isCompiling(buildDir);
 const setCachingForLoaders = (useCache, loaders) =>
     useCache ? loaders : ['cache-loader', ...loaders];
@@ -186,7 +187,11 @@ module.exports = function getWebpackConfig({
                             use: genericLoaders,
                         },
                         {
-                            test: /\.(gif|png|jpe?g|woff|ttf)$/i,
+                            test: /\.(woff|woff2|ttf)$/i,
+                            use: isInlined ? 'url-loader' : 'file-loader',
+                        },
+                        {
+                            test: /\.(gif|png|jpe?g)$/i,
                             use: ['file-loader'],
                         },
                     ],
