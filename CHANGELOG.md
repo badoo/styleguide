@@ -1,4 +1,7 @@
 # Changelog
+## 1.1.9
+
+* for build static from now on - we are inlining fonts.
 
 ## 1.1.8
 

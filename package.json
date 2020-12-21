@@ -11,7 +11,7 @@
   },
   "scripts": {
     "deps": "yarn install --pure-lockfile",
-    "build": "yarn start --config=styleguide.config.js --vrt --buildDir=./dist/",
+    "build": "yarn start --config=styleguide.config.js --buildDir=./dist/",
     "start": "yarn deps && node ./webpack-server.js",
     "lint": "eslint . --ext .js,.jsx",
     "test": "jest",

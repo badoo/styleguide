@@ -1,7 +1,7 @@
 /* eslint-env node */
 const path = require('path');
 const webpack = require('webpack');
-const { isDebug, buildDir, isVrt } = require('./build-arguments');
+const { isDebug, buildDir } = require('./build-arguments');
 const getBabelOptions = require('./get-babel-options');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,6 +11,7 @@ const isCompiling = buildDir => {
 
     return !hasPath;
 };
+const isInlined = isCompiling(buildDir);
 const useCache = isCompiling(buildDir);
 const setCachingForLoaders = (useCache, loaders) =>
     useCache ? loaders : ['cache-loader', ...loaders];
@@ -187,7 +188,7 @@ module.exports = function getWebpackConfig({
                         },
                         {
                             test: /\.(woff|woff2|ttf)$/i,
-                            use: isVrt ? 'url-loader' : 'file-loader',
+                            use: isInlined ? 'url-loader' : 'file-loader',
                         },
                         {
                             test: /\.(gif|png|jpe?g)$/i,
