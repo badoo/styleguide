@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="hzEKpk"
+  className="sc-cTkwdZ hzEKpk"
 >
   <div
-    className="bYUhCn"
+    className="sc-bZSQDF bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="lcYIcA"
+    className="sc-iUuytg lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="fYVumk sOjxB"
+    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
   >
     <div
-      className="erOPBk"
+      className="sc-gWHgXt erOPBk"
     >
       <div
-        className="gvYcCv"
+        className="sc-jcVebW gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,23 +58,23 @@ exports[`App-view generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="iOMzRU"
+        className="sc-citwmv iOMzRU"
       >
         <div
-          className="eTRikO"
+          className="sc-gsTCUz eTRikO"
         >
           <input
             autoComplete="off"
-            className="fIzlLk"
+            className="sc-dlfnbm fIzlLk"
             placeholder="Search component name"
             type="text"
             value=""
           />
           <div
-            className="kZvQyL"
+            className="sc-hKgILt kZvQyL"
           >
             <div
-              className="bHoZMY"
+              className="sc-bdfBwQ bHoZMY"
               role="presentation"
               size={0}
             >
@@ -93,31 +93,31 @@ exports[`App-view generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="ddxHA-D"
+      className="sc-cBNfnY ddxHA-D"
     >
       <nav
-        className="jpJWqU"
+        className="sc-pFZIQ jpJWqU"
       >
         <div
-          className="eoKdvK"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="dGaJds"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="jooZFA"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="XLBKx"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="iUHUNF"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="ipfxtQ"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -128,25 +128,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="eoKdvK"
+          className="sc-jrAGrp eoKdvK"
         >
           <div
-            className="dGaJds"
+            className="sc-eCssSg dGaJds"
           >
             <div
-              className="jooZFA"
+              className="sc-jSgupP jooZFA"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="XLBKx"
+              className="sc-gKsewC XLBKx"
             >
               <div
-                className="iUHUNF"
+                className="sc-iBPRYJ iUHUNF"
               >
                 <a
-                  className="ipfxtQ"
+                  className="sc-fubCfw ipfxtQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -160,22 +160,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="cnMrlT"
+    className="sc-eggNIi cnMrlT"
   >
     <article
-      className="cNrfnb"
+      className="sc-fKFyDc cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="yFNHO"
+          className="sc-bBXqnf yFNHO"
         >
           Welcome!
         </h1>
         <div
-          className="eiFfWJ"
+          className="sc-iwyYcG eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

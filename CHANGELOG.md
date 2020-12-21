@@ -1,7 +1,8 @@
 # Changelog
+
 ## 1.1.9
 
-* for build static from now on - we are inlining fonts.
+* Add font inlining for static build of styleguide.
 
 ## 1.1.8
 
