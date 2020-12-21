@@ -11,7 +11,7 @@ const isCompiling = buildDir => {
 
     return !hasPath;
 };
-const isInlined = isCompiling(buildDir);
+const isInlined = buildDir !== '' || Boolean(buildDir);
 const useCache = isCompiling(buildDir);
 const setCachingForLoaders = (useCache, loaders) =>
     useCache ? loaders : ['cache-loader', ...loaders];
