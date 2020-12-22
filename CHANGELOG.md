@@ -1,8 +1,12 @@
 # Changelog
 
+## 1.1.10
+
+* Fixed isInlined condition.
+
 ## 1.1.9
 
-* Add font inlining for static build of styleguide.
+* for build static from now on - we are inlining fonts.
 
 ## 1.1.8
 
