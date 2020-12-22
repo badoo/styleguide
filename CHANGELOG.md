@@ -1,12 +1,17 @@
 # Changelog
 
+## 1.1.10
+
+* Resolved security issues in outdated dependencies.
+
+
 ## 1.1.9
 
 * Add font inlining for static build of styleguide.
 
 ## 1.1.8
 
-* add support for material-ui `withStyles` HOC.
+* Add support for material-ui `withStyles` HOC.
 
 ## v1.1.7
 
