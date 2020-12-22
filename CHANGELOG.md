@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.11
+
+* Fixed `isInlined` condition
+
 ## 1.1.10
 
 * Resolved security issues in outdated dependencies.
