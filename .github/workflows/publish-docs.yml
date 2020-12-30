@@ -36,5 +36,4 @@ jobs:
       - name: GitHub Pages Deploy
         uses: appleboy/gh-pages-action@v0.0.2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
           remote_url: https://github.com/badoo/styleguide.git
