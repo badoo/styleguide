@@ -6,21 +6,25 @@ on:
       - main  # Set a branch name to trigger deployment
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      # Runs a single command using the runners shell
+      - name: setup node
+        uses: actions/setup-node@v1
         with:
-          hugo-version: '0.79.1'
-
-      - name: Build
-        run: hugo --minify
+          node-version: 12.18.3
+          
+      # install deps
+      - run: yarn install
+      - run: yarn styleguide --buildDir ./docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
