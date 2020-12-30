@@ -7,9 +7,9 @@ export const IconSize = {
 
 const IconBlock = styled.div`
     display: inline-flex;
-    width: ${props =>
+    width: ${(props) =>
         typeof props.size !== 'undefined' && props.size === IconSize.LARGE ? '24px' : '16px'};
-    height: ${props =>
+    height: ${(props) =>
         typeof props.size !== 'undefined' && props.size === IconSize.LARGE ? '24px' : '16px'};
     fill: currentColor;
     transition: all 0.2s ease-in-out;
@@ -71,7 +71,7 @@ const mapNameToCode = {
     ),
 };
 
-const Icon = props => {
+const Icon = (props) => {
     const { name, size } = props;
 
     return (

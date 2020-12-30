@@ -37,7 +37,7 @@ const SidebarLogo = styled.div`
     margin-bottom: 8px;
 `;
 
-const Sidebar = props => {
+const Sidebar = (props) => {
     return (
         <SidebarBlock className={props.className}>
             <SidebarHeader>

@@ -35,7 +35,7 @@ const AppViewBlock = styled.div`
     background: #fff;
 
     ${AppSidebar} {
-        transform: translateX(${props => (props.isSidebarVisible ? 0 : '-100%')});
+        transform: translateX(${(props) => (props.isSidebarVisible ? 0 : '-100%')});
 
         @media screen and (max-width: ${deviceSizes.phone}px) {
             right: 0;
@@ -44,7 +44,7 @@ const AppViewBlock = styled.div`
     }
 
     ${Content} {
-        transform: translateX(${props => (!props.isSidebarVisible ? '100px' : '300px')});
+        transform: translateX(${(props) => (!props.isSidebarVisible ? '100px' : '300px')});
 
         @media screen and (max-width: ${deviceSizes.phone}px) {
             width: 100%;

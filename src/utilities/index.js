@@ -1,4 +1,4 @@
-export const checkMobileScreen = target => {
+export const checkMobileScreen = (target) => {
     const isTabletViewport = target.innerWidth < deviceSizes.tablet;
     const isMobileDevice = Boolean(
         target.navigator.userAgent.match(

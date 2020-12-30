@@ -21,7 +21,7 @@ const mapColorToHex: { [key in Color]: string } = {
 
 type MyComponentType = React.FunctionComponent<MyTypescriptComponentProps>;
 
-const MyTypescriptComponentWithJavascript: MyComponentType = props => {
+const MyTypescriptComponentWithJavascript: MyComponentType = (props) => {
     const { name, color = Color.NEUTRAL } = props;
 
     return (

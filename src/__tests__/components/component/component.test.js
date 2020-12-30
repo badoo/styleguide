@@ -7,7 +7,7 @@ import componentProps from './component.mockup.json';
 describe('Component generic tests:', () => {
     it('When component has props & tests', () => {
         const props = Object.assign({}, componentProps, {
-            tests: componentProps.tests.map(test => {
+            tests: componentProps.tests.map((test) => {
                 test.Component = Component;
 
                 return test;

@@ -6,7 +6,7 @@ const getBabelOptions = require('./get-babel-options');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const isCompiling = buildDir => {
+const isCompiling = (buildDir) => {
     const hasPath = buildDir === '' || Boolean(buildDir);
 
     return !hasPath;
@@ -18,18 +18,18 @@ const setCachingForLoaders = (useCache, loaders) =>
 const setLoaders = (internalLoaders, externalLoader) =>
     externalLoader ? [internalLoaders, ...externalLoader] : [internalLoaders];
 
-const getComponentsFromSections = sections => {
+const getComponentsFromSections = (sections) => {
     const sectionList = sections.toString();
     const componentPaths = sectionList
         .match(/(((?<!\/[/*]\s))require\([/'_\-A-Za-z0-9]+\))/gm)
-        .map(path => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
+        .map((path) => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
 
     return Array.from(new Set(componentPaths));
 };
 
 const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) => {
-    const listOfResolvedComponents = getComponentRoots({ path }).map(root =>
-        components.map(component => path.resolve(root, component))
+    const listOfResolvedComponents = getComponentRoots({ path }).map((root) =>
+        components.map((component) => path.resolve(root, component))
     );
 
     return listOfResolvedComponents.reduce(

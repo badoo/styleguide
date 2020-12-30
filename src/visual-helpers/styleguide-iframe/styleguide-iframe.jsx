@@ -58,7 +58,7 @@ const StyleguideIFrame = React.memo(
 
         React.useEffect(() => {
             if (contentRef && styleList) {
-                styleList.map(style => {
+                styleList.map((style) => {
                     const iframeNewStyleElement = style.cloneNode(true);
 
                     contentRef.contentWindow.document.head.appendChild(iframeNewStyleElement);

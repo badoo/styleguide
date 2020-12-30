@@ -11,7 +11,7 @@ function setMeta(doc, resourcePath, source) {
         description: doc.description,
         fileNameWithoutPrefix: path.parse(resourcePath).name,
         propTypes: doc.props
-            ? Object.keys(doc.props).reduce(function(types, key) {
+            ? Object.keys(doc.props).reduce(function (types, key) {
                   const originalProp = doc.props[key];
                   const type = originalProp.type ? originalProp.type.name : key;
 
@@ -78,7 +78,7 @@ function useTSParser(resourcePath, tsConfigPath) {
     });
 }
 
-module.exports = function(source) {
+module.exports = function (source) {
     if (this.cacheable) {
         this.cacheable();
     }
@@ -92,7 +92,7 @@ module.exports = function(source) {
         as 1 module - 1 component */
         if (doc.length && doc.length > 0) {
             const filterName = path.parse(this.resourcePath).name.replace(/-/g, '');
-            const foundDoc = doc.find(item => item.displayName.toLowerCase() === filterName);
+            const foundDoc = doc.find((item) => item.displayName.toLowerCase() === filterName);
 
             if (foundDoc) {
                 doc = foundDoc;

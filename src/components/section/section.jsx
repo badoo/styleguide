@@ -5,7 +5,7 @@ import config from '__GLOBAL__CONFIG__';
 import Component from '../component/component';
 import { deviceSizes } from '../../utilities';
 
-export const setWidth = value => (typeof value === 'number' ? `${value}px` : value);
+export const setWidth = (value) => (typeof value === 'number' ? `${value}px` : value);
 
 const SectionBlock = styled.section`
     & + & {
@@ -37,7 +37,7 @@ const SectionComponent = styled.div`
     }
 `;
 
-const Section = props => {
+const Section = (props) => {
     const { content } = props;
 
     return (
