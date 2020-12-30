@@ -1,4 +1,5 @@
 coverage/
 examples/
 .idea/
+.github
 __snapshots__/
