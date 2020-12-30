@@ -3,12 +3,17 @@ import styled from 'styled-components';
 
 import Sandbox from '../sandbox/sandbox';
 import config from '__GLOBAL__CONFIG__';
+import { deviceSizes } from '../../utilities';
 
 export const actionBeforeRenderHandler = () =>
     config && config.actionOnRender ? config.actionOnRender() : null;
 
 const ComponentBlock = styled.article`
     padding-top: 32px;
+
+    @media screen and (max-width: ${deviceSizes.phone}px) {
+        padding-top: 16px;
+    }
 `;
 
 const ComponentTitle = styled.h1`
@@ -118,6 +123,10 @@ const ComponentPropsHandler = styled.span`
 
 const ComponentPropsData = styled.div`
     margin-bottom: 32px;
+
+    @media screen and (max-width: ${deviceSizes.phone}px) {
+        overflow-x: scroll;
+    }
 `;
 
 const ComponentSandbox = styled.div`
@@ -136,6 +145,7 @@ function getUniqueTests(tests) {
             item.name === list[index - 1].name && item.Component === list[index - 1].Component;
 
         if (testsAreEqual) {
+            // eslint-disable-next-line no-console
             console.log(`WARNING: ${item.name} has clone tests, please, check your codebase`);
         }
 
@@ -159,14 +169,14 @@ class Component extends React.Component {
     }
 
     render() {
-        const { name, description, propTypes, tests, index } = this.props;
+        const { name, description, propTypes, tests } = this.props;
         const id = name ? name.toLowerCase() : undefined;
         const Wrapper = config.getComponentWrapper ? config.getComponentWrapper() : React.Fragment;
 
         const testList = tests && tests.length ? getUniqueTests(tests) : tests;
 
         return (
-            <ComponentBlock id={id}>
+            <ComponentBlock data-id={id}>
                 <header className="styleguide-component__header">
                     <ComponentTitle>{name}</ComponentTitle>
                     <ComponentDescription>{description}</ComponentDescription>

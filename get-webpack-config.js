@@ -11,6 +11,7 @@ const isCompiling = buildDir => {
 
     return !hasPath;
 };
+const isInlined = buildDir !== '' || Boolean(buildDir);
 const useCache = isCompiling(buildDir);
 const setCachingForLoaders = (useCache, loaders) =>
     useCache ? loaders : ['cache-loader', ...loaders];
@@ -114,6 +115,9 @@ module.exports = function getWebpackConfig({
             ? [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/, ...exceptionsList.tsLoader]
             : [/node_modules\/(?!badoo-styleguide)/, /\.d\.ts/];
 
+    const tsLoaderExtraExceptionList =
+        exceptionsList && exceptionsList.tsExtraLoader ? [...exceptionsList.tsExtraLoader] : [];
+
     return {
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
@@ -177,18 +181,24 @@ module.exports = function getWebpackConfig({
                             // React native modules usually always need to be loaded by metro
                             exclude: isReactNative
                                 ? undefined
-                                : /node_modules\/(?!badoo-styleguide)/,
+                                : tsLoaderExtraExceptionList.concat(
+                                      /node_modules\/(?!badoo-styleguide)/
+                                  ),
                             use: genericLoaders,
                         },
                         {
-                            test: /\.(gif|png|jpe?g|woff|ttf)$/i,
+                            test: /\.(woff|woff2|ttf)$/i,
+                            use: isInlined ? 'url-loader' : 'file-loader',
+                        },
+                        {
+                            test: /\.(gif|png|jpe?g)$/i,
                             use: ['file-loader'],
                         },
                     ],
                 },
                 {
                     test: /\.(j|t)sx?$/,
-                    exclude: /node_modules/,
+                    exclude: tsLoaderExtraExceptionList.concat(/node_modules/),
                     use: ['react-hot-loader/webpack'],
                 },
                 {
@@ -218,6 +228,7 @@ module.exports = function getWebpackConfig({
             modules: [path.resolve(__dirname, 'node_modules')],
             alias: {
                 __GLOBAL__CONFIG__: configPath,
+                'react-dom': '@hot-loader/react-dom',
             },
         },
         resolveLoader: {

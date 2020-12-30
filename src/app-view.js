@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Sidebar from './components/sidebar/sidebar';
 import SearchField from './components/search-field/search-field';
 import Navigation from './components/navigation/navigation';
 import Content from './components/content/content';
 import Section from './components/section/section';
 import Component from './components/component/component';
 import AppViewComponent from '././components/app-view/app-view';
-import AppViewGlobalStyles from './app-global-styles';
 
 class AppView extends React.Component {
     constructor(props) {
@@ -19,6 +17,7 @@ class AppView extends React.Component {
             sections: [],
         };
 
+        this.searchFieldRef = React.createRef();
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
         this.checkCurrentSection = this.checkCurrentSection.bind(this);
     }
@@ -43,32 +42,35 @@ class AppView extends React.Component {
 
     render() {
         return (
-            <AppViewComponent>
-                <AppViewGlobalStyles />
-                <Sidebar>
+            <AppViewComponent
+                searchField={
                     <SearchField
                         value={this.props.searchQuery}
                         onChange={this.props.onSearchFieldChange}
+                        onFocus={this.props.onSearchFieldFocus}
+                        onBlur={this.props.onSearchFieldBlur}
                     />
+                }
+                navigation={
                     <Navigation
                         expandAll={!!this.props.searchQuery}
                         currentHash={this.props.currentHash}
                         sections={this.state.sections}
                     />
-                </Sidebar>
-                <Content>
-                    {this.state.component ? (
-                        <Section content={this.state.component} />
-                    ) : (
-                        <Component
-                            name={'Welcome!'}
-                            description={
-                                'Style guide is a tool to illustrate, sandbox and test your components.'
-                            }
-                        />
-                    )}
-                </Content>
-            </AppViewComponent>
+                }
+                content={
+                    <Content>
+                        {this.state.component ? (
+                            <Section content={this.state.component} />
+                        ) : (
+                            <Component
+                                name="Welcome!"
+                                description="Style guide is a tool to illustrate, sandbox and test your components."
+                            />
+                        )}
+                    </Content>
+                }
+            />
         );
     }
 
@@ -89,6 +91,10 @@ class AppView extends React.Component {
         this.setState({
             component,
         });
+    }
+
+    handleSidebarToggleClick() {
+        this.setSidebarVisibility();
     }
 }
 
@@ -113,6 +119,8 @@ AppView.propTypes = {
     sections: PropTypes.array,
     searchQuery: PropTypes.string,
     onSearchFieldChange: PropTypes.func,
+    onSearchFieldFocus: PropTypes.func,
+    onSearchFieldBlur: PropTypes.func,
 };
 
 export default AppView;

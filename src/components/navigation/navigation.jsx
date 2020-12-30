@@ -5,6 +5,7 @@ import NavigationSection from '../navigation-section/navigation-section';
 
 const NavigationBlock = styled.nav`
     position: relative;
+    max-height: 100vh;
     font-family: sans-serif;
 `;
 

@@ -1,22 +1,95 @@
 # Changelog
 
+## 1.1.11
+
+* Fixed `isInlined` condition
+
+## 1.1.10
+
+* Resolved security issues in outdated dependencies.
+
+
+## 1.1.9
+
+* Add font inlining for static build of styleguide.
+
+## 1.1.8
+
+* Add support for material-ui `withStyles` HOC.
+
+## v1.1.7
+
+* Add design fix for menu.
+
+## v1.1.6
+
+* fix markup bug with `styled-components` and `babel-core@7.4.0`.
+
+## v1.1.5
+
+* Update dependencies.
+
+## v1.1.4
+
+* Update dependencies.
+
+## v1.1.3
+
+* Add `navigation` extra UX improvements.
+
+## v1.1.2
+
+* Add `navigation` UX improvements.
+
+## v1.1.1
+
+* Fix `navigation` styles for case, when menu content doesn't fit in screen.
+
+## v1.1.0
+
+* Add fix for `styleguide-iframe` for components, which depend on parents dimensions.
+* Update react-docgen props resolver to support.
+* Add logs for erros during `js-component`, `ts-component` stage.
+* Fix search and sidebar toggle function collision, introduced in 1.0.0
+
+## v1.0.0
+
+* Updated `react-docgen`
+* **Attention**: Added possible breaking change - `id` in `Section` now is `data-id`.
+* Added toggle function for sidebar.
+* Added active state for navigation section.
+* Added responsive design for the StyleGuide App.
+
+## v0.0.82
+
+* Add compilations only to es6 modules for bundle.
+* Reduce bundle size.
+
+## v0.0.81
+
+* Add support for react-dom hot-reload.
+* Update dependencies.
+
+## v0.0.80
+
+* Add support for exceptions for typescript modules, which should not be a part of bundle via `getSections` function.
+
 ## v0.0.79
 
-* update peerDependencies.
+* Update peerDependencies.
 
 ## v0.0.78
 
-* add support for digits in regexp for `getSections` function.
-
+* Add support for digits in regexp for `getSections` function.
 
 ## v0.0.77
 
-* update dependencies.
-* update regexp for `getSections` function.
+* Update dependencies.
+* Update regexp for `getSections` function.
 
 ## v0.0.76
 
-* fix bug with doubled dependencies via peerDependencies.
+* Fix bug with doubled dependencies via peerDependencies.
 
 ## v0.0.75
 

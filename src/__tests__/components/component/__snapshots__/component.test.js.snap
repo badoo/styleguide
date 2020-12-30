@@ -27,7 +27,7 @@ exports[`Component generic tests: When component has one test with no element to
   fill: inherit;
 }
 
-.c9 {
+.c8 {
   display: block;
 }
 
@@ -47,7 +47,7 @@ exports[`Component generic tests: When component has one test with no element to
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c10:only-child {
+.styleguide-sandbox .c9:only-child {
   border-radius: 4px;
 }
 
@@ -207,13 +207,30 @@ exports[`Component generic tests: When component has one test with no element to
   content: '+';
 }
 
-.c8 + .c7 {
+.c7 + .c7 {
   margin-top: 32px;
+}
+
+@media screen and (max-width:376px) {
+  .c11 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
 }
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -248,19 +265,20 @@ exports[`Component generic tests: When component has one test with no element to
     className="c6"
   >
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="testEmpty"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
             onClick={[Function]}
+            title="testEmpty"
           >
             testEmpty
           </h1>
@@ -349,7 +367,7 @@ exports[`Component generic tests: When component has one test with no valid reac
   fill: inherit;
 }
 
-.c9 {
+.c8 {
   display: block;
 }
 
@@ -369,7 +387,7 @@ exports[`Component generic tests: When component has one test with no valid reac
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c10:only-child {
+.styleguide-sandbox .c9:only-child {
   border-radius: 4px;
 }
 
@@ -529,13 +547,30 @@ exports[`Component generic tests: When component has one test with no valid reac
   content: '+';
 }
 
-.c8 + .c7 {
+.c7 + .c7 {
   margin-top: 32px;
+}
+
+@media screen and (max-width:376px) {
+  .c11 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
 }
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -570,19 +605,20 @@ exports[`Component generic tests: When component has one test with no valid reac
     className="c6"
   >
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="TestWithWrongComponent"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
             onClick={[Function]}
+            title="TestWithWrongComponent"
           >
             TestWithWrongComponent
           </h1>
@@ -747,9 +783,21 @@ exports[`Component generic tests: When component has only props - show props tab
   margin-bottom: 32px;
 }
 
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c6 {
+    overflow-x: scroll;
+  }
+}
+
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -926,9 +974,15 @@ exports[`Component generic tests: When component has only props 1`] = `
   content: '+';
 }
 
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
+}
+
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -989,7 +1043,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
   fill: inherit;
 }
 
-.c6 {
+.c5 {
   display: block;
 }
 
@@ -1009,7 +1063,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c7:only-child {
+.styleguide-sandbox .c6:only-child {
   border-radius: 4px;
 }
 
@@ -1092,13 +1146,30 @@ exports[`Component generic tests: When component has only tests 1`] = `
   margin-top: 16px;
 }
 
-.c5 + .c4 {
+.c4 + .c4 {
   margin-top: 32px;
+}
+
+@media screen and (max-width:376px) {
+  .c8 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
 }
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -1118,19 +1189,20 @@ exports[`Component generic tests: When component has only tests 1`] = `
     className="c3"
   >
     <div
-      className="c4 c5"
+      className="c4 "
     >
       <section
-        className="c6"
+        className="c5"
         data-name="SpecComponentEmpty"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c7"
+          className="c6 c7"
         >
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentEmpty"
           >
             SpecComponentEmpty
           </h1>
@@ -1202,19 +1274,20 @@ exports[`Component generic tests: When component has only tests 1`] = `
       </section>
     </div>
     <div
-      className="c4 c5"
+      className="c4 "
     >
       <section
-        className="c6"
+        className="c5"
         data-name="SpecComponentPropTypes"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c7"
+          className="c6 c7"
         >
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentPropTypes"
           >
             SpecComponentPropTypes
           </h1>
@@ -1286,19 +1359,20 @@ exports[`Component generic tests: When component has only tests 1`] = `
       </section>
     </div>
     <div
-      className="c4 c5"
+      className="c4 "
     >
       <section
-        className="c6"
+        className="c5"
         data-name="SpecComponentFull"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c7"
+          className="c6 c7"
         >
           <h1
             className="c8"
             onClick={[Function]}
+            title="SpecComponentFull"
           >
             SpecComponentFull
           </h1>
@@ -1400,7 +1474,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   fill: inherit;
 }
 
-.c9 {
+.c8 {
   display: block;
 }
 
@@ -1420,7 +1494,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   padding: 0 16px;
 }
 
-.styleguide-sandbox .c10:only-child {
+.styleguide-sandbox .c9:only-child {
   border-radius: 4px;
 }
 
@@ -1580,13 +1654,30 @@ exports[`Component generic tests: When component has props & tests 1`] = `
   content: '+';
 }
 
-.c8 + .c7 {
+.c7 + .c7 {
   margin-top: 32px;
+}
+
+@media screen and (max-width:376px) {
+  .c11 {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 {
+    padding-top: 16px;
+  }
 }
 
 <article
   className="c0"
-  id="component"
+  data-id="component"
 >
   <header
     className="styleguide-component__header"
@@ -1621,19 +1712,20 @@ exports[`Component generic tests: When component has props & tests 1`] = `
     className="c6"
   >
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="SpecComponentEmpty"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentEmpty"
           >
             SpecComponentEmpty
           </h1>
@@ -1705,19 +1797,20 @@ exports[`Component generic tests: When component has props & tests 1`] = `
       </section>
     </div>
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="SpecComponentPropTypes"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentPropTypes"
           >
             SpecComponentPropTypes
           </h1>
@@ -1789,19 +1882,20 @@ exports[`Component generic tests: When component has props & tests 1`] = `
       </section>
     </div>
     <div
-      className="c7 c8"
+      className="c7 "
     >
       <section
-        className="c9"
+        className="c8"
         data-name="SpecComponentFull"
         data-vrt-locator="sandbox"
       >
         <header
-          className="c10"
+          className="c9 c10"
         >
           <h1
             className="c11"
             onClick={[Function]}
+            title="SpecComponentFull"
           >
             SpecComponentFull
           </h1>
