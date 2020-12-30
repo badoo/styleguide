@@ -17,7 +17,7 @@ const SidebarOpenIcon = styled.div`
 
     top: 16px;
     left: 16px;
-    transform: ${props =>
+    transform: ${(props) =>
         !props.isVisible ? 'translate3d(-50px, 0px, 0px)' : 'translate3d(0px, 0px, 0px)'};
 `;
 
@@ -36,9 +36,9 @@ const SidebarCloseIcon = styled.div`
 
     top: 18px;
     left: 260px;
-    transform: scale(${props => (props.isVisible ? 1 : 0.5)});
-    opacity: ${props => (props.isVisible ? 1 : 0)};
-    pointer-events: ${props => !props.isVisible && 'none'};
+    transform: scale(${(props) => (props.isVisible ? 1 : 0.5)});
+    opacity: ${(props) => (props.isVisible ? 1 : 0)};
+    pointer-events: ${(props) => !props.isVisible && 'none'};
 
     @media screen and (max-width: ${deviceSizes.phone}px) {
         right: 16px;
@@ -46,7 +46,7 @@ const SidebarCloseIcon = styled.div`
     }
 `;
 
-const SidebarVisibilityToggler = props => (
+const SidebarVisibilityToggler = (props) => (
     <React.Fragment>
         <SidebarOpenIcon isVisible={!props.isVisible} onClick={props.onClick}>
             <svg id="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15">

@@ -1,5 +1,5 @@
 import * as React from 'react';
 
-const View = props => <div {...props} />;
+const View = (props) => <div {...props} />;
 
 export default View;

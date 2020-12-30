@@ -99,7 +99,7 @@ class AppView extends React.Component {
 }
 
 function mapPropsToSections(sections, hash) {
-    return sections.map(section =>
+    return sections.map((section) =>
         Object.assign({}, section, {
             isOpened: Boolean(findMatchingComponent(section.components, hash)),
         })
@@ -107,11 +107,13 @@ function mapPropsToSections(sections, hash) {
 }
 
 export function findMatchingSection(sections = [], hash) {
-    return sections.filter(section => !!findMatchingComponent(section.components, hash))[0] || null;
+    return (
+        sections.filter((section) => !!findMatchingComponent(section.components, hash))[0] || null
+    );
 }
 
 export function findMatchingComponent(components = [], hash) {
-    return components.filter(component => component.url === hash)[0] || null;
+    return components.filter((component) => component.url === hash)[0] || null;
 }
 
 AppView.propTypes = {

@@ -5,11 +5,11 @@ import AppView from '../app-view';
 import AppProps from './app-view.mockup.json';
 import Component from '../components/component/component';
 
-const setComponentsForTestsInProps = props =>
+const setComponentsForTestsInProps = (props) =>
     Object.assign({}, props, {
-        sections: props.sections.map(section => {
-            section.components.map(component => {
-                component.tests.map(test => {
+        sections: props.sections.map((section) => {
+            section.components.map((component) => {
+                component.tests.map((test) => {
                     test.Component = Component;
 
                     return test;
@@ -82,7 +82,7 @@ describe('App-view generic tests', () => {
         const props = setComponentsForTestsInProps(importedProps);
 
         const root = renderer.create(
-            <AppView {...props} onSearchFieldChange={event => `we test output of ${event}`} />
+            <AppView {...props} onSearchFieldChange={(event) => `we test output of ${event}`} />
         );
 
         const instance = root.getInstance();

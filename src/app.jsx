@@ -86,8 +86,8 @@ function processSearchQuery(searchQuery, sections = []) {
     const searchResultSections = [];
 
     if (searchQuery) {
-        sections.map(section => {
-            const components = section.components.filter(component => {
+        sections.map((section) => {
+            const components = section.components.filter((component) => {
                 const searchValue = component.name.toLowerCase();
                 return searchValue.indexOf(searchQuery) !== -1;
             });

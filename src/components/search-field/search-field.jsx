@@ -61,7 +61,7 @@ const SearchFieldIcon = styled.div`
     color: inherit;
 `;
 
-const SearchField = props => {
+const SearchField = (props) => {
     const { value = '', onChange, onFocus, onBlur, inputRef } = props;
 
     return (

@@ -8,7 +8,7 @@ import componentProps from '../component/component.mockup.json';
 
 describe('Dialog tests:', () => {
     beforeAll(() => {
-        ReactDOM.createPortal = jest.fn(element => {
+        ReactDOM.createPortal = jest.fn((element) => {
             return element;
         });
     });
@@ -18,7 +18,7 @@ describe('Dialog tests:', () => {
     });
 
     const importedComponentProps = Object.assign({}, componentProps, {
-        tests: componentProps.tests.map(test => {
+        tests: componentProps.tests.map((test) => {
             test.Component = Component;
 
             return test;
