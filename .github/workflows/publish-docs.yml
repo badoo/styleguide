@@ -38,4 +38,4 @@ jobs:
         with:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          remote_url: ${{ secrets.REMOTE_URL }}
+          remote_url: https://github.com/badoo/styleguide.git
