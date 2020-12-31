@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2-alpha
+
+* Update dependencies
+
 ## 1.1.11
 
 * Fixed `isInlined` condition
