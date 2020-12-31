@@ -245,7 +245,7 @@ path.resolve(process.cwd(), './tsconfig.json');
 ## v0.0.43
 
 * Remove interfering css-styles from global scope
-* Return opportunity to set @babel/parser options to `react-docgen` for props-generation via `getBabelParserOptions`
+* Return opportunity to set parser options to `react-docgen` for props-generation via `getBabelParserOptions`
 
 ## v0.0.42
 
@@ -276,7 +276,7 @@ path.resolve(process.cwd(), './tsconfig.json');
 
 ## v0.0.36
 
-* Add opportunity to set @babel/parser options to `react-docgen` for props-generation via `getBabelParserOptions`
+* Add opportunity to set parser options to `react-docgen` for props-generation via `getBabelParserOptions`
 
 ## v0.0.35
 
