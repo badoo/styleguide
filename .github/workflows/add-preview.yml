@@ -1,16 +1,10 @@
-# This is a basic workflow to help you get started with Actions
+name: github pages
 
-name: Styleguide-build
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - main  # Set a branch name to trigger deployment
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -31,10 +25,9 @@ jobs:
       # install deps
       - run: yarn install
       - run: yarn styleguide --buildDir ./docs
-        
-      # depl
-      - name: GitHub Pages Deploy
-        uses: appleboy/gh-pages-action@v0.0.2
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          remote_url: https://github.com/badoo/styleguide.git
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
