@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2-alpha
+## 1.2.0-alpha
 
 * Update dependencies
 
