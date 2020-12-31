@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0-alpha.2
+
+* Try to decrease dependencies.
+
 ## 1.2.0-alpha.1
 
 * Update dependencies
