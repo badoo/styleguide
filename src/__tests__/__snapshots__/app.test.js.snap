@@ -10,16 +10,16 @@ exports[`App generic tests When app is is unmounted 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="sc-iUuytg fLDHOp"
     onClick={[Function]}
   >
     <svg
@@ -65,12 +65,12 @@ exports[`App generic tests When app is is unmounted 1`] = `
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="sc-dlfnbm hWZHBM"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
@@ -198,16 +198,16 @@ exports[`App generic tests When app is open 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="sc-iUuytg fLDHOp"
     onClick={[Function]}
   >
     <svg
@@ -253,12 +253,12 @@ exports[`App generic tests When app is open 1`] = `
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="sc-dlfnbm hWZHBM"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
@@ -386,16 +386,16 @@ exports[`App generic tests When app receive no sections 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="sc-iUuytg fLDHOp"
     onClick={[Function]}
   >
     <svg
@@ -441,12 +441,12 @@ exports[`App generic tests When app receive no sections 1`] = `
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="sc-dlfnbm hWZHBM"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value="s"
           />
           <div
@@ -515,16 +515,16 @@ exports[`App search tests When we clear search request 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="sc-iUuytg fLDHOp"
     onClick={[Function]}
   >
     <svg
@@ -570,12 +570,12 @@ exports[`App search tests When we clear search request 1`] = `
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="sc-dlfnbm hWZHBM"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value="comp"
           />
           <div
@@ -674,16 +674,16 @@ exports[`App search tests When we clear search request 2`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="sc-iUuytg fLDHOp"
     onClick={[Function]}
   >
     <svg
@@ -729,12 +729,12 @@ exports[`App search tests When we clear search request 2`] = `
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="sc-dlfnbm hWZHBM"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
@@ -862,16 +862,16 @@ exports[`App search tests When we search, we have results filtered 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="sc-iUuytg fLDHOp"
     onClick={[Function]}
   >
     <svg
@@ -917,12 +917,12 @@ exports[`App search tests When we search, we have results filtered 1`] = `
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="sc-dlfnbm hWZHBM"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
@@ -1050,16 +1050,16 @@ exports[`App search tests When we search, we have results filtered 2`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="sc-iUuytg fLDHOp"
     onClick={[Function]}
   >
     <svg
@@ -1105,12 +1105,12 @@ exports[`App search tests When we search, we have results filtered 2`] = `
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="sc-dlfnbm hWZHBM"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value="comp"
           />
           <div

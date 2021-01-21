@@ -34,8 +34,8 @@ const SidebarCloseIcon = styled.div`
         fill: currentColor;
     }
 
-    top: 18px;
-    left: 260px;
+    top: 16px;
+    left: 16px;
     transform: scale(${(props) => (props.isVisible ? 1 : 0.5)});
     opacity: ${(props) => (props.isVisible ? 1 : 0)};
     pointer-events: ${(props) => !props.isVisible && 'none'};
@@ -49,8 +49,8 @@ const SidebarCloseIcon = styled.div`
 const SidebarVisibilityToggler = (props) => (
     <React.Fragment>
         <SidebarOpenIcon isVisible={!props.isVisible} onClick={props.onClick}>
-            <svg id="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15">
-                <path d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z" />
+            <svg id="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z" />
             </svg>
         </SidebarOpenIcon>
         <SidebarCloseIcon isVisible={props.isVisible} onClick={props.onClick}>
