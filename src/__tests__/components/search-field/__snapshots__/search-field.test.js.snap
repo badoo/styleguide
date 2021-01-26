@@ -6,10 +6,10 @@ exports[`SearchField generic tests When we search 1`] = `
 >
   <input
     autoComplete="off"
-    className="fIzlLk"
+    className="hWZHBM"
     onChange={[Function]}
     placeholder="Search component name"
-    type="text"
+    type="search"
     value="comp"
   />
   <div
