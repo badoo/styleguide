@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0-alpha.3
+
+* Update of sidebar menu and search-box.
+* Update of security dependencies.
+
 ## 1.2.0-alpha.2
 
 * Try to decrease dependencies.
