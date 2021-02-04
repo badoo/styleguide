@@ -2,10 +2,10 @@
 
 exports[`App generic tests When app is is unmounted 1`] = `
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="sc-jcVebW gyEpKN"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="sc-hiSbYr eHxods"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="sc-gWHgXt eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="sc-ezrdKe fJgUTc sc-cBNfnY GZwPX"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="sc-bYEvPH dNBdTb"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="sc-jJEJSO dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,7 +58,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="sc-iktFzd bycluM"
       >
         <div
           className="sc-gsTCUz eTRikO"
@@ -96,7 +96,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="sc-kLgntA eKgxdK"
     >
       <nav
         className="sc-pFZIQ jpJWqU"
@@ -163,22 +163,22 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="sc-citwmv ekawwi"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="sc-idOhPF cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="sc-dIUggk ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="sc-hHftDr cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -190,10 +190,10 @@ exports[`App generic tests When app is is unmounted 1`] = `
 
 exports[`App generic tests When app is open 1`] = `
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="sc-jcVebW gyEpKN"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="sc-hiSbYr eHxods"
     onClick={[Function]}
   >
     <svg
@@ -207,7 +207,7 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="sc-gWHgXt eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -221,13 +221,13 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="sc-ezrdKe fJgUTc sc-cBNfnY GZwPX"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="sc-bYEvPH dNBdTb"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="sc-jJEJSO dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -246,7 +246,7 @@ exports[`App generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="sc-iktFzd bycluM"
       >
         <div
           className="sc-gsTCUz eTRikO"
@@ -284,7 +284,7 @@ exports[`App generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="sc-kLgntA eKgxdK"
     >
       <nav
         className="sc-pFZIQ jpJWqU"
@@ -351,22 +351,22 @@ exports[`App generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="sc-citwmv ekawwi"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="sc-idOhPF cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="sc-dIUggk ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="sc-hHftDr cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -378,10 +378,10 @@ exports[`App generic tests When app is open 1`] = `
 
 exports[`App generic tests When app receive no sections 1`] = `
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="sc-jcVebW gyEpKN"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="sc-hiSbYr eHxods"
     onClick={[Function]}
   >
     <svg
@@ -395,7 +395,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="sc-gWHgXt eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -409,13 +409,13 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="sc-ezrdKe fJgUTc sc-cBNfnY GZwPX"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="sc-bYEvPH dNBdTb"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="sc-jJEJSO dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -434,7 +434,7 @@ exports[`App generic tests When app receive no sections 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="sc-iktFzd bycluM"
       >
         <div
           className="sc-gsTCUz eTRikO"
@@ -472,7 +472,7 @@ exports[`App generic tests When app receive no sections 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="sc-kLgntA eKgxdK"
     >
       <nav
         className="sc-pFZIQ jpJWqU"
@@ -480,22 +480,22 @@ exports[`App generic tests When app receive no sections 1`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="sc-citwmv ekawwi"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="sc-idOhPF cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="sc-dIUggk ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="sc-hHftDr cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -507,10 +507,10 @@ exports[`App generic tests When app receive no sections 1`] = `
 
 exports[`App search tests When we clear search request 1`] = `
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="sc-jcVebW gyEpKN"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="sc-hiSbYr eHxods"
     onClick={[Function]}
   >
     <svg
@@ -524,7 +524,7 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="sc-gWHgXt eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -538,13 +538,13 @@ exports[`App search tests When we clear search request 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="sc-ezrdKe fJgUTc sc-cBNfnY GZwPX"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="sc-bYEvPH dNBdTb"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="sc-jJEJSO dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -563,7 +563,7 @@ exports[`App search tests When we clear search request 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="sc-iktFzd bycluM"
       >
         <div
           className="sc-gsTCUz eTRikO"
@@ -601,7 +601,7 @@ exports[`App search tests When we clear search request 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="sc-kLgntA eKgxdK"
     >
       <nav
         className="sc-pFZIQ jpJWqU"
@@ -639,22 +639,22 @@ exports[`App search tests When we clear search request 1`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="sc-citwmv ekawwi"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="sc-idOhPF cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="sc-dIUggk ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="sc-hHftDr cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -666,10 +666,10 @@ exports[`App search tests When we clear search request 1`] = `
 
 exports[`App search tests When we clear search request 2`] = `
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="sc-jcVebW gyEpKN"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="sc-hiSbYr eHxods"
     onClick={[Function]}
   >
     <svg
@@ -683,7 +683,7 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="sc-gWHgXt eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -697,13 +697,13 @@ exports[`App search tests When we clear search request 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="sc-ezrdKe fJgUTc sc-cBNfnY GZwPX"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="sc-bYEvPH dNBdTb"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="sc-jJEJSO dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -722,7 +722,7 @@ exports[`App search tests When we clear search request 2`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="sc-iktFzd bycluM"
       >
         <div
           className="sc-gsTCUz eTRikO"
@@ -760,7 +760,7 @@ exports[`App search tests When we clear search request 2`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="sc-kLgntA eKgxdK"
     >
       <nav
         className="sc-pFZIQ jpJWqU"
@@ -827,22 +827,22 @@ exports[`App search tests When we clear search request 2`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="sc-citwmv ekawwi"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="sc-idOhPF cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="sc-dIUggk ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="sc-hHftDr cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -854,10 +854,10 @@ exports[`App search tests When we clear search request 2`] = `
 
 exports[`App search tests When we search, we have results filtered 1`] = `
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="sc-jcVebW gyEpKN"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="sc-hiSbYr eHxods"
     onClick={[Function]}
   >
     <svg
@@ -871,7 +871,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="sc-gWHgXt eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -885,13 +885,13 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="sc-ezrdKe fJgUTc sc-cBNfnY GZwPX"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="sc-bYEvPH dNBdTb"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="sc-jJEJSO dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -910,7 +910,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="sc-iktFzd bycluM"
       >
         <div
           className="sc-gsTCUz eTRikO"
@@ -948,7 +948,7 @@ exports[`App search tests When we search, we have results filtered 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="sc-kLgntA eKgxdK"
     >
       <nav
         className="sc-pFZIQ jpJWqU"
@@ -1015,22 +1015,22 @@ exports[`App search tests When we search, we have results filtered 1`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="sc-citwmv ekawwi"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="sc-idOhPF cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="sc-dIUggk ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="sc-hHftDr cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -1042,10 +1042,10 @@ exports[`App search tests When we search, we have results filtered 1`] = `
 
 exports[`App search tests When we search, we have results filtered 2`] = `
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="sc-jcVebW gyEpKN"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="sc-hiSbYr eHxods"
     onClick={[Function]}
   >
     <svg
@@ -1059,7 +1059,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="sc-gWHgXt eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -1073,13 +1073,13 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="sc-ezrdKe fJgUTc sc-cBNfnY GZwPX"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="sc-bYEvPH dNBdTb"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="sc-jJEJSO dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -1098,7 +1098,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="sc-iktFzd bycluM"
       >
         <div
           className="sc-gsTCUz eTRikO"
@@ -1136,7 +1136,7 @@ exports[`App search tests When we search, we have results filtered 2`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="sc-kLgntA eKgxdK"
     >
       <nav
         className="sc-pFZIQ jpJWqU"
@@ -1174,22 +1174,22 @@ exports[`App search tests When we search, we have results filtered 2`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="sc-citwmv ekawwi"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="sc-idOhPF cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="sc-dIUggk ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="sc-hHftDr cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

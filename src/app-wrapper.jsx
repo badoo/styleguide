@@ -42,7 +42,7 @@ function processConfigComponent({ component, sectionName, isSpecificationPath })
     const isSpecPath = isSpecificationPath || defaultIsSpecificationPath;
     const testsPaths = dependencyResolver.keys().filter((key) => isSpecPath(meta, key));
     const testsModules = testsPaths.map(dependencyResolver);
-    const tests = getTestConfiguration(testsModules);
+    const tests = getTestConfiguration(testsModules, sectionName, meta.name);
 
     return {
         url: encodeURIComponent(`${sectionName}-${meta.name}`),
@@ -85,7 +85,7 @@ function isComponentHOC(component) {
     );
 }
 
-function getTestConfiguration(testModules) {
+function getTestConfiguration(testModules, sectionName, componentName) {
     return testModules
         .reduce((list, module) => {
             const variations = Object.keys(module)
@@ -107,6 +107,7 @@ function getTestConfiguration(testModules) {
             return list.concat(variations);
         }, [])
         .map((Test) => ({
+            url: encodeURIComponent(`${sectionName}-${componentName}-${Test.name}`),
             name: Test.name,
             Component: Test.testCase,
         }));

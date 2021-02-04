@@ -32,6 +32,7 @@ class App extends React.PureComponent {
     }
 
     componentDidMount() {
+        this.handleHashChange();
         window.addEventListener('hashchange', this.handleHashChange);
     }
 

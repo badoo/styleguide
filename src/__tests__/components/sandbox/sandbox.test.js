@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
+import renderer, { act, create } from 'react-test-renderer';
 import 'jest-styled-components';
 import Sandbox from '../../../components/sandbox/sandbox';
 import Component from '../../../components/component/component';
@@ -8,6 +8,11 @@ import componentProps from '../component/component.mockup.json';
 
 describe('Sandbox tests:', () => {
     beforeAll(() => {
+        delete window.location;
+        window.location = {
+            hash: '#Structure-Component',
+        };
+
         ReactDOM.createPortal = jest.fn((element) => {
             return element;
         });
@@ -15,6 +20,7 @@ describe('Sandbox tests:', () => {
 
     afterEach(() => {
         ReactDOM.createPortal.mockClear();
+        window.location = location;
     });
 
     /**
@@ -66,6 +72,24 @@ describe('Sandbox tests:', () => {
         instance.toggleFullscreenMode();
 
         expect(instance.state.isFullScreen).toBe(true);
+    });
+
+    it('Sandbox change window.location hash after fullscreen click', () => {
+        let root;
+        const props = {
+            url: '#Structure-Component-SpecComponentEmpty',
+        };
+
+        act(() => {
+            root = create(<Sandbox {...props} />);
+        });
+
+        act(() => {
+            let instance = root.getInstance();
+            instance.toggleFullscreenMode();
+
+            expect(window.location.hash).toBe(props.url);
+        });
     });
 
     it('Sandbox render component in with and without content', () => {

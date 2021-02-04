@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="hzEKpk"
+  className="gyEpKN"
 >
   <div
-    className="bYUhCn"
+    className="eHxods"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="fLDHOp"
+    className="eWegfR"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="fYVumk sOjxB"
+    className="fJgUTc GZwPX"
   >
     <div
-      className="erOPBk"
+      className="dNBdTb"
     >
       <div
-        className="gvYcCv"
+        className="dSNTQb"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,7 +58,7 @@ exports[`App-view generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="iOMzRU"
+        className="bycluM"
       >
         <div
           className="eTRikO"
@@ -93,7 +93,7 @@ exports[`App-view generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="ddxHA-D"
+      className="eKgxdK"
     >
       <nav
         className="jpJWqU"
@@ -160,22 +160,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="cnMrlT"
+    className="ekawwi"
   >
     <article
-      className="cNrfnb"
+      className="cAClpa"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="yFNHO"
+          className="ItPmE"
         >
           Welcome!
         </h1>
         <div
-          className="eiFfWJ"
+          className="cNAalr"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

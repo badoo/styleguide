@@ -239,7 +239,7 @@ class Component extends React.Component {
                 {testList ? (
                     <ComponentTests>
                         {testList.map((test, key) => {
-                            const { name: sandboxName, Component: Test } = test;
+                            const { name: sandboxName, Component: Test, url } = test;
                             let TestElement;
 
                             if (!Test) {
@@ -248,7 +248,7 @@ class Component extends React.Component {
 
                             return (
                                 <ComponentSandbox key={key}>
-                                    <Sandbox title={sandboxName}>
+                                    <Sandbox url={url} title={sandboxName}>
                                         <Wrapper>
                                             {TestElement ? <TestElement /> : <Test />}
                                         </Wrapper>
