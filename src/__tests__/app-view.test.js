@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import renderer, { create, act } from 'react-test-renderer';
 import 'jest-styled-components';
 import AppView from '../app-view';
@@ -10,6 +11,7 @@ const setComponentsForTestsInProps = (props) =>
         sections: props.sections.map((section) => {
             section.components.map((component) => {
                 component.tests.map((test) => {
+                    test.url = `${section.name}-${component.name}-${test.name}`;
                     test.Component = Component;
 
                     return test;
@@ -23,6 +25,16 @@ const setComponentsForTestsInProps = (props) =>
 describe('App-view generic tests', () => {
     let component = renderer.create(<AppView {...JSON.parse(AppProps.openApp)} />).toJSON();
 
+    beforeAll(() => {
+        ReactDOM.createPortal = jest.fn((element) => {
+            return element;
+        });
+    });
+
+    afterEach(() => {
+        ReactDOM.createPortal.mockClear();
+    });
+
     it('When app is open', () => {
         const tree = component;
 
@@ -31,7 +43,7 @@ describe('App-view generic tests', () => {
 
     it('When we open component from app', () => {
         const importedProps = JSON.parse(AppProps.openApp);
-        const props = setComponentsForTestsInProps(importedProps);
+        const props = setComponentsForTestsInProps(importedProps); //?
         const updatedProps = setComponentsForTestsInProps(JSON.parse(AppProps.openComponent));
         let root;
 
@@ -90,5 +102,27 @@ describe('App-view generic tests', () => {
         const statement = instance.props.onSearchFieldChange('this test');
 
         expect(statement).toBe('we test output of this test');
+    });
+
+    it('When we open direct link with sandbox', () => {
+        let root;
+        const importedProps = JSON.parse(AppProps.searchForComponentSuccess);
+        const props = setComponentsForTestsInProps(importedProps);
+
+        act(() => {
+            root = create(<AppView {...props} />);
+        });
+
+        expect(root.toJSON()).toMatchSnapshot();
+
+        act(() => {
+            root.update(
+                <AppView {...props} currentHash="Structure-Component-SpecComponentPropTypes" />
+            );
+        });
+
+        let instance = root.getInstance();
+        expect(instance.state.isDialogOpened).toBe(true);
+        expect(root.toJSON()).toMatchSnapshot();
     });
 });
