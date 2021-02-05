@@ -7,6 +7,7 @@ import Content from './components/content/content';
 import Section from './components/section/section';
 import Component from './components/component/component';
 import AppViewComponent from '././components/app-view/app-view';
+import Dialog from './components/dialog/dialog';
 
 class AppView extends React.Component {
     constructor(props) {
@@ -14,23 +15,29 @@ class AppView extends React.Component {
 
         this.state = {
             component: null,
+            sandbox: null,
             sections: [],
+            isDialogOpened: false,
         };
 
         this.searchFieldRef = React.createRef();
         this.checkDisplayedComponent = this.checkDisplayedComponent.bind(this);
+        this.checkSandboxLink = this.checkSandboxLink.bind(this);
         this.checkCurrentSection = this.checkCurrentSection.bind(this);
+        this.handleDialogClose = this.handleDialogClose.bind(this);
     }
 
     componentDidMount() {
         this.checkCurrentSection();
         this.checkDisplayedComponent();
+        this.checkSandboxLink();
     }
 
     componentDidUpdate(prevProps) {
         if (prevProps.currentHash !== this.props.currentHash) {
             this.checkDisplayedComponent();
             this.checkCurrentSection();
+            this.checkSandboxLink();
         }
 
         if (this.props.sections !== prevProps.sections) {
@@ -41,6 +48,9 @@ class AppView extends React.Component {
     }
 
     render() {
+        const { sandbox } = this.state;
+        const DialogComponent = !!sandbox && sandbox.Component;
+
         return (
             <AppViewComponent
                 searchField={
@@ -68,10 +78,28 @@ class AppView extends React.Component {
                                 description="Style guide is a tool to illustrate, sandbox and test your components."
                             />
                         )}
+
+                        <Dialog
+                            isOpened={this.state.isDialogOpened}
+                            onClose={this.handleDialogClose}
+                            title={sandbox ? sandbox.name : ''}
+                            content={sandbox ? <DialogComponent /> : false}
+                        />
                     </Content>
                 }
             />
         );
+    }
+
+    checkSandboxLink() {
+        const { sections, currentHash } = this.props;
+
+        const sandbox = findMatchingSandbox(sections, currentHash);
+
+        this.setState({
+            sandbox,
+            isDialogOpened: Boolean(sandbox),
+        });
     }
 
     checkCurrentSection() {
@@ -83,13 +111,17 @@ class AppView extends React.Component {
     checkDisplayedComponent() {
         const { currentHash, sections } = this.props;
 
-        let component;
-
         const section = findMatchingSection(sections, currentHash);
-        component = !!section && findMatchingComponent(section.components, currentHash);
+        const component = !!section && findMatchingComponent(section.components, currentHash);
 
         this.setState({
             component,
+        });
+    }
+
+    handleDialogClose() {
+        this.setState({ isDialogOpened: false, sandbox: null }, () => {
+            replaceLocationHash(window.location.hash);
         });
     }
 
@@ -114,6 +146,20 @@ export function findMatchingSection(sections = [], hash) {
 
 export function findMatchingComponent(components = [], hash) {
     return components.filter((component) => component.url === hash)[0] || null;
+}
+
+export function findMatchingSandbox(sections, hash) {
+    return (
+        sections
+            .flatMap((i) => i.components)
+            .flatMap((i) => i.tests)
+            .find((i) => i.url === hash && i) || null
+    );
+}
+
+export function replaceLocationHash(hash) {
+    const componentHash = hash.substr(1).split('-').slice(0, 2).join('-');
+    return (window.location.hash = `${encodeURIComponent(componentHash)}`);
 }
 
 AppView.propTypes = {

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import config from '__GLOBAL__CONFIG__';
-import Dialog from '../dialog/dialog';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Icon, { IconName } from '../icon/icon';
 import { deviceSizes } from '../../utilities';
@@ -102,11 +101,17 @@ class Sandbox extends React.Component {
         this.toggleFullscreenMode = this.toggleFullscreenMode.bind(this);
     }
 
+    // componentDidUpdate(prevState) {
+    //     if (prevState !== this.state) {
+    //         window.location.hash = this.props.url;
+    //     }
+    // }
+
     render() {
-        const { title = 'empty', children } = this.props;
+        const { title = 'empty', url, children } = this.props;
 
         return (
-            <SandboxBlock data-vrt-locator={'sandbox'} data-name={title}>
+            <SandboxBlock data-url={url} data-vrt-locator={'sandbox'} data-name={title}>
                 <SandboxHeader>
                     <SandboxTitle title={title} onClick={this.toggleContentVisibility}>
                         {title}
@@ -125,13 +130,6 @@ class Sandbox extends React.Component {
                 <div data-vrt-locator={'sandbox-content'}>
                     <ErrorBoundary>
                         {this.state.isContentVisible && <SandboxContent>{children}</SandboxContent>}
-
-                        <Dialog
-                            isOpened={this.state.isFullScreen}
-                            onClose={this.toggleFullscreenMode}
-                            title={title}
-                            content={children}
-                        />
                     </ErrorBoundary>
                 </div>
             </SandboxBlock>
@@ -140,6 +138,8 @@ class Sandbox extends React.Component {
 
     toggleFullscreenMode() {
         this.setState({ isFullScreen: !this.state.isFullScreen });
+
+        window.location.hash = this.props.url;
     }
 
     toggleContentVisibility() {
