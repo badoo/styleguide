@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import renderer, { act, create } from 'react-test-renderer';
 import 'jest-styled-components';
 import Sandbox from '../../../components/sandbox/sandbox';
@@ -12,14 +11,9 @@ describe('Sandbox tests:', () => {
         window.location = {
             hash: '#Structure-Component',
         };
-
-        ReactDOM.createPortal = jest.fn((element) => {
-            return element;
-        });
     });
 
     afterEach(() => {
-        ReactDOM.createPortal.mockClear();
         window.location = location;
     });
 

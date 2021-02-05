@@ -37,7 +37,7 @@ class AppView extends React.Component {
         if (prevProps.currentHash !== this.props.currentHash) {
             this.checkDisplayedComponent();
             this.checkCurrentSection();
-            this.checkSandboxLink(); //?
+            this.checkSandboxLink();
         }
 
         if (this.props.sections !== prevProps.sections) {
@@ -121,8 +121,7 @@ class AppView extends React.Component {
 
     handleDialogClose() {
         this.setState({ isDialogOpened: false, sandbox: null }, () => {
-            // returns back to component page
-            window.location.hash = window.location.hash.substr(1).split('-').slice(0, 2).join('-');
+            replaceLocationHash(window.location.hash);
         });
     }
 
@@ -156,6 +155,11 @@ export function findMatchingSandbox(sections, hash) {
             .flatMap((i) => i.tests)
             .find((i) => i.url === hash && i) || null
     );
+}
+
+export function replaceLocationHash(hash) {
+    const componentHash = hash.substr(1).split('-').slice(0, 2).join('-');
+    return (window.location.hash = `${encodeURIComponent(componentHash)}`);
 }
 
 AppView.propTypes = {
