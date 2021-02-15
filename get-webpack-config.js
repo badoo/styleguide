@@ -223,12 +223,17 @@ module.exports = function getWebpackConfig({
                 },
             ],
         },
+        ...(buildDir && {
+            stats: 'detailed',
+            recordsPath: path.resolve(process.cwd(), buildDir, './records.json'),
+        }),
         resolve: {
             extensions: ['.js', '.jsx', '.ts', '.tsx'],
             modules: [path.resolve(__dirname, 'node_modules')],
             alias: {
                 __GLOBAL__CONFIG__: configPath,
                 'react-dom': '@hot-loader/react-dom',
+                '@': path.resolve(__dirname, './src/'),
             },
         },
         resolveLoader: {
@@ -238,6 +243,10 @@ module.exports = function getWebpackConfig({
             new HtmlWebpackPlugin({ title: 'Frontend Styleguide' }),
             new webpack.NamedModulesPlugin(),
             new webpack.HotModuleReplacementPlugin(),
+            new webpack.SourceMapDevToolPlugin({
+                filename: '[name].js.map',
+                include: /bundle/,
+            }),
             new webpack.DefinePlugin({
                 DEBUG: false,
             }),

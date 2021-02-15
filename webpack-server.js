@@ -63,7 +63,24 @@ const ourWebpackConfig = getWebpackConfig({
     tsConfigPath,
 });
 
-const mergedConfig = webpackMerge.smart(ourWebpackConfig, webpackConfigFromProject);
+// We don't want to mock anything for live server. VRT only static builds
+const vrtWebpackOverrides = {
+    resolve: {
+        alias: {
+            'react-transition-group': path.join(__dirname, 'mocks/react-transition-group'),
+        },
+    },
+};
+
+const mergedConfig = webpackMerge.merge(
+    ourWebpackConfig,
+    webpackConfigFromProject,
+    args.buildDir ? vrtWebpackOverrides : {}
+);
+
+if (args.isDebug && args.buildDir) {
+    console.log(JSON.stringify(mergedConfig, null, 2));
+}
 
 const compiler = webpack(mergedConfig);
 
