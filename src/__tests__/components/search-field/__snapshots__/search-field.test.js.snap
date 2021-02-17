@@ -2,21 +2,21 @@
 
 exports[`SearchField generic tests When we search 1`] = `
 <div
-  className="eTRikO"
+  className="search-field__SearchFieldBlock-sc-614ng1-0 iaaJ"
 >
   <input
     autoComplete="off"
-    className="fIzlLk"
+    className="search-field__SearchFieldInput-sc-614ng1-1 gFNoyW"
     onChange={[Function]}
     placeholder="Search component name"
     type="text"
     value="comp"
   />
   <div
-    className="kZvQyL"
+    className="search-field__SearchFieldIcon-sc-614ng1-2 gZqzTX"
   >
     <div
-      className="bHoZMY"
+      className="icon__IconBlock-sc-1huex11-0 dUuptq"
       role="presentation"
       size={0}
     >

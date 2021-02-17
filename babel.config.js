@@ -15,4 +15,12 @@ module.exports = {
             },
         ],
     ],
+    plugins: [
+        [
+            require.resolve('babel-plugin-styled-components'),
+            {
+                displayName: true,
+            },
+        ],
+    ],
 };

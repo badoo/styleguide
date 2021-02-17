@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="hzEKpk"
+  className="app-view__AppViewBlock-sc-1q0b6cp-2 cVGGzY"
 >
   <div
-    className="bYUhCn"
+    className="sidebar-toggler__SidebarOpenIcon-k37c54-0 bXATFR"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="lcYIcA"
+    className="sidebar-toggler__SidebarCloseIcon-k37c54-1 hVHkks"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="fYVumk sOjxB"
+    className="sidebar__SidebarBlock-sc-8z78j8-0 kUxdxX app-view__AppSidebar-sc-1q0b6cp-0 bBloUf"
   >
     <div
-      className="erOPBk"
+      className="sidebar__SidebarHeader-sc-8z78j8-1 dJSVdY"
     >
       <div
-        className="gvYcCv"
+        className="sidebar__SidebarLogo-sc-8z78j8-4 iCixqA"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,23 +58,23 @@ exports[`App-view generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="iOMzRU"
+        className="sidebar__SidebarSearchField-sc-8z78j8-3 cdiINw"
       >
         <div
-          className="eTRikO"
+          className="search-field__SearchFieldBlock-sc-614ng1-0 iaaJ"
         >
           <input
             autoComplete="off"
-            className="fIzlLk"
+            className="search-field__SearchFieldInput-sc-614ng1-1 gFNoyW"
             placeholder="Search component name"
             type="text"
             value=""
           />
           <div
-            className="kZvQyL"
+            className="search-field__SearchFieldIcon-sc-614ng1-2 gZqzTX"
           >
             <div
-              className="bHoZMY"
+              className="icon__IconBlock-sc-1huex11-0 dUuptq"
               role="presentation"
               size={0}
             >
@@ -93,31 +93,31 @@ exports[`App-view generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="ddxHA-D"
+      className="sidebar__SidebarNavigation-sc-8z78j8-2 AQANA"
     >
       <nav
-        className="jpJWqU"
+        className="navigation__NavigationBlock-okbqq3-0 iqyphV"
       >
         <div
-          className="eoKdvK"
+          className="navigation__NavigationSectionBlock-okbqq3-1 kHgfjt"
         >
           <div
-            className="dGaJds"
+            className="navigation-section__NavigationSectionBlock-dxqcqx-0 gAaevE"
           >
             <div
-              className="jooZFA"
+              className="navigation-section__NavigationSectionName-dxqcqx-1 huUxry"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="XLBKx"
+              className="navigation-section__NavigationSectionComponents-dxqcqx-2 cwBZiA"
             >
               <div
-                className="iUHUNF"
+                className="navigation-section__NavigationSectionComponentsItem-dxqcqx-3 kmgQsu"
               >
                 <a
-                  className="ipfxtQ"
+                  className="navigation-section__NavigationSectionComponentsItemLink-dxqcqx-4 eHjwAx"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -128,25 +128,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="eoKdvK"
+          className="navigation__NavigationSectionBlock-okbqq3-1 kHgfjt"
         >
           <div
-            className="dGaJds"
+            className="navigation-section__NavigationSectionBlock-dxqcqx-0 gAaevE"
           >
             <div
-              className="jooZFA"
+              className="navigation-section__NavigationSectionName-dxqcqx-1 huUxry"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="XLBKx"
+              className="navigation-section__NavigationSectionComponents-dxqcqx-2 cwBZiA"
             >
               <div
-                className="iUHUNF"
+                className="navigation-section__NavigationSectionComponentsItem-dxqcqx-3 kmgQsu"
               >
                 <a
-                  className="ipfxtQ"
+                  className="navigation-section__NavigationSectionComponentsItemLink-dxqcqx-4 eHjwAx"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -160,22 +160,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="cnMrlT"
+    className="app-view__Content-sc-1q0b6cp-1 gDSwGL"
   >
     <article
-      className="cNrfnb"
+      className="component__ComponentBlock-sc-1a9tm15-0 flHaVb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="yFNHO"
+          className="component__ComponentTitle-sc-1a9tm15-1 fFrSKK"
         >
           Welcome!
         </h1>
         <div
-          className="eiFfWJ"
+          className="component__ComponentDescription-sc-1a9tm15-2 bGcHBD"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -429,6 +429,7 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 .c40 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -443,8 +444,7 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 .c29 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -467,7 +467,11 @@ exports[`App-view generic tests When component is open 1`] = `
   margin-top: 32px;
 }
 
-.c25 + .c25 {
+.c25 {
+  padding: 0;
+}
+
+.c24 + .c24 {
   margin-top: 32px;
 }
 
@@ -582,7 +586,7 @@ exports[`App-view generic tests When component is open 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -591,32 +595,31 @@ exports[`App-view generic tests When component is open 1`] = `
   will-change: transform;
 }
 
-.c24 {
+.c23 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-}
-
-.c0 .c23 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
@@ -633,6 +636,18 @@ exports[`App-view generic tests When component is open 1`] = `
 @media screen and (max-width:376px) {
   .c28 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c29 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c25 {
+    padding: 32px;
   }
 }
 
@@ -655,19 +670,17 @@ exports[`App-view generic tests When component is open 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media screen and (min-width:768px) {
+  .c23 {
+    padding: 0;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c23 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -830,10 +843,10 @@ exports[`App-view generic tests When component is open 1`] = `
     </div>
   </aside>
   <main
-    className="c23 c24"
+    className="c23"
   >
     <section
-      className="c25 "
+      className="c24 c25"
     >
       <div
         className="c26"
@@ -1223,20 +1236,19 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   font-family: sans-serif;
 }
 
-.c17 {
+.c16 {
   padding-top: 32px;
 }
 
-.c18 {
-  margin-top: 0;
-  margin-bottom: 8px;
+.c17 {
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
   word-break: break-word;
 }
 
-.c19 {
+.c18 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -1345,7 +1357,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -1354,20 +1366,25 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   will-change: transform;
 }
 
-.c16 {
+.c15 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
@@ -1376,15 +1393,15 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c15 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
+@media screen and (max-width:376px) {
+  .c16 {
+    padding-top: 16px;
+  }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (min-width:768px) {
   .c17 {
-    padding-top: 16px;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -1395,19 +1412,17 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media screen and (min-width:768px) {
+  .c15 {
+    padding: 0;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c15 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -1511,22 +1526,22 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
     </div>
   </aside>
   <main
-    className="c15 c16"
+    className="c15"
   >
     <article
-      className="c17"
+      className="c16"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="c18"
+          className="c17"
         >
           Welcome!
         </h1>
         <div
-          className="c19"
+          className="c18"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -1769,6 +1784,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 .c38 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1783,8 +1799,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 .c27 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -1807,7 +1822,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   margin-top: 32px;
 }
 
-.c23 + .c23 {
+.c23 {
+  padding: 0;
+}
+
+.c22 + .c22 {
   margin-top: 32px;
 }
 
@@ -1922,7 +1941,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -1931,32 +1950,31 @@ exports[`App-view generic tests When filter show components 1`] = `
   will-change: transform;
 }
 
-.c22 {
+.c21 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-}
-
-.c0 .c21 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
@@ -1973,6 +1991,18 @@ exports[`App-view generic tests When filter show components 1`] = `
 @media screen and (max-width:376px) {
   .c26 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c27 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c23 {
+    padding: 32px;
   }
 }
 
@@ -1995,19 +2025,17 @@ exports[`App-view generic tests When filter show components 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media screen and (min-width:768px) {
+  .c21 {
+    padding: 0;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c21 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -2141,10 +2169,10 @@ exports[`App-view generic tests When filter show components 1`] = `
     </div>
   </aside>
   <main
-    className="c21 c22"
+    className="c21"
   >
     <section
-      className="c23 "
+      className="c22 c23"
     >
       <div
         className="c24"
@@ -2575,20 +2603,19 @@ exports[`App-view generic tests When we open component from app 1`] = `
   list-style: none;
 }
 
-.c23 {
+.c22 {
   padding-top: 32px;
 }
 
-.c24 {
-  margin-top: 0;
-  margin-bottom: 8px;
+.c23 {
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
   word-break: break-word;
 }
 
-.c25 {
+.c24 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -2697,7 +2724,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -2706,20 +2733,25 @@ exports[`App-view generic tests When we open component from app 1`] = `
   will-change: transform;
 }
 
-.c22 {
+.c21 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
@@ -2728,15 +2760,15 @@ exports[`App-view generic tests When we open component from app 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c21 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
+@media screen and (max-width:376px) {
+  .c22 {
+    padding-top: 16px;
+  }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (min-width:768px) {
   .c23 {
-    padding-top: 16px;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -2747,19 +2779,17 @@ exports[`App-view generic tests When we open component from app 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media screen and (min-width:768px) {
+  .c21 {
+    padding: 0;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c21 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -2922,22 +2952,22 @@ exports[`App-view generic tests When we open component from app 1`] = `
     </div>
   </aside>
   <main
-    className="c21 c22"
+    className="c21"
   >
     <article
-      className="c23"
+      className="c22"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="c24"
+          className="c23"
         >
           Welcome!
         </h1>
         <div
-          className="c25"
+          className="c24"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

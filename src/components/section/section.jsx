@@ -8,8 +8,14 @@ import { deviceSizes } from '../../utilities';
 export const setWidth = value => (typeof value === 'number' ? `${value}px` : value);
 
 const SectionBlock = styled.section`
+    padding: 0;
+
     & + & {
         margin-top: 32px;
+    }
+
+    @media screen and (min-width: ${deviceSizes.tablet}px) {
+        padding: 32px;
     }
 `;
 

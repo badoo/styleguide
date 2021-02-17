@@ -16,6 +16,7 @@ module.exports = {
                 components: [
                     require('components/component/component'),
                     require('components/error-boundary/error-boundary'),
+                    require('visual-helpers/styleguide-device-frame/styleguide-device-frame'),
                 ],
             },
             {

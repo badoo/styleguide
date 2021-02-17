@@ -102,7 +102,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -111,20 +111,25 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   will-change: transform;
 }
 
-.c11 {
+.c10 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
@@ -133,22 +138,10 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c10 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
-}
-
-.c12 .c4 {
+.c11 .c4 {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-}
-
-.c12 .c10 {
-  -webkit-transform: translateX(100px);
-  -ms-transform: translateX(100px);
-  transform: translateX(100px);
 }
 
 @media screen and (max-width:376px) {
@@ -162,6 +155,17 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 
 }
 
+@media screen and (min-width:768px) {
+  .c10 {
+    padding: 0;
+    left: 300px;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+}
+
 @media screen and (max-width:376px) {
   .c0 .c4 {
     right: 0;
@@ -170,27 +174,9 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c10 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@media screen and (max-width:376px) {
-  .c12 .c4 {
+  .c11 .c4 {
     right: 0;
     width: auto;
-  }
-}
-
-@media screen and (max-width:376px) {
-  .c12 .c10 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
   }
 }
 
@@ -259,7 +245,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
     />
   </aside>
   <main
-    className="c10 c11"
+    className="c10"
   />
 </div>
 `;
@@ -366,7 +352,7 @@ exports[`AppView tests: AppView render 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -375,32 +361,31 @@ exports[`AppView tests: AppView render 1`] = `
   will-change: transform;
 }
 
-.c11 {
+.c10 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-}
-
-.c0 .c10 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
@@ -410,19 +395,17 @@ exports[`AppView tests: AppView render 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media screen and (min-width:768px) {
+  .c10 {
+    padding: 0;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c10 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -491,7 +474,7 @@ exports[`AppView tests: AppView render 1`] = `
     />
   </aside>
   <main
-    className="c10 c11"
+    className="c10"
   />
 </div>
 `;
@@ -598,7 +581,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -607,32 +590,31 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   will-change: transform;
 }
 
-.c11 {
+.c10 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-}
-
-.c0 .c10 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
@@ -642,19 +624,17 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media screen and (min-width:768px) {
+  .c10 {
+    padding: 0;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c10 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -723,7 +703,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
     />
   </aside>
   <main
-    className="c10 c11"
+    className="c10"
   />
 </div>
 `;

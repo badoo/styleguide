@@ -11,6 +11,7 @@ export const checkMobileScreen = target => {
 
 export const deviceSizes = {
     phone: 376,
+    phoneLg: 426,
     tablet: 768,
     desktopSm: 992,
     desktopMd: 1280,

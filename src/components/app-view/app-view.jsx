@@ -12,7 +12,7 @@ const KEYCODES = {
 
 const AppSidebar = styled(Sidebar)`
     transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
@@ -22,17 +22,25 @@ const AppSidebar = styled(Sidebar)`
 `;
 
 const Content = styled.main`
+    padding: 32px 0;
     min-width: 0;
-    padding: 32px;
-    position: relative;
+    position: absolute;
     background: #fff;
-    width: calc(100% - ${SIDEBAR_WIDTH}px);
-    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-    will-change: transform;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transition: left 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: left;
+
+    @media screen and (min-width: ${deviceSizes.tablet}px) {
+        padding: 0;
+        left: ${props => (props.isSidebarVisible ? '300px' : '0px')};
+    }
 `;
 
 const AppViewBlock = styled.div`
     background: #fff;
+    display: flex;
 
     ${AppSidebar} {
         transform: translateX(${props => (props.isSidebarVisible ? 0 : '-100%')});
@@ -40,15 +48,6 @@ const AppViewBlock = styled.div`
         @media screen and (max-width: ${deviceSizes.phone}px) {
             right: 0;
             width: auto;
-        }
-    }
-
-    ${Content} {
-        transform: translateX(${props => (!props.isSidebarVisible ? '100px' : '300px')});
-
-        @media screen and (max-width: ${deviceSizes.phone}px) {
-            width: 100%;
-            transform: translateX(0);
         }
     }
 `;
@@ -138,7 +137,7 @@ class AppView extends React.Component {
                     navigation={this.props.navigation}
                 ></AppSidebar>
 
-                <Content>{this.props.content}</Content>
+                <Content isSidebarVisible={this.state.sidebarOpened}>{this.props.content}</Content>
             </AppViewBlock>
         );
     }

@@ -61,6 +61,7 @@ const SandboxControl = styled.span`
 `;
 
 const SandboxContent = styled.div`
+    position: relative;
     padding: 20px;
     border: 1px solid #f0f0f0;
     border-top: 0;

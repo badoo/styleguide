@@ -96,6 +96,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
 }
 
 .c7 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -110,8 +111,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
 }
 
 .c9 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -133,6 +133,7 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
 .c11 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c11 table {
@@ -225,6 +226,18 @@ exports[`Sandbox tests: Sandbox render component 1`] = `
 @media screen and (max-width:376px) {
   .c8 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c11 {
+    padding: 0;
   }
 }
 
@@ -686,6 +699,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
 }
 
 .c7 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -700,8 +714,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
 }
 
 .c9 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -723,6 +736,7 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
 .c11 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c11 table {
@@ -815,6 +829,18 @@ exports[`Sandbox tests: Sandbox render component in fullscreen mode off & on 1`]
 @media screen and (max-width:376px) {
   .c8 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c11 {
+    padding: 0;
   }
 }
 
@@ -1276,6 +1302,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
 }
 
 .c7 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1290,8 +1317,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
 }
 
 .c9 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -1313,6 +1339,7 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
 .c11 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c11 table {
@@ -1405,6 +1432,18 @@ exports[`Sandbox tests: Sandbox render component in with and without content 1`]
 @media screen and (max-width:376px) {
   .c8 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c11 {
+    padding: 0;
   }
 }
 
@@ -1866,6 +1905,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
 }
 
 .c7 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1880,8 +1920,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
 }
 
 .c9 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -1903,6 +1942,7 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
 .c11 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c11 table {
@@ -1995,6 +2035,18 @@ exports[`Sandbox tests: Sandbox render component without title 1`] = `
 @media screen and (max-width:376px) {
   .c8 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c11 {
+    padding: 0;
   }
 }
 

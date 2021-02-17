@@ -29,7 +29,7 @@ Object {
 
 exports[`Config checks Config getSections 1`] = `
 Array [
-  "error-boundary",
+  "styleguide-device-frame",
   "component",
 ]
 `;

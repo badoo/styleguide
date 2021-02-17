@@ -1,7 +1,9 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import View from '../styleguide-view';
 import Text from '../styleguide-text';
+import { deviceSizes } from '../../utilities';
 
 const Platform = {
     OS: 'web',
@@ -15,6 +17,19 @@ const propTypes = {
     border: PropTypes.bool,
     children: PropTypes.node,
 };
+
+const StyledView = styled(View)`
+    display: grid;
+    max-width: ${props => props.size.width}px;
+
+    @media (min-width: ${deviceSizes.phone}px) and (max-width: ${deviceSizes.phoneLg}px) {
+        max-width: 100vw;
+    }
+
+    & > * {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+`;
 
 function StyleguideCell(props) {
     const { legend, backgroundColor, width, height, border, children } = props;
@@ -35,22 +50,22 @@ function StyleguideCell(props) {
                 </Text>
             ) : null}
 
-            <View
+            <StyledView
+                size={{ width, height }}
                 style={{
                     position: 'relative',
                     backgroundColor: backgroundColor || 'transparent',
-                    width,
-                    height,
                     borderWidth: border ? 1 : 0,
                     borderColor: '#aaa',
                     borderStyle: 'solid',
-                    overflow: 'auto',
                     transform:
                         Platform.OS === 'web' ? 'translate3d(0, 0, 0)' : [{ translateZ: '0' }],
                 }}
             >
+                <svg viewBox={`0 0 ${width} ${height}`} />
+
                 {children}
-            </View>
+            </StyledView>
         </View>
     );
 }
