@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import GlobalStyles from './app-global-styles';
+import GlobalStyles, { respondTo } from './app-global-styles';
 import Sidebar from '../sidebar/sidebar';
 import SidebarVisibilityToggler from '../sidebar/sidebar-toggler';
 import { checkMobileScreen, deviceSizes } from '../../utilities';
@@ -12,7 +12,7 @@ const KEYCODES = {
 
 const AppSidebar = styled(Sidebar)`
     transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
@@ -32,10 +32,10 @@ const Content = styled.main`
     transition: left 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     will-change: left;
 
-    @media screen and (min-width: ${deviceSizes.tablet}px) {
+    ${respondTo.tablet`
         padding: 0;
-        left: ${props => (props.isSidebarVisible ? '300px' : '0px')};
-    }
+        left: ${props => (props.isSidebarVisible ? '300px' : '0px')}; 
+    `}
 `;
 
 const AppViewBlock = styled.div`
@@ -61,7 +61,7 @@ class AppView extends React.Component {
         this.handleHashChange = this.handleHashChange.bind(this);
         this.setSidebarVisible = this.setSidebarVisible.bind(this);
         this.state = {
-            sidebarOpened: true,
+            isSidebarVisible: true,
             deviceViewport: false,
         };
     }
@@ -90,11 +90,11 @@ class AppView extends React.Component {
 
     setSidebarVisible(value) {
         if (typeof value === 'undefined') {
-            this.setState({ sidebarOpened: !this.state.sidebarOpened });
+            this.setState({ isSidebarVisible: !this.state.isSidebarVisible });
             return;
         }
 
-        this.setState({ sidebarOpened: value });
+        this.setState({ isSidebarVisible: value });
     }
 
     handleKeyDown(event) {
@@ -121,15 +121,15 @@ class AppView extends React.Component {
         return (
             <AppViewBlock
                 isDeviceViewport={this.state.deviceViewport}
-                isSidebarVisible={this.state.sidebarOpened}
+                isSidebarVisible={this.state.isSidebarVisible}
             >
                 <GlobalStyles />
 
                 <SidebarVisibilityToggler
-                    isVisible={this.state.sidebarOpened}
+                    isVisible={this.state.isSidebarVisible}
                     isMobile={this.state.deviceViewport}
                     onClick={() => {
-                        this.setSidebarVisible(!this.state.sidebarOpened);
+                        this.setSidebarVisible(!this.state.isSidebarVisible);
                     }}
                 />
                 <AppSidebar
@@ -137,7 +137,9 @@ class AppView extends React.Component {
                     navigation={this.props.navigation}
                 ></AppSidebar>
 
-                <Content isSidebarVisible={this.state.sidebarOpened}>{this.props.content}</Content>
+                <Content isSidebarVisible={this.state.isSidebarVisible}>
+                    {this.props.content}
+                </Content>
             </AppViewBlock>
         );
     }

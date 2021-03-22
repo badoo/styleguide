@@ -9,6 +9,9 @@ export const checkMobileScreen = target => {
     return isTabletViewport || isMobileDevice;
 };
 
+/**
+ * @enum {number}
+ */
 export const deviceSizes = {
     phone: 376,
     phoneLg: 426,

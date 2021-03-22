@@ -136,7 +136,7 @@ module.exports = function getWebpackConfig({
             clientLogLevel: isDebug ? 'info' : 'warning',
             contentBase: path.resolve(__dirname, 'dist'),
             hot: true,
-            open: !isDebug,
+            open: true,
         },
         module: {
             rules: [

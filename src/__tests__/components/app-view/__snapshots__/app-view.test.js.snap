@@ -102,7 +102,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -155,14 +155,14 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .c10 {
     padding: 0;
     left: 300px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
 
 }
 
@@ -352,7 +352,7 @@ exports[`AppView tests: AppView render 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -395,7 +395,7 @@ exports[`AppView tests: AppView render 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .c10 {
     padding: 0;
     left: 300px;
@@ -581,7 +581,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -624,7 +624,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .c10 {
     padding: 0;
     left: 300px;

@@ -69,7 +69,7 @@ exports[`Dialog tests: Dialog componentDidUpdate all paths 1`] = `
 
 .c2 {
   margin-bottom: 0;
-  font: 400 16px -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Ubuntu,'Helvetica Neue','Lucida Grande',sans-serif;
+  font: 400 16px -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Ubuntu, 'Helvetica Neue','Lucida Grande',sans-serif;
 }
 
 .c3 {

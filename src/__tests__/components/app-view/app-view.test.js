@@ -25,7 +25,7 @@ describe('AppView tests:', () => {
         });
 
         expect(root.toJSON()).toMatchSnapshot();
-        expect(root.getInstance().state.sidebarOpened).toBe(true);
+        expect(root.getInstance().state.isSidebarVisible).toBe(true);
 
         act(() => {
             root.update(<AppView />);
@@ -33,7 +33,7 @@ describe('AppView tests:', () => {
             instance.setSidebarVisible(false);
         });
 
-        expect(root.getInstance().state.sidebarOpened).toBe(false);
+        expect(root.getInstance().state.isSidebarVisible).toBe(false);
     });
 
     it('AppView handleKeyDown test', () => {
@@ -103,7 +103,7 @@ describe('AppView tests:', () => {
             instance.handleScreenResize(event);
         });
 
-        expect(root.getInstance().state.sidebarOpened).toBe(false);
+        expect(root.getInstance().state.isSidebarVisible).toBe(false);
     });
 
     it('AppView sidebar should be closed when hash changed while mobile detected', () => {
@@ -145,6 +145,6 @@ describe('AppView tests:', () => {
             instance.handleHashChange(event);
         });
 
-        expect(root.getInstance().state.sidebarOpened).toBe(false);
+        expect(root.getInstance().state.isSidebarVisible).toBe(false);
     });
 });

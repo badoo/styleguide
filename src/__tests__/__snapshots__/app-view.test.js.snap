@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="app-view__AppViewBlock-sc-1q0b6cp-2 cVGGzY"
+  className="jIuBlN"
 >
   <div
-    className="sidebar-toggler__SidebarOpenIcon-k37c54-0 bXATFR"
+    className="bYUhCn"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sidebar-toggler__SidebarCloseIcon-k37c54-1 hVHkks"
+    className="lcYIcA"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sidebar__SidebarBlock-sc-8z78j8-0 kUxdxX app-view__AppSidebar-sc-1q0b6cp-0 bBloUf"
+    className="fYVumk sOjxB"
   >
     <div
-      className="sidebar__SidebarHeader-sc-8z78j8-1 dJSVdY"
+      className="erOPBk"
     >
       <div
-        className="sidebar__SidebarLogo-sc-8z78j8-4 iCixqA"
+        className="gvYcCv"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,23 +58,23 @@ exports[`App-view generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="sidebar__SidebarSearchField-sc-8z78j8-3 cdiINw"
+        className="iOMzRU"
       >
         <div
-          className="search-field__SearchFieldBlock-sc-614ng1-0 iaaJ"
+          className="eTRikO"
         >
           <input
             autoComplete="off"
-            className="search-field__SearchFieldInput-sc-614ng1-1 gFNoyW"
+            className="fIzlLk"
             placeholder="Search component name"
             type="text"
             value=""
           />
           <div
-            className="search-field__SearchFieldIcon-sc-614ng1-2 gZqzTX"
+            className="kZvQyL"
           >
             <div
-              className="icon__IconBlock-sc-1huex11-0 dUuptq"
+              className="bHoZMY"
               role="presentation"
               size={0}
             >
@@ -93,31 +93,31 @@ exports[`App-view generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="sidebar__SidebarNavigation-sc-8z78j8-2 AQANA"
+      className="ddxHA-D"
     >
       <nav
-        className="navigation__NavigationBlock-okbqq3-0 iqyphV"
+        className="jpJWqU"
       >
         <div
-          className="navigation__NavigationSectionBlock-okbqq3-1 kHgfjt"
+          className="eoKdvK"
         >
           <div
-            className="navigation-section__NavigationSectionBlock-dxqcqx-0 gAaevE"
+            className="dGaJds"
           >
             <div
-              className="navigation-section__NavigationSectionName-dxqcqx-1 huUxry"
+              className="jooZFA"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="navigation-section__NavigationSectionComponents-dxqcqx-2 cwBZiA"
+              className="XLBKx"
             >
               <div
-                className="navigation-section__NavigationSectionComponentsItem-dxqcqx-3 kmgQsu"
+                className="iUHUNF"
               >
                 <a
-                  className="navigation-section__NavigationSectionComponentsItemLink-dxqcqx-4 eHjwAx"
+                  className="ipfxtQ"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -128,25 +128,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="navigation__NavigationSectionBlock-okbqq3-1 kHgfjt"
+          className="eoKdvK"
         >
           <div
-            className="navigation-section__NavigationSectionBlock-dxqcqx-0 gAaevE"
+            className="dGaJds"
           >
             <div
-              className="navigation-section__NavigationSectionName-dxqcqx-1 huUxry"
+              className="jooZFA"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="navigation-section__NavigationSectionComponents-dxqcqx-2 cwBZiA"
+              className="XLBKx"
             >
               <div
-                className="navigation-section__NavigationSectionComponentsItem-dxqcqx-3 kmgQsu"
+                className="iUHUNF"
               >
                 <a
-                  className="navigation-section__NavigationSectionComponentsItemLink-dxqcqx-4 eHjwAx"
+                  className="ipfxtQ"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -160,22 +160,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="app-view__Content-sc-1q0b6cp-1 gDSwGL"
+    className="dcPoEc"
   >
     <article
-      className="component__ComponentBlock-sc-1a9tm15-0 flHaVb"
+      className="cNrfnb"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="component__ComponentTitle-sc-1a9tm15-1 fFrSKK"
+          className="fbzOyq"
         >
           Welcome!
         </h1>
         <div
-          className="component__ComponentDescription-sc-1a9tm15-2 bGcHBD"
+          className="eiFfWJ"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -586,7 +586,7 @@ exports[`App-view generic tests When component is open 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -670,7 +670,7 @@ exports[`App-view generic tests When component is open 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .c23 {
     padding: 0;
     left: 300px;
@@ -1357,7 +1357,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -1412,7 +1412,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .c15 {
     padding: 0;
     left: 300px;
@@ -1941,7 +1941,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -2025,7 +2025,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .c21 {
     padding: 0;
     left: 300px;
@@ -2724,7 +2724,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
   transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -2779,7 +2779,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .c21 {
     padding: 0;
     left: 300px;
