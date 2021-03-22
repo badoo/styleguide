@@ -33,7 +33,7 @@ const Content = styled.main`
     will-change: left;
 
     ${respondTo.tablet`
-        padding: 0;
+        padding: 0 32px;
         left: ${props => (props.isSidebarVisible ? '300px' : '0px')}; 
     `}
 `;
@@ -135,7 +135,7 @@ class AppView extends React.Component {
                 <AppSidebar
                     searchField={this.props.searchField}
                     navigation={this.props.navigation}
-                ></AppSidebar>
+                />
 
                 <Content isSidebarVisible={this.state.isSidebarVisible}>
                     {this.props.content}

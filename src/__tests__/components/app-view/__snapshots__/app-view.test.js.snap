@@ -157,7 +157,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 
 @media (min-width:768px) {
   .c10 {
-    padding: 0;
+    padding: 0 32px;
     left: 300px;
   }
 }
@@ -397,7 +397,7 @@ exports[`AppView tests: AppView render 1`] = `
 
 @media (min-width:768px) {
   .c10 {
-    padding: 0;
+    padding: 0 32px;
     left: 300px;
   }
 }
@@ -626,7 +626,7 @@ exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
 
 @media (min-width:768px) {
   .c10 {
-    padding: 0;
+    padding: 0 32px;
     left: 300px;
   }
 }

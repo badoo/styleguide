@@ -10,7 +10,7 @@ export const checkMobileScreen = target => {
 };
 
 /**
- * @enum {number}
+ * @type {Object<string, number>}
  */
 export const deviceSizes = {
     phone: 376,

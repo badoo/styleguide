@@ -160,7 +160,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="dcPoEc"
+    className="cwSqlx"
   >
     <article
       className="cNrfnb"
@@ -672,7 +672,7 @@ exports[`App-view generic tests When component is open 1`] = `
 
 @media (min-width:768px) {
   .c23 {
-    padding: 0;
+    padding: 0 32px;
     left: 300px;
   }
 }
@@ -1414,7 +1414,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
 
 @media (min-width:768px) {
   .c15 {
-    padding: 0;
+    padding: 0 32px;
     left: 300px;
   }
 }
@@ -2027,7 +2027,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 
 @media (min-width:768px) {
   .c21 {
-    padding: 0;
+    padding: 0 32px;
     left: 300px;
   }
 }
@@ -2781,7 +2781,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
 
 @media (min-width:768px) {
   .c21 {
-    padding: 0;
+    padding: 0 32px;
     left: 300px;
   }
 }
