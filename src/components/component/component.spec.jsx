@@ -1,6 +1,6 @@
 import React from 'react';
 import Component from './component';
-import { StyleguideDeviceFrame } from '@/visual-helpers';
+import { StyleguideDeviceFrame } from '../../../index';
 
 export const SpecComponentEmpty = () => {
     return <Component name={'BasicComponent'} />;
