@@ -10,7 +10,7 @@ const KEYCODES = {
     S: 83,
 };
 
-const AppSidebar = styled(Sidebar)`
+const PageSidebar = styled(Sidebar)`
     transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: fixed;
     left: 0;
@@ -21,7 +21,7 @@ const AppSidebar = styled(Sidebar)`
     will-change: transform;
 `;
 
-const Content = styled.main`
+const PageContent = styled.main`
     min-width: 0;
     padding: 32px;
     position: relative;
@@ -31,10 +31,10 @@ const Content = styled.main`
     will-change: transform;
 `;
 
-const AppViewBlock = styled.div`
+const PageBlock = styled.div`
     background: #fff;
 
-    ${AppSidebar} {
+    ${PageSidebar} {
         transform: translateX(${(props) => (props.isSidebarVisible ? 0 : '-100%')});
 
         @media screen and (max-width: ${deviceSizes.phone}px) {
@@ -43,7 +43,7 @@ const AppViewBlock = styled.div`
         }
     }
 
-    ${Content} {
+    ${PageContent} {
         transform: translateX(${(props) => (!props.isSidebarVisible ? '100px' : '300px')});
 
         @media screen and (max-width: ${deviceSizes.phone}px) {
@@ -53,7 +53,7 @@ const AppViewBlock = styled.div`
     }
 `;
 
-class AppView extends React.Component {
+class Page extends React.Component {
     constructor(props) {
         super(props);
 
@@ -120,7 +120,7 @@ class AppView extends React.Component {
 
     render() {
         return (
-            <AppViewBlock
+            <PageBlock
                 isDeviceViewport={this.state.deviceViewport}
                 isSidebarVisible={this.state.sidebarOpened}
             >
@@ -133,15 +133,15 @@ class AppView extends React.Component {
                         this.setSidebarVisible(!this.state.sidebarOpened);
                     }}
                 />
-                <AppSidebar
+                <PageSidebar
                     searchField={this.props.searchField}
                     navigation={this.props.navigation}
-                ></AppSidebar>
+                ></PageSidebar>
 
-                <Content>{this.props.content}</Content>
-            </AppViewBlock>
+                <PageContent>{this.props.content}</PageContent>
+            </PageBlock>
         );
     }
 }
 
-export default AppView;
+export default Page;

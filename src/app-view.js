@@ -6,7 +6,7 @@ import Navigation from './components/navigation/navigation';
 import Content from './components/content/content';
 import Section from './components/section/section';
 import Component from './components/component/component';
-import AppViewComponent from '././components/app-view/app-view';
+import Page from './components/page/page';
 
 class AppView extends React.Component {
     constructor(props) {
@@ -42,7 +42,7 @@ class AppView extends React.Component {
 
     render() {
         return (
-            <AppViewComponent
+            <Page
                 searchField={
                     <SearchField
                         value={this.props.searchQuery}

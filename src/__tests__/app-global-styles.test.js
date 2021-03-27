@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import GlobalStyles from '../components/app-view/app-global-styles';
+import GlobalStyles from '../components/page/app-global-styles';
 
 const setGLobalStyles = () => renderer.create(<GlobalStyles />).toJSON();
 const setStyleElement = () => document.head.querySelector('style');

@@ -1,34 +1,34 @@
 import React from 'react';
 import { create, act } from 'react-test-renderer';
 import 'jest-styled-components';
-import AppView from '../../../components/app-view/app-view';
+import Page from '../../../components/page/page';
 
-describe('AppView tests:', () => {
+describe('Page tests:', () => {
     const mobileUserAgent =
         'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1';
 
-    it('AppView render', () => {
+    it('Page render', () => {
         let root;
 
         act(() => {
-            root = create(<AppView />);
+            root = create(<Page />);
         });
 
         expect(root.toJSON()).toMatchSnapshot();
     });
 
-    it('AppView sidebar visibility toggled', () => {
+    it('Page sidebar visibility toggled', () => {
         let root;
 
         act(() => {
-            root = create(<AppView />);
+            root = create(<Page />);
         });
 
         expect(root.toJSON()).toMatchSnapshot();
         expect(root.getInstance().state.sidebarOpened).toBe(true);
 
         act(() => {
-            root.update(<AppView />);
+            root.update(<Page />);
             let instance = root.getInstance();
             instance.setSidebarVisible(false);
         });
@@ -36,15 +36,15 @@ describe('AppView tests:', () => {
         expect(root.getInstance().state.sidebarOpened).toBe(false);
     });
 
-    it('AppView handleKeyDown test', () => {
+    it('Page handleKeyDown test', () => {
         let root;
 
         act(() => {
-            root = create(<AppView />);
+            root = create(<Page />);
         });
 
         act(() => {
-            root.update(<AppView />);
+            root.update(<Page />);
             const event = { keyCode: 83 };
             let instance = root.getInstance();
             instance.handleKeyDown(event);
@@ -60,15 +60,15 @@ describe('AppView tests:', () => {
         expect(root.toJSON()).toMatchSnapshot();
     });
 
-    it('AppView handleScreenResize test', () => {
+    it('Page handleScreenResize test', () => {
         let root;
 
         act(() => {
-            root = create(<AppView />);
+            root = create(<Page />);
         });
 
         act(() => {
-            root.update(<AppView />);
+            root.update(<Page />);
             const event = {
                 target: {
                     navigator: {
@@ -83,15 +83,15 @@ describe('AppView tests:', () => {
         expect(root.getInstance().state.deviceViewport).toBe(true);
     });
 
-    it('AppView sidebar should be closed when mobile detected', () => {
+    it('Page sidebar should be closed when mobile detected', () => {
         let root;
 
         act(() => {
-            root = create(<AppView />);
+            root = create(<Page />);
         });
 
         act(() => {
-            root.update(<AppView />);
+            root.update(<Page />);
             const event = {
                 target: {
                     navigator: {
@@ -106,15 +106,15 @@ describe('AppView tests:', () => {
         expect(root.getInstance().state.sidebarOpened).toBe(false);
     });
 
-    it('AppView sidebar should be closed when hash changed while mobile detected', () => {
+    it('Page sidebar should be closed when hash changed while mobile detected', () => {
         let root;
 
         act(() => {
-            root = create(<AppView />);
+            root = create(<Page />);
         });
 
         act(() => {
-            root.update(<AppView />);
+            root.update(<Page />);
             const event = {
                 target: {
                     navigator: {
@@ -127,13 +127,13 @@ describe('AppView tests:', () => {
         });
 
         act(() => {
-            root.update(<AppView />);
+            root.update(<Page />);
             let instance = root.getInstance();
             instance.setSidebarVisible(true);
         });
 
         act(() => {
-            root.update(<AppView />);
+            root.update(<Page />);
             const event = {
                 target: {
                     location: {
