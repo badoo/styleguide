@@ -106,13 +106,13 @@ function mapPropsToSections(sections, hash) {
     );
 }
 
-export function findMatchingSection(sections = [], hash) {
+function findMatchingSection(sections = [], hash) {
     return (
         sections.filter((section) => !!findMatchingComponent(section.components, hash))[0] || null
     );
 }
 
-export function findMatchingComponent(components = [], hash) {
+function findMatchingComponent(components = [], hash) {
     return components.filter((component) => component.url === hash)[0] || null;
 }
 
