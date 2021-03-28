@@ -1,17 +1,6 @@
 import React from 'react';
 import App from './app';
 
-class AppWrapper extends React.PureComponent {
-    render() {
-        const configSections = this.props.config.getSections();
-        const isSpecificationPath =
-            this.props.config.isSpecificationPath || defaultIsSpecificationPath;
-        const sections = processConfigSections({ configSections, isSpecificationPath });
-
-        return <App sections={sections} />;
-    }
-}
-
 function defaultIsSpecificationPath(componentMeta, path) {
     return path.indexOf(`${componentMeta.fileNameWithoutPrefix}.spec`) !== -1;
 }
@@ -110,6 +99,17 @@ function getTestConfiguration(testModules) {
             name: Test.name,
             Component: Test.testCase,
         }));
+}
+
+class AppWrapper extends React.PureComponent {
+    render() {
+        const configSections = this.props.config.getSections();
+        const isSpecificationPath =
+            this.props.config.isSpecificationPath || defaultIsSpecificationPath;
+        const sections = processConfigSections({ configSections, isSpecificationPath });
+
+        return <App sections={sections} />;
+    }
 }
 
 export default AppWrapper;

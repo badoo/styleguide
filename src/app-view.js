@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import SearchField from './components/search-field/search-field';
 import Navigation from './components/navigation/navigation';
 import Content from './components/content/content';

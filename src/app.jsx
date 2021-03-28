@@ -1,6 +1,30 @@
 import React from 'react';
-
 import AppView from './app-view';
+
+function processSearchQuery(searchQuery, sections = []) {
+    const searchResultSections = [];
+
+    if (searchQuery) {
+        sections.map((section) => {
+            const components = section.components.filter((component) => {
+                const searchValue = component.name.toLowerCase();
+                return searchValue.indexOf(searchQuery) !== -1;
+            });
+
+            if (components.length) {
+                const { ...filteredSectionFields } = section;
+
+                searchResultSections.push({
+                    ...filteredSectionFields,
+                    isOpened: true,
+                    components,
+                });
+            }
+        });
+    }
+
+    return searchResultSections;
+}
 
 class App extends React.PureComponent {
     constructor(props) {
@@ -81,28 +105,3 @@ class App extends React.PureComponent {
 }
 
 export default App;
-
-function processSearchQuery(searchQuery, sections = []) {
-    const searchResultSections = [];
-
-    if (searchQuery) {
-        sections.map((section) => {
-            const components = section.components.filter((component) => {
-                const searchValue = component.name.toLowerCase();
-                return searchValue.indexOf(searchQuery) !== -1;
-            });
-
-            if (components.length) {
-                const { ...filteredSectionFields } = section;
-
-                searchResultSections.push({
-                    ...filteredSectionFields,
-                    isOpened: true,
-                    components,
-                });
-            }
-        });
-    }
-
-    return searchResultSections;
-}
