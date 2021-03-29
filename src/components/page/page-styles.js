@@ -34,7 +34,7 @@ const useDefaultStyleguideStyles = !config.noDefaultStyleguideStyles;
 const useDefaultNormalize = !config.noDefaultNormalize;
 const useStylesForVRT = config.useStylesForVRT;
 
-const GlobalStyle = useDefaultGlobalStyles
+const Pagestyles = useDefaultGlobalStyles
     ? createGlobalStyle`
     ${useDefaultStyleguideStyles ? StyleGuideDefaultStyles : null}
 
@@ -48,4 +48,4 @@ const GlobalStyle = useDefaultGlobalStyles
 
     `;
 
-export default GlobalStyle;
+export default Pagestyles;

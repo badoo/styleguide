@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import GlobalStyles from './app-global-styles';
+import Pagestyles from './page-styles';
 import Sidebar from '../sidebar/sidebar';
 import SidebarVisibilityToggler from '../sidebar/sidebar-toggler';
 import { checkMobileScreen, deviceSizes } from '../../utilities';
@@ -124,7 +124,7 @@ class Page extends React.Component {
                 isDeviceViewport={this.state.deviceViewport}
                 isSidebarVisible={this.state.sidebarOpened}
             >
-                <GlobalStyles />
+                <Pagestyles />
 
                 <SidebarVisibilityToggler
                     isVisible={this.state.sidebarOpened}
