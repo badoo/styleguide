@@ -34,7 +34,9 @@ class AppView extends React.Component {
 
         if (this.props.sections !== prevProps.sections) {
             this.setState({
-                sections: mapPropsToSections(this.props.sections, this.props.currentHash),
+                sections: this.props.sections
+                    ? mapPropsToSections(this.props.sections, this.props.currentHash)
+                    : [],
             });
         }
     }
@@ -75,7 +77,9 @@ class AppView extends React.Component {
 
     checkCurrentSection() {
         this.setState({
-            sections: mapPropsToSections(this.props.sections, this.props.currentHash),
+            sections: this.props.sections
+                ? mapPropsToSections(this.props.sections, this.props.currentHash)
+                : [],
         });
     }
 
