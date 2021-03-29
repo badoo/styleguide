@@ -9,11 +9,11 @@ describe('App generic tests', () => {
 
     it('When app is open', () => {
         act(() => {
-            const mockedConfig = Object.assign(config,
-                {
-                    getSections() { return JSON.parse(AppProps.openApp).sections; }
-                }
-            );
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
             root = create(<App config={mockedConfig} />);
         });
 
@@ -22,20 +22,20 @@ describe('App generic tests', () => {
 
     it('When app receive no sections', () => {
         act(() => {
-            const mockedConfig = Object.assign(config,
-                {
-                    getSections() { return JSON.parse(AppProps.openApp).sections; }
-                }
-            );
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
             root = create(<App config={mockedConfig} />);
         });
 
         act(() => {
-            const mockedConfig = Object.assign(config,
-                {
-                    getSections() { return JSON.parse(AppProps.openComponent).sections; }
-                }
-            );
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openComponent).sections;
+                },
+            });
             root.update(<App config={mockedConfig} />);
         });
 
@@ -50,11 +50,11 @@ describe('App generic tests', () => {
 
     it('When app is is unmounted', () => {
         act(() => {
-            const mockedConfig = Object.assign(config,
-                {
-                    getSections() { return JSON.parse(AppProps.openApp).sections; }
-                }
-            );
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
             root = create(<App config={mockedConfig} />);
         });
 
@@ -87,11 +87,11 @@ describe('App url tests', () => {
 
     it('When app perform handleHashChange', () => {
         act(() => {
-            const mockedConfig = Object.assign(config,
-                {
-                    getSections() { return JSON.parse(AppProps.openApp).sections; }
-                }
-            );
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
             root = create(<App config={mockedConfig} />);
         });
 
