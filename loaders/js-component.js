@@ -78,11 +78,6 @@ module.exports = function (source) {
             results = `${source}
             module.exports.__meta = ${JSON.stringify(meta)};
             module.exports.__dependencyResolver = require.context('./', true, /\.jsx?$/);`;
-        } else if (/export\s+default/.test(source)) {
-            results = `${source}
-            ${doc.displayName}.__meta = ${JSON.stringify(meta)};
-            export const __highOrderComponentInnerComponent = ${doc.displayName}
-            export const __dependencyResolver = require.context('./', true, /\.jsx?$/);`;
         } else {
             results = `${source}
             export const __meta = ${JSON.stringify(meta)};

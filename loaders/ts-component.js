@@ -41,11 +41,6 @@ function setMeta(doc, resourcePath, source) {
         results = `${source}
         module.exports.__meta = ${JSON.stringify(meta)};
         module.exports.__dependencyResolver = require.context('./', true, /\.(j|t)sx?$/);`;
-    } else if (/export\s+default/.test(source)) {
-        results = `${source}
-        ${doc.displayName}.__meta = ${JSON.stringify(meta)};
-        export const __highOrderComponentInnerComponent = ${doc.displayName}
-        export const __dependencyResolver = require.context('./', true, /\.(j|t)sx?$/);`;
     } else {
         results = `${source}
         export const __meta = ${JSON.stringify(meta)};
