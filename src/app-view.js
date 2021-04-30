@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import SearchField from './components/search-field/search-field';
 import Navigation from './components/navigation/navigation';
 import Content from './components/content/content';
 import Section from './components/section/section';
 import Component from './components/component/component';
-import AppViewComponent from '././components/app-view/app-view';
+import Page from './components/page/page';
 
 class AppView extends React.Component {
     constructor(props) {
@@ -35,14 +34,16 @@ class AppView extends React.Component {
 
         if (this.props.sections !== prevProps.sections) {
             this.setState({
-                sections: mapPropsToSections(this.props.sections, this.props.currentHash),
+                sections: this.props.sections
+                    ? mapPropsToSections(this.props.sections, this.props.currentHash)
+                    : [],
             });
         }
     }
 
     render() {
         return (
-            <AppViewComponent
+            <Page
                 searchField={
                     <SearchField
                         value={this.props.searchQuery}
@@ -76,7 +77,9 @@ class AppView extends React.Component {
 
     checkCurrentSection() {
         this.setState({
-            sections: mapPropsToSections(this.props.sections, this.props.currentHash),
+            sections: this.props.sections
+                ? mapPropsToSections(this.props.sections, this.props.currentHash)
+                : [],
         });
     }
 
@@ -106,13 +109,13 @@ function mapPropsToSections(sections, hash) {
     );
 }
 
-export function findMatchingSection(sections = [], hash) {
+function findMatchingSection(sections = [], hash) {
     return (
         sections.filter((section) => !!findMatchingComponent(section.components, hash))[0] || null
     );
 }
 
-export function findMatchingComponent(components = [], hash) {
+function findMatchingComponent(components = [], hash) {
     return components.filter((component) => component.url === hash)[0] || null;
 }
 

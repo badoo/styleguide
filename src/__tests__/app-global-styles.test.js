@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import GlobalStyles from '../components/app-view/app-global-styles';
+import Pagestyles from '../components/page/page-styles';
 
-const setGLobalStyles = () => renderer.create(<GlobalStyles />).toJSON();
+const setGLobalStyles = () => renderer.create(<Pagestyles />).toJSON();
 const setStyleElement = () => document.head.querySelector('style');
 
 describe('Styled-components global styles', () => {

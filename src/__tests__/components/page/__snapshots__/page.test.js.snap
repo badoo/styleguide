@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppView tests: AppView handleKeyDown test 1`] = `
+exports[`Page tests: Page handleKeyDown test 1`] = `
 .c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
@@ -264,7 +264,7 @@ exports[`AppView tests: AppView handleKeyDown test 1`] = `
 </div>
 `;
 
-exports[`AppView tests: AppView render 1`] = `
+exports[`Page tests: Page render 1`] = `
 .c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;
@@ -496,7 +496,7 @@ exports[`AppView tests: AppView render 1`] = `
 </div>
 `;
 
-exports[`AppView tests: AppView sidebar visibility toggled 1`] = `
+exports[`Page tests: Page sidebar visibility toggled 1`] = `
 .c3 {
   -webkit-font-smoothing: antialiased;
   position: relative;

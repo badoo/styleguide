@@ -1,6 +1,6 @@
 import React from 'react';
-
 import AppView from './app-view';
+import { defaultIsSpecificationPath, processConfigSections, processSearchQuery } from './utilities';
 
 class App extends React.PureComponent {
     constructor(props) {
@@ -14,7 +14,7 @@ class App extends React.PureComponent {
         this.state = {
             searchQuery: '',
             hash: window.location.hash.substr(1),
-            sections: this.props.sections,
+            sections: this.getSectionsFromConfig(),
         };
     }
 
@@ -37,12 +37,12 @@ class App extends React.PureComponent {
 
     componentDidUpdate(prevProps) {
         // config is updated, need to update current state sections
-        if (prevProps.sections !== this.props.sections) {
-            let sections = this.props.sections;
+        if (prevProps.config !== this.props.config) {
+            let sections = this.getSectionsFromConfig();
 
             // filter them if the search mode is active
             if (this.state.searchQuery) {
-                sections = processSearchQuery(this.state.searchQuery, this.props.sections);
+                sections = processSearchQuery(this.state.searchQuery, this.getSectionsFromConfig());
             }
 
             this.setState({ sections });
@@ -59,15 +59,23 @@ class App extends React.PureComponent {
         });
     }
 
+    getSectionsFromConfig() {
+        const configSections = this.props.config.getSections();
+        const isSpecificationPath =
+            this.props.config.isSpecificationPath || defaultIsSpecificationPath;
+
+        return processConfigSections({ configSections, isSpecificationPath });
+    }
+
     handleSearchChange(event) {
         const searchQuery = event.target.value.toLowerCase();
 
         if (searchQuery && searchQuery !== this.state.searchQuery) {
-            const sections = processSearchQuery(searchQuery, this.props.sections);
+            const sections = processSearchQuery(searchQuery, this.getSectionsFromConfig());
 
             this.setState({ searchQuery, sections });
         } else if (!searchQuery) {
-            this.setState({ searchQuery: '', sections: this.props.sections });
+            this.setState({ searchQuery: '', sections: this.getSectionsFromConfig() });
         }
     }
 
@@ -81,28 +89,3 @@ class App extends React.PureComponent {
 }
 
 export default App;
-
-function processSearchQuery(searchQuery, sections = []) {
-    const searchResultSections = [];
-
-    if (searchQuery) {
-        sections.map((section) => {
-            const components = section.components.filter((component) => {
-                const searchValue = component.name.toLowerCase();
-                return searchValue.indexOf(searchQuery) !== -1;
-            });
-
-            if (components.length) {
-                const { ...filteredSectionFields } = section;
-
-                searchResultSections.push({
-                    ...filteredSectionFields,
-                    isOpened: true,
-                    components,
-                });
-            }
-        });
-    }
-
-    return searchResultSections;
-}
