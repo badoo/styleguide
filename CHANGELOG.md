@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1
+
+* prop-tables injection via `react-docgen` can break import/export only files. Removal of extra condition in loaders `js-compontent`, `ts-compontent` will help with this edge-case.
+* rename double of app-view components.
+* add tests to .npmignore
+
 ## 1.2.0-alpha.3
 
 * Update of sidebar menu and search-box.
