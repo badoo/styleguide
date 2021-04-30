@@ -3,3 +3,4 @@ examples/
 .idea/
 .github
 __snapshots__/
+__tests__/
