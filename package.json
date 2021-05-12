@@ -93,6 +93,7 @@
   "resolutions": {
     "js-yaml": "^3.13.1",
     "node-sass/**/tar": "^2.2.2",
-    "y18n": "^4.0.1"
+    "y18n": "^4.0.1",
+    "chokidar": "^3.0.0"
   }
 }
