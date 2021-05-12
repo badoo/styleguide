@@ -34,11 +34,6 @@ module.exports = {
      * @optional
      */
     setDeviceFramesAsIframes: false,
-    /**
-     * Set it to true if your project is a React native project
-     * @optional
-     */
-    isReactNative: false,
 
     /**
      * Set it to true if you want to resize sandboxes with the resize handle
