@@ -1,11 +1,346 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App generic tests When app is is unmounted 1`] = `
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c12 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c9 {
+  position: relative;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.c9:focus-within {
+  color: #000;
+}
+
+.c10 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding-left: calc(24px + 12px);
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background-size: cover;
+}
+
+.c10:focus {
+  border-color: #000;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c11 {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c16 {
+  display: block;
+}
+
+.c17 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c18 {
+  padding: 16px;
+  display: none;
+}
+
+.c14 {
+  position: relative;
+  max-height: 100vh;
+  font-family: sans-serif;
+}
+
+.c15 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c21 {
+  padding-top: 32px;
+}
+
+.c22 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c23 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c13 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  will-change: transform;
+}
+
+.c20 {
+  min-width: 0;
+  padding: 32px;
+  position: relative;
+  background: #fff;
+  width: calc(100% - 300px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: transform;
+}
+
+.c0 {
+  background: #fff;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c0 .c19 {
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+@media screen and (max-width:376px) {
+  .c21 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c19 {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="c0"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +354,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +368,13 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="c3 c4 c5"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="c6"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,14 +393,14 @@ exports[`App generic tests When app is is unmounted 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="c8"
       >
         <div
-          className="sc-gsTCUz eTRikO"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm hWZHBM"
+            className="c10"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -74,10 +409,10 @@ exports[`App generic tests When app is is unmounted 1`] = `
             value=""
           />
           <div
-            className="sc-hKgILt kZvQyL"
+            className="c11"
           >
             <div
-              className="sc-bdfBwQ bHoZMY"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -96,42 +431,42 @@ exports[`App generic tests When app is is unmounted 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="c13"
     >
       <nav
-        className="sc-pFZIQ jpJWqU"
+        className="c14"
       >
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-gKsewC XLBKx"
+              className="c18"
             />
           </div>
         </div>
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-gKsewC XLBKx"
+              className="c18"
             />
           </div>
         </div>
@@ -139,22 +474,22 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="c19 c20"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="c21"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="c22"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="c23"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -165,11 +500,346 @@ exports[`App generic tests When app is is unmounted 1`] = `
 `;
 
 exports[`App generic tests When app is open 1`] = `
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c12 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c9 {
+  position: relative;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.c9:focus-within {
+  color: #000;
+}
+
+.c10 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding-left: calc(24px + 12px);
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background-size: cover;
+}
+
+.c10:focus {
+  border-color: #000;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c11 {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c16 {
+  display: block;
+}
+
+.c17 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c18 {
+  padding: 16px;
+  display: none;
+}
+
+.c14 {
+  position: relative;
+  max-height: 100vh;
+  font-family: sans-serif;
+}
+
+.c15 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c21 {
+  padding-top: 32px;
+}
+
+.c22 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c23 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c13 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  will-change: transform;
+}
+
+.c20 {
+  min-width: 0;
+  padding: 32px;
+  position: relative;
+  background: #fff;
+  width: calc(100% - 300px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: transform;
+}
+
+.c0 {
+  background: #fff;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c0 .c19 {
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+@media screen and (max-width:376px) {
+  .c21 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c19 {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="c0"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -183,7 +853,7 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -197,13 +867,13 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="c3 c4 c5"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="c6"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -222,14 +892,14 @@ exports[`App generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="c8"
       >
         <div
-          className="sc-gsTCUz eTRikO"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm hWZHBM"
+            className="c10"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -238,10 +908,10 @@ exports[`App generic tests When app is open 1`] = `
             value=""
           />
           <div
-            className="sc-hKgILt kZvQyL"
+            className="c11"
           >
             <div
-              className="sc-bdfBwQ bHoZMY"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -260,42 +930,42 @@ exports[`App generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="c13"
     >
       <nav
-        className="sc-pFZIQ jpJWqU"
+        className="c14"
       >
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-gKsewC XLBKx"
+              className="c18"
             />
           </div>
         </div>
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-gKsewC XLBKx"
+              className="c18"
             />
           </div>
         </div>
@@ -303,22 +973,22 @@ exports[`App generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="c19 c20"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="c21"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="c22"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="c23"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -329,11 +999,315 @@ exports[`App generic tests When app is open 1`] = `
 `;
 
 exports[`App generic tests When app receive no sections 1`] = `
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c12 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c9 {
+  position: relative;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.c9:focus-within {
+  color: #000;
+}
+
+.c10 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding-left: calc(24px + 12px);
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background-size: cover;
+}
+
+.c10:focus {
+  border-color: #000;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c11 {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c14 {
+  position: relative;
+  max-height: 100vh;
+  font-family: sans-serif;
+}
+
+.c17 {
+  padding-top: 32px;
+}
+
+.c18 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c19 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c13 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  will-change: transform;
+}
+
+.c16 {
+  min-width: 0;
+  padding: 32px;
+  position: relative;
+  background: #fff;
+  width: calc(100% - 300px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: transform;
+}
+
+.c0 {
+  background: #fff;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c0 .c15 {
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+@media screen and (max-width:376px) {
+  .c17 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c15 {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 <div
-  className="sc-cTkwdZ hzEKpk"
+  className="c0"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="c1"
     onClick={[Function]}
   >
     <svg
@@ -347,7 +1321,7 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <div
-    className="sc-iUuytg fLDHOp"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -361,13 +1335,13 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="c3 c4 c5"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="c6"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -386,14 +1360,14 @@ exports[`App generic tests When app receive no sections 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="c8"
       >
         <div
-          className="sc-gsTCUz eTRikO"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm hWZHBM"
+            className="c10"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -402,10 +1376,10 @@ exports[`App generic tests When app receive no sections 1`] = `
             value="s"
           />
           <div
-            className="sc-hKgILt kZvQyL"
+            className="c11"
           >
             <div
-              className="sc-bdfBwQ bHoZMY"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -424,30 +1398,30 @@ exports[`App generic tests When app receive no sections 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="c13"
     >
       <nav
-        className="sc-pFZIQ jpJWqU"
+        className="c14"
       />
     </div>
   </aside>
   <main
-    className="sc-eggNIi cnMrlT"
+    className="c15 c16"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="c17"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf yFNHO"
+          className="c18"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="c19"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
