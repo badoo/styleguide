@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
+module.exports = function getBabelOptions({ getBabelConfig }) {
     let babelOverrides = {
         compact: false,
         minified: false,
@@ -17,18 +17,6 @@ module.exports = function getBabelOptions({ isReactNative, getBabelConfig }) {
         babelConfig.plugins.unshift(require.resolve('react-hot-loader/babel'));
 
         return Object.assign({}, babelConfig, babelOverrides);
-    }
-
-    // @TODO - rethink this, should clients always pass their babel config? Or should we auto-detect it?
-    if (isReactNative) {
-        return Object.assign(
-            {
-                babelrc: false,
-                presets: [require.resolve('metro-react-native-babel-preset')],
-                plugins: [require.resolve('react-hot-loader/babel')],
-            },
-            babelOverrides
-        );
     }
 
     // @TODO - rethink this, should clients always pass their babel config? Or should we auto-detect it?

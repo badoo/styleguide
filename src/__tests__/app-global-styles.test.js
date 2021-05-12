@@ -13,12 +13,4 @@ describe('Styled-components global styles', () => {
 
         expect(styleTag.textContent).toMatchSnapshot();
     });
-
-    it('styled components version to be equal to 5.2.1', () => {
-        setGLobalStyles();
-
-        const styleTag = setStyleElement();
-
-        expect(styleTag.getAttribute('data-styled-version')).toEqual('5.2.1');
-    });
 });

@@ -2,10 +2,10 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="hzEKpk"
+  className="fyoMIT"
 >
   <div
-    className="bYUhCn"
+    className="cqcsJm"
     onClick={[Function]}
   >
     <svg
@@ -19,7 +19,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <div
-    className="fLDHOp"
+    className="cqhevY"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="fYVumk sOjxB"
+    className="coMxPB jMBFJg"
   >
     <div
-      className="erOPBk"
+      className="FfRgh"
     >
       <div
-        className="gvYcCv"
+        className="bRVVhm"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,23 +58,23 @@ exports[`App-view generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="iOMzRU"
+        className="fJNzGa"
       >
         <div
-          className="eTRikO"
+          className="eovPXo"
         >
           <input
             autoComplete="off"
-            className="hWZHBM"
+            className="ihhDHR"
             placeholder="Search component name"
             type="search"
             value=""
           />
           <div
-            className="kZvQyL"
+            className="hziPJU"
           >
             <div
-              className="bHoZMY"
+              className="cVLcqX"
               role="presentation"
               size={0}
             >
@@ -93,31 +93,31 @@ exports[`App-view generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="ddxHA-D"
+      className="gafCDm"
     >
       <nav
-        className="jpJWqU"
+        className="jAwBMs"
       >
         <div
-          className="eoKdvK"
+          className="jeVtJA"
         >
           <div
-            className="dGaJds"
+            className="kKPASM"
           >
             <div
-              className="jooZFA"
+              className="eYViuw"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="XLBKx"
+              className="hndwzQ"
             >
               <div
-                className="iUHUNF"
+                className="SJgek"
               >
                 <a
-                  className="ipfxtQ"
+                  className="gxaoIF"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -128,25 +128,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="eoKdvK"
+          className="jeVtJA"
         >
           <div
-            className="dGaJds"
+            className="kKPASM"
           >
             <div
-              className="jooZFA"
+              className="eYViuw"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="XLBKx"
+              className="hndwzQ"
             >
               <div
-                className="iUHUNF"
+                className="SJgek"
               >
                 <a
-                  className="ipfxtQ"
+                  className="gxaoIF"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -160,22 +160,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="cnMrlT"
+    className="iJlvkI"
   >
     <article
-      className="cNrfnb"
+      className="duUsAr"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="yFNHO"
+          className="cNmGHY"
         >
           Welcome!
         </h1>
         <div
-          className="eiFfWJ"
+          className="laODzD"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

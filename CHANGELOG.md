@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.0
+
+* Drop of support of `React-native`. Due to no practical use of keeping in one package and simplifying the support of the main tool.
+
+## 1.2.2
+
+* all dependencies from now on is not fixed. It helps to improve support and fix issues with managing dependencies for `consumers`.
+
 ## 1.2.1
 
 * prop-tables injection via `react-docgen` can break import/export only files. Removal of extra condition in loaders `js-compontent`, `ts-compontent` will help with this edge-case.
