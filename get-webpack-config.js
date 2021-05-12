@@ -166,10 +166,9 @@ module.exports = function getWebpackConfig({
                         },
                         {
                             test: /\.tsx?$/,
-                            exclude:
-                                tsLoaderExtraExceptionList.concat(
-                                    /node_modules\/(?!badoo-styleguide)/
-                                ),
+                            exclude: tsLoaderExtraExceptionList.concat(
+                                /node_modules\/(?!badoo-styleguide)/
+                            ),
                             use: genericLoaders,
                         },
                         {
