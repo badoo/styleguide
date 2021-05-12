@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+* all dependencies from now on is not fixed. It helps to improve support and fix issues with managing dependencies for `consumers`.
+
 ## 1.2.1
 
 * prop-tables injection via `react-docgen` can break import/export only files. Removal of extra condition in loaders `js-compontent`, `ts-compontent` will help with this edge-case.
