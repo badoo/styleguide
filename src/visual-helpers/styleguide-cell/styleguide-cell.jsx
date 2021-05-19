@@ -13,9 +13,10 @@ const propTypes = {
     fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     backgroundColor: PropTypes.string,
     width: PropTypes.number,
-    height: PropTypes.number,
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     border: PropTypes.bool,
     children: PropTypes.node,
+    isVirtualElement: PropTypes.bool,
 };
 
 function StyleguideCell(props) {
@@ -27,10 +28,11 @@ function StyleguideCell(props) {
         border,
         fontSize = config.legendFontSize ? config.legendFontSize : 10,
         children,
+        isVirtualElement,
     } = props;
 
     return (
-        <View>
+        <View isVirtualElement={!legend || isVirtualElement}>
             {legend ? (
                 <Text
                     style={{

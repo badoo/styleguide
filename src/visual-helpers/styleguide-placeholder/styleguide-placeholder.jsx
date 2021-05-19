@@ -6,7 +6,7 @@ import config from '__GLOBAL__CONFIG__';
 
 const propTypes = {
     width: PropTypes.string,
-    height: PropTypes.string,
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     backgroundColor: PropTypes.string,
     color: PropTypes.string,
     fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

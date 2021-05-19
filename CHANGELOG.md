@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.3
+
+* fix bug with `StyleguideCell` empty div wrapper by default.
+* fix for npm module.
+
 ## 2.0.2
 
 * add opportunity manually set font-size for legends/placeholders in visual tools.

@@ -169,3 +169,41 @@ export const SpecComponentDeviceRange = () => {
         </StyleguideDeviceRange>
     );
 };
+
+export const SpecComponentVirtualStyleguideCell = () => {
+    return (
+        <StyleguideCell height={300} backgroundColor="#ddeeff">
+            <StyleguideCell>
+                <StyleguidePlaceholder
+                    placeholder="Component takes all width of component"
+                    backgroundColor="#ffeedd"
+                />
+            </StyleguideCell>
+        </StyleguideCell>
+    );
+};
+
+export const SpecComponentRealDomStyleguideCell = () => {
+    return (
+        <StyleguideCell height="20vh" legend="Legend for component without div wrapper">
+            <StyleguidePlaceholder
+                placeholder="Component takes all width of component"
+                backgroundColor="#ffeedd"
+            />
+        </StyleguideCell>
+    );
+};
+
+export const SpecComponentRealDomStyleguideCellwithLegend = () => {
+    return (
+        <StyleguideCell
+            isVirtualElement={true}
+            legend="Legend for component, which is wrapped in div wrapper"
+        >
+            <StyleguidePlaceholder
+                placeholder="Component takes all width of component"
+                backgroundColor="#ffeedd"
+            />
+        </StyleguideCell>
+    );
+};

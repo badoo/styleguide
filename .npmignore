@@ -4,4 +4,5 @@ examples/
 .github
 __snapshots__/
 __tests__/
+src/__tests__/
 yarn-error.log
