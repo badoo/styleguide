@@ -144,6 +144,13 @@ export const SpecComponentInGroupCellwithPlaceholder = () => {
                     backgroundColor="#ffeedd"
                 />
             </StyleguideCell>
+
+            <StyleguideCell legend="cell 4 with default font-size">
+                <StyleguidePlaceholder
+                    placeholder="Component 4 with default font-size"
+                    backgroundColor="#ffeedd"
+                />
+            </StyleguideCell>
         </StyleguideGroup>
     );
 };

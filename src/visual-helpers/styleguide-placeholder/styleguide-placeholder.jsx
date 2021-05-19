@@ -2,6 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import View from '../styleguide-view';
 import Text from '../styleguide-text';
+import config from '__GLOBAL__CONFIG__';
 
 const propTypes = {
     width: PropTypes.string,
@@ -13,7 +14,14 @@ const propTypes = {
 };
 
 function StyleguidePlaceholder(props) {
-    const { width, height, backgroundColor, color, fontSize = 8, placeholder } = props;
+    const {
+        width,
+        height,
+        backgroundColor,
+        color,
+        fontSize = config.placeholderFontSize ? config.placeholderFontSize : 8,
+        placeholder,
+    } = props;
 
     const placeholderText = placeholder || 'placeholder';
 

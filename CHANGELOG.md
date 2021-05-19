@@ -3,6 +3,7 @@
 ## 2.0.2
 
 * add opportunity manually set font-size for legends/placeholders in visual tools.
+* add opportunity to control fontSizes for legend/placeholder via config.
 
 ## 2.0.1
 

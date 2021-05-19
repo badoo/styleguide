@@ -2,6 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import View from '../styleguide-view';
 import Text from '../styleguide-text';
+import config from '__GLOBAL__CONFIG__';
 
 const Platform = {
     OS: 'web',
@@ -18,7 +19,15 @@ const propTypes = {
 };
 
 function StyleguideCell(props) {
-    const { legend, backgroundColor, width, height, border, fontSize = 10, children } = props;
+    const {
+        legend,
+        backgroundColor,
+        width,
+        height,
+        border,
+        fontSize = config.legendFontSize ? config.legendFontSize : 10,
+        children,
+    } = props;
 
     return (
         <View>
