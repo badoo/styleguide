@@ -16,6 +16,10 @@ export type StyleguideDeviceFrameProps = {
      */
     legend?: string;
     /**
+     * The font-size for legend: number , px, vh or any other units
+     */
+    fontSize?: string | number;
+    /**
      * The elements to be inserted in the content block
      */
     children?: React.ReactNode;

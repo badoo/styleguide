@@ -1,7 +1,7 @@
 {
   "name": "badoo-styleguide",
-  "version": "2.0.0",
-  "description": "Badoo styleguide used to develop UI components for the Web and React Native",
+  "version": "2.0.2",
+  "description": "Badoo styleguide is sandbox environment to develop  & document React UI components",
   "author": "badoo",
   "license": "MIT",
   "bin": "./webpack-server.js",

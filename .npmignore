@@ -4,3 +4,4 @@ examples/
 .github
 __snapshots__/
 __tests__/
+yarn-error.log

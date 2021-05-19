@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.2
+
+* add opportunity manually set font-size for legends/placeholders in visual tools.
+* add opportunity to control fontSizes for legend/placeholder via config.
+
+## 2.0.1
+
+* fix for npm module
+
 ## 2.0.0
 
 * Drop of support of `React-native`. Due to no practical use of keeping in one package and simplifying the support of the main tool.

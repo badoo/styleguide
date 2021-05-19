@@ -6,6 +6,10 @@ export type StyleguideCellProps = {
      */
     legend?: string;
     /**
+     * The font-size for caption: number , px, vh or any other units
+     */
+    fontSize?: string | number;
+    /**
      * Background-color for component
      */
     backgroundColor?: string;
