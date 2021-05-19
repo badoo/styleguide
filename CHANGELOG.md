@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+
+* fix for npm module
+
 ## 2.0.0
 
 * Drop of support of `React-native`. Due to no practical use of keeping in one package and simplifying the support of the main tool.
