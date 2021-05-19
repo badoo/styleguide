@@ -10,7 +10,7 @@ const Platform = {
 
 const propTypes = {
     legend: PropTypes.string,
-    fontSize: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
+    fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     backgroundColor: PropTypes.string,
     width: PropTypes.number,
     height: PropTypes.number,

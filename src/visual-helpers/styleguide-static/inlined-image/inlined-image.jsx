@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
     text: PropTypes.string,
-    width: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
-    height: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
-    color: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
-    fontFamily: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
-    fontSize: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
-    fontWeight: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
-    textColor: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
-    letterSpacing: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
+    width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    color: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    fontFamily: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    fontWeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    textColor: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    letterSpacing: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     dominantBaseline: PropTypes.oneOf([
         'auto',
         'text-bottom',
