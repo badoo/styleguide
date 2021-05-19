@@ -9,6 +9,7 @@ const Platform = {
 
 const propTypes = {
     legend: PropTypes.string,
+    fontSize: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
     backgroundColor: PropTypes.string,
     width: PropTypes.number,
     height: PropTypes.number,
@@ -17,7 +18,7 @@ const propTypes = {
 };
 
 function StyleguideCell(props) {
-    const { legend, backgroundColor, width, height, border, children } = props;
+    const { legend, backgroundColor, width, height, border, fontSize = 10, children } = props;
 
     return (
         <View>
@@ -27,7 +28,7 @@ function StyleguideCell(props) {
                         width,
                         margin: 0,
                         marginBottom: 10,
-                        fontSize: 10,
+                        fontSize,
                         fontFamily: 'monospace',
                     }}
                 >
