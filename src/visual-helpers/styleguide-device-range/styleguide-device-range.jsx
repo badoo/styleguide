@@ -5,7 +5,7 @@ import StyleguideCell from '../styleguide-cell/styleguide-cell';
 
 const propTypes = {
     children: PropTypes.node,
-    fontSize: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
+    fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 function StyleguideDeviceRange(props) {

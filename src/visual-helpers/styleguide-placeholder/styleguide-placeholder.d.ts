@@ -24,7 +24,7 @@ export type StyleguidePlaceholderProps = {
     /**
      * height of cell for component's render
      */
-    height?: string;
+    height?: string | number;
     /**
      * If set to true - show visual border
      */

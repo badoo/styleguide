@@ -20,7 +20,7 @@ export type StyleguideCellProps = {
     /**
      * height of cell for component's render
      */
-    height?: number;
+    height?: string | number;
     /**
      * If set to true - show visual border
      */
@@ -29,6 +29,10 @@ export type StyleguideCellProps = {
      * The elements to be inserted in the content block
      */
     children?: React.ReactNode;
+    /**
+     * The elements to be inserted in the content block
+     */
+    isVirtualElement?: boolean;
 };
 
 declare const StyleguideCell: React.FunctionComponent<StyleguideCellProps>;

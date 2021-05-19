@@ -6,10 +6,10 @@ import config from '__GLOBAL__CONFIG__';
 
 const propTypes = {
     width: PropTypes.string,
-    height: PropTypes.string,
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     backgroundColor: PropTypes.string,
     color: PropTypes.string,
-    fontSize: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
+    fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     placeholder: PropTypes.string,
 };
 
@@ -41,8 +41,6 @@ function StyleguidePlaceholder(props) {
                     fontFamily: 'monospace',
                     color: color || '#777',
                 }}
-                ellipsizeMode={'middle'}
-                numberOfLines={1}
             >
                 {placeholderText}
             </Text>

@@ -21,7 +21,7 @@ const propTypes = {
     children: PropTypes.node,
     size: PropTypes.oneOf(Object.keys(SIZES)),
     legend: PropTypes.string,
-    fontSize: PropTypes.oneOf([PropTypes.number, PropTypes.string]),
+    fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     isIframe: PropTypes.bool,
 };
 
