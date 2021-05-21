@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.4
+
+* experiment with running `Badoo-styleguide` only via CLI.
+
 ## 2.0.3
 
 * fix bug with `StyleguideCell` empty div wrapper by default.

@@ -15,10 +15,10 @@
 
 ## Getting started
 
-### Add styleguide dependency
+### run styleguide as npm executable
 
 ```bash
-yarn add badoo-styleguide --dev
+npx badoo-styleguide --dev
 ```
 
 ### Create a styleguide config
@@ -229,13 +229,13 @@ The styleguide can be run as a local dev server or be compiled if you want to se
 
 #### Running
 
-```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js```
+```npx badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js```
 
 **Note:** Styleguide benefits from caching results of initial build. It makes all subsequents recompilations much faster.
 
 #### Compiling
 
-```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/```
+```npx badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/```
 
 Or add it to your package.json "scripts" section
 
