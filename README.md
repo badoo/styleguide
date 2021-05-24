@@ -297,7 +297,7 @@ export default MyComponent;
 
 ## Visual helpers
 
-Yoy can see more detailed documentation [here](https://github.com/badoo/styleguide/tree/master/src/visual-helpers/README.md).
+Visual helpers for visual regression tests are available in separate package [@bumble/styleguide-visual-helpers](https://www.npmjs.com/package/@bumble/styleguide-visual-helpers). In nearest major release direct export of `src/visual-helpers` from this package will be removed.
 
 ## Debugging
 
