@@ -11,7 +11,7 @@ const NavigationSectionName = styled.div`
     padding: 16px;
     border-bottom: 1px solid #f0f0f0;
     background: #fff;
-    color: ${props => (props.isActive ? '#7000e3' : '#000')};
+    color: ${(props) => (props.isActive ? '#7000e3' : '#000')};
     font-size: 16px;
     cursor: pointer;
     user-select: none;
@@ -19,7 +19,7 @@ const NavigationSectionName = styled.div`
 
 const NavigationSectionComponents = styled.div`
     padding: 16px;
-    display: ${props => (props.isOpened ? undefined : 'none')};
+    display: ${(props) => (props.isOpened ? undefined : 'none')};
 `;
 
 const NavigationSectionComponentsItem = styled.div`
@@ -28,8 +28,8 @@ const NavigationSectionComponentsItem = styled.div`
 
 const NavigationSectionComponentsItemLink = styled.a`
     text-decoration: none;
-    color: ${props => (props.isActive ? '#7000e3' : '#666')};
-    font-weight: ${props => (props.isActive ? 600 : undefined)};
+    color: ${(props) => (props.isActive ? '#7000e3' : '#666')};
+    font-weight: ${(props) => (props.isActive ? 600 : undefined)};
 `;
 
 class NavigationSection extends React.PureComponent {

@@ -1,5 +1,46 @@
 # Changelog
 
+## 2.0.3
+
+* fix bug with `StyleguideCell` empty div wrapper by default.
+* fix for npm module.
+
+## 2.0.2
+
+* add opportunity manually set font-size for legends/placeholders in visual tools.
+* add opportunity to control fontSizes for legend/placeholder via config.
+
+## 2.0.1
+
+* fix for npm module
+
+## 2.0.0
+
+* Drop of support of `React-native`. Due to no practical use of keeping in one package and simplifying the support of the main tool.
+
+## 1.2.2
+
+* all dependencies from now on is not fixed. It helps to improve support and fix issues with managing dependencies for `consumers`.
+
+## 1.2.1
+
+* prop-tables injection via `react-docgen` can break import/export only files. Removal of extra condition in loaders `js-compontent`, `ts-compontent` will help with this edge-case.
+* rename double of app-view components.
+* add tests to .npmignore
+
+## 1.2.0-alpha.3
+
+* Update of sidebar menu and search-box.
+* Update of security dependencies.
+
+## 1.2.0-alpha.2
+
+* Try to decrease dependencies.
+
+## 1.2.0-alpha.1
+
+* Update dependencies
+
 ## 1.1.11
 
 * Fixed `isInlined` condition
@@ -241,7 +282,7 @@ path.resolve(process.cwd(), './tsconfig.json');
 ## v0.0.43
 
 * Remove interfering css-styles from global scope
-* Return opportunity to set @babel/parser options to `react-docgen` for props-generation via `getBabelParserOptions`
+* Return opportunity to set parser options to `react-docgen` for props-generation via `getBabelParserOptions`
 
 ## v0.0.42
 
@@ -272,7 +313,7 @@ path.resolve(process.cwd(), './tsconfig.json');
 
 ## v0.0.36
 
-* Add opportunity to set @babel/parser options to `react-docgen` for props-generation via `getBabelParserOptions`
+* Add opportunity to set parser options to `react-docgen` for props-generation via `getBabelParserOptions`
 
 ## v0.0.35
 

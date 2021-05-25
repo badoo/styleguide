@@ -2,24 +2,24 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="jIuBlN"
+  className="iNCLPV"
 >
   <div
-    className="bYUhCn"
+    className="cqcsJm"
     onClick={[Function]}
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="lcYIcA"
+    className="cqhevY"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +33,13 @@ exports[`App-view generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="fYVumk sOjxB"
+    className="coMxPB jMBFJg"
   >
     <div
-      className="erOPBk"
+      className="FfRgh"
     >
       <div
-        className="gvYcCv"
+        className="bRVVhm"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,23 +58,23 @@ exports[`App-view generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="iOMzRU"
+        className="fJNzGa"
       >
         <div
-          className="eTRikO"
+          className="eovPXo"
         >
           <input
             autoComplete="off"
-            className="fIzlLk"
+            className="ihhDHR"
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
-            className="kZvQyL"
+            className="hziPJU"
           >
             <div
-              className="bHoZMY"
+              className="cVLcqX"
               role="presentation"
               size={0}
             >
@@ -93,31 +93,31 @@ exports[`App-view generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="ddxHA-D"
+      className="gafCDm"
     >
       <nav
-        className="jpJWqU"
+        className="jAwBMs"
       >
         <div
-          className="eoKdvK"
+          className="jeVtJA"
         >
           <div
-            className="dGaJds"
+            className="kKPASM"
           >
             <div
-              className="jooZFA"
+              className="eYViuw"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="XLBKx"
+              className="hndwzQ"
             >
               <div
-                className="iUHUNF"
+                className="SJgek"
               >
                 <a
-                  className="ipfxtQ"
+                  className="gxaoIF"
                   data-vrt-locator="link"
                   href="#Structure-Component"
                 >
@@ -128,25 +128,25 @@ exports[`App-view generic tests When app is open 1`] = `
           </div>
         </div>
         <div
-          className="eoKdvK"
+          className="jeVtJA"
         >
           <div
-            className="dGaJds"
+            className="kKPASM"
           >
             <div
-              className="jooZFA"
+              className="eYViuw"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="XLBKx"
+              className="hndwzQ"
             >
               <div
-                className="iUHUNF"
+                className="SJgek"
               >
                 <a
-                  className="ipfxtQ"
+                  className="gxaoIF"
                   data-vrt-locator="link"
                   href="#Components-ErrorBoundary"
                 >
@@ -160,22 +160,22 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="cwSqlx"
+    className="jWjGLm"
   >
     <article
-      className="cNrfnb"
+      className="duUsAr"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="fbzOyq"
+          className="gCwHZU"
         >
           Welcome!
         </h1>
         <div
-          className="eiFfWJ"
+          className="laODzD"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -262,6 +262,7 @@ exports[`App-view generic tests When component is open 1`] = `
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  background-size: cover;
 }
 
 .c10:focus {
@@ -286,6 +287,25 @@ exports[`App-view generic tests When component is open 1`] = `
 .c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c11 {
@@ -569,8 +589,8 @@ exports[`App-view generic tests When component is open 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 18px;
-  left: 260px;
+  top: 16px;
+  left: 16px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -693,11 +713,11 @@ exports[`App-view generic tests When component is open 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
@@ -750,7 +770,7 @@ exports[`App-view generic tests When component is open 1`] = `
             autoComplete="off"
             className="c10"
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
@@ -1190,6 +1210,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  background-size: cover;
 }
 
 .c10:focus {
@@ -1214,6 +1235,25 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
 .c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c11 {
@@ -1340,8 +1380,8 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 18px;
-  left: 260px;
+  top: 16px;
+  left: 16px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -1435,11 +1475,11 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
@@ -1492,7 +1532,7 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
             autoComplete="off"
             className="c10"
             placeholder="Search component name"
-            type="text"
+            type="search"
             value="g"
           />
           <div
@@ -1628,6 +1668,7 @@ exports[`App-view generic tests When filter show components 1`] = `
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  background-size: cover;
 }
 
 .c10:focus {
@@ -1652,6 +1693,25 @@ exports[`App-view generic tests When filter show components 1`] = `
 .c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c11 {
@@ -1924,8 +1984,8 @@ exports[`App-view generic tests When filter show components 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 18px;
-  left: 260px;
+  top: 16px;
+  left: 16px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -2048,11 +2108,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
@@ -2105,7 +2165,7 @@ exports[`App-view generic tests When filter show components 1`] = `
             autoComplete="off"
             className="c10"
             placeholder="Search component name"
-            type="text"
+            type="search"
             value="c"
           />
           <div
@@ -2516,6 +2576,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  background-size: cover;
 }
 
 .c10:focus {
@@ -2540,6 +2601,25 @@ exports[`App-view generic tests When we open component from app 1`] = `
 .c10:-ms-input-placeholder {
   color: #ccc;
   opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c11 {
@@ -2707,8 +2787,8 @@ exports[`App-view generic tests When we open component from app 1`] = `
   height: 24px;
   -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
   transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
-  top: 18px;
-  left: 260px;
+  top: 16px;
+  left: 16px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -2802,11 +2882,11 @@ exports[`App-view generic tests When we open component from app 1`] = `
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
@@ -2859,7 +2939,7 @@ exports[`App-view generic tests When we open component from app 1`] = `
             autoComplete="off"
             className="c10"
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div

@@ -26,6 +26,7 @@ const SearchFieldInput = styled.input`
     border: 1px solid #ccc;
     appearance: none;
     outline: none;
+    background-size: cover;
 
     &:focus {
         border-color: #000;
@@ -50,6 +51,21 @@ const SearchFieldInput = styled.input`
         color: ${SEARCH_FIELD_COLOR};
         opacity: 1;
     }
+
+    &::-webkit-search-cancel-button {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+        background-size: 12px 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        appearance: none;
+    }
 `;
 
 const SearchFieldIcon = styled.div`
@@ -61,14 +77,14 @@ const SearchFieldIcon = styled.div`
     color: inherit;
 `;
 
-const SearchField = props => {
+const SearchField = (props) => {
     const { value = '', onChange, onFocus, onBlur, inputRef } = props;
 
     return (
         <SearchFieldBlock>
             <SearchFieldInput
                 value={value}
-                type="text"
+                type="search"
                 onFocus={onFocus}
                 onChange={onChange}
                 onBlur={onBlur}

@@ -12,18 +12,18 @@ describe('Config checks', () => {
 
     it('Config getSections', () => {
         try {
-            const getComponentsFromSections = sections => {
+            const getComponentsFromSections = (sections) => {
                 const sectionList = sections.toString();
                 const componentPaths = sectionList
                     .match(/require\((.+)\)/gm)
-                    .map(path => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
+                    .map((path) => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
 
                 return Array.from(new Set(componentPaths));
             };
 
             const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) => {
-                const listOfResolvedComponents = getComponentRoots({ path }).map(root =>
-                    components.map(component => path.parse(path.resolve(root, component)).name)
+                const listOfResolvedComponents = getComponentRoots({ path }).map((root) =>
+                    components.map((component) => path.parse(path.resolve(root, component)).name)
                 );
 
                 return listOfResolvedComponents.reduce(
@@ -50,14 +50,14 @@ describe('Config checks', () => {
 
     it('Config getComponentRoots', () => {
         expect(
-            StyleguideConfig.getComponentRoots({ path }).map(item => path.parse(item).name)
+            StyleguideConfig.getComponentRoots({ path }).map((item) => path.parse(item).name)
         ).toMatchSnapshot();
     });
 
     it('Config getWebpackConfig', () => {
         expect(
             StyleguideConfig.getWebpackConfig({ path }).resolve.modules.map(
-                item => path.parse(item).name
+                (item) => path.parse(item).name
             )
         ).toMatchSnapshot();
     });

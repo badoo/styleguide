@@ -6,7 +6,7 @@ const getBabelOptions = require('./get-babel-options');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const isCompiling = buildDir => {
+const isCompiling = (buildDir) => {
     const hasPath = buildDir === '' || Boolean(buildDir);
 
     return !hasPath;
@@ -18,18 +18,18 @@ const setCachingForLoaders = (useCache, loaders) =>
 const setLoaders = (internalLoaders, externalLoader) =>
     externalLoader ? [internalLoaders, ...externalLoader] : [internalLoaders];
 
-const getComponentsFromSections = sections => {
+const getComponentsFromSections = (sections) => {
     const sectionList = sections.toString();
     const componentPaths = sectionList
         .match(/(((?<!\/[/*]\s))require\([/'_\-A-Za-z0-9]+\))/gm)
-        .map(path => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
+        .map((path) => path.replace(/require\((.+)\)/g, '$1').replace(/'/g, ''));
 
     return Array.from(new Set(componentPaths));
 };
 
 const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) => {
-    const listOfResolvedComponents = getComponentRoots({ path }).map(root =>
-        components.map(component => path.resolve(root, component))
+    const listOfResolvedComponents = getComponentRoots({ path }).map((root) =>
+        components.map((component) => path.resolve(root, component))
     );
 
     return listOfResolvedComponents.reduce(
@@ -41,7 +41,6 @@ const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) 
 module.exports = function getWebpackConfig({
     devServerUrl,
     buildDir,
-    isReactNative,
     configPath,
     getSections,
     getComponentRoots,
@@ -76,7 +75,7 @@ module.exports = function getWebpackConfig({
     };
     const genericJsLoader = {
         loader: 'babel-loader',
-        options: getBabelOptions({ isReactNative, getBabelConfig }),
+        options: getBabelOptions({ getBabelConfig }),
     };
     const compilerOptions = getTypescriptCompilerOptions
         ? getTypescriptCompilerOptions()
@@ -158,19 +157,8 @@ module.exports = function getWebpackConfig({
                             },
                         },
                         {
-                            test: /\.scss$/,
-                            use: ['style-loader', 'css-loader', 'sass-loader'],
-                        },
-                        {
-                            test: /\.css$/,
-                            use: ['style-loader', 'css-loader'],
-                        },
-                        {
                             test: /\.jsx?$/,
-                            // React native modules usually always need to be loaded by metro
-                            exclude: isReactNative
-                                ? undefined
-                                : /node_modules\/(?!badoo-styleguide)/,
+                            exclude: /node_modules\/(?!badoo-styleguide)/,
                             use: setCachingForLoaders(
                                 useCache,
                                 setLoaders(genericJsLoader, loadersFromConsumers)
@@ -178,12 +166,9 @@ module.exports = function getWebpackConfig({
                         },
                         {
                             test: /\.tsx?$/,
-                            // React native modules usually always need to be loaded by metro
-                            exclude: isReactNative
-                                ? undefined
-                                : tsLoaderExtraExceptionList.concat(
-                                      /node_modules\/(?!badoo-styleguide)/
-                                  ),
+                            exclude: tsLoaderExtraExceptionList.concat(
+                                /node_modules\/(?!badoo-styleguide)/
+                            ),
                             use: genericLoaders,
                         },
                         {
@@ -203,8 +188,7 @@ module.exports = function getWebpackConfig({
                 },
                 {
                     test: /\.jsx?$/,
-                    // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative ? undefined : jsLoaderExceptionList,
+                    exclude: jsLoaderExceptionList,
                     include: includePaths,
                     use: setCachingForLoaders(
                         useCache,
@@ -213,8 +197,7 @@ module.exports = function getWebpackConfig({
                 },
                 {
                     test: /\.tsx?$/,
-                    // React native modules usually always need to be loaded by metro
-                    exclude: isReactNative ? undefined : tsLoaderExceptionList,
+                    exclude: tsLoaderExceptionList,
                     include: includePaths,
                     use: setCachingForLoaders(
                         useCache,

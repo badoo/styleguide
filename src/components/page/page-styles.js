@@ -35,7 +35,7 @@ const useDefaultStyleguideStyles = !config.noDefaultStyleguideStyles;
 const useDefaultNormalize = !config.noDefaultNormalize;
 const useStylesForVRT = config.useStylesForVRT;
 
-const GlobalStyle = useDefaultGlobalStyles
+const Pagestyles = useDefaultGlobalStyles
     ? createGlobalStyle`
     ${useDefaultStyleguideStyles ? StyleGuideDefaultStyles : null}
 
@@ -64,4 +64,4 @@ export const respondTo = Object.keys(deviceSizes).reduce((accumulator, label) =>
     return accumulator;
 }, {});
 
-export default GlobalStyle;
+export default Pagestyles;

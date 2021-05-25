@@ -13,7 +13,7 @@ const mapColorToHex = {
     [Color.NEGATIVE]: '#900',
 };
 
-const MyJavascriptComponent = props => {
+const MyJavascriptComponent = (props) => {
     const { name, color } = props;
 
     return <div style={{ color: mapColorToHex[color] }}>The name is {name}!</div>;

@@ -3,6 +3,10 @@
 module.exports = {
     applyBabelToTypescriptCode: true,
 
+    legendFontSize: 30,
+
+    placeholderFontSize: 30,
+
     getExceptionForLoaders() {
         return {
             jsLoader: [/spec\.jsx$/],

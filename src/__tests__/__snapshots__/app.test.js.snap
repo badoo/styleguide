@@ -1,25 +1,362 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App generic tests When app is is unmounted 1`] = `
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c12 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c9 {
+  position: relative;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.c9:focus-within {
+  color: #000;
+}
+
+.c10 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding-left: calc(24px + 12px);
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background-size: cover;
+}
+
+.c10:focus {
+  border-color: #000;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c11 {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c16 {
+  display: block;
+}
+
+.c17 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c18 {
+  padding: 16px;
+  display: none;
+}
+
+.c14 {
+  position: relative;
+  max-height: 100vh;
+  font-family: sans-serif;
+}
+
+.c15 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c20 {
+  padding-top: 32px;
+}
+
+.c21 {
+  margin: 0 16px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c22 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c13 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  will-change: transform;
+}
+
+.c19 {
+  padding: 32px 0;
+  min-width: 0;
+  position: absolute;
+  background: #fff;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
+}
+
+.c0 {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width:376px) {
+  .c20 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    padding: 0 32px;
+    left: 300px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
 <div
-  className="sc-cTkwdZ jIuBlN"
+  className="c0"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="c1"
     onClick={[Function]}
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -33,13 +370,13 @@ exports[`App generic tests When app is is unmounted 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="c3 c4 c5"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="c6"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -58,26 +395,26 @@ exports[`App generic tests When app is is unmounted 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="c8"
       >
         <div
-          className="sc-gsTCUz eTRikO"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="c10"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
-            className="sc-hKgILt kZvQyL"
+            className="c11"
           >
             <div
-              className="sc-bdfBwQ bHoZMY"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -96,89 +433,65 @@ exports[`App generic tests When app is is unmounted 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="c13"
     >
       <nav
-        className="sc-pFZIQ jpJWqU"
+        className="c14"
       >
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
+              className="c18"
+            />
           </div>
         </div>
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Components-ErrorBoundary"
-                >
-                  ErrorBoundary
-                </a>
-              </div>
-            </div>
+              className="c18"
+            />
           </div>
         </div>
       </nav>
     </div>
   </aside>
   <main
-    className="sc-eggNIi cwSqlx"
+    className="c19"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="c20"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf fbzOyq"
+          className="c21"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="c22"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -189,25 +502,362 @@ exports[`App generic tests When app is is unmounted 1`] = `
 `;
 
 exports[`App generic tests When app is open 1`] = `
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c12 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c9 {
+  position: relative;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.c9:focus-within {
+  color: #000;
+}
+
+.c10 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding-left: calc(24px + 12px);
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background-size: cover;
+}
+
+.c10:focus {
+  border-color: #000;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c11 {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c16 {
+  display: block;
+}
+
+.c17 {
+  position: relative;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c18 {
+  padding: 16px;
+  display: none;
+}
+
+.c14 {
+  position: relative;
+  max-height: 100vh;
+  font-family: sans-serif;
+}
+
+.c15 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c20 {
+  padding-top: 32px;
+}
+
+.c21 {
+  margin: 0 16px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c22 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c13 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  will-change: transform;
+}
+
+.c19 {
+  padding: 32px 0;
+  min-width: 0;
+  position: absolute;
+  background: #fff;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
+}
+
+.c0 {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width:376px) {
+  .c20 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    padding: 0 32px;
+    left: 300px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
 <div
-  className="sc-cTkwdZ jIuBlN"
+  className="c0"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="c1"
     onClick={[Function]}
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -221,13 +871,13 @@ exports[`App generic tests When app is open 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="c3 c4 c5"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="c6"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -246,26 +896,26 @@ exports[`App generic tests When app is open 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="c8"
       >
         <div
-          className="sc-gsTCUz eTRikO"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="c10"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value=""
           />
           <div
-            className="sc-hKgILt kZvQyL"
+            className="c11"
           >
             <div
-              className="sc-bdfBwQ bHoZMY"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -284,89 +934,65 @@ exports[`App generic tests When app is open 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="c13"
     >
       <nav
-        className="sc-pFZIQ jpJWqU"
+        className="c14"
       >
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Structure
             </div>
             <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
+              className="c18"
+            />
           </div>
         </div>
         <div
-          className="sc-jrAGrp eoKdvK"
+          className="c15"
         >
           <div
-            className="sc-eCssSg dGaJds"
+            className="c16"
           >
             <div
-              className="sc-jSgupP jooZFA"
+              className="c17"
               onClick={[Function]}
             >
               Components
             </div>
             <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Components-ErrorBoundary"
-                >
-                  ErrorBoundary
-                </a>
-              </div>
-            </div>
+              className="c18"
+            />
           </div>
         </div>
       </nav>
     </div>
   </aside>
   <main
-    className="sc-eggNIi cwSqlx"
+    className="c19"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="c20"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf fbzOyq"
+          className="c21"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
+          className="c22"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -377,25 +1003,331 @@ exports[`App generic tests When app is open 1`] = `
 `;
 
 exports[`App generic tests When app receive no sections 1`] = `
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+}
+
+.c12 > svg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: inherit;
+  width: inherit;
+  max-height: inherit;
+  height: inherit;
+  background: inherit;
+  fill: inherit;
+}
+
+.c9 {
+  position: relative;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.c9:focus-within {
+  color: #000;
+}
+
+.c10 {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #303030;
+  height: 40px;
+  line-height: 32px;
+  padding-left: calc(24px + 12px);
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background-size: cover;
+}
+
+.c10:focus {
+  border-color: #000;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+.c10::-webkit-search-cancel-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z" fill="currentColor" /></svg>');
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c11 {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.c14 {
+  position: relative;
+  max-height: 100vh;
+  font-family: sans-serif;
+}
+
+.c16 {
+  padding-top: 32px;
+}
+
+.c17 {
+  margin: 0 16px;
+  font-size: 32px;
+  color: #000;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+
+.c18 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 16px;
+  max-width: 50%;
+}
+
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  width: inherit;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 16px 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c13 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.c8 {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.c7 {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.c1 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: translate3d(-50px,0px,0px);
+  -ms-transform: translate3d(-50px,0px,0px);
+  transform: translate3d(-50px,0px,0px);
+}
+
+.c1 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  top: 16px;
+  left: 16px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c2 svg {
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  will-change: transform;
+}
+
+.c15 {
+  padding: 32px 0;
+  min-width: 0;
+  position: absolute;
+  background: #fff;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
+}
+
+.c0 {
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .c4 {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width:376px) {
+  .c16 {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c17 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c2 {
+    right: 16px;
+    left: initial;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    padding: 0 32px;
+    left: 300px;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .c0 .c4 {
+    right: 0;
+    width: auto;
+  }
+}
+
 <div
-  className="sc-cTkwdZ jIuBlN"
+  className="c0"
 >
   <div
-    className="sc-bZSQDF bYUhCn"
+    className="c1"
     onClick={[Function]}
   >
     <svg
       id="open"
-      viewBox="0 0 20 15"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
+        d="M2 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm0 6a1 1 0 011-1h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1zm1 5a1 1 0 00-1 1 1 1 0 001 1h18a1 1 0 001-1 1 1 0 00-1-1H3z"
       />
     </svg>
   </div>
   <div
-    className="sc-iUuytg lcYIcA"
+    className="c2"
     onClick={[Function]}
   >
     <svg
@@ -409,13 +1341,13 @@ exports[`App generic tests When app receive no sections 1`] = `
     </svg>
   </div>
   <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
+    className="c3 c4 c5"
   >
     <div
-      className="sc-gWHgXt erOPBk"
+      className="c6"
     >
       <div
-        className="sc-jcVebW gvYcCv"
+        className="c7"
       >
         <svg
           viewBox="0 0 44 44"
@@ -434,26 +1366,26 @@ exports[`App generic tests When app receive no sections 1`] = `
         </svg>
       </div>
       <div
-        className="sc-citwmv iOMzRU"
+        className="c8"
       >
         <div
-          className="sc-gsTCUz eTRikO"
+          className="c9"
         >
           <input
             autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
+            className="c10"
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Search component name"
-            type="text"
+            type="search"
             value="s"
           />
           <div
-            className="sc-hKgILt kZvQyL"
+            className="c11"
           >
             <div
-              className="sc-bdfBwQ bHoZMY"
+              className="c12"
               role="presentation"
               size={0}
             >
@@ -472,724 +1404,30 @@ exports[`App generic tests When app receive no sections 1`] = `
       </div>
     </div>
     <div
-      className="sc-cBNfnY ddxHA-D"
+      className="c13"
     >
       <nav
-        className="sc-pFZIQ jpJWqU"
+        className="c14"
       />
     </div>
   </aside>
   <main
-    className="sc-eggNIi cwSqlx"
+    className="c15"
   >
     <article
-      className="sc-fKFyDc cNrfnb"
+      className="c16"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="sc-bBXqnf fbzOyq"
+          className="c17"
         >
           Welcome!
         </h1>
         <div
-          className="sc-iwyYcG eiFfWJ"
-        >
-          Style guide is a tool to illustrate, sandbox and test your components.
-        </div>
-      </header>
-    </article>
-  </main>
-</div>
-`;
-
-exports[`App search tests When we clear search request 1`] = `
-<div
-  className="sc-cTkwdZ jIuBlN"
->
-  <div
-    className="sc-bZSQDF bYUhCn"
-    onClick={[Function]}
-  >
-    <svg
-      id="open"
-      viewBox="0 0 20 15"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
-      />
-    </svg>
-  </div>
-  <div
-    className="sc-iUuytg lcYIcA"
-    onClick={[Function]}
-  >
-    <svg
-      id="close"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
-      />
-    </svg>
-  </div>
-  <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
-  >
-    <div
-      className="sc-gWHgXt erOPBk"
-    >
-      <div
-        className="sc-jcVebW gvYcCv"
-      >
-        <svg
-          viewBox="0 0 44 44"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            fill="#7000E3"
-            height="44"
-            rx="3.9"
-            width="44"
-          />
-          <path
-            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-            fill="#FF671B"
-          />
-        </svg>
-      </div>
-      <div
-        className="sc-citwmv iOMzRU"
-      >
-        <div
-          className="sc-gsTCUz eTRikO"
-        >
-          <input
-            autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="Search component name"
-            type="text"
-            value="comp"
-          />
-          <div
-            className="sc-hKgILt kZvQyL"
-          >
-            <div
-              className="sc-bdfBwQ bHoZMY"
-              role="presentation"
-              size={0}
-            >
-              <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-cBNfnY ddxHA-D"
-    >
-      <nav
-        className="sc-pFZIQ jpJWqU"
-      >
-        <div
-          className="sc-jrAGrp eoKdvK"
-        >
-          <div
-            className="sc-eCssSg dGaJds"
-          >
-            <div
-              className="sc-jSgupP jooZFA"
-              onClick={[Function]}
-            >
-              Structure
-            </div>
-            <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </aside>
-  <main
-    className="sc-eggNIi cwSqlx"
-  >
-    <article
-      className="sc-fKFyDc cNrfnb"
-      data-id="welcome!"
-    >
-      <header
-        className="styleguide-component__header"
-      >
-        <h1
-          className="sc-bBXqnf fbzOyq"
-        >
-          Welcome!
-        </h1>
-        <div
-          className="sc-iwyYcG eiFfWJ"
-        >
-          Style guide is a tool to illustrate, sandbox and test your components.
-        </div>
-      </header>
-    </article>
-  </main>
-</div>
-`;
-
-exports[`App search tests When we clear search request 2`] = `
-<div
-  className="sc-cTkwdZ jIuBlN"
->
-  <div
-    className="sc-bZSQDF bYUhCn"
-    onClick={[Function]}
-  >
-    <svg
-      id="open"
-      viewBox="0 0 20 15"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
-      />
-    </svg>
-  </div>
-  <div
-    className="sc-iUuytg lcYIcA"
-    onClick={[Function]}
-  >
-    <svg
-      id="close"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
-      />
-    </svg>
-  </div>
-  <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
-  >
-    <div
-      className="sc-gWHgXt erOPBk"
-    >
-      <div
-        className="sc-jcVebW gvYcCv"
-      >
-        <svg
-          viewBox="0 0 44 44"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            fill="#7000E3"
-            height="44"
-            rx="3.9"
-            width="44"
-          />
-          <path
-            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-            fill="#FF671B"
-          />
-        </svg>
-      </div>
-      <div
-        className="sc-citwmv iOMzRU"
-      >
-        <div
-          className="sc-gsTCUz eTRikO"
-        >
-          <input
-            autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="Search component name"
-            type="text"
-            value=""
-          />
-          <div
-            className="sc-hKgILt kZvQyL"
-          >
-            <div
-              className="sc-bdfBwQ bHoZMY"
-              role="presentation"
-              size={0}
-            >
-              <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-cBNfnY ddxHA-D"
-    >
-      <nav
-        className="sc-pFZIQ jpJWqU"
-      >
-        <div
-          className="sc-jrAGrp eoKdvK"
-        >
-          <div
-            className="sc-eCssSg dGaJds"
-          >
-            <div
-              className="sc-jSgupP jooZFA"
-              onClick={[Function]}
-            >
-              Structure
-            </div>
-            <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="sc-jrAGrp eoKdvK"
-        >
-          <div
-            className="sc-eCssSg dGaJds"
-          >
-            <div
-              className="sc-jSgupP jooZFA"
-              onClick={[Function]}
-            >
-              Components
-            </div>
-            <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Components-ErrorBoundary"
-                >
-                  ErrorBoundary
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </aside>
-  <main
-    className="sc-eggNIi cwSqlx"
-  >
-    <article
-      className="sc-fKFyDc cNrfnb"
-      data-id="welcome!"
-    >
-      <header
-        className="styleguide-component__header"
-      >
-        <h1
-          className="sc-bBXqnf fbzOyq"
-        >
-          Welcome!
-        </h1>
-        <div
-          className="sc-iwyYcG eiFfWJ"
-        >
-          Style guide is a tool to illustrate, sandbox and test your components.
-        </div>
-      </header>
-    </article>
-  </main>
-</div>
-`;
-
-exports[`App search tests When we search, we have results filtered 1`] = `
-<div
-  className="sc-cTkwdZ jIuBlN"
->
-  <div
-    className="sc-bZSQDF bYUhCn"
-    onClick={[Function]}
-  >
-    <svg
-      id="open"
-      viewBox="0 0 20 15"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
-      />
-    </svg>
-  </div>
-  <div
-    className="sc-iUuytg lcYIcA"
-    onClick={[Function]}
-  >
-    <svg
-      id="close"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
-      />
-    </svg>
-  </div>
-  <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
-  >
-    <div
-      className="sc-gWHgXt erOPBk"
-    >
-      <div
-        className="sc-jcVebW gvYcCv"
-      >
-        <svg
-          viewBox="0 0 44 44"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            fill="#7000E3"
-            height="44"
-            rx="3.9"
-            width="44"
-          />
-          <path
-            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-            fill="#FF671B"
-          />
-        </svg>
-      </div>
-      <div
-        className="sc-citwmv iOMzRU"
-      >
-        <div
-          className="sc-gsTCUz eTRikO"
-        >
-          <input
-            autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="Search component name"
-            type="text"
-            value=""
-          />
-          <div
-            className="sc-hKgILt kZvQyL"
-          >
-            <div
-              className="sc-bdfBwQ bHoZMY"
-              role="presentation"
-              size={0}
-            >
-              <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-cBNfnY ddxHA-D"
-    >
-      <nav
-        className="sc-pFZIQ jpJWqU"
-      >
-        <div
-          className="sc-jrAGrp eoKdvK"
-        >
-          <div
-            className="sc-eCssSg dGaJds"
-          >
-            <div
-              className="sc-jSgupP jooZFA"
-              onClick={[Function]}
-            >
-              Structure
-            </div>
-            <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="sc-jrAGrp eoKdvK"
-        >
-          <div
-            className="sc-eCssSg dGaJds"
-          >
-            <div
-              className="sc-jSgupP jooZFA"
-              onClick={[Function]}
-            >
-              Components
-            </div>
-            <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Components-ErrorBoundary"
-                >
-                  ErrorBoundary
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </aside>
-  <main
-    className="sc-eggNIi cwSqlx"
-  >
-    <article
-      className="sc-fKFyDc cNrfnb"
-      data-id="welcome!"
-    >
-      <header
-        className="styleguide-component__header"
-      >
-        <h1
-          className="sc-bBXqnf fbzOyq"
-        >
-          Welcome!
-        </h1>
-        <div
-          className="sc-iwyYcG eiFfWJ"
-        >
-          Style guide is a tool to illustrate, sandbox and test your components.
-        </div>
-      </header>
-    </article>
-  </main>
-</div>
-`;
-
-exports[`App search tests When we search, we have results filtered 2`] = `
-<div
-  className="sc-cTkwdZ jIuBlN"
->
-  <div
-    className="sc-bZSQDF bYUhCn"
-    onClick={[Function]}
-  >
-    <svg
-      id="open"
-      viewBox="0 0 20 15"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 1a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM0 7.03a1 1 0 011-1h18a1 1 0 110 2H1a1 1 0 01-1-1zM1 12.06a1 1 0 100 2h18a1 1 0 000-2H1z"
-      />
-    </svg>
-  </div>
-  <div
-    className="sc-iUuytg lcYIcA"
-    onClick={[Function]}
-  >
-    <svg
-      id="close"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M6.23 4.81A1 1 0 004.8 6.23L10.6 12 4.8 17.77a1 1 0 101.42 1.42L12 13.4l5.78 5.78a1 1 0 001.4-1.42L13.42 12l5.78-5.77a1 1 0 10-1.41-1.42L12 10.6 6.23 4.8z"
-      />
-    </svg>
-  </div>
-  <aside
-    className="sc-hiSbYr fYVumk sc-iBaPrD sOjxB"
-  >
-    <div
-      className="sc-gWHgXt erOPBk"
-    >
-      <div
-        className="sc-jcVebW gvYcCv"
-      >
-        <svg
-          viewBox="0 0 44 44"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            fill="#7000E3"
-            height="44"
-            rx="3.9"
-            width="44"
-          />
-          <path
-            d="M28 11.3c-2.3 0-4.6 1-6 3-1.4-2-3.7-3-6-3-4.3 0-7.8 3.3-7.8 7.6 0 6.5 9.3 15 13.8 15s13.8-8.5 13.8-15c0-4.4-3.5-7.7-7.8-7.7"
-            fill="#FF671B"
-          />
-        </svg>
-      </div>
-      <div
-        className="sc-citwmv iOMzRU"
-      >
-        <div
-          className="sc-gsTCUz eTRikO"
-        >
-          <input
-            autoComplete="off"
-            className="sc-dlfnbm fIzlLk"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="Search component name"
-            type="text"
-            value="comp"
-          />
-          <div
-            className="sc-hKgILt kZvQyL"
-          >
-            <div
-              className="sc-bdfBwQ bHoZMY"
-              role="presentation"
-              size={0}
-            >
-              <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.5 20.92l7.62 7.67-1.43 1.4-7.72-7.79A10.83 10.83 0 0 1 2 13.28v-.45a10.84 10.84 0 0 1 21.67 0v.45c0 2.98-1.21 5.68-3.16 7.64zM4 12.82v.46a8.83 8.83 0 0 0 17.67 0v-.45a8.83 8.83 0 0 0-17.67 0z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-cBNfnY ddxHA-D"
-    >
-      <nav
-        className="sc-pFZIQ jpJWqU"
-      >
-        <div
-          className="sc-jrAGrp eoKdvK"
-        >
-          <div
-            className="sc-eCssSg dGaJds"
-          >
-            <div
-              className="sc-jSgupP jooZFA"
-              onClick={[Function]}
-            >
-              Structure
-            </div>
-            <div
-              className="sc-gKsewC XLBKx"
-            >
-              <div
-                className="sc-iBPRYJ iUHUNF"
-              >
-                <a
-                  className="sc-fubCfw ipfxtQ"
-                  data-vrt-locator="link"
-                  href="#Structure-Component"
-                >
-                  Component
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </aside>
-  <main
-    className="sc-eggNIi cwSqlx"
-  >
-    <article
-      className="sc-fKFyDc cNrfnb"
-      data-id="welcome!"
-    >
-      <header
-        className="styleguide-component__header"
-      >
-        <h1
-          className="sc-bBXqnf fbzOyq"
-        >
-          Welcome!
-        </h1>
-        <div
-          className="sc-iwyYcG eiFfWJ"
+          className="c18"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

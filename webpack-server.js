@@ -49,7 +49,6 @@ const tsConfigPath = config.tsConfigPath
 const ourWebpackConfig = getWebpackConfig({
     devServerUrl: `http://${HOST}:${PORT}`,
     buildDir: args.buildDir,
-    isReactNative: config.isReactNative,
     configPath,
     getSections: config.getSections,
     getComponentRoots: config.getComponentRoots,

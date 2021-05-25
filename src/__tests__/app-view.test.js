@@ -1,15 +1,15 @@
 import React from 'react';
 import renderer, { create, act } from 'react-test-renderer';
-import 'jest-styled-components';
 import AppView from '../app-view';
 import AppProps from './app-view.mockup.json';
 import Component from '../components/component/component';
+import 'jest-styled-components';
 
-const setComponentsForTestsInProps = props =>
+const setComponentsForTestsInProps = (props) =>
     Object.assign({}, props, {
-        sections: props.sections.map(section => {
-            section.components.map(component => {
-                component.tests.map(test => {
+        sections: props.sections.map((section) => {
+            section.components.map((component) => {
+                component.tests.map((test) => {
                     test.Component = Component;
 
                     return test;
@@ -35,7 +35,6 @@ describe('App-view generic tests', () => {
         const updatedProps = setComponentsForTestsInProps(JSON.parse(AppProps.openComponent));
         let root;
 
-        // component = renderer.create(<AppView {...props} />);
         act(() => {
             root = create(<AppView {...props} />);
         });
@@ -83,7 +82,7 @@ describe('App-view generic tests', () => {
         const props = setComponentsForTestsInProps(importedProps);
 
         const root = renderer.create(
-            <AppView {...props} onSearchFieldChange={event => `we test output of ${event}`} />
+            <AppView {...props} onSearchFieldChange={(event) => `we test output of ${event}`} />
         );
 
         const instance = root.getInstance();

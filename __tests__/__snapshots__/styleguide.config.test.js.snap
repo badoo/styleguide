@@ -8,6 +8,8 @@ Object {
   "getSections": [Function],
   "getWebpackConfig": [Function],
   "hasResizableSandbox": false,
+  "legendFontSize": 30,
+  "placeholderFontSize": 30,
   "sandboxMaxWidth": undefined,
   "sandboxMinWidth": undefined,
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import 'jest-styled-components';
 import SearchField from '../../../components/search-field/search-field';
+import 'jest-styled-components';
 
 describe('SearchField generic tests', () => {
     let component = renderer.create(
-        <SearchField value={'comp'} onChange={event => `we test output of ${event}`} />
+        <SearchField value={'comp'} onChange={(event) => `we test output of ${event}`} />
     );
 
     it('When we search', () => {

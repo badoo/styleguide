@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import GlobalStyles, { respondTo } from './app-global-styles';
+import Pagestyles, { respondTo } from './page-styles';
 import Sidebar from '../sidebar/sidebar';
 import SidebarVisibilityToggler from '../sidebar/sidebar-toggler';
 import { checkMobileScreen, deviceSizes } from '../../utilities';
@@ -10,7 +10,7 @@ const KEYCODES = {
     S: 83,
 };
 
-const AppSidebar = styled(Sidebar)`
+const PageSidebar = styled(Sidebar)`
     transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: fixed;
     left: 0;
@@ -21,7 +21,7 @@ const AppSidebar = styled(Sidebar)`
     will-change: transform;
 `;
 
-const Content = styled.main`
+const PageContent = styled.main`
     padding: 32px 0;
     min-width: 0;
     position: absolute;
@@ -38,12 +38,12 @@ const Content = styled.main`
     `}
 `;
 
-const AppViewBlock = styled.div`
+const PageBlock = styled.div`
     background: #fff;
     display: flex;
 
-    ${AppSidebar} {
-        transform: translateX(${props => (props.isSidebarVisible ? 0 : '-100%')});
+    ${PageSidebar} {
+        transform: translateX(${(props) => (props.isSidebarVisible ? 0 : '-100%')});
 
         @media screen and (max-width: ${deviceSizes.phone}px) {
             right: 0;
@@ -52,7 +52,7 @@ const AppViewBlock = styled.div`
     }
 `;
 
-class AppView extends React.Component {
+class Page extends React.Component {
     constructor(props) {
         super(props);
 
@@ -119,11 +119,11 @@ class AppView extends React.Component {
 
     render() {
         return (
-            <AppViewBlock
+            <PageBlock
                 isDeviceViewport={this.state.deviceViewport}
                 isSidebarVisible={this.state.isSidebarVisible}
             >
-                <GlobalStyles />
+                <Pagestyles />
 
                 <SidebarVisibilityToggler
                     isVisible={this.state.isSidebarVisible}
@@ -132,17 +132,17 @@ class AppView extends React.Component {
                         this.setSidebarVisible(!this.state.isSidebarVisible);
                     }}
                 />
-                <AppSidebar
+                <PageSidebar
                     searchField={this.props.searchField}
                     navigation={this.props.navigation}
                 />
 
-                <Content isSidebarVisible={this.state.isSidebarVisible}>
+                <PageContent isSidebarVisible={this.state.isSidebarVisible}>
                     {this.props.content}
-                </Content>
-            </AppViewBlock>
+                </PageContent>
+            </PageBlock>
         );
     }
 }
 
-export default AppView;
+export default Page;

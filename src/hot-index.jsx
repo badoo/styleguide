@@ -1,8 +1,7 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
-
 import config from '__GLOBAL__CONFIG__';
-import AppWrapper from './app-wrapper';
+import App from './app';
 
 class HotIndex extends React.Component {
     constructor(props) {
@@ -22,7 +21,7 @@ class HotIndex extends React.Component {
     }
 
     render() {
-        return <AppWrapper config={config} />;
+        return <App config={config} />;
     }
 }
 

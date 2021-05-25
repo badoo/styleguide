@@ -31,7 +31,7 @@ class Navigation extends React.PureComponent {
                                 key={name}
                                 name={name}
                                 isOpened={isOpened || expandAll}
-                                components={components.map(item => ({
+                                components={components.map((item) => ({
                                     name: item.name,
                                     url: item.url,
                                     isActive: item.url === currentHash,

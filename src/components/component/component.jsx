@@ -115,7 +115,7 @@ const ComponentPropsHandler = styled.span`
         text-align: center;
     }
 
-    ${props =>
+    ${(props) =>
         props.isPropTableOpened
             ? `
         &::before {
@@ -215,7 +215,7 @@ class Component extends React.Component {
                                     </thead>
 
                                     <tbody>
-                                        {Object.keys(propTypes).map(key => {
+                                        {Object.keys(propTypes).map((key) => {
                                             const prop = propTypes[key];
 
                                             return (

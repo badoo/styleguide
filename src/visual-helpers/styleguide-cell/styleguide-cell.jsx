@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import View from '../styleguide-view';
 import Text from '../styleguide-text';
 import { deviceSizes } from '../../utilities';
+import config from '__GLOBAL__CONFIG__';
 
 const Platform = {
     OS: 'web',
@@ -11,16 +12,18 @@ const Platform = {
 
 const propTypes = {
     legend: PropTypes.string,
+    fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     backgroundColor: PropTypes.string,
     width: PropTypes.number,
-    height: PropTypes.number,
+    height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     border: PropTypes.bool,
     children: PropTypes.node,
+    isVirtualElement: PropTypes.bool,
 };
 
 const StyledView = styled(View)`
     display: grid;
-    max-width: ${props => props.size.width}px;
+    max-width: ${(props) => props.size.width}px;
 
     @media (min-width: ${deviceSizes.phone}px) and (max-width: ${deviceSizes.phoneLg}px) {
         max-width: 100vw;
@@ -32,17 +35,26 @@ const StyledView = styled(View)`
 `;
 
 function StyleguideCell(props) {
-    const { legend, backgroundColor, width, height, border, children } = props;
+    const {
+        legend,
+        backgroundColor,
+        width,
+        height,
+        border,
+        fontSize = config.legendFontSize ? config.legendFontSize : 10,
+        children,
+        isVirtualElement,
+    } = props;
 
     return (
-        <View>
+        <View isVirtualElement={!legend || isVirtualElement}>
             {legend ? (
                 <Text
                     style={{
                         width,
                         margin: 0,
                         marginBottom: 10,
-                        fontSize: 10,
+                        fontSize,
                         fontFamily: 'monospace',
                     }}
                 >

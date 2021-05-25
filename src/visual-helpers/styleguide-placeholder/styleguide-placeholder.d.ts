@@ -2,6 +2,10 @@ import * as React from 'react';
 
 export type StyleguidePlaceholderProps = {
     /**
+     * The font-size for legend: number , px, vh or any other units
+     */
+    fontSize?: string | number;
+    /**
      * The text inside the placeholder-component
      */
     placeholder?: string;
@@ -20,7 +24,7 @@ export type StyleguidePlaceholderProps = {
     /**
      * height of cell for component's render
      */
-    height?: string;
+    height?: string | number;
     /**
      * If set to true - show visual border
      */

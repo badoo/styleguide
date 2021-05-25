@@ -1,14 +1,21 @@
+import 'jest-styled-components';
 import React from 'react';
 import { create, act } from 'react-test-renderer';
 import App from '../app';
 import AppProps from './app-view.mockup.json';
+import config from '../../styleguide.config';
 
 describe('App generic tests', () => {
     let root;
 
     it('When app is open', () => {
         act(() => {
-            root = create(<App sections={JSON.parse(AppProps.openApp).sections} />);
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
+            root = create(<App config={mockedConfig} />);
         });
 
         expect(root.toJSON()).toMatchSnapshot();
@@ -16,11 +23,21 @@ describe('App generic tests', () => {
 
     it('When app receive no sections', () => {
         act(() => {
-            root = create(<App sections={JSON.parse(AppProps.openApp).sections} />);
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
+            root = create(<App config={mockedConfig} />);
         });
 
         act(() => {
-            root.update(<App sections={JSON.parse(AppProps.openComponent).sections} />);
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openComponent).sections;
+                },
+            });
+            root.update(<App config={mockedConfig} />);
         });
 
         act(() => {
@@ -34,7 +51,12 @@ describe('App generic tests', () => {
 
     it('When app is is unmounted', () => {
         act(() => {
-            root = create(<App sections={JSON.parse(AppProps.openApp).sections} />);
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
+            root = create(<App config={mockedConfig} />);
         });
 
         act(() => {
@@ -66,7 +88,12 @@ describe('App url tests', () => {
 
     it('When app perform handleHashChange', () => {
         act(() => {
-            root = create(<App sections={JSON.parse(AppProps.openApp).sections} />);
+            const mockedConfig = Object.assign(config, {
+                getSections() {
+                    return JSON.parse(AppProps.openApp).sections;
+                },
+            });
+            root = create(<App config={mockedConfig} />);
         });
 
         act(() => {
@@ -76,97 +103,5 @@ describe('App url tests', () => {
 
             expect(instance.state.hash).toBe('Structure-Component');
         });
-    });
-});
-
-describe('App search tests', () => {
-    let root;
-    const searchQueryRef = 'comp';
-
-    it('When we search, we have results filtered', () => {
-        act(() => {
-            root = create(<App sections={JSON.parse(AppProps.openApp).sections} />);
-        });
-
-        expect(root.toJSON()).toMatchSnapshot();
-
-        act(() => {
-            let instance = root.getInstance();
-            const event = {
-                target: {
-                    value: 'Comp',
-                },
-            };
-
-            expect(instance.state.searchQuery).toBe('');
-
-            instance.handleSearchChange(event);
-        });
-
-        act(() => {
-            let instance = root.getInstance();
-            const { searchQuery, sections } = instance.state;
-
-            expect(searchQuery).toBe(searchQueryRef);
-            expect(sections[0].components[0].name.toLowerCase().startsWith(searchQueryRef)).toBe(
-                true
-            );
-        });
-
-        expect(root.toJSON()).toMatchSnapshot();
-    });
-
-    it('When we clear search request', () => {
-        act(() => {
-            root = create(<App sections={JSON.parse(AppProps.openApp).sections} />);
-        });
-
-        act(() => {
-            let instance = root.getInstance();
-            const event = {
-                target: {
-                    value: 'Comp',
-                },
-            };
-
-            expect(instance.state.searchQuery).toBe('');
-
-            instance.handleSearchChange(event);
-        });
-
-        expect(root.toJSON()).toMatchSnapshot();
-
-        act(() => {
-            let instance = root.getInstance();
-
-            expect(instance.state.searchQuery).toBe(searchQueryRef);
-
-            const event = {
-                target: {
-                    value: '',
-                },
-            };
-
-            instance.handleSearchChange(event);
-            expect(instance.state.sections[0].components.length).toBe(1);
-        });
-
-        act(() => {
-            let instance = root.getInstance();
-            const { searchQuery, sections } = instance.state;
-
-            expect(searchQuery).toBe('');
-
-            const event = {
-                target: {
-                    value: '',
-                },
-            };
-
-            instance.handleSearchChange(event);
-            expect(sections[0].components.length).toBe(1);
-        });
-
-        expect(root.toJSON()).toMatchSnapshot();
     });
 });
