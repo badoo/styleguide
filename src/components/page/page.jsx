@@ -34,7 +34,7 @@ const PageContent = styled.main`
 
     ${respondTo.tablet`
         padding: 0 32px;
-        left: ${props => (props.isSidebarVisible ? '300px' : '0px')}; 
+        left: ${(props) => (props.isSidebarVisible ? '300px' : '0px')}; 
     `}
 `;
 
