@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.5
+
+* as we move to `Badoo-styleguide` as service, we `src/visual-helpers` exported to `@bumble/styleguide-visual-helpers`. In nearest major release direct export of `src/visual-helpers` from this package will be removed.
+
+## 2.0.4
+
+* experiment with running `Badoo-styleguide` only via CLI.
+
 ## 2.0.3
 
 * fix bug with `StyleguideCell` empty div wrapper by default.
