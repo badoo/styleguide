@@ -88,7 +88,7 @@ if (isCompiling) {
 
     server.use(
         middleware(compiler, {
-            publicPath: mergedConfig.output.publicPath
+            publicPath: mergedConfig.output.publicPath,
         })
     );
 
