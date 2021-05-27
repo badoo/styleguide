@@ -9,6 +9,7 @@ const args = require('./build-arguments');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const middleware = require('webpack-dev-middleware');
+const hotMiddleware = require("webpack-hot-middleware");
 const getWebpackConfig = require('./get-webpack-config');
 const express = require('express');
 
@@ -48,7 +49,6 @@ const tsConfigPath = config.tsConfigPath
     : path.resolve(process.cwd(), './tsconfig.json');
 
 const ourWebpackConfig = getWebpackConfig({
-    devServerUrl: `http://${HOST}:${PORT}`,
     buildDir: args.buildDir,
     configPath,
     getSections: config.getSections,
@@ -85,6 +85,8 @@ if (isCompiling) {
     });
 } else {
     const server = express();
+
+    server.use(hotMiddleware(compiler));
 
     server.use(
         middleware(compiler, {
