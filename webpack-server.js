@@ -86,13 +86,13 @@ if (isCompiling) {
 } else {
     const server = express();
 
-    server.use(hotMiddleware(compiler));
-
-    server.use(
-        middleware(compiler, {
-            publicPath: mergedConfig.output.publicPath,
-        })
-    );
+    server
+        .use(
+            middleware(compiler, {
+                publicPath: mergedConfig.output.publicPath,
+            })
+        )
+        .use(hotMiddleware(compiler));
 
     server.listen(PORT, HOST, () => {
         console.log(`Starting server on http://${HOST}:${PORT}`);
