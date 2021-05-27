@@ -9,7 +9,7 @@ const args = require('./build-arguments');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const middleware = require('webpack-dev-middleware');
-const hotMiddleware = require("webpack-hot-middleware");
+const hotMiddleware = require('webpack-hot-middleware');
 const getWebpackConfig = require('./get-webpack-config');
 const express = require('express');
 

@@ -119,9 +119,7 @@ module.exports = function getWebpackConfig({
     return {
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
-        entry: [
-            path.resolve(__dirname, 'src/index.jsx'),
-        ],
+        entry: [path.resolve(__dirname, 'src/index.jsx')],
         output: {
             path: buildDir
                 ? path.resolve(process.cwd(), buildDir)
