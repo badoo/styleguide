@@ -8,8 +8,9 @@ const args = require('./build-arguments');
 
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
-const WebpackDevServer = require('webpack-dev-server');
+const middleware = require('webpack-dev-middleware');
 const getWebpackConfig = require('./get-webpack-config');
+const express = require('express');
 
 if (!args.config) {
     throw new Error('Please provide config path --config=PATH_TO_CONFIG.js');
@@ -83,8 +84,14 @@ if (isCompiling) {
         console.log('Styleguide compiled');
     });
 } else {
-    const devServerOptions = Object.assign({}, ourWebpackConfig.devServer);
-    const server = new WebpackDevServer(compiler, devServerOptions);
+    const server = express();
+
+    server.use(
+        middleware(compiler, {
+            publicPath: mergedConfig.output.publicPath
+        })
+    );
+
     server.listen(PORT, HOST, () => {
         console.log(`Starting server on http://${HOST}:${PORT}`);
     });

@@ -37,7 +37,8 @@ const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) 
         []
     );
 };
-
+const hotMiddlewareScript =
+'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true';
 module.exports = function getWebpackConfig({
     devServerUrl,
     buildDir,
@@ -120,16 +121,21 @@ module.exports = function getWebpackConfig({
     return {
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
-        entry: [
-            `webpack-dev-server/client?${devServerUrl}`,
-            'webpack/hot/dev-server',
-            path.resolve(__dirname, 'src/index.jsx'),
-        ],
+        // entry: [
+        //     hotMiddlewareScript,
+        //     // `webpack-hot-middleware/client`,
+        //     // 'webpack/hot/dev-server',
+        //     path.resolve(__dirname, 'src/index.jsx'),
+        // ],
+        entry: {
+            client: [path.resolve(__dirname, 'src/index.jsx'), hotMiddlewareScript],
+        },
         output: {
             path: buildDir
                 ? path.resolve(process.cwd(), buildDir)
                 : path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
+            publicPath: '/',
         },
         devServer: {
             clientLogLevel: isDebug ? 'info' : 'warning',
@@ -225,5 +231,10 @@ module.exports = function getWebpackConfig({
                 DEBUG: false,
             }),
         ],
+        optimization: {
+            splitChunks: {
+              chunks: 'all',
+            },
+        },
     };
 };

@@ -9,7 +9,7 @@ import {
 } from '../../../index';
 
 export const SpecComponentEmpty = () => {
-    return <Component name={'BasicComponent'} />;
+    return <Component name={'BasicCom3ponent'} />;
 };
 
 export const SpecComponentPropTypes = () => {
