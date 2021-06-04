@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.6
+
+Move from `webpack-dev-server` to `webpack-dev-middleware`.
+
 ## 2.0.5
 
 * as we move to `Badoo-styleguide` as service, we `src/visual-helpers` exported to `@bumble/styleguide-visual-helpers`. In nearest major release direct export of `src/visual-helpers` from this package will be removed.
