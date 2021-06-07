@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.9
+
+Add fix for hot-reload.
+
 ## 2.0.8
 
 Set `webpack-hot-middleware` as a depencency.
