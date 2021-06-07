@@ -39,7 +39,6 @@ const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) 
 };
 
 module.exports = function getWebpackConfig({
-    devServerUrl,
     buildDir,
     configPath,
     getSections,
@@ -121,8 +120,7 @@ module.exports = function getWebpackConfig({
         mode: 'development',
         devtool: 'cheap-module-eval-source-map',
         entry: [
-            `webpack-dev-server/client?${devServerUrl}`,
-            'webpack/hot/dev-server',
+            'webpack-hot-middleware/client?reload=true&autoConnect=true',
             path.resolve(__dirname, 'src/index.jsx'),
         ],
         output: {
@@ -130,6 +128,7 @@ module.exports = function getWebpackConfig({
                 ? path.resolve(process.cwd(), buildDir)
                 : path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
+            publicPath: '/',
         },
         devServer: {
             clientLogLevel: isDebug ? 'info' : 'warning',
@@ -225,5 +224,10 @@ module.exports = function getWebpackConfig({
                 DEBUG: false,
             }),
         ],
+        optimization: {
+            splitChunks: {
+                chunks: 'all',
+            },
+        },
     };
 };
