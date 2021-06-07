@@ -162,11 +162,11 @@ module.exports = function getWebpackConfig({
                         },
                         {
                             test: /\.(woff|woff2|ttf)$/i,
-                            type: isInlined ? 'asset/inline' : 'asset/resource'
+                            type: isInlined ? 'asset/inline' : 'asset/resource',
                         },
                         {
                             test: /\.(gif|png|jpe?g)$/i,
-                            type: 'asset/resource'
+                            type: 'asset/resource',
                         },
                     ],
                 },
