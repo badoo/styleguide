@@ -2,7 +2,7 @@ import * as React from 'react';
 import StyleguideDeviceFrame from './styleguide-device-frame';
 
 export const SpecStyleguideDeviceFrame = () => (
-    <StyleguideDeviceFrame isIframe={true} fit={true} size={'SMALL'}>
+    <StyleguideDeviceFrame isIframe={true} isResponsive={true} fit={true} size={'SMALL'}>
         <div style={{ fontSize: 'clamp(10vmin, 15vmin, 18vmin)' }}>
             Sunt labore sit ipsum officia cillum cupidatat ex duis. Proident exercitation labore
             adipisicing officia aliqua. Velit ad nulla veniam duis magna cupidatat laboris duis
@@ -14,7 +14,7 @@ export const SpecStyleguideDeviceFrame = () => (
 );
 
 export const SpecStyleguideDeviceMedium = () => (
-    <StyleguideDeviceFrame isIframe={true} size={'MEDIUM'}>
+    <StyleguideDeviceFrame isIframe={true} isResponsive={true} size={'MEDIUM'}>
         <div style={{ fontSize: 'clamp(10vmin, 15vmin, 18vmin)' }}>
             Sunt labore sit ipsum officia cillum cupidatat ex duis. Proident exercitation labore
             adipisicing officia aliqua. Velit ad nulla veniam duis magna cupidatat laboris duis
@@ -26,7 +26,7 @@ export const SpecStyleguideDeviceMedium = () => (
 );
 
 export const SpecStyleguideDeviceFrameLarge = () => (
-    <StyleguideDeviceFrame isIframe={true} size={'LARGE'}>
+    <StyleguideDeviceFrame isIframe={true} isResponsive={true} size={'LARGE'}>
         <div style={{ fontSize: 'clamp(10vmin, 15vmin, 18vmin)' }}>
             Sunt labore sit ipsum officia cillum cupidatat ex duis. Proident exercitation labore
             adipisicing officia aliqua. Velit ad nulla veniam duis magna cupidatat laboris duis

@@ -25,7 +25,7 @@ describe('Page tests:', () => {
         });
 
         expect(root.toJSON()).toMatchSnapshot();
-        expect(root.getInstance().state.isSidebarVisible).toBe(true);
+        expect(root.getInstance().state.sidebarOpened).toBe(true);
 
         act(() => {
             root.update(<Page />);
@@ -33,7 +33,7 @@ describe('Page tests:', () => {
             instance.setSidebarVisible(false);
         });
 
-        expect(root.getInstance().state.isSidebarVisible).toBe(false);
+        expect(root.getInstance().state.sidebarOpened).toBe(false);
     });
 
     it('Page handleKeyDown test', () => {
@@ -103,7 +103,7 @@ describe('Page tests:', () => {
             instance.handleScreenResize(event);
         });
 
-        expect(root.getInstance().state.isSidebarVisible).toBe(false);
+        expect(root.getInstance().state.sidebarOpened).toBe(false);
     });
 
     it('Page sidebar should be closed when hash changed while mobile detected', () => {
@@ -145,6 +145,6 @@ describe('Page tests:', () => {
             instance.handleHashChange(event);
         });
 
-        expect(root.getInstance().state.isSidebarVisible).toBe(false);
+        expect(root.getInstance().state.sidebarOpened).toBe(false);
     });
 });

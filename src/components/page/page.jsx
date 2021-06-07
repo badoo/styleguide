@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Pagestyles, { respondTo } from './page-styles';
+import Pagestyles from './page-styles';
 import Sidebar from '../sidebar/sidebar';
 import SidebarVisibilityToggler from '../sidebar/sidebar-toggler';
 import { checkMobileScreen, deviceSizes } from '../../utilities';
@@ -32,10 +32,10 @@ const PageContent = styled.main`
     transition: left 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     will-change: left;
 
-    ${respondTo.tablet`
+    @media screen and (min-width: ${deviceSizes.tablet}px) {
         padding: 0 32px;
-        left: ${(props) => (props.isSidebarVisible ? '300px' : '0px')}; 
-    `}
+        left: ${(props) => (props.sidebarOpened ? '300px' : '0px')};
+    }
 `;
 
 const PageBlock = styled.div`
@@ -43,7 +43,7 @@ const PageBlock = styled.div`
     display: flex;
 
     ${PageSidebar} {
-        transform: translateX(${(props) => (props.isSidebarVisible ? 0 : '-100%')});
+        transform: translateX(${(props) => (props.sidebarOpened ? 0 : '-100%')});
 
         @media screen and (max-width: ${deviceSizes.phone}px) {
             right: 0;
@@ -61,7 +61,7 @@ class Page extends React.Component {
         this.handleHashChange = this.handleHashChange.bind(this);
         this.setSidebarVisible = this.setSidebarVisible.bind(this);
         this.state = {
-            isSidebarVisible: true,
+            sidebarOpened: true,
             deviceViewport: false,
         };
     }
@@ -90,11 +90,11 @@ class Page extends React.Component {
 
     setSidebarVisible(value) {
         if (typeof value === 'undefined') {
-            this.setState({ isSidebarVisible: !this.state.isSidebarVisible });
+            this.setState({ sidebarOpened: !this.state.sidebarOpened });
             return;
         }
 
-        this.setState({ isSidebarVisible: value });
+        this.setState({ sidebarOpened: value });
     }
 
     handleKeyDown(event) {
@@ -121,15 +121,15 @@ class Page extends React.Component {
         return (
             <PageBlock
                 isDeviceViewport={this.state.deviceViewport}
-                isSidebarVisible={this.state.isSidebarVisible}
+                sidebarOpened={this.state.sidebarOpened}
             >
                 <Pagestyles />
 
                 <SidebarVisibilityToggler
-                    isVisible={this.state.isSidebarVisible}
+                    isVisible={this.state.sidebarOpened}
                     isMobile={this.state.deviceViewport}
                     onClick={() => {
-                        this.setSidebarVisible(!this.state.isSidebarVisible);
+                        this.setSidebarVisible(!this.state.sidebarOpened);
                     }}
                 />
                 <PageSidebar
@@ -137,7 +137,7 @@ class Page extends React.Component {
                     navigation={this.props.navigation}
                 />
 
-                <PageContent isSidebarVisible={this.state.isSidebarVisible}>
+                <PageContent sidebarOpened={this.state.sidebarOpened}>
                     {this.props.content}
                 </PageContent>
             </PageBlock>
