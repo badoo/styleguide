@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.7
+
+Set `webpack-dev-middleware` as depencency.
+
 ## 2.0.6
 
 Move from `webpack-dev-server` to `webpack-dev-middleware`.
