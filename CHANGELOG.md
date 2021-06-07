@@ -1,8 +1,12 @@
 # Changelog
 
+## 2.0.8
+
+Set `webpack-hot-middleware` as a depencency.
+
 ## 2.0.7
 
-Set `webpack-dev-middleware` as depencency.
+Set `webpack-dev-middleware` as a depencency.
 
 ## 2.0.6
 
