@@ -73,7 +73,6 @@ Move from `webpack-dev-server` to `webpack-dev-middleware`.
 
 * Resolved security issues in outdated dependencies.
 
-
 ## 1.1.9
 
 * Add font inlining for static build of styleguide.
