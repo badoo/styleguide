@@ -6,15 +6,8 @@ const getBabelOptions = require('./get-babel-options');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const isCompiling = (buildDir) => {
-    const hasPath = buildDir === '' || Boolean(buildDir);
-
-    return !hasPath;
-};
 const isInlined = buildDir !== '' || Boolean(buildDir);
-const useCache = isCompiling(buildDir);
-const setCachingForLoaders = (useCache, loaders) =>
-    useCache ? loaders : ['cache-loader', ...loaders];
+
 const setLoaders = (internalLoaders, externalLoader) =>
     externalLoader ? [internalLoaders, ...externalLoader] : [internalLoaders];
 
@@ -118,7 +111,7 @@ module.exports = function getWebpackConfig({
 
     return {
         mode: 'development',
-        devtool: 'cheap-module-eval-source-map',
+        devtool: 'eval-cheap-source-map',
         entry: [
             'webpack-hot-middleware/client?reload=true&autoConnect=true',
             path.resolve(__dirname, 'src/index.jsx'),
@@ -127,7 +120,7 @@ module.exports = function getWebpackConfig({
             path: buildDir
                 ? path.resolve(process.cwd(), buildDir)
                 : path.resolve(__dirname, 'dist'),
-            filename: 'bundle.js',
+            filename: '[name].js',
             publicPath: '/',
         },
         devServer: {
@@ -158,10 +151,7 @@ module.exports = function getWebpackConfig({
                         {
                             test: /\.jsx?$/,
                             exclude: /node_modules\/(?!badoo-styleguide)/,
-                            use: setCachingForLoaders(
-                                useCache,
-                                setLoaders(genericJsLoader, loadersFromConsumers)
-                            ),
+                            use: setLoaders(genericJsLoader, loadersFromConsumers),
                         },
                         {
                             test: /\.tsx?$/,
@@ -172,11 +162,11 @@ module.exports = function getWebpackConfig({
                         },
                         {
                             test: /\.(woff|woff2|ttf)$/i,
-                            use: isInlined ? 'url-loader' : 'file-loader',
+                            type: isInlined ? 'asset/inline' : 'asset/resource'
                         },
                         {
                             test: /\.(gif|png|jpe?g)$/i,
-                            use: ['file-loader'],
+                            type: 'asset/resource'
                         },
                     ],
                 },
@@ -189,19 +179,13 @@ module.exports = function getWebpackConfig({
                     test: /\.jsx?$/,
                     exclude: jsLoaderExceptionList,
                     include: includePaths,
-                    use: setCachingForLoaders(
-                        useCache,
-                        setLoaders(jsComponentLoaders, loadersFromConsumers)
-                    ),
+                    use: setLoaders(jsComponentLoaders, loadersFromConsumers),
                 },
                 {
                     test: /\.tsx?$/,
                     exclude: tsLoaderExceptionList,
                     include: includePaths,
-                    use: setCachingForLoaders(
-                        useCache,
-                        setLoaders(tsComponentLoaders, loadersFromConsumers)
-                    ),
+                    use: setLoaders(tsComponentLoaders, loadersFromConsumers),
                 },
             ],
         },
@@ -218,7 +202,6 @@ module.exports = function getWebpackConfig({
         },
         plugins: [
             new HtmlWebpackPlugin({ title: 'Frontend Styleguide' }),
-            new webpack.NamedModulesPlugin(),
             new webpack.HotModuleReplacementPlugin(),
             new webpack.DefinePlugin({
                 DEBUG: false,
