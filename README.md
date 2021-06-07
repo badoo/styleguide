@@ -15,10 +15,10 @@
 
 ## Getting started
 
-### Add styleguide dependency
+### run styleguide as npm executable
 
 ```bash
-yarn add badoo-styleguide --dev
+npx badoo-styleguide --dev
 ```
 
 ### Create a styleguide config
@@ -229,13 +229,13 @@ The styleguide can be run as a local dev server or be compiled if you want to se
 
 #### Running
 
-```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js```
+```npx badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js```
 
 **Note:** Styleguide benefits from caching results of initial build. It makes all subsequents recompilations much faster.
 
 #### Compiling
 
-```yarn badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/```
+```npx badoo-styleguide --config=PATH_TO_STYLEGUIDE_CONFIG.js --buildDir=dist/```
 
 Or add it to your package.json "scripts" section
 
@@ -297,7 +297,7 @@ export default MyComponent;
 
 ## Visual helpers
 
-Yoy can see more detailed documentation [here](https://github.com/badoo/styleguide/tree/master/src/visual-helpers/README.md).
+Visual helpers for visual regression tests are available in separate package [@bumble/styleguide-visual-helpers](https://www.npmjs.com/package/@bumble/styleguide-visual-helpers). In nearest major release direct export of `src/visual-helpers` from this package will be removed.
 
 ## Debugging
 
