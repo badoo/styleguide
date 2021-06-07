@@ -1,20 +1,24 @@
 # Changelog
 
+## 3.0.0
+
+* **Breaking change**: Move to `Webkack@5`. Cleanup of deprecated loaders, currently will be released under tag `next`.
+
 ## 2.0.9
 
-Add fix for hot-reload.
+* Add fix for hot-reload.
 
 ## 2.0.8
 
-Set `webpack-hot-middleware` as a depencency.
+* Set `webpack-hot-middleware` as a depencency.
 
 ## 2.0.7
 
-Set `webpack-dev-middleware` as a depencency.
+* Set `webpack-dev-middleware` as a depencency.
 
 ## 2.0.6
 
-Move from `webpack-dev-server` to `webpack-dev-middleware`.
+* Move from `webpack-dev-server` to `webpack-dev-middleware`.
 
 ## 2.0.5
 
