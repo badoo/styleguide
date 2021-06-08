@@ -324,7 +324,7 @@ exports[`App generic tests When app is is unmounted 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
   .c19 {
     padding: 0 32px;
     left: 300px;
@@ -825,7 +825,7 @@ exports[`App generic tests When app is open 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
   .c19 {
     padding: 0 32px;
     left: 300px;
@@ -1295,7 +1295,7 @@ exports[`App generic tests When app receive no sections 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
   .c15 {
     padding: 0 32px;
     left: 300px;

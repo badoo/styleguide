@@ -155,14 +155,14 @@ exports[`Page tests: Page handleKeyDown test 1`] = `
 
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
   .c10 {
     padding: 0 32px;
     left: 300px;
   }
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
 
 }
 
@@ -395,7 +395,7 @@ exports[`Page tests: Page render 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
   .c10 {
     padding: 0 32px;
     left: 300px;
@@ -624,7 +624,7 @@ exports[`Page tests: Page sidebar visibility toggled 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
   .c10 {
     padding: 0 32px;
     left: 300px;
