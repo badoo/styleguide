@@ -2,7 +2,7 @@
 
 exports[`App-view generic tests When app is open 1`] = `
 <div
-  className="fyoMIT"
+  className="iNCLPV"
 >
   <div
     className="cqcsJm"
@@ -160,7 +160,7 @@ exports[`App-view generic tests When app is open 1`] = `
     </div>
   </aside>
   <main
-    className="iJlvkI"
+    className="jWjGLm"
   >
     <article
       className="duUsAr"
@@ -170,7 +170,7 @@ exports[`App-view generic tests When app is open 1`] = `
         className="styleguide-component__header"
       >
         <h1
-          className="cNmGHY"
+          className="gCwHZU"
         >
           Welcome!
         </h1>
@@ -449,6 +449,7 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 .c40 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -463,8 +464,7 @@ exports[`App-view generic tests When component is open 1`] = `
 }
 
 .c29 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -487,7 +487,11 @@ exports[`App-view generic tests When component is open 1`] = `
   margin-top: 32px;
 }
 
-.c25 + .c25 {
+.c25 {
+  padding: 0;
+}
+
+.c24 + .c24 {
   margin-top: 32px;
 }
 
@@ -611,32 +615,31 @@ exports[`App-view generic tests When component is open 1`] = `
   will-change: transform;
 }
 
-.c24 {
+.c23 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-}
-
-.c0 .c23 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
@@ -653,6 +656,18 @@ exports[`App-view generic tests When component is open 1`] = `
 @media screen and (max-width:376px) {
   .c28 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c29 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c25 {
+    padding: 32px;
   }
 }
 
@@ -675,19 +690,17 @@ exports[`App-view generic tests When component is open 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media (min-width:768px) {
+  .c23 {
+    padding: 0 32px;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c23 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -850,10 +863,10 @@ exports[`App-view generic tests When component is open 1`] = `
     </div>
   </aside>
   <main
-    className="c23 c24"
+    className="c23"
   >
     <section
-      className="c25 "
+      className="c24 c25"
     >
       <div
         className="c26"
@@ -1263,20 +1276,19 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   font-family: sans-serif;
 }
 
-.c17 {
+.c16 {
   padding-top: 32px;
 }
 
-.c18 {
-  margin-top: 0;
-  margin-bottom: 8px;
+.c17 {
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
   word-break: break-word;
 }
 
-.c19 {
+.c18 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -1394,20 +1406,25 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   will-change: transform;
 }
 
-.c16 {
+.c15 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
@@ -1416,15 +1433,15 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c15 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
+@media screen and (max-width:376px) {
+  .c16 {
+    padding-top: 16px;
+  }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (min-width:768px) {
   .c17 {
-    padding-top: 16px;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -1435,19 +1452,17 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media (min-width:768px) {
+  .c15 {
+    padding: 0 32px;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c15 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -1551,22 +1566,22 @@ exports[`App-view generic tests When filter doesn\`t show components 1`] = `
     </div>
   </aside>
   <main
-    className="c15 c16"
+    className="c15"
   >
     <article
-      className="c17"
+      className="c16"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="c18"
+          className="c17"
         >
           Welcome!
         </h1>
         <div
-          className="c19"
+          className="c18"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>
@@ -1829,6 +1844,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 .c38 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1843,8 +1859,7 @@ exports[`App-view generic tests When filter show components 1`] = `
 }
 
 .c27 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -1867,7 +1882,11 @@ exports[`App-view generic tests When filter show components 1`] = `
   margin-top: 32px;
 }
 
-.c23 + .c23 {
+.c23 {
+  padding: 0;
+}
+
+.c22 + .c22 {
   margin-top: 32px;
 }
 
@@ -1991,32 +2010,31 @@ exports[`App-view generic tests When filter show components 1`] = `
   will-change: transform;
 }
 
-.c22 {
+.c21 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-}
-
-.c0 .c21 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
 }
 
 @media screen and (max-width:376px) {
@@ -2033,6 +2051,18 @@ exports[`App-view generic tests When filter show components 1`] = `
 @media screen and (max-width:376px) {
   .c26 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c27 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c23 {
+    padding: 32px;
   }
 }
 
@@ -2055,19 +2085,17 @@ exports[`App-view generic tests When filter show components 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media (min-width:768px) {
+  .c21 {
+    padding: 0 32px;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c21 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -2201,10 +2229,10 @@ exports[`App-view generic tests When filter show components 1`] = `
     </div>
   </aside>
   <main
-    className="c21 c22"
+    className="c21"
   >
     <section
-      className="c23 "
+      className="c22 c23"
     >
       <div
         className="c24"
@@ -2655,20 +2683,19 @@ exports[`App-view generic tests When we open component from app 1`] = `
   list-style: none;
 }
 
-.c23 {
+.c22 {
   padding-top: 32px;
 }
 
-.c24 {
-  margin-top: 0;
-  margin-bottom: 8px;
+.c23 {
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
   word-break: break-word;
 }
 
-.c25 {
+.c24 {
   font-family: sans-serif;
   font-size: 16px;
   color: #a0a0a0;
@@ -2786,20 +2813,25 @@ exports[`App-view generic tests When we open component from app 1`] = `
   will-change: transform;
 }
 
-.c22 {
+.c21 {
+  padding: 32px 0;
   min-width: 0;
-  padding: 32px;
-  position: relative;
+  position: absolute;
   background: #fff;
-  width: calc(100% - 300px);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  -webkit-transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  transition: transform 0.2s cubic-bezier(0.165,0.84,0.44,1);
-  will-change: transform;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  transition: left 0.3s cubic-bezier(0.165,0.84,0.44,1);
+  will-change: left;
 }
 
 .c0 {
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c4 {
@@ -2808,15 +2840,15 @@ exports[`App-view generic tests When we open component from app 1`] = `
   transform: translateX(0);
 }
 
-.c0 .c21 {
-  -webkit-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
+@media screen and (max-width:376px) {
+  .c22 {
+    padding-top: 16px;
+  }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (min-width:768px) {
   .c23 {
-    padding-top: 16px;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -2827,19 +2859,17 @@ exports[`App-view generic tests When we open component from app 1`] = `
   }
 }
 
-@media screen and (max-width:376px) {
-  .c0 .c4 {
-    right: 0;
-    width: auto;
+@media (min-width:768px) {
+  .c21 {
+    padding: 0 32px;
+    left: 300px;
   }
 }
 
 @media screen and (max-width:376px) {
-  .c0 .c21 {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+  .c0 .c4 {
+    right: 0;
+    width: auto;
   }
 }
 
@@ -3002,22 +3032,22 @@ exports[`App-view generic tests When we open component from app 1`] = `
     </div>
   </aside>
   <main
-    className="c21 c22"
+    className="c21"
   >
     <article
-      className="c23"
+      className="c22"
       data-id="welcome!"
     >
       <header
         className="styleguide-component__header"
       >
         <h1
-          className="c24"
+          className="c23"
         >
           Welcome!
         </h1>
         <div
-          className="c25"
+          className="c24"
         >
           Style guide is a tool to illustrate, sandbox and test your components.
         </div>

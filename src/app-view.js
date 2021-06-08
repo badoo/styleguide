@@ -95,10 +95,6 @@ class AppView extends React.Component {
             component,
         });
     }
-
-    handleSidebarToggleClick() {
-        this.setSidebarVisibility();
-    }
 }
 
 function mapPropsToSections(sections, hash) {

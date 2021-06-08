@@ -17,12 +17,15 @@ const ComponentBlock = styled.article`
 `;
 
 const ComponentTitle = styled.h1`
-    margin-top: 0;
-    margin-bottom: 8px;
+    margin: 0 16px;
     font-size: 32px;
     color: #000;
     font-family: sans-serif;
     word-break: break-word;
+
+    @media screen and (min-width: ${deviceSizes.tablet}px) {
+        margin: 0 0 8px 0;
+    }
 `;
 
 const ComponentDescription = styled.div`
@@ -40,6 +43,11 @@ const ComponentTests = styled.div`
 const ComponentProps = styled.div`
     font-size: 14px;
     font-family: sans-serif;
+    padding: 0 16px;
+
+    @media screen and (min-width: ${deviceSizes.tablet}px) {
+        padding: 0;
+    }
 
     table {
         width: 100%;
