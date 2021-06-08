@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+
+* Make visual components more resonsible.
+
 ## 2.0.9
 
 Add fix for hot-reload.
