@@ -1,6 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import StyleguideCell from '../styleguide-cell/styleguide-cell';
+import StyleguideCellResponsive from '../styleguide-cell/styleguide-cell-responsive';
 import StyleguideFrame from '../styleguide-iframe/styleguide-iframe';
 
 import config from '__GLOBAL__CONFIG__';
@@ -23,21 +24,35 @@ const propTypes = {
     legend: PropTypes.string,
     fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     isIframe: PropTypes.bool,
+    isResponsive: PropTypes.bool,
 };
 
 function StyleguideDeviceFrame(props) {
-    const { children, size, legend, fontSize, isIframe } = props;
+    const { children, size, legend, fontSize, isIframe, isResponsive } = props;
     const Wrapper = isIframe || config.setDeviceFramesAsIframes ? StyleguideFrame : React.Fragment;
 
     return (
-        <StyleguideCell
-            {...MapSizeToDimensions[size]}
-            border={true}
-            legend={legend}
-            fontSize={fontSize}
-        >
-            <Wrapper>{children}</Wrapper>
-        </StyleguideCell>
+        <React.Fragment>
+            {!isResponsive ? (
+                <StyleguideCell
+                    {...MapSizeToDimensions[size]}
+                    border={true}
+                    legend={legend}
+                    fontSize={fontSize}
+                >
+                    <Wrapper>{children}</Wrapper>
+                </StyleguideCell>
+            ) : (
+                <StyleguideCellResponsive
+                    {...MapSizeToDimensions[size]}
+                    border={true}
+                    legend={legend}
+                    fontSize={fontSize}
+                >
+                    <Wrapper>{children}</Wrapper>
+                </StyleguideCellResponsive>
+            )}
+        </React.Fragment>
     );
 }
 

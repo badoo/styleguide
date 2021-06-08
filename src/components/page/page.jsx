@@ -22,33 +22,32 @@ const PageSidebar = styled(Sidebar)`
 `;
 
 const PageContent = styled.main`
+    padding: 32px 0;
     min-width: 0;
-    padding: 32px;
-    position: relative;
+    position: absolute;
     background: #fff;
-    width: calc(100% - ${SIDEBAR_WIDTH}px);
-    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-    will-change: transform;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transition: left 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: left;
+
+    @media screen and (min-width: ${deviceSizes.tablet}px) {
+        padding: 0 32px;
+        left: ${(props) => (props.sidebarOpened ? '300px' : '0px')};
+    }
 `;
 
 const PageBlock = styled.div`
     background: #fff;
+    display: flex;
 
     ${PageSidebar} {
-        transform: translateX(${(props) => (props.isSidebarVisible ? 0 : '-100%')});
+        transform: translateX(${(props) => (props.sidebarOpened ? 0 : '-100%')});
 
         @media screen and (max-width: ${deviceSizes.phone}px) {
             right: 0;
             width: auto;
-        }
-    }
-
-    ${PageContent} {
-        transform: translateX(${(props) => (!props.isSidebarVisible ? '100px' : '300px')});
-
-        @media screen and (max-width: ${deviceSizes.phone}px) {
-            width: 100%;
-            transform: translateX(0);
         }
     }
 `;
@@ -122,7 +121,7 @@ class Page extends React.Component {
         return (
             <PageBlock
                 isDeviceViewport={this.state.deviceViewport}
-                isSidebarVisible={this.state.sidebarOpened}
+                sidebarOpened={this.state.sidebarOpened}
             >
                 <Pagestyles />
 
@@ -136,9 +135,11 @@ class Page extends React.Component {
                 <PageSidebar
                     searchField={this.props.searchField}
                     navigation={this.props.navigation}
-                ></PageSidebar>
+                />
 
-                <PageContent>{this.props.content}</PageContent>
+                <PageContent sidebarOpened={this.state.sidebarOpened}>
+                    {this.props.content}
+                </PageContent>
             </PageBlock>
         );
     }

@@ -96,6 +96,7 @@ exports[`Component generic tests: When component has one test with no element to
 }
 
 .c15 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -110,8 +111,7 @@ exports[`Component generic tests: When component has one test with no element to
 }
 
 .c1 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -133,6 +133,7 @@ exports[`Component generic tests: When component has one test with no element to
 .c3 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c3 table {
@@ -225,6 +226,18 @@ exports[`Component generic tests: When component has one test with no element to
 @media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 0;
   }
 }
 
@@ -436,6 +449,7 @@ exports[`Component generic tests: When component has one test with no valid reac
 }
 
 .c15 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -450,8 +464,7 @@ exports[`Component generic tests: When component has one test with no valid reac
 }
 
 .c1 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -473,6 +486,7 @@ exports[`Component generic tests: When component has one test with no valid reac
 .c3 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c3 table {
@@ -565,6 +579,18 @@ exports[`Component generic tests: When component has one test with no valid reac
 @media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 0;
   }
 }
 
@@ -686,8 +712,7 @@ exports[`Component generic tests: When component has only props - show props tab
 }
 
 .c1 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -705,6 +730,7 @@ exports[`Component generic tests: When component has only props - show props tab
 .c3 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c3 table {
@@ -786,6 +812,18 @@ exports[`Component generic tests: When component has only props - show props tab
 @media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 0;
   }
 }
 
@@ -881,8 +919,7 @@ exports[`Component generic tests: When component has only props 1`] = `
 }
 
 .c1 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -900,6 +937,7 @@ exports[`Component generic tests: When component has only props 1`] = `
 .c3 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c3 table {
@@ -977,6 +1015,18 @@ exports[`Component generic tests: When component has only props 1`] = `
 @media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 0;
   }
 }
 
@@ -1112,6 +1162,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
 }
 
 .c12 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1126,8 +1177,7 @@ exports[`Component generic tests: When component has only tests 1`] = `
 }
 
 .c1 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -1164,6 +1214,12 @@ exports[`Component generic tests: When component has only tests 1`] = `
 @media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 0 8px 0;
   }
 }
 
@@ -1543,6 +1599,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
 }
 
 .c15 {
+  position: relative;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-top: 0;
@@ -1557,8 +1614,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
 }
 
 .c1 {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 16px;
   font-size: 32px;
   color: #000;
   font-family: sans-serif;
@@ -1580,6 +1636,7 @@ exports[`Component generic tests: When component has props & tests 1`] = `
 .c3 {
   font-size: 14px;
   font-family: sans-serif;
+  padding: 0 16px;
 }
 
 .c3 table {
@@ -1672,6 +1729,18 @@ exports[`Component generic tests: When component has props & tests 1`] = `
 @media screen and (max-width:376px) {
   .c0 {
     padding-top: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 0 8px 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 0;
   }
 }
 
