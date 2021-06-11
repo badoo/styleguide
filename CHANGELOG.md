@@ -4,6 +4,11 @@
 
 * **Breaking change**: Move to `Webkack@5`. Cleanup of deprecated loaders, currently will be released under tag `next`.
 
+## 2.1.1
+
+* fix bug with express deps for executable script.
+* update depedencies
+
 ## 2.1.0
 
 * Make visual components more resonsible.
