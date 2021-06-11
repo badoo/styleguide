@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.1
+
+* fix bug with express deps for executable script.
+* update depedencies
+
 ## 2.1.0
 
 * Make visual components more resonsible.
