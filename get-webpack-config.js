@@ -41,6 +41,7 @@ const resolveComponentPathsFromComponentRoots = (components, getComponentRoots) 
 module.exports = function getWebpackConfig({
     buildDir,
     configPath,
+    publicPath,
     getSections,
     getComponentRoots,
     getExceptionForLoaders,
@@ -128,7 +129,7 @@ module.exports = function getWebpackConfig({
                 ? path.resolve(process.cwd(), buildDir)
                 : path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
-            publicPath: '/',
+            publicPath,
         },
         devServer: {
             clientLogLevel: isDebug ? 'info' : 'warning',
