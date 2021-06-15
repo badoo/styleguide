@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.2
+
+* new release for ^3 version.
+
 ## 3.0.0
 
 * **Breaking change**: Move to `Webkack@5`. Cleanup of deprecated loaders, currently will be released under tag `next`.
