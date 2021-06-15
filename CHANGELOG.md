@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.2
+
+* Badoo-Styleguide now supports relative urls & subdirectories for serving assets via `getPublicPath`.
+
 ## 2.1.1
 
 * fix bug with express deps for executable script.
