@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.3
+
+* new release for ^3 version.
+
 ## 3.0.2
 
 * new release for ^3 version.
@@ -7,6 +11,10 @@
 ## 3.0.0
 
 * **Breaking change**: Move to `Webkack@5`. Cleanup of deprecated loaders, currently will be released under tag `next`.
+
+## 2.1.3
+
+* add dist to npm ignore
 
 ## 2.1.2
 
