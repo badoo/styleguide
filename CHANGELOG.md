@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3
+
+* add dist to npm ignore
+
 ## 2.1.2
 
 * Badoo-Styleguide now supports relative urls & subdirectories for serving assets via `getPublicPath`.
