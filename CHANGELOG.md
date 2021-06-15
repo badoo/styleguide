@@ -4,6 +4,10 @@
 
 * **Breaking change**: Move to `Webkack@5`. Cleanup of deprecated loaders, currently will be released under tag `next`.
 
+## 2.1.2
+
+* Badoo-Styleguide now supports relative urls & subdirectories for serving assets via `getPublicPath`.
+
 ## 2.1.1
 
 * fix bug with express deps for executable script.

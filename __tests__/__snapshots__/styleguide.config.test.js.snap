@@ -5,6 +5,7 @@ Object {
   "applyBabelToTypescriptCode": true,
   "getComponentRoots": [Function],
   "getExceptionForLoaders": [Function],
+  "getPublicPath": [Function],
   "getSections": [Function],
   "getWebpackConfig": [Function],
   "hasResizableSandbox": false,

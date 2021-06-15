@@ -48,9 +48,13 @@ const tsConfigPath = config.tsConfigPath
     ? config.tsConfigPath
     : path.resolve(process.cwd(), './tsconfig.json');
 
+const publicPath = `/${
+    config.getPublicPath && typeof config.getPublicPath === 'function' ? config.getPublicPath() : ''
+}`;
 const ourWebpackConfig = getWebpackConfig({
     buildDir: args.buildDir,
     configPath,
+    publicPath,
     getSections: config.getSections,
     getComponentRoots: config.getComponentRoots,
     getExceptionForLoaders: config.getExceptionForLoaders,
@@ -95,6 +99,6 @@ if (isCompiling) {
         .use(hotMiddleware(compiler));
 
     server.listen(PORT, HOST, () => {
-        console.log(`Starting server on http://${HOST}:${PORT}`);
+        console.log(`Starting server on http://${HOST}:${PORT}${publicPath}`);
     });
 }
