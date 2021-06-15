@@ -174,6 +174,16 @@ module.exports = {
         ];
     },
 
+    /**
+     * This function sets public path for the app. It is useful for handling subdirectories
+     * in browser environment
+     * @optional
+     * @returns String
+     */
+    getPublicPath() {
+        return '/';
+    }
+
     // Return an array of all folders, where
     // we need to look for components
     getComponentRoots({ path }) {

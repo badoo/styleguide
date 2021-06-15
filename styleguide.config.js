@@ -32,6 +32,10 @@ module.exports = {
         ];
     },
 
+    getPublicPath() {
+        return 'app';
+    },
+
     getComponentRoots({ path }) {
         const cwd = path.resolve(__dirname, '.');
 
