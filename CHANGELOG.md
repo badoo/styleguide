@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.0
+
+* update dependencies
+* fix bug for webpack 5 and require.context - [more context](https://github.com/webpack/webpack/issues/12087).
+
 ## 3.0.3
 
 * new release for ^3 version.
