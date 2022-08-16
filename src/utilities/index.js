@@ -79,6 +79,17 @@ function getTestConfiguration(testModules) {
             name: Test.name,
             Component: Test.testCase,
         }));
+    return testConfiguration;
+}
+
+function getUniqueDependencyResolverKeys(keys) {
+    /**
+     * webpack 5 bug - https://github.com/webpack/webpack/issues/12087
+     * report to maintainers
+     */
+    const result = keys.filter((key) => key.startsWith('./'));
+
+    return result;
 }
 
 function processConfigComponent({ component, sectionName, isSpecificationPath }) {
@@ -90,7 +101,9 @@ function processConfigComponent({ component, sectionName, isSpecificationPath })
     }
 
     const isSpecPath = isSpecificationPath || defaultIsSpecificationPath;
-    const testsPaths = dependencyResolver.keys().filter((key) => isSpecPath(meta, key));
+    const testsPaths = getUniqueDependencyResolverKeys(dependencyResolver.keys()).filter((key) =>
+        isSpecPath(meta, key)
+    );
     const testsModules = testsPaths.map(dependencyResolver);
     const tests = getTestConfiguration(testsModules);
 

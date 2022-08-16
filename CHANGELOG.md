@@ -1,5 +1,31 @@
 # Changelog
 
+## 3.1.1
+
+* update dependencies
+* remove `cache-loader` as deprecated
+
+## 3.1.0
+
+* update dependencies
+* fix bug for webpack 5 and require.context - [more context](https://github.com/webpack/webpack/issues/12087).
+
+## 3.0.3
+
+* new release for ^3 version.
+
+## 3.0.2
+
+* new release for ^3 version.
+
+## 3.0.0
+
+* **Breaking change**: Move to `Webkack@5`. Cleanup of deprecated loaders, currently will be released under tag `next`.
+
+## 2.1.3
+
+* add dist to npm ignore
+
 ## 2.1.2
 
 * Badoo-Styleguide now supports relative urls & subdirectories for serving assets via `getPublicPath`.
@@ -15,19 +41,19 @@
 
 ## 2.0.9
 
-Add fix for hot-reload.
+* Add fix for hot-reload.
 
 ## 2.0.8
 
-Set `webpack-hot-middleware` as a depencency.
+* Set `webpack-hot-middleware` as a depencency.
 
 ## 2.0.7
 
-Set `webpack-dev-middleware` as a depencency.
+* Set `webpack-dev-middleware` as a depencency.
 
 ## 2.0.6
 
-Move from `webpack-dev-server` to `webpack-dev-middleware`.
+* Move from `webpack-dev-server` to `webpack-dev-middleware`.
 
 ## 2.0.5
 
@@ -85,7 +111,6 @@ Move from `webpack-dev-server` to `webpack-dev-middleware`.
 ## 1.1.10
 
 * Resolved security issues in outdated dependencies.
-
 
 ## 1.1.9
 

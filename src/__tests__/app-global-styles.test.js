@@ -11,6 +11,10 @@ describe('Styled-components global styles', () => {
 
         const styleTag = setStyleElement();
 
-        expect(styleTag.textContent).toMatchSnapshot();
+        if (!styleTag) {
+            expect(styleTag).toBe(null);
+        } else {
+            expect(styleTag.textContent).toMatchSnapshot();
+        }
     });
 });
