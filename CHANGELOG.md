@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.1
+
+* update dependencies
+* remove `cache-loader` as deprecated
+
 ## 3.1.0
 
 * update dependencies
