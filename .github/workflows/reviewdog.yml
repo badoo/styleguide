@@ -10,7 +10,7 @@ jobs:
         with:
           submodules: true
       - name: Setup node/npm
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
         with:
           node-version: '15'
       - name: textlint-github-pr-check
