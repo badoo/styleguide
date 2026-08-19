@@ -6,27 +6,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2
         with:
           submodules: true
       - name: Setup node/npm
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@f1f314fca9dfce2769ece7d933488f076716723e # v1
         with:
           node-version: '15'
       - name: textlint-github-pr-check
-        uses: tsuyoshicho/action-textlint@v2
+        uses: tsuyoshicho/action-textlint@59452e704d2d25e4302d8056114d9cdbe8c9ff76 # v2
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-check
           textlint_flags: "doc/**"
       - name: textlint-github-check
-        uses: tsuyoshicho/action-textlint@v2
+        uses: tsuyoshicho/action-textlint@59452e704d2d25e4302d8056114d9cdbe8c9ff76 # v2
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
           textlint_flags: "doc/**"
       - name: textlint-github-pr-review
-        uses: tsuyoshicho/action-textlint@v2
+        uses: tsuyoshicho/action-textlint@59452e704d2d25e4302d8056114d9cdbe8c9ff76 # v2
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
