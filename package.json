@@ -46,7 +46,7 @@
     "typescript": "^4.1.3",
     "typescript-react-function-component-props-handler": "^1.1.1",
     "webpack": "^4.44.2",
-    "webpack-dev-middleware": "^5.0.0",
+    "webpack-dev-middleware": "^7.0.0",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-merge": "^4.2.1",
     "yargs": "^16.2.0"
